@@ -1,0 +1,319 @@
+format-version: 1.2
+data-version: deep-learning-ontology/releases/2021-07-07/deep-learning-ontology-full.owl
+ontology: deep-learning-ontology/deep-learning-ontology-full
+property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Deep Learning Ontology" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: owl:versionInfo "2021-07-07" xsd:string
+
+[Term]
+id: BFO:0000001
+name: entity
+property_value: BFO:0000179 "entity" xsd:string
+property_value: BFO:0000180 "Entity" xsd:string
+property_value: IAO:0000112 "Julius Caesar" xsd:string
+property_value: IAO:0000112 "the Second World War" xsd:string
+property_value: IAO:0000112 "Verdi’s Requiem" xsd:string
+property_value: IAO:0000112 "your body mass index" xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81" xsd:string
+property_value: IAO:0000116 "Entity doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example Werner Ceusters 'portions of reality' include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, 'How to track absolutely everything' at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+property_value: IAO:0000600 "An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000002
+name: continuant
+def: "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts." []
+is_a: BFO:0000001 ! entity
+property_value: BFO:0000179 "continuant" xsd:string
+property_value: BFO:0000180 "Continuant" xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240" xsd:string
+property_value: IAO:0000116 "Continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster's other portions of reality, questions are raised as to whether universals are continuants" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+property_value: IAO:0000600 "A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])" xsd:string
+property_value: IAO:0000601 "if b is a continuant and if, for some t, c has_continuant_part b at t, then c is a continuant. (axiom label in BFO2 Reference: [126-001])" xsd:string
+property_value: IAO:0000601 "if b is a continuant and if, for some t, cis continuant_part of b at t, then c is a continuant. (axiom label in BFO2 Reference: [009-002])" xsd:string
+property_value: IAO:0000601 "if b is a material entity, then there is some temporal interval (referred to below as a one-dimensional temporal region) during which b exists. (axiom label in BFO2 Reference: [011-002])" xsd:string
+property_value: IAO:0000602 "(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] " xsd:string
+property_value: IAO:0000602 "(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] " xsd:string
+property_value: IAO:0000602 "(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] " xsd:string
+property_value: IAO:0000602 "(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] " xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000004
+name: independent continuant
+def: "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything." []
+def: "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])" []
+is_a: BFO:0000002 ! continuant
+property_value: BFO:0000179 "ic" xsd:string
+property_value: BFO:0000180 "IndependentContinuant" xsd:string
+property_value: IAO:0000112 "a chair" xsd:string
+property_value: IAO:0000112 "a heart" xsd:string
+property_value: IAO:0000112 "a leg" xsd:string
+property_value: IAO:0000112 "a molecule" xsd:string
+property_value: IAO:0000112 "a spatial region" xsd:string
+property_value: IAO:0000112 "an atom" xsd:string
+property_value: IAO:0000112 "an orchestra." xsd:string
+property_value: IAO:0000112 "an organism" xsd:string
+property_value: IAO:0000112 "the bottom right portion of a human torso" xsd:string
+property_value: IAO:0000112 "the interior of your mouth" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+property_value: IAO:0000601 "For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])" xsd:string
+property_value: IAO:0000601 "For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])" xsd:string
+property_value: IAO:0000602 "(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] " xsd:string
+property_value: IAO:0000602 "(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] " xsd:string
+property_value: IAO:0000602 "(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] " xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000017
+name: realizable entity
+is_a: BFO:0000020 ! specifically dependent continuant
+property_value: BFO:0000179 "realizable" xsd:string
+property_value: BFO:0000180 "RealizableEntity" xsd:string
+property_value: IAO:0000112 "the disposition of this piece of metal to conduct electricity." xsd:string
+property_value: IAO:0000112 "the disposition of your blood to coagulate" xsd:string
+property_value: IAO:0000112 "the function of your reproductive organs" xsd:string
+property_value: IAO:0000112 "the role of being a doctor" xsd:string
+property_value: IAO:0000112 "the role of this boundary to delineate where Utah and Colorado meet" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
+property_value: IAO:0000600 "To say that b is a realizable entity is to say that b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (axiom label in BFO2 Reference: [058-002])" xsd:string
+property_value: IAO:0000601 "All realizable dependent continuants have independent continuants that are not spatial regions as their bearers. (axiom label in BFO2 Reference: [060-002])" xsd:string
+property_value: IAO:0000602 "(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] " xsd:string
+property_value: IAO:0000602 "(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] " xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000020
+name: specifically dependent continuant
+def: "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])" []
+is_a: BFO:0000002 ! continuant
+property_value: BFO:0000179 "sdc" xsd:string
+property_value: BFO:0000180 "SpecificallyDependentContinuant" xsd:string
+property_value: IAO:0000112 "of one-sided specifically dependent continuants: the mass of this tomato" xsd:string
+property_value: IAO:0000112 "of relational dependent continuants (multiple bearers): John’s love for Mary, the ownership relation between John and this statue, the relation of authority between John and his subordinates." xsd:string
+property_value: IAO:0000112 "Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key" xsd:string
+property_value: IAO:0000112 "the disposition of this fish to decay" xsd:string
+property_value: IAO:0000112 "the function of this heart: to pump blood" xsd:string
+property_value: IAO:0000112 "the mutual dependence of proton donors and acceptors in chemical reactions [79" xsd:string
+property_value: IAO:0000112 "the mutual dependence of the role predator and the role prey as played by two organisms in a given interaction" xsd:string
+property_value: IAO:0000112 "the pink color of a medium rare piece of grilled filet mignon at its center" xsd:string
+property_value: IAO:0000112 "the role of being a doctor" xsd:string
+property_value: IAO:0000112 "the shape of this hole." xsd:string
+property_value: IAO:0000112 "the smell of this portion of mozzarella" xsd:string
+property_value: IAO:0000116 "Specifically dependent continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. We're not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc." xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
+property_value: IAO:0000602 "(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] " xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000023
+name: role
+is_a: BFO:0000017 ! realizable entity
+property_value: BFO:0000179 "role" xsd:string
+property_value: BFO:0000180 "Role" xsd:string
+property_value: IAO:0000112 "John’s role of husband to Mary is dependent on Mary’s role of wife to John, and both are dependent on the object aggregate comprising John and Mary as member parts joined together through the relational quality of being married." xsd:string
+property_value: IAO:0000112 "the priest role" xsd:string
+property_value: IAO:0000112 "the role of a boundary to demarcate two neighboring administrative territories" xsd:string
+property_value: IAO:0000112 "the role of a building in serving as a military target" xsd:string
+property_value: IAO:0000112 "the role of a stone in marking a property boundary" xsd:string
+property_value: IAO:0000112 "the role of subject in a clinical trial" xsd:string
+property_value: IAO:0000112 "the student role" xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: One major family of examples of non-rigid universals involves roles, and ontologies developed for corresponding administrative purposes may consist entirely of representatives of entities of this sort. Thus ‘professor’, defined as follows,b instance_of professor at t =Def. there is some c, c instance_of professor role & c inheres_in b at t.denotes a non-rigid universal and so also do ‘nurse’, ‘student’, ‘colonel’, ‘taxpayer’, and so forth. (These terms are all, in the jargon of philosophy, phase sortals.) By using role terms in definitions, we can create a BFO conformant treatment of such entities drawing on the fact that, while an instance of professor may be simultaneously an instance of trade union member, no instance of the type professor role is also (at any time) an instance of the type trade union member role (any more than any instance of the type color is at any time an instance of the type length).If an ontology of employment positions should be defined in terms of roles following the above pattern, this enables the ontology to do justice to the fact that individuals instantiate the corresponding universals –  professor, sergeant, nurse – only during certain phases in their lives." xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
+property_value: IAO:0000600 "b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])" xsd:string
+property_value: IAO:0000602 "(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] " xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000031
+name: generically dependent continuant
+def: "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time." []
+def: "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])" []
+is_a: BFO:0000002 ! continuant
+property_value: BFO:0000179 "gdc" xsd:string
+property_value: BFO:0000180 "GenericallyDependentContinuant" xsd:string
+property_value: IAO:0000112 "The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity." xsd:string
+property_value: IAO:0000112 "the pdf file on your laptop, the pdf file that is a copy thereof on my laptop" xsd:string
+property_value: IAO:0000112 "the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule." xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+property_value: IAO:0000602 "(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] " xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000040
+name: material entity
+def: "An independent continuant [snap:IndependentContinuant] that is spatially extended whose identity is independent of that of other entities and can be maintained through time. Note: Material entity [snap:MaterialEntity] subsumes object [snap:Object], fiat object part [snap:FiatObjectPart], and object aggregate [snap:ObjectAggregate], which assume a three level theory of granularity, which is inadequate for some domains, such as biology." []
+def: "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time." []
+is_a: BFO:0000004 ! independent continuant
+property_value: BFO:0000179 "material" xsd:string
+property_value: BFO:0000180 "MaterialEntity" xsd:string
+property_value: IAO:0000112 "a flame" xsd:string
+property_value: IAO:0000112 "a forest fire" xsd:string
+property_value: IAO:0000112 "a human being" xsd:string
+property_value: IAO:0000112 "a hurricane" xsd:string
+property_value: IAO:0000112 "a photon" xsd:string
+property_value: IAO:0000112 "a puff of smoke" xsd:string
+property_value: IAO:0000112 "a sea wave" xsd:string
+property_value: IAO:0000112 "a tornado" xsd:string
+property_value: IAO:0000112 "an aggregate of human beings." xsd:string
+property_value: IAO:0000112 "an energy wave" xsd:string
+property_value: IAO:0000112 "an epidemic" xsd:string
+property_value: IAO:0000112 "Collection of random bacteria, a chair, dorsal surface of the body." xsd:string
+property_value: IAO:0000112 "the undetached arm of a human being" xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: Material entities (continuants) can preserve their identity even while gaining and losing material parts. Continuants are contrasted with occurrents, which unfold themselves in successive temporal parts or phases [60" xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: Object, Fiat Object Part and Object Aggregate are not intended to be exhaustive of Material Entity. Users are invited to propose new subcategories of Material Entity." xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here." xsd:string
+property_value: IAO:0000119 "BFO" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+property_value: IAO:0000600 "A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])" xsd:string
+property_value: IAO:0000601 "every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])" xsd:string
+property_value: IAO:0000601 "Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])" xsd:string
+property_value: IAO:0000602 "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] " xsd:string
+property_value: IAO:0000602 "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] " xsd:string
+property_value: IAO:0000602 "(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] " xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: DEEP-LEARNING-ONTOLOGY:00000000
+name: root node
+
+[Term]
+id: IAO:0000028
+name: symbol
+def: "An information content entity that is a mark(s) or character(s) used as a conventional representation of another entity." []
+is_a: IAO:0000030 ! information content entity
+property_value: IAO:0000111 "symbol" xsd:string
+property_value: IAO:0000112 "a serial number such as \"12324X\"" xsd:string
+property_value: IAO:0000112 "a stop sign" xsd:string
+property_value: IAO:0000112 "a written proper name such as \"OBI\"" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "20091104, MC: this needs work and will most probably change" xsd:string
+property_value: IAO:0000116 "2014-03-31: We would like to have a deeper analysis of 'mark' and 'sign' in the future (see https://github.com/information-artifact-ontology/IAO/issues/154)." xsd:string
+property_value: IAO:0000117 "PERSON: James A. Overton" xsd:string
+property_value: IAO:0000117 "PERSON: Jonathan Rees" xsd:string
+property_value: IAO:0000119 "based on Oxford English Dictionary" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000030
+name: information content entity
+def: "A generically dependent continuant that is about some thing." []
+def: "An information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity." []
+is_a: BFO:0000031 ! generically dependent continuant
+property_value: IAO:0000111 "information content entity" xsd:string
+property_value: IAO:0000112 "Examples of information content entites include journal articles, data, graphical layouts, and graphs." xsd:string
+property_value: IAO:0000112 "Examples of information content entites include journal articles, data, graphical layouts, and graphs." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "2014-03-10: The use of \"thing\" is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ)." xsd:string
+property_value: IAO:0000116 "information_content_entity 'is_encoded_in' some digital_entity in obi before split (040907). information_content_entity 'is_encoded_in' some physical_document in obi before split (040907).\n\nPrevious. An information content entity is a non-realizable information entity that 'is encoded in' some digital or physical entity." xsd:string
+property_value: IAO:0000117 "PERSON: Chris Stoeckert" xsd:string
+property_value: IAO:0000119 "IAO" xsd:string
+property_value: IAO:0000119 "OBI_0000142" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000129
+name: version name
+name: version number
+def: "A version number is an information content entity which is a sequence of characters borne by part of each of a class of manufactured products or its packaging and indicates its order within a set of other products having the same name." []
+is_a: IAO:0000028 ! symbol
+property_value: IAO:0000111 "version number" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000116 "Note: we feel that at the moment we are happy with a general version number, and that we will subclass as needed in the future. For example, see 7. genome sequence version" xsd:string
+property_value: IAO:0000117 "GROUP: IAO" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: OBI:0000245
+name: organization
+def: "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000111 "organization" xsd:string
+property_value: IAO:0000112 "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "BP: The definition summarizes long email discussions on the OBI developer, roles, biomaterial and denrie branches. It leaves open if an organization is a material entity or a dependent continuant, as no consensus was reached on that.  The current placement as material is therefore temporary, in order to move forward with development. Here is the entire email summary, on which the definition is based:\n\n1) there are organization_member_roles (president, treasurer, branch\neditor), with individual persons as bearers\n\n2) there are organization_roles (employer, owner, vendor, patent holder)\n\n3) an organization has a charter / rules / bylaws, which specify what roles\nthere are, how they should be realized, and how to modify the\ncharter/rules/bylaws themselves.\n\nIt is debatable what the organization itself is (some kind of dependent\ncontinuant or an aggregate of people). This also determines who/what the\nbearer of organization_roles' are. My personal favorite is still to define\norganization as a kind of 'legal entity', but thinking it through leads to\nall kinds of questions that are clearly outside the scope of OBI.\n\nInterestingly enough, it does not seem to matter much where we place\norganization itself, as long as we can subclass it (University, Corporation,\nGovernment Agency, Hospital), instantiate it (Affymetrix, NCBI, NIH, ISO,\nW3C, University of Oklahoma), and have it play roles.\n\nThis leads to my proposal: We define organization through the statements 1 -\n3 above, but without an 'is a' statement for now. We can leave it in its\ncurrent place in the is_a hierarchy (material entity) or move it up to\n'continuant'. We leave further clarifications to BFO, and close this issue\nfor now." xsd:string
+property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
+property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
+property_value: IAO:0000117 "PERSON: Philippe Rocca-Serra" xsd:string
+property_value: IAO:0000117 "PERSON: Susanna Sansone" xsd:string
+property_value: IAO:0000119 "GROUP: OBI" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: ObsoleteClass
+name: obsolete SWO class
+is_a: owl:DeprecatedClass
+
+[Term]
+id: SWO:0000260
+name: publisher role
+def: "A publisher role is a role borne by an organization or individual in which they are responsible for making software available to a particular consumer group. Such organizations or individuals do need to be involved in the development of the software." []
+is_a: BFO:0000023 ! role
+property_value: IAO:0000119 "James Malone" xsd:string
+
+[Term]
+id: SWO:0000392
+name: software developer role
+def: "Software developer role is a role borne by an organization or individual in which they are responsible for authoring software." []
+is_a: BFO:0000023 ! role
+property_value: IAO:0000119 "James Malone" xsd:string
+
+[Term]
+id: SWO:0000396
+name: software developer organization
+def: "An organization or legal entity (including single person) that is responsible for developing software. Developing includes aspects of design, coding and testing." []
+is_a: OBI:0000245 ! organization
+relationship: RO:0000087 SWO:0000392 ! has_role software developer role
+
+[Term]
+id: SWO:0000397
+name: software publisher organization
+def: "An organization or legal entity (including single person) that is responsible for publishing software. Publishing here includes tasks such as designing and producing physical products, technical customer support, licensing arrangements and marketing." []
+is_a: OBI:0000245 ! organization
+relationship: RO:0000087 SWO:0000260 ! has_role publisher role
+
+[Typedef]
+id: BFO:0000060
+name: preceded by
+comment: Please note that, as stated on one of the RO documentation pages (https://code.google.com/p/obo-relations/wiki/ROAndBFO), some of the relations RO makes use are either uncontroversial (non-temporalized) parts of BFO2, or will be incorporated in the future. In the case of BFO_0000063, it is not currently in BFO2, but may be in the future. The RO ontologists assume this is the transitive form. For a full definition, refer to the inverse of this property, BFO_0000060. (Allyson Lister)
+property_value: http://purl.org/dc/elements/1.1/creator "OBO Foundry" xsd:string
+is_transitive: true
+inverse_of: BFO:0000063 ! followed by
+
+[Typedef]
+id: BFO:0000063
+name: followed by
+def: "The assertion P 'followed by' P1 tells us something about Ps in general: that is, it tells us something about what happened later, given what we know about what happened earlier. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be preceded by some instance of P. Note that assertions using this property only are rather weak. Typically we will be interested in stronger relations, for example in the relation 'directly followed by'." []
+comment: Please note that, as stated on one of the RO documentation pages (https://code.google.com/p/obo-relations/wiki/ROAndBFO), some of the relations RO makes use are either uncontroversial (non-temporalized) parts of BFO2, or will be incorporated in the future. In the case of BFO_0000060, it is not currently in BFO2, but may be in the future. The RO ontologists assume this is the transitive form. (Allyson Lister)
+property_value: http://purl.org/dc/elements/1.1/creator "OBO Foundry" xsd:string
+property_value: IAO:0000119 "Modified by Allyson Lister from the preceded_by (which is the inverse of precedes / 'followed by') definition within RO: http://www.obofoundry.org/ro/ro.owl" xsd:string
+is_transitive: true
+
+[Typedef]
+id: RO:0000087
+name: has_role
+
+[Typedef]
+id: SWO:0000131
+name: directly preceded by
+def: "Entity A is 'directly preceded by' entity B if there are no intermediate entities temporally between the two entities. WIthin SWO this property is mainly used to describe versions of entities such as software." []
+property_value: http://purl.org/dc/elements/1.1/creator "OBO Foundry" xsd:string
+property_value: IAO:0000112 "Microsoft version 2007 is directly preceded by Microsoft version 2003." xsd:string
+property_value: IAO:0000119 "Allyson Lister" xsd:string
+is_a: BFO:0000060 ! preceded by
+inverse_of: SWO:0000132 ! directly followed by
+
+[Typedef]
+id: SWO:0000132
+name: directly followed by
+def: "'directly followed by' is an object property which further specializes the parent 'followed by' property. In the assertion 'C directly followed by C1', says that Cs generally are immediately followed by C1s." []
+property_value: IAO:0000119 "Allyson Lister" xsd:string
+is_a: BFO:0000063 ! followed by
+
