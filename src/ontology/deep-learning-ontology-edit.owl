@@ -1,0 +1,35 @@
+
+Prefix(:=<http://purl.obolibrary.org/obo/deep-learning-ontology.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/deep-learning-ontology.owl>
+
+Import(<http://purl.obolibrary.org/obo/deep-learning-ontology/imports/swo_import.owl>)
+
+
+
+Annotation(dce:title "Deep Learning Ontology")
+Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
+Annotation(dce:description "None")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/DEEP-LEARNING-ONTOLOGY_00000000>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/DEEP-LEARNING-ONTOLOGY_00000000>
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DEEP-LEARNING-ONTOLOGY_00000000> "root node"@en)
+
+
+)
+
