@@ -15,7 +15,10 @@ dlo-src.tsv:
 
 # dlo-component.owl: dlo-src-t.tsv
 dlo-component.owl: dlo-src.tsv
-	robot template --add-prefix 'DLO: https://w3id.org/dlo/' -t $< -o $@
+	robot template \
+	  --add-prefix 'DLO: https://w3id.org/dlo/' \
+	  --add-prefix 'oio: http://www.geneontology.org/formats/oboInOwl#' \
+	  -t $< -o $@
 
 # hacky step for now - but we should treat as a proper component
 deep-learning-ontology-edit.owl: dlo-component.owl
