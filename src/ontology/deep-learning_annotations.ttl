@@ -1,0 +1,12 @@
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix example: <https://github.com/ontodev/robot/examples/> .
+@prefix dc: < http://purl.org/dc/elements/1.1/> .
+@prefix terms: < http://purl.org/dc/terms/>
+
+<http://purl.obolibrary.org/obo/deep-learning-ontology.owl>
+  rdf:type owl:Ontology ;
+  terms:title "Deep Learning Ontology" ;
+  terms:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dc:description "Initial version of a taxonomy and partonomy of Deep Learning networks and layers" .
