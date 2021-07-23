@@ -1,15 +1,20 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/deep-learning-ontology.owl#"
      xml:base="http://purl.obolibrary.org/obo/deep-learning-ontology.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/deep-learning-ontology.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/deep-learning-ontology/releases/2021-07-23/deep-learning-ontology.owl"/>
+        <dc:description>Initial version of a taxonomy and partonomy of Deep Learning networks and layers</dc:description>
+        <dc:title>Deep Learning Ontology</dc:title>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-07-23</owl:versionInfo>
     </owl:Ontology>
     

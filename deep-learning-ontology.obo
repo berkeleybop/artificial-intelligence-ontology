@@ -1,6 +1,9 @@
 format-version: 1.2
 data-version: releases/2021-07-23
 ontology: deep-learning-ontology
+property_value: http://purl.org/dc/elements/1.1/description "Initial version of a taxonomy and partonomy of Deep Learning networks and layers" xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Deep Learning Ontology" xsd:string
+property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
 property_value: owl:versionInfo "2021-07-23" xsd:string
 
 [Term]
