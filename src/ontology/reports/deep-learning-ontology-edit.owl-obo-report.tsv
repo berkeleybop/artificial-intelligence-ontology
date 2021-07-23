@@ -1,0 +1,64 @@
+Level	Rule Name	Subject	Property	Value
+WARN	duplicate_exact_synonym	word2vec-CBOW	oboInOwl:hasExactSynonym	w2v
+WARN	duplicate_exact_synonym	word2vec-SkipGram	oboInOwl:hasExactSynonym	w2v
+WARN	duplicate_exact_synonym	node2vec-CBOW	oboInOwl:hasExactSynonym	n2v
+WARN	duplicate_exact_synonym	node2vec-SkipGram	oboInOwl:hasExactSynonym	n2v
+WARN	duplicate_label_synonym	Transformer	oboInOwl:hasExactSynonym	Transformer
+WARN	missing_definition	Auto Encoder	IAO:0000115	
+WARN	missing_definition	Artificial Neural Network	IAO:0000115	
+WARN	missing_definition	Addition layer	IAO:0000115	
+WARN	missing_definition	BN layer	IAO:0000115	
+WARN	missing_definition	Backfed Input layer	IAO:0000115	
+WARN	missing_definition	Convolutional layer	IAO:0000115	
+WARN	missing_definition	Denoising Auto Encoder	IAO:0000115	
+WARN	missing_definition	Deep Belief Network	IAO:0000115	
+WARN	missing_definition	Deep Convolutional Inverse Graphics Network	IAO:0000115	
+WARN	missing_definition	Deep Convolutional Network	IAO:0000115	
+WARN	missing_definition	Deep Feed Foward	IAO:0000115	
+WARN	missing_definition	Deep Neural Network	IAO:0000115	
+WARN	missing_definition	Extreme Learning Machine	IAO:0000115	
+WARN	missing_definition	Echo State Network	IAO:0000115	
+WARN	missing_definition	Feed Back Network	IAO:0000115	
+WARN	missing_definition	Feed Forward Network	IAO:0000115	
+WARN	missing_definition	Generative Adversarial Network	IAO:0000115	
+WARN	missing_definition	Graph Convolutional Network	IAO:0000115	
+WARN	missing_definition	Gated Recurrent Unit	IAO:0000115	
+WARN	missing_definition	Hidden layer	IAO:0000115	
+WARN	missing_definition	Input layer	IAO:0000115	
+WARN	missing_definition	Kohonen Network	IAO:0000115	
+WARN	missing_definition	Kernel layer	IAO:0000115	
+WARN	missing_definition	Liquid State Machine	IAO:0000115	
+WARN	missing_definition	Long Short Term Memory	IAO:0000115	
+WARN	missing_definition	Layer	IAO:0000115	
+WARN	missing_definition	Markov Chain	IAO:0000115	
+WARN	missing_definition	Multi Layer Perceptron	IAO:0000115	
+WARN	missing_definition	Matched Output-Input layer	IAO:0000115	
+WARN	missing_definition	Memory Cell layer	IAO:0000115	
+WARN	missing_definition	Network	IAO:0000115	
+WARN	missing_definition	Niosy Input layer	IAO:0000115	
+WARN	missing_definition	Output layer	IAO:0000115	
+WARN	missing_definition	Probabilistic Hidden layer	IAO:0000115	
+WARN	missing_definition	Restricted Boltzmann Machine	IAO:0000115	
+WARN	missing_definition	Radial Basis Network	IAO:0000115	
+WARN	missing_definition	Recurrent Network	IAO:0000115	
+WARN	missing_definition	ReLU layer	IAO:0000115	
+WARN	missing_definition	Recurrent Neural Network	IAO:0000115	
+WARN	missing_definition	Recursive Neural Network	IAO:0000115	
+WARN	missing_definition	Recurrent layer	IAO:0000115	
+WARN	missing_definition	Residual Neural Network	IAO:0000115	
+WARN	missing_definition	Sparse AE	IAO:0000115	
+WARN	missing_definition	Perceptron	IAO:0000115	
+WARN	missing_definition	Support Vector Machine	IAO:0000115	
+WARN	missing_definition	Spiking Hidden layer	IAO:0000115	
+WARN	missing_definition	Transformer	IAO:0000115	
+WARN	missing_definition	Unsupervised Pretrained Networks	IAO:0000115	
+WARN	missing_definition	Variational Auto Encoder	IAO:0000115	
+WARN	missing_definition	Weight layer	IAO:0000115	
+WARN	missing_definition	node2vec-CBOW	IAO:0000115	
+WARN	missing_definition	node2vec-SkipGram	IAO:0000115	
+WARN	missing_definition	word2vec-CBOW	IAO:0000115	
+WARN	missing_definition	word2vec-SkipGram	IAO:0000115	
+INFO	lowercase_definition	Deconvolutional Network	IAO:0000115	reversed DCN
+INFO	lowercase_definition	Symmetrically Connected Networks	IAO:0000115	like recurrent networks, but the connections between units are symmetrical (they have the same weight in both directions)
+INFO	missing_superclass	Layer	rdfs:subClassOf	
+INFO	missing_superclass	Network	rdfs:subClassOf	

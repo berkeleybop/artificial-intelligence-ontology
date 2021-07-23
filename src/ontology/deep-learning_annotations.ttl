@@ -7,6 +7,6 @@
 
 <http://purl.obolibrary.org/obo/deep-learning-ontology.owl>
   rdf:type owl:Ontology ;
-  terms:title "Deep Learning Ontology" ;
+  dc:title "Deep Learning Ontology" ;
   terms:license <http://creativecommons.org/licenses/by/4.0/> ;
   dc:description "Initial version of a taxonomy and partonomy of Deep Learning networks and layers" .
