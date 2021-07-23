@@ -3,7 +3,7 @@
      xml:base="http://www.w3.org/2002/07/owl"
      xmlns:DLO="https://w3id.org/dlo/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:oio="oio:"
+     xmlns:oio="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -30,15 +30,15 @@
     
 
 
-    <!-- oio:hasDbXref -->
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
-    <AnnotationProperty rdf:about="oio:hasDbXref"/>
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
     
 
 
-    <!-- oio:hasExactSynonym -->
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
-    <AnnotationProperty rdf:about="oio:hasExactSynonym"/>
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
     
 
 
@@ -57,9 +57,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/AE">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/UPN"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AE</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auto Encoder</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AE</oio:hasExactSynonym>
     </Class>
     
 
@@ -68,9 +68,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/ANN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Network"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artificial Neural Network</rdfs:label>
         <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANN</oio:hasExactSynonym>
         <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</oio:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artificial Neural Network</rdfs:label>
     </Class>
     
 
@@ -89,9 +89,9 @@
     <Class rdf:about="https://w3id.org/dlo/BM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/SCN"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Symmetrically connected networks with hidden units</obo:IAO_0000115>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BM</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backfed Input, Probabilistic Hidden</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boltzmann Machine</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BM</oio:hasExactSynonym>
     </Class>
     
 
@@ -118,8 +118,8 @@
 
     <Class rdf:about="https://w3id.org/dlo/Convolutional_layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Layer"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolutional layer</rdfs:label>
         <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pool</oio:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolutional layer</rdfs:label>
     </Class>
     
 
@@ -128,9 +128,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/DAE">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/AE"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DAE</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Noisy Input, Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denoising Auto Encoder</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DAE</oio:hasExactSynonym>
     </Class>
     
 
@@ -139,9 +139,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/DBN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/UPN"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DBN</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backfed Input, Probabilistic Hidden, Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Belief Network</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DBN</oio:hasExactSynonym>
     </Class>
     
 
@@ -150,9 +150,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/DCIGN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/AE"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DCIGN</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Kernel, Convolutional/Pool, Probabilistic Hidden, Convolutional/Pool, Kernel, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Convolutional Inverse Graphics Network</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DCIGN</oio:hasExactSynonym>
     </Class>
     
 
@@ -161,11 +161,11 @@
 
     <Class rdf:about="https://w3id.org/dlo/DCN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/DNN"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Kernel, Convolutional/Pool, Hidden, Output</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Convolutional Network</rdfs:label>
         <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CNN</oio:hasExactSynonym>
         <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolutional Neural Network</oio:hasExactSynonym>
         <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DCN</oio:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Kernel, Convolutional/Pool, Hidden, Output</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Convolutional Network</rdfs:label>
     </Class>
     
 
@@ -174,9 +174,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/DFF">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/DNN"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DFF</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Feed Foward</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DFF</oio:hasExactSynonym>
     </Class>
     
 
@@ -186,9 +186,9 @@
     <Class rdf:about="https://w3id.org/dlo/DN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/DNN"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed DCN</obo:IAO_0000115>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DN</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Kernel, Convolutional/Pool, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deconvolutional Network</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DN</oio:hasExactSynonym>
     </Class>
     
 
@@ -197,8 +197,8 @@
 
     <Class rdf:about="https://w3id.org/dlo/DNN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/ANN"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Neural Network</rdfs:label>
         <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNN</oio:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Neural Network</rdfs:label>
     </Class>
     
 
@@ -208,9 +208,9 @@
     <Class rdf:about="https://w3id.org/dlo/DRN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/RecNN"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNN without delay</obo:IAO_0000115>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DRN</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Residual Network</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DRN</oio:hasExactSynonym>
     </Class>
     
 
@@ -219,9 +219,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/ELM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/FBN"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELM</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extreme Learning Machine</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELM</oio:hasExactSynonym>
     </Class>
     
 
@@ -230,9 +230,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/ESN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/RecNN"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ESN</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Recurrent, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Echo State Network</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ESN</oio:hasExactSynonym>
     </Class>
     
 
@@ -241,9 +241,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/FBN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/ANN"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBN</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output, Hidden</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feed Back Network</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBN</oio:hasExactSynonym>
     </Class>
     
 
@@ -252,9 +252,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/FFN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/ANN"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FFN</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feed Forward Network</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FFN</oio:hasExactSynonym>
     </Class>
     
 
@@ -263,9 +263,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/GAN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/UPN"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAN</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backfed Input, Hidden, Matched Output-Input, Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generative Adversarial Network</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAN</oio:hasExactSynonym>
     </Class>
     
 
@@ -274,9 +274,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/GCN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/DNN"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GCN</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph Convolutional Network</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GCN</oio:hasExactSynonym>
     </Class>
     
 
@@ -286,9 +286,9 @@
     <Class rdf:about="https://w3id.org/dlo/GPCN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/GCN"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GCN + policy network</obo:IAO_0000115>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPCN</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Hidden, Policy, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph Convolutional Policy Network</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPCN</oio:hasExactSynonym>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="https://w3id.org/dlo/GPCN"/>
@@ -303,9 +303,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/GRU">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/LSTM"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRU</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Memory Cell, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gated Recurrent Unit</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRU</oio:hasExactSynonym>
     </Class>
     
 
@@ -315,9 +315,9 @@
     <Class rdf:about="https://w3id.org/dlo/HN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/SCN"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Symmetrically connected networks without hidden units</obo:IAO_0000115>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HN</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backfed input</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hopfield Network</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HN</oio:hasExactSynonym>
     </Class>
     
 
@@ -344,9 +344,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/KN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Network"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KN</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kohonen Network</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KN</oio:hasExactSynonym>
     </Class>
     
 
@@ -364,9 +364,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/LSM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Network"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LSM</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Spiking Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquid State Machine</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LSM</oio:hasExactSynonym>
     </Class>
     
 
@@ -375,9 +375,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/LSTM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/RecNN"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LSTM</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Memory Cell, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Long Short Term Memory</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LSTM</oio:hasExactSynonym>
     </Class>
     
 
@@ -394,9 +394,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/MC">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Network"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MC</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probalistic Hidden</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Markov Chain</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MC</oio:hasExactSynonym>
     </Class>
     
 
@@ -405,9 +405,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/MLP">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/FFN"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MLP</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multi Layer Perceptron</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MLP</oio:hasExactSynonym>
     </Class>
     
 
@@ -436,9 +436,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/FFN"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/LSTM"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turing-complete Neural Network; FF with memory cells extracted, abstraction over LSTM</obo:IAO_0000115>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NTM</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Spiking Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neural Turing Machine</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NTM</oio:hasExactSynonym>
     </Class>
     
 
@@ -482,9 +482,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/RBM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/BM"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RBM</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backfed Input, Probabilistic Hidden</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restricted Boltzmann Machine</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RBM</oio:hasExactSynonym>
     </Class>
     
 
@@ -493,9 +493,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/RBN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/FFN"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RBN</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radial Basis Network</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RBN</oio:hasExactSynonym>
     </Class>
     
 
@@ -504,8 +504,8 @@
 
     <Class rdf:about="https://w3id.org/dlo/RN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Network"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recurrent Network</rdfs:label>
         <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RN</oio:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recurrent Network</rdfs:label>
     </Class>
     
 
@@ -523,9 +523,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/RecNN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/DNN"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RecNN</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Memory Cell, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recurrent Neural Network</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RecNN</oio:hasExactSynonym>
     </Class>
     
 
@@ -534,8 +534,8 @@
 
     <Class rdf:about="https://w3id.org/dlo/RecuNN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/DNN"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recursive Neural Network</rdfs:label>
         <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RecuNN</oio:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recursive Neural Network</rdfs:label>
     </Class>
     
 
@@ -553,11 +553,11 @@
 
     <Class rdf:about="https://w3id.org/dlo/ResNN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/DNN"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Weight, BN, ReLU, Weight, BN, Addition, ReLU</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Residual Neural Network</rdfs:label>
         <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ResNN</oio:hasExactSynonym>
         <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ResNet</oio:hasExactSynonym>
         <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deep residual network</oio:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Weight, BN, ReLU, Weight, BN, Addition, ReLU</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Residual Neural Network</rdfs:label>
     </Class>
     
 
@@ -566,9 +566,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/SAE">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/AE"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAE</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sparse AE</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAE</oio:hasExactSynonym>
     </Class>
     
 
@@ -578,8 +578,8 @@
     <Class rdf:about="https://w3id.org/dlo/SCN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Network"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">like recurrent networks, but the connections between units are symmetrical (they have the same weight in both directions)</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Symmetrically Connected Networks</rdfs:label>
         <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCN</oio:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Symmetrically Connected Networks</rdfs:label>
     </Class>
     
 
@@ -588,10 +588,10 @@
 
     <Class rdf:about="https://w3id.org/dlo/SLP">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/ANN"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Output</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perceptron</rdfs:label>
         <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLP</oio:hasExactSynonym>
         <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Single Layer Perceptron</oio:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Output</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perceptron</rdfs:label>
     </Class>
     
 
@@ -600,9 +600,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/SVM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Network"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SVM</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Support Vector Machine</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SVM</oio:hasExactSynonym>
     </Class>
     
 
@@ -620,8 +620,8 @@
 
     <Class rdf:about="https://w3id.org/dlo/Transformer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/DNN"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transformer</rdfs:label>
         <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transformer</oio:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transformer</rdfs:label>
     </Class>
     
 
@@ -630,8 +630,8 @@
 
     <Class rdf:about="https://w3id.org/dlo/UPN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Network"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unsupervised Pretrained Networks</rdfs:label>
         <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UPN</oio:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unsupervised Pretrained Networks</rdfs:label>
     </Class>
     
 
@@ -640,9 +640,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/VAE">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/AE"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VAE</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Probabilistic Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Variational Auto Encoder</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VAE</oio:hasExactSynonym>
     </Class>
     
 
@@ -660,9 +660,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/n2v_CBOW">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/w2v_CBOW"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n2v</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">node2vec-CBOW</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n2v</oio:hasExactSynonym>
     </Class>
     
 
@@ -671,9 +671,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/n2v_SkipGram">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/w2v_SkipGram"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n2v</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">node2vec-SkipGram</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n2v</oio:hasExactSynonym>
     </Class>
     
 
@@ -682,9 +682,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/w2v_CBOW">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/ANN"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">w2v</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">word2vec-CBOW</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">w2v</oio:hasExactSynonym>
     </Class>
     
 
@@ -693,9 +693,9 @@
 
     <Class rdf:about="https://w3id.org/dlo/w2v_SkipGram">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/ANN"/>
+        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">w2v</oio:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">word2vec-SkipGram</rdfs:label>
-        <oio:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">w2v</oio:hasExactSynonym>
     </Class>
 </rdf:RDF>
 

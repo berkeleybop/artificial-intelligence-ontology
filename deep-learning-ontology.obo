@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: releases/2021-07-22
+data-version: releases/2021-07-23
 ontology: deep-learning-ontology
-property_value: owl:versionInfo "2021-07-22" xsd:string
+property_value: owl:versionInfo "2021-07-23" xsd:string
 
 [Term]
 id: Addition:layer
@@ -16,8 +16,8 @@ is_a: https://w3id.org/dlo/Layer ! Layer
 [Term]
 id: Convolutional:layer
 name: Convolutional layer
+synonym: "Pool" EXACT []
 is_a: https://w3id.org/dlo/Layer ! Layer
-property_value: oio:hasExactSynonym "Pool" xsd:string
 
 [Term]
 id: Hidden:layer
@@ -58,23 +58,23 @@ is_a: https://w3id.org/dlo/Layer ! Layer
 id: https://w3id.org/dlo/AE
 name: Auto Encoder
 comment: Input, Hidden, Matched Output-Input
+synonym: "AE" EXACT []
 is_a: https://w3id.org/dlo/UPN ! Unsupervised Pretrained Networks
-property_value: oio:hasExactSynonym "AE" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/ANN
 name: Artificial Neural Network
+synonym: "ANN" EXACT []
+synonym: "NN" EXACT []
 is_a: https://w3id.org/dlo/Network ! Network
-property_value: oio:hasExactSynonym "ANN" xsd:string
-property_value: oio:hasExactSynonym "NN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/BM
 name: Boltzmann Machine
 def: "Symmetrically connected networks with hidden units" []
 comment: Backfed Input, Probabilistic Hidden
+synonym: "BM" EXACT []
 is_a: https://w3id.org/dlo/SCN ! Symmetrically Connected Networks
-property_value: oio:hasExactSynonym "BM" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/Backfed_Input_layer
@@ -85,146 +85,146 @@ is_a: https://w3id.org/dlo/Layer ! Layer
 id: https://w3id.org/dlo/DAE
 name: Denoising Auto Encoder
 comment: Noisy Input, Hidden, Matched Output-Input
+synonym: "DAE" EXACT []
 is_a: https://w3id.org/dlo/AE ! Auto Encoder
-property_value: oio:hasExactSynonym "DAE" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/DBN
 name: Deep Belief Network
 comment: Backfed Input, Probabilistic Hidden, Hidden, Matched Output-Input
+synonym: "DBN" EXACT []
 is_a: https://w3id.org/dlo/UPN ! Unsupervised Pretrained Networks
-property_value: oio:hasExactSynonym "DBN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/DCIGN
 name: Deep Convolutional Inverse Graphics Network
 comment: Input, Kernel, Convolutional/Pool, Probabilistic Hidden, Convolutional/Pool, Kernel, Output
+synonym: "DCIGN" EXACT []
 is_a: https://w3id.org/dlo/AE ! Auto Encoder
-property_value: oio:hasExactSynonym "DCIGN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/DCN
 name: Deep Convolutional Network
 comment: Input, Kernel, Convolutional/Pool, Hidden, Output
+synonym: "CNN" EXACT []
+synonym: "Convolutional Neural Network" EXACT []
+synonym: "DCN" EXACT []
 is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
-property_value: oio:hasExactSynonym "CNN" xsd:string
-property_value: oio:hasExactSynonym "Convolutional Neural Network" xsd:string
-property_value: oio:hasExactSynonym "DCN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/DFF
 name: Deep Feed Foward
 comment: Input, Hidden, Output
+synonym: "DFF" EXACT []
 is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
-property_value: oio:hasExactSynonym "DFF" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/DN
 name: Deconvolutional Network
 def: "reversed DCN" []
 comment: Input, Kernel, Convolutional/Pool, Output
+synonym: "DN" EXACT []
 is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
-property_value: oio:hasExactSynonym "DN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/DNN
 name: Deep Neural Network
+synonym: "DNN" EXACT []
 is_a: https://w3id.org/dlo/ANN ! Artificial Neural Network
-property_value: oio:hasExactSynonym "DNN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/DRN
 name: Deep Residual Network
 def: "RNN without delay" []
 comment: Input, Hidden, Output
+synonym: "DRN" EXACT []
 is_a: https://w3id.org/dlo/RecNN ! Recurrent Neural Network
-property_value: oio:hasExactSynonym "DRN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/ELM
 name: Extreme Learning Machine
 comment: Input, Hidden, Output
+synonym: "ELM" EXACT []
 is_a: https://w3id.org/dlo/FBN ! Feed Back Network
-property_value: oio:hasExactSynonym "ELM" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/ESN
 name: Echo State Network
 comment: Input, Recurrent, Output
+synonym: "ESN" EXACT []
 is_a: https://w3id.org/dlo/RecNN ! Recurrent Neural Network
-property_value: oio:hasExactSynonym "ESN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/FBN
 name: Feed Back Network
 comment: Input, Hidden, Output, Hidden
+synonym: "FBN" EXACT []
 is_a: https://w3id.org/dlo/ANN ! Artificial Neural Network
-property_value: oio:hasExactSynonym "FBN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/FFN
 name: Feed Forward Network
 comment: Input, Hidden, Output
+synonym: "FFN" EXACT []
 is_a: https://w3id.org/dlo/ANN ! Artificial Neural Network
-property_value: oio:hasExactSynonym "FFN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/GAN
 name: Generative Adversarial Network
 comment: Backfed Input, Hidden, Matched Output-Input, Hidden, Matched Output-Input
+synonym: "GAN" EXACT []
 is_a: https://w3id.org/dlo/UPN ! Unsupervised Pretrained Networks
-property_value: oio:hasExactSynonym "GAN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/GCN
 name: Graph Convolutional Network
 comment: Input, Hidden, Hidden, Output
+synonym: "GCN" EXACT []
 is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
-property_value: oio:hasExactSynonym "GCN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/GPCN
 name: Graph Convolutional Policy Network
-def: "GCN + policy network" [] {oio:hasDbXref="https://arxiv.org/abs/1806.02473"}
+def: "GCN + policy network" [https://arxiv.org/abs/1806.02473]
 comment: Input, Hidden, Hidden, Policy, Output
+synonym: "GPCN" EXACT []
 is_a: https://w3id.org/dlo/GCN ! Graph Convolutional Network
-property_value: oio:hasExactSynonym "GPCN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/GRU
 name: Gated Recurrent Unit
 comment: Input, Memory Cell, Output
+synonym: "GRU" EXACT []
 is_a: https://w3id.org/dlo/LSTM ! Long Short Term Memory
-property_value: oio:hasExactSynonym "GRU" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/HN
 name: Hopfield Network
 def: "Symmetrically connected networks without hidden units" []
 comment: Backfed input
+synonym: "HN" EXACT []
 is_a: https://w3id.org/dlo/SCN ! Symmetrically Connected Networks
-property_value: oio:hasExactSynonym "HN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/KN
 name: Kohonen Network
 comment: Input, Hidden
+synonym: "KN" EXACT []
 is_a: https://w3id.org/dlo/Network ! Network
-property_value: oio:hasExactSynonym "KN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/LSM
 name: Liquid State Machine
 comment: Input, Spiking Hidden, Output
+synonym: "LSM" EXACT []
 is_a: https://w3id.org/dlo/Network ! Network
-property_value: oio:hasExactSynonym "LSM" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/LSTM
 name: Long Short Term Memory
 comment: Input, Memory Cell, Output
+synonym: "LSTM" EXACT []
 is_a: https://w3id.org/dlo/RecNN ! Recurrent Neural Network
-property_value: oio:hasExactSynonym "LSTM" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/Layer
@@ -234,15 +234,15 @@ name: Layer
 id: https://w3id.org/dlo/MC
 name: Markov Chain
 comment: Probalistic Hidden
+synonym: "MC" EXACT []
 is_a: https://w3id.org/dlo/Network ! Network
-property_value: oio:hasExactSynonym "MC" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/MLP
 name: Multi Layer Perceptron
 comment: Input, Hidden, Output
+synonym: "MLP" EXACT []
 is_a: https://w3id.org/dlo/FFN ! Feed Forward Network
-property_value: oio:hasExactSynonym "MLP" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/Matched_Output-Input_layer
@@ -259,9 +259,9 @@ id: https://w3id.org/dlo/NTM
 name: Neural Turing Machine
 def: "Turing-complete Neural Network; FF with memory cells extracted, abstraction over LSTM" []
 comment: Input, Hidden, Spiking Hidden, Output
+synonym: "NTM" EXACT []
 is_a: https://w3id.org/dlo/FFN ! Feed Forward Network
 is_a: https://w3id.org/dlo/LSTM ! Long Short Term Memory
-property_value: oio:hasExactSynonym "NTM" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/Network
@@ -281,72 +281,72 @@ is_a: https://w3id.org/dlo/Layer ! Layer
 id: https://w3id.org/dlo/RBM
 name: Restricted Boltzmann Machine
 comment: Backfed Input, Probabilistic Hidden
+synonym: "RBM" EXACT []
 is_a: https://w3id.org/dlo/BM ! Boltzmann Machine
-property_value: oio:hasExactSynonym "RBM" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/RBN
 name: Radial Basis Network
 comment: Input, Hidden, Output
+synonym: "RBN" EXACT []
 is_a: https://w3id.org/dlo/FFN ! Feed Forward Network
-property_value: oio:hasExactSynonym "RBN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/RN
 name: Recurrent Network
+synonym: "RN" EXACT []
 is_a: https://w3id.org/dlo/Network ! Network
-property_value: oio:hasExactSynonym "RN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/RecNN
 name: Recurrent Neural Network
 comment: Input, Memory Cell, Output
+synonym: "RecNN" EXACT []
 is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
-property_value: oio:hasExactSynonym "RecNN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/RecuNN
 name: Recursive Neural Network
+synonym: "RecuNN" EXACT []
 is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
-property_value: oio:hasExactSynonym "RecuNN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/ResNN
 name: Residual Neural Network
 comment: Input, Weight, BN, ReLU, Weight, BN, Addition, ReLU
+synonym: "deep residual network" EXACT []
+synonym: "ResNet" EXACT []
+synonym: "ResNN" EXACT []
 is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
-property_value: oio:hasExactSynonym "deep residual network" xsd:string
-property_value: oio:hasExactSynonym "ResNet" xsd:string
-property_value: oio:hasExactSynonym "ResNN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/SAE
 name: Sparse AE
 comment: Input, Hidden, Matched Output-Input
+synonym: "SAE" EXACT []
 is_a: https://w3id.org/dlo/AE ! Auto Encoder
-property_value: oio:hasExactSynonym "SAE" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/SCN
 name: Symmetrically Connected Networks
 def: "like recurrent networks, but the connections between units are symmetrical (they have the same weight in both directions)" []
+synonym: "SCN" EXACT []
 is_a: https://w3id.org/dlo/Network ! Network
-property_value: oio:hasExactSynonym "SCN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/SLP
 name: Perceptron
 comment: Input, Output
+synonym: "Single Layer Perceptron" EXACT []
+synonym: "SLP" EXACT []
 is_a: https://w3id.org/dlo/ANN ! Artificial Neural Network
-property_value: oio:hasExactSynonym "Single Layer Perceptron" xsd:string
-property_value: oio:hasExactSynonym "SLP" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/SVM
 name: Support Vector Machine
 comment: Input, Hidden, Output
+synonym: "SVM" EXACT []
 is_a: https://w3id.org/dlo/Network ! Network
-property_value: oio:hasExactSynonym "SVM" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/Spiking_Hidden_layer
@@ -356,47 +356,47 @@ is_a: https://w3id.org/dlo/Layer ! Layer
 [Term]
 id: https://w3id.org/dlo/Transformer
 name: Transformer
+synonym: "Transformer" EXACT []
 is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
-property_value: oio:hasExactSynonym "Transformer" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/UPN
 name: Unsupervised Pretrained Networks
+synonym: "UPN" EXACT []
 is_a: https://w3id.org/dlo/Network ! Network
-property_value: oio:hasExactSynonym "UPN" xsd:string
 
 [Term]
 id: https://w3id.org/dlo/VAE
 name: Variational Auto Encoder
 comment: Input, Probabilistic Hidden, Matched Output-Input
+synonym: "VAE" EXACT []
 is_a: https://w3id.org/dlo/AE ! Auto Encoder
-property_value: oio:hasExactSynonym "VAE" xsd:string
 
 [Term]
 id: n2v:CBOW
 name: node2vec-CBOW
 comment: Input, Hidden, Output
+synonym: "n2v" EXACT []
 is_a: w2v:CBOW ! word2vec-CBOW
-property_value: oio:hasExactSynonym "n2v" xsd:string
 
 [Term]
 id: n2v:SkipGram
 name: node2vec-SkipGram
 comment: Input, Hidden, Output
+synonym: "n2v" EXACT []
 is_a: w2v:SkipGram ! word2vec-SkipGram
-property_value: oio:hasExactSynonym "n2v" xsd:string
 
 [Term]
 id: w2v:CBOW
 name: word2vec-CBOW
 comment: Input, Hidden, Output
+synonym: "w2v" EXACT []
 is_a: https://w3id.org/dlo/ANN ! Artificial Neural Network
-property_value: oio:hasExactSynonym "w2v" xsd:string
 
 [Term]
 id: w2v:SkipGram
 name: word2vec-SkipGram
 comment: Input, Hidden, Output
+synonym: "w2v" EXACT []
 is_a: https://w3id.org/dlo/ANN ! Artificial Neural Network
-property_value: oio:hasExactSynonym "w2v" xsd:string
 
