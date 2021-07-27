@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: releases/2021-07-23
+data-version: releases/2021-07-27
 ontology: deep-learning-ontology
 property_value: http://purl.org/dc/elements/1.1/description "Initial version of a taxonomy and partonomy of Deep Learning networks and layers" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Deep Learning Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2021-07-23" xsd:string
+property_value: owl:versionInfo "2021-07-27" xsd:string
 
 [Term]
 id: Addition:layer
@@ -74,7 +74,7 @@ is_a: https://w3id.org/dlo/Network ! Network
 [Term]
 id: https://w3id.org/dlo/BM
 name: Boltzmann Machine
-def: "Symmetrically connected networks with hidden units" []
+def: "Symmetrically connected networks with hidden units." []
 comment: Backfed Input, Probabilistic Hidden
 synonym: "BM" EXACT []
 is_a: https://w3id.org/dlo/SCN ! Symmetrically Connected Networks
@@ -124,7 +124,7 @@ is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
 [Term]
 id: https://w3id.org/dlo/DN
 name: Deconvolutional Network
-def: "reversed DCN" []
+def: "A DN is a reversed DCN." []
 comment: Input, Kernel, Convolutional/Pool, Output
 synonym: "DN" EXACT []
 is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
@@ -138,7 +138,7 @@ is_a: https://w3id.org/dlo/ANN ! Artificial Neural Network
 [Term]
 id: https://w3id.org/dlo/DRN
 name: Deep Residual Network
-def: "RNN without delay" []
+def: "RNN without delay." []
 comment: Input, Hidden, Output
 synonym: "DRN" EXACT []
 is_a: https://w3id.org/dlo/RecNN ! Recurrent Neural Network
@@ -188,7 +188,7 @@ is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
 [Term]
 id: https://w3id.org/dlo/GPCN
 name: Graph Convolutional Policy Network
-def: "GCN + policy network" [https://arxiv.org/abs/1806.02473]
+def: "GCN + policy network." [https://arxiv.org/abs/1806.02473]
 comment: Input, Hidden, Hidden, Policy, Output
 synonym: "GPCN" EXACT []
 is_a: https://w3id.org/dlo/GCN ! Graph Convolutional Network
@@ -203,7 +203,7 @@ is_a: https://w3id.org/dlo/LSTM ! Long Short Term Memory
 [Term]
 id: https://w3id.org/dlo/HN
 name: Hopfield Network
-def: "Symmetrically connected networks without hidden units" []
+def: "Symmetrically connected networks without hidden units." []
 comment: Backfed input
 synonym: "HN" EXACT []
 is_a: https://w3id.org/dlo/SCN ! Symmetrically Connected Networks
@@ -260,7 +260,7 @@ is_a: https://w3id.org/dlo/Layer ! Layer
 [Term]
 id: https://w3id.org/dlo/NTM
 name: Neural Turing Machine
-def: "Turing-complete Neural Network; FF with memory cells extracted, abstraction over LSTM" []
+def: "Turing-complete Neural Network; FF with memory cells extracted, abstraction over LSTM." []
 comment: Input, Hidden, Spiking Hidden, Output
 synonym: "NTM" EXACT []
 is_a: https://w3id.org/dlo/FFN ! Feed Forward Network
@@ -332,7 +332,7 @@ is_a: https://w3id.org/dlo/AE ! Auto Encoder
 [Term]
 id: https://w3id.org/dlo/SCN
 name: Symmetrically Connected Networks
-def: "like recurrent networks, but the connections between units are symmetrical (they have the same weight in both directions)" []
+def: "Like recurrent networks, but the connections between units are symmetrical (they have the same weight in both directions)." []
 synonym: "SCN" EXACT []
 is_a: https://w3id.org/dlo/Network ! Network
 
@@ -359,7 +359,6 @@ is_a: https://w3id.org/dlo/Layer ! Layer
 [Term]
 id: https://w3id.org/dlo/Transformer
 name: Transformer
-synonym: "Transformer" EXACT []
 is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
 
 [Term]
@@ -379,27 +378,27 @@ is_a: https://w3id.org/dlo/AE ! Auto Encoder
 id: n2v:CBOW
 name: node2vec-CBOW
 comment: Input, Hidden, Output
-synonym: "n2v" EXACT []
+synonym: "n2v-CBOW" EXACT []
 is_a: w2v:CBOW ! word2vec-CBOW
 
 [Term]
 id: n2v:SkipGram
 name: node2vec-SkipGram
 comment: Input, Hidden, Output
-synonym: "n2v" EXACT []
+synonym: "n2v-SkipGram" EXACT []
 is_a: w2v:SkipGram ! word2vec-SkipGram
 
 [Term]
 id: w2v:CBOW
 name: word2vec-CBOW
 comment: Input, Hidden, Output
-synonym: "w2v" EXACT []
+synonym: "w2v-CBOW" EXACT []
 is_a: https://w3id.org/dlo/ANN ! Artificial Neural Network
 
 [Term]
 id: w2v:SkipGram
 name: word2vec-SkipGram
 comment: Input, Hidden, Output
-synonym: "w2v" EXACT []
+synonym: "w2v-SkipGram" EXACT []
 is_a: https://w3id.org/dlo/ANN ! Artificial Neural Network
 

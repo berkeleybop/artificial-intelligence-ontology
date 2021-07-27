@@ -11,11 +11,11 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/deep-learning-ontology.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/deep-learning-ontology/releases/2021-07-23/deep-learning-ontology.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/deep-learning-ontology/releases/2021-07-27/deep-learning-ontology.owl"/>
         <dc:description>Initial version of a taxonomy and partonomy of Deep Learning networks and layers</dc:description>
         <dc:title>Deep Learning Ontology</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-07-23</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-07-27</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -95,7 +95,7 @@
 
     <owl:Class rdf:about="https://w3id.org/dlo/BM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/SCN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Symmetrically connected networks with hidden units</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Symmetrically connected networks with hidden units.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BM</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backfed Input, Probabilistic Hidden</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boltzmann Machine</rdfs:label>
@@ -192,7 +192,7 @@
 
     <owl:Class rdf:about="https://w3id.org/dlo/DN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/DNN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed DCN</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DN is a reversed DCN.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DN</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Kernel, Convolutional/Pool, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deconvolutional Network</rdfs:label>
@@ -214,7 +214,7 @@
 
     <owl:Class rdf:about="https://w3id.org/dlo/DRN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/RecNN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNN without delay</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNN without delay.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DRN</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Residual Network</rdfs:label>
@@ -292,7 +292,7 @@
 
     <owl:Class rdf:about="https://w3id.org/dlo/GPCN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/GCN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GCN + policy network</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GCN + policy network.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPCN</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Hidden, Policy, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph Convolutional Policy Network</rdfs:label>
@@ -300,7 +300,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/dlo/GPCN"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GCN + policy network</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GCN + policy network.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://arxiv.org/abs/1806.02473</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -321,7 +321,7 @@
 
     <owl:Class rdf:about="https://w3id.org/dlo/HN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/SCN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Symmetrically connected networks without hidden units</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Symmetrically connected networks without hidden units.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HN</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backfed input</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hopfield Network</rdfs:label>
@@ -442,7 +442,7 @@
     <owl:Class rdf:about="https://w3id.org/dlo/NTM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/FFN"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/LSTM"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turing-complete Neural Network; FF with memory cells extracted, abstraction over LSTM</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turing-complete Neural Network; FF with memory cells extracted, abstraction over LSTM.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NTM</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Spiking Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neural Turing Machine</rdfs:label>
@@ -584,7 +584,7 @@
 
     <owl:Class rdf:about="https://w3id.org/dlo/SCN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Network"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">like recurrent networks, but the connections between units are symmetrical (they have the same weight in both directions)</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Like recurrent networks, but the connections between units are symmetrical (they have the same weight in both directions).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCN</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Symmetrically Connected Networks</rdfs:label>
     </owl:Class>
@@ -627,7 +627,6 @@
 
     <owl:Class rdf:about="https://w3id.org/dlo/Transformer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/DNN"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transformer</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transformer</rdfs:label>
     </owl:Class>
     
@@ -667,7 +666,7 @@
 
     <owl:Class rdf:about="https://w3id.org/dlo/n2v_CBOW">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/w2v_CBOW"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n2v</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n2v-CBOW</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">node2vec-CBOW</rdfs:label>
     </owl:Class>
@@ -678,7 +677,7 @@
 
     <owl:Class rdf:about="https://w3id.org/dlo/n2v_SkipGram">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/w2v_SkipGram"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n2v</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n2v-SkipGram</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">node2vec-SkipGram</rdfs:label>
     </owl:Class>
@@ -689,7 +688,7 @@
 
     <owl:Class rdf:about="https://w3id.org/dlo/w2v_CBOW">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/ANN"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">w2v</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">w2v-CBOW</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">word2vec-CBOW</rdfs:label>
     </owl:Class>
@@ -700,7 +699,7 @@
 
     <owl:Class rdf:about="https://w3id.org/dlo/w2v_SkipGram">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/ANN"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">w2v</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">w2v-SkipGram</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">word2vec-SkipGram</rdfs:label>
     </owl:Class>

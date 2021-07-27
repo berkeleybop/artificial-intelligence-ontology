@@ -1,9 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-WARN	duplicate_exact_synonym	word2vec-CBOW	oboInOwl:hasExactSynonym	w2v
-WARN	duplicate_exact_synonym	word2vec-SkipGram	oboInOwl:hasExactSynonym	w2v
-WARN	duplicate_exact_synonym	node2vec-CBOW	oboInOwl:hasExactSynonym	n2v
-WARN	duplicate_exact_synonym	node2vec-SkipGram	oboInOwl:hasExactSynonym	n2v
-WARN	duplicate_label_synonym	Transformer	oboInOwl:hasExactSynonym	Transformer
 WARN	missing_definition	Auto Encoder	IAO:0000115	
 WARN	missing_definition	Artificial Neural Network	IAO:0000115	
 WARN	missing_definition	Addition layer	IAO:0000115	
@@ -58,7 +53,5 @@ WARN	missing_definition	node2vec-CBOW	IAO:0000115
 WARN	missing_definition	node2vec-SkipGram	IAO:0000115	
 WARN	missing_definition	word2vec-CBOW	IAO:0000115	
 WARN	missing_definition	word2vec-SkipGram	IAO:0000115	
-INFO	lowercase_definition	Deconvolutional Network	IAO:0000115	reversed DCN
-INFO	lowercase_definition	Symmetrically Connected Networks	IAO:0000115	like recurrent networks, but the connections between units are symmetrical (they have the same weight in both directions)
 INFO	missing_superclass	Layer	rdfs:subClassOf	
 INFO	missing_superclass	Network	rdfs:subClassOf	
