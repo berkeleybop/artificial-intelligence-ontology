@@ -2,6 +2,19 @@
 ![Build Status](https://github.com/turbomam/deep-learning-ontology/workflows/CI/badge.svg)
 # Deep Learning Ontology
 
+```Bash
+cd src/ontology
+make clean
+make -f deep-learning-ontology.Makefile deep-learning-ontology-edit.owl
+make all
+```
+
+JSON graph for obographviz...
+
+BioPortal integration...
+
+----
+
 This ontology... YOUR DESCRIPTION HERE
 
 More information can be found at http://obofoundry.org/ontology/deep-learning-ontology
