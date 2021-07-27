@@ -7,7 +7,17 @@ cd src/ontology
 make clean
 make -f deep-learning-ontology.Makefile deep-learning-ontology-edit.owl
 make all
+less reports/deep-learning-ontology-edit.owl-obo-report.tsv
+# optionally
+make release
+# optionally
+#   assumes robot on path
+#   how to use robot provided by ODK?
+robot convert -i ../../deep-learning-ontology.owl -o ../../deep-learning-ontology.json
 ```
+
+- https://github.com/cmungall/obographviz
+- https://www.npmjs.com/package/obographviz
 
 JSON graph for obographviz...
 
