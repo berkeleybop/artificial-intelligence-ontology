@@ -2,7 +2,7 @@
 ![Build Status](https://github.com/turbomam/deep-learning-ontology/workflows/CI/badge.svg)
 # Deep Learning Ontology
 
-
+### Move as much of this as possible into the Makefile
 
 ```Bash
 cd src/ontology
@@ -26,13 +26,15 @@ dot deep-learning-ontology.dot -Tpng -Grankdir=BT > learning-ontology.png
 
 ```
 
-See also
+### See also
 - https://github.com/cmungall/obographviz
 - https://www.npmjs.com/package/obographviz
 
 > (node:4752) [DEP0128] DeprecationWarning: Invalid 'main' field in '/Users/MAM/Documents/gitrepos/deep-learning-ontology/node_modules/node-getopt/package.json' of './lib'. Please either fix that or report it to the module author
 
-BioPortal integration...
+### BioPortal integration
+- https://bioportal.bioontology.org/ontologies/DLO
+- todo: document settings
 
 ----
 
