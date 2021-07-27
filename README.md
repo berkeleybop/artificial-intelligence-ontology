@@ -2,6 +2,8 @@
 ![Build Status](https://github.com/turbomam/deep-learning-ontology/workflows/CI/badge.svg)
 # Deep Learning Ontology
 
+
+
 ```Bash
 cd src/ontology
 make clean
@@ -11,15 +13,24 @@ less reports/deep-learning-ontology-edit.owl-obo-report.tsv
 # optionally
 make release
 # optionally
-#   assumes robot on path
+#   assumes robot on the system path
 #   how to use robot provided by ODK?
-robot convert -i ../../deep-learning-ontology.owl -o ../../deep-learning-ontology.json
+cd ../..
+robot convert -i deep-learning-ontology.owl -o deep-learning-ontology.json
+# optionally
+#   assumes npm and node are on the system path
+npm i obographviz
+./node_modules/obographviz/bin/og2dot.js deep-learning-ontology.json > deep-learning-ontology.dot
+#   assumes dot from graphviz is on the path
+dot deep-learning-ontology.dot -Tpng -Grankdir=BT > learning-ontology.png
+
 ```
 
+See also
 - https://github.com/cmungall/obographviz
 - https://www.npmjs.com/package/obographviz
 
-JSON graph for obographviz...
+> (node:4752) [DEP0128] DeprecationWarning: Invalid 'main' field in '/Users/MAM/Documents/gitrepos/deep-learning-ontology/node_modules/node-getopt/package.json' of './lib'. Please either fix that or report it to the module author
 
 BioPortal integration...
 
