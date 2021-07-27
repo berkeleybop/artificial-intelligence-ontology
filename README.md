@@ -34,7 +34,7 @@ dot deep-learning-ontology.dot -Tpng -Grankdir=BT > learning-ontology.png
 
 ### BioPortal integration
 - https://bioportal.bioontology.org/ontologies/DLO
-- todo: document settings
+- https://github.com/turbomam/deep-learning-ontology/blob/main/partial_dlo_bioportal_screenshot.png
 
 ----
 
