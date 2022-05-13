@@ -20,7 +20,6 @@
   http://www.braga.net.br </mlo1:contributor>
         <mlo2:license>Copyright (C) by Francisco Regateiro, Joaquim Ramos Dias and Juliao Braga. Except where otherwise noted, content on this ontology is licensed under a Creative Commons Attribution-NonCommercial 4.0 International Licence (BY-NC).
 </mlo2:license>
-        <rdfs:comment xml:lang="a2rd.net.br.">Any information can be forwarded to info</rdfs:comment>
         <owl:versionInfo>7.0 (March 2020) </owl:versionInfo>
     </owl:Ontology>
     
@@ -8773,7 +8772,7 @@ https://scikit-learn.org/stable/auto_examples/cluster/plot_linkage_comparison.ht
                 <owl:someValuesFrom rdf:resource="http://www.a2rd.net.br/mlo#SciPy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <mlo1:contributor xml:lang="article{scikit-learn,  title={scikit-learn: machine learning in {p}ython},  author={pedregosa, f. and varoquaux, g. and gramfort, a. and michel, v. and thirion, b. and grisel, o. and blondel, m. and prettenhofer, p. and weiss, r. and dubourg, v. and vanderplas, j. and passos, a. and cournapeau, d. and brucher, m. and perrot, m. and duchesnay, e.},  journal={journal of machine learning research},  volume={12},  pages={2825--2830},  year={2011} }"></mlo1:contributor>
+        <mlo1:contributor xml:lang="en"></mlo1:contributor>
         <rdfs:comment>This project was started in 2007 as a Google Summer of Code project by David Cournapeau. Later that year, Matthieu Brucher started work on this project as part of his thesis.
 
 In 2010 Fabian Pedregosa, Gael Varoquaux, Alexandre Gramfort and Vincent Michel of INRIA took leadership of the project and made the first public release, February the 1st 2010. Since then, several releases have appeared following a ~3 month cycle, and a thriving international community has been leading the development.</rdfs:comment>
