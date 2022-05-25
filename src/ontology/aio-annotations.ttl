@@ -5,8 +5,8 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> . 
 @prefix terms: <http://purl.org/dc/terms/> .
 
-<http://purl.obolibrary.org/obo/deep-learning-ontology.owl>
+<https://w3id.org/aio/aio.owl>
   rdf:type owl:Ontology ;
-  dc:title "Deep Learning Ontology" ;
+  dc:title "Artificial Intelligence Ontology" ;
   terms:license <http://creativecommons.org/licenses/by/4.0/> ;
-  dc:description "Initial version of a taxonomy and partonomy of Deep Learning networks and layers" .
+  dc:description "Taxonomy and partonomy of Deep Learning networks, layers, and functions." .

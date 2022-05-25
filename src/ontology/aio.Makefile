@@ -1,4 +1,4 @@
-## Customize Makefile settings for deep-learning-ontology
+## Customize Makefile settings for aio
 ## 
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
@@ -7,27 +7,27 @@
 
 SRC_URL = 'https://docs.google.com/spreadsheets/d/1LVubUGg56YDGJ0VUdJDMNBPY8iFfissRfy4eM56bUFg/export?exportFormat=tsv'
 
-dlo-src.tsv:
+aio-src.tsv:
 	curl -L -s $(SRC_URL) > $@
 
-# dlo-src-t.tsv: dlo-src.tsv
+# aio-src-t.tsv: aio-src.tsv
 # 	./hack.pl $< > $@
 
-# dlo-component.owl: dlo-src-t.tsv
-dlo-component.owl: dlo-src.tsv
+# aio-component.owl: aio-src-t.tsv
+aio-component.owl: aio-src.tsv
 	robot template \
-	  --add-prefix 'DLO: https://w3id.org/dlo/' \
+	  --add-prefix 'AIO: https://w3id.org/aio/' \
 	  --add-prefix 'oio: http://www.geneontology.org/formats/oboInOwl#' \
 	  -t $< \
-	  annotate --annotation-file deep-learning_annotations.ttl \
+	  annotate --annotation-file aio-annotations.ttl \
 	  -o $@
 
 # hacky step for now - but we should treat as a proper component
-deep-learning-ontology-edit.owl: dlo-component.owl
+aio-edit.owl: aio-component.owl
 	cp $< $@
 
 clean:
-	rm -rf dlo-src.tsv
-	rm -rf dlo-src-t.tsv
-	rm -rf dlo-component.owl
-	rm -rf deep-learning-ontology-edit.owl
+	rm -rf aio-src.tsv
+	rm -rf aio-src-t.tsv
+	rm -rf aio-component.owl
+	rm -rf aio-edit.owl
