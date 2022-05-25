@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/deep-learning-ontology/imports/swo_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/deep-learning-ontology/imports/swo_import.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/aio/imports/swo_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/aio/imports/swo_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -10,10 +10,10 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/deep-learning-ontology/imports/swo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/deep-learning-ontology/releases/2021-10-04/imports/swo_import.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aio/imports/swo_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2022-05-25/imports/swo_import.owl"/>
         <dc:source rdf:resource="http://www.ebi.ac.uk/swo/swo.owl/1.7"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-04</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25</owl:versionInfo>
     </owl:Ontology>
     
 
