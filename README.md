@@ -1,5 +1,5 @@
 
-![Build Status](https://github.com/turbomam/aio/workflows/CI/badge.svg)
+![Build Status](https://github.com/berkeleybop/aio/workflows/CI/badge.svg)
 # Artificial Intelligence Ontology
 
 ### Move as much of this as possible into the Makefile
