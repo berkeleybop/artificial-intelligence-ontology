@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/deep-learning-ontology.owl#"
-     xml:base="http://purl.obolibrary.org/obo/deep-learning-ontology.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/aio.owl#"
+     xml:base="http://purl.obolibrary.org/obo/aio.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -10,12 +10,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/deep-learning-ontology.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/deep-learning-ontology/releases/2021-07-27/deep-learning-ontology.owl"/>
-        <dc:description>Initial version of a taxonomy and partonomy of Deep Learning networks and layers</dc:description>
-        <dc:title>Deep Learning Ontology</dc:title>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aio.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2022-05-25/aio.owl"/>
+        <dc:description>Taxonomy and partonomy of Deep Learning networks, layers, and functions.</dc:description>
+        <dc:title>Artificial Intelligence Ontology</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-07-27</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -60,81 +60,105 @@
     
 
 
-    <!-- https://w3id.org/dlo/AE -->
+    <!-- https://w3id.org/aio/AE -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/AE">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/UPN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/AE">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/UPN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning). The encoding is validated and refined by attempting to regenerate the input from the encoding. The autoencoder learns a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore insignificant data (“noise”). (https://en.wikipedia.org/wiki/Autoencoder)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AE</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auto Encoder</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/AE"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning). The encoding is validated and refined by attempting to regenerate the input from the encoding. The autoencoder learns a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore insignificant data (“noise”). (https://en.wikipedia.org/wiki/Autoencoder)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Autoencoder</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/ANN -->
+    <!-- https://w3id.org/aio/ANN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/ANN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Network"/>
+    <owl:Class rdf:about="https://w3id.org/aio/ANN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Network"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a biological brain, can transmit a signal to other neurons. An artificial neuron receives a signal then processes it and can signal neurons connected to it. The &quot;signal&quot; at a connection is a real number, and the output of each neuron is computed by some non-linear function of the sum of its inputs. The connections are called edges. Neurons and edges typically have a weight that adjusts as learning proceeds. The weight increases or decreases the strength of the signal at a connection. Neurons may have a threshold such that a signal is sent only if the aggregate signal crosses that threshold. Typically, neurons are aggregated into layers. Different layers may perform different transformations on their inputs. Signals travel from the first layer (the input layer), to the last layer (the output layer), possibly after traversing the layers multiple times.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artificial Neural Network</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/ANN"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a biological brain, can transmit a signal to other neurons. An artificial neuron receives a signal then processes it and can signal neurons connected to it. The &quot;signal&quot; at a connection is a real number, and the output of each neuron is computed by some non-linear function of the sum of its inputs. The connections are called edges. Neurons and edges typically have a weight that adjusts as learning proceeds. The weight increases or decreases the strength of the signal at a connection. Neurons may have a threshold such that a signal is sent only if the aggregate signal crosses that threshold. Typically, neurons are aggregated into layers. Different layers may perform different transformations on their inputs. Signals travel from the first layer (the input layer), to the last layer (the output layer), possibly after traversing the layers multiple times.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Artificial_neural_network</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/Addition_layer -->
+    <!-- https://w3id.org/aio/Addition_layer -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/Addition_layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Layer"/>
+    <owl:Class rdf:about="https://w3id.org/aio/Addition_layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Addition layer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/BM -->
+    <!-- https://w3id.org/aio/BM -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/BM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/SCN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Symmetrically connected networks with hidden units.</obo:IAO_0000115>
+    <owl:Class rdf:about="https://w3id.org/aio/BM">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/SCN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Boltzmann machine is a type of stochastic recurrent neural network. It is a Markov random field. It was translated from statistical physics for use in cognitive science. The Boltzmann machine is based on a stochastic spin-glass model with an external field, i.e., a Sherrington–Kirkpatrick model that is a stochastic Ising Model[2] and applied to machine learning.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sherrington–Kirkpatrick model with external field</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stochastic Hopfield network with hidden units</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stochastic Ising-Lenz-Little model</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backfed Input, Probabilistic Hidden</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boltzmann Machine</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/BM"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Boltzmann machine is a type of stochastic recurrent neural network. It is a Markov random field. It was translated from statistical physics for use in cognitive science. The Boltzmann machine is based on a stochastic spin-glass model with an external field, i.e., a Sherrington–Kirkpatrick model that is a stochastic Ising Model[2] and applied to machine learning.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Boltzmann_machine</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/BN_layer -->
+    <!-- https://w3id.org/aio/BN_layer -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/BN_layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Layer"/>
+    <owl:Class rdf:about="https://w3id.org/aio/BN_layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BN layer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/Backfed_Input_layer -->
+    <!-- https://w3id.org/aio/Backfed_Input_layer -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/Backfed_Input_layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Layer"/>
+    <owl:Class rdf:about="https://w3id.org/aio/Backfed_Input_layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backfed Input layer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/Convolutional_layer -->
+    <!-- https://w3id.org/aio/Convolutional_layer -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/Convolutional_layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Layer"/>
+    <owl:Class rdf:about="https://w3id.org/aio/Convolutional_layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pool</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolutional layer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/DAE -->
+    <!-- https://w3id.org/aio/DAE -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/DAE">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/AE"/>
+    <owl:Class rdf:about="https://w3id.org/aio/DAE">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AE"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denoising Auto Encoders (DAEs) take a partially corrupted input and are trained to recover the original undistorted input. In practice, the objective of denoising autoencoders is that of cleaning the corrupted input, or denoising. (https://en.wikipedia.org/wiki/Autoencoder)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DAE</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Noisy Input, Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denoising Auto Encoder</rdfs:label>
@@ -142,21 +166,29 @@
     
 
 
-    <!-- https://w3id.org/dlo/DBN -->
+    <!-- https://w3id.org/aio/DBN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/DBN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/UPN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/DBN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/UPN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In machine learning, a deep belief network (DBN) is a generative graphical model, or alternatively a class of deep neural network, composed of multiple layers of latent variables (&quot;hidden units&quot;), with connections between the layers but not between units within each layer. When trained on a set of examples without supervision, a DBN can learn to probabilistically reconstruct its inputs. The layers then act as feature detectors. After this learning step, a DBN can be further trained with supervision to perform classification. DBNs can be viewed as a composition of simple, unsupervised networks such as restricted Boltzmann machines (RBMs) or autoencoders, where each sub-network&apos;s hidden layer serves as the visible layer for the next. An RBM is an undirected, generative energy-based model with a &quot;visible&quot; input layer and a hidden layer and connections between but not within layers. This composition leads to a fast, layer-by-layer unsupervised training procedure, where contrastive divergence is applied to each sub-network in turn, starting from the &quot;lowest&quot; pair of layers (the lowest visible layer is a training set). The observation that DBNs can be trained greedily, one layer at a time, led to one of the first effective deep learning algorithms. (https://en.wikipedia.org/wiki/Deep_belief_network)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DBN</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backfed Input, Probabilistic Hidden, Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Belief Network</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/DBN"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In machine learning, a deep belief network (DBN) is a generative graphical model, or alternatively a class of deep neural network, composed of multiple layers of latent variables (&quot;hidden units&quot;), with connections between the layers but not between units within each layer. When trained on a set of examples without supervision, a DBN can learn to probabilistically reconstruct its inputs. The layers then act as feature detectors. After this learning step, a DBN can be further trained with supervision to perform classification. DBNs can be viewed as a composition of simple, unsupervised networks such as restricted Boltzmann machines (RBMs) or autoencoders, where each sub-network&apos;s hidden layer serves as the visible layer for the next. An RBM is an undirected, generative energy-based model with a &quot;visible&quot; input layer and a hidden layer and connections between but not within layers. This composition leads to a fast, layer-by-layer unsupervised training procedure, where contrastive divergence is applied to each sub-network in turn, starting from the &quot;lowest&quot; pair of layers (the lowest visible layer is a training set). The observation that DBNs can be trained greedily, one layer at a time, led to one of the first effective deep learning algorithms. (https://en.wikipedia.org/wiki/Deep_belief_network)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Deep_belief_network</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/DCIGN -->
+    <!-- https://w3id.org/aio/DCIGN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/DCIGN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/AE"/>
+    <owl:Class rdf:about="https://w3id.org/aio/DCIGN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AE"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Deep Convolution Inverse Graphics Network (DC-IGN) is a model that learns an interpretable representation of images. This representation is disentangled with respect to transformations such as out-of-plane rotations and lighting variations. The DC-IGN model is composed of multiple layers of convolution and de-convolution operators and is trained using the Stochastic Gradient Variational Bayes (SGVB) algorithm. (https://arxiv.org/abs/1503.03167)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DCIGN</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Kernel, Convolutional/Pool, Probabilistic Hidden, Convolutional/Pool, Kernel, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Convolutional Inverse Graphics Network</rdfs:label>
@@ -164,415 +196,545 @@
     
 
 
-    <!-- https://w3id.org/dlo/DCN -->
+    <!-- https://w3id.org/aio/DCN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/DCN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/DNN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/DCN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A convolutional neural network (CNN, or ConvNet) is a class of artificial neural network, most commonly applied to analyze visual imagery. They are also known as shift invariant or space invariant artificial neural networks (SIANN), based on the shared-weight architecture of the convolution kernels or filters that slide along input features and provide translation equivariant responses known as feature maps. CNNs are regularized versions of multilayer perceptrons. (https://en.wikipedia.org/wiki/Convolutional_neural_network)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CNN</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ConvNet</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolutional Neural Network</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DCN</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Kernel, Convolutional/Pool, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Convolutional Network</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/DCN"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A convolutional neural network (CNN, or ConvNet) is a class of artificial neural network, most commonly applied to analyze visual imagery. They are also known as shift invariant or space invariant artificial neural networks (SIANN), based on the shared-weight architecture of the convolution kernels or filters that slide along input features and provide translation equivariant responses known as feature maps. CNNs are regularized versions of multilayer perceptrons. (https://en.wikipedia.org/wiki/Convolutional_neural_network)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Convolutional_neural_network</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/DFF -->
+    <!-- https://w3id.org/aio/DFF -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/DFF">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/DNN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/DFF">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The feedforward neural network was the first and simplest type of artificial neural network devised. In this network, the information moves in only one direction—forward—from the input nodes, through the hidden nodes (if any) and to the output nodes. There are no cycles or loops in the network.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DFF</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FFN</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feedforward Network</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MLP</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multilayer Perceptoron</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Feed Foward</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep FeedFoward</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/DFF"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The feedforward neural network was the first and simplest type of artificial neural network devised. In this network, the information moves in only one direction—forward—from the input nodes, through the hidden nodes (if any) and to the output nodes. There are no cycles or loops in the network.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Feedforward_neural_network</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/DN -->
+    <!-- https://w3id.org/aio/DN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/DN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/DNN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DN is a reversed DCN.</obo:IAO_0000115>
+    <owl:Class rdf:about="https://w3id.org/aio/DN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deconvolutional Networks, a framework that permits the unsupervised construction of hierarchical image representations. These representations can be used for both low-level tasks such as denoising, as well as providing features for object recognition. Each level of the hierarchy groups information from the level beneath to form more complex features that exist over a larger scale in the image. (https://ieeexplore.ieee.org/document/5539957)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DN</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Kernel, Convolutional/Pool, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deconvolutional Network</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/DN"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deconvolutional Networks, a framework that permits the unsupervised construction of hierarchical image representations. These representations can be used for both low-level tasks such as denoising, as well as providing features for object recognition. Each level of the hierarchy groups information from the level beneath to form more complex features that exist over a larger scale in the image. (https://ieeexplore.ieee.org/document/5539957)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://ieeexplore.ieee.org/document/5539957</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/DNN -->
+    <!-- https://w3id.org/aio/DNN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/DNN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/ANN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/DNN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ANN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A deep neural network (DNN) is an artificial neural network (ANN) with multiple layers between the input and output layers.[13][2] There are different types of neural networks but they always consist of the same components: neurons, synapses, weights, biases, and functions. (https://en.wikipedia.org/wiki/Deep_learning#:~:text=A%20deep%20neural%20network%20(DNN,weights%2C%20biases%2C%20and%20functions.)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNN</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Neural Network</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/DRN -->
+    <!-- https://w3id.org/aio/ELM -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/DRN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/RecNN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNN without delay.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DRN</oboInOwl:hasExactSynonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Residual Network</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/dlo/ELM -->
-
-    <owl:Class rdf:about="https://w3id.org/dlo/ELM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/FBN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/ELM">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/FBN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extreme learning machines are feedforward neural networks for classification, regression, clustering, sparse approximation, compression and feature learning with a single layer or multiple layers of hidden nodes, where the parameters of hidden nodes (not just the weights connecting inputs to hidden nodes) need not be tuned. These hidden nodes can be randomly assigned and never updated (i.e. they are random projection but with nonlinear transforms), or can be inherited from their ancestors without being changed. In most cases, the output weights of hidden nodes are usually learned in a single step, which essentially amounts to learning a linear model. (https://en.wikipedia.org/wiki/Extreme_learning_machine)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELM</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extreme Learning Machine</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/ELM"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extreme learning machines are feedforward neural networks for classification, regression, clustering, sparse approximation, compression and feature learning with a single layer or multiple layers of hidden nodes, where the parameters of hidden nodes (not just the weights connecting inputs to hidden nodes) need not be tuned. These hidden nodes can be randomly assigned and never updated (i.e. they are random projection but with nonlinear transforms), or can be inherited from their ancestors without being changed. In most cases, the output weights of hidden nodes are usually learned in a single step, which essentially amounts to learning a linear model. (https://en.wikipedia.org/wiki/Extreme_learning_machine)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Extreme_learning_machine</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/ESN -->
+    <!-- https://w3id.org/aio/ESN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/ESN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/RecNN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/ESN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/RecNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The echo state network (ESN) is a type of reservoir computer that uses a recurrent neural network with a sparsely connected hidden layer (with typically 1% connectivity). The connectivity and weights of hidden neurons are fixed and randomly assigned. The weights of output neurons can be learned so that the network can produce or reproduce specific temporal patterns. The main interest of this network is that although its behaviour is non-linear, the only weights that are modified during training are for the synapses that connect the hidden neurons to output neurons. Thus, the error function is quadratic with respect to the parameter vector and can be differentiated easily to a linear system.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ESN</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Recurrent, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Echo State Network</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/ESN"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The echo state network (ESN) is a type of reservoir computer that uses a recurrent neural network with a sparsely connected hidden layer (with typically 1% connectivity). The connectivity and weights of hidden neurons are fixed and randomly assigned. The weights of output neurons can be learned so that the network can produce or reproduce specific temporal patterns. The main interest of this network is that although its behaviour is non-linear, the only weights that are modified during training are for the synapses that connect the hidden neurons to output neurons. Thus, the error function is quadratic with respect to the parameter vector and can be differentiated easily to a linear system.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Echo_state_network#:~:text=The%20echo%20state%20network%20(ESN,are%20fixed%20and%20randomly%20assigned</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/FBN -->
+    <!-- https://w3id.org/aio/FBN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/FBN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/ANN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/FBN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ANN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A feedback based approach in which the representation is formed in an iterative manner based on a feedback received from previous iteration&apos;s output. (https://arxiv.org/abs/1612.09508)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBN</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output, Hidden</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feed Back Network</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feedback Network</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/FFN -->
+    <!-- https://w3id.org/aio/FFN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/FFN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/ANN"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FFN</oboInOwl:hasExactSynonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feed Forward Network</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/aio/FFN"/>
     
 
 
-    <!-- https://w3id.org/dlo/GAN -->
+    <!-- https://w3id.org/aio/GAN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/GAN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/UPN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/GAN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/UPN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A generative adversarial network (GAN) is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in 2014. Two neural networks contest with each other in a game (in the form of a zero-sum game, where one agent&apos;s gain is another agent&apos;s loss). Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics. Though originally proposed as a form of generative model for unsupervised learning, GANs have also proven useful for semi-supervised learning, fully supervised learning,[ and reinforcement learning. The core idea of a GAN is based on the &quot;indirect&quot; training through the discriminator,[clarification needed] which itself is also being updated dynamically. This basically means that the generator is not trained to minimize the distance to a specific image, but rather to fool the discriminator. This enables the model to learn in an unsupervised manner.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAN</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backfed Input, Hidden, Matched Output-Input, Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generative Adversarial Network</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/GAN"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A generative adversarial network (GAN) is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in 2014. Two neural networks contest with each other in a game (in the form of a zero-sum game, where one agent&apos;s gain is another agent&apos;s loss). Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics. Though originally proposed as a form of generative model for unsupervised learning, GANs have also proven useful for semi-supervised learning, fully supervised learning,[ and reinforcement learning. The core idea of a GAN is based on the &quot;indirect&quot; training through the discriminator,[clarification needed] which itself is also being updated dynamically. This basically means that the generator is not trained to minimize the distance to a specific image, but rather to fool the discriminator. This enables the model to learn in an unsupervised manner.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Generative_adversarial_network</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/GCN -->
+    <!-- https://w3id.org/aio/GCN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/GCN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/DNN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/GCN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GCN is a type of convolutional neural network that can work directly on graphs and take advantage of their structural information. (https://arxiv.org/abs/1609.02907)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GCN</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph Convolutional Network</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/GCN"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GCN is a type of convolutional neural network that can work directly on graphs and take advantage of their structural information. (https://arxiv.org/abs/1609.02907)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://arxiv.org/abs/1609.02907</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/GPCN -->
+    <!-- https://w3id.org/aio/GPCN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/GPCN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/GCN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GCN + policy network.</obo:IAO_0000115>
+    <owl:Class rdf:about="https://w3id.org/aio/GPCN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/GCN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph Convolutional Policy Network (GCPN), a general graph convolutional network based model for goal-directed graph generation through reinforcement learning. The model is trained to optimize domain-specific rewards and adversarial loss through policy gradient, and acts in an environment that incorporates domain-specific rules.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPCN</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Hidden, Policy, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph Convolutional Policy Network</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/dlo/GPCN"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/GPCN"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GCN + policy network.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph Convolutional Policy Network (GCPN), a general graph convolutional network based model for goal-directed graph generation through reinforcement learning. The model is trained to optimize domain-specific rewards and adversarial loss through policy gradient, and acts in an environment that incorporates domain-specific rules.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://arxiv.org/abs/1806.02473</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/GRU -->
+    <!-- https://w3id.org/aio/GRU -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/GRU">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/LSTM"/>
+    <owl:Class rdf:about="https://w3id.org/aio/GRU">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LSTM"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gated recurrent units (GRUs) are a gating mechanism in recurrent neural networks, introduced in 2014 by Kyunghyun Cho et al. The GRU is like a long short-term memory (LSTM) with a forget gate, but has fewer parameters than LSTM, as it lacks an output gate. GRU&apos;s performance on certain tasks of polyphonic music modeling, speech signal modeling and natural language processing was found to be similar to that of LSTM.[4][5] GRUs have been shown to exhibit better performance on certain smaller and less frequent datasets.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRU</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Memory Cell, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gated Recurrent Unit</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/GRU"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gated recurrent units (GRUs) are a gating mechanism in recurrent neural networks, introduced in 2014 by Kyunghyun Cho et al. The GRU is like a long short-term memory (LSTM) with a forget gate, but has fewer parameters than LSTM, as it lacks an output gate. GRU&apos;s performance on certain tasks of polyphonic music modeling, speech signal modeling and natural language processing was found to be similar to that of LSTM.[4][5] GRUs have been shown to exhibit better performance on certain smaller and less frequent datasets.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Gated_recurrent_unit</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/HN -->
+    <!-- https://w3id.org/aio/HN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/HN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/SCN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Symmetrically connected networks without hidden units.</obo:IAO_0000115>
+    <owl:Class rdf:about="https://w3id.org/aio/HN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/SCN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Hopfield network is a form of recurrent artificial neural network and a type of spin glass system popularised by John Hopfield in 1982 as described earlier by Little in 1974 based on Ernst Ising&apos;s work with Wilhelm Lenz on the Ising model. Hopfield networks serve as content-addressable (&quot;associative&quot;) memory systems with binary threshold nodes, or with continuous variables. Hopfield networks also provide a model for understanding human memory. (https://en.wikipedia.org/wiki/Hopfield_network)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HN</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ising model of a neural network</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ising–Lenz–Little model</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backfed input</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hopfield Network</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/HN"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Hopfield network is a form of recurrent artificial neural network and a type of spin glass system popularised by John Hopfield in 1982 as described earlier by Little in 1974 based on Ernst Ising&apos;s work with Wilhelm Lenz on the Ising model. Hopfield networks serve as content-addressable (&quot;associative&quot;) memory systems with binary threshold nodes, or with continuous variables. Hopfield networks also provide a model for understanding human memory. (https://en.wikipedia.org/wiki/Hopfield_network)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Hopfield_network</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/Hidden_layer -->
+    <!-- https://w3id.org/aio/Hidden_layer -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/Hidden_layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Layer"/>
+    <owl:Class rdf:about="https://w3id.org/aio/Hidden_layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hidden layer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/Input_layer -->
+    <!-- https://w3id.org/aio/Input_layer -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/Input_layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Layer"/>
+    <owl:Class rdf:about="https://w3id.org/aio/Input_layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input layer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/KN -->
+    <!-- https://w3id.org/aio/KN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/KN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Network"/>
+    <owl:Class rdf:about="https://w3id.org/aio/KN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Network"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-organizing map (SOM) or self-organizing feature map (SOFM) is an unsupervised machine learning technique used to produce a low-dimensional (typically two-dimensional) representation of a higher dimensional data set while preserving the topological structure of the data. For example, a data set with p variables measured in n observations could be represented as clusters of observations with similar values for the variables. These clusters then could be visualized as a two-dimensional &quot;map&quot; such that observations in proximal clusters have more similar values than observations in distal clusters. This can make high-dimensional data easier to visualize and analyze. An SOM is a type of artificial neural network but is trained using competitive learning rather than the error-correction learning (e.g., backpropagation with gradient descent) used by other artificial neural networks. The SOM was introduced by the Finnish professor Teuvo Kohonen in the 1980s and therefore is sometimes called a Kohonen map or Kohonen network.[1][2] The Kohonen map or network is a computationally convenient abstraction building on biological models of neural systems from the 1970s[3] and morphogenesis models dating back to Alan Turing in the 1950s.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KN</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOFM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self-organizing feature map</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self-organizing map</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kohonen Network</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/KN"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-organizing map (SOM) or self-organizing feature map (SOFM) is an unsupervised machine learning technique used to produce a low-dimensional (typically two-dimensional) representation of a higher dimensional data set while preserving the topological structure of the data. For example, a data set with p variables measured in n observations could be represented as clusters of observations with similar values for the variables. These clusters then could be visualized as a two-dimensional &quot;map&quot; such that observations in proximal clusters have more similar values than observations in distal clusters. This can make high-dimensional data easier to visualize and analyze. An SOM is a type of artificial neural network but is trained using competitive learning rather than the error-correction learning (e.g., backpropagation with gradient descent) used by other artificial neural networks. The SOM was introduced by the Finnish professor Teuvo Kohonen in the 1980s and therefore is sometimes called a Kohonen map or Kohonen network.[1][2] The Kohonen map or network is a computationally convenient abstraction building on biological models of neural systems from the 1970s[3] and morphogenesis models dating back to Alan Turing in the 1950s.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Self-organizing_map</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/Kernel_layer -->
+    <!-- https://w3id.org/aio/Kernel_layer -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/Kernel_layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Layer"/>
+    <owl:Class rdf:about="https://w3id.org/aio/Kernel_layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kernel layer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/LSM -->
+    <!-- https://w3id.org/aio/LSM -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/LSM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Network"/>
+    <owl:Class rdf:about="https://w3id.org/aio/LSM">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Network"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A liquid state machine (LSM) is a type of reservoir computer that uses a spiking neural network. An LSM consists of a large collection of units (called nodes, or neurons). Each node receives time varying input from external sources (the inputs) as well as from other nodes. Nodes are randomly connected to each other. The recurrent nature of the connections turns the time varying input into a spatio-temporal pattern of activations in the network nodes. The spatio-temporal patterns of activation are read out by linear discriminant units. The soup of recurrently connected nodes will end up computing a large variety of nonlinear functions on the input. Given a large enough variety of such nonlinear functions, it is theoretically possible to obtain linear combinations (using the read out units) to perform whatever mathematical operation is needed to perform a certain task, such as speech recognition or computer vision. The word liquid in the name comes from the analogy drawn to dropping a stone into a still body of water or other liquid. The falling stone will generate ripples in the liquid. The input (motion of the falling stone) has been converted into a spatio-temporal pattern of liquid displacement (ripples). (https://en.wikipedia.org/wiki/Liquid_state_machine)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LSM</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Spiking Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquid State Machine</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LSM"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A liquid state machine (LSM) is a type of reservoir computer that uses a spiking neural network. An LSM consists of a large collection of units (called nodes, or neurons). Each node receives time varying input from external sources (the inputs) as well as from other nodes. Nodes are randomly connected to each other. The recurrent nature of the connections turns the time varying input into a spatio-temporal pattern of activations in the network nodes. The spatio-temporal patterns of activation are read out by linear discriminant units. The soup of recurrently connected nodes will end up computing a large variety of nonlinear functions on the input. Given a large enough variety of such nonlinear functions, it is theoretically possible to obtain linear combinations (using the read out units) to perform whatever mathematical operation is needed to perform a certain task, such as speech recognition or computer vision. The word liquid in the name comes from the analogy drawn to dropping a stone into a still body of water or other liquid. The falling stone will generate ripples in the liquid. The input (motion of the falling stone) has been converted into a spatio-temporal pattern of liquid displacement (ripples). (https://en.wikipedia.org/wiki/Liquid_state_machine)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Liquid_state_machine</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/LSTM -->
+    <!-- https://w3id.org/aio/LSTM -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/LSTM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/RecNN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/LSTM">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/RecNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections. It can process not only single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition, speech recognition and anomaly detection in network traffic or IDSs (intrusion detection systems). A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LSTM</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Memory Cell, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Long Short Term Memory</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LSTM"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections. It can process not only single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition, speech recognition and anomaly detection in network traffic or IDSs (intrusion detection systems). A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Long_short-term_memory</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/Layer -->
+    <!-- https://w3id.org/aio/Layer -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/Layer">
+    <owl:Class rdf:about="https://w3id.org/aio/Layer">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Layer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/MC -->
+    <!-- https://w3id.org/aio/MC -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/MC">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Network"/>
+    <owl:Class rdf:about="https://w3id.org/aio/MC">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Network"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Markov chain or Markov process is a stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event.[1][2][3] A countably infinite sequence, in which the chain moves state at discrete time steps, gives a discrete-time Markov chain (DTMC). A continuous-time process is called a continuous-time Markov chain (CTMC). It is named after the Russian mathematician Andrey Markov.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MC</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probalistic Hidden</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Markov Chain</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/MC"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Markov chain or Markov process is a stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event.[1][2][3] A countably infinite sequence, in which the chain moves state at discrete time steps, gives a discrete-time Markov chain (DTMC). A continuous-time process is called a continuous-time Markov chain (CTMC). It is named after the Russian mathematician Andrey Markov.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Markov_chain</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/MLP -->
+    <!-- https://w3id.org/aio/Matched_Output-Input_layer -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/MLP">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/FFN"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MLP</oboInOwl:hasExactSynonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multi Layer Perceptron</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/dlo/Matched_Output-Input_layer -->
-
-    <owl:Class rdf:about="https://w3id.org/dlo/Matched_Output-Input_layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Layer"/>
+    <owl:Class rdf:about="https://w3id.org/aio/Matched_Output-Input_layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matched Output-Input layer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/Memory_Cell_layer -->
+    <!-- https://w3id.org/aio/Memory_Cell_layer -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/Memory_Cell_layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Layer"/>
+    <owl:Class rdf:about="https://w3id.org/aio/Memory_Cell_layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Memory Cell layer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/NTM -->
+    <!-- https://w3id.org/aio/NTM -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/NTM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/FFN"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/LSTM"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turing-complete Neural Network; FF with memory cells extracted, abstraction over LSTM.</obo:IAO_0000115>
+    <owl:Class rdf:about="https://w3id.org/aio/NTM">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/FFN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LSTM"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Neural Turing machine (NTMs) is a recurrent neural network model. The approach was published by Alex Graves et al. in 2014. NTMs combine the fuzzy pattern matching capabilities of neural networks with the algorithmic power of programmable computers. An NTM has a neural network controller coupled to external memory resources, which it interacts with through attentional mechanisms. The memory interactions are differentiable end-to-end, making it possible to optimize them using gradient descent. An NTM with a long short-term memory (LSTM) network controller can infer simple algorithms such as copying, sorting, and associative recall from examples alone.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NTM</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Spiking Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neural Turing Machine</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/NTM"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Neural Turing machine (NTMs) is a recurrent neural network model. The approach was published by Alex Graves et al. in 2014. NTMs combine the fuzzy pattern matching capabilities of neural networks with the algorithmic power of programmable computers. An NTM has a neural network controller coupled to external memory resources, which it interacts with through attentional mechanisms. The memory interactions are differentiable end-to-end, making it possible to optimize them using gradient descent. An NTM with a long short-term memory (LSTM) network controller can infer simple algorithms such as copying, sorting, and associative recall from examples alone.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Neural_Turing_machine</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/Network -->
+    <!-- https://w3id.org/aio/Network -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/Network">
+    <owl:Class rdf:about="https://w3id.org/aio/Network">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/Niosy_Input_layer -->
+    <!-- https://w3id.org/aio/Niosy_Input_layer -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/Niosy_Input_layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Layer"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Niosy Input layer</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/aio/Niosy_Input_layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Noisy Input layer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/Output_layer -->
+    <!-- https://w3id.org/aio/Output_layer -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/Output_layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Layer"/>
+    <owl:Class rdf:about="https://w3id.org/aio/Output_layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Output layer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/Probabilistic_Hidden_layer -->
+    <!-- https://w3id.org/aio/Padding_layer -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/Probabilistic_Hidden_layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Layer"/>
+    <owl:Class rdf:about="https://w3id.org/aio/Padding_layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Padding layer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/aio/Pooling_layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Pooling_layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pooling layer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/aio/Probabilistic_Hidden_layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Probabilistic_Hidden_layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probabilistic Hidden layer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/RBM -->
+    <!-- https://w3id.org/aio/RBM -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/RBM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/BM"/>
+    <owl:Class rdf:about="https://w3id.org/aio/RBM">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/BM"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A restricted Boltzmann machine (RBM) is a generative stochastic artificial neural network that can learn a probability distribution over its set of inputs.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RBM</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backfed Input, Probabilistic Hidden</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restricted Boltzmann Machine</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/RBM"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A restricted Boltzmann machine (RBM) is a generative stochastic artificial neural network that can learn a probability distribution over its set of inputs.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Restricted_Boltzmann_machine</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/RBN -->
+    <!-- https://w3id.org/aio/RBN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/RBN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/FFN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/RBN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/FFN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Like recurrent neural networks (RNNs), transformers are designed to handle sequential input data, such as natural language, for tasks such as translation and text summarization. However, unlike RNNs, transformers do not necessarily process the data in order. Rather, the attention mechanism provides context for any position in the input sequence.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RBFN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RBN</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radial Basis Function Network</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radial Basis Network</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/RBN"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Like recurrent neural networks (RNNs), transformers are designed to handle sequential input data, such as natural language, for tasks such as translation and text summarization. However, unlike RNNs, transformers do not necessarily process the data in order. Rather, the attention mechanism provides context for any position in the input sequence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Radial_basis_function_network</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/RN -->
+    <!-- https://w3id.org/aio/ReLU_layer -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/RN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Network"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RN</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recurrent Network</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/dlo/ReLU_layer -->
-
-    <owl:Class rdf:about="https://w3id.org/dlo/ReLU_layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Layer"/>
+    <owl:Class rdf:about="https://w3id.org/aio/ReLU_layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ReLU layer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/RecNN -->
+    <!-- https://w3id.org/aio/RecNN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/RecNN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/DNN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/RecNN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A recurrent neural network (RNN) is a class of artificial neural networks where connections between nodes form a directed graph along a temporal sequence. This allows it to exhibit temporal dynamic behavior. Derived from feedforward neural networks, RNNs can use their internal state (memory) to process variable length sequences of inputs.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RecNN</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recurrent Network</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Memory Cell, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recurrent Neural Network</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/RecNN"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A recurrent neural network (RNN) is a class of artificial neural networks where connections between nodes form a directed graph along a temporal sequence. This allows it to exhibit temporal dynamic behavior. Derived from feedforward neural networks, RNNs can use their internal state (memory) to process variable length sequences of inputs.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Recurrent_neural_network</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/RecuNN -->
+    <!-- https://w3id.org/aio/RecuNN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/RecuNN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/DNN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/RecuNN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A recursive neural network is a kind of deep neural network created by applying the same set of weights recursively over a structured input, to produce a structured prediction over variable-size input structures, or a scalar prediction on it, by traversing a given structure in topological order. Recursive neural networks, sometimes abbreviated as RvNNs, have been successful, for instance, in learning sequence and tree structures in natural language processing, mainly phrase and sentence continuous representations based on word embedding.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RecuNN</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RvNN</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recursive Neural Network</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/RecuNN"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A recursive neural network is a kind of deep neural network created by applying the same set of weights recursively over a structured input, to produce a structured prediction over variable-size input structures, or a scalar prediction on it, by traversing a given structure in topological order. Recursive neural networks, sometimes abbreviated as RvNNs, have been successful, for instance, in learning sequence and tree structures in natural language processing, mainly phrase and sentence continuous representations based on word embedding.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Recursive_neural_network</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/Recurrent_layer -->
+    <!-- https://w3id.org/aio/Recurrent_layer -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/Recurrent_layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Layer"/>
+    <owl:Class rdf:about="https://w3id.org/aio/Recurrent_layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recurrent layer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/ResNN -->
+    <!-- https://w3id.org/aio/ResNN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/ResNN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/DNN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/ResNN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A residual neural network (ResNet) is an artificial neural network (ANN) of a kind that builds on constructs known from pyramidal cells in the cerebral cortex. Residual neural networks do this by utilizing skip connections, or shortcuts to jump over some layers. Typical ResNet models are implemented with double- or triple- layer skips that contain nonlinearities (ReLU) and batch normalization in between. An additional weight matrix may be used to learn the skip weights; these models are known as HighwayNets. Models with several parallel skips are referred to as DenseNets. In the context of residual neural networks, a non-residual network may be described as a &apos;plain network&apos;.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DRN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ResNN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ResNet</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deep residual network</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Weight, BN, ReLU, Weight, BN, Addition, ReLU</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Residual Neural Network</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/ResNN"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A residual neural network (ResNet) is an artificial neural network (ANN) of a kind that builds on constructs known from pyramidal cells in the cerebral cortex. Residual neural networks do this by utilizing skip connections, or shortcuts to jump over some layers. Typical ResNet models are implemented with double- or triple- layer skips that contain nonlinearities (ReLU) and batch normalization in between. An additional weight matrix may be used to learn the skip weights; these models are known as HighwayNets. Models with several parallel skips are referred to as DenseNets. In the context of residual neural networks, a non-residual network may be described as a &apos;plain network&apos;.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Residual_neural_network</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/SAE -->
+    <!-- https://w3id.org/aio/SAE -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/SAE">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/AE"/>
+    <owl:Class rdf:about="https://w3id.org/aio/SAE">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AE"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sparse autoencoders may include more (rather than fewer) hidden units than inputs, but only a small number of the hidden units are allowed to be active at the same time (thus, sparse). This constraint forces the model to respond to the unique statistical features of the training data. (https://en.wikipedia.org/wiki/Autoencoder)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAE</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sparse AE</rdfs:label>
@@ -580,21 +742,28 @@
     
 
 
-    <!-- https://w3id.org/dlo/SCN -->
+    <!-- https://w3id.org/aio/SCN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/SCN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Network"/>
+    <owl:Class rdf:about="https://w3id.org/aio/SCN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Network"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Like recurrent networks, but the connections between units are symmetrical (they have the same weight in both directions).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCN</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Symmetrically Connected Networks</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/SCN"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Like recurrent networks, but the connections between units are symmetrical (they have the same weight in both directions).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://ieeexplore.ieee.org/document/287176</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/SLP -->
+    <!-- https://w3id.org/aio/SLP -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/SLP">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/ANN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/SLP">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ANN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The perceptron is an algorithm for supervised learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class. It is a type of linear classifier, i.e. a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector. (https://en.wikipedia.org/wiki/Perceptron)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLP</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Single Layer Perceptron</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Output</rdfs:comment>
@@ -603,49 +772,89 @@
     
 
 
-    <!-- https://w3id.org/dlo/SVM -->
+    <!-- https://w3id.org/aio/SVM -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/SVM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Network"/>
+    <owl:Class rdf:about="https://w3id.org/aio/SVM">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Network"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In machine learning, support-vector machines (SVMs, also support-vector networks) are supervised learning models with associated learning algorithms that analyze data for classification and regression analysis. Developed at AT&amp;T Bell Laboratories by Vladimir Vapnik with colleagues (Boser et al., 1992, Guyon et al., 1993, Vapnik et al., 1997) SVMs are one of the most robust prediction methods, being based on statistical learning frameworks or VC theory proposed by Vapnik (1982, 1995) and Chervonenkis (1974). Given a set of training examples, each marked as belonging to one of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier (although methods such as Platt scaling exist to use SVM in a probabilistic classification setting). SVM maps training examples to points in space so as to maximise the width of the gap between the two categories. New examples are then mapped into that same space and predicted to belong to a category based on which side of the gap they fall.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SVM</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Support Vector Machine</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/SVM"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In machine learning, support-vector machines (SVMs, also support-vector networks) are supervised learning models with associated learning algorithms that analyze data for classification and regression analysis. Developed at AT&amp;T Bell Laboratories by Vladimir Vapnik with colleagues (Boser et al., 1992, Guyon et al., 1993, Vapnik et al., 1997) SVMs are one of the most robust prediction methods, being based on statistical learning frameworks or VC theory proposed by Vapnik (1982, 1995) and Chervonenkis (1974). Given a set of training examples, each marked as belonging to one of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier (although methods such as Platt scaling exist to use SVM in a probabilistic classification setting). SVM maps training examples to points in space so as to maximise the width of the gap between the two categories. New examples are then mapped into that same space and predicted to belong to a category based on which side of the gap they fall.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Support-vector_machine</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/Spiking_Hidden_layer -->
+    <!-- https://w3id.org/aio/Sigmoid_function -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/Spiking_Hidden_layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Layer"/>
+    <owl:Class rdf:about="https://w3id.org/aio/Sigmoid_function">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sigmoid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/aio/Softmax_function -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Softmax_function">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Softmax</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/aio/Spiking_Hidden_layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Spiking_Hidden_layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spiking Hidden layer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/Transformer -->
+    <!-- https://w3id.org/aio/Transformer -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/Transformer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/DNN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/Transformer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A transformer is a deep learning model that adopts the mechanism of attention, differentially weighing the significance of each part of the input data. It is used primarily in the field of natural language processing (NLP) and in computer vision (CV). (https://en.wikipedia.org/wiki/Transformer_(machine_learning_model))</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transformer</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Transformer"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A transformer is a deep learning model that adopts the mechanism of attention, differentially weighing the significance of each part of the input data. It is used primarily in the field of natural language processing (NLP) and in computer vision (CV). (https://en.wikipedia.org/wiki/Transformer_(machine_learning_model))</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/UPN -->
+    <!-- https://w3id.org/aio/UPN -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/UPN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Network"/>
+    <owl:Class rdf:about="https://w3id.org/aio/UPN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Network"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unsupervised pre-training initializes a discriminative neural net from one which was trained using an unsupervised criterion, such as a deep belief network or a deep autoencoder. This method can sometimes help with both the optimization and the overfitting issues.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UPN</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unsupervised Pretrained Networks</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/UPN"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unsupervised pre-training initializes a discriminative neural net from one which was trained using an unsupervised criterion, such as a deep belief network or a deep autoencoder. This method can sometimes help with both the optimization and the overfitting issues.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://metacademy.org/graphs/concepts/unsupervised_pre_training#:~:text=Unsupervised%20pre%2Dtraining%20initializes%20a,optimization%20and%20the%20overfitting%20issues</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/VAE -->
+    <!-- https://w3id.org/aio/VAE -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/VAE">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/AE"/>
+    <owl:Class rdf:about="https://w3id.org/aio/VAE">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AE"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Variational autoencoders are meant to compress the input information into a constrained multivariate latent distribution (encoding) to reconstruct it as accurately as possible (decoding). (https://en.wikipedia.org/wiki/Variational_autoencoder)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VAE</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Probabilistic Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Variational Auto Encoder</rdfs:label>
@@ -653,56 +862,84 @@
     
 
 
-    <!-- https://w3id.org/dlo/Weight_layer -->
+    <!-- https://w3id.org/aio/Weight_layer -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/Weight_layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/Layer"/>
+    <owl:Class rdf:about="https://w3id.org/aio/Weight_layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Weight layer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dlo/n2v_CBOW -->
+    <!-- https://w3id.org/aio/n2v_CBOW -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/n2v_CBOW">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/w2v_CBOW"/>
+    <owl:Class rdf:about="https://w3id.org/aio/n2v_CBOW">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/w2v_CBOW"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the continuous bag-of-words architecture, the model predicts the current node from a window of surrounding context nodes. The order of context nodes does not influence prediction (bag-of-words assumption).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n2v-CBOW</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">node2vec-CBOW</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/n2v_CBOW"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the continuous bag-of-words architecture, the model predicts the current node from a window of surrounding context nodes. The order of context nodes does not influence prediction (bag-of-words assumption).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Word2vec</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/n2v_SkipGram -->
+    <!-- https://w3id.org/aio/n2v_SkipGram -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/n2v_SkipGram">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/w2v_SkipGram"/>
+    <owl:Class rdf:about="https://w3id.org/aio/n2v_SkipGram">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/w2v_SkipGram"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the continuous skip-gram architecture, the model uses the current node to predict the surrounding window of context nodes. The skip-gram architecture weighs nearby context nodes more heavily than more distant context nodes. (https://en.wikipedia.org/wiki/Word2vec)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n2v-SkipGram</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">node2vec-SkipGram</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/n2v_SkipGram"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the continuous skip-gram architecture, the model uses the current node to predict the surrounding window of context nodes. The skip-gram architecture weighs nearby context nodes more heavily than more distant context nodes. (https://en.wikipedia.org/wiki/Word2vec)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Word2vec</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/w2v_CBOW -->
+    <!-- https://w3id.org/aio/w2v_CBOW -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/w2v_CBOW">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/ANN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/w2v_CBOW">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ANN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the continuous bag-of-words architecture, the model predicts the current word from a window of surrounding context words. The order of context words does not influence prediction (bag-of-words assumption). (https://en.wikipedia.org/wiki/Word2vec)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">w2v-CBOW</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">word2vec-CBOW</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/w2v_CBOW"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the continuous bag-of-words architecture, the model predicts the current word from a window of surrounding context words. The order of context words does not influence prediction (bag-of-words assumption). (https://en.wikipedia.org/wiki/Word2vec)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Word2vec</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/dlo/w2v_SkipGram -->
+    <!-- https://w3id.org/aio/w2v_SkipGram -->
 
-    <owl:Class rdf:about="https://w3id.org/dlo/w2v_SkipGram">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dlo/ANN"/>
+    <owl:Class rdf:about="https://w3id.org/aio/w2v_SkipGram">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ANN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the continuous skip-gram architecture, the model uses the current word to predict the surrounding window of context words. The skip-gram architecture weighs nearby context words more heavily than more distant context words.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">w2v-SkipGram</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">word2vec-SkipGram</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/w2v_SkipGram"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the continuous skip-gram architecture, the model uses the current word to predict the surrounding window of context words. The skip-gram architecture weighs nearby context words more heavily than more distant context words.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Word2vec</oboInOwl:hasDbXref>
+    </owl:Axiom>
 </rdf:RDF>
 
 

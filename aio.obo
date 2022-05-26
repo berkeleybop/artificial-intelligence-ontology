@@ -1,382 +1,424 @@
 format-version: 1.2
-data-version: releases/2021-07-27
-ontology: deep-learning-ontology
-property_value: http://purl.org/dc/elements/1.1/description "Initial version of a taxonomy and partonomy of Deep Learning networks and layers" xsd:string
-property_value: http://purl.org/dc/elements/1.1/title "Deep Learning Ontology" xsd:string
+data-version: releases/2022-05-25
+ontology: aio
+property_value: http://purl.org/dc/elements/1.1/description "Taxonomy and partonomy of Deep Learning networks, layers, and functions." xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Artificial Intelligence Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2021-07-27" xsd:string
+property_value: owl:versionInfo "2022-05-25" xsd:string
 
 [Term]
 id: Addition:layer
 name: Addition layer
-is_a: https://w3id.org/dlo/Layer ! Layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
 id: BN:layer
 name: BN layer
-is_a: https://w3id.org/dlo/Layer ! Layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
 id: Convolutional:layer
 name: Convolutional layer
 synonym: "Pool" EXACT []
-is_a: https://w3id.org/dlo/Layer ! Layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
 id: Hidden:layer
 name: Hidden layer
-is_a: https://w3id.org/dlo/Layer ! Layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
 id: Input:layer
 name: Input layer
-is_a: https://w3id.org/dlo/Layer ! Layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
 id: Kernel:layer
 name: Kernel layer
-is_a: https://w3id.org/dlo/Layer ! Layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
 id: Output:layer
 name: Output layer
-is_a: https://w3id.org/dlo/Layer ! Layer
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Padding:layer
+name: Padding layer
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Pooling:layer
+name: Pooling layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
 id: ReLU:layer
 name: ReLU layer
-is_a: https://w3id.org/dlo/Layer ! Layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
 id: Recurrent:layer
 name: Recurrent layer
-is_a: https://w3id.org/dlo/Layer ! Layer
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Sigmoid:function
+name: Sigmoid
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Softmax:function
+name: Softmax
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
 id: Weight:layer
 name: Weight layer
-is_a: https://w3id.org/dlo/Layer ! Layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: https://w3id.org/dlo/AE
+id: https://w3id.org/aio/AE
 name: Auto Encoder
+def: "An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning). The encoding is validated and refined by attempting to regenerate the input from the encoding. The autoencoder learns a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore insignificant data (“noise”). (https://en.wikipedia.org/wiki/Autoencoder)" [https://en.wikipedia.org/wiki/Autoencoder]
 comment: Input, Hidden, Matched Output-Input
 synonym: "AE" EXACT []
-is_a: https://w3id.org/dlo/UPN ! Unsupervised Pretrained Networks
+is_a: https://w3id.org/aio/UPN ! Unsupervised Pretrained Networks
 
 [Term]
-id: https://w3id.org/dlo/ANN
+id: https://w3id.org/aio/ANN
 name: Artificial Neural Network
+def: "An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a biological brain, can transmit a signal to other neurons. An artificial neuron receives a signal then processes it and can signal neurons connected to it. The \"signal\" at a connection is a real number, and the output of each neuron is computed by some non-linear function of the sum of its inputs. The connections are called edges. Neurons and edges typically have a weight that adjusts as learning proceeds. The weight increases or decreases the strength of the signal at a connection. Neurons may have a threshold such that a signal is sent only if the aggregate signal crosses that threshold. Typically, neurons are aggregated into layers. Different layers may perform different transformations on their inputs. Signals travel from the first layer (the input layer), to the last layer (the output layer), possibly after traversing the layers multiple times." [https://en.wikipedia.org/wiki/Artificial_neural_network]
 synonym: "ANN" EXACT []
 synonym: "NN" EXACT []
-is_a: https://w3id.org/dlo/Network ! Network
+is_a: https://w3id.org/aio/Network ! Network
 
 [Term]
-id: https://w3id.org/dlo/BM
+id: https://w3id.org/aio/BM
 name: Boltzmann Machine
-def: "Symmetrically connected networks with hidden units." []
+def: "A Boltzmann machine is a type of stochastic recurrent neural network. It is a Markov random field. It was translated from statistical physics for use in cognitive science. The Boltzmann machine is based on a stochastic spin-glass model with an external field, i.e., a Sherrington–Kirkpatrick model that is a stochastic Ising Model[2] and applied to machine learning." [https://en.wikipedia.org/wiki/Boltzmann_machine]
 comment: Backfed Input, Probabilistic Hidden
 synonym: "BM" EXACT []
-is_a: https://w3id.org/dlo/SCN ! Symmetrically Connected Networks
+synonym: "Sherrington–Kirkpatrick model with external field" EXACT []
+synonym: "stochastic Hopfield network with hidden units" EXACT []
+synonym: "stochastic Ising-Lenz-Little model" EXACT []
+is_a: https://w3id.org/aio/SCN ! Symmetrically Connected Networks
 
 [Term]
-id: https://w3id.org/dlo/Backfed_Input_layer
+id: https://w3id.org/aio/Backfed_Input_layer
 name: Backfed Input layer
-is_a: https://w3id.org/dlo/Layer ! Layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: https://w3id.org/dlo/DAE
+id: https://w3id.org/aio/DAE
 name: Denoising Auto Encoder
+def: "Denoising Auto Encoders (DAEs) take a partially corrupted input and are trained to recover the original undistorted input. In practice, the objective of denoising autoencoders is that of cleaning the corrupted input, or denoising. (https://en.wikipedia.org/wiki/Autoencoder)" []
 comment: Noisy Input, Hidden, Matched Output-Input
 synonym: "DAE" EXACT []
-is_a: https://w3id.org/dlo/AE ! Auto Encoder
+is_a: https://w3id.org/aio/AE ! Auto Encoder
 
 [Term]
-id: https://w3id.org/dlo/DBN
+id: https://w3id.org/aio/DBN
 name: Deep Belief Network
+def: "In machine learning, a deep belief network (DBN) is a generative graphical model, or alternatively a class of deep neural network, composed of multiple layers of latent variables (\"hidden units\"), with connections between the layers but not between units within each layer. When trained on a set of examples without supervision, a DBN can learn to probabilistically reconstruct its inputs. The layers then act as feature detectors. After this learning step, a DBN can be further trained with supervision to perform classification. DBNs can be viewed as a composition of simple, unsupervised networks such as restricted Boltzmann machines (RBMs) or autoencoders, where each sub-network's hidden layer serves as the visible layer for the next. An RBM is an undirected, generative energy-based model with a \"visible\" input layer and a hidden layer and connections between but not within layers. This composition leads to a fast, layer-by-layer unsupervised training procedure, where contrastive divergence is applied to each sub-network in turn, starting from the \"lowest\" pair of layers (the lowest visible layer is a training set). The observation that DBNs can be trained greedily, one layer at a time, led to one of the first effective deep learning algorithms. (https://en.wikipedia.org/wiki/Deep_belief_network)" [https://en.wikipedia.org/wiki/Deep_belief_network]
 comment: Backfed Input, Probabilistic Hidden, Hidden, Matched Output-Input
 synonym: "DBN" EXACT []
-is_a: https://w3id.org/dlo/UPN ! Unsupervised Pretrained Networks
+is_a: https://w3id.org/aio/UPN ! Unsupervised Pretrained Networks
 
 [Term]
-id: https://w3id.org/dlo/DCIGN
+id: https://w3id.org/aio/DCIGN
 name: Deep Convolutional Inverse Graphics Network
+def: "A Deep Convolution Inverse Graphics Network (DC-IGN) is a model that learns an interpretable representation of images. This representation is disentangled with respect to transformations such as out-of-plane rotations and lighting variations. The DC-IGN model is composed of multiple layers of convolution and de-convolution operators and is trained using the Stochastic Gradient Variational Bayes (SGVB) algorithm. (https://arxiv.org/abs/1503.03167)" []
 comment: Input, Kernel, Convolutional/Pool, Probabilistic Hidden, Convolutional/Pool, Kernel, Output
 synonym: "DCIGN" EXACT []
-is_a: https://w3id.org/dlo/AE ! Auto Encoder
+is_a: https://w3id.org/aio/AE ! Auto Encoder
 
 [Term]
-id: https://w3id.org/dlo/DCN
+id: https://w3id.org/aio/DCN
 name: Deep Convolutional Network
+def: "A convolutional neural network (CNN, or ConvNet) is a class of artificial neural network, most commonly applied to analyze visual imagery. They are also known as shift invariant or space invariant artificial neural networks (SIANN), based on the shared-weight architecture of the convolution kernels or filters that slide along input features and provide translation equivariant responses known as feature maps. CNNs are regularized versions of multilayer perceptrons. (https://en.wikipedia.org/wiki/Convolutional_neural_network)" [https://en.wikipedia.org/wiki/Convolutional_neural_network]
 comment: Input, Kernel, Convolutional/Pool, Hidden, Output
 synonym: "CNN" EXACT []
+synonym: "ConvNet" EXACT []
 synonym: "Convolutional Neural Network" EXACT []
 synonym: "DCN" EXACT []
-is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 
 [Term]
-id: https://w3id.org/dlo/DFF
-name: Deep Feed Foward
+id: https://w3id.org/aio/DFF
+name: Deep FeedFoward
+def: "The feedforward neural network was the first and simplest type of artificial neural network devised. In this network, the information moves in only one direction—forward—from the input nodes, through the hidden nodes (if any) and to the output nodes. There are no cycles or loops in the network." [https://en.wikipedia.org/wiki/Feedforward_neural_network]
 comment: Input, Hidden, Output
 synonym: "DFF" EXACT []
-is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
+synonym: "Feedforward Network" EXACT []
+synonym: "FFN" EXACT []
+synonym: "MLP" EXACT []
+synonym: "Multilayer Perceptoron" EXACT []
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 
 [Term]
-id: https://w3id.org/dlo/DN
+id: https://w3id.org/aio/DN
 name: Deconvolutional Network
-def: "A DN is a reversed DCN." []
+def: "Deconvolutional Networks, a framework that permits the unsupervised construction of hierarchical image representations. These representations can be used for both low-level tasks such as denoising, as well as providing features for object recognition. Each level of the hierarchy groups information from the level beneath to form more complex features that exist over a larger scale in the image. (https://ieeexplore.ieee.org/document/5539957)" [https://ieeexplore.ieee.org/document/5539957]
 comment: Input, Kernel, Convolutional/Pool, Output
 synonym: "DN" EXACT []
-is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 
 [Term]
-id: https://w3id.org/dlo/DNN
+id: https://w3id.org/aio/DNN
 name: Deep Neural Network
+def: "A deep neural network (DNN) is an artificial neural network (ANN) with multiple layers between the input and output layers.[13][2] There are different types of neural networks but they always consist of the same components: neurons, synapses, weights, biases, and functions. (https://en.wikipedia.org/wiki/Deep_learning#:~:text=A%20deep%20neural%20network%20(DNN,weights%2C%20biases%2C%20and%20functions.)" []
 synonym: "DNN" EXACT []
-is_a: https://w3id.org/dlo/ANN ! Artificial Neural Network
+is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
 
 [Term]
-id: https://w3id.org/dlo/DRN
-name: Deep Residual Network
-def: "RNN without delay." []
-comment: Input, Hidden, Output
-synonym: "DRN" EXACT []
-is_a: https://w3id.org/dlo/RecNN ! Recurrent Neural Network
-
-[Term]
-id: https://w3id.org/dlo/ELM
+id: https://w3id.org/aio/ELM
 name: Extreme Learning Machine
+def: "Extreme learning machines are feedforward neural networks for classification, regression, clustering, sparse approximation, compression and feature learning with a single layer or multiple layers of hidden nodes, where the parameters of hidden nodes (not just the weights connecting inputs to hidden nodes) need not be tuned. These hidden nodes can be randomly assigned and never updated (i.e. they are random projection but with nonlinear transforms), or can be inherited from their ancestors without being changed. In most cases, the output weights of hidden nodes are usually learned in a single step, which essentially amounts to learning a linear model. (https://en.wikipedia.org/wiki/Extreme_learning_machine)" [https://en.wikipedia.org/wiki/Extreme_learning_machine]
 comment: Input, Hidden, Output
 synonym: "ELM" EXACT []
-is_a: https://w3id.org/dlo/FBN ! Feed Back Network
+is_a: https://w3id.org/aio/FBN ! Feedback Network
 
 [Term]
-id: https://w3id.org/dlo/ESN
+id: https://w3id.org/aio/ESN
 name: Echo State Network
+def: "The echo state network (ESN) is a type of reservoir computer that uses a recurrent neural network with a sparsely connected hidden layer (with typically 1% connectivity). The connectivity and weights of hidden neurons are fixed and randomly assigned. The weights of output neurons can be learned so that the network can produce or reproduce specific temporal patterns. The main interest of this network is that although its behaviour is non-linear, the only weights that are modified during training are for the synapses that connect the hidden neurons to output neurons. Thus, the error function is quadratic with respect to the parameter vector and can be differentiated easily to a linear system." [https://en.wikipedia.org/wiki/Echo_state_network#\:~\:text=The%20echo%20state%20network%20(ESN\,are%20fixed%20and%20randomly%20assigned]
 comment: Input, Recurrent, Output
 synonym: "ESN" EXACT []
-is_a: https://w3id.org/dlo/RecNN ! Recurrent Neural Network
+is_a: https://w3id.org/aio/RecNN ! Recurrent Neural Network
 
 [Term]
-id: https://w3id.org/dlo/FBN
-name: Feed Back Network
+id: https://w3id.org/aio/FBN
+name: Feedback Network
+def: "A feedback based approach in which the representation is formed in an iterative manner based on a feedback received from previous iteration's output. (https://arxiv.org/abs/1612.09508)" []
 comment: Input, Hidden, Output, Hidden
 synonym: "FBN" EXACT []
-is_a: https://w3id.org/dlo/ANN ! Artificial Neural Network
+is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
 
 [Term]
-id: https://w3id.org/dlo/FFN
-name: Feed Forward Network
-comment: Input, Hidden, Output
-synonym: "FFN" EXACT []
-is_a: https://w3id.org/dlo/ANN ! Artificial Neural Network
-
-[Term]
-id: https://w3id.org/dlo/GAN
+id: https://w3id.org/aio/GAN
 name: Generative Adversarial Network
+def: "A generative adversarial network (GAN) is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in 2014. Two neural networks contest with each other in a game (in the form of a zero-sum game, where one agent's gain is another agent's loss). Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics. Though originally proposed as a form of generative model for unsupervised learning, GANs have also proven useful for semi-supervised learning, fully supervised learning,[ and reinforcement learning. The core idea of a GAN is based on the \"indirect\" training through the discriminator,[clarification needed] which itself is also being updated dynamically. This basically means that the generator is not trained to minimize the distance to a specific image, but rather to fool the discriminator. This enables the model to learn in an unsupervised manner." [https://en.wikipedia.org/wiki/Generative_adversarial_network]
 comment: Backfed Input, Hidden, Matched Output-Input, Hidden, Matched Output-Input
 synonym: "GAN" EXACT []
-is_a: https://w3id.org/dlo/UPN ! Unsupervised Pretrained Networks
+is_a: https://w3id.org/aio/UPN ! Unsupervised Pretrained Networks
 
 [Term]
-id: https://w3id.org/dlo/GCN
+id: https://w3id.org/aio/GCN
 name: Graph Convolutional Network
+def: "GCN is a type of convolutional neural network that can work directly on graphs and take advantage of their structural information. (https://arxiv.org/abs/1609.02907)" [https://arxiv.org/abs/1609.02907]
 comment: Input, Hidden, Hidden, Output
 synonym: "GCN" EXACT []
-is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 
 [Term]
-id: https://w3id.org/dlo/GPCN
+id: https://w3id.org/aio/GPCN
 name: Graph Convolutional Policy Network
-def: "GCN + policy network." [https://arxiv.org/abs/1806.02473]
+def: "Graph Convolutional Policy Network (GCPN), a general graph convolutional network based model for goal-directed graph generation through reinforcement learning. The model is trained to optimize domain-specific rewards and adversarial loss through policy gradient, and acts in an environment that incorporates domain-specific rules." [https://arxiv.org/abs/1806.02473]
 comment: Input, Hidden, Hidden, Policy, Output
 synonym: "GPCN" EXACT []
-is_a: https://w3id.org/dlo/GCN ! Graph Convolutional Network
+is_a: https://w3id.org/aio/GCN ! Graph Convolutional Network
 
 [Term]
-id: https://w3id.org/dlo/GRU
+id: https://w3id.org/aio/GRU
 name: Gated Recurrent Unit
+def: "Gated recurrent units (GRUs) are a gating mechanism in recurrent neural networks, introduced in 2014 by Kyunghyun Cho et al. The GRU is like a long short-term memory (LSTM) with a forget gate, but has fewer parameters than LSTM, as it lacks an output gate. GRU's performance on certain tasks of polyphonic music modeling, speech signal modeling and natural language processing was found to be similar to that of LSTM.[4][5] GRUs have been shown to exhibit better performance on certain smaller and less frequent datasets." [https://en.wikipedia.org/wiki/Gated_recurrent_unit]
 comment: Input, Memory Cell, Output
 synonym: "GRU" EXACT []
-is_a: https://w3id.org/dlo/LSTM ! Long Short Term Memory
+is_a: https://w3id.org/aio/LSTM ! Long Short Term Memory
 
 [Term]
-id: https://w3id.org/dlo/HN
+id: https://w3id.org/aio/HN
 name: Hopfield Network
-def: "Symmetrically connected networks without hidden units." []
+def: "A Hopfield network is a form of recurrent artificial neural network and a type of spin glass system popularised by John Hopfield in 1982 as described earlier by Little in 1974 based on Ernst Ising's work with Wilhelm Lenz on the Ising model. Hopfield networks serve as content-addressable (\"associative\") memory systems with binary threshold nodes, or with continuous variables. Hopfield networks also provide a model for understanding human memory. (https://en.wikipedia.org/wiki/Hopfield_network)" [https://en.wikipedia.org/wiki/Hopfield_network]
 comment: Backfed input
 synonym: "HN" EXACT []
-is_a: https://w3id.org/dlo/SCN ! Symmetrically Connected Networks
+synonym: "Ising model of a neural network" EXACT []
+synonym: "Ising–Lenz–Little model" EXACT []
+is_a: https://w3id.org/aio/SCN ! Symmetrically Connected Networks
 
 [Term]
-id: https://w3id.org/dlo/KN
+id: https://w3id.org/aio/KN
 name: Kohonen Network
+def: "A self-organizing map (SOM) or self-organizing feature map (SOFM) is an unsupervised machine learning technique used to produce a low-dimensional (typically two-dimensional) representation of a higher dimensional data set while preserving the topological structure of the data. For example, a data set with p variables measured in n observations could be represented as clusters of observations with similar values for the variables. These clusters then could be visualized as a two-dimensional \"map\" such that observations in proximal clusters have more similar values than observations in distal clusters. This can make high-dimensional data easier to visualize and analyze. An SOM is a type of artificial neural network but is trained using competitive learning rather than the error-correction learning (e.g., backpropagation with gradient descent) used by other artificial neural networks. The SOM was introduced by the Finnish professor Teuvo Kohonen in the 1980s and therefore is sometimes called a Kohonen map or Kohonen network.[1][2] The Kohonen map or network is a computationally convenient abstraction building on biological models of neural systems from the 1970s[3] and morphogenesis models dating back to Alan Turing in the 1950s." [https://en.wikipedia.org/wiki/Self-organizing_map]
 comment: Input, Hidden
 synonym: "KN" EXACT []
-is_a: https://w3id.org/dlo/Network ! Network
+synonym: "self-organizing feature map" EXACT []
+synonym: "self-organizing map" EXACT []
+synonym: "SOFM" EXACT []
+synonym: "SOM" EXACT []
+is_a: https://w3id.org/aio/Network ! Network
 
 [Term]
-id: https://w3id.org/dlo/LSM
+id: https://w3id.org/aio/LSM
 name: Liquid State Machine
+def: "A liquid state machine (LSM) is a type of reservoir computer that uses a spiking neural network. An LSM consists of a large collection of units (called nodes, or neurons). Each node receives time varying input from external sources (the inputs) as well as from other nodes. Nodes are randomly connected to each other. The recurrent nature of the connections turns the time varying input into a spatio-temporal pattern of activations in the network nodes. The spatio-temporal patterns of activation are read out by linear discriminant units. The soup of recurrently connected nodes will end up computing a large variety of nonlinear functions on the input. Given a large enough variety of such nonlinear functions, it is theoretically possible to obtain linear combinations (using the read out units) to perform whatever mathematical operation is needed to perform a certain task, such as speech recognition or computer vision. The word liquid in the name comes from the analogy drawn to dropping a stone into a still body of water or other liquid. The falling stone will generate ripples in the liquid. The input (motion of the falling stone) has been converted into a spatio-temporal pattern of liquid displacement (ripples). (https://en.wikipedia.org/wiki/Liquid_state_machine)" [https://en.wikipedia.org/wiki/Liquid_state_machine]
 comment: Input, Spiking Hidden, Output
 synonym: "LSM" EXACT []
-is_a: https://w3id.org/dlo/Network ! Network
+is_a: https://w3id.org/aio/Network ! Network
 
 [Term]
-id: https://w3id.org/dlo/LSTM
+id: https://w3id.org/aio/LSTM
 name: Long Short Term Memory
+def: "Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections. It can process not only single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition, speech recognition and anomaly detection in network traffic or IDSs (intrusion detection systems). A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell." [https://en.wikipedia.org/wiki/Long_short-term_memory]
 comment: Input, Memory Cell, Output
 synonym: "LSTM" EXACT []
-is_a: https://w3id.org/dlo/RecNN ! Recurrent Neural Network
+is_a: https://w3id.org/aio/RecNN ! Recurrent Neural Network
 
 [Term]
-id: https://w3id.org/dlo/Layer
+id: https://w3id.org/aio/Layer
 name: Layer
 
 [Term]
-id: https://w3id.org/dlo/MC
+id: https://w3id.org/aio/MC
 name: Markov Chain
+def: "A Markov chain or Markov process is a stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event.[1][2][3] A countably infinite sequence, in which the chain moves state at discrete time steps, gives a discrete-time Markov chain (DTMC). A continuous-time process is called a continuous-time Markov chain (CTMC). It is named after the Russian mathematician Andrey Markov." [https://en.wikipedia.org/wiki/Markov_chain]
 comment: Probalistic Hidden
 synonym: "MC" EXACT []
-is_a: https://w3id.org/dlo/Network ! Network
+is_a: https://w3id.org/aio/Network ! Network
 
 [Term]
-id: https://w3id.org/dlo/MLP
-name: Multi Layer Perceptron
-comment: Input, Hidden, Output
-synonym: "MLP" EXACT []
-is_a: https://w3id.org/dlo/FFN ! Feed Forward Network
-
-[Term]
-id: https://w3id.org/dlo/Matched_Output-Input_layer
+id: https://w3id.org/aio/Matched_Output-Input_layer
 name: Matched Output-Input layer
-is_a: https://w3id.org/dlo/Layer ! Layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: https://w3id.org/dlo/Memory_Cell_layer
+id: https://w3id.org/aio/Memory_Cell_layer
 name: Memory Cell layer
-is_a: https://w3id.org/dlo/Layer ! Layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: https://w3id.org/dlo/NTM
+id: https://w3id.org/aio/NTM
 name: Neural Turing Machine
-def: "Turing-complete Neural Network; FF with memory cells extracted, abstraction over LSTM." []
+def: "A Neural Turing machine (NTMs) is a recurrent neural network model. The approach was published by Alex Graves et al. in 2014. NTMs combine the fuzzy pattern matching capabilities of neural networks with the algorithmic power of programmable computers. An NTM has a neural network controller coupled to external memory resources, which it interacts with through attentional mechanisms. The memory interactions are differentiable end-to-end, making it possible to optimize them using gradient descent. An NTM with a long short-term memory (LSTM) network controller can infer simple algorithms such as copying, sorting, and associative recall from examples alone." [https://en.wikipedia.org/wiki/Neural_Turing_machine]
 comment: Input, Hidden, Spiking Hidden, Output
 synonym: "NTM" EXACT []
-is_a: https://w3id.org/dlo/FFN ! Feed Forward Network
-is_a: https://w3id.org/dlo/LSTM ! Long Short Term Memory
+is_a: https://w3id.org/aio/FFN
+is_a: https://w3id.org/aio/LSTM ! Long Short Term Memory
 
 [Term]
-id: https://w3id.org/dlo/Network
+id: https://w3id.org/aio/Network
 name: Network
 
 [Term]
-id: https://w3id.org/dlo/Niosy_Input_layer
-name: Niosy Input layer
-is_a: https://w3id.org/dlo/Layer ! Layer
+id: https://w3id.org/aio/Niosy_Input_layer
+name: Noisy Input layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: https://w3id.org/dlo/Probabilistic_Hidden_layer
+id: https://w3id.org/aio/Probabilistic_Hidden_layer
 name: Probabilistic Hidden layer
-is_a: https://w3id.org/dlo/Layer ! Layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: https://w3id.org/dlo/RBM
+id: https://w3id.org/aio/RBM
 name: Restricted Boltzmann Machine
+def: "A restricted Boltzmann machine (RBM) is a generative stochastic artificial neural network that can learn a probability distribution over its set of inputs." [https://en.wikipedia.org/wiki/Restricted_Boltzmann_machine]
 comment: Backfed Input, Probabilistic Hidden
 synonym: "RBM" EXACT []
-is_a: https://w3id.org/dlo/BM ! Boltzmann Machine
+is_a: https://w3id.org/aio/BM ! Boltzmann Machine
 
 [Term]
-id: https://w3id.org/dlo/RBN
+id: https://w3id.org/aio/RBN
 name: Radial Basis Network
+def: "Like recurrent neural networks (RNNs), transformers are designed to handle sequential input data, such as natural language, for tasks such as translation and text summarization. However, unlike RNNs, transformers do not necessarily process the data in order. Rather, the attention mechanism provides context for any position in the input sequence." [https://en.wikipedia.org/wiki/Radial_basis_function_network]
 comment: Input, Hidden, Output
+synonym: "Radial Basis Function Network" EXACT []
+synonym: "RBFN" EXACT []
 synonym: "RBN" EXACT []
-is_a: https://w3id.org/dlo/FFN ! Feed Forward Network
+is_a: https://w3id.org/aio/FFN
 
 [Term]
-id: https://w3id.org/dlo/RN
-name: Recurrent Network
-synonym: "RN" EXACT []
-is_a: https://w3id.org/dlo/Network ! Network
-
-[Term]
-id: https://w3id.org/dlo/RecNN
+id: https://w3id.org/aio/RecNN
 name: Recurrent Neural Network
+def: "A recurrent neural network (RNN) is a class of artificial neural networks where connections between nodes form a directed graph along a temporal sequence. This allows it to exhibit temporal dynamic behavior. Derived from feedforward neural networks, RNNs can use their internal state (memory) to process variable length sequences of inputs." [https://en.wikipedia.org/wiki/Recurrent_neural_network]
 comment: Input, Memory Cell, Output
 synonym: "RecNN" EXACT []
-is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
+synonym: "Recurrent Network" EXACT []
+synonym: "RN" EXACT []
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 
 [Term]
-id: https://w3id.org/dlo/RecuNN
+id: https://w3id.org/aio/RecuNN
 name: Recursive Neural Network
+def: "A recursive neural network is a kind of deep neural network created by applying the same set of weights recursively over a structured input, to produce a structured prediction over variable-size input structures, or a scalar prediction on it, by traversing a given structure in topological order. Recursive neural networks, sometimes abbreviated as RvNNs, have been successful, for instance, in learning sequence and tree structures in natural language processing, mainly phrase and sentence continuous representations based on word embedding." [https://en.wikipedia.org/wiki/Recursive_neural_network]
 synonym: "RecuNN" EXACT []
-is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
+synonym: "RvNN" EXACT []
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 
 [Term]
-id: https://w3id.org/dlo/ResNN
+id: https://w3id.org/aio/ResNN
 name: Residual Neural Network
+def: "A residual neural network (ResNet) is an artificial neural network (ANN) of a kind that builds on constructs known from pyramidal cells in the cerebral cortex. Residual neural networks do this by utilizing skip connections, or shortcuts to jump over some layers. Typical ResNet models are implemented with double- or triple- layer skips that contain nonlinearities (ReLU) and batch normalization in between. An additional weight matrix may be used to learn the skip weights; these models are known as HighwayNets. Models with several parallel skips are referred to as DenseNets. In the context of residual neural networks, a non-residual network may be described as a 'plain network'." [https://en.wikipedia.org/wiki/Residual_neural_network]
 comment: Input, Weight, BN, ReLU, Weight, BN, Addition, ReLU
 synonym: "deep residual network" EXACT []
+synonym: "DRN" EXACT []
 synonym: "ResNet" EXACT []
 synonym: "ResNN" EXACT []
-is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 
 [Term]
-id: https://w3id.org/dlo/SAE
+id: https://w3id.org/aio/SAE
 name: Sparse AE
+def: "Sparse autoencoders may include more (rather than fewer) hidden units than inputs, but only a small number of the hidden units are allowed to be active at the same time (thus, sparse). This constraint forces the model to respond to the unique statistical features of the training data. (https://en.wikipedia.org/wiki/Autoencoder)" []
 comment: Input, Hidden, Matched Output-Input
 synonym: "SAE" EXACT []
-is_a: https://w3id.org/dlo/AE ! Auto Encoder
+is_a: https://w3id.org/aio/AE ! Auto Encoder
 
 [Term]
-id: https://w3id.org/dlo/SCN
+id: https://w3id.org/aio/SCN
 name: Symmetrically Connected Networks
-def: "Like recurrent networks, but the connections between units are symmetrical (they have the same weight in both directions)." []
+def: "Like recurrent networks, but the connections between units are symmetrical (they have the same weight in both directions)." [https://ieeexplore.ieee.org/document/287176]
 synonym: "SCN" EXACT []
-is_a: https://w3id.org/dlo/Network ! Network
+is_a: https://w3id.org/aio/Network ! Network
 
 [Term]
-id: https://w3id.org/dlo/SLP
+id: https://w3id.org/aio/SLP
 name: Perceptron
+def: "The perceptron is an algorithm for supervised learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class. It is a type of linear classifier, i.e. a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector. (https://en.wikipedia.org/wiki/Perceptron)" []
 comment: Input, Output
 synonym: "Single Layer Perceptron" EXACT []
 synonym: "SLP" EXACT []
-is_a: https://w3id.org/dlo/ANN ! Artificial Neural Network
+is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
 
 [Term]
-id: https://w3id.org/dlo/SVM
+id: https://w3id.org/aio/SVM
 name: Support Vector Machine
+def: "In machine learning, support-vector machines (SVMs, also support-vector networks) are supervised learning models with associated learning algorithms that analyze data for classification and regression analysis. Developed at AT&T Bell Laboratories by Vladimir Vapnik with colleagues (Boser et al., 1992, Guyon et al., 1993, Vapnik et al., 1997) SVMs are one of the most robust prediction methods, being based on statistical learning frameworks or VC theory proposed by Vapnik (1982, 1995) and Chervonenkis (1974). Given a set of training examples, each marked as belonging to one of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier (although methods such as Platt scaling exist to use SVM in a probabilistic classification setting). SVM maps training examples to points in space so as to maximise the width of the gap between the two categories. New examples are then mapped into that same space and predicted to belong to a category based on which side of the gap they fall." [https://en.wikipedia.org/wiki/Support-vector_machine]
 comment: Input, Hidden, Output
 synonym: "SVM" EXACT []
-is_a: https://w3id.org/dlo/Network ! Network
+is_a: https://w3id.org/aio/Network ! Network
 
 [Term]
-id: https://w3id.org/dlo/Spiking_Hidden_layer
+id: https://w3id.org/aio/Spiking_Hidden_layer
 name: Spiking Hidden layer
-is_a: https://w3id.org/dlo/Layer ! Layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: https://w3id.org/dlo/Transformer
+id: https://w3id.org/aio/Transformer
 name: Transformer
-is_a: https://w3id.org/dlo/DNN ! Deep Neural Network
+def: "A transformer is a deep learning model that adopts the mechanism of attention, differentially weighing the significance of each part of the input data. It is used primarily in the field of natural language processing (NLP) and in computer vision (CV). (https://en.wikipedia.org/wiki/Transformer_(machine_learning_model))" [https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)]
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 
 [Term]
-id: https://w3id.org/dlo/UPN
+id: https://w3id.org/aio/UPN
 name: Unsupervised Pretrained Networks
+def: "Unsupervised pre-training initializes a discriminative neural net from one which was trained using an unsupervised criterion, such as a deep belief network or a deep autoencoder. This method can sometimes help with both the optimization and the overfitting issues." [https://metacademy.org/graphs/concepts/unsupervised_pre_training#\:~\:text=Unsupervised%20pre%2Dtraining%20initializes%20a\,optimization%20and%20the%20overfitting%20issues]
 synonym: "UPN" EXACT []
-is_a: https://w3id.org/dlo/Network ! Network
+is_a: https://w3id.org/aio/Network ! Network
 
 [Term]
-id: https://w3id.org/dlo/VAE
+id: https://w3id.org/aio/VAE
 name: Variational Auto Encoder
+def: "Variational autoencoders are meant to compress the input information into a constrained multivariate latent distribution (encoding) to reconstruct it as accurately as possible (decoding). (https://en.wikipedia.org/wiki/Variational_autoencoder)" []
 comment: Input, Probabilistic Hidden, Matched Output-Input
 synonym: "VAE" EXACT []
-is_a: https://w3id.org/dlo/AE ! Auto Encoder
+is_a: https://w3id.org/aio/AE ! Auto Encoder
 
 [Term]
 id: n2v:CBOW
 name: node2vec-CBOW
+def: "In the continuous bag-of-words architecture, the model predicts the current node from a window of surrounding context nodes. The order of context nodes does not influence prediction (bag-of-words assumption)." [https://en.wikipedia.org/wiki/Word2vec]
 comment: Input, Hidden, Output
 synonym: "n2v-CBOW" EXACT []
 is_a: w2v:CBOW ! word2vec-CBOW
@@ -384,6 +426,7 @@ is_a: w2v:CBOW ! word2vec-CBOW
 [Term]
 id: n2v:SkipGram
 name: node2vec-SkipGram
+def: "In the continuous skip-gram architecture, the model uses the current node to predict the surrounding window of context nodes. The skip-gram architecture weighs nearby context nodes more heavily than more distant context nodes. (https://en.wikipedia.org/wiki/Word2vec)" [https://en.wikipedia.org/wiki/Word2vec]
 comment: Input, Hidden, Output
 synonym: "n2v-SkipGram" EXACT []
 is_a: w2v:SkipGram ! word2vec-SkipGram
@@ -391,14 +434,16 @@ is_a: w2v:SkipGram ! word2vec-SkipGram
 [Term]
 id: w2v:CBOW
 name: word2vec-CBOW
+def: "In the continuous bag-of-words architecture, the model predicts the current word from a window of surrounding context words. The order of context words does not influence prediction (bag-of-words assumption). (https://en.wikipedia.org/wiki/Word2vec)" [https://en.wikipedia.org/wiki/Word2vec]
 comment: Input, Hidden, Output
 synonym: "w2v-CBOW" EXACT []
-is_a: https://w3id.org/dlo/ANN ! Artificial Neural Network
+is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
 
 [Term]
 id: w2v:SkipGram
 name: word2vec-SkipGram
+def: "In the continuous skip-gram architecture, the model uses the current word to predict the surrounding window of context words. The skip-gram architecture weighs nearby context words more heavily than more distant context words." [https://en.wikipedia.org/wiki/Word2vec]
 comment: Input, Hidden, Output
 synonym: "w2v-SkipGram" EXACT []
-is_a: https://w3id.org/dlo/ANN ! Artificial Neural Network
+is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
 
