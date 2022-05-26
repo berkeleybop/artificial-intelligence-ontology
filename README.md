@@ -1,28 +1,28 @@
 
-![Build Status](https://github.com/turbomam/deep-learning-ontology/workflows/CI/badge.svg)
-# Deep Learning Ontology
+![Build Status](https://github.com/turbomam/aio/workflows/CI/badge.svg)
+# Artificial Intelligence Ontology
 
 ### Move as much of this as possible into the Makefile
 
 ```Bash
 cd src/ontology
 make clean
-make -f deep-learning-ontology.Makefile deep-learning-ontology-edit.owl
+make -f aio.Makefile aio-edit.owl
 make all
-less reports/deep-learning-ontology-edit.owl-obo-report.tsv
+less reports/aio-edit.owl-obo-report.tsv
 # optionally
 make release
 # optionally
 #   assumes robot on the system path
 #   how to use robot provided by ODK?
 cd ../..
-robot convert -i deep-learning-ontology.owl -o deep-learning-ontology.json
+robot convert -i aio.owl -o aio.json
 # optionally
 #   assumes npm and node are on the system path
 npm i obographviz
-./node_modules/obographviz/bin/og2dot.js deep-learning-ontology.json > deep-learning-ontology.dot
+./node_modules/obographviz/bin/og2dot.js aio.json > aio.dot
 #   assumes dot from graphviz is on the path
-dot deep-learning-ontology.dot -Tpng -Grankdir=BT > learning-ontology.png
+dot aio.dot -Tpng -Grankdir=BT > learning-ontology.png
 
 ```
 
@@ -30,17 +30,17 @@ dot deep-learning-ontology.dot -Tpng -Grankdir=BT > learning-ontology.png
 - https://github.com/cmungall/obographviz
 - https://www.npmjs.com/package/obographviz
 
-> (node:4752) [DEP0128] DeprecationWarning: Invalid 'main' field in '/Users/MAM/Documents/gitrepos/deep-learning-ontology/node_modules/node-getopt/package.json' of './lib'. Please either fix that or report it to the module author
+> (node:4752) [DEP0128] DeprecationWarning: Invalid 'main' field in '/Users/MAM/Documents/gitrepos/aio/node_modules/node-getopt/package.json' of './lib'. Please either fix that or report it to the module author
 
 ### BioPortal integration
-- https://bioportal.bioontology.org/ontologies/DLO
-- https://github.com/turbomam/deep-learning-ontology/blob/main/partial_dlo_bioportal_screenshot.png
+- https://bioportal.bioontology.org/ontologies/AIO
+- https://github.com/turbomam/aio/blob/main/partial_aio_bioportal_screenshot.png
 
 ----
 
-This ontology... YOUR DESCRIPTION HERE
+This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases.
 
-More information can be found at http://obofoundry.org/ontology/deep-learning-ontology
+More information can be found at http://obofoundry.org/ontology/aio
 
 ## Versions
 
@@ -48,17 +48,17 @@ More information can be found at http://obofoundry.org/ontology/deep-learning-on
 
 The latest version of the ontology can always be found at:
 
-http://purl.obolibrary.org/obo/deep-learning-ontology.owl
+http://purl.obolibrary.org/obo/aio.owl
 
 (note this will not show up until the request has been approved by obofoundry.org)
 
 ### Editors' version
 
-Editors of this ontology should use the edit version, [src/ontology/deep-learning-ontology-edit.owl](src/ontology/deep-learning-ontology-edit.owl)
+Editors of this ontology should use the edit version, [src/ontology/aio-edit.owl](src/ontology/aio-edit.owl)
 
 ## Contact
 
-Please use this GitHub repository's [Issue tracker](https://github.com/turbomam/deep-learning-ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+Please use this GitHub repository's [Issue tracker](https://github.com/turbomam/aio/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
 ## Acknowledgements
 
