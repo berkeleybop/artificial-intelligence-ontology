@@ -1,319 +1,449 @@
 format-version: 1.2
-data-version: deep-learning-ontology/releases/2021-07-07/deep-learning-ontology-full.owl
-ontology: deep-learning-ontology/deep-learning-ontology-full
-property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
-property_value: http://purl.org/dc/elements/1.1/title "Deep Learning Ontology" xsd:string
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2021-07-07" xsd:string
+data-version: aio/releases/2022-05-25/aio-full.owl
+ontology: aio/aio-full
+property_value: http://purl.org/dc/elements/1.1/description "Taxonomy and partonomy of Deep Learning networks, layers, and functions." xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Artificial Intelligence Ontology" xsd:string
+property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
+property_value: owl:versionInfo "2022-05-25" xsd:string
 
 [Term]
-id: BFO:0000001
-name: entity
-property_value: BFO:0000179 "entity" xsd:string
-property_value: BFO:0000180 "Entity" xsd:string
-property_value: IAO:0000112 "Julius Caesar" xsd:string
-property_value: IAO:0000112 "the Second World War" xsd:string
-property_value: IAO:0000112 "Verdi’s Requiem" xsd:string
-property_value: IAO:0000112 "your body mass index" xsd:string
-property_value: IAO:0000116 "BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81" xsd:string
-property_value: IAO:0000116 "Entity doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example Werner Ceusters 'portions of reality' include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, 'How to track absolutely everything' at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
-property_value: IAO:0000600 "An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])" xsd:string
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+id: Addition:layer
+name: Addition layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: BFO:0000002
-name: continuant
-def: "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts." []
-is_a: BFO:0000001 ! entity
-property_value: BFO:0000179 "continuant" xsd:string
-property_value: BFO:0000180 "Continuant" xsd:string
-property_value: IAO:0000116 "BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240" xsd:string
-property_value: IAO:0000116 "Continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster's other portions of reality, questions are raised as to whether universals are continuants" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
-property_value: IAO:0000600 "A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])" xsd:string
-property_value: IAO:0000601 "if b is a continuant and if, for some t, c has_continuant_part b at t, then c is a continuant. (axiom label in BFO2 Reference: [126-001])" xsd:string
-property_value: IAO:0000601 "if b is a continuant and if, for some t, cis continuant_part of b at t, then c is a continuant. (axiom label in BFO2 Reference: [009-002])" xsd:string
-property_value: IAO:0000601 "if b is a material entity, then there is some temporal interval (referred to below as a one-dimensional temporal region) during which b exists. (axiom label in BFO2 Reference: [011-002])" xsd:string
-property_value: IAO:0000602 "(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] " xsd:string
-property_value: IAO:0000602 "(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] " xsd:string
-property_value: IAO:0000602 "(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] " xsd:string
-property_value: IAO:0000602 "(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] " xsd:string
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+id: BN:layer
+name: BN layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: BFO:0000004
-name: independent continuant
-def: "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything." []
-def: "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])" []
-is_a: BFO:0000002 ! continuant
-property_value: BFO:0000179 "ic" xsd:string
-property_value: BFO:0000180 "IndependentContinuant" xsd:string
-property_value: IAO:0000112 "a chair" xsd:string
-property_value: IAO:0000112 "a heart" xsd:string
-property_value: IAO:0000112 "a leg" xsd:string
-property_value: IAO:0000112 "a molecule" xsd:string
-property_value: IAO:0000112 "a spatial region" xsd:string
-property_value: IAO:0000112 "an atom" xsd:string
-property_value: IAO:0000112 "an orchestra." xsd:string
-property_value: IAO:0000112 "an organism" xsd:string
-property_value: IAO:0000112 "the bottom right portion of a human torso" xsd:string
-property_value: IAO:0000112 "the interior of your mouth" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
-property_value: IAO:0000601 "For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])" xsd:string
-property_value: IAO:0000601 "For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])" xsd:string
-property_value: IAO:0000602 "(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] " xsd:string
-property_value: IAO:0000602 "(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] " xsd:string
-property_value: IAO:0000602 "(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] " xsd:string
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+id: Convolutional:layer
+name: Convolutional layer
+synonym: "Pool" EXACT []
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: BFO:0000017
-name: realizable entity
-is_a: BFO:0000020 ! specifically dependent continuant
-property_value: BFO:0000179 "realizable" xsd:string
-property_value: BFO:0000180 "RealizableEntity" xsd:string
-property_value: IAO:0000112 "the disposition of this piece of metal to conduct electricity." xsd:string
-property_value: IAO:0000112 "the disposition of your blood to coagulate" xsd:string
-property_value: IAO:0000112 "the function of your reproductive organs" xsd:string
-property_value: IAO:0000112 "the role of being a doctor" xsd:string
-property_value: IAO:0000112 "the role of this boundary to delineate where Utah and Colorado meet" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
-property_value: IAO:0000600 "To say that b is a realizable entity is to say that b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (axiom label in BFO2 Reference: [058-002])" xsd:string
-property_value: IAO:0000601 "All realizable dependent continuants have independent continuants that are not spatial regions as their bearers. (axiom label in BFO2 Reference: [060-002])" xsd:string
-property_value: IAO:0000602 "(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] " xsd:string
-property_value: IAO:0000602 "(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] " xsd:string
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+id: Hidden:layer
+name: Hidden layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: BFO:0000020
-name: specifically dependent continuant
-def: "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])" []
-is_a: BFO:0000002 ! continuant
-property_value: BFO:0000179 "sdc" xsd:string
-property_value: BFO:0000180 "SpecificallyDependentContinuant" xsd:string
-property_value: IAO:0000112 "of one-sided specifically dependent continuants: the mass of this tomato" xsd:string
-property_value: IAO:0000112 "of relational dependent continuants (multiple bearers): John’s love for Mary, the ownership relation between John and this statue, the relation of authority between John and his subordinates." xsd:string
-property_value: IAO:0000112 "Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key" xsd:string
-property_value: IAO:0000112 "the disposition of this fish to decay" xsd:string
-property_value: IAO:0000112 "the function of this heart: to pump blood" xsd:string
-property_value: IAO:0000112 "the mutual dependence of proton donors and acceptors in chemical reactions [79" xsd:string
-property_value: IAO:0000112 "the mutual dependence of the role predator and the role prey as played by two organisms in a given interaction" xsd:string
-property_value: IAO:0000112 "the pink color of a medium rare piece of grilled filet mignon at its center" xsd:string
-property_value: IAO:0000112 "the role of being a doctor" xsd:string
-property_value: IAO:0000112 "the shape of this hole." xsd:string
-property_value: IAO:0000112 "the smell of this portion of mozzarella" xsd:string
-property_value: IAO:0000116 "Specifically dependent continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. We're not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc." xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
-property_value: IAO:0000602 "(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] " xsd:string
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+id: Input:layer
+name: Input layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: BFO:0000023
-name: role
-is_a: BFO:0000017 ! realizable entity
-property_value: BFO:0000179 "role" xsd:string
-property_value: BFO:0000180 "Role" xsd:string
-property_value: IAO:0000112 "John’s role of husband to Mary is dependent on Mary’s role of wife to John, and both are dependent on the object aggregate comprising John and Mary as member parts joined together through the relational quality of being married." xsd:string
-property_value: IAO:0000112 "the priest role" xsd:string
-property_value: IAO:0000112 "the role of a boundary to demarcate two neighboring administrative territories" xsd:string
-property_value: IAO:0000112 "the role of a building in serving as a military target" xsd:string
-property_value: IAO:0000112 "the role of a stone in marking a property boundary" xsd:string
-property_value: IAO:0000112 "the role of subject in a clinical trial" xsd:string
-property_value: IAO:0000112 "the student role" xsd:string
-property_value: IAO:0000116 "BFO 2 Reference: One major family of examples of non-rigid universals involves roles, and ontologies developed for corresponding administrative purposes may consist entirely of representatives of entities of this sort. Thus ‘professor’, defined as follows,b instance_of professor at t =Def. there is some c, c instance_of professor role & c inheres_in b at t.denotes a non-rigid universal and so also do ‘nurse’, ‘student’, ‘colonel’, ‘taxpayer’, and so forth. (These terms are all, in the jargon of philosophy, phase sortals.) By using role terms in definitions, we can create a BFO conformant treatment of such entities drawing on the fact that, while an instance of professor may be simultaneously an instance of trade union member, no instance of the type professor role is also (at any time) an instance of the type trade union member role (any more than any instance of the type color is at any time an instance of the type length).If an ontology of employment positions should be defined in terms of roles following the above pattern, this enables the ontology to do justice to the fact that individuals instantiate the corresponding universals –  professor, sergeant, nurse – only during certain phases in their lives." xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
-property_value: IAO:0000600 "b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])" xsd:string
-property_value: IAO:0000602 "(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] " xsd:string
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+id: Kernel:layer
+name: Kernel layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: BFO:0000031
-name: generically dependent continuant
-def: "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time." []
-def: "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])" []
-is_a: BFO:0000002 ! continuant
-property_value: BFO:0000179 "gdc" xsd:string
-property_value: BFO:0000180 "GenericallyDependentContinuant" xsd:string
-property_value: IAO:0000112 "The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity." xsd:string
-property_value: IAO:0000112 "the pdf file on your laptop, the pdf file that is a copy thereof on my laptop" xsd:string
-property_value: IAO:0000112 "the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule." xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
-property_value: IAO:0000602 "(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] " xsd:string
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+id: Output:layer
+name: Output layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: BFO:0000040
-name: material entity
-def: "An independent continuant [snap:IndependentContinuant] that is spatially extended whose identity is independent of that of other entities and can be maintained through time. Note: Material entity [snap:MaterialEntity] subsumes object [snap:Object], fiat object part [snap:FiatObjectPart], and object aggregate [snap:ObjectAggregate], which assume a three level theory of granularity, which is inadequate for some domains, such as biology." []
-def: "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time." []
-is_a: BFO:0000004 ! independent continuant
-property_value: BFO:0000179 "material" xsd:string
-property_value: BFO:0000180 "MaterialEntity" xsd:string
-property_value: IAO:0000112 "a flame" xsd:string
-property_value: IAO:0000112 "a forest fire" xsd:string
-property_value: IAO:0000112 "a human being" xsd:string
-property_value: IAO:0000112 "a hurricane" xsd:string
-property_value: IAO:0000112 "a photon" xsd:string
-property_value: IAO:0000112 "a puff of smoke" xsd:string
-property_value: IAO:0000112 "a sea wave" xsd:string
-property_value: IAO:0000112 "a tornado" xsd:string
-property_value: IAO:0000112 "an aggregate of human beings." xsd:string
-property_value: IAO:0000112 "an energy wave" xsd:string
-property_value: IAO:0000112 "an epidemic" xsd:string
-property_value: IAO:0000112 "Collection of random bacteria, a chair, dorsal surface of the body." xsd:string
-property_value: IAO:0000112 "the undetached arm of a human being" xsd:string
-property_value: IAO:0000116 "BFO 2 Reference: Material entities (continuants) can preserve their identity even while gaining and losing material parts. Continuants are contrasted with occurrents, which unfold themselves in successive temporal parts or phases [60" xsd:string
-property_value: IAO:0000116 "BFO 2 Reference: Object, Fiat Object Part and Object Aggregate are not intended to be exhaustive of Material Entity. Users are invited to propose new subcategories of Material Entity." xsd:string
-property_value: IAO:0000116 "BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here." xsd:string
-property_value: IAO:0000119 "BFO" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
-property_value: IAO:0000600 "A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])" xsd:string
-property_value: IAO:0000601 "every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])" xsd:string
-property_value: IAO:0000601 "Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])" xsd:string
-property_value: IAO:0000602 "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] " xsd:string
-property_value: IAO:0000602 "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] " xsd:string
-property_value: IAO:0000602 "(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] " xsd:string
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+id: Padding:layer
+name: Padding layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: DEEP-LEARNING-ONTOLOGY:00000000
-name: root node
+id: Pooling:layer
+name: Pooling layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: IAO:0000028
-name: symbol
-def: "An information content entity that is a mark(s) or character(s) used as a conventional representation of another entity." []
-is_a: IAO:0000030 ! information content entity
-property_value: IAO:0000111 "symbol" xsd:string
-property_value: IAO:0000112 "a serial number such as \"12324X\"" xsd:string
-property_value: IAO:0000112 "a stop sign" xsd:string
-property_value: IAO:0000112 "a written proper name such as \"OBI\"" xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000116 "20091104, MC: this needs work and will most probably change" xsd:string
-property_value: IAO:0000116 "2014-03-31: We would like to have a deeper analysis of 'mark' and 'sign' in the future (see https://github.com/information-artifact-ontology/IAO/issues/154)." xsd:string
-property_value: IAO:0000117 "PERSON: James A. Overton" xsd:string
-property_value: IAO:0000117 "PERSON: Jonathan Rees" xsd:string
-property_value: IAO:0000119 "based on Oxford English Dictionary" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+id: ReLU:layer
+name: ReLU layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: IAO:0000030
-name: information content entity
-def: "A generically dependent continuant that is about some thing." []
-def: "An information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity." []
-is_a: BFO:0000031 ! generically dependent continuant
-property_value: IAO:0000111 "information content entity" xsd:string
-property_value: IAO:0000112 "Examples of information content entites include journal articles, data, graphical layouts, and graphs." xsd:string
-property_value: IAO:0000112 "Examples of information content entites include journal articles, data, graphical layouts, and graphs." xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "2014-03-10: The use of \"thing\" is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ)." xsd:string
-property_value: IAO:0000116 "information_content_entity 'is_encoded_in' some digital_entity in obi before split (040907). information_content_entity 'is_encoded_in' some physical_document in obi before split (040907).\n\nPrevious. An information content entity is a non-realizable information entity that 'is encoded in' some digital or physical entity." xsd:string
-property_value: IAO:0000117 "PERSON: Chris Stoeckert" xsd:string
-property_value: IAO:0000119 "IAO" xsd:string
-property_value: IAO:0000119 "OBI_0000142" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+id: Recurrent:layer
+name: Recurrent layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: IAO:0000129
-name: version name
-name: version number
-def: "A version number is an information content entity which is a sequence of characters borne by part of each of a class of manufactured products or its packaging and indicates its order within a set of other products having the same name." []
-is_a: IAO:0000028 ! symbol
-property_value: IAO:0000111 "version number" xsd:string
-property_value: IAO:0000114 IAO:0000123
-property_value: IAO:0000116 "Note: we feel that at the moment we are happy with a general version number, and that we will subclass as needed in the future. For example, see 7. genome sequence version" xsd:string
-property_value: IAO:0000117 "GROUP: IAO" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+id: Sigmoid:function
+name: Sigmoid
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: OBI:0000245
-name: organization
-def: "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." []
-is_a: BFO:0000040 ! material entity
-property_value: IAO:0000111 "organization" xsd:string
-property_value: IAO:0000112 "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods." xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "BP: The definition summarizes long email discussions on the OBI developer, roles, biomaterial and denrie branches. It leaves open if an organization is a material entity or a dependent continuant, as no consensus was reached on that.  The current placement as material is therefore temporary, in order to move forward with development. Here is the entire email summary, on which the definition is based:\n\n1) there are organization_member_roles (president, treasurer, branch\neditor), with individual persons as bearers\n\n2) there are organization_roles (employer, owner, vendor, patent holder)\n\n3) an organization has a charter / rules / bylaws, which specify what roles\nthere are, how they should be realized, and how to modify the\ncharter/rules/bylaws themselves.\n\nIt is debatable what the organization itself is (some kind of dependent\ncontinuant or an aggregate of people). This also determines who/what the\nbearer of organization_roles' are. My personal favorite is still to define\norganization as a kind of 'legal entity', but thinking it through leads to\nall kinds of questions that are clearly outside the scope of OBI.\n\nInterestingly enough, it does not seem to matter much where we place\norganization itself, as long as we can subclass it (University, Corporation,\nGovernment Agency, Hospital), instantiate it (Affymetrix, NCBI, NIH, ISO,\nW3C, University of Oklahoma), and have it play roles.\n\nThis leads to my proposal: We define organization through the statements 1 -\n3 above, but without an 'is a' statement for now. We can leave it in its\ncurrent place in the is_a hierarchy (material entity) or move it up to\n'continuant'. We leave further clarifications to BFO, and close this issue\nfor now." xsd:string
-property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
-property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
-property_value: IAO:0000117 "PERSON: Philippe Rocca-Serra" xsd:string
-property_value: IAO:0000117 "PERSON: Susanna Sansone" xsd:string
-property_value: IAO:0000119 "GROUP: OBI" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+id: Softmax:function
+name: Softmax
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: ObsoleteClass
-name: obsolete SWO class
-is_a: owl:DeprecatedClass
+id: Weight:layer
+name: Weight layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: SWO:0000260
-name: publisher role
-def: "A publisher role is a role borne by an organization or individual in which they are responsible for making software available to a particular consumer group. Such organizations or individuals do need to be involved in the development of the software." []
-is_a: BFO:0000023 ! role
-property_value: IAO:0000119 "James Malone" xsd:string
+id: https://w3id.org/aio/AE
+name: Auto Encoder
+def: "An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning). The encoding is validated and refined by attempting to regenerate the input from the encoding. The autoencoder learns a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore insignificant data (“noise”). (https://en.wikipedia.org/wiki/Autoencoder)" [https://en.wikipedia.org/wiki/Autoencoder]
+comment: Input, Hidden, Matched Output-Input
+synonym: "AE" EXACT []
+is_a: https://w3id.org/aio/UPN ! Unsupervised Pretrained Networks
 
 [Term]
-id: SWO:0000392
-name: software developer role
-def: "Software developer role is a role borne by an organization or individual in which they are responsible for authoring software." []
-is_a: BFO:0000023 ! role
-property_value: IAO:0000119 "James Malone" xsd:string
+id: https://w3id.org/aio/ANN
+name: Artificial Neural Network
+def: "An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a biological brain, can transmit a signal to other neurons. An artificial neuron receives a signal then processes it and can signal neurons connected to it. The \"signal\" at a connection is a real number, and the output of each neuron is computed by some non-linear function of the sum of its inputs. The connections are called edges. Neurons and edges typically have a weight that adjusts as learning proceeds. The weight increases or decreases the strength of the signal at a connection. Neurons may have a threshold such that a signal is sent only if the aggregate signal crosses that threshold. Typically, neurons are aggregated into layers. Different layers may perform different transformations on their inputs. Signals travel from the first layer (the input layer), to the last layer (the output layer), possibly after traversing the layers multiple times." [https://en.wikipedia.org/wiki/Artificial_neural_network]
+synonym: "ANN" EXACT []
+synonym: "NN" EXACT []
+is_a: https://w3id.org/aio/Network ! Network
 
 [Term]
-id: SWO:0000396
-name: software developer organization
-def: "An organization or legal entity (including single person) that is responsible for developing software. Developing includes aspects of design, coding and testing." []
-is_a: OBI:0000245 ! organization
-relationship: RO:0000087 SWO:0000392 ! has_role software developer role
+id: https://w3id.org/aio/BM
+name: Boltzmann Machine
+def: "A Boltzmann machine is a type of stochastic recurrent neural network. It is a Markov random field. It was translated from statistical physics for use in cognitive science. The Boltzmann machine is based on a stochastic spin-glass model with an external field, i.e., a Sherrington–Kirkpatrick model that is a stochastic Ising Model[2] and applied to machine learning." [https://en.wikipedia.org/wiki/Boltzmann_machine]
+comment: Backfed Input, Probabilistic Hidden
+synonym: "BM" EXACT []
+synonym: "Sherrington–Kirkpatrick model with external field" EXACT []
+synonym: "stochastic Hopfield network with hidden units" EXACT []
+synonym: "stochastic Ising-Lenz-Little model" EXACT []
+is_a: https://w3id.org/aio/SCN ! Symmetrically Connected Networks
 
 [Term]
-id: SWO:0000397
-name: software publisher organization
-def: "An organization or legal entity (including single person) that is responsible for publishing software. Publishing here includes tasks such as designing and producing physical products, technical customer support, licensing arrangements and marketing." []
-is_a: OBI:0000245 ! organization
-relationship: RO:0000087 SWO:0000260 ! has_role publisher role
+id: https://w3id.org/aio/Backfed_Input_layer
+name: Backfed Input layer
+is_a: https://w3id.org/aio/Layer ! Layer
 
-[Typedef]
-id: BFO:0000060
-name: preceded by
-comment: Please note that, as stated on one of the RO documentation pages (https://code.google.com/p/obo-relations/wiki/ROAndBFO), some of the relations RO makes use are either uncontroversial (non-temporalized) parts of BFO2, or will be incorporated in the future. In the case of BFO_0000063, it is not currently in BFO2, but may be in the future. The RO ontologists assume this is the transitive form. For a full definition, refer to the inverse of this property, BFO_0000060. (Allyson Lister)
-property_value: http://purl.org/dc/elements/1.1/creator "OBO Foundry" xsd:string
-is_transitive: true
-inverse_of: BFO:0000063 ! followed by
+[Term]
+id: https://w3id.org/aio/DAE
+name: Denoising Auto Encoder
+def: "Denoising Auto Encoders (DAEs) take a partially corrupted input and are trained to recover the original undistorted input. In practice, the objective of denoising autoencoders is that of cleaning the corrupted input, or denoising. (https://en.wikipedia.org/wiki/Autoencoder)" []
+comment: Noisy Input, Hidden, Matched Output-Input
+synonym: "DAE" EXACT []
+is_a: https://w3id.org/aio/AE ! Auto Encoder
 
-[Typedef]
-id: BFO:0000063
-name: followed by
-def: "The assertion P 'followed by' P1 tells us something about Ps in general: that is, it tells us something about what happened later, given what we know about what happened earlier. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be preceded by some instance of P. Note that assertions using this property only are rather weak. Typically we will be interested in stronger relations, for example in the relation 'directly followed by'." []
-comment: Please note that, as stated on one of the RO documentation pages (https://code.google.com/p/obo-relations/wiki/ROAndBFO), some of the relations RO makes use are either uncontroversial (non-temporalized) parts of BFO2, or will be incorporated in the future. In the case of BFO_0000060, it is not currently in BFO2, but may be in the future. The RO ontologists assume this is the transitive form. (Allyson Lister)
-property_value: http://purl.org/dc/elements/1.1/creator "OBO Foundry" xsd:string
-property_value: IAO:0000119 "Modified by Allyson Lister from the preceded_by (which is the inverse of precedes / 'followed by') definition within RO: http://www.obofoundry.org/ro/ro.owl" xsd:string
-is_transitive: true
+[Term]
+id: https://w3id.org/aio/DBN
+name: Deep Belief Network
+def: "In machine learning, a deep belief network (DBN) is a generative graphical model, or alternatively a class of deep neural network, composed of multiple layers of latent variables (\"hidden units\"), with connections between the layers but not between units within each layer. When trained on a set of examples without supervision, a DBN can learn to probabilistically reconstruct its inputs. The layers then act as feature detectors. After this learning step, a DBN can be further trained with supervision to perform classification. DBNs can be viewed as a composition of simple, unsupervised networks such as restricted Boltzmann machines (RBMs) or autoencoders, where each sub-network's hidden layer serves as the visible layer for the next. An RBM is an undirected, generative energy-based model with a \"visible\" input layer and a hidden layer and connections between but not within layers. This composition leads to a fast, layer-by-layer unsupervised training procedure, where contrastive divergence is applied to each sub-network in turn, starting from the \"lowest\" pair of layers (the lowest visible layer is a training set). The observation that DBNs can be trained greedily, one layer at a time, led to one of the first effective deep learning algorithms. (https://en.wikipedia.org/wiki/Deep_belief_network)" [https://en.wikipedia.org/wiki/Deep_belief_network]
+comment: Backfed Input, Probabilistic Hidden, Hidden, Matched Output-Input
+synonym: "DBN" EXACT []
+is_a: https://w3id.org/aio/UPN ! Unsupervised Pretrained Networks
 
-[Typedef]
-id: RO:0000087
-name: has_role
+[Term]
+id: https://w3id.org/aio/DCIGN
+name: Deep Convolutional Inverse Graphics Network
+def: "A Deep Convolution Inverse Graphics Network (DC-IGN) is a model that learns an interpretable representation of images. This representation is disentangled with respect to transformations such as out-of-plane rotations and lighting variations. The DC-IGN model is composed of multiple layers of convolution and de-convolution operators and is trained using the Stochastic Gradient Variational Bayes (SGVB) algorithm. (https://arxiv.org/abs/1503.03167)" []
+comment: Input, Kernel, Convolutional/Pool, Probabilistic Hidden, Convolutional/Pool, Kernel, Output
+synonym: "DCIGN" EXACT []
+is_a: https://w3id.org/aio/AE ! Auto Encoder
 
-[Typedef]
-id: SWO:0000131
-name: directly preceded by
-def: "Entity A is 'directly preceded by' entity B if there are no intermediate entities temporally between the two entities. WIthin SWO this property is mainly used to describe versions of entities such as software." []
-property_value: http://purl.org/dc/elements/1.1/creator "OBO Foundry" xsd:string
-property_value: IAO:0000112 "Microsoft version 2007 is directly preceded by Microsoft version 2003." xsd:string
-property_value: IAO:0000119 "Allyson Lister" xsd:string
-is_a: BFO:0000060 ! preceded by
-inverse_of: SWO:0000132 ! directly followed by
+[Term]
+id: https://w3id.org/aio/DCN
+name: Deep Convolutional Network
+def: "A convolutional neural network (CNN, or ConvNet) is a class of artificial neural network, most commonly applied to analyze visual imagery. They are also known as shift invariant or space invariant artificial neural networks (SIANN), based on the shared-weight architecture of the convolution kernels or filters that slide along input features and provide translation equivariant responses known as feature maps. CNNs are regularized versions of multilayer perceptrons. (https://en.wikipedia.org/wiki/Convolutional_neural_network)" [https://en.wikipedia.org/wiki/Convolutional_neural_network]
+comment: Input, Kernel, Convolutional/Pool, Hidden, Output
+synonym: "CNN" EXACT []
+synonym: "ConvNet" EXACT []
+synonym: "Convolutional Neural Network" EXACT []
+synonym: "DCN" EXACT []
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 
-[Typedef]
-id: SWO:0000132
-name: directly followed by
-def: "'directly followed by' is an object property which further specializes the parent 'followed by' property. In the assertion 'C directly followed by C1', says that Cs generally are immediately followed by C1s." []
-property_value: IAO:0000119 "Allyson Lister" xsd:string
-is_a: BFO:0000063 ! followed by
+[Term]
+id: https://w3id.org/aio/DFF
+name: Deep FeedFoward
+def: "The feedforward neural network was the first and simplest type of artificial neural network devised. In this network, the information moves in only one direction—forward—from the input nodes, through the hidden nodes (if any) and to the output nodes. There are no cycles or loops in the network." [https://en.wikipedia.org/wiki/Feedforward_neural_network]
+comment: Input, Hidden, Output
+synonym: "DFF" EXACT []
+synonym: "Feedforward Network" EXACT []
+synonym: "FFN" EXACT []
+synonym: "MLP" EXACT []
+synonym: "Multilayer Perceptoron" EXACT []
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
+
+[Term]
+id: https://w3id.org/aio/DN
+name: Deconvolutional Network
+def: "Deconvolutional Networks, a framework that permits the unsupervised construction of hierarchical image representations. These representations can be used for both low-level tasks such as denoising, as well as providing features for object recognition. Each level of the hierarchy groups information from the level beneath to form more complex features that exist over a larger scale in the image. (https://ieeexplore.ieee.org/document/5539957)" [https://ieeexplore.ieee.org/document/5539957]
+comment: Input, Kernel, Convolutional/Pool, Output
+synonym: "DN" EXACT []
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
+
+[Term]
+id: https://w3id.org/aio/DNN
+name: Deep Neural Network
+def: "A deep neural network (DNN) is an artificial neural network (ANN) with multiple layers between the input and output layers.[13][2] There are different types of neural networks but they always consist of the same components: neurons, synapses, weights, biases, and functions. (https://en.wikipedia.org/wiki/Deep_learning#:~:text=A%20deep%20neural%20network%20(DNN,weights%2C%20biases%2C%20and%20functions.)" []
+synonym: "DNN" EXACT []
+is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
+
+[Term]
+id: https://w3id.org/aio/ELM
+name: Extreme Learning Machine
+def: "Extreme learning machines are feedforward neural networks for classification, regression, clustering, sparse approximation, compression and feature learning with a single layer or multiple layers of hidden nodes, where the parameters of hidden nodes (not just the weights connecting inputs to hidden nodes) need not be tuned. These hidden nodes can be randomly assigned and never updated (i.e. they are random projection but with nonlinear transforms), or can be inherited from their ancestors without being changed. In most cases, the output weights of hidden nodes are usually learned in a single step, which essentially amounts to learning a linear model. (https://en.wikipedia.org/wiki/Extreme_learning_machine)" [https://en.wikipedia.org/wiki/Extreme_learning_machine]
+comment: Input, Hidden, Output
+synonym: "ELM" EXACT []
+is_a: https://w3id.org/aio/FBN ! Feedback Network
+
+[Term]
+id: https://w3id.org/aio/ESN
+name: Echo State Network
+def: "The echo state network (ESN) is a type of reservoir computer that uses a recurrent neural network with a sparsely connected hidden layer (with typically 1% connectivity). The connectivity and weights of hidden neurons are fixed and randomly assigned. The weights of output neurons can be learned so that the network can produce or reproduce specific temporal patterns. The main interest of this network is that although its behaviour is non-linear, the only weights that are modified during training are for the synapses that connect the hidden neurons to output neurons. Thus, the error function is quadratic with respect to the parameter vector and can be differentiated easily to a linear system." [https://en.wikipedia.org/wiki/Echo_state_network#\:~\:text=The%20echo%20state%20network%20(ESN\,are%20fixed%20and%20randomly%20assigned]
+comment: Input, Recurrent, Output
+synonym: "ESN" EXACT []
+is_a: https://w3id.org/aio/RecNN ! Recurrent Neural Network
+
+[Term]
+id: https://w3id.org/aio/FBN
+name: Feedback Network
+def: "A feedback based approach in which the representation is formed in an iterative manner based on a feedback received from previous iteration's output. (https://arxiv.org/abs/1612.09508)" []
+comment: Input, Hidden, Output, Hidden
+synonym: "FBN" EXACT []
+is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
+
+[Term]
+id: https://w3id.org/aio/GAN
+name: Generative Adversarial Network
+def: "A generative adversarial network (GAN) is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in 2014. Two neural networks contest with each other in a game (in the form of a zero-sum game, where one agent's gain is another agent's loss). Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics. Though originally proposed as a form of generative model for unsupervised learning, GANs have also proven useful for semi-supervised learning, fully supervised learning,[ and reinforcement learning. The core idea of a GAN is based on the \"indirect\" training through the discriminator,[clarification needed] which itself is also being updated dynamically. This basically means that the generator is not trained to minimize the distance to a specific image, but rather to fool the discriminator. This enables the model to learn in an unsupervised manner." [https://en.wikipedia.org/wiki/Generative_adversarial_network]
+comment: Backfed Input, Hidden, Matched Output-Input, Hidden, Matched Output-Input
+synonym: "GAN" EXACT []
+is_a: https://w3id.org/aio/UPN ! Unsupervised Pretrained Networks
+
+[Term]
+id: https://w3id.org/aio/GCN
+name: Graph Convolutional Network
+def: "GCN is a type of convolutional neural network that can work directly on graphs and take advantage of their structural information. (https://arxiv.org/abs/1609.02907)" [https://arxiv.org/abs/1609.02907]
+comment: Input, Hidden, Hidden, Output
+synonym: "GCN" EXACT []
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
+
+[Term]
+id: https://w3id.org/aio/GPCN
+name: Graph Convolutional Policy Network
+def: "Graph Convolutional Policy Network (GCPN), a general graph convolutional network based model for goal-directed graph generation through reinforcement learning. The model is trained to optimize domain-specific rewards and adversarial loss through policy gradient, and acts in an environment that incorporates domain-specific rules." [https://arxiv.org/abs/1806.02473]
+comment: Input, Hidden, Hidden, Policy, Output
+synonym: "GPCN" EXACT []
+is_a: https://w3id.org/aio/GCN ! Graph Convolutional Network
+
+[Term]
+id: https://w3id.org/aio/GRU
+name: Gated Recurrent Unit
+def: "Gated recurrent units (GRUs) are a gating mechanism in recurrent neural networks, introduced in 2014 by Kyunghyun Cho et al. The GRU is like a long short-term memory (LSTM) with a forget gate, but has fewer parameters than LSTM, as it lacks an output gate. GRU's performance on certain tasks of polyphonic music modeling, speech signal modeling and natural language processing was found to be similar to that of LSTM.[4][5] GRUs have been shown to exhibit better performance on certain smaller and less frequent datasets." [https://en.wikipedia.org/wiki/Gated_recurrent_unit]
+comment: Input, Memory Cell, Output
+synonym: "GRU" EXACT []
+is_a: https://w3id.org/aio/LSTM ! Long Short Term Memory
+
+[Term]
+id: https://w3id.org/aio/HN
+name: Hopfield Network
+def: "A Hopfield network is a form of recurrent artificial neural network and a type of spin glass system popularised by John Hopfield in 1982 as described earlier by Little in 1974 based on Ernst Ising's work with Wilhelm Lenz on the Ising model. Hopfield networks serve as content-addressable (\"associative\") memory systems with binary threshold nodes, or with continuous variables. Hopfield networks also provide a model for understanding human memory. (https://en.wikipedia.org/wiki/Hopfield_network)" [https://en.wikipedia.org/wiki/Hopfield_network]
+comment: Backfed input
+synonym: "HN" EXACT []
+synonym: "Ising model of a neural network" EXACT []
+synonym: "Ising–Lenz–Little model" EXACT []
+is_a: https://w3id.org/aio/SCN ! Symmetrically Connected Networks
+
+[Term]
+id: https://w3id.org/aio/KN
+name: Kohonen Network
+def: "A self-organizing map (SOM) or self-organizing feature map (SOFM) is an unsupervised machine learning technique used to produce a low-dimensional (typically two-dimensional) representation of a higher dimensional data set while preserving the topological structure of the data. For example, a data set with p variables measured in n observations could be represented as clusters of observations with similar values for the variables. These clusters then could be visualized as a two-dimensional \"map\" such that observations in proximal clusters have more similar values than observations in distal clusters. This can make high-dimensional data easier to visualize and analyze. An SOM is a type of artificial neural network but is trained using competitive learning rather than the error-correction learning (e.g., backpropagation with gradient descent) used by other artificial neural networks. The SOM was introduced by the Finnish professor Teuvo Kohonen in the 1980s and therefore is sometimes called a Kohonen map or Kohonen network.[1][2] The Kohonen map or network is a computationally convenient abstraction building on biological models of neural systems from the 1970s[3] and morphogenesis models dating back to Alan Turing in the 1950s." [https://en.wikipedia.org/wiki/Self-organizing_map]
+comment: Input, Hidden
+synonym: "KN" EXACT []
+synonym: "self-organizing feature map" EXACT []
+synonym: "self-organizing map" EXACT []
+synonym: "SOFM" EXACT []
+synonym: "SOM" EXACT []
+is_a: https://w3id.org/aio/Network ! Network
+
+[Term]
+id: https://w3id.org/aio/LSM
+name: Liquid State Machine
+def: "A liquid state machine (LSM) is a type of reservoir computer that uses a spiking neural network. An LSM consists of a large collection of units (called nodes, or neurons). Each node receives time varying input from external sources (the inputs) as well as from other nodes. Nodes are randomly connected to each other. The recurrent nature of the connections turns the time varying input into a spatio-temporal pattern of activations in the network nodes. The spatio-temporal patterns of activation are read out by linear discriminant units. The soup of recurrently connected nodes will end up computing a large variety of nonlinear functions on the input. Given a large enough variety of such nonlinear functions, it is theoretically possible to obtain linear combinations (using the read out units) to perform whatever mathematical operation is needed to perform a certain task, such as speech recognition or computer vision. The word liquid in the name comes from the analogy drawn to dropping a stone into a still body of water or other liquid. The falling stone will generate ripples in the liquid. The input (motion of the falling stone) has been converted into a spatio-temporal pattern of liquid displacement (ripples). (https://en.wikipedia.org/wiki/Liquid_state_machine)" [https://en.wikipedia.org/wiki/Liquid_state_machine]
+comment: Input, Spiking Hidden, Output
+synonym: "LSM" EXACT []
+is_a: https://w3id.org/aio/Network ! Network
+
+[Term]
+id: https://w3id.org/aio/LSTM
+name: Long Short Term Memory
+def: "Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections. It can process not only single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition, speech recognition and anomaly detection in network traffic or IDSs (intrusion detection systems). A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell." [https://en.wikipedia.org/wiki/Long_short-term_memory]
+comment: Input, Memory Cell, Output
+synonym: "LSTM" EXACT []
+is_a: https://w3id.org/aio/RecNN ! Recurrent Neural Network
+
+[Term]
+id: https://w3id.org/aio/Layer
+name: Layer
+
+[Term]
+id: https://w3id.org/aio/MC
+name: Markov Chain
+def: "A Markov chain or Markov process is a stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event.[1][2][3] A countably infinite sequence, in which the chain moves state at discrete time steps, gives a discrete-time Markov chain (DTMC). A continuous-time process is called a continuous-time Markov chain (CTMC). It is named after the Russian mathematician Andrey Markov." [https://en.wikipedia.org/wiki/Markov_chain]
+comment: Probalistic Hidden
+synonym: "MC" EXACT []
+is_a: https://w3id.org/aio/Network ! Network
+
+[Term]
+id: https://w3id.org/aio/Matched_Output-Input_layer
+name: Matched Output-Input layer
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: https://w3id.org/aio/Memory_Cell_layer
+name: Memory Cell layer
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: https://w3id.org/aio/NTM
+name: Neural Turing Machine
+def: "A Neural Turing machine (NTMs) is a recurrent neural network model. The approach was published by Alex Graves et al. in 2014. NTMs combine the fuzzy pattern matching capabilities of neural networks with the algorithmic power of programmable computers. An NTM has a neural network controller coupled to external memory resources, which it interacts with through attentional mechanisms. The memory interactions are differentiable end-to-end, making it possible to optimize them using gradient descent. An NTM with a long short-term memory (LSTM) network controller can infer simple algorithms such as copying, sorting, and associative recall from examples alone." [https://en.wikipedia.org/wiki/Neural_Turing_machine]
+comment: Input, Hidden, Spiking Hidden, Output
+synonym: "NTM" EXACT []
+is_a: https://w3id.org/aio/FFN
+is_a: https://w3id.org/aio/LSTM ! Long Short Term Memory
+
+[Term]
+id: https://w3id.org/aio/Network
+name: Network
+
+[Term]
+id: https://w3id.org/aio/Niosy_Input_layer
+name: Noisy Input layer
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: https://w3id.org/aio/Probabilistic_Hidden_layer
+name: Probabilistic Hidden layer
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: https://w3id.org/aio/RBM
+name: Restricted Boltzmann Machine
+def: "A restricted Boltzmann machine (RBM) is a generative stochastic artificial neural network that can learn a probability distribution over its set of inputs." [https://en.wikipedia.org/wiki/Restricted_Boltzmann_machine]
+comment: Backfed Input, Probabilistic Hidden
+synonym: "RBM" EXACT []
+is_a: https://w3id.org/aio/BM ! Boltzmann Machine
+
+[Term]
+id: https://w3id.org/aio/RBN
+name: Radial Basis Network
+def: "Like recurrent neural networks (RNNs), transformers are designed to handle sequential input data, such as natural language, for tasks such as translation and text summarization. However, unlike RNNs, transformers do not necessarily process the data in order. Rather, the attention mechanism provides context for any position in the input sequence." [https://en.wikipedia.org/wiki/Radial_basis_function_network]
+comment: Input, Hidden, Output
+synonym: "Radial Basis Function Network" EXACT []
+synonym: "RBFN" EXACT []
+synonym: "RBN" EXACT []
+is_a: https://w3id.org/aio/FFN
+
+[Term]
+id: https://w3id.org/aio/RecNN
+name: Recurrent Neural Network
+def: "A recurrent neural network (RNN) is a class of artificial neural networks where connections between nodes form a directed graph along a temporal sequence. This allows it to exhibit temporal dynamic behavior. Derived from feedforward neural networks, RNNs can use their internal state (memory) to process variable length sequences of inputs." [https://en.wikipedia.org/wiki/Recurrent_neural_network]
+comment: Input, Memory Cell, Output
+synonym: "RecNN" EXACT []
+synonym: "Recurrent Network" EXACT []
+synonym: "RN" EXACT []
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
+
+[Term]
+id: https://w3id.org/aio/RecuNN
+name: Recursive Neural Network
+def: "A recursive neural network is a kind of deep neural network created by applying the same set of weights recursively over a structured input, to produce a structured prediction over variable-size input structures, or a scalar prediction on it, by traversing a given structure in topological order. Recursive neural networks, sometimes abbreviated as RvNNs, have been successful, for instance, in learning sequence and tree structures in natural language processing, mainly phrase and sentence continuous representations based on word embedding." [https://en.wikipedia.org/wiki/Recursive_neural_network]
+synonym: "RecuNN" EXACT []
+synonym: "RvNN" EXACT []
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
+
+[Term]
+id: https://w3id.org/aio/ResNN
+name: Residual Neural Network
+def: "A residual neural network (ResNet) is an artificial neural network (ANN) of a kind that builds on constructs known from pyramidal cells in the cerebral cortex. Residual neural networks do this by utilizing skip connections, or shortcuts to jump over some layers. Typical ResNet models are implemented with double- or triple- layer skips that contain nonlinearities (ReLU) and batch normalization in between. An additional weight matrix may be used to learn the skip weights; these models are known as HighwayNets. Models with several parallel skips are referred to as DenseNets. In the context of residual neural networks, a non-residual network may be described as a 'plain network'." [https://en.wikipedia.org/wiki/Residual_neural_network]
+comment: Input, Weight, BN, ReLU, Weight, BN, Addition, ReLU
+synonym: "deep residual network" EXACT []
+synonym: "DRN" EXACT []
+synonym: "ResNet" EXACT []
+synonym: "ResNN" EXACT []
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
+
+[Term]
+id: https://w3id.org/aio/SAE
+name: Sparse AE
+def: "Sparse autoencoders may include more (rather than fewer) hidden units than inputs, but only a small number of the hidden units are allowed to be active at the same time (thus, sparse). This constraint forces the model to respond to the unique statistical features of the training data. (https://en.wikipedia.org/wiki/Autoencoder)" []
+comment: Input, Hidden, Matched Output-Input
+synonym: "SAE" EXACT []
+is_a: https://w3id.org/aio/AE ! Auto Encoder
+
+[Term]
+id: https://w3id.org/aio/SCN
+name: Symmetrically Connected Networks
+def: "Like recurrent networks, but the connections between units are symmetrical (they have the same weight in both directions)." [https://ieeexplore.ieee.org/document/287176]
+synonym: "SCN" EXACT []
+is_a: https://w3id.org/aio/Network ! Network
+
+[Term]
+id: https://w3id.org/aio/SLP
+name: Perceptron
+def: "The perceptron is an algorithm for supervised learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class. It is a type of linear classifier, i.e. a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector. (https://en.wikipedia.org/wiki/Perceptron)" []
+comment: Input, Output
+synonym: "Single Layer Perceptron" EXACT []
+synonym: "SLP" EXACT []
+is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
+
+[Term]
+id: https://w3id.org/aio/SVM
+name: Support Vector Machine
+def: "In machine learning, support-vector machines (SVMs, also support-vector networks) are supervised learning models with associated learning algorithms that analyze data for classification and regression analysis. Developed at AT&T Bell Laboratories by Vladimir Vapnik with colleagues (Boser et al., 1992, Guyon et al., 1993, Vapnik et al., 1997) SVMs are one of the most robust prediction methods, being based on statistical learning frameworks or VC theory proposed by Vapnik (1982, 1995) and Chervonenkis (1974). Given a set of training examples, each marked as belonging to one of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier (although methods such as Platt scaling exist to use SVM in a probabilistic classification setting). SVM maps training examples to points in space so as to maximise the width of the gap between the two categories. New examples are then mapped into that same space and predicted to belong to a category based on which side of the gap they fall." [https://en.wikipedia.org/wiki/Support-vector_machine]
+comment: Input, Hidden, Output
+synonym: "SVM" EXACT []
+is_a: https://w3id.org/aio/Network ! Network
+
+[Term]
+id: https://w3id.org/aio/Spiking_Hidden_layer
+name: Spiking Hidden layer
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: https://w3id.org/aio/Transformer
+name: Transformer
+def: "A transformer is a deep learning model that adopts the mechanism of attention, differentially weighing the significance of each part of the input data. It is used primarily in the field of natural language processing (NLP) and in computer vision (CV). (https://en.wikipedia.org/wiki/Transformer_(machine_learning_model))" [https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)]
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
+
+[Term]
+id: https://w3id.org/aio/UPN
+name: Unsupervised Pretrained Networks
+def: "Unsupervised pre-training initializes a discriminative neural net from one which was trained using an unsupervised criterion, such as a deep belief network or a deep autoencoder. This method can sometimes help with both the optimization and the overfitting issues." [https://metacademy.org/graphs/concepts/unsupervised_pre_training#\:~\:text=Unsupervised%20pre%2Dtraining%20initializes%20a\,optimization%20and%20the%20overfitting%20issues]
+synonym: "UPN" EXACT []
+is_a: https://w3id.org/aio/Network ! Network
+
+[Term]
+id: https://w3id.org/aio/VAE
+name: Variational Auto Encoder
+def: "Variational autoencoders are meant to compress the input information into a constrained multivariate latent distribution (encoding) to reconstruct it as accurately as possible (decoding). (https://en.wikipedia.org/wiki/Variational_autoencoder)" []
+comment: Input, Probabilistic Hidden, Matched Output-Input
+synonym: "VAE" EXACT []
+is_a: https://w3id.org/aio/AE ! Auto Encoder
+
+[Term]
+id: n2v:CBOW
+name: node2vec-CBOW
+def: "In the continuous bag-of-words architecture, the model predicts the current node from a window of surrounding context nodes. The order of context nodes does not influence prediction (bag-of-words assumption)." [https://en.wikipedia.org/wiki/Word2vec]
+comment: Input, Hidden, Output
+synonym: "n2v-CBOW" EXACT []
+is_a: w2v:CBOW ! word2vec-CBOW
+
+[Term]
+id: n2v:SkipGram
+name: node2vec-SkipGram
+def: "In the continuous skip-gram architecture, the model uses the current node to predict the surrounding window of context nodes. The skip-gram architecture weighs nearby context nodes more heavily than more distant context nodes. (https://en.wikipedia.org/wiki/Word2vec)" [https://en.wikipedia.org/wiki/Word2vec]
+comment: Input, Hidden, Output
+synonym: "n2v-SkipGram" EXACT []
+is_a: w2v:SkipGram ! word2vec-SkipGram
+
+[Term]
+id: w2v:CBOW
+name: word2vec-CBOW
+def: "In the continuous bag-of-words architecture, the model predicts the current word from a window of surrounding context words. The order of context words does not influence prediction (bag-of-words assumption). (https://en.wikipedia.org/wiki/Word2vec)" [https://en.wikipedia.org/wiki/Word2vec]
+comment: Input, Hidden, Output
+synonym: "w2v-CBOW" EXACT []
+is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
+
+[Term]
+id: w2v:SkipGram
+name: word2vec-SkipGram
+def: "In the continuous skip-gram architecture, the model uses the current word to predict the surrounding window of context words. The skip-gram architecture weighs nearby context words more heavily than more distant context words." [https://en.wikipedia.org/wiki/Word2vec]
+comment: Input, Hidden, Output
+synonym: "w2v-SkipGram" EXACT []
+is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
 
