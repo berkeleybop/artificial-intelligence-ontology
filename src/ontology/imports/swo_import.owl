@@ -11,9 +11,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aio/imports/swo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2022-05-25/imports/swo_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2022-06-03/imports/swo_import.owl"/>
         <dc:source rdf:resource="http://www.ebi.ac.uk/swo/swo.owl/1.7"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-03</owl:versionInfo>
     </owl:Ontology>
     
 
