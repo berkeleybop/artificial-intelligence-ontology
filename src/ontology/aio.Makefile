@@ -31,3 +31,34 @@ clean:
 	rm -rf aio-src-t.tsv
 	rm -rf aio-component.owl
 	rm -rf aio-edit.owl
+
+../../external/methods.yaml: ../../external/methods.json
+	# --container-class-name
+	# --format (yaml by default)
+	# --enum-columns
+	# --enum-mask-columns
+	# --max-enum-size
+	# --enum-threshold
+	# --omit-null
+	poetry run schemauto generalize-json $< \
+		--enum-threshold 999 \
+		--schema-name PwcMethods \
+		--output $@
+
+../../external/methods_curated.ttl: ../../external/methods_curated.yaml
+	#  --metadata-profile [linkml|rdfs], [default: linkml]
+	# --type-objects / --no-type-objects, [default: type-objects]
+	#  --metaclasses / --no-metaclasses, [default: metaclasses]
+	#  --add-ols-annotations / --no-add-ols-annotations, [default: add-ols-annotations]
+	#  --ontology-iri-suffix , [default: .owl.ttl]
+	#  -f, --format [owl|ttl|json-ld|xml|n3|turtle|ttl|ntriples|nt|nt11|nquads|trix|trig|hext], [default: owl]
+	#  --metadata / --no-metadata, [default: metadata]
+	#  --useuris / --metauris, [default: useuris]
+	#  -im, --importmap FILENAME       Import mapping file
+	#  --mergeimports / --no-mergeimports, (default=mergeimports)
+	poetry run gen-owl $< \
+		--output $@
+
+
+
+

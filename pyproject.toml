@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "artificial-intelligence-ontology"
+version = "0.1.0"
+description = "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases."
+authors = ["Marcin Pawel Joachimiak <MJoachimiak@lbl.gov>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+schema-automator = "^0.2.7"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
