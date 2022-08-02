@@ -1,0 +1,207 @@
+@prefix Collections: <https://w3id.org/Collections> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix linkml: <https://w3id.org/linkml/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Collections: a owl:Ontology ;
+    rdfs:label "Collections" ;
+    IAO:0000700 Collections:Collections,
+        Collections:Container,
+        Collections:Paper ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    linkml:generation_date "2022-07-29T09:20:47" ;
+    linkml:metamodel_version "1.7.0" ;
+    linkml:source_file "methods_curated.yaml" ;
+    linkml:source_file_date "2022-07-29T09:12:37" ;
+    linkml:source_file_size 2337 .
+
+linkml:SubsetDefinition a owl:Class ;
+    rdfs:label "subset_definition" .
+
+linkml:topValue a owl:DatatypeProperty ;
+    rdfs:label "value" .
+
+Collections:Container a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Container" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty Collections:full_name ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty Collections:introduced_year ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty Collections:num_papers ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass Collections:HttpsIdentifier ;
+            owl:onProperty Collections:url ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass Collections:Identifier ;
+            owl:onProperty Collections:source_url ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty Collections:code_snippet_url ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom Collections:Collections ;
+            owl:onProperty Collections:collections ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty Collections:source_title ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty Collections:description ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty Collections:name ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty Collections:paper ] .
+
+Collections:Paper a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Paper" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty Collections:title ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass Collections:HttpsIdentifier ;
+            owl:onProperty Collections:url ] .
+
+Collections:area a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "area" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='General', description=None)" .
+
+Collections:area_id a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "area_id" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='general', description=None)" .
+
+Collections:code_snippet_url a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "code_snippet_url" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='https://github.com/Smerity/sha-rnn/blob/218d748022dbcf32d50bbbb4d151a9b6de3f8bba/model.py#L53', description=None)" .
+
+Collections:collection a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "collection" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Attention Modules', description=None)" .
+
+Collections:collections a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "collections" ;
+    rdfs:range Collections:Collections .
+
+Collections:description a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "description" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='**Single-Headed Attention** is a single-headed attention module used in the [SHA-RNN](https://paperswithcode.com/method/sha-rnn) language model. The principle design reasons for single-headedness were simplicity (avoiding running out of memory) and scepticism about the benefits of using multiple heads.', description=None)" .
+
+Collections:full_name a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "full_name" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Single-Headed Attention', description=None)" .
+
+Collections:introduced_year a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "introduced_year" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='2000', description=None)" .
+
+Collections:name a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "name" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Single-Headed Attention', description=None)" .
+
+Collections:num_papers a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "num_papers" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='5', description=None)" .
+
+Collections:paper a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "paper" ;
+    rdfs:range linkml:String .
+
+Collections:source_title a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "source_title" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Single Headed Attention RNN: Stop Thinking With Your Head', description=None)" .
+
+Collections:source_url a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "source_url" ;
+    rdfs:range Collections:Identifier ;
+    linkml:examples "Example(value='https://arxiv.org/abs/1911.11423v2', description=None)" .
+
+Collections:title a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "title" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Single Headed Attention RNN: Stop Thinking With Your Head', description=None)" .
+
+Collections:Identifier a owl:Class,
+        linkml:TypeDefinition ;
+    rdfs:label "identifier" ;
+    rdfs:subClassOf linkml:String .
+
+Collections:url a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "url" ;
+    rdfs:range Collections:HttpsIdentifier ;
+    linkml:examples "Example(value='https://paperswithcode.com/method/single-headed-attention', description=None)" .
+
+linkml:TypeDefinition a owl:Class ;
+    rdfs:label "type_definition" .
+
+Collections:Collections a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Collections" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty Collections:area_id ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty Collections:area ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty Collections:collection ] .
+
+Collections:HttpsIdentifier a owl:Class,
+        linkml:TypeDefinition ;
+    rdfs:label "https_identifier" ;
+    rdfs:subClassOf linkml:String .
+
+linkml:ClassDefinition a owl:Class ;
+    rdfs:label "class_definition" .
+
+linkml:SlotDefinition a owl:Class ;
+    rdfs:label "slot_definition" .
+
