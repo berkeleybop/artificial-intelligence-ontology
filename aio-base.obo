@@ -1,90 +1,1075 @@
 format-version: 1.2
-data-version: aio/releases/2022-05-25/aio-base.owl
+data-version: aio/releases/2022-08-31/aio-base.owl
 ontology: aio/aio-base
 property_value: http://purl.org/dc/elements/1.1/description "Taxonomy and partonomy of Deep Learning networks, layers, and functions." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Artificial Intelligence Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-05-25" xsd:string
+property_value: owl:versionInfo "2022-08-31" xsd:string
 
 [Term]
-id: Addition:layer
-name: Addition layer
+id: Activation:Layer
+name: Activation Layer
+def: "Applies an activation function to an output." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Activation]
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: BN:layer
-name: BN layer
+id: Activity:Bias
+name: Activity Bias
+def: "A type of selection bias that occurs when systems/platforms get their training data from their most active users, rather than those less active (or inactive)." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: https://w3id.org/aio/Use_And_Interpretation_Bias ! Use And Interpretation Bias
+
+[Term]
+id: ActivityRegularization:Layer
+name: ActivityRegularization Layer
+def: "Layer that applies an update to the cost function based input activity." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/ActivityRegularization]
+is_a: Regularization:Layer ! Regularization Layer
+
+[Term]
+id: Add:Layer
+name: Add Layer
+def: "Layer that adds a list of inputs. It takes as input a list of tensors, all of the same shape, and returns a single tensor (also of the same shape)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Add]
+is_a: Merging:Layers
+
+[Term]
+id: AdditiveAttention:Layer
+name: AdditiveAttention Layer
+def: "Additive attention layer, a.k.a. Bahdanau-style attention." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/AdditiveAttention]
+is_a: Attention:Layer ! Attention Layer
+
+[Term]
+id: AlphaDropout:Layer
+name: AlphaDropout Layer
+def: "Applies Alpha Dropout to the input. Alpha Dropout is a Dropout that keeps mean and variance of inputs to their original values, in order to ensure the self-normalizing property even after this dropout. Alpha Dropout fits well to Scaled Exponential Linear Units by randomly setting activations to the negative saturation value." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/AlphaDropout]
+is_a: Regularization:Layer ! Regularization Layer
+
+[Term]
+id: Amplification:Bias
+name: Amplification Bias
+def: "Arises when the distribution over prediction outputs is skewed in comparison to the prior distribution of the prediction target." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Processing:Bias ! Processing Bias
+
+[Term]
+id: Anchoring:Bias
+name: Anchoring Bias
+def: "A cognitive bias, the influence of a particular reference point or anchor on people’s decisions. Often more fully referred to as anchoring-and-adjustment, or anchoring-and-adjusting: after an anchor is set, people adjust insufficiently from that anchor point to arrive at a final answer. Decision makers are biased towards an initially presented value." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Individual:Bias ! Individual Bias
+
+[Term]
+id: Attention:Layer
+name: Attention Layer
+def: "Dot-product attention layer, a.k.a. Luong-style attention." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Attention]
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: Convolutional:layer
-name: Convolutional layer
-synonym: "Pool" EXACT []
+id: Average:Layer
+name: Average Layer
+def: "Layer that averages a list of inputs element-wise. It takes as input a list of tensors, all of the same shape, and returns a single tensor (also of the same shape)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Average]
+is_a: Merging:Layers
+
+[Term]
+id: AveragePooling1D:Layer
+name: AveragePooling1D Layer
+def: "Average pooling for temporal data. Downsamples the input representation by taking the average value over the window defined by pool_size. The window is shifted by strides. The resulting output when using \"valid\" padding option has a shape of: output_shape = (input_shape - pool_size + 1) / strides). The resulting output shape when using the \"same\" padding option is: output_shape = input_shape / strides." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/AveragePooling1D]
+synonym: "AvgPool1D" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: AveragePooling2D:Layer
+name: AveragePooling2D Layer
+def: "Average pooling operation for spatial data. Downsamples the input along its spatial dimensions (height and width) by taking the average value over an input window (of size defined by pool_size) for each channel of the input. The window is shifted by strides along each dimension. The resulting output when using \"valid\" padding option has a shape (number of rows or columns) of: output_shape = math.floor((input_shape - pool_size) / strides) + 1 (when input_shape >= pool_size). The resulting output shape when using the \"same\" padding option is: output_shape = math.floor((input_shape - 1) / strides) + 1." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/AveragePooling2D]
+synonym: "AvgPool2D" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: AveragePooling3D:Layer
+name: AveragePooling3D Layer
+def: "Average pooling operation for 3D data (spatial or spatio-temporal). Downsamples the input along its spatial dimensions (depth, height, and width) by taking the average value over an input window (of size defined by pool_size) for each channel of the input. The window is shifted by strides along each dimension." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/AveragePooling3D]
+synonym: "AvgPool3D" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: BatchNormalization:Layer
+name: BatchNormalization Layer
+def: "Layer that normalizes its inputs. Batch normalization applies a transformation that maintains the mean output close to 0 and the output standard deviation close to 1. Importantly, batch normalization works differently during training and during inference. During training (i.e. when using fit() or when calling the layer/model with the argument training=True), the layer normalizes its output using the mean and standard deviation of the current batch of inputs. That is to say, for each channel being normalized, the layer returns gamma * (batch - mean(batch)) / sqrt(var(batch) + epsilon) + beta, where: epsilon is small constant (configurable as part of the constructor arguments), gamma is a learned scaling factor (initialized as 1), which can be disabled by passing scale=False to the constructor. beta is a learned offset factor (initialized as 0), which can be disabled by passing center=False to the constructor. During inference (i.e. when using evaluate() or predict() or when calling the layer/model with the argument training=False (which is the default), the layer normalizes its output using a moving average of the mean and standard deviation of the batches it has seen during training. That is to say, it returns gamma * (batch - self.moving_mean) / sqrt(self.moving_var + epsilon) + beta. self.moving_mean and self.moving_var are non-trainable variables that are updated each time the layer in called in training mode, as such: moving_mean = moving_mean * momentum + mean(batch) * (1 - momentum) moving_var = moving_var * momentum + var(batch) * (1 - momentum)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/BatchNormalization]
+is_a: Normalization:Layer ! Normalization Layer
+
+[Term]
+id: Behavioral:Bias
+name: Behavioral Bias
+def: "Systematic distortions in user behavior across platforms or contexts, or across users represented in different datasets." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Individual:Bias ! Individual Bias
+
+[Term]
+id: Bidirectional:Layer
+name: Bidirectional Layer
+def: "Bidirectional wrapper for RNNs." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Bidirectional]
+is_a: Recurrent:Layer ! Recurrent Layer
+
+[Term]
+id: CategoryEncoding:Layer
+name: CategoryEncoding Layer
+def: "A preprocessing layer which encodes integer features. This layer provides options for condensing data into a categorical encoding when the total number of tokens are known in advance. It accepts integer values as inputs, and it outputs a dense or sparse representation of those inputs. For integer inputs where the total number of tokens is not known, use tf.keras.layers.IntegerLookup instead." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/CategoryEncoding]
+is_a: https://w3id.org/aio/Categorical_Features_Preprocessing_Layer ! Categorical Features Preprocessing Layer
+
+[Term]
+id: CenterCrop:Layer
+name: CenterCrop Layer
+def: "A preprocessing layer which crops images. This layers crops the central portion of the images to a target size. If an image is smaller than the target size, it will be resized and cropped so as to return the largest possible window in the image that matches the target aspect ratio. Input pixel values can be of any range (e.g. [0., 1.) or [0, 255]) and of interger or floating point dtype. By default, the layer will output floats." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/CenterCrop]
+is_a: https://w3id.org/aio/Image_Preprocessing_Layer ! Image Preprocessing Layer
+
+[Term]
+id: Cognitive:Bias
+name: Cognitive Bias
+def: "A broad term referring generally to a systematic pattern of deviation from rational judgement and decision-making. A large variety of cognitive biases have been identified over many decades of research in judgement and decision-making, some of which are adaptive mental shortcuts known as heuristics." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Individual:Bias ! Individual Bias
+
+[Term]
+id: Computational:Bias
+name: Computational Bias
+def: "A systematic tendency which causes differences between results and facts. The bias exists in numbers of the process of data analysis, including the source of the data, the estimator chosen, and the ways the data was analyzed." [https://en.wikipedia.org/wiki/Bias_(statistics)]
+synonym: "Statistical Bias" EXACT []
+is_a: https://w3id.org/aio/Bias ! Bias
+
+[Term]
+id: Concatenate:Layer
+name: Concatenate Layer
+def: "Layer that concatenates a list of inputs. It takes as input a list of tensors, all of the same shape except for the concatenation axis, and returns a single tensor that is the concatenation of all inputs." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Concatenate]
+is_a: Merging:Layers
+
+[Term]
+id: Confirmation:Bias
+name: Confirmation Bias
+def: "A cognitive bias where people tend to prefer information that aligns with, or confirms, their existing beliefs. People can exhibit confirmation bias in the search for, interpretation of, and recall of information. In the famous Wason selection task experiments, participants repeatedly showed a preference for confirmation over falsification. They were tasked with identifying an underlying rule that applied to number triples they were shown, and they overwhelmingly tested triples that confirmed rather than falsified their hypothesized rule." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Individual:Bias ! Individual Bias
+
+[Term]
+id: Consumer:Bias
+name: Consumer Bias
+def: "Arises when an algorithm or platform provides users with a new venue within which to express their biases, and may occur from either side, or party, in a digital interaction.." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Individual:Bias ! Individual Bias
+
+[Term]
+id: ConvLSTM1D:Layer
+name: ConvLSTM1D Layer
+def: "1D Convolutional LSTM. Similar to an LSTM layer, but the input transformations and recurrent transformations are both convolutional." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/ConvLSTM1D]
+is_a: Convolutional:Layer ! Convolutional Layer
+
+[Term]
+id: ConvLSTM2D:Layer
+name: ConvLSTM2D Layer
+def: "2D Convolutional LSTM. Similar to an LSTM layer, but the input transformations and recurrent transformations are both convolutional." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/ConvLSTM2D]
+is_a: Convolutional:Layer ! Convolutional Layer
+
+[Term]
+id: ConvLSTM3D:Layer
+name: ConvLSTM3D Layer
+def: "3D Convolutional LSTM. Similar to an LSTM layer, but the input transformations and recurrent transformations are both convolutional." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/ConvLSTM3D]
+is_a: Convolutional:Layer ! Convolutional Layer
+
+[Term]
+id: Convolution1D:Layer
+name: Convolution1D Layer
+def: "1D convolution layer (e.g. temporal convolution)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv1D]
+synonym: "Conv1D Layer" EXACT []
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: Hidden:layer
-name: Hidden layer
+id: Convolution1DTranspose:Layer
+name: Convolution1DTranspose Layer
+def: "Transposed convolution layer (sometimes called Deconvolution). The need for transposed convolutions generally arises from the desire to use a transformation going in the opposite direction of a normal convolution, i.e., from something that has the shape of the output of some convolution to something that has the shape of its input while maintaining a connectivity pattern that is compatible with said convolution. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers or None, does not include the sample axis), e.g. input_shape=(128, 3) for data with 128 time steps and 3 channels." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv1DTranspose]
+synonym: "Conv1DTranspose Layer" EXACT []
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: Input:layer
-name: Input layer
+id: Convolution2D:Layer
+name: Convolution2D Layer
+def: "2D convolution layer (e.g. spatial convolution over images). This layer creates a convolution kernel that is convolved with the layer input to produce a tensor of outputs. If use_bias is True, a bias vector is created and added to the outputs. Finally, if activation is not None, it is applied to the outputs as well. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers or None, does not include the sample axis), e.g. input_shape=(128, 128, 3) for 128x128 RGB pictures in data_format=\"channels_last\". You can use None when a dimension has variable size." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv2D]
+synonym: "Conv2D Layer" EXACT []
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: Kernel:layer
-name: Kernel layer
+id: Convolution2DTranspose:Layer
+name: Convolution2DTranspose Layer
+def: "Transposed convolution layer (sometimes called Deconvolution)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv2DTranspose]
+synonym: "Conv2DTranspose Layer" EXACT []
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: Output:layer
-name: Output layer
+id: Convolution3D:Layer
+name: Convolution3D Layer
+def: "3D convolution layer (e.g. spatial convolution over volumes). This layer creates a convolution kernel that is convolved with the layer input to produce a tensor of outputs. If use_bias is True, a bias vector is created and added to the outputs. Finally, if activation is not None, it is applied to the outputs as well. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers or None, does not include the sample axis), e.g. input_shape=(128, 128, 128, 1) for 128x128x128 volumes with a single channel, in data_format=\"channels_last\"." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv3D]
+synonym: "Conv3D Layer" EXACT []
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: Padding:layer
-name: Padding layer
+id: Convolution3DTranspose:Layer
+name: Convolution3DTranspose Layer
+def: "Transposed convolution layer (sometimes called Deconvolution). The need for transposed convolutions generally arises from the desire to use a transformation going in the opposite direction of a normal convolution, i.e., from something that has the shape of the output of some convolution to something that has the shape of its input while maintaining a connectivity pattern that is compatible with said convolution. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers or None, does not include the sample axis), e.g. input_shape=(128, 128, 128, 3) for a 128x128x128 volume with 3 channels if data_format=\"channels_last\"." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv3DTranspose]
+synonym: "Conv3DTranspose Layer" EXACT []
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: Pooling:layer
-name: Pooling layer
+id: Convolutional:Layer
+name: Convolutional Layer
+def: "A convolutional layer is the main building block of a CNN. It contains a set of filters (or kernels), parameters of which are to be learned throughout the training. The size of the filters is usually smaller than the actual image. Each filter convolves with the image and creates an activation map." [https://www.sciencedirect.com/topics/engineering/convolutional-layer#\:~\:text=A%20convolutional%20layer%20is%20the\,and%20creates%20an%20activation%20map.]
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: ReLU:layer
-name: ReLU layer
+id: Cropping1D:Layer
+name: Cropping1D Layer
+def: "Cropping layer for 1D input (e.g. temporal sequence). It crops along the time dimension (axis 1)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Cropping1D]
+is_a: Reshaping:Layer ! Reshaping Layer
+
+[Term]
+id: Cropping2D:Layer
+name: Cropping2D Layer
+def: "Cropping layer for 2D input (e.g. picture). It crops along spatial dimensions, i.e. height and width." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Cropping2D]
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: Recurrent:layer
-name: Recurrent layer
+id: Cropping3D:Layer
+name: Cropping3D Layer
+def: "Cropping layer for 3D data (e.g. spatial or spatio-temporal)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Cropping3D]
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: Sigmoid:function
-name: Sigmoid
+id: Dense:Layer
+name: Dense Layer
+def: "Just your regular densely-connected NN layer." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dense]
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: Softmax:function
-name: Softmax
+id: DenseFeatures:Layer
+name: DenseFeatures Layer
+def: "A layer that produces a dense Tensor based on given feature_columns. Generally a single example in training data is described with FeatureColumns. At the first layer of the model, this column oriented data should be converted to a single Tensor. This layer can be called multiple times with different features. This is the V2 version of this layer that uses name_scopes to create variables instead of variable_scopes. But this approach currently lacks support for partitioned variables. In that case, use the V1 version instead." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/DenseFeatures]
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: Weight:layer
-name: Weight layer
+id: Deployment:Bias
+name: Deployment Bias
+def: "Arises when systems are used as decision aids for humans, since the human intermediary may act on predictions in ways that are typically not modeled in the system. However, it is still individuals using the deployed system." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Group:Bias ! Group Bias
+
+[Term]
+id: DepthwiseConv1D:Layer
+name: DepthwiseConv1D Layer
+def: "Depthwise 1D convolution. Depthwise convolution is a type of convolution in which each input channel is convolved with a different kernel (called a depthwise kernel). You can understand depthwise convolution as the first step in a depthwise separable convolution. It is implemented via the following steps: Split the input into individual channels. Convolve each channel with an individual depthwise kernel with depth_multiplier output channels. Concatenate the convolved outputs along the channels axis. Unlike a regular 1D convolution, depthwise convolution does not mix information across different input channels. The depth_multiplier argument determines how many filter are applied to one input channel. As such, it controls the amount of output channels that are generated per input channel in the depthwise step." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/DepthwiseConv1D]
+is_a: Convolutional:Layer ! Convolutional Layer
+
+[Term]
+id: DepthwiseConv2D:Layer
+name: DepthwiseConv2D Layer
+def: "Depthwise 2D convolution." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/DepthwiseConv2D]
+is_a: Convolutional:Layer ! Convolutional Layer
+
+[Term]
+id: Detection:Bias
+name: Detection Bias
+def: "Systematic differences between groups in how outcomes are determined and may cause an over- or underestimation of the size of the effect." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: https://w3id.org/aio/Selection_And_Sampling_Bias ! Selection And Sampling Bias
+
+[Term]
+id: Discretization:Layer
+name: Discretization Layer
+def: "A preprocessing layer which buckets continuous features by ranges." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Discretization]
+is_a: https://w3id.org/aio/Numerical_Features_Preprocessing_Layer ! Numerical Features Preprocessing Layer
+
+[Term]
+id: Dot:Layer
+name: Dot Layer
+def: "Layer that computes a dot product between samples in two tensors. E.g. if applied to a list of two tensors a and b of shape (batch_size, n), the output will be a tensor of shape (batch_size, 1) where each entry i will be the dot product between a[i] and b[i]." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dot]
 is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Dropout:Layer
+name: Dropout Layer
+def: "Applies Dropout to the input. The Dropout layer randomly sets input units to 0 with a frequency of rate at each step during training time, which helps prevent overfitting. Inputs not set to 0 are scaled up by 1/(1 - rate) such that the sum over all inputs is unchanged. Note that the Dropout layer only applies when training is set to True such that no values are dropped during inference. When using model.fit, training will be appropriately set to True automatically, and in other contexts, you can set the kwarg explicitly to True when calling the layer. (This is in contrast to setting trainable=False for a Dropout layer. trainable does not affect the layer's behavior, as Dropout does not have any variables/weights that can be frozen during training.)" [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dropout]
+is_a: Regularization:Layer ! Regularization Layer
+
+[Term]
+id: ELU:Layer
+name: ELU Layer
+def: "Exponential Linear Unit." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/ELU]
+is_a: Activation:Layer ! Activation Layer
+
+[Term]
+id: Embedding:Layer
+name: Embedding Layer
+def: "Turns positive integers (indexes) into dense vectors of fixed size." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Embedding]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Emergent:Bias
+name: Emergent Bias
+def: "Emergent bias is the result of the use and reliance on algorithms across new or unanticipated contexts." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: https://w3id.org/aio/Use_And_Interpretation_Bias ! Use And Interpretation Bias
+
+[Term]
+id: Evaluation:Bias
+name: Evaluation Bias
+def: "Arises when the testing or external benchmark populations do not equally represent the various parts of the user population or from the use of performance metrics that are not appropriate for the way in which the model will be used." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: https://w3id.org/aio/Selection_And_Sampling_Bias ! Selection And Sampling Bias
+
+[Term]
+id: Exclusion:Bias
+name: Exclusion Bias
+def: "When specific groups of user populations are excluded from testing and subsequent analyses." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: https://w3id.org/aio/Selection_And_Sampling_Bias ! Selection And Sampling Bias
+
+[Term]
+id: Exponential:Function
+name: Exponential Function
+def: "The exponential function is a mathematical function denoted by f(x)=exp or e^{x}." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/exponential]
+is_a: https://w3id.org/aio/Function
+
+[Term]
+id: Flatten:Layer
+name: Flatten Layer
+def: "Flattens the input. Does not affect the batch size." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Flatten]
+is_a: Reshaping:Layer ! Reshaping Layer
+
+[Term]
+id: Funding:Bias
+name: Funding Bias
+def: "Arises when biased results are reported in order to support or satisfy the funding agency or financial supporter of the research study, but it can also be the individual researcher." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Group:Bias ! Group Bias
+
+[Term]
+id: GRU:Layer
+name: GRU Layer
+def: "Gated Recurrent Unit - Cho et al. 2014. Based on available runtime hardware and constraints, this layer will choose different implementations (cuDNN-based or pure-TensorFlow) to maximize the performance. If a GPU is available and all the arguments to the layer meet the requirement of the cuDNN kernel (see below for details), the layer will use a fast cuDNN implementation. The requirements to use the cuDNN implementation are: activation == tanh, recurrent_activation == sigmoid, recurrent_dropout == 0, unroll is False, use_bias is True, reset_after is True. Inputs, if use masking, are strictly right-padded. Eager execution is enabled in the outermost context. There are two variants of the GRU implementation. The default one is based on v3 and has reset gate applied to hidden state before matrix multiplication. The other one is based on original and has the order reversed. The second variant is compatible with CuDNNGRU (GPU-only) and allows inference on CPU. Thus it has separate biases for kernel and recurrent_kernel. To use this variant, set reset_after=True and recurrent_activation='sigmoid'." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/GRU]
+is_a: Recurrent:Layer ! Recurrent Layer
+
+[Term]
+id: GRUCell:Layer
+name: GRUCell Layer
+def: "Cell class for the GRU layer. This class processes one step within the whole time sequence input, whereas tf.keras.layer.GRU processes the whole sequence." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/GRUCell]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: GaussianDropout:Layer
+name: GaussianDropout Layer
+def: "Apply multiplicative 1-centered Gaussian noise. As it is a regularization layer, it is only active at training time." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/GaussianDropout]
+is_a: Regularization:Layer ! Regularization Layer
+
+[Term]
+id: GaussianNoise:Layer
+name: GaussianNoise Layer
+def: "Apply additive zero-centered Gaussian noise. This is useful to mitigate overfitting (you could see it as a form of random data augmentation). Gaussian Noise (GS) is a natural choice as corruption process for real valued inputs. As it is a regularization layer, it is only active at training time." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/GaussianNoise]
+is_a: Regularization:Layer ! Regularization Layer
+
+[Term]
+id: GeLu:Function
+name: GELU Function
+def: "Gaussian error linear unit (GELU) computes x * P(X <= x), where P(X) ~ N(0, 1). The (GELU) nonlinearity weights inputs by their value, rather than gates inputs by their sign as in ReLU." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/gelu]
+synonym: "Gaussian Error Linear Unit" EXACT []
+synonym: "GELU" RELATED []
+is_a: https://w3id.org/aio/Function
+
+[Term]
+id: GlobalAveragePooling1D:Layer
+name: GlobalAveragePooling1D Layer
+def: "Global average pooling operation for temporal data." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/GlobalAveragePooling1D]
+synonym: "GlobalAvgPool1D Layer" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: GlobalAveragePooling2D:Layer
+name: GlobalAveragePooling2D Layer
+def: "Global average pooling operation for spatial data." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/GlobalAveragePooling2D]
+synonym: "GlobalAvgPool2D Layer" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: GlobalAveragePooling3D:Layer
+name: GlobalAveragePooling3D Layer
+def: "Global Average pooling operation for 3D data." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/GlobalAveragePooling3D]
+synonym: "GlobalAvgPool3D Layer" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: GlobalMaxPooling1D:Layer
+name: GlobalMaxPooling1D Layer
+def: "Global max pooling operation for 1D temporal data." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/GlobalMaxPool1D]
+synonym: "GlobalMaxPool1D Layer" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: GlobalMaxPooling2D:Layer
+name: GlobalMaxPooling2D Layer
+def: "Global max pooling operation for spatial data." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/GlobalMaxPool2D]
+synonym: "GlobalMaxPool2D Layer" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: GlobalMaxPooling3D:Layer
+name: GlobalMaxPooling3D Layer
+def: "Global Max pooling operation for 3D data." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/GlobalMaxPool3D]
+synonym: "GlobalMaxPool3D Layer" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: Group:Bias
+name: Group Bias
+def: "A pattern of favoring members of one's in-group over out-group members. This can be expressed in evaluation of others, in allocation of resources, and in many other ways." [https://en.wikipedia.org/wiki/In-group_favoritism]
+synonym: "In-group Favoritism; In-group–out-group Bias; In-group bias; Intergroup bias; In-group preference" EXACT []
+is_a: Human:Bias ! Human Bias
+
+[Term]
+id: Groupthink:Bias
+name: Groupthink Bias
+def: "A psychological phenomenon that occurs when people in a group tend to make non-optimal decisions based on their desire to conform to the group, or fear of dissenting with the group. In groupthink, individuals often refrain from expressing their personal disagreement with the group, hesitating to voice opinions that do not align with the group." [https://doi.org/10.6028/NIST.SP.1270]
+synonym: "Groupthink" EXACT []
+is_a: Group:Bias ! Group Bias
+
+[Term]
+id: Hard%20Sigmoid:Function
+name: Hard Sigmoid Function
+def: "A faster approximation of the sigmoid activation. Piecewise linear approximation of the sigmoid function. Ref: 'https://en.wikipedia.org/wiki/Hard_sigmoid'" [https://www.tensorflow.org/api_docs/python/tf/keras/activations/hard_sigmoid]
+is_a: https://w3id.org/aio/Function
+
+[Term]
+id: Hashing:Layer
+name: Hashing Layer
+def: "A preprocessing layer which hashes and bins categorical features. This layer transforms categorical inputs to hashed output. It element-wise converts a ints or strings to ints in a fixed range. The stable hash function uses tensorflow::ops::Fingerprint to produce the same output consistently across all platforms. This layer uses FarmHash64 by default, which provides a consistent hashed output across different platforms and is stable across invocations, regardless of device and context, by mixing the input bits thoroughly. If you want to obfuscate the hashed output, you can also pass a random salt argument in the constructor. In that case, the layer will use the SipHash64 hash function, with the salt value serving as additional input to the hash function." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Hashing]
+is_a: https://w3id.org/aio/Categorical_Features_Preprocessing_Layer ! Categorical Features Preprocessing Layer
+
+[Term]
+id: Hidden:Layer
+name: Hidden Layer
+def: "A hidden layer is located between the input and output of the algorithm, in which the function applies weights to the inputs and directs them through an activation function as the output. In short, the hidden layers perform nonlinear transformations of the inputs entered into the network. Hidden layers vary depending on the function of the neural network, and similarly, the layers may vary depending on their associated weights." [https://deepai.org/machine-learning-glossary-and-terms/hidden-layer-machine-learning]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Historical:Bias
+name: Historical Bias
+def: "Referring to the long-standing biases encoded in society over time. Related to, but distinct from, biases in historical description, or the interpretation, analysis, and explanation of history. A common example of historical bias is the tendency to view the larger world from a Western or European view." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: https://w3id.org/aio/Bias ! Bias
+
+[Term]
+id: Human:Bias
+name: Human Bias
+def: "Systematic errors in human thought based on a limited number of heuristic principles and predicting values to simpler judgmental operations." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: https://w3id.org/aio/Bias ! Bias
+
+[Term]
+id: Implicit:Bias
+name: Implicit Bias
+def: "An unconscious belief, attitude, feeling, association, or stereotype that can affect the way in which humans process information, make decisions, and take actions." [https://doi.org/10.6028/NIST.SP.1270]
+synonym: "Confirmatory Bias" EXACT []
+is_a: Individual:Bias ! Individual Bias
+
+[Term]
+id: Individual:Bias
+name: Individual Bias
+def: "Individual bias is a persistent point of view or limited list of such points of view that one applies (\"parent\", \"academic\", \"professional\", or etc.)." [https://develop.consumerium.org/wiki/Individual_bias]
+is_a: Individual:Bias ! Individual Bias
+
+[Term]
+id: Inherited:Bias
+name: Inherited Bias
+def: "Arises when applications that are built with machine learning are used to generate inputs for other machine learning algorithms. If the output is biased in any way, this bias may be inherited by systems using the output as input to learn other models." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Processing:Bias ! Processing Bias
+
+[Term]
+id: Input:Layer
+name: Input Layer
+def: "The input layer of a neural network is composed of artificial input neurons, and brings the initial data into the system for further processing by subsequent layers of artificial neurons. The input layer is the very beginning of the workflow for the artificial neural network." [https://www.techopedia.com/definition/33262/input-layer-neural-networks#\:~\:text=Explains%20Input%20Layer-\,What%20Does%20Input%20Layer%20Mean%3F\,for%20the%20artificial%20neural%20network.]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: InputLayer:Layer
+name: InputLayer Layer
+def: "Layer to be used as an entry point into a Network (a graph of layers)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/InputLayer]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: InputSpec:Layer
+name: InputSpec Layer
+def: "Specifies the rank, dtype and shape of every input to a layer. Layers can expose (if appropriate) an input_spec attribute: an instance of InputSpec, or a nested structure of InputSpec instances (one per input tensor). These objects enable the layer to run input compatibility checks for input structure, input rank, input shape, and input dtype. A None entry in a shape is compatible with any dimension, a None shape is compatible with any shape." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/InputSpec]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Institutional:Bias
+name: Institutional Bias
+def: "In contrast to biases exhibited at the level of individual persons, institutional bias refers to a tendency exhibited at the level of entire institutions, where practices or norms result in the favoring or disadvantaging of certain social groups. Common examples include institutional racism and institutional sexism." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: https://w3id.org/aio/Bias ! Bias
+
+[Term]
+id: IntegerLookup:Layer
+name: IntegerLookup Layer
+def: "A preprocessing layer which maps integer features to contiguous ranges." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/IntegerLookup]
+is_a: https://w3id.org/aio/Categorical_Features_Preprocessing_Layer ! Categorical Features Preprocessing Layer
+
+[Term]
+id: Interpretation:Bias
+name: Interpretation Bias
+def: "A form of information processing bias that can occur when users interpret algorithmic outputs according to their internalized biases and views." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Individual:Bias ! Individual Bias
+
+[Term]
+id: LSTM:Layer
+name: LSTM Layer
+def: "Long Short-Term Memory layer - Hochreiter 1997. Based on available runtime hardware and constraints, this layer will choose different implementations (cuDNN-based or pure-TensorFlow) to maximize the performance. If a GPU is available and all the arguments to the layer meet the requirement of the cuDNN kernel (see below for details), the layer will use a fast cuDNN implementation. The requirements to use the cuDNN implementation are: 1. activation == tanh, 2. recurrent_activation == sigmoid, 3. recurrent_dropout == 0, 4. unroll is False, 5. use_bias is True, 6. Inputs, if use masking, are strictly right-padded, 7. Eager execution is enabled in the outermost context." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM]
+is_a: Recurrent:Layer ! Recurrent Layer
+
+[Term]
+id: LSTMCell:Layer
+name: LSTMCell Layer
+def: "Cell class for the LSTM layer." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTMCell]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Lambda:Layer
+name: Lambda Layer
+def: "Wraps arbitrary expressions as a Layer object." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Lambda]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Layer:Layer
+name: Layer Layer
+def: "This is the class from which all layers inherit. A layer is a callable object that takes as input one or more tensors and that outputs one or more tensors. It involves computation, defined in the call() method, and a state (weight variables). State can be created in various places, at the convenience of the subclass implementer: in __init__(); in the optional build() method, which is invoked by the first __call__() to the layer, and supplies the shape(s) of the input(s), which may not have been known at initialization time; in the first invocation of call(), with some caveats discussed below. Users will just instantiate a layer and then treat it as a callable." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Layer]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: LayerNormalization:Layer
+name: LayerNormalization Layer
+def: "Layer normalization layer (Ba et al., 2016). Normalize the activations of the previous layer for each given example in a batch independently, rather than across a batch like Batch Normalization. i.e. applies a transformation that maintains the mean activation within each example close to 0 and the activation standard deviation close to 1. Given a tensor inputs, moments are calculated and normalization is performed across the axes specified in axis." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/LayerNormalization]
+is_a: Normalization:Layer ! Normalization Layer
+
+[Term]
+id: LeakyReLU:Layer
+name: LeakyReLU Layer
+def: "Leaky version of a Rectified Linear Unit." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/LeakyReLU]
+is_a: Activation:Layer ! Activation Layer
+
+[Term]
+id: Linear:Function
+name: Linear Function
+def: "A linear function has the form f(x) = a + bx." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/linear]
+is_a: https://w3id.org/aio/Function
+
+[Term]
+id: Linking:Bias
+name: Linking Bias
+def: "Arises when network attributes obtained from user connections, activities, or interactions differ and misrepresent the true behavior of the users." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: https://w3id.org/aio/Use_And_Interpretation_Bias ! Use And Interpretation Bias
+
+[Term]
+id: Locally-connected:Layer
+name: Locally-connected Layer
+def: "The LocallyConnected1D layer works similarly to the Convolution1D layer, except that weights are unshared, that is, a different set of filters is applied at each different patch of the input." [https://faroit.com/keras-docs/1.2.2/layers/local/]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: LocallyConnected1D:Layer
+name: LocallyConnected1D Layer
+def: "Locally-connected layer for 1D inputs. The LocallyConnected1D layer works similarly to the Conv1D layer, except that weights are unshared, that is, a different set of filters is applied at each different patch of the input." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/LocallyConnected1D]
+is_a: Locally-connected:Layer ! Locally-connected Layer
+
+[Term]
+id: LocallyConnected2D:Layer
+name: LocallyConnected2D Layer
+def: "Locally-connected layer for 2D inputs. The LocallyConnected2D layer works similarly to the Conv2D layer, except that weights are unshared, that is, a different set of filters is applied at each different patch of the input." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/LocallyConnected2D]
+is_a: Locally-connected:Layer ! Locally-connected Layer
+
+[Term]
+id: Masking:Layer
+name: Masking Layer
+def: "Masks a sequence by using a mask value to skip timesteps. For each timestep in the input tensor (dimension #1 in the tensor), if all values in the input tensor at that timestep are equal to mask_value, then the timestep will be masked (skipped) in all downstream layers (as long as they support masking). If any downstream layer does not support masking yet receives such an input mask, an exception will be raised." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Masking]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: MaxPooling1D:Layer
+name: MaxPooling1D Layer
+def: "Max pooling operation for 1D temporal data. Downsamples the input representation by taking the maximum value over a spatial window of size pool_size. The window is shifted by strides. The resulting output, when using the \"valid\" padding option, has a shape of: output_shape = (input_shape - pool_size + 1) / strides) The resulting output shape when using the \"same\" padding option is: output_shape = input_shape / strides." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/MaxPool1D]
+synonym: "MaxPool1D" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: MaxPooling2D:Layer
+name: MaxPooling2D Layer
+def: "Max pooling operation for 2D spatial data." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/MaxPool2D]
+synonym: "MaxPool2D" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: MaxPooling3D:Layer
+name: MaxPooling3D Layer
+def: "Max pooling operation for 3D data (spatial or spatio-temporal). Downsamples the input along its spatial dimensions (depth, height, and width) by taking the maximum value over an input window (of size defined by pool_size) for each channel of the input. The window is shifted by strides along each dimension." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/MaxPool3D]
+synonym: "MaxPool3D" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: Maximum:Layer
+name: Maximum Layer
+def: "Layer that computes the maximum (element-wise) a list of inputs. It takes as input a list of tensors, all of the same shape, and returns a single tensor (also of the same shape)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Maximum]
+is_a: Merging:Layers
+
+[Term]
+id: Measurement:Bias
+name: Measurement Bias
+def: "Arises when features and labels are proxies for desired quantities, potentially leaving out important factors or introducing group or input-dependent noise that leads to differential performance." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: https://w3id.org/aio/Selection_And_Sampling_Bias ! Selection And Sampling Bias
+
+[Term]
+id: Merging:Layer
+name: Merging Layer
+def: "A layer used to merge a list of inputs." [https://www.tutorialspoint.com/keras/keras_merge_layer.htm]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Minimum:Layer
+name: Minimum Layer
+def: "Layer that computes the minimum (element-wise) a list of inputs. It takes as input a list of tensors, all of the same shape, and returns a single tensor (also of the same shape)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Minimum]
+is_a: Merging:Layers
+
+[Term]
+id: MultiHeadAttention:Layer
+name: MultiHeadAttention Layer
+def: "MultiHeadAttention layer. This is an implementation of multi-headed attention as described in the paper \"Attention is all you Need\" (Vaswani et al., 2017). If query, key, value are the same, then this is self-attention. Each timestep in query attends to the corresponding sequence in key, and returns a fixed-width vector.This layer first projects query, key and value. These are (effectively) a list of tensors of length num_attention_heads, where the corresponding shapes are (batch_size, <query dimensions>, key_dim), (batch_size, <key/value dimensions>, key_dim), (batch_size, <key/value dimensions>, value_dim).Then, the query and key tensors are dot-producted and scaled. These are softmaxed to obtain attention probabilities. The value tensors are then interpolated by these probabilities, then concatenated back to a single tensor. Finally, the result tensor with the last dimension as value_dim can take an linear projection and return. When using MultiHeadAttention inside a custom Layer, the custom Layer must implement build() and call MultiHeadAttention's _build_from_signature(). This enables weights to be restored correctly when the model is loaded." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/MultiHeadAttention]
+is_a: Attention:Layer ! Attention Layer
+
+[Term]
+id: Multiply:Layer
+name: Multiply Layer
+def: "Layer that multiplies (element-wise) a list of inputs. It takes as input a list of tensors, all of the same shape, and returns a single tensor (also of the same shape)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Multiply]
+is_a: Merging:Layers
+
+[Term]
+id: N2V:CBOW
+name: node2vec-CBOW Network
+def: "In the continuous bag-of-words architecture, the model predicts the current node from a window of surrounding context nodes. The order of context nodes does not influence prediction (bag-of-words assumption)." [https://en.wikipedia.org/wiki/Word2vec]
+comment: Input, Hidden, Output
+synonym: "CBOW" RELATED []
+synonym: "N2V-CBOW" EXACT []
+is_a: W2V:CBOW
+
+[Term]
+id: N2V:SkipGram
+name: node2vec-SkipGram Network
+def: "In the continuous skip-gram architecture, the model uses the current node to predict the surrounding window of context nodes. The skip-gram architecture weighs nearby context nodes more heavily than more distant context nodes. (https://en.wikipedia.org/wiki/Word2vec)" [https://en.wikipedia.org/wiki/Word2vec]
+comment: Input, Hidden, Output
+synonym: "N2V-SkipGram" EXACT []
+synonym: "SkipGram" RELATED []
+is_a: W2V:SkipGram
+
+[Term]
+id: Normalization:Layer
+name: Normalization Layer
+def: "A preprocessing layer which normalizes continuous features." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Normalization]
+is_a: https://w3id.org/aio/Numerical_Features_Preprocessing_Layer ! Numerical Features Preprocessing Layer
+
+[Term]
+id: Output:Layer
+name: Output Layer
+def: "The output layer in an artificial neural network is the last layer of neurons that produces given outputs for the program. Though they are made much like other artificial neurons in the neural network, output layer neurons may be built or observed in a different way, given that they are the last “actor” nodes on the network." [https://www.techopedia.com/definition/33263/output-layer-neural-networks]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: PReLU:Layer
+name: PReLU Layer
+def: "Parametric Rectified Linear Unit." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/PReLU]
+is_a: Activation:Layer ! Activation Layer
+
+[Term]
+id: Permute:Layer
+name: Permute Layer
+def: "Permutes the dimensions of the input according to a given pattern. Useful e.g. connecting RNNs and convnets." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Permute]
+is_a: Reshaping:Layer ! Reshaping Layer
+
+[Term]
+id: Pooling:Layer
+name: Pooling Layer
+def: "Pooling layers serve the dual purposes of mitigating the sensitivity of convolutional layers to location and of spatially downsampling representations." [https://d2l.ai/chapter_convolutional-neural-networks/pooling.html]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Popularity:Bias
+name: Popularity Bias
+def: "A form of selection bias that occurs when items that are more popular are more exposed and less popular items are under-represented." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: https://w3id.org/aio/Selection_And_Sampling_Bias ! Selection And Sampling Bias
+
+[Term]
+id: Population:Bias
+name: Population Bias
+def: "A form of selection bias that occurs when items that are more popular are more exposed and less popular items are under-represented.aSystematic distortions in demographics or other user characteristics between a population of users represented in a dataset or on a platform and some target population." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: https://w3id.org/aio/Selection_And_Sampling_Bias ! Selection And Sampling Bias
+
+[Term]
+id: Preprocessing:Layer
+name: Preprocessing Layer
+def: "A layer that performs data preprocessing operations." [https://www.tensorflow.org/guide/keras/preprocessing_layers]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Presentation:Bias
+name: Presentation Bias
+def: "Biases arising from how information is presented on the Web, via a user interface, due to rating or ranking of output, or through users’ own self-selected, biased interaction." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Individual:Bias ! Individual Bias
+
+[Term]
+id: Processing:Bias
+name: Processing Bias
+def: "Judgement modulated by affect, which is influenced by the level of efficacy and efficiency in information processing; in cognitive sciences, processing bias is often referred to as an aesthetic judgement." [https://royalsocietypublishing.org/doi/10.1098/rspb.2019.0165#d1e5237]
+synonym: "Validation Bias" EXACT []
+is_a: Computational:Bias ! Computational Bias
+
+[Term]
+id: RNN:Layer
+name: RNN Layer
+def: "Base class for recurrent layers." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/RNN]
+is_a: Recurrent:Layer ! Recurrent Layer
+
+[Term]
+id: RandomBrightness:Layer
+name: RandomBrightness Layer
+def: "A preprocessing layer which randomly adjusts brightness during training. This layer will randomly increase/reduce the brightness for the input RGB images. At inference time, the output will be identical to the input. Call the layer with training=True to adjust the brightness of the input. Note that different brightness adjustment factors will be apply to each the images in the batch." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/RandomBrightness]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: RandomContrast:Layer
+name: RandomContrast Layer
+def: "A preprocessing layer which randomly adjusts contrast during training. This layer will randomly adjust the contrast of an image or images by a random factor. Contrast is adjusted independently for each channel of each image during training. For each channel, this layer computes the mean of the image pixels in the channel and then adjusts each component x of each pixel to (x - mean) * contrast_factor + mean. Input pixel values can be of any range (e.g. [0., 1.) or [0, 255]) and in integer or floating point dtype. By default, the layer will output floats. The output value will be clipped to the range [0, 255], the valid range of RGB colors." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/RandomContrast]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: RandomCrop:Layer
+name: RandomCrop Layer
+def: "A preprocessing layer which randomly crops images during training. During training, this layer will randomly choose a location to crop images down to a target size. The layer will crop all the images in the same batch to the same cropping location. At inference time, and during training if an input image is smaller than the target size, the input will be resized and cropped so as to return the largest possible window in the image that matches the target aspect ratio. If you need to apply random cropping at inference time, set training to True when calling the layer. Input pixel values can be of any range (e.g. [0., 1.) or [0, 255]) and of interger or floating point dtype. By default, the layer will output floats." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/RandomCrop]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: RandomFlip:Layer
+name: RandomFlip Layer
+def: "A preprocessing layer which randomly flips images during training. This layer will flip the images horizontally and or vertically based on the mode attribute. During inference time, the output will be identical to input. Call the layer with training=True to flip the input. Input pixel values can be of any range (e.g. [0., 1.) or [0, 255]) and of interger or floating point dtype. By default, the layer will output floats." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/RandomFlip]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: RandomHeight:Layer
+name: RandomHeight Layer
+def: "A preprocessing layer which randomly varies image height during training. This layer adjusts the height of a batch of images by a random factor. The input should be a 3D (unbatched) or 4D (batched) tensor in the \"channels_last\" image data format. Input pixel values can be of any range (e.g. [0., 1.) or [0, 255]) and of interger or floating point dtype. By default, the layer will output floats. By default, this layer is inactive during inference." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/RandomHeight]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: RandomRotation:Layer
+name: RandomRotation Layer
+def: "A preprocessing layer which randomly rotates images during training." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/RandomRotation]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: RandomTranslation:Layer
+name: RandomTranslation Layer
+def: "A preprocessing layer which randomly translates images during training. This layer will apply random translations to each image during training, filling empty space according to fill_mode. aInput pixel values can be of any range (e.g. [0., 1.) or [0, 255]) and of interger or floating point dtype. By default, the layer will output floats." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/RandomTranslation]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: RandomWidth:Layer
+name: RandomWidth Layer
+def: "A preprocessing layer which randomly varies image width during training. This layer will randomly adjusts the width of a batch of images of a batch of images by a random factor. The input should be a 3D (unbatched) or 4D (batched) tensor in the \"channels_last\" image data format. Input pixel values can be of any range (e.g. [0., 1.) or [0, 255]) and of interger or floating point dtype. By default, the layer will output floats. By default, this layer is inactive during inference." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/RandomWidth]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: RandomZoom:Layer
+name: RandomZoom Layer
+def: "A preprocessing layer which randomly zooms images during training. This layer will randomly zoom in or out on each axis of an image independently, filling empty space according to fill_mode.Input pixel values can be of any range (e.g. [0., 1.) or [0, 255]) and of interger or floating point dtype. By default, the layer will output floats." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/RandomZoom]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Ranking:Bias
+name: Ranking Bias
+def: "The idea that top-ranked results are the most relevant and important and will result in more clicks than other results." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Anchoring:Bias ! Anchoring Bias
+
+[Term]
+id: ReLU:Function
+name: ReLU Function
+def: "The ReLU activation function returns: max(x, 0), the element-wise maximum of 0 and the input tensor." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/relu]
+synonym: "Rectified Linear Unit" EXACT []
+synonym: "ReLU" RELATED []
+is_a: https://w3id.org/aio/Function
+
+[Term]
+id: ReLU:Layer
+name: ReLU Layer
+def: "Rectified Linear Unit activation function. With default values, it returns element-wise max(x, 0)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/ReLU]
+is_a: Activation:Layer ! Activation Layer
+
+[Term]
+id: Recurrent:Layer
+name: Recurrent Layer
+def: "A layer of an RNB, composed of recurrent units and with the number of which is the hidden size of the layer." [https://docs.nvidia.com/deeplearning/performance/dl-performance-recurrent/index.html#recurrent-layer]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Regularization:Layer
+name: Regularization Layer
+def: "Regularizers allow you to apply penalties on layer parameters or layer activity during optimization. These penalties are summed into the loss function that the network optimizes. Regularization penalties are applied on a per-layer basis." [https://keras.io/api/layers/regularizers/]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: RepeatVector:Layer
+name: RepeatVector Layer
+def: "Repeats the input n times." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/RepeatVector]
+is_a: Reshaping:Layer ! Reshaping Layer
+
+[Term]
+id: Representation:Bias
+name: Representation Bias
+def: "Arises due to non-random sampling of subgroups, causing trends estimated for one population to not be generalizable to data collected from a new population." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: https://w3id.org/aio/Selection_And_Sampling_Bias ! Selection And Sampling Bias
+
+[Term]
+id: Rescaling:Layer
+name: Rescaling Layer
+def: "A preprocessing layer which rescales input values to a new range." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Rescaling]
+is_a: https://w3id.org/aio/Image_Preprocessing_Layer ! Image Preprocessing Layer
+
+[Term]
+id: Reshape:Layer
+name: Reshape Layer
+def: "Layer that reshapes inputs into the given shape." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Reshape]
+is_a: Reshaping:Layer ! Reshaping Layer
+
+[Term]
+id: Reshaping:Layer
+name: Reshaping Layer
+def: "Reshape layers are used to change the shape of the input." []
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Resizing:Layer
+name: Resizing Layer
+def: "A preprocessing layer which resizes images. This layer resizes an image input to a target height and width. The input should be a 4D (batched) or 3D (unbatched) tensor in \"channels_last\" format. Input pixel values can be of any range (e.g. [0., 1.) or [0, 255]) and of interger or floating point dtype. By default, the layer will output floats. This layer can be called on tf.RaggedTensor batches of input images of distinct sizes, and will resize the outputs to dense tensors of uniform size." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Resizing]
+is_a: https://w3id.org/aio/Image_Preprocessing_Layer ! Image Preprocessing Layer
+
+[Term]
+id: SeLu:Function
+name: SELU Function
+def: "The SELU activation function multiplies scale (> 1) with the output of the ELU function to ensure a slope larger than one for positive inputs." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/selu]
+synonym: "Scaled Exponential Linear Unit" EXACT []
+synonym: "SELU" RELATED []
+is_a: https://w3id.org/aio/Function
+
+[Term]
+id: SeparableConvolution1D:Layer
+name: SeparableConvolution1D Layer
+def: "Depthwise separable 1D convolution. This layer performs a depthwise convolution that acts separately on channels, followed by a pointwise convolution that mixes channels. If use_bias is True and a bias initializer is provided, it adds a bias vector to the output. It then optionally applies an activation function to produce the final output.a" [https://www.tensorflow.org/api_docs/python/tf/keras/layers/SeparableConv1D]
+synonym: "SeparableConv1D Layer" EXACT []
+is_a: Convolutional:Layer ! Convolutional Layer
+
+[Term]
+id: SeparableConvolution2D:Layer
+name: SeparableConvolution2D Layer
+def: "Depthwise separable 2D convolution. Separable convolutions consist of first performing a depthwise spatial convolution (which acts on each input channel separately) followed by a pointwise convolution which mixes the resulting output channels. The depth_multiplier argument controls how many output channels are generated per input channel in the depthwise step. Intuitively, separable convolutions can be understood as a way to factorize a convolution kernel into two smaller kernels, or as an extreme version of an Inception block." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/SeparableConv2D]
+synonym: "SeparableConv2D Layer" EXACT []
+is_a: Convolutional:Layer ! Convolutional Layer
+
+[Term]
+id: Sigmoid:Function
+name: Sigmoid Function
+def: "Applies the sigmoid activation function sigmoid(x) = 1 / (1 + exp(-x)). For small values (<-5), sigmoid returns a value close to zero, and for large values (>5) the result of the function gets close to 1. Sigmoid is equivalent to a 2-element Softmax, where the second element is assumed to be zero. The sigmoid function always returns a value between 0 and 1." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/sigmoid]
+is_a: https://w3id.org/aio/Function
+
+[Term]
+id: SimpleRNN:Layer
+name: SimpleRNN Layer
+def: "Fully-connected RNN where the output is to be fed back to input." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/SimpleRNN]
+is_a: Recurrent:Layer ! Recurrent Layer
+
+[Term]
+id: SimpleRNNCell:Layer
+name: SimpleRNNCell Layer
+def: "Cell class for SimpleRNN. This class processes one step within the whole time sequence input, whereas tf.keras.layer.SimpleRNN processes the whole sequence." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/SimpleRNNCell]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Societal:Bias
+name: Societal Bias
+def: "Can be positive or negative, and take a number of different forms, but is typically characterized as being for or against groups or individuals based on social identities, demographic factors, or immutable physical characteristics. Societal or social biases are often stereotypes. Common examples of societal or social biases are based on concepts like race, ethnicity, gender, sexual orientation, socioeconomic status, education, and more. Societal bias is often recognized and discussed in the context of NLP (Natural Language Processing) models." [https://doi.org/10.6028/NIST.SP.1270]
+synonym: "Social Bias" EXACT []
+is_a: https://w3id.org/aio/Bias ! Bias
+
+[Term]
+id: Softmax:Function
+name: Softmax Function
+def: "The elements of the output vector are in range (0, 1) and sum to 1. Each vector is handled independently. The axis argument sets which axis of the input the function is applied along. Softmax is often used as the activation for the last layer of a classification network because the result could be interpreted as a probability distribution. The softmax of each vector x is computed as exp(x) / tf.reduce_sum(exp(x)). The input values in are the log-odds of the resulting probability." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/softmax]
+is_a: https://w3id.org/aio/Function
+
+[Term]
+id: Softmax:Layer
+name: Softmax Layer
+def: "Softmax activation function." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Softmax]
+is_a: Activation:Layer ! Activation Layer
+
+[Term]
+id: Softplus:Function
+name: Softplus Function
+def: "softplus(x) = log(exp(x) + 1)" [https://www.tensorflow.org/api_docs/python/tf/keras/activations/softplus]
+is_a: https://w3id.org/aio/Function
+
+[Term]
+id: Softsign:Function
+name: Softsign Function
+def: "softsign(x) = x / (abs(x) + 1)" [https://www.tensorflow.org/api_docs/python/tf/keras/activations/softsign]
+is_a: https://w3id.org/aio/Function
+
+[Term]
+id: SpatialDropout1D:Layer
+name: SpatialDropout1D Layer
+def: "Spatial 1D version of Dropout. This version performs the same function as Dropout, however, it drops entire 1D feature maps instead of individual elements. If adjacent frames within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective learning rate decrease. In this case, SpatialDropout1D will help promote independence between feature maps and should be used instead." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/SpatialDropout1D]
+is_a: Regularization:Layer ! Regularization Layer
+
+[Term]
+id: SpatialDropout2D:Layer
+name: SpatialDropout2D Layer
+def: "Spatial 2D version of Dropout. This version performs the same function as Dropout, however, it drops entire 2D feature maps instead of individual elements. If adjacent pixels within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective learning rate decrease. In this case, SpatialDropout2D will help promote independence between feature maps and should be used instead.a" [https://www.tensorflow.org/api_docs/python/tf/keras/layers/SpatialDropout2D]
+is_a: Regularization:Layer ! Regularization Layer
+
+[Term]
+id: SpatialDropout3D:Layer
+name: SpatialDropout3D Layer
+def: "Spatial 3D version of Dropout. This version performs the same function as Dropout, however, it drops entire 3D feature maps instead of individual elements. If adjacent voxels within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective learning rate decrease. In this case, SpatialDropout3D will help promote independence between feature maps and should be used instead." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/SpatialDropout3D]
+is_a: Regularization:Layer ! Regularization Layer
+
+[Term]
+id: StackedRNNCells:Layer
+name: StackedRNNCells Layer
+def: "Wrapper allowing a stack of RNN cells to behave as a single cell. Used to implement efficient stacked RNNs." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/StackedRNNCells]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: StringLookup:Layer
+name: StringLookup Layer
+def: "A preprocessing layer which maps string features to integer indices." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/StringLookup]
+is_a: https://w3id.org/aio/Categorical_Features_Preprocessing_Layer ! Categorical Features Preprocessing Layer
+
+[Term]
+id: Subtract:Layer
+name: Subtract Layer
+def: "Layer that subtracts two inputs. It takes as input a list of tensors of size 2, both of the same shape, and returns a single tensor, (inputs[0] - inputs[1]), also of the same shape." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Subtract]
+is_a: Merging:Layers
+
+[Term]
+id: Survivorship:Bias
+name: Survivorship Bias
+def: "Tendency for people to focus on the items, observations, or people that “survive” or make it past a selection process, while overlooking those that did not." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Processing:Bias ! Processing Bias
+
+[Term]
+id: Swish:Function
+name: Swish Function
+def: "x*sigmoid(x). It is a smooth, non-monotonic function that consistently matches or outperforms ReLU on deep networks, it is unbounded above and bounded below." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/swish]
+is_a: https://w3id.org/aio/Function
+
+[Term]
+id: Systemic:Bias
+name: Systemic Bias
+def: "Biases that result from procedures and practices of particular institutions that operate in ways which result in certain social groups being advantaged or favored and others being disadvantaged or devalued." [https://doi.org/10.6028/NIST.SP.1270]
+synonym: "Institutional Bias; Societal Bias" EXACT []
+is_a: https://w3id.org/aio/Bias ! Bias
+
+[Term]
+id: Tanh:Function
+name: Tanh Function
+def: "Hyperbolic tangent activation function." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/tanh]
+synonym: "hyperbolic tangent" EXACT []
+is_a: https://w3id.org/aio/Function
+
+[Term]
+id: Temporal:Bias
+name: Temporal Bias
+def: "Bias that arises from differences in populations and behaviors over time." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: https://w3id.org/aio/Selection_And_Sampling_Bias ! Selection And Sampling Bias
+
+[Term]
+id: TextVectorization:Layer
+name: TextVectorization Layer
+def: "A preprocessing layer which maps text features to integer sequences." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization]
+is_a: https://w3id.org/aio/Text_Preprocessing_Layer ! Text Preprocessing Layer
+
+[Term]
+id: ThresholdedReLU:Layer
+name: ThresholdedReLU Layer
+def: "Thresholded Rectified Linear Unit." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/ThresholdedReLU]
+is_a: Activation:Layer ! Activation Layer
+
+[Term]
+id: TimeDistributed:Layer
+name: TimeDistributed Layer
+def: "This wrapper allows to apply a layer to every temporal slice of an input. Every input should be at least 3D, and the dimension of index one of the first input will be considered to be the temporal dimension. Consider a batch of 32 video samples, where each sample is a 128x128 RGB image with channels_last data format, across 10 timesteps. The batch input shape is (32, 10, 128, 128, 3). You can then use TimeDistributed to apply the same Conv2D layer to each of the 10 timesteps, independently:" [https://www.tensorflow.org/api_docs/python/tf/keras/layers/TimeDistributed]
+is_a: Recurrent:Layer ! Recurrent Layer
+
+[Term]
+id: Uncertainty:Bias
+name: Uncertainty Bias
+def: "Arises when predictive algorithms favor groups that are better represented in the training data, since there will be less uncertainty associated with those predictions." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: https://w3id.org/aio/Selection_And_Sampling_Bias ! Selection And Sampling Bias
+
+[Term]
+id: UnitNormalization:Layer
+name: UnitNormalization Layer
+def: "Unit normalization layer. Normalize a batch of inputs so that each input in the batch has a L2 norm equal to 1 (across the axes specified in axis)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/UnitNormalization]
+is_a: Recurrent:Layer ! Recurrent Layer
+
+[Term]
+id: UpSampling1D:Layer
+name: UpSampling1D Layer
+def: "Upsampling layer for 1D inputs. Repeats each temporal step size times along the time axis." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/UpSampling1D]
+is_a: Reshaping:Layer ! Reshaping Layer
+
+[Term]
+id: UpSampling2D:Layer
+name: UpSampling2D Layer
+def: "Upsampling layer for 2D inputs. Repeats the rows and columns of the data by size[0] and size[1] respectively." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/UpSampling2D]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: UpSampling3D:Layer
+name: UpSampling3D Layer
+def: "Upsampling layer for 3D inputs." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/UpSampling3D]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Wrapper:Layer
+name: Wrapper Layer
+def: "Abstract wrapper base class. Wrappers take another layer and augment it in various ways. Do not use this class as a layer, it is only an abstract base class. Two usable wrappers are the TimeDistributed and Bidirectional wrappers." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Wrapper]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: ZeroPadding1D:Layer
+name: ZeroPadding1D Layer
+def: "Zero-padding layer for 1D input (e.g. temporal sequence)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/ZeroPadding1D]
+is_a: Reshaping:Layer ! Reshaping Layer
+
+[Term]
+id: ZeroPadding2D:Layer
+name: ZeroPadding2D Layer
+def: "Zero-padding layer for 2D input (e.g. picture). This layer can add rows and columns of zeros at the top, bottom, left and right side of an image tensor." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/ZeroPadding2D]
+is_a: Reshaping:Layer ! Reshaping Layer
+
+[Term]
+id: ZeroPadding3D:Layer
+name: ZeroPadding3D Layer
+def: "Zero-padding layer for 3D data (spatial or spatio-temporal)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/ZeroPadding3D]
+is_a: Reshaping:Layer ! Reshaping Layer
+
+[Term]
+id: eLu:Function
+name: ELU Function
+def: "The exponential linear unit (ELU) with alpha > 0 is: x if x > 0 and alpha * (exp(x) - 1) if x < 0 The ELU hyperparameter alpha controls the value to which an ELU saturates for negative net inputs. ELUs diminish the vanishing gradient effect. ELUs have negative values which pushes the mean of the activations closer to zero. Mean activations that are closer to zero enable faster learning as they bring the gradient closer to the natural gradient. ELUs saturate to a negative value when the argument gets smaller. Saturation means a small derivative which decreases the variation and the information that is propagated to the next layer." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/elu]
+synonym: "ELU" RELATED []
+synonym: "Exponential Linear Unit" EXACT []
+is_a: https://w3id.org/aio/Function
 
 [Term]
 id: https://w3id.org/aio/AE
-name: Auto Encoder
+name: Auto Encoder Network
 def: "An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning). The encoding is validated and refined by attempting to regenerate the input from the encoding. The autoencoder learns a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore insignificant data (“noise”). (https://en.wikipedia.org/wiki/Autoencoder)" [https://en.wikipedia.org/wiki/Autoencoder]
 comment: Input, Hidden, Matched Output-Input
 synonym: "AE" EXACT []
-is_a: https://w3id.org/aio/UPN ! Unsupervised Pretrained Networks
+is_a: https://w3id.org/aio/UPN ! Unsupervised Pretrained Network
 
 [Term]
 id: https://w3id.org/aio/ANN
@@ -95,20 +1080,65 @@ synonym: "NN" EXACT []
 is_a: https://w3id.org/aio/Network ! Network
 
 [Term]
+id: https://w3id.org/aio/AbstractRNNCell
+name: AbstractRNNCell
+def: "Abstract object representing an RNN cell. This is the base class for implementing RNN cells with custom behavior." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/AbstractRNNCell]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: https://w3id.org/aio/Annotator_Reporting_Bias
+name: Annotator Reporting Bias
+def: "When users rely on automation as a heuristic replacement for their own information seeking and processing. A form of individual bias but often discussed as a group bias, or the larger effects on natural language processing models." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Individual:Bias ! Individual Bias
+
+[Term]
+id: https://w3id.org/aio/Automation_Complacency_Bias
+name: Automation Complacency Bias
+def: "When humans over-rely on automated systems or have their skills attenuated by such over-reliance (e.g., spelling and autocorrect or spellcheckers)." [https://doi.org/10.6028/NIST.SP.1270]
+synonym: "Automation Complaceny" EXACT []
+is_a: Individual:Bias ! Individual Bias
+
+[Term]
+id: https://w3id.org/aio/Availability_Heuristic_Bias
+name: Availability Heuristic Bias
+def: "A mental shortcut whereby people tend to overweight what comes easily or quickly to mind, meaning that what is easier to recall—e.g., more “available”—receives greater emphasis in judgement and decision-making." [https://doi.org/10.6028/NIST.SP.1270]
+synonym: "Availability Heuristic; Availability Bias" EXACT []
+is_a: Individual:Bias ! Individual Bias
+
+[Term]
 id: https://w3id.org/aio/BM
-name: Boltzmann Machine
+name: Boltzmann Machine Network
 def: "A Boltzmann machine is a type of stochastic recurrent neural network. It is a Markov random field. It was translated from statistical physics for use in cognitive science. The Boltzmann machine is based on a stochastic spin-glass model with an external field, i.e., a Sherrington–Kirkpatrick model that is a stochastic Ising Model[2] and applied to machine learning." [https://en.wikipedia.org/wiki/Boltzmann_machine]
 comment: Backfed Input, Probabilistic Hidden
 synonym: "BM" EXACT []
 synonym: "Sherrington–Kirkpatrick model with external field" EXACT []
 synonym: "stochastic Hopfield network with hidden units" EXACT []
 synonym: "stochastic Ising-Lenz-Little model" EXACT []
-is_a: https://w3id.org/aio/SCN ! Symmetrically Connected Networks
+is_a: https://w3id.org/aio/SCN ! Symmetrically Connected Network
 
 [Term]
-id: https://w3id.org/aio/Backfed_Input_layer
-name: Backfed Input layer
+id: https://w3id.org/aio/Bias
+name: Bias
+def: "Systematic error introduced into sampling or testing by selecting or encouraging one outcome or answer over others." [https://www.merriam-webster.com/dictionary/bias]
+
+[Term]
+id: https://w3id.org/aio/Categorical_Features_Preprocessing_Layer
+name: Categorical Features Preprocessing Layer
+def: "A layer that performs categorical data preprocessing operations." [https://keras.io/guides/preprocessing_layers/]
 is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: https://w3id.org/aio/Concept_Drift_Bias
+name: Concept Drift Bias
+def: "Use of a system outside the planned domain of application, and a common cause of performance gaps between laboratory settings and the real world." [https://doi.org/10.6028/NIST.SP.1270]
+synonym: "Concept Drift" EXACT []
+is_a: https://w3id.org/aio/Use_And_Interpretation_Bias ! Use And Interpretation Bias
+
+[Term]
+id: https://w3id.org/aio/Content_Production_Bias
+name: Content Production Bias
+def: "Arises from structural, lexical, semantic, and syntactic differences in the contents generated by users." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: https://w3id.org/aio/Use_And_Interpretation_Bias ! Use And Interpretation Bias
 
 [Term]
 id: https://w3id.org/aio/DAE
@@ -116,7 +1146,7 @@ name: Denoising Auto Encoder
 def: "Denoising Auto Encoders (DAEs) take a partially corrupted input and are trained to recover the original undistorted input. In practice, the objective of denoising autoencoders is that of cleaning the corrupted input, or denoising. (https://en.wikipedia.org/wiki/Autoencoder)" []
 comment: Noisy Input, Hidden, Matched Output-Input
 synonym: "DAE" EXACT []
-is_a: https://w3id.org/aio/AE ! Auto Encoder
+is_a: https://w3id.org/aio/AE ! Auto Encoder Network
 
 [Term]
 id: https://w3id.org/aio/DBN
@@ -124,7 +1154,7 @@ name: Deep Belief Network
 def: "In machine learning, a deep belief network (DBN) is a generative graphical model, or alternatively a class of deep neural network, composed of multiple layers of latent variables (\"hidden units\"), with connections between the layers but not between units within each layer. When trained on a set of examples without supervision, a DBN can learn to probabilistically reconstruct its inputs. The layers then act as feature detectors. After this learning step, a DBN can be further trained with supervision to perform classification. DBNs can be viewed as a composition of simple, unsupervised networks such as restricted Boltzmann machines (RBMs) or autoencoders, where each sub-network's hidden layer serves as the visible layer for the next. An RBM is an undirected, generative energy-based model with a \"visible\" input layer and a hidden layer and connections between but not within layers. This composition leads to a fast, layer-by-layer unsupervised training procedure, where contrastive divergence is applied to each sub-network in turn, starting from the \"lowest\" pair of layers (the lowest visible layer is a training set). The observation that DBNs can be trained greedily, one layer at a time, led to one of the first effective deep learning algorithms. (https://en.wikipedia.org/wiki/Deep_belief_network)" [https://en.wikipedia.org/wiki/Deep_belief_network]
 comment: Backfed Input, Probabilistic Hidden, Hidden, Matched Output-Input
 synonym: "DBN" EXACT []
-is_a: https://w3id.org/aio/UPN ! Unsupervised Pretrained Networks
+is_a: https://w3id.org/aio/UPN ! Unsupervised Pretrained Network
 
 [Term]
 id: https://w3id.org/aio/DCIGN
@@ -132,7 +1162,7 @@ name: Deep Convolutional Inverse Graphics Network
 def: "A Deep Convolution Inverse Graphics Network (DC-IGN) is a model that learns an interpretable representation of images. This representation is disentangled with respect to transformations such as out-of-plane rotations and lighting variations. The DC-IGN model is composed of multiple layers of convolution and de-convolution operators and is trained using the Stochastic Gradient Variational Bayes (SGVB) algorithm. (https://arxiv.org/abs/1503.03167)" []
 comment: Input, Kernel, Convolutional/Pool, Probabilistic Hidden, Convolutional/Pool, Kernel, Output
 synonym: "DCIGN" EXACT []
-is_a: https://w3id.org/aio/AE ! Auto Encoder
+is_a: https://w3id.org/aio/AE ! Auto Encoder Network
 
 [Term]
 id: https://w3id.org/aio/DCN
@@ -173,6 +1203,26 @@ synonym: "DNN" EXACT []
 is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
 
 [Term]
+id: https://w3id.org/aio/Data_Dredging_Bias
+name: Data Dredging Bias
+def: "A statistical bias in which testing huge numbers of hypotheses of a dataset may appear to yield statistical significance even when the results are statistically nonsignificant." [https://doi.org/10.6028/NIST.SP.1270]
+synonym: "Data Dredging" EXACT []
+is_a: https://w3id.org/aio/Use_And_Interpretation_Bias ! Use And Interpretation Bias
+
+[Term]
+id: https://w3id.org/aio/Data_Generation_Bias
+name: Data Generation Bias
+def: "Arises from the addition of synthetic or redundant data samples to a dataset." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: https://w3id.org/aio/Selection_And_Sampling_Bias ! Selection And Sampling Bias
+
+[Term]
+id: https://w3id.org/aio/Dunning-Kruger_Effect_Bias
+name: Dunning-Kruger Effect Bias
+def: "The tendency of people with low ability in a given area or task to overestimate their self-assessed ability. Typically measured by comparing self-assessment with objective performance, often called subjective ability and objective ability, respectively." [https://doi.org/10.6028/NIST.SP.1270]
+synonym: "Dunning-Kruger Effect" EXACT []
+is_a: Cognitive:Bias ! Cognitive Bias
+
+[Term]
 id: https://w3id.org/aio/ELM
 name: Extreme Learning Machine
 def: "Extreme learning machines are feedforward neural networks for classification, regression, clustering, sparse approximation, compression and feature learning with a single layer or multiple layers of hidden nodes, where the parameters of hidden nodes (not just the weights connecting inputs to hidden nodes) need not be tuned. These hidden nodes can be randomly assigned and never updated (i.e. they are random projection but with nonlinear transforms), or can be inherited from their ancestors without being changed. In most cases, the output weights of hidden nodes are usually learned in a single step, which essentially amounts to learning a linear model. (https://en.wikipedia.org/wiki/Extreme_learning_machine)" [https://en.wikipedia.org/wiki/Extreme_learning_machine]
@@ -189,6 +1239,20 @@ synonym: "ESN" EXACT []
 is_a: https://w3id.org/aio/RecNN ! Recurrent Neural Network
 
 [Term]
+id: https://w3id.org/aio/Ecological_Fallacy_Bias
+name: Ecological Fallacy Bias
+def: "Occurs when an inference is made about an individual based on their membership within a group." [https://doi.org/10.6028/NIST.SP.1270]
+synonym: "Ecological Fallacy" EXACT []
+is_a: https://w3id.org/aio/Selection_And_Sampling_Bias ! Selection And Sampling Bias
+
+[Term]
+id: https://w3id.org/aio/Error_Propagation_Bias
+name: Error Propagation Bias
+def: "The effect of variables' uncertainties (or errors, more specifically random errors) on the uncertainty of a function based on them." [https://doi.org/10.6028/NIST.SP.1270]
+synonym: "Error Propagation" EXACT []
+is_a: Processing:Bias ! Processing Bias
+
+[Term]
 id: https://w3id.org/aio/FBN
 name: Feedback Network
 def: "A feedback based approach in which the representation is formed in an iterative manner based on a feedback received from previous iteration's output. (https://arxiv.org/abs/1612.09508)" []
@@ -197,12 +1261,18 @@ synonym: "FBN" EXACT []
 is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
 
 [Term]
+id: https://w3id.org/aio/Feedback_Loop_Bias
+name: Feedback Loop Bias
+def: "Effects that may occur when an algorithm learns from user behavior and feeds that behavior back into the model." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: https://w3id.org/aio/Use_And_Interpretation_Bias ! Use And Interpretation Bias
+
+[Term]
 id: https://w3id.org/aio/GAN
 name: Generative Adversarial Network
 def: "A generative adversarial network (GAN) is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in 2014. Two neural networks contest with each other in a game (in the form of a zero-sum game, where one agent's gain is another agent's loss). Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics. Though originally proposed as a form of generative model for unsupervised learning, GANs have also proven useful for semi-supervised learning, fully supervised learning,[ and reinforcement learning. The core idea of a GAN is based on the \"indirect\" training through the discriminator,[clarification needed] which itself is also being updated dynamically. This basically means that the generator is not trained to minimize the distance to a specific image, but rather to fool the discriminator. This enables the model to learn in an unsupervised manner." [https://en.wikipedia.org/wiki/Generative_adversarial_network]
 comment: Backfed Input, Hidden, Matched Output-Input, Hidden, Matched Output-Input
 synonym: "GAN" EXACT []
-is_a: https://w3id.org/aio/UPN ! Unsupervised Pretrained Networks
+is_a: https://w3id.org/aio/UPN ! Unsupervised Pretrained Network
 
 [Term]
 id: https://w3id.org/aio/GCN
@@ -236,7 +1306,31 @@ comment: Backfed input
 synonym: "HN" EXACT []
 synonym: "Ising model of a neural network" EXACT []
 synonym: "Ising–Lenz–Little model" EXACT []
-is_a: https://w3id.org/aio/SCN ! Symmetrically Connected Networks
+is_a: https://w3id.org/aio/SCN ! Symmetrically Connected Network
+
+[Term]
+id: https://w3id.org/aio/Hostile_Attribution_Bias
+name: Hostile Attribution Bias
+def: "A bias wherein individuals perceive benign or ambiguous behaviors as hostile." [https://en.wikipedia.org/wiki/Interpretive_bias]
+is_a: https://w3id.org/aio/Use_And_Interpretation_Bias ! Use And Interpretation Bias
+
+[Term]
+id: https://w3id.org/aio/Human_Reporting_Bias
+name: Human Reporting Bias
+def: "When users rely on automation as a heuristic replacement for their own information seeking and processing." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Individual:Bias ! Individual Bias
+
+[Term]
+id: https://w3id.org/aio/Image_Augmentation_Layer
+name: Image Augmentation Layer
+def: "A layer that performs image data preprocessing augmentations." [https://keras.io/guides/preprocessing_layers/]
+is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: https://w3id.org/aio/Image_Preprocessing_Layer
+name: Image Preprocessing Layer
+def: "A layer that performs image data preprocessing operations." [https://keras.io/guides/preprocessing_layers/]
+is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
 id: https://w3id.org/aio/KN
@@ -244,15 +1338,15 @@ name: Kohonen Network
 def: "A self-organizing map (SOM) or self-organizing feature map (SOFM) is an unsupervised machine learning technique used to produce a low-dimensional (typically two-dimensional) representation of a higher dimensional data set while preserving the topological structure of the data. For example, a data set with p variables measured in n observations could be represented as clusters of observations with similar values for the variables. These clusters then could be visualized as a two-dimensional \"map\" such that observations in proximal clusters have more similar values than observations in distal clusters. This can make high-dimensional data easier to visualize and analyze. An SOM is a type of artificial neural network but is trained using competitive learning rather than the error-correction learning (e.g., backpropagation with gradient descent) used by other artificial neural networks. The SOM was introduced by the Finnish professor Teuvo Kohonen in the 1980s and therefore is sometimes called a Kohonen map or Kohonen network.[1][2] The Kohonen map or network is a computationally convenient abstraction building on biological models of neural systems from the 1970s[3] and morphogenesis models dating back to Alan Turing in the 1950s." [https://en.wikipedia.org/wiki/Self-organizing_map]
 comment: Input, Hidden
 synonym: "KN" EXACT []
-synonym: "self-organizing feature map" EXACT []
-synonym: "self-organizing map" EXACT []
+synonym: "Self-Organizing Feature Map" EXACT []
+synonym: "Self-Organizing Map" EXACT []
 synonym: "SOFM" EXACT []
 synonym: "SOM" EXACT []
 is_a: https://w3id.org/aio/Network ! Network
 
 [Term]
 id: https://w3id.org/aio/LSM
-name: Liquid State Machine
+name: Liquid State Machine Network
 def: "A liquid state machine (LSM) is a type of reservoir computer that uses a spiking neural network. An LSM consists of a large collection of units (called nodes, or neurons). Each node receives time varying input from external sources (the inputs) as well as from other nodes. Nodes are randomly connected to each other. The recurrent nature of the connections turns the time varying input into a spatio-temporal pattern of activations in the network nodes. The spatio-temporal patterns of activation are read out by linear discriminant units. The soup of recurrently connected nodes will end up computing a large variety of nonlinear functions on the input. Given a large enough variety of such nonlinear functions, it is theoretically possible to obtain linear combinations (using the read out units) to perform whatever mathematical operation is needed to perform a certain task, such as speech recognition or computer vision. The word liquid in the name comes from the analogy drawn to dropping a stone into a still body of water or other liquid. The falling stone will generate ripples in the liquid. The input (motion of the falling stone) has been converted into a spatio-temporal pattern of liquid displacement (ripples). (https://en.wikipedia.org/wiki/Liquid_state_machine)" [https://en.wikipedia.org/wiki/Liquid_state_machine]
 comment: Input, Spiking Hidden, Output
 synonym: "LSM" EXACT []
@@ -269,47 +1363,75 @@ is_a: https://w3id.org/aio/RecNN ! Recurrent Neural Network
 [Term]
 id: https://w3id.org/aio/Layer
 name: Layer
+def: "Network layer parent class" []
+
+[Term]
+id: https://w3id.org/aio/Loss_Of_Situational_Awareness_Bias
+name: Loss Of Situational Awareness Bias
+def: "When automation leads to humans being unaware of their situation such that, when control of a system is given back to them in a situation where humans and machines cooperate, they are unprepared to assume their duties. This can be a loss of awareness over what automation is and isn’t taking care of." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Individual:Bias ! Individual Bias
 
 [Term]
 id: https://w3id.org/aio/MC
 name: Markov Chain
 def: "A Markov chain or Markov process is a stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event.[1][2][3] A countably infinite sequence, in which the chain moves state at discrete time steps, gives a discrete-time Markov chain (DTMC). A continuous-time process is called a continuous-time Markov chain (CTMC). It is named after the Russian mathematician Andrey Markov." [https://en.wikipedia.org/wiki/Markov_chain]
 comment: Probalistic Hidden
+synonym: "Markov Process" EXACT []
 synonym: "MC" EXACT []
+synonym: "MP" EXACT []
 is_a: https://w3id.org/aio/Network ! Network
 
 [Term]
-id: https://w3id.org/aio/Matched_Output-Input_layer
-name: Matched Output-Input layer
-is_a: https://w3id.org/aio/Layer ! Layer
+id: https://w3id.org/aio/Mode_Confusion_Bias
+name: Mode Confusion Bias
+def: "When modal interfaces confuse human operators, who misunderstand which mode the system is using, taking actions which are correct for a different mode but incorrect for their current situation. This is the cause of many deadly accidents, but also a source of confusion in everyday life." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Individual:Bias ! Individual Bias
 
 [Term]
-id: https://w3id.org/aio/Memory_Cell_layer
-name: Memory Cell layer
-is_a: https://w3id.org/aio/Layer ! Layer
+id: https://w3id.org/aio/Model
+name: Model
+def: "Model parent class" []
+
+[Term]
+id: https://w3id.org/aio/Model_Selection_Bias
+name: Model Selection Bias
+def: "The bias introduced while using the data to select a single seemingly “best” model from a large set of models employing many predictor variables. Model selection bias also occurs when an explanatory variable has a weak relationship with the response variable." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Processing:Bias ! Processing Bias
 
 [Term]
 id: https://w3id.org/aio/NTM
-name: Neural Turing Machine
+name: Neural Turing Machine Network
 def: "A Neural Turing machine (NTMs) is a recurrent neural network model. The approach was published by Alex Graves et al. in 2014. NTMs combine the fuzzy pattern matching capabilities of neural networks with the algorithmic power of programmable computers. An NTM has a neural network controller coupled to external memory resources, which it interacts with through attentional mechanisms. The memory interactions are differentiable end-to-end, making it possible to optimize them using gradient descent. An NTM with a long short-term memory (LSTM) network controller can infer simple algorithms such as copying, sorting, and associative recall from examples alone." [https://en.wikipedia.org/wiki/Neural_Turing_machine]
 comment: Input, Hidden, Spiking Hidden, Output
 synonym: "NTM" EXACT []
-is_a: https://w3id.org/aio/FFN
+is_a: https://w3id.org/aio/DFF ! Deep FeedFoward
 is_a: https://w3id.org/aio/LSTM ! Long Short Term Memory
 
 [Term]
 id: https://w3id.org/aio/Network
 name: Network
+def: "Network parent class" []
 
 [Term]
-id: https://w3id.org/aio/Niosy_Input_layer
-name: Noisy Input layer
+id: https://w3id.org/aio/Noise_Dense_Layer
+name: Noise Dense Layer
+def: "Noisy dense layer that injects random noise to the weights of dense layer. Noisy dense layers are fully connected layers whose weights and biases are augmented by factorised Gaussian noise. The factorised Gaussian noise is controlled through gradient descent by a second weights layer. A NoisyDense layer implements the operation: $$ mathrm{NoisyDense}(x) = mathrm{activation}(mathrm{dot}(x, mu + (sigma cdot epsilon)) mathrm{bias}) $$ where mu is the standard weights layer, epsilon is the factorised Gaussian noise, and delta is a second weights layer which controls epsilon." [https://www.tensorflow.org/addons/api_docs/python/tfa/layers/NoisyDense]
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
-id: https://w3id.org/aio/Probabilistic_Hidden_layer
-name: Probabilistic Hidden layer
+id: https://w3id.org/aio/Numerical_Features_Preprocessing_Layer
+name: Numerical Features Preprocessing Layer
+def: "A layer that performs numerical data preprocessing operations." [https://keras.io/guides/preprocessing_layers/]
 is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: https://w3id.org/aio/P
+name: Perceptron
+def: "The perceptron is an algorithm for supervised learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class. It is a type of linear classifier, i.e. a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector. (https://en.wikipedia.org/wiki/Perceptron)" []
+comment: Input, Output
+synonym: "Single Layer Perceptron" EXACT []
+synonym: "SLP" EXACT []
+is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
 
 [Term]
 id: https://w3id.org/aio/RBM
@@ -317,7 +1439,7 @@ name: Restricted Boltzmann Machine
 def: "A restricted Boltzmann machine (RBM) is a generative stochastic artificial neural network that can learn a probability distribution over its set of inputs." [https://en.wikipedia.org/wiki/Restricted_Boltzmann_machine]
 comment: Backfed Input, Probabilistic Hidden
 synonym: "RBM" EXACT []
-is_a: https://w3id.org/aio/BM ! Boltzmann Machine
+is_a: https://w3id.org/aio/BM ! Boltzmann Machine Network
 
 [Term]
 id: https://w3id.org/aio/RBN
@@ -327,7 +1449,14 @@ comment: Input, Hidden, Output
 synonym: "Radial Basis Function Network" EXACT []
 synonym: "RBFN" EXACT []
 synonym: "RBN" EXACT []
-is_a: https://w3id.org/aio/FFN
+is_a: https://w3id.org/aio/DFF ! Deep FeedFoward
+
+[Term]
+id: https://w3id.org/aio/Rashomon_Effect_Bias
+name: Rashomon Effect Bias
+def: "Refers to differences in perspective, memory and recall, interpretation, and reporting on the same event from multiple persons or witnesses." [https://doi.org/10.6028/NIST.SP.1270]
+synonym: "Rashomon Effect; Rashomon Principle" EXACT []
+is_a: Individual:Bias ! Individual Bias
 
 [Term]
 id: https://w3id.org/aio/RecNN
@@ -352,7 +1481,7 @@ id: https://w3id.org/aio/ResNN
 name: Residual Neural Network
 def: "A residual neural network (ResNet) is an artificial neural network (ANN) of a kind that builds on constructs known from pyramidal cells in the cerebral cortex. Residual neural networks do this by utilizing skip connections, or shortcuts to jump over some layers. Typical ResNet models are implemented with double- or triple- layer skips that contain nonlinearities (ReLU) and batch normalization in between. An additional weight matrix may be used to learn the skip weights; these models are known as HighwayNets. Models with several parallel skips are referred to as DenseNets. In the context of residual neural networks, a non-residual network may be described as a 'plain network'." [https://en.wikipedia.org/wiki/Residual_neural_network]
 comment: Input, Weight, BN, ReLU, Weight, BN, Addition, ReLU
-synonym: "deep residual network" EXACT []
+synonym: "Deep Residual Network" EXACT []
 synonym: "DRN" EXACT []
 synonym: "ResNet" EXACT []
 synonym: "ResNN" EXACT []
@@ -364,49 +1493,90 @@ name: Sparse AE
 def: "Sparse autoencoders may include more (rather than fewer) hidden units than inputs, but only a small number of the hidden units are allowed to be active at the same time (thus, sparse). This constraint forces the model to respond to the unique statistical features of the training data. (https://en.wikipedia.org/wiki/Autoencoder)" []
 comment: Input, Hidden, Matched Output-Input
 synonym: "SAE" EXACT []
-is_a: https://w3id.org/aio/AE ! Auto Encoder
+is_a: https://w3id.org/aio/AE ! Auto Encoder Network
 
 [Term]
 id: https://w3id.org/aio/SCN
-name: Symmetrically Connected Networks
+name: Symmetrically Connected Network
 def: "Like recurrent networks, but the connections between units are symmetrical (they have the same weight in both directions)." [https://ieeexplore.ieee.org/document/287176]
 synonym: "SCN" EXACT []
 is_a: https://w3id.org/aio/Network ! Network
-
-[Term]
-id: https://w3id.org/aio/SLP
-name: Perceptron
-def: "The perceptron is an algorithm for supervised learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class. It is a type of linear classifier, i.e. a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector. (https://en.wikipedia.org/wiki/Perceptron)" []
-comment: Input, Output
-synonym: "Single Layer Perceptron" EXACT []
-synonym: "SLP" EXACT []
-is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
 
 [Term]
 id: https://w3id.org/aio/SVM
 name: Support Vector Machine
 def: "In machine learning, support-vector machines (SVMs, also support-vector networks) are supervised learning models with associated learning algorithms that analyze data for classification and regression analysis. Developed at AT&T Bell Laboratories by Vladimir Vapnik with colleagues (Boser et al., 1992, Guyon et al., 1993, Vapnik et al., 1997) SVMs are one of the most robust prediction methods, being based on statistical learning frameworks or VC theory proposed by Vapnik (1982, 1995) and Chervonenkis (1974). Given a set of training examples, each marked as belonging to one of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier (although methods such as Platt scaling exist to use SVM in a probabilistic classification setting). SVM maps training examples to points in space so as to maximise the width of the gap between the two categories. New examples are then mapped into that same space and predicted to belong to a category based on which side of the gap they fall." [https://en.wikipedia.org/wiki/Support-vector_machine]
 comment: Input, Hidden, Output
+synonym: "Supper Vector Network" EXACT []
 synonym: "SVM" EXACT []
+synonym: "SVN" EXACT []
 is_a: https://w3id.org/aio/Network ! Network
 
 [Term]
-id: https://w3id.org/aio/Spiking_Hidden_layer
-name: Spiking Hidden layer
+id: https://w3id.org/aio/Selection_And_Sampling_Bias
+name: Selection And Sampling Bias
+def: "Bias introduced by the selection of individuals, groups, or data for analysis in such a way that proper randomization is not achieved, thereby failing to ensure that the sample obtained is representative of the population intended to be analyzed." [https://en.wikipedia.org/wiki/Selection_bias]
+synonym: "Selection Bias; Sampling Bias; Selection Effect" EXACT []
+is_a: Computational:Bias ! Computational Bias
+
+[Term]
+id: https://w3id.org/aio/Selective_Adherence_Bias
+name: Selective Adherence Bias
+def: "Decision-makers’ inclination to selectively adopt algorithmic advice when it matches their pre-existing beliefs and stereotypes." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Individual:Bias ! Individual Bias
+
+[Term]
+id: https://w3id.org/aio/Simpon's_Paradox_Bias
+name: Simpon's Paradox Bias
+def: "A statistical phenomenon where the marginal association between two categorical variables is qualitatively different from the partial association between the same two variables after controlling for one or more other variables. For example, the statistical association or correlation that has been detected between two variables for an entire population disappears or reverses when the population is divided into subgroups." [https://doi.org/10.6028/NIST.SP.1270]
+synonym: "Simpson's Paradox" EXACT []
+is_a: https://w3id.org/aio/Selection_And_Sampling_Bias ! Selection And Sampling Bias
+
+[Term]
+id: https://w3id.org/aio/Streetlight_Effect_Bias
+name: Streetlight Effect Bias
+def: "A bias whereby people tend to search only where it is easiest to look." [https://doi.org/10.6028/NIST.SP.1270]
+synonym: "Streetlight Effect" EXACT []
+is_a: Individual:Bias ! Individual Bias
+
+[Term]
+id: https://w3id.org/aio/Sunk_Cost_Fallacy_Bias
+name: Sunk Cost Fallacy Bias
+def: "A human tendency where people opt to continue with an endeavor or behavior due to previously spent or invested resources, such as money, time, and effort, regardless of whether costs outweigh benefits. For example, in AI, the sunk cost fallacy could lead development teams and organizations to feel that because they have already invested so much time and money into a particular AI application, they must pursue it to market rather than deciding to end the effort, even in the face of significant technical debt and/or ethical debt." [https://doi.org/10.6028/NIST.SP.1270]
+synonym: "Sunk Cost Fallacy" EXACT []
+is_a: Group:Bias ! Group Bias
+
+[Term]
+id: https://w3id.org/aio/Text_Preprocessing_Layer
+name: Text Preprocessing Layer
+def: "A layer that performs text data preprocessing operations." [https://keras.io/guides/preprocessing_layers/]
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
 id: https://w3id.org/aio/Transformer
-name: Transformer
+name: Transformer Network
 def: "A transformer is a deep learning model that adopts the mechanism of attention, differentially weighing the significance of each part of the input data. It is used primarily in the field of natural language processing (NLP) and in computer vision (CV). (https://en.wikipedia.org/wiki/Transformer_(machine_learning_model))" [https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)]
 is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/UPN
-name: Unsupervised Pretrained Networks
+name: Unsupervised Pretrained Network
 def: "Unsupervised pre-training initializes a discriminative neural net from one which was trained using an unsupervised criterion, such as a deep belief network or a deep autoencoder. This method can sometimes help with both the optimization and the overfitting issues." [https://metacademy.org/graphs/concepts/unsupervised_pre_training#\:~\:text=Unsupervised%20pre%2Dtraining%20initializes%20a\,optimization%20and%20the%20overfitting%20issues]
 synonym: "UPN" EXACT []
 is_a: https://w3id.org/aio/Network ! Network
+
+[Term]
+id: https://w3id.org/aio/Use_And_Interpretation_Bias
+name: Use And Interpretation Bias
+def: "An information-processing bias, the tendency to inappropriately analyze ambiguous stimuli, scenarios and events." [https://en.wikipedia.org/wiki/Interpretive_bias]
+synonym: "Interpretive Bias" EXACT []
+is_a: Computational:Bias ! Computational Bias
+
+[Term]
+id: https://w3id.org/aio/User_Interaction_Bias
+name: User Interaction Bias
+def: "Arises when a user imposes their own self-selected biases and behavior during interaction with data, output, results, etc." [https://doi.org/10.6028/NIST.SP.1270]
+is_a: Individual:Bias ! Individual Bias
 
 [Term]
 id: https://w3id.org/aio/VAE
@@ -414,30 +1584,15 @@ name: Variational Auto Encoder
 def: "Variational autoencoders are meant to compress the input information into a constrained multivariate latent distribution (encoding) to reconstruct it as accurately as possible (decoding). (https://en.wikipedia.org/wiki/Variational_autoencoder)" []
 comment: Input, Probabilistic Hidden, Matched Output-Input
 synonym: "VAE" EXACT []
-is_a: https://w3id.org/aio/AE ! Auto Encoder
-
-[Term]
-id: n2v:CBOW
-name: node2vec-CBOW
-def: "In the continuous bag-of-words architecture, the model predicts the current node from a window of surrounding context nodes. The order of context nodes does not influence prediction (bag-of-words assumption)." [https://en.wikipedia.org/wiki/Word2vec]
-comment: Input, Hidden, Output
-synonym: "n2v-CBOW" EXACT []
-is_a: w2v:CBOW ! word2vec-CBOW
-
-[Term]
-id: n2v:SkipGram
-name: node2vec-SkipGram
-def: "In the continuous skip-gram architecture, the model uses the current node to predict the surrounding window of context nodes. The skip-gram architecture weighs nearby context nodes more heavily than more distant context nodes. (https://en.wikipedia.org/wiki/Word2vec)" [https://en.wikipedia.org/wiki/Word2vec]
-comment: Input, Hidden, Output
-synonym: "n2v-SkipGram" EXACT []
-is_a: w2v:SkipGram ! word2vec-SkipGram
+is_a: https://w3id.org/aio/AE ! Auto Encoder Network
 
 [Term]
 id: w2v:CBOW
 name: word2vec-CBOW
 def: "In the continuous bag-of-words architecture, the model predicts the current word from a window of surrounding context words. The order of context words does not influence prediction (bag-of-words assumption). (https://en.wikipedia.org/wiki/Word2vec)" [https://en.wikipedia.org/wiki/Word2vec]
 comment: Input, Hidden, Output
-synonym: "w2v-CBOW" EXACT []
+synonym: "CBOW" RELATED []
+synonym: "W2V-CBOW" EXACT []
 is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
 
 [Term]
@@ -445,6 +1600,7 @@ id: w2v:SkipGram
 name: word2vec-SkipGram
 def: "In the continuous skip-gram architecture, the model uses the current word to predict the surrounding window of context words. The skip-gram architecture weighs nearby context words more heavily than more distant context words." [https://en.wikipedia.org/wiki/Word2vec]
 comment: Input, Hidden, Output
-synonym: "w2v-SkipGram" EXACT []
+synonym: "SkipGram" RELATED []
+synonym: "W2V-SkipGram" EXACT []
 is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
 
