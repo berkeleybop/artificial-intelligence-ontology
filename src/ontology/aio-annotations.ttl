@@ -9,4 +9,4 @@
   rdf:type owl:Ontology ;
   dc:title "Artificial Intelligence Ontology" ;
   terms:license <http://creativecommons.org/licenses/by/4.0/> ;
-  dc:description "Taxonomy and partonomy of Deep Learning networks, layers, and functions." .
+  dc:description "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases." .
