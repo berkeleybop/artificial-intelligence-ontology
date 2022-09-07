@@ -11,12 +11,12 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aio/aio-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2022-08-31/aio-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2022-09-06/aio-base.owl"/>
         <dc:description>Taxonomy and partonomy of Deep Learning networks, layers, and functions.</dc:description>
         <dc:title>Artificial Intelligence Ontology</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-31</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-06</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -170,7 +170,7 @@
     <!-- https://w3id.org/aio/Add_Layer -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Add_Layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Merging_Layers"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Merging_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Layer that adds a list of inputs. It takes as input a list of tensors, all of the same shape, and returns a single tensor (also of the same shape).</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Add Layer</rdfs:label>
     </owl:Class>
@@ -367,7 +367,7 @@
     <!-- https://w3id.org/aio/Average_Layer -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Average_Layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Merging_Layers"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Merging_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Layer that averages a list of inputs element-wise. It takes as input a list of tensors, all of the same shape, and returns a single tensor (also of the same shape).</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Average Layer</rdfs:label>
     </owl:Class>
@@ -548,7 +548,7 @@
     <!-- https://w3id.org/aio/Concatenate_Layer -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Concatenate_Layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Merging_Layers"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Merging_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Layer that concatenates a list of inputs. It takes as input a list of tensors, all of the same shape except for the concatenation axis, and returns a single tensor that is the concatenation of all inputs.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Concatenate Layer</rdfs:label>
     </owl:Class>
@@ -1838,7 +1838,7 @@
     <!-- https://w3id.org/aio/Individual_Bias -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Individual_Bias">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Individual_Bias"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Bias"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual bias is a persistent point of view or limited list of such points of view that one applies (&quot;parent&quot;, &quot;academic&quot;, &quot;professional&quot;, or etc.).</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual Bias</rdfs:label>
     </owl:Class>
@@ -2312,7 +2312,7 @@
     <!-- https://w3id.org/aio/Maximum_Layer -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Maximum_Layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Merging_Layers"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Merging_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Layer that computes the maximum (element-wise) a list of inputs. It takes as input a list of tensors, all of the same shape, and returns a single tensor (also of the same shape).</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maximum Layer</rdfs:label>
     </owl:Class>
@@ -2357,16 +2357,10 @@
     
 
 
-    <!-- https://w3id.org/aio/Merging_Layers -->
-
-    <owl:Class rdf:about="https://w3id.org/aio/Merging_Layers"/>
-    
-
-
     <!-- https://w3id.org/aio/Minimum_Layer -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Minimum_Layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Merging_Layers"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Merging_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Layer that computes the minimum (element-wise) a list of inputs. It takes as input a list of tensors, all of the same shape, and returns a single tensor (also of the same shape).</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minimum Layer</rdfs:label>
     </owl:Class>
@@ -2392,15 +2386,6 @@
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When modal interfaces confuse human operators, who misunderstand which mode the system is using, taking actions which are correct for a different mode but incorrect for their current situation. This is the cause of many deadly accidents, but also a source of confusion in everyday life.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.6028/NIST.SP.1270</oboInOwl:hasDbXref>
     </owl:Axiom>
-    
-
-
-    <!-- https://w3id.org/aio/Model -->
-
-    <owl:Class rdf:about="https://w3id.org/aio/Model">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model parent class</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</rdfs:label>
-    </owl:Class>
     
 
 
@@ -2439,7 +2424,7 @@
     <!-- https://w3id.org/aio/Multiply_Layer -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Multiply_Layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Merging_Layers"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Merging_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Layer that multiplies (element-wise) a list of inputs. It takes as input a list of tensors, all of the same shape, and returns a single tensor (also of the same shape).</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multiply Layer</rdfs:label>
     </owl:Class>
@@ -2460,7 +2445,7 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N2V-CBOW</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CBOW</oboInOwl:hasRelatedSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">node2vec-CBOW Network</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">node2vec-CBOW</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/N2V_CBOW"/>
@@ -2479,7 +2464,7 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N2V-SkipGram</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SkipGram</oboInOwl:hasRelatedSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">node2vec-SkipGram Network</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">node2vec-SkipGram</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/N2V_SkipGram"/>
@@ -3533,7 +3518,7 @@
     <!-- https://w3id.org/aio/Subtract_Layer -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Subtract_Layer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Merging_Layers"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Merging_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Layer that subtracts two inputs. It takes as input a list of tensors of size 2, both of the same shape, and returns a single tensor, (inputs[0] - inputs[1]), also of the same shape.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subtract Layer</rdfs:label>
     </owl:Class>
@@ -3869,13 +3854,39 @@
 
     <!-- https://w3id.org/aio/W2V_CBOW -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/W2V_CBOW"/>
+    <owl:Class rdf:about="https://w3id.org/aio/W2V_CBOW">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ANN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the continuous bag-of-words architecture, the model predicts the current word from a window of surrounding context words. The order of context words does not influence prediction (bag-of-words assumption). (https://en.wikipedia.org/wiki/Word2vec)</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">W2V-CBOW</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CBOW</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">word2vec-CBOW</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/W2V_CBOW"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the continuous bag-of-words architecture, the model predicts the current word from a window of surrounding context words. The order of context words does not influence prediction (bag-of-words assumption). (https://en.wikipedia.org/wiki/Word2vec)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Word2vec</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
     <!-- https://w3id.org/aio/W2V_SkipGram -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/W2V_SkipGram"/>
+    <owl:Class rdf:about="https://w3id.org/aio/W2V_SkipGram">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ANN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the continuous skip-gram architecture, the model uses the current word to predict the surrounding window of context words. The skip-gram architecture weighs nearby context words more heavily than more distant context words.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">W2V-SkipGram</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SkipGram</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">word2vec-SkipGram</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/W2V_SkipGram"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the continuous skip-gram architecture, the model uses the current word to predict the surrounding window of context words. The skip-gram architecture weighs nearby context words more heavily than more distant context words.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Word2vec</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -3957,44 +3968,6 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The exponential linear unit (ELU) with alpha &gt; 0 is: x if x &gt; 0 and alpha * (exp(x) - 1) if x &lt; 0 The ELU hyperparameter alpha controls the value to which an ELU saturates for negative net inputs. ELUs diminish the vanishing gradient effect. ELUs have negative values which pushes the mean of the activations closer to zero. Mean activations that are closer to zero enable faster learning as they bring the gradient closer to the natural gradient. ELUs saturate to a negative value when the argument gets smaller. Saturation means a small derivative which decreases the variation and the information that is propagated to the next layer.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tensorflow.org/api_docs/python/tf/keras/activations/elu</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- https://w3id.org/aio/w2v_CBOW -->
-
-    <owl:Class rdf:about="https://w3id.org/aio/w2v_CBOW">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ANN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the continuous bag-of-words architecture, the model predicts the current word from a window of surrounding context words. The order of context words does not influence prediction (bag-of-words assumption). (https://en.wikipedia.org/wiki/Word2vec)</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">W2V-CBOW</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CBOW</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">word2vec-CBOW</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/w2v_CBOW"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the continuous bag-of-words architecture, the model predicts the current word from a window of surrounding context words. The order of context words does not influence prediction (bag-of-words assumption). (https://en.wikipedia.org/wiki/Word2vec)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Word2vec</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- https://w3id.org/aio/w2v_SkipGram -->
-
-    <owl:Class rdf:about="https://w3id.org/aio/w2v_SkipGram">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ANN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the continuous skip-gram architecture, the model uses the current word to predict the surrounding window of context words. The skip-gram architecture weighs nearby context words more heavily than more distant context words.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">W2V-SkipGram</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SkipGram</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">word2vec-SkipGram</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/w2v_SkipGram"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the continuous skip-gram architecture, the model uses the current word to predict the surrounding window of context words. The skip-gram architecture weighs nearby context words more heavily than more distant context words.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Word2vec</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

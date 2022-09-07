@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: aio/releases/2022-08-31/aio-full.owl
+data-version: aio/releases/2022-09-06/aio-full.owl
 ontology: aio/aio-full
 property_value: http://purl.org/dc/elements/1.1/description "Taxonomy and partonomy of Deep Learning networks, layers, and functions." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Artificial Intelligence Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-08-31" xsd:string
+property_value: owl:versionInfo "2022-09-06" xsd:string
 
 [Term]
 id: Activation:Layer
@@ -28,7 +28,7 @@ is_a: Regularization:Layer ! Regularization Layer
 id: Add:Layer
 name: Add Layer
 def: "Layer that adds a list of inputs. It takes as input a list of tensors, all of the same shape, and returns a single tensor (also of the same shape)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Add]
-is_a: Merging:Layers
+is_a: Merging:Layer ! Merging Layer
 
 [Term]
 id: AdditiveAttention:Layer
@@ -64,7 +64,7 @@ is_a: https://w3id.org/aio/Layer ! Layer
 id: Average:Layer
 name: Average Layer
 def: "Layer that averages a list of inputs element-wise. It takes as input a list of tensors, all of the same shape, and returns a single tensor (also of the same shape)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Average]
-is_a: Merging:Layers
+is_a: Merging:Layer ! Merging Layer
 
 [Term]
 id: AveragePooling1D:Layer
@@ -134,7 +134,7 @@ is_a: https://w3id.org/aio/Bias ! Bias
 id: Concatenate:Layer
 name: Concatenate Layer
 def: "Layer that concatenates a list of inputs. It takes as input a list of tensors, all of the same shape except for the concatenation axis, and returns a single tensor that is the concatenation of all inputs." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Concatenate]
-is_a: Merging:Layers
+is_a: Merging:Layer ! Merging Layer
 
 [Term]
 id: Confirmation:Bias
@@ -463,6 +463,7 @@ is_a: Individual:Bias ! Individual Bias
 id: Individual:Bias
 name: Individual Bias
 def: "Individual bias is a persistent point of view or limited list of such points of view that one applies (\"parent\", \"academic\", \"professional\", or etc.)." [https://develop.consumerium.org/wiki/Individual_bias]
+is_a: https://w3id.org/aio/Bias ! Bias
 
 [Term]
 id: Inherited:Bias
@@ -603,7 +604,7 @@ is_a: Pooling:Layer ! Pooling Layer
 id: Maximum:Layer
 name: Maximum Layer
 def: "Layer that computes the maximum (element-wise) a list of inputs. It takes as input a list of tensors, all of the same shape, and returns a single tensor (also of the same shape)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Maximum]
-is_a: Merging:Layers
+is_a: Merging:Layer ! Merging Layer
 
 [Term]
 id: Measurement:Bias
@@ -621,7 +622,7 @@ is_a: https://w3id.org/aio/Layer ! Layer
 id: Minimum:Layer
 name: Minimum Layer
 def: "Layer that computes the minimum (element-wise) a list of inputs. It takes as input a list of tensors, all of the same shape, and returns a single tensor (also of the same shape)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Minimum]
-is_a: Merging:Layers
+is_a: Merging:Layer ! Merging Layer
 
 [Term]
 id: MultiHeadAttention:Layer
@@ -633,25 +634,25 @@ is_a: Attention:Layer ! Attention Layer
 id: Multiply:Layer
 name: Multiply Layer
 def: "Layer that multiplies (element-wise) a list of inputs. It takes as input a list of tensors, all of the same shape, and returns a single tensor (also of the same shape)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Multiply]
-is_a: Merging:Layers
+is_a: Merging:Layer ! Merging Layer
 
 [Term]
 id: N2V:CBOW
-name: node2vec-CBOW Network
+name: node2vec-CBOW
 def: "In the continuous bag-of-words architecture, the model predicts the current node from a window of surrounding context nodes. The order of context nodes does not influence prediction (bag-of-words assumption)." [https://en.wikipedia.org/wiki/Word2vec]
 comment: Input, Hidden, Output
 synonym: "CBOW" RELATED []
 synonym: "N2V-CBOW" EXACT []
-is_a: W2V:CBOW
+is_a: W2V:CBOW ! word2vec-CBOW
 
 [Term]
 id: N2V:SkipGram
-name: node2vec-SkipGram Network
+name: node2vec-SkipGram
 def: "In the continuous skip-gram architecture, the model uses the current node to predict the surrounding window of context nodes. The skip-gram architecture weighs nearby context nodes more heavily than more distant context nodes. (https://en.wikipedia.org/wiki/Word2vec)" [https://en.wikipedia.org/wiki/Word2vec]
 comment: Input, Hidden, Output
 synonym: "N2V-SkipGram" EXACT []
 synonym: "SkipGram" RELATED []
-is_a: W2V:SkipGram
+is_a: W2V:SkipGram ! word2vec-SkipGram
 
 [Term]
 id: Normalization:Layer
@@ -947,7 +948,7 @@ is_a: https://w3id.org/aio/Categorical_Features_Preprocessing_Layer ! Categorica
 id: Subtract:Layer
 name: Subtract Layer
 def: "Layer that subtracts two inputs. It takes as input a list of tensors of size 2, both of the same shape, and returns a single tensor, (inputs[0] - inputs[1]), also of the same shape." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Subtract]
-is_a: Merging:Layers
+is_a: Merging:Layer ! Merging Layer
 
 [Term]
 id: Survivorship:Bias
@@ -1028,6 +1029,24 @@ id: UpSampling3D:Layer
 name: UpSampling3D Layer
 def: "Upsampling layer for 3D inputs." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/UpSampling3D]
 is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: W2V:CBOW
+name: word2vec-CBOW
+def: "In the continuous bag-of-words architecture, the model predicts the current word from a window of surrounding context words. The order of context words does not influence prediction (bag-of-words assumption). (https://en.wikipedia.org/wiki/Word2vec)" [https://en.wikipedia.org/wiki/Word2vec]
+comment: Input, Hidden, Output
+synonym: "CBOW" RELATED []
+synonym: "W2V-CBOW" EXACT []
+is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
+
+[Term]
+id: W2V:SkipGram
+name: word2vec-SkipGram
+def: "In the continuous skip-gram architecture, the model uses the current word to predict the surrounding window of context words. The skip-gram architecture weighs nearby context words more heavily than more distant context words." [https://en.wikipedia.org/wiki/Word2vec]
+comment: Input, Hidden, Output
+synonym: "SkipGram" RELATED []
+synonym: "W2V-SkipGram" EXACT []
+is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
 
 [Term]
 id: Wrapper:Layer
@@ -1386,11 +1405,6 @@ def: "When modal interfaces confuse human operators, who misunderstand which mod
 is_a: Individual:Bias ! Individual Bias
 
 [Term]
-id: https://w3id.org/aio/Model
-name: Model
-def: "Model parent class" []
-
-[Term]
 id: https://w3id.org/aio/Model_Selection_Bias
 name: Model Selection Bias
 def: "The bias introduced while using the data to select a single seemingly “best” model from a large set of models employing many predictor variables. Model selection bias also occurs when an explanatory variable has a weak relationship with the response variable." [https://doi.org/10.6028/NIST.SP.1270]
@@ -1583,22 +1597,4 @@ def: "Variational autoencoders are meant to compress the input information into 
 comment: Input, Probabilistic Hidden, Matched Output-Input
 synonym: "VAE" EXACT []
 is_a: https://w3id.org/aio/AE ! Auto Encoder Network
-
-[Term]
-id: w2v:CBOW
-name: word2vec-CBOW
-def: "In the continuous bag-of-words architecture, the model predicts the current word from a window of surrounding context words. The order of context words does not influence prediction (bag-of-words assumption). (https://en.wikipedia.org/wiki/Word2vec)" [https://en.wikipedia.org/wiki/Word2vec]
-comment: Input, Hidden, Output
-synonym: "CBOW" RELATED []
-synonym: "W2V-CBOW" EXACT []
-is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
-
-[Term]
-id: w2v:SkipGram
-name: word2vec-SkipGram
-def: "In the continuous skip-gram architecture, the model uses the current word to predict the surrounding window of context words. The skip-gram architecture weighs nearby context words more heavily than more distant context words." [https://en.wikipedia.org/wiki/Word2vec]
-comment: Input, Hidden, Output
-synonym: "SkipGram" RELATED []
-synonym: "W2V-SkipGram" EXACT []
-is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
 
