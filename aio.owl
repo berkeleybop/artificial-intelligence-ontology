@@ -11,11 +11,11 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aio.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2022-09-06/aio.owl"/>
-        <dc:description>Taxonomy and partonomy of Deep Learning networks, layers, and functions.</dc:description>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2022-10-24/aio.owl"/>
+        <dc:description>This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases.</dc:description>
         <dc:title>Artificial Intelligence Ontology</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-06</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-24</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -70,7 +70,7 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/AE">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/UPN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning). The encoding is validated and refined by attempting to regenerate the input from the encoding. The autoencoder learns a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore insignificant data (“noise”). (https://en.wikipedia.org/wiki/Autoencoder)</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised Learning). The encoding is validated and refined by attempting to regenerate the input from the encoding. The autoencoder learns a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore insignificant data (“noise”). (https://en.wikipedia.org/wiki/Autoencoder)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AE</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auto Encoder Network</rdfs:label>
@@ -78,7 +78,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/AE"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning). The encoding is validated and refined by attempting to regenerate the input from the encoding. The autoencoder learns a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore insignificant data (“noise”). (https://en.wikipedia.org/wiki/Autoencoder)</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised Learning). The encoding is validated and refined by attempting to regenerate the input from the encoding. The autoencoder learns a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore insignificant data (“noise”). (https://en.wikipedia.org/wiki/Autoencoder)</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Autoencoder</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -88,7 +88,7 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/ANN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Network"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a biological brain, can transmit a signal to other neurons. An artificial neuron receives a signal then processes it and can signal neurons connected to it. The &quot;signal&quot; at a connection is a real number, and the output of each neuron is computed by some non-linear function of the sum of its inputs. The connections are called edges. Neurons and edges typically have a weight that adjusts as learning proceeds. The weight increases or decreases the strength of the signal at a connection. Neurons may have a threshold such that a signal is sent only if the aggregate signal crosses that threshold. Typically, neurons are aggregated into layers. Different layers may perform different transformations on their inputs. Signals travel from the first layer (the input layer), to the last layer (the output layer), possibly after traversing the layers multiple times.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a biological brain, can transmit a signal to other neurons. An artificial neuron receives a signal then processes it and can signal neurons connected to it. The &quot;signal&quot; at a connection is a real number, and the output of each neuron is computed by some non-linear function of the sum of its inputs. The connections are called edges. Neurons and edges typically have a weight that adjusts as Learning proceeds. The weight increases or decreases the strength of the signal at a connection. Neurons may have a threshold such that a signal is sent only if the aggregate signal crosses that threshold. Typically, neurons are aggregated into layers. Different layers may perform different transformations on their inputs. Signals travel from the first layer (the input layer), to the last layer (the output layer), possibly after traversing the layers multiple times.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artificial Neural Network</rdfs:label>
@@ -96,7 +96,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/ANN"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a biological brain, can transmit a signal to other neurons. An artificial neuron receives a signal then processes it and can signal neurons connected to it. The &quot;signal&quot; at a connection is a real number, and the output of each neuron is computed by some non-linear function of the sum of its inputs. The connections are called edges. Neurons and edges typically have a weight that adjusts as learning proceeds. The weight increases or decreases the strength of the signal at a connection. Neurons may have a threshold such that a signal is sent only if the aggregate signal crosses that threshold. Typically, neurons are aggregated into layers. Different layers may perform different transformations on their inputs. Signals travel from the first layer (the input layer), to the last layer (the output layer), possibly after traversing the layers multiple times.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a biological brain, can transmit a signal to other neurons. An artificial neuron receives a signal then processes it and can signal neurons connected to it. The &quot;signal&quot; at a connection is a real number, and the output of each neuron is computed by some non-linear function of the sum of its inputs. The connections are called edges. Neurons and edges typically have a weight that adjusts as Learning proceeds. The weight increases or decreases the strength of the signal at a connection. Neurons may have a threshold such that a signal is sent only if the aggregate signal crosses that threshold. Typically, neurons are aggregated into layers. Different layers may perform different transformations on their inputs. Signals travel from the first layer (the input layer), to the last layer (the output layer), possibly after traversing the layers multiple times.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Artificial_neural_network</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -130,6 +130,23 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies an activation function to an output.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tensorflow.org/api_docs/python/tf/keras/layers/Activation</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Active_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Active_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods which can interactively query a user (or some other information source) to label new data points with the desired outputs.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Query Learning</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Active_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods which can interactively query a user (or some other information source) to label new data points with the desired outputs.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Active_learning_(machine_learning)</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -262,6 +279,22 @@
     
 
 
+    <!-- https://w3id.org/aio/Association_Rule_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Association_Rule_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Supervised_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A rule-based machine learning method for discovering interesting relations between variables in large databases. It is intended to identify strong rules discovered in databases using some measures of interestingness.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Association Rule Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Association_Rule_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A rule-based machine learning method for discovering interesting relations between variables in large databases. It is intended to identify strong rules discovered in databases using some measures of interestingness.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Association_rule_learning</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/Attention_Layer -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Attention_Layer">
@@ -383,7 +416,7 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/BM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/SCN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Boltzmann machine is a type of stochastic recurrent neural network. It is a Markov random field. It was translated from statistical physics for use in cognitive science. The Boltzmann machine is based on a stochastic spin-glass model with an external field, i.e., a Sherrington–Kirkpatrick model that is a stochastic Ising Model[2] and applied to machine learning.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Boltzmann machine is a type of stochastic recurrent neural network. It is a Markov random field. It was translated from statistical physics for use in cognitive science. The Boltzmann machine is based on a stochastic spin-glass model with an external field, i.e., a Sherrington–Kirkpatrick model that is a stochastic Ising Model[2] and applied to machine Learning.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sherrington–Kirkpatrick model with external field</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stochastic Hopfield network with hidden units</oboInOwl:hasExactSynonym>
@@ -394,7 +427,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/BM"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Boltzmann machine is a type of stochastic recurrent neural network. It is a Markov random field. It was translated from statistical physics for use in cognitive science. The Boltzmann machine is based on a stochastic spin-glass model with an external field, i.e., a Sherrington–Kirkpatrick model that is a stochastic Ising Model[2] and applied to machine learning.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Boltzmann machine is a type of stochastic recurrent neural network. It is a Markov random field. It was translated from statistical physics for use in cognitive science. The Boltzmann machine is based on a stochastic spin-glass model with an external field, i.e., a Sherrington–Kirkpatrick model that is a stochastic Ising Model[2] and applied to machine Learning.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Boltzmann_machine</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -412,6 +445,22 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Layer that normalizes its inputs. Batch normalization applies a transformation that maintains the mean output close to 0 and the output standard deviation close to 1. Importantly, batch normalization works differently during training and during inference. During training (i.e. when using fit() or when calling the layer/model with the argument training=True), the layer normalizes its output using the mean and standard deviation of the current batch of inputs. That is to say, for each channel being normalized, the layer returns gamma * (batch - mean(batch)) / sqrt(var(batch) + epsilon) + beta, where: epsilon is small constant (configurable as part of the constructor arguments), gamma is a learned scaling factor (initialized as 1), which can be disabled by passing scale=False to the constructor. beta is a learned offset factor (initialized as 0), which can be disabled by passing center=False to the constructor. During inference (i.e. when using evaluate() or predict() or when calling the layer/model with the argument training=False (which is the default), the layer normalizes its output using a moving average of the mean and standard deviation of the batches it has seen during training. That is to say, it returns gamma * (batch - self.moving_mean) / sqrt(self.moving_var + epsilon) + beta. self.moving_mean and self.moving_var are non-trainable variables that are updated each time the layer in called in training mode, as such: moving_mean = moving_mean * momentum + mean(batch) * (1 - momentum) moving_var = moving_var * momentum + var(batch) * (1 - momentum).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tensorflow.org/api_docs/python/tf/keras/layers/BatchNormalization</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Bayesian_Network -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Bayesian_Network">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Network"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A probabilistic graphical model that represents a set of variables and their conditional dependencies via a directed acyclic graph (DAG).</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bayesian Network</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Bayesian_Network"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A probabilistic graphical model that represents a set of variables and their conditional dependencies via a directed acyclic graph (DAG).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Bayesian_network</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -447,6 +496,27 @@
     
 
 
+    <!-- https://w3id.org/aio/Biclustering -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Biclustering">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that simultaneously cluster the rows and columns of a matrix.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Block Clustering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Co-clustering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joint Clustering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two-mode Clustering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two-way Clustering</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biclustering</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Biclustering"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that simultaneously cluster the rows and columns of a matrix.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Biclustering</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/Bidirectional_Layer -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Bidirectional_Layer">
@@ -459,6 +529,22 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bidirectional wrapper for RNNs.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tensorflow.org/api_docs/python/tf/keras/layers/Bidirectional</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Binary_Classification -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Binary_Classification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Classification"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that classify the elements of a set into two groups (each called class) on the basis of a classification rule.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Binary Classification</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Binary_Classification"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that classify the elements of a set into two groups (each called class) on the basis of a classification rule.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Binary_classification</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -495,6 +581,27 @@
     
 
 
+    <!-- https://w3id.org/aio/Causal_Graphical_Model -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Causal_Graphical_Model">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Probabilistic_Graphical_Model"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probabilistic graphical models used to encode assumptions about the data-generating process.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Casaul Bayesian Network</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Casaul Graph</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DAG</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Directed Acyclic Graph</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Path Diagram</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Causal Graphical Model</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Causal_Graphical_Model"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probabilistic graphical models used to encode assumptions about the data-generating process.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Causal_graph</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/CenterCrop_Layer -->
 
     <owl:Class rdf:about="https://w3id.org/aio/CenterCrop_Layer">
@@ -507,6 +614,39 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A preprocessing layer which crops images. This layers crops the central portion of the images to a target size. If an image is smaller than the target size, it will be resized and cropped so as to return the largest possible window in the image that matches the target aspect ratio. Input pixel values can be of any range (e.g. [0., 1.) or [0, 255]) and of interger or floating point dtype. By default, the layer will output floats.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tensorflow.org/api_docs/python/tf/keras/layers/CenterCrop</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Classification -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Classification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Supervised_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that distinguishand distribute kinds of &quot;things&quot; into different groups.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classification</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Classification"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that distinguishand distribute kinds of &quot;things&quot; into different groups.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Classification_(general_theory)</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Clustering -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Clustering">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that group a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense) to each other than to those in other groups (clusters).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cluster analysis</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clustering</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Clustering"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that group a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense) to each other than to those in other groups (clusters).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Cluster_analysis</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -621,6 +761,40 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arises from structural, lexical, semantic, and syntactic differences in the contents generated by users.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.6028/NIST.SP.1270</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Continual_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Continual_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A concept to learn a model for a large number of tasks sequentially without forgetting knowledge obtained from the preceding tasks, where the data in the old tasks are not available any more during training new ones.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incremental Learning</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Life-Long Learning</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Continual Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Continual_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A concept to learn a model for a large number of tasks sequentially without forgetting knowledge obtained from the preceding tasks, where the data in the old tasks are not available any more during training new ones.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://paperswithcode.com/task/continual-learning</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Contrastive_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Contrastive_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Learning that encourages augmentations (views) of the same input to have more similar representations compared to augmentations of different inputs.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contrastive Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Contrastive_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Learning that encourages augmentations (views) of the same input to have more similar representations compared to augmentations of different inputs.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://arxiv.org/abs/2202.14037</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -855,7 +1029,7 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/DBN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/UPN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In machine learning, a deep belief network (DBN) is a generative graphical model, or alternatively a class of deep neural network, composed of multiple layers of latent variables (&quot;hidden units&quot;), with connections between the layers but not between units within each layer. When trained on a set of examples without supervision, a DBN can learn to probabilistically reconstruct its inputs. The layers then act as feature detectors. After this learning step, a DBN can be further trained with supervision to perform classification. DBNs can be viewed as a composition of simple, unsupervised networks such as restricted Boltzmann machines (RBMs) or autoencoders, where each sub-network&apos;s hidden layer serves as the visible layer for the next. An RBM is an undirected, generative energy-based model with a &quot;visible&quot; input layer and a hidden layer and connections between but not within layers. This composition leads to a fast, layer-by-layer unsupervised training procedure, where contrastive divergence is applied to each sub-network in turn, starting from the &quot;lowest&quot; pair of layers (the lowest visible layer is a training set). The observation that DBNs can be trained greedily, one layer at a time, led to one of the first effective deep learning algorithms. (https://en.wikipedia.org/wiki/Deep_belief_network)</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In machine Learning, a deep belief network (DBN) is a generative graphical model, or alternatively a class of deep neural network, composed of multiple layers of latent variables (&quot;hidden units&quot;), with connections between the layers but not between units within each layer. When trained on a set of examples without supervision, a DBN can learn to probabilistically reconstruct its inputs. The layers then act as feature detectors. After this Learning step, a DBN can be further trained with supervision to perform classification. DBNs can be viewed as a composition of simple, unsupervised networks such as restricted Boltzmann machines (RBMs) or autoencoders, where each sub-network&apos;s hidden layer serves as the visible layer for the next. An RBM is an undirected, generative energy-based model with a &quot;visible&quot; input layer and a hidden layer and connections between but not within layers. This composition leads to a fast, layer-by-layer unsupervised training procedure, where contrastive divergence is applied to each sub-network in turn, starting from the &quot;lowest&quot; pair of layers (the lowest visible layer is a training set). The observation that DBNs can be trained greedily, one layer at a time, led to one of the first effective deep Learning algorithms. (https://en.wikipedia.org/wiki/Deep_belief_network)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DBN</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backfed Input, Probabilistic Hidden, Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Belief Network</rdfs:label>
@@ -863,7 +1037,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/DBN"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In machine learning, a deep belief network (DBN) is a generative graphical model, or alternatively a class of deep neural network, composed of multiple layers of latent variables (&quot;hidden units&quot;), with connections between the layers but not between units within each layer. When trained on a set of examples without supervision, a DBN can learn to probabilistically reconstruct its inputs. The layers then act as feature detectors. After this learning step, a DBN can be further trained with supervision to perform classification. DBNs can be viewed as a composition of simple, unsupervised networks such as restricted Boltzmann machines (RBMs) or autoencoders, where each sub-network&apos;s hidden layer serves as the visible layer for the next. An RBM is an undirected, generative energy-based model with a &quot;visible&quot; input layer and a hidden layer and connections between but not within layers. This composition leads to a fast, layer-by-layer unsupervised training procedure, where contrastive divergence is applied to each sub-network in turn, starting from the &quot;lowest&quot; pair of layers (the lowest visible layer is a training set). The observation that DBNs can be trained greedily, one layer at a time, led to one of the first effective deep learning algorithms. (https://en.wikipedia.org/wiki/Deep_belief_network)</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In machine Learning, a deep belief network (DBN) is a generative graphical model, or alternatively a class of deep neural network, composed of multiple layers of latent variables (&quot;hidden units&quot;), with connections between the layers but not between units within each layer. When trained on a set of examples without supervision, a DBN can learn to probabilistically reconstruct its inputs. The layers then act as feature detectors. After this Learning step, a DBN can be further trained with supervision to perform classification. DBNs can be viewed as a composition of simple, unsupervised networks such as restricted Boltzmann machines (RBMs) or autoencoders, where each sub-network&apos;s hidden layer serves as the visible layer for the next. An RBM is an undirected, generative energy-based model with a &quot;visible&quot; input layer and a hidden layer and connections between but not within layers. This composition leads to a fast, layer-by-layer unsupervised training procedure, where contrastive divergence is applied to each sub-network in turn, starting from the &quot;lowest&quot; pair of layers (the lowest visible layer is a training set). The observation that DBNs can be trained greedily, one layer at a time, led to one of the first effective deep Learning algorithms. (https://en.wikipedia.org/wiki/Deep_belief_network)</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Deep_belief_network</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -946,7 +1120,7 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/DNN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ANN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A deep neural network (DNN) is an artificial neural network (ANN) with multiple layers between the input and output layers.[13][2] There are different types of neural networks but they always consist of the same components: neurons, synapses, weights, biases, and functions. (https://en.wikipedia.org/wiki/Deep_learning#:~:text=A%20deep%20neural%20network%20(DNN,weights%2C%20biases%2C%20and%20functions.)</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A deep neural network (DNN) is an artificial neural network (ANN) with multiple layers between the input and output layers.[13][2] There are different types of neural networks but they always consist of the same components: neurons, synapses, weights, biases, and functions. (https://en.wikipedia.org/wiki/Deep_Learning#:~:text=A%20deep%20neural%20network%20(DNN,weights%2C%20biases%2C%20and%20functions.)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNN</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Neural Network</rdfs:label>
     </owl:Class>
@@ -982,6 +1156,71 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arises from the addition of synthetic or redundant data samples to a dataset.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.6028/NIST.SP.1270</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Data_Imputation -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Data_Imputation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that replace missing data with substituted values.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Imputation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Data_Imputation"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that replace missing data with substituted values.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Imputation_(statistics)</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Decision_Tree -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Decision_Tree">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Classification"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A decision support tool that uses a tree-like model of decisions and their possible consequences, including chance event outcomes, resource costs, and utility.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decision Tree</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Decision_Tree"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A decision support tool that uses a tree-like model of decisions and their possible consequences, including chance event outcomes, resource costs, and utility.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Decision_tree</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Deep_Active_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Deep_Active_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The combination of deep learning and active learning, where active learning attempts to maximize a model’s performance gain while annotating the fewest samples possible.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DeepAL</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Active Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Deep_Active_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The combination of deep learning and active learning, where active learning attempts to maximize a model’s performance gain while annotating the fewest samples possible.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://arxiv.org/pdf/2009.00236.pdf</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Deep_Transfer_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Deep_Transfer_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep transfer learning methods relax the hypothesis that the training data must be independent and identically distributed (i.i.d.) with the test data, which motivates us to use transfer learning to solve the problem of insufficient training data.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Transfer Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Deep_Transfer_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep transfer learning methods relax the hypothesis that the training data must be independent and identically distributed (i.i.d.) with the test data, which motivates us to use transfer learning to solve the problem of insufficient training data.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://arxiv.org/abs/1808.01974</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1082,6 +1321,23 @@
     
 
 
+    <!-- https://w3id.org/aio/Dimensionality_Reduction -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Dimensionality_Reduction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Unsupervised_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The transformation of data from a high-dimensional space into a low-dimensional space so that the low-dimensional representation retains some meaningful properties of the original data, ideally close to its intrinsic dimension.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dimension Reduction</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dimensionality Reduction</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Dimensionality_Reduction"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The transformation of data from a high-dimensional space into a low-dimensional space so that the low-dimensional representation retains some meaningful properties of the original data, ideally close to its intrinsic dimension.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Dimensionality_reduction</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/Discretization_Layer -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Discretization_Layer">
@@ -1151,7 +1407,7 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/ELM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/FBN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extreme learning machines are feedforward neural networks for classification, regression, clustering, sparse approximation, compression and feature learning with a single layer or multiple layers of hidden nodes, where the parameters of hidden nodes (not just the weights connecting inputs to hidden nodes) need not be tuned. These hidden nodes can be randomly assigned and never updated (i.e. they are random projection but with nonlinear transforms), or can be inherited from their ancestors without being changed. In most cases, the output weights of hidden nodes are usually learned in a single step, which essentially amounts to learning a linear model. (https://en.wikipedia.org/wiki/Extreme_learning_machine)</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extreme Learning machines are feedforward neural networks for classification, regression, clustering, sparse approximation, compression and feature Learning with a single layer or multiple layers of hidden nodes, where the parameters of hidden nodes (not just the weights connecting inputs to hidden nodes) need not be tuned. These hidden nodes can be randomly assigned and never updated (i.e. they are random projection but with nonlinear transforms), or can be inherited from their ancestors without being changed. In most cases, the output weights of hidden nodes are usually learned in a single step, which essentially amounts to Learning a linear model. (https://en.wikipedia.org/wiki/Extreme_Learning_machine)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELM</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extreme Learning Machine</rdfs:label>
@@ -1159,8 +1415,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/ELM"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extreme learning machines are feedforward neural networks for classification, regression, clustering, sparse approximation, compression and feature learning with a single layer or multiple layers of hidden nodes, where the parameters of hidden nodes (not just the weights connecting inputs to hidden nodes) need not be tuned. These hidden nodes can be randomly assigned and never updated (i.e. they are random projection but with nonlinear transforms), or can be inherited from their ancestors without being changed. In most cases, the output weights of hidden nodes are usually learned in a single step, which essentially amounts to learning a linear model. (https://en.wikipedia.org/wiki/Extreme_learning_machine)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Extreme_learning_machine</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extreme Learning machines are feedforward neural networks for classification, regression, clustering, sparse approximation, compression and feature Learning with a single layer or multiple layers of hidden nodes, where the parameters of hidden nodes (not just the weights connecting inputs to hidden nodes) need not be tuned. These hidden nodes can be randomly assigned and never updated (i.e. they are random projection but with nonlinear transforms), or can be inherited from their ancestors without being changed. In most cases, the output weights of hidden nodes are usually learned in a single step, which essentially amounts to Learning a linear model. (https://en.wikipedia.org/wiki/Extreme_Learning_machine)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Extreme_Learning_machine</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1248,6 +1504,22 @@
     
 
 
+    <!-- https://w3id.org/aio/Ensemble_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Ensemble_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ensemble methods use multiple learning algorithms to obtain better predictive performance than could be obtained from any of the constituent learning algorithms alone.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ensemble Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Ensemble_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ensemble methods use multiple learning algorithms to obtain better predictive performance than could be obtained from any of the constituent learning algorithms alone.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Ensemble_learning</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/Error_Propagation_Bias -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Error_Propagation_Bias">
@@ -1325,6 +1597,22 @@
     
 
 
+    <!-- https://w3id.org/aio/Federated_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Federated_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A technique that trains an algorithm across multiple decentralized edge devices or servers holding local data samples, without exchanging them.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Federated Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Federated_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A technique that trains an algorithm across multiple decentralized edge devices or servers holding local data samples, without exchanging them.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Federated_learning</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/Feedback_Loop_Bias -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Feedback_Loop_Bias">
@@ -1337,6 +1625,23 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Effects that may occur when an algorithm learns from user behavior and feeds that behavior back into the model.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.6028/NIST.SP.1270</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Fixed_Effects_Model -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Fixed_Effects_Model">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Regression_Analysis"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A statistical model in which the model parameters are fixed or non-random quantities.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FEM</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fixed Effects Model</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Fixed_Effects_Model"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A statistical model in which the model parameters are fixed or non-random quantities.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Fixed_effects_model</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1383,7 +1688,7 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/GAN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/UPN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A generative adversarial network (GAN) is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in 2014. Two neural networks contest with each other in a game (in the form of a zero-sum game, where one agent&apos;s gain is another agent&apos;s loss). Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics. Though originally proposed as a form of generative model for unsupervised learning, GANs have also proven useful for semi-supervised learning, fully supervised learning,[ and reinforcement learning. The core idea of a GAN is based on the &quot;indirect&quot; training through the discriminator,[clarification needed] which itself is also being updated dynamically. This basically means that the generator is not trained to minimize the distance to a specific image, but rather to fool the discriminator. This enables the model to learn in an unsupervised manner.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A generative adversarial network (GAN) is a class of machine Learning frameworks designed by Ian Goodfellow and his colleagues in 2014. Two neural networks contest with each other in a game (in the form of a zero-sum game, where one agent&apos;s gain is another agent&apos;s loss). Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics. Though originally proposed as a form of generative model for unsupervised Learning, GANs have also proven useful for semi-supervised Learning, fully supervised Learning,[ and reinforcement Learning. The core idea of a GAN is based on the &quot;indirect&quot; training through the discriminator,[clarification needed] which itself is also being updated dynamically. This basically means that the generator is not trained to minimize the distance to a specific image, but rather to fool the discriminator. This enables the model to learn in an unsupervised manner.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAN</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backfed Input, Hidden, Matched Output-Input, Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generative Adversarial Network</rdfs:label>
@@ -1391,7 +1696,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/GAN"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A generative adversarial network (GAN) is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in 2014. Two neural networks contest with each other in a game (in the form of a zero-sum game, where one agent&apos;s gain is another agent&apos;s loss). Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics. Though originally proposed as a form of generative model for unsupervised learning, GANs have also proven useful for semi-supervised learning, fully supervised learning,[ and reinforcement learning. The core idea of a GAN is based on the &quot;indirect&quot; training through the discriminator,[clarification needed] which itself is also being updated dynamically. This basically means that the generator is not trained to minimize the distance to a specific image, but rather to fool the discriminator. This enables the model to learn in an unsupervised manner.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A generative adversarial network (GAN) is a class of machine Learning frameworks designed by Ian Goodfellow and his colleagues in 2014. Two neural networks contest with each other in a game (in the form of a zero-sum game, where one agent&apos;s gain is another agent&apos;s loss). Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics. Though originally proposed as a form of generative model for unsupervised Learning, GANs have also proven useful for semi-supervised Learning, fully supervised Learning,[ and reinforcement Learning. The core idea of a GAN is based on the &quot;indirect&quot; training through the discriminator,[clarification needed] which itself is also being updated dynamically. This basically means that the generator is not trained to minimize the distance to a specific image, but rather to fool the discriminator. This enables the model to learn in an unsupervised manner.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Generative_adversarial_network</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1419,7 +1724,7 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/GPCN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/GCN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph Convolutional Policy Network (GCPN), a general graph convolutional network based model for goal-directed graph generation through reinforcement learning. The model is trained to optimize domain-specific rewards and adversarial loss through policy gradient, and acts in an environment that incorporates domain-specific rules.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph Convolutional Policy Network (GCPN), a general graph convolutional network based model for goal-directed graph generation through reinforcement Learning. The model is trained to optimize domain-specific rewards and adversarial loss through policy gradient, and acts in an environment that incorporates domain-specific rules.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPCN</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Hidden, Hidden, Policy, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph Convolutional Policy Network</rdfs:label>
@@ -1427,7 +1732,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/GPCN"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph Convolutional Policy Network (GCPN), a general graph convolutional network based model for goal-directed graph generation through reinforcement learning. The model is trained to optimize domain-specific rewards and adversarial loss through policy gradient, and acts in an environment that incorporates domain-specific rules.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph Convolutional Policy Network (GCPN), a general graph convolutional network based model for goal-directed graph generation through reinforcement Learning. The model is trained to optimize domain-specific rewards and adversarial loss through policy gradient, and acts in an environment that incorporates domain-specific rules.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://arxiv.org/abs/1806.02473</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1529,6 +1834,40 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gaussian error linear unit (GELU) computes x * P(X &lt;= x), where P(X) ~ N(0, 1). The (GELU) nonlinearity weights inputs by their value, rather than gates inputs by their sign as in ReLU.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tensorflow.org/api_docs/python/tf/keras/activations/gelu</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Generalized_Few-shot_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Generalized_Few-shot_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that can learn novel classes from only few samples per class, preventing catastrophic forgetting of base classes, and classifier calibration across novel and base classes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFSL</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generalized Few-shot Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Generalized_Few-shot_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that can learn novel classes from only few samples per class, preventing catastrophic forgetting of base classes, and classifier calibration across novel and base classes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://paperswithcode.com/paper/generalized-and-incremental-few-shot-learning/review/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Generalized_Linear_Model -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Generalized_Linear_Model">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Regression_Analysis"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This model generalizes linear regression by allowing the linear model to be related to the response variable via a link function and by allowing the magnitude of the variance of each measurement to be a function of its predicted value.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GLM</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generalized Linear Model</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Generalized_Linear_Model"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This model generalizes linear regression by allowing the linear model to be related to the response variable via a link function and by allowing the magnitude of the variance of each measurement to be a function of its predicted value.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Generalized_linear_model</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1716,7 +2055,40 @@
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/Hidden_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hidden layer is located between the input and output of the algorithm, in which the function applies weights to the inputs and directs them through an activation function as the output. In short, the hidden layers perform nonlinear transformations of the inputs entered into the network. Hidden layers vary depending on the function of the neural network, and similarly, the layers may vary depending on their associated weights.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://deepai.org/machine-learning-glossary-and-terms/hidden-layer-machine-learning</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://deepai.org/machine-Learning-glossary-and-terms/hidden-layer-machine-Learning</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Hierarchical_Classification -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Hierarchical_Classification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Classification"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that group things according to a hierarchy.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hierarchical Classification</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Hierarchical_Classification"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that group things according to a hierarchy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Hierarchical_classification</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Hierarchical_Clustering -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Hierarchical_Clustering">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Clustering"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that seek to build a hierarchy of clusters.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HCL</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hierarchical Clustering</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Hierarchical_Clustering"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that seek to build a hierarchy of clusters.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Hierarchical_clustering</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1834,6 +2206,23 @@
     
 
 
+    <!-- https://w3id.org/aio/Incremenetal_Few-shot_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Incremenetal_Few-shot_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that train a network on a base set of classes and then is presented several novel classes, each with only a few labeled examples.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IFSL</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incremenetal Few-shot Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Incremenetal_Few-shot_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that train a network on a base set of classes and then is presented several novel classes, each with only a few labeled examples.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://arxiv.org/abs/1810.07218</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/Individual_Bias -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Individual_Bias">
@@ -1854,13 +2243,13 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/Inherited_Bias">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Processing_Bias"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arises when applications that are built with machine learning are used to generate inputs for other machine learning algorithms. If the output is biased in any way, this bias may be inherited by systems using the output as input to learn other models.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arises when applications that are built with machine Learning are used to generate inputs for other machine Learning algorithms. If the output is biased in any way, this bias may be inherited by systems using the output as input to learn other models.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inherited Bias</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/Inherited_Bias"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arises when applications that are built with machine learning are used to generate inputs for other machine learning algorithms. If the output is biased in any way, this bias may be inherited by systems using the output as input to learn other models.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arises when applications that are built with machine Learning are used to generate inputs for other machine Learning algorithms. If the output is biased in any way, this bias may be inherited by systems using the output as input to learn other models.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.6028/NIST.SP.1270</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1962,11 +2351,47 @@
     
 
 
+    <!-- https://w3id.org/aio/K-nearest_Neighbor_Classification_Algorithm -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/K-nearest_Neighbor_Classification_Algorithm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Classification;AIO:Clustering"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An algorithm to classify objects by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K-NN</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KNN</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K-nearest Neighbor Classification Algorithm</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/K-nearest_Neighbor_Classification_Algorithm"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An algorithm to classify objects by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/K-nearest_Neighbor_Regression_Algorithm -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/K-nearest_Neighbor_Regression_Algorithm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Regression_Analysis"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An algorithm to assign the average of the values of k nearest neighbors to objects.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K-NN</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KNN</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K-nearest Neighbor Regression Algorithm</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/K-nearest_Neighbor_Regression_Algorithm"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An algorithm to assign the average of the values of k nearest neighbors to objects.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/KN -->
 
     <owl:Class rdf:about="https://w3id.org/aio/KN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Network"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-organizing map (SOM) or self-organizing feature map (SOFM) is an unsupervised machine learning technique used to produce a low-dimensional (typically two-dimensional) representation of a higher dimensional data set while preserving the topological structure of the data. For example, a data set with p variables measured in n observations could be represented as clusters of observations with similar values for the variables. These clusters then could be visualized as a two-dimensional &quot;map&quot; such that observations in proximal clusters have more similar values than observations in distal clusters. This can make high-dimensional data easier to visualize and analyze. An SOM is a type of artificial neural network but is trained using competitive learning rather than the error-correction learning (e.g., backpropagation with gradient descent) used by other artificial neural networks. The SOM was introduced by the Finnish professor Teuvo Kohonen in the 1980s and therefore is sometimes called a Kohonen map or Kohonen network.[1][2] The Kohonen map or network is a computationally convenient abstraction building on biological models of neural systems from the 1970s[3] and morphogenesis models dating back to Alan Turing in the 1950s.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-organizing map (SOM) or self-organizing feature map (SOFM) is an unsupervised machine Learning technique used to produce a low-dimensional (typically two-dimensional) representation of a higher dimensional data set while preserving the topological structure of the data. For example, a data set with p variables measured in n observations could be represented as clusters of observations with similar values for the variables. These clusters then could be visualized as a two-dimensional &quot;map&quot; such that observations in proximal clusters have more similar values than observations in distal clusters. This can make high-dimensional data easier to visualize and analyze. An SOM is a type of artificial neural network but is trained using competitive Learning rather than the error-correction Learning (e.g., backpropagation with gradient descent) used by other artificial neural networks. The SOM was introduced by the Finnish professor Teuvo Kohonen in the 1980s and therefore is sometimes called a Kohonen map or Kohonen network.[1][2] The Kohonen map or network is a computationally convenient abstraction building on biological models of neural systems from the 1970s[3] and morphogenesis models dating back to Alan Turing in the 1950s.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOFM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOM</oboInOwl:hasExactSynonym>
@@ -1978,7 +2403,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/KN"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-organizing map (SOM) or self-organizing feature map (SOFM) is an unsupervised machine learning technique used to produce a low-dimensional (typically two-dimensional) representation of a higher dimensional data set while preserving the topological structure of the data. For example, a data set with p variables measured in n observations could be represented as clusters of observations with similar values for the variables. These clusters then could be visualized as a two-dimensional &quot;map&quot; such that observations in proximal clusters have more similar values than observations in distal clusters. This can make high-dimensional data easier to visualize and analyze. An SOM is a type of artificial neural network but is trained using competitive learning rather than the error-correction learning (e.g., backpropagation with gradient descent) used by other artificial neural networks. The SOM was introduced by the Finnish professor Teuvo Kohonen in the 1980s and therefore is sometimes called a Kohonen map or Kohonen network.[1][2] The Kohonen map or network is a computationally convenient abstraction building on biological models of neural systems from the 1970s[3] and morphogenesis models dating back to Alan Turing in the 1950s.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-organizing map (SOM) or self-organizing feature map (SOFM) is an unsupervised machine Learning technique used to produce a low-dimensional (typically two-dimensional) representation of a higher dimensional data set while preserving the topological structure of the data. For example, a data set with p variables measured in n observations could be represented as clusters of observations with similar values for the variables. These clusters then could be visualized as a two-dimensional &quot;map&quot; such that observations in proximal clusters have more similar values than observations in distal clusters. This can make high-dimensional data easier to visualize and analyze. An SOM is a type of artificial neural network but is trained using competitive Learning rather than the error-correction Learning (e.g., backpropagation with gradient descent) used by other artificial neural networks. The SOM was introduced by the Finnish professor Teuvo Kohonen in the 1980s and therefore is sometimes called a Kohonen map or Kohonen network.[1][2] The Kohonen map or network is a computationally convenient abstraction building on biological models of neural systems from the 1970s[3] and morphogenesis models dating back to Alan Turing in the 1950s.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Self-organizing_map</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2006,7 +2431,7 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/LSTM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/RecNN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections. It can process not only single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition, speech recognition and anomaly detection in network traffic or IDSs (intrusion detection systems). A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep Learning. Unlike standard feedforward neural networks, LSTM has feedback connections. It can process not only single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition, speech recognition and anomaly detection in network traffic or IDSs (intrusion detection systems). A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LSTM</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Memory Cell, Output</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Long Short Term Memory</rdfs:label>
@@ -2014,7 +2439,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/LSTM"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections. It can process not only single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition, speech recognition and anomaly detection in network traffic or IDSs (intrusion detection systems). A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep Learning. Unlike standard feedforward neural networks, LSTM has feedback connections. It can process not only single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition, speech recognition and anomaly detection in network traffic or IDSs (intrusion detection systems). A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Long_short-term_memory</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2064,6 +2489,22 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wraps arbitrary expressions as a Layer object.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tensorflow.org/api_docs/python/tf/keras/layers/Lambda</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Lasso_Regression -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Lasso_Regression">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Regression_Analysis"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A regression analysis method that performs both variable selection and regularizationin order to enhance the prediction accuracy and interpretability of the resulting statistical model.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lasso Regression</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Lasso_Regression"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A regression analysis method that performs both variable selection and regularizationin order to enhance the prediction accuracy and interpretability of the resulting statistical model.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Lasso_(statistics)</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2125,6 +2566,22 @@
     
 
 
+    <!-- https://w3id.org/aio/Least-squares_Analysis -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Least-squares_Analysis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Regression_Analysis"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A standard approach in regression analysis to approximate the solution of overdetermined systems(sets of equations in which there are more equations than unknowns) by minimizing the sum of the squares of the residuals (a residual being the difference between an observed value and the fitted value provided by a model) made in the results of each individual equation.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Least-squares Analysis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Least-squares_Analysis"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A standard approach in regression analysis to approximate the solution of overdetermined systems(sets of equations in which there are more equations than unknowns) by minimizing the sum of the squares of the residuals (a residual being the difference between an observed value and the fitted value provided by a model) made in the results of each individual equation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Least_squares</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/Linear_Function -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Linear_Function">
@@ -2137,6 +2594,22 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A linear function has the form f(x) = a + bx.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tensorflow.org/api_docs/python/tf/keras/activations/linear</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Linear_Regression -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Linear_Regression">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Regression_Analysis"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A linear approach for modelling the relationship between a scalar response and one or more explanatory variables (also known as dependent and independent variables).</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear Regression</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Linear_Regression"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A linear approach for modelling the relationship between a scalar response and one or more explanatory variables (also known as dependent and independent variables).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Linear_regression</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2205,6 +2678,22 @@
     
 
 
+    <!-- https://w3id.org/aio/Logistic_Regression -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Logistic_Regression">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Regression_Analysis"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A statistical model that models the probability of an event taking place by having the log-odds for the event be a linear combination of one or more independent variables.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logistic Regression</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Logistic_Regression"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A statistical model that models the probability of an event taking place by having the log-odds for the event be a linear combination of one or more independent variables.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Logistic_regression</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/Loss_Of_Situational_Awareness_Bias -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Loss_Of_Situational_Awareness_Bias">
@@ -2237,6 +2726,38 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Markov chain or Markov process is a stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event.[1][2][3] A countably infinite sequence, in which the chain moves state at discrete time steps, gives a discrete-time Markov chain (DTMC). A continuous-time process is called a continuous-time Markov chain (CTMC). It is named after the Russian mathematician Andrey Markov.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Markov_chain</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Machine_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Machine_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Method"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A field of inquiry devoted to understanding and building methods that &apos;learn&apos;, that is, methods that leverage data to improve performance on some set of tasks.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machine Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A field of inquiry devoted to understanding and building methods that &apos;learn&apos;, that is, methods that leverage data to improve performance on some set of tasks.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Machine_learning</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Manifold_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Manifold_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Dimensionality_Reduction"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods based on the assumption that one&apos;s observed data lie on a low-dimensional manifold embedded in a higher-dimensional space.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manifold Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Manifold_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods based on the assumption that one&apos;s observed data lie on a low-dimensional manifold embedded in a higher-dimensional space.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://arxiv.org/abs/2011.01307</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2356,6 +2877,48 @@
     
 
 
+    <!-- https://w3id.org/aio/Meta-Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Meta-Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automatic learning algorithms applied to metadata about machine Learning experiments.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meta-Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Meta-Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automatic learning algorithms applied to metadata about machine Learning experiments.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Meta_learning_(computer_science)</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Method -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Method">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method parent class.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/aio/Metric_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Metric_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods which can learn a representation function that maps objects into an embedded space.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Distance Metric Learning</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metric Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Metric_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods which can learn a representation function that maps objects into an embedded space.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://paperswithcode.com/task/metric-learning</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/Minimum_Layer -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Minimum_Layer">
@@ -2417,6 +2980,66 @@
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MultiHeadAttention layer. This is an implementation of multi-headed attention as described in the paper &quot;Attention is all you Need&quot; (Vaswani et al., 2017). If query, key, value are the same, then this is self-attention. Each timestep in query attends to the corresponding sequence in key, and returns a fixed-width vector.This layer first projects query, key and value. These are (effectively) a list of tensors of length num_attention_heads, where the corresponding shapes are (batch_size, &lt;query dimensions&gt;, key_dim), (batch_size, &lt;key/value dimensions&gt;, key_dim), (batch_size, &lt;key/value dimensions&gt;, value_dim).Then, the query and key tensors are dot-producted and scaled. These are softmaxed to obtain attention probabilities. The value tensors are then interpolated by these probabilities, then concatenated back to a single tensor. Finally, the result tensor with the last dimension as value_dim can take an linear projection and return. When using MultiHeadAttention inside a custom Layer, the custom Layer must implement build() and call MultiHeadAttention&apos;s _build_from_signature(). This enables weights to be restored correctly when the model is loaded.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tensorflow.org/api_docs/python/tf/keras/layers/MultiHeadAttention</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Multiclass_Classification -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Multiclass_Classification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Classification"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that lassify instances into one of three or more classes (classifying instances into one of two classes is called binary classification).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multinomial Classification</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multiclass Classification</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Multiclass_Classification"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that lassify instances into one of three or more classes (classifying instances into one of two classes is called binary classification).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Multiclass_classification</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Multidimensional_Scaling -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Multidimensional_Scaling">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Dimensionality_Reduction"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method that translates information about the pairwise distances among a set of objects or individuals into a configuration of points mapped into an abstract Cartesian space.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MDS</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multidimensional Scaling</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Multidimensional_Scaling"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method that translates information about the pairwise distances among a set of objects or individuals into a configuration of points mapped into an abstract Cartesian space.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Multidimensional_scaling</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Multimodal_Deep_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Multimodal_Deep_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods which can create models that can process and link information using various modalities.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multimodal Deep Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Multimodal_Deep_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods which can create models that can process and link information using various modalities.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://arxiv.org/abs/2105.11087</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Multimodal_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Multimodal_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods which can represent the joint representations of different modalities.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multimodal Learning</rdfs:label>
+    </owl:Class>
     
 
 
@@ -2493,6 +3116,23 @@
     
 
 
+    <!-- https://w3id.org/aio/Natural_Language_Processing -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Natural_Language_Processing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language, in particular how to program computers to process and analyze large amounts of natural language data.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NLP</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural Language Processing</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Natural_Language_Processing"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language, in particular how to program computers to process and analyze large amounts of natural language data.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Natural_language_processing</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/Network -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Network">
@@ -2550,6 +3190,23 @@
     
 
 
+    <!-- https://w3id.org/aio/One-shot_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/One-shot_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method which aims to classify objects from one, or only a few, examples.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OSL</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One-shot Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/One-shot_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method which aims to classify objects from one, or only a few, examples.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/One-shot_learning</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/Output_Layer -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Output_Layer">
@@ -2570,7 +3227,7 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/P">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ANN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The perceptron is an algorithm for supervised learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class. It is a type of linear classifier, i.e. a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector. (https://en.wikipedia.org/wiki/Perceptron)</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The perceptron is an algorithm for supervised Learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class. It is a type of linear classifier, i.e. a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector. (https://en.wikipedia.org/wiki/Perceptron)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLP</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Single Layer Perceptron</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input, Output</rdfs:comment>
@@ -2691,6 +3348,58 @@
     
 
 
+    <!-- https://w3id.org/aio/Principal_Component_Analysis -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Principal_Component_Analysis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Dimensionality_Reduction"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method for analyzing large datasets containing a high number of dimensions/features per observation, increasing the interpretability of data while preserving the maximum amount of information, and enabling the visualization of multidimensional data.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCA</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Principal Component Analysis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Principal_Component_Analysis"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method for analyzing large datasets containing a high number of dimensions/features per observation, increasing the interpretability of data while preserving the maximum amount of information, and enabling the visualization of multidimensional data.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Principal_component_analysis</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Probabilistic_Graphical_Model -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Probabilistic_Graphical_Model">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A probabilistic model for which a graph expresses the conditional dependence structure between random variables.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graphical Model</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PGM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Structure Probabilistic Model</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probabilistic Graphical Model</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Probabilistic_Graphical_Model"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A probabilistic model for which a graph expresses the conditional dependence structure between random variables.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Graphical_model</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Probabilistic_Topic_Model -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Probabilistic_Topic_Model">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Probabilistic_Graphical_Model"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that use statistical methods to analyze the words in each text to discover common themes, how those themes are connected to each other, and how they change over time.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probabilistic Topic Model</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Probabilistic_Topic_Model"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that use statistical methods to analyze the words in each text to discover common themes, how those themes are connected to each other, and how they change over time.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pyro.ai/examples/prodlda.html</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/Processing_Bias -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Processing_Bias">
@@ -2704,6 +3413,23 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Judgement modulated by affect, which is influenced by the level of efficacy and efficiency in information processing; in cognitive sciences, processing bias is often referred to as an aesthetic judgement.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://royalsocietypublishing.org/doi/10.1098/rspb.2019.0165#d1e5237</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Proportional_Hazards_Model -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Proportional_Hazards_Model">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Regression_Analysis"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Survival_Analysis"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A surival modeling method where the unique effect of a unit increase in a covariate is multiplicative with respect to the hazard rate.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proportional Hazards Model</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Proportional_Hazards_Model"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A surival modeling method where the unique effect of a unit increase in a covariate is multiplicative with respect to the hazard rate.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Proportional_hazards_modelProportional Hazards Model</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2906,6 +3632,39 @@
     
 
 
+    <!-- https://w3id.org/aio/Random_Effects_Model -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Random_Effects_Model">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Regression_Analysis"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A statistical model where the model parameters are random variables.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REM</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Random Effects Model</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Random_Effects_Model"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A statistical model where the model parameters are random variables.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Random_effects_model</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Random_Forest -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Random_Forest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Ensemble_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ensemble learning method for classification, regression and other tasks that operates by constructing a multitude of decision trees at training time.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Random Forest</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Random_Forest"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ensemble learning method for classification, regression and other tasks that operates by constructing a multitude of decision trees at training time.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Random_forest</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/Ranking_Bias -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Ranking_Bias">
@@ -2997,7 +3756,7 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/RecuNN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A recursive neural network is a kind of deep neural network created by applying the same set of weights recursively over a structured input, to produce a structured prediction over variable-size input structures, or a scalar prediction on it, by traversing a given structure in topological order. Recursive neural networks, sometimes abbreviated as RvNNs, have been successful, for instance, in learning sequence and tree structures in natural language processing, mainly phrase and sentence continuous representations based on word embedding.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A recursive neural network is a kind of deep neural network created by applying the same set of weights recursively over a structured input, to produce a structured prediction over variable-size input structures, or a scalar prediction on it, by traversing a given structure in topological order. Recursive neural networks, sometimes abbreviated as RvNNs, have been successful, for instance, in Learning sequence and tree structures in natural language processing, mainly phrase and sentence continuous representations based on word embedding.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RecuNN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RvNN</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recursive Neural Network</rdfs:label>
@@ -3005,7 +3764,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/RecuNN"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A recursive neural network is a kind of deep neural network created by applying the same set of weights recursively over a structured input, to produce a structured prediction over variable-size input structures, or a scalar prediction on it, by traversing a given structure in topological order. Recursive neural networks, sometimes abbreviated as RvNNs, have been successful, for instance, in learning sequence and tree structures in natural language processing, mainly phrase and sentence continuous representations based on word embedding.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A recursive neural network is a kind of deep neural network created by applying the same set of weights recursively over a structured input, to produce a structured prediction over variable-size input structures, or a scalar prediction on it, by traversing a given structure in topological order. Recursive neural networks, sometimes abbreviated as RvNNs, have been successful, for instance, in Learning sequence and tree structures in natural language processing, mainly phrase and sentence continuous representations based on word embedding.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Recursive_neural_network</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -3022,7 +3781,25 @@
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/Recurrent_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A layer of an RNB, composed of recurrent units and with the number of which is the hidden size of the layer.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://docs.nvidia.com/deeplearning/performance/dl-performance-recurrent/index.html#recurrent-layer</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://docs.nvidia.com/deepLearning/performance/dl-performance-recurrent/index.html#recurrent-layer</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Regression_Analysis -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Regression_Analysis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Supervised_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of statistical processes for estimating the relationships between a dependent variable (often called the &apos;outcome&apos; or &apos;response&apos; variable, or a &apos;label&apos; in machine learning parlance) and one or more independent variables (often called &apos;predictors&apos;, &apos;covariates&apos;, &apos;explanatory variables&apos; or &apos;features&apos;).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regression analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regression model</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regression Analysis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Regression_Analysis"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of statistical processes for estimating the relationships between a dependent variable (often called the &apos;outcome&apos; or &apos;response&apos; variable, or a &apos;label&apos; in machine learning parlance) and one or more independent variables (often called &apos;predictors&apos;, &apos;covariates&apos;, &apos;explanatory variables&apos; or &apos;features&apos;).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Regression_analysis</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3039,6 +3816,22 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regularizers allow you to apply penalties on layer parameters or layer activity during optimization. These penalties are summed into the loss function that the network optimizes. Regularization penalties are applied on a per-layer basis.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://keras.io/api/layers/regularizers/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Reinforcement_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Reinforcement_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that do not need labelled input/output pairs be presented, nor needing sub-optimal actions to be explicitly corrected. Instead they focus on finding a balance between exploration (of uncharted territory) and exploitation (of current knowledge).</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reinforcement Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Reinforcement_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that do not need labelled input/output pairs be presented, nor needing sub-optimal actions to be explicitly corrected. Instead they focus on finding a balance between exploration (of uncharted territory) and exploitation (of current knowledge).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Reinforcement_learning</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3071,6 +3864,23 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arises due to non-random sampling of subgroups, causing trends estimated for one population to not be generalizable to data collected from a new population.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.6028/NIST.SP.1270</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Representation_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Representation_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that allow a system to discover the representations required for feature detection or classification from raw data.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature Learning</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Representation Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Representation_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that allow a system to discover the representations required for feature detection or classification from raw data.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Feature_learning</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3154,6 +3964,22 @@
     
 
 
+    <!-- https://w3id.org/aio/Ridge_Regression -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Ridge_Regression">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Regression_Analysis"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method of estimating the coefficients of multiple-regression models in scenarios where the independent variables are highly correlated.[1] It has been used in many fields including econometrics, chemistry, and engineering.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ridge Regression</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Ridge_Regression"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method of estimating the coefficients of multiple-regression models in scenarios where the independent variables are highly correlated.[1] It has been used in many fields including econometrics, chemistry, and engineering.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Ridge_regression</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/SAE -->
 
     <owl:Class rdf:about="https://w3id.org/aio/SAE">
@@ -3187,7 +4013,7 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/SVM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Network"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In machine learning, support-vector machines (SVMs, also support-vector networks) are supervised learning models with associated learning algorithms that analyze data for classification and regression analysis. Developed at AT&amp;T Bell Laboratories by Vladimir Vapnik with colleagues (Boser et al., 1992, Guyon et al., 1993, Vapnik et al., 1997) SVMs are one of the most robust prediction methods, being based on statistical learning frameworks or VC theory proposed by Vapnik (1982, 1995) and Chervonenkis (1974). Given a set of training examples, each marked as belonging to one of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier (although methods such as Platt scaling exist to use SVM in a probabilistic classification setting). SVM maps training examples to points in space so as to maximise the width of the gap between the two categories. New examples are then mapped into that same space and predicted to belong to a category based on which side of the gap they fall.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In machine Learning, support-vector machines (SVMs, also support-vector networks) are supervised Learning models with associated Learning algorithms that analyze data for classification and regression analysis. Developed at AT&amp;T Bell Laboratories by Vladimir Vapnik with colleagues (Boser et al., 1992, Guyon et al., 1993, Vapnik et al., 1997) SVMs are one of the most robust prediction methods, being based on statistical Learning frameworks or VC theory proposed by Vapnik (1982, 1995) and Chervonenkis (1974). Given a set of training examples, each marked as belonging to one of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier (although methods such as Platt scaling exist to use SVM in a probabilistic classification setting). SVM maps training examples to points in space so as to maximise the width of the gap between the two categories. New examples are then mapped into that same space and predicted to belong to a category based on which side of the gap they fall.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SVM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SVN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supper Vector Network</oboInOwl:hasExactSynonym>
@@ -3197,7 +4023,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/SVM"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In machine learning, support-vector machines (SVMs, also support-vector networks) are supervised learning models with associated learning algorithms that analyze data for classification and regression analysis. Developed at AT&amp;T Bell Laboratories by Vladimir Vapnik with colleagues (Boser et al., 1992, Guyon et al., 1993, Vapnik et al., 1997) SVMs are one of the most robust prediction methods, being based on statistical learning frameworks or VC theory proposed by Vapnik (1982, 1995) and Chervonenkis (1974). Given a set of training examples, each marked as belonging to one of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier (although methods such as Platt scaling exist to use SVM in a probabilistic classification setting). SVM maps training examples to points in space so as to maximise the width of the gap between the two categories. New examples are then mapped into that same space and predicted to belong to a category based on which side of the gap they fall.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In machine Learning, support-vector machines (SVMs, also support-vector networks) are supervised Learning models with associated Learning algorithms that analyze data for classification and regression analysis. Developed at AT&amp;T Bell Laboratories by Vladimir Vapnik with colleagues (Boser et al., 1992, Guyon et al., 1993, Vapnik et al., 1997) SVMs are one of the most robust prediction methods, being based on statistical Learning frameworks or VC theory proposed by Vapnik (1982, 1995) and Chervonenkis (1974). Given a set of training examples, each marked as belonging to one of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier (although methods such as Platt scaling exist to use SVM in a probabilistic classification setting). SVM maps training examples to points in space so as to maximise the width of the gap between the two categories. New examples are then mapped into that same space and predicted to belong to a category based on which side of the gap they fall.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Support-vector_machine</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -3250,6 +4076,22 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decision-makers’ inclination to selectively adopt algorithmic advice when it matches their pre-existing beliefs and stereotypes.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.6028/NIST.SP.1270</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Self-supervised_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Self-supervised_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regarded as an intermediate form between supervised and unsupervised learning.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Self-supervised Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Self-supervised_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regarded as an intermediate form between supervised and unsupervised learning.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Self-supervised_learning</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3417,17 +4259,35 @@
     
 
 
+    <!-- https://w3id.org/aio/Sparse_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Sparse_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Representation_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods which aim to find sparse representations of the input data in the form of a linear combination of basic elements as well as those basic elements themselves.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sparse coding</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sparse dictionary Learning</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sparse Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Sparse_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods which aim to find sparse representations of the input data in the form of a linear combination of basic elements as well as those basic elements themselves.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Sparse_dictionary_learning</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/SpatialDropout1D_Layer -->
 
     <owl:Class rdf:about="https://w3id.org/aio/SpatialDropout1D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Regularization_Layer"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial 1D version of Dropout. This version performs the same function as Dropout, however, it drops entire 1D feature maps instead of individual elements. If adjacent frames within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective learning rate decrease. In this case, SpatialDropout1D will help promote independence between feature maps and should be used instead.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial 1D version of Dropout. This version performs the same function as Dropout, however, it drops entire 1D feature maps instead of individual elements. If adjacent frames within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective Learning rate decrease. In this case, SpatialDropout1D will help promote independence between feature maps and should be used instead.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SpatialDropout1D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/SpatialDropout1D_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial 1D version of Dropout. This version performs the same function as Dropout, however, it drops entire 1D feature maps instead of individual elements. If adjacent frames within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective learning rate decrease. In this case, SpatialDropout1D will help promote independence between feature maps and should be used instead.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial 1D version of Dropout. This version performs the same function as Dropout, however, it drops entire 1D feature maps instead of individual elements. If adjacent frames within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective Learning rate decrease. In this case, SpatialDropout1D will help promote independence between feature maps and should be used instead.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tensorflow.org/api_docs/python/tf/keras/layers/SpatialDropout1D</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -3437,13 +4297,13 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/SpatialDropout2D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Regularization_Layer"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial 2D version of Dropout. This version performs the same function as Dropout, however, it drops entire 2D feature maps instead of individual elements. If adjacent pixels within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective learning rate decrease. In this case, SpatialDropout2D will help promote independence between feature maps and should be used instead.a</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial 2D version of Dropout. This version performs the same function as Dropout, however, it drops entire 2D feature maps instead of individual elements. If adjacent pixels within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective Learning rate decrease. In this case, SpatialDropout2D will help promote independence between feature maps and should be used instead.a</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SpatialDropout2D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/SpatialDropout2D_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial 2D version of Dropout. This version performs the same function as Dropout, however, it drops entire 2D feature maps instead of individual elements. If adjacent pixels within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective learning rate decrease. In this case, SpatialDropout2D will help promote independence between feature maps and should be used instead.a</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial 2D version of Dropout. This version performs the same function as Dropout, however, it drops entire 2D feature maps instead of individual elements. If adjacent pixels within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective Learning rate decrease. In this case, SpatialDropout2D will help promote independence between feature maps and should be used instead.a</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tensorflow.org/api_docs/python/tf/keras/layers/SpatialDropout2D</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -3453,14 +4313,30 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/SpatialDropout3D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Regularization_Layer"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial 3D version of Dropout. This version performs the same function as Dropout, however, it drops entire 3D feature maps instead of individual elements. If adjacent voxels within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective learning rate decrease. In this case, SpatialDropout3D will help promote independence between feature maps and should be used instead.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial 3D version of Dropout. This version performs the same function as Dropout, however, it drops entire 3D feature maps instead of individual elements. If adjacent voxels within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective Learning rate decrease. In this case, SpatialDropout3D will help promote independence between feature maps and should be used instead.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SpatialDropout3D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/SpatialDropout3D_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial 3D version of Dropout. This version performs the same function as Dropout, however, it drops entire 3D feature maps instead of individual elements. If adjacent voxels within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective learning rate decrease. In this case, SpatialDropout3D will help promote independence between feature maps and should be used instead.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial 3D version of Dropout. This version performs the same function as Dropout, however, it drops entire 3D feature maps instead of individual elements. If adjacent voxels within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective Learning rate decrease. In this case, SpatialDropout3D will help promote independence between feature maps and should be used instead.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tensorflow.org/api_docs/python/tf/keras/layers/SpatialDropout3D</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Spatial_Regression -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Spatial_Regression">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Regression_Analysis"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regression method used to model spatial relationships.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial Regression</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Spatial_Regression"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regression method used to model spatial relationships.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://gisgeography.com/spatial-regression-models-arcgis/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3543,6 +4419,76 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A human tendency where people opt to continue with an endeavor or behavior due to previously spent or invested resources, such as money, time, and effort, regardless of whether costs outweigh benefits. For example, in AI, the sunk cost fallacy could lead development teams and organizations to feel that because they have already invested so much time and money into a particular AI application, they must pursue it to market rather than deciding to end the effort, even in the face of significant technical debt and/or ethical debt.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.6028/NIST.SP.1270</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Supervised_Biclustering -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Supervised_Biclustering">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Biclustering"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that simultaneously cluster the rows and columns of a labeled matrix, also taking into account the data label contributions to cluster coherence.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supervised Block Clustering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supervised Co-clustering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supervised Joint Clustering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supervised Two-mode Clustering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supervised Two-way Clustering</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supervised Biclustering</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Supervised_Biclustering"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that simultaneously cluster the rows and columns of a labeled matrix, also taking into account the data label contributions to cluster coherence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Biclustering</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Supervised_Clustering -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Supervised_Clustering">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Clustering"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that group a set of labeled objects in such a way that objects in the same group (called a cluster) are more similarly labeled (in some sense) relative to those in other groups (clusters).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cluster analysis</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supervised Clustering</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Supervised_Clustering"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that group a set of labeled objects in such a way that objects in the same group (called a cluster) are more similarly labeled (in some sense) relative to those in other groups (clusters).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Cluster_analysis</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Supervised_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Supervised_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that can learn a function that maps an input to an output based on example input-output pairs.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supervised Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Supervised_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that can learn a function that maps an input to an output based on example input-output pairs.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Supervised_learning</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Survival_Analysis -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Survival_Analysis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods for nalyzing the expected duration of time until one event occurs, such as death in biological organisms and failure in mechanical systems.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Survival Analysis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Survival_Analysis"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods for nalyzing the expected duration of time until one event occurs, such as death in biological organisms and failure in mechanical systems.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Survival_analysis</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3693,18 +4639,66 @@
     
 
 
+    <!-- https://w3id.org/aio/Time_Series_Analysis -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Time_Series_Analysis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods for analyzing time series data in order to extract meaningful statistics and other characteristics of the data.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time Series Analysis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Time_Series_Analysis"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods for analyzing time series data in order to extract meaningful statistics and other characteristics of the data.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Time_series</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Time_Series_Forecasting -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Time_Series_Forecasting">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that predict future values based on previously observed values.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time Series Forecasting</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Time_Series_Forecasting"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that predict future values based on previously observed values.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Time_series</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Transfer_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Transfer_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods which can reuse or transfer information from previously learned tasks for the Learning of new tasks.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transfer Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Transfer_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods which can reuse or transfer information from previously learned tasks for the Learning of new tasks.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Transfer_learning</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/Transformer -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Transformer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A transformer is a deep learning model that adopts the mechanism of attention, differentially weighing the significance of each part of the input data. It is used primarily in the field of natural language processing (NLP) and in computer vision (CV). (https://en.wikipedia.org/wiki/Transformer_(machine_learning_model))</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A transformer is a deep Learning model that adopts the mechanism of attention, differentially weighing the significance of each part of the input data. It is used primarily in the field of natural language processing (NLP) and in computer vision (CV). (https://en.wikipedia.org/wiki/Transformer_(machine_Learning_model))</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transformer Network</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/Transformer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A transformer is a deep learning model that adopts the mechanism of attention, differentially weighing the significance of each part of the input data. It is used primarily in the field of natural language processing (NLP) and in computer vision (CV). (https://en.wikipedia.org/wiki/Transformer_(machine_learning_model))</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A transformer is a deep Learning model that adopts the mechanism of attention, differentially weighing the significance of each part of the input data. It is used primarily in the field of natural language processing (NLP) and in computer vision (CV). (https://en.wikipedia.org/wiki/Transformer_(machine_Learning_model))</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Transformer_(machine_Learning_model)</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3754,6 +4748,60 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unit normalization layer. Normalize a batch of inputs so that each input in the batch has a L2 norm equal to 1 (across the axes specified in axis).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tensorflow.org/api_docs/python/tf/keras/layers/UnitNormalization</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Unsupervised_Biclustering -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Unsupervised_Biclustering">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Biclustering"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that simultaneously cluster the rows and columns of an unlabeled input matrix.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Block Clustering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Co-clustering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joint Clustering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two-mode Clustering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two-way Clustering</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unsupervised Biclustering</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Unsupervised_Biclustering"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that simultaneously cluster the rows and columns of an unlabeled input matrix.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Biclustering</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Unsupervised_Clustering -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Unsupervised_Clustering">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Clustering"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that group a set of objects in such a way that objects without labels in the same group (called a cluster) are more similar (in some sense) to each other than to those in other groups (clusters).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cluster analysis</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unsupervised Clustering</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Unsupervised_Clustering"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods that group a set of objects in such a way that objects without labels in the same group (called a cluster) are more similar (in some sense) to each other than to those in other groups (clusters).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Cluster_analysis</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Unsupervised_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Unsupervised_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Algorithms that learns patterns from unlabeled data.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unsupervised Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Unsupervised_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Algorithms that learns patterns from unlabeled data.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Unsupervised_learning</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3905,6 +4953,23 @@
     
 
 
+    <!-- https://w3id.org/aio/Zero-shot_Learning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Zero-shot_Learning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods where at test time, a learner observes samples from classes, which were not observed during training, and needs to predict the class that they belong to.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZSL</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zero-shot Learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Zero-shot_Learning"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods where at test time, a learner observes samples from classes, which were not observed during training, and needs to predict the class that they belong to.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Zero-shot_learning</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/ZeroPadding1D_Layer -->
 
     <owl:Class rdf:about="https://w3id.org/aio/ZeroPadding1D_Layer">
@@ -3957,7 +5022,7 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/eLu_Function">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Function"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The exponential linear unit (ELU) with alpha &gt; 0 is: x if x &gt; 0 and alpha * (exp(x) - 1) if x &lt; 0 The ELU hyperparameter alpha controls the value to which an ELU saturates for negative net inputs. ELUs diminish the vanishing gradient effect. ELUs have negative values which pushes the mean of the activations closer to zero. Mean activations that are closer to zero enable faster learning as they bring the gradient closer to the natural gradient. ELUs saturate to a negative value when the argument gets smaller. Saturation means a small derivative which decreases the variation and the information that is propagated to the next layer.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The exponential linear unit (ELU) with alpha &gt; 0 is: x if x &gt; 0 and alpha * (exp(x) - 1) if x &lt; 0 The ELU hyperparameter alpha controls the value to which an ELU saturates for negative net inputs. ELUs diminish the vanishing gradient effect. ELUs have negative values which pushes the mean of the activations closer to zero. Mean activations that are closer to zero enable faster Learning as they bring the gradient closer to the natural gradient. ELUs saturate to a negative value when the argument gets smaller. Saturation means a small derivative which decreases the variation and the information that is propagated to the next layer.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exponential Linear Unit</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELU</oboInOwl:hasRelatedSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELU Function</rdfs:label>
@@ -3965,21 +5030,45 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/eLu_Function"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The exponential linear unit (ELU) with alpha &gt; 0 is: x if x &gt; 0 and alpha * (exp(x) - 1) if x &lt; 0 The ELU hyperparameter alpha controls the value to which an ELU saturates for negative net inputs. ELUs diminish the vanishing gradient effect. ELUs have negative values which pushes the mean of the activations closer to zero. Mean activations that are closer to zero enable faster learning as they bring the gradient closer to the natural gradient. ELUs saturate to a negative value when the argument gets smaller. Saturation means a small derivative which decreases the variation and the information that is propagated to the next layer.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The exponential linear unit (ELU) with alpha &gt; 0 is: x if x &gt; 0 and alpha * (exp(x) - 1) if x &lt; 0 The ELU hyperparameter alpha controls the value to which an ELU saturates for negative net inputs. ELUs diminish the vanishing gradient effect. ELUs have negative values which pushes the mean of the activations closer to zero. Mean activations that are closer to zero enable faster Learning as they bring the gradient closer to the natural gradient. ELUs saturate to a negative value when the argument gets smaller. Saturation means a small derivative which decreases the variation and the information that is propagated to the next layer.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tensorflow.org/api_docs/python/tf/keras/activations/elu</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
 
-    <!-- https://w3id.org/aio/Hard%20Sigmoid_Function -->
+    <!-- https://w3id.org/aio/t-Distributed_Stochastic_Neighbor_embedding -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/Hard%20Sigmoid_Function">
+    <owl:Class rdf:about="https://w3id.org/aio/t-Distributed_Stochastic_Neighbor_embedding">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Dimensionality_Reduction"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A statistical method for visualizing high-dimensional data by giving each datapoint a location in a two or three-dimensional map.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">t-SNE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tSNE</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">t-Distributed Stochastic Neighbor embedding</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/t-Distributed_Stochastic_Neighbor_embedding"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A statistical method for visualizing high-dimensional data by giving each datapoint a location in a two or three-dimensional map.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Classification;AIO:Clustering -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Classification;AIO:Clustering"/>
+    
+
+
+    <!-- https://w3id.org/aio/Hard Sigmoid_Function -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Hard Sigmoid_Function">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Function"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A faster approximation of the sigmoid activation. Piecewise linear approximation of the sigmoid function. Ref: &apos;https://en.wikipedia.org/wiki/Hard_sigmoid&apos;</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hard Sigmoid Function</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Hard%20Sigmoid_Function"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Hard Sigmoid_Function"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A faster approximation of the sigmoid activation. Piecewise linear approximation of the sigmoid function. Ref: &apos;https://en.wikipedia.org/wiki/Hard_sigmoid&apos;</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tensorflow.org/api_docs/python/tf/keras/activations/hard_sigmoid</oboInOwl:hasDbXref>
@@ -4000,6 +5089,24 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A statistical phenomenon where the marginal association between two categorical variables is qualitatively different from the partial association between the same two variables after controlling for one or more other variables. For example, the statistical association or correlation that has been detected between two variables for an entire population disappears or reverses when the population is divided into subgroups.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.6028/NIST.SP.1270</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Unsupervised_Block_Clustering|Unsupervised_Co-clustering|Unsupervised_Unsupervised_Two-mode_Clustering|Unsupervised_Two-way_Clustering|Unsupervised_Joint_Clustering -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Unsupervised_Block_Clustering|Unsupervised_Co-clustering|Unsupervised_Unsupervised_Two-mode_Clustering|Unsupervised_Two-way_Clustering|Unsupervised_Joint_Clustering">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An algorithm to group objects by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K-NN</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KNN</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unsupervised Block Clustering|Unsupervised Co-clustering|Unsupervised Unsupervised Two-mode Clustering|Unsupervised Two-way Clustering|Unsupervised Joint Clustering</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Unsupervised_Block_Clustering|Unsupervised_Co-clustering|Unsupervised_Unsupervised_Two-mode_Clustering|Unsupervised_Two-way_Clustering|Unsupervised_Joint_Clustering"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An algorithm to group objects by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
 

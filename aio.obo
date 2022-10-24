@@ -1,16 +1,23 @@
 format-version: 1.2
-data-version: releases/2022-09-06
+data-version: releases/2022-10-24
 ontology: aio
-property_value: http://purl.org/dc/elements/1.1/description "Taxonomy and partonomy of Deep Learning networks, layers, and functions." xsd:string
+property_value: http://purl.org/dc/elements/1.1/description "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Artificial Intelligence Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-09-06" xsd:string
+property_value: owl:versionInfo "2022-10-24" xsd:string
 
 [Term]
 id: Activation:Layer
 name: Activation Layer
 def: "Applies an activation function to an output." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Activation]
 is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Active:Learning
+name: Active Learning
+def: "Methods which can interactively query a user (or some other information source) to label new data points with the desired outputs." [https://en.wikipedia.org/wiki/Active_learning_(machine_learning)]
+synonym: "Query Learning" EXACT []
+is_a: Machine:Learning ! Machine Learning
 
 [Term]
 id: Activity:Bias
@@ -94,6 +101,12 @@ def: "Layer that normalizes its inputs. Batch normalization applies a transforma
 is_a: Normalization:Layer ! Normalization Layer
 
 [Term]
+id: Bayesian:Network
+name: Bayesian Network
+def: "A probabilistic graphical model that represents a set of variables and their conditional dependencies via a directed acyclic graph (DAG)." [https://en.wikipedia.org/wiki/Bayesian_network]
+is_a: https://w3id.org/aio/Network ! Network
+
+[Term]
 id: Behavioral:Bias
 name: Behavioral Bias
 def: "Systematic distortions in user behavior across platforms or contexts, or across users represented in different datasets." [https://doi.org/10.6028/NIST.SP.1270]
@@ -104,6 +117,12 @@ id: Bidirectional:Layer
 name: Bidirectional Layer
 def: "Bidirectional wrapper for RNNs." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Bidirectional]
 is_a: Recurrent:Layer ! Recurrent Layer
+
+[Term]
+id: Binary:Classification
+name: Binary Classification
+def: "Methods that classify the elements of a set into two groups (each called class) on the basis of a classification rule." [https://en.wikipedia.org/wiki/Binary_classification]
+is_a: https://w3id.org/aio/Classification ! Classification
 
 [Term]
 id: CategoryEncoding:Layer
@@ -147,6 +166,20 @@ id: Consumer:Bias
 name: Consumer Bias
 def: "Arises when an algorithm or platform provides users with a new venue within which to express their biases, and may occur from either side, or party, in a digital interaction.." [https://doi.org/10.6028/NIST.SP.1270]
 is_a: Individual:Bias ! Individual Bias
+
+[Term]
+id: Continual:Learning
+name: Continual Learning
+def: "A concept to learn a model for a large number of tasks sequentially without forgetting knowledge obtained from the preceding tasks, where the data in the old tasks are not available any more during training new ones." [https://paperswithcode.com/task/continual-learning]
+synonym: "Incremental Learning" EXACT []
+synonym: "Life-Long Learning" EXACT []
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
+
+[Term]
+id: Contrastive:Learning
+name: Contrastive Learning
+def: "Learning that encourages augmentations (views) of the same input to have more similar representations compared to augmentations of different inputs." [https://arxiv.org/abs/2202.14037]
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 
 [Term]
 id: ConvLSTM1D:Layer
@@ -233,6 +266,18 @@ def: "Cropping layer for 3D data (e.g. spatial or spatio-temporal)." [https://ww
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
+id: Data:Imputation
+name: Data Imputation
+def: "Methods that replace missing data with substituted values." [https://en.wikipedia.org/wiki/Imputation_(statistics)]
+is_a: Machine:Learning ! Machine Learning
+
+[Term]
+id: Decision:Tree
+name: Decision Tree
+def: "A decision support tool that uses a tree-like model of decisions and their possible consequences, including chance event outcomes, resource costs, and utility." [https://en.wikipedia.org/wiki/Decision_tree]
+is_a: https://w3id.org/aio/Classification ! Classification
+
+[Term]
 id: Dense:Layer
 name: Dense Layer
 def: "Just your regular densely-connected NN layer." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dense]
@@ -267,6 +312,13 @@ id: Detection:Bias
 name: Detection Bias
 def: "Systematic differences between groups in how outcomes are determined and may cause an over- or underestimation of the size of the effect." [https://doi.org/10.6028/NIST.SP.1270]
 is_a: https://w3id.org/aio/Selection_And_Sampling_Bias ! Selection And Sampling Bias
+
+[Term]
+id: Dimensionality:Reduction
+name: Dimensionality Reduction
+def: "The transformation of data from a high-dimensional space into a low-dimensional space so that the low-dimensional representation retains some meaningful properties of the original data, ideally close to its intrinsic dimension." [https://en.wikipedia.org/wiki/Dimensionality_reduction]
+synonym: "Dimension Reduction" EXACT []
+is_a: Unsupervised:Learning ! Unsupervised Learning
 
 [Term]
 id: Discretization:Layer
@@ -305,6 +357,12 @@ def: "Emergent bias is the result of the use and reliance on algorithms across n
 is_a: https://w3id.org/aio/Use_And_Interpretation_Bias ! Use And Interpretation Bias
 
 [Term]
+id: Ensemble:Learning
+name: Ensemble Learning
+def: "Ensemble methods use multiple learning algorithms to obtain better predictive performance than could be obtained from any of the constituent learning algorithms alone." [https://en.wikipedia.org/wiki/Ensemble_learning]
+is_a: Machine:Learning ! Machine Learning
+
+[Term]
 id: Evaluation:Bias
 name: Evaluation Bias
 def: "Arises when the testing or external benchmark populations do not equally represent the various parts of the user population or from the use of performance metrics that are not appropriate for the way in which the model will be used." [https://doi.org/10.6028/NIST.SP.1270]
@@ -321,6 +379,12 @@ id: Exponential:Function
 name: Exponential Function
 def: "The exponential function is a mathematical function denoted by f(x)=exp or e^{x}." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/exponential]
 is_a: https://w3id.org/aio/Function
+
+[Term]
+id: Federated:Learning
+name: Federated Learning
+def: "A technique that trains an algorithm across multiple decentralized edge devices or servers holding local data samples, without exchanging them." [https://en.wikipedia.org/wiki/Federated_learning]
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 
 [Term]
 id: Flatten:Layer
@@ -423,7 +487,7 @@ synonym: "Groupthink" EXACT []
 is_a: Group:Bias ! Group Bias
 
 [Term]
-id: Hard%20Sigmoid:Function
+id: Hard Sigmoid:Function
 name: Hard Sigmoid Function
 def: "A faster approximation of the sigmoid activation. Piecewise linear approximation of the sigmoid function. Ref: 'https://en.wikipedia.org/wiki/Hard_sigmoid'" [https://www.tensorflow.org/api_docs/python/tf/keras/activations/hard_sigmoid]
 is_a: https://w3id.org/aio/Function
@@ -437,8 +501,21 @@ is_a: https://w3id.org/aio/Categorical_Features_Preprocessing_Layer ! Categorica
 [Term]
 id: Hidden:Layer
 name: Hidden Layer
-def: "A hidden layer is located between the input and output of the algorithm, in which the function applies weights to the inputs and directs them through an activation function as the output. In short, the hidden layers perform nonlinear transformations of the inputs entered into the network. Hidden layers vary depending on the function of the neural network, and similarly, the layers may vary depending on their associated weights." [https://deepai.org/machine-learning-glossary-and-terms/hidden-layer-machine-learning]
+def: "A hidden layer is located between the input and output of the algorithm, in which the function applies weights to the inputs and directs them through an activation function as the output. In short, the hidden layers perform nonlinear transformations of the inputs entered into the network. Hidden layers vary depending on the function of the neural network, and similarly, the layers may vary depending on their associated weights." [https://deepai.org/machine-Learning-glossary-and-terms/hidden-layer-machine-Learning]
 is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Hierarchical:Classification
+name: Hierarchical Classification
+def: "Methods that group things according to a hierarchy." [https://en.wikipedia.org/wiki/Hierarchical_classification]
+is_a: https://w3id.org/aio/Classification ! Classification
+
+[Term]
+id: Hierarchical:Clustering
+name: Hierarchical Clustering
+def: "Methods that seek to build a hierarchy of clusters." [https://en.wikipedia.org/wiki/Hierarchical_clustering]
+synonym: "HCL" EXACT []
+is_a: https://w3id.org/aio/Clustering ! Clustering
 
 [Term]
 id: Historical:Bias
@@ -468,7 +545,7 @@ is_a: https://w3id.org/aio/Bias ! Bias
 [Term]
 id: Inherited:Bias
 name: Inherited Bias
-def: "Arises when applications that are built with machine learning are used to generate inputs for other machine learning algorithms. If the output is biased in any way, this bias may be inherited by systems using the output as input to learn other models." [https://doi.org/10.6028/NIST.SP.1270]
+def: "Arises when applications that are built with machine Learning are used to generate inputs for other machine Learning algorithms. If the output is biased in any way, this bias may be inherited by systems using the output as input to learn other models." [https://doi.org/10.6028/NIST.SP.1270]
 is_a: Processing:Bias ! Processing Bias
 
 [Term]
@@ -526,6 +603,12 @@ def: "Wraps arbitrary expressions as a Layer object." [https://www.tensorflow.or
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
+id: Lasso:Regression
+name: Lasso Regression
+def: "A regression analysis method that performs both variable selection and regularizationin order to enhance the prediction accuracy and interpretability of the resulting statistical model." [https://en.wikipedia.org/wiki/Lasso_(statistics)]
+is_a: Regression:Analysis ! Regression Analysis
+
+[Term]
 id: Layer:Layer
 name: Layer Layer
 def: "This is the class from which all layers inherit. A layer is a callable object that takes as input one or more tensors and that outputs one or more tensors. It involves computation, defined in the call() method, and a state (weight variables). State can be created in various places, at the convenience of the subclass implementer: in __init__(); in the optional build() method, which is invoked by the first __call__() to the layer, and supplies the shape(s) of the input(s), which may not have been known at initialization time; in the first invocation of call(), with some caveats discussed below. Users will just instantiate a layer and then treat it as a callable." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Layer]
@@ -544,10 +627,22 @@ def: "Leaky version of a Rectified Linear Unit." [https://www.tensorflow.org/api
 is_a: Activation:Layer ! Activation Layer
 
 [Term]
+id: Least-squares:Analysis
+name: Least-squares Analysis
+def: "A standard approach in regression analysis to approximate the solution of overdetermined systems(sets of equations in which there are more equations than unknowns) by minimizing the sum of the squares of the residuals (a residual being the difference between an observed value and the fitted value provided by a model) made in the results of each individual equation." [https://en.wikipedia.org/wiki/Least_squares]
+is_a: Regression:Analysis ! Regression Analysis
+
+[Term]
 id: Linear:Function
 name: Linear Function
 def: "A linear function has the form f(x) = a + bx." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/linear]
 is_a: https://w3id.org/aio/Function
+
+[Term]
+id: Linear:Regression
+name: Linear Regression
+def: "A linear approach for modelling the relationship between a scalar response and one or more explanatory variables (also known as dependent and independent variables)." [https://en.wikipedia.org/wiki/Linear_regression]
+is_a: Regression:Analysis ! Regression Analysis
 
 [Term]
 id: Linking:Bias
@@ -572,6 +667,24 @@ id: LocallyConnected2D:Layer
 name: LocallyConnected2D Layer
 def: "Locally-connected layer for 2D inputs. The LocallyConnected2D layer works similarly to the Conv2D layer, except that weights are unshared, that is, a different set of filters is applied at each different patch of the input." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/LocallyConnected2D]
 is_a: Locally-connected:Layer ! Locally-connected Layer
+
+[Term]
+id: Logistic:Regression
+name: Logistic Regression
+def: "A statistical model that models the probability of an event taking place by having the log-odds for the event be a linear combination of one or more independent variables." [https://en.wikipedia.org/wiki/Logistic_regression]
+is_a: Regression:Analysis ! Regression Analysis
+
+[Term]
+id: Machine:Learning
+name: Machine Learning
+def: "A field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks." [https://en.wikipedia.org/wiki/Machine_learning]
+is_a: https://w3id.org/aio/Method ! Method
+
+[Term]
+id: Manifold:Learning
+name: Manifold Learning
+def: "Methods based on the assumption that one's observed data lie on a low-dimensional manifold embedded in a higher-dimensional space." [https://arxiv.org/abs/2011.01307]
+is_a: Dimensionality:Reduction ! Dimensionality Reduction
 
 [Term]
 id: Masking:Layer
@@ -619,6 +732,13 @@ def: "A layer used to merge a list of inputs." [https://www.tutorialspoint.com/k
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
+id: Metric:Learning
+name: Metric Learning
+def: "Methods which can learn a representation function that maps objects into an embedded space." [https://paperswithcode.com/task/metric-learning]
+synonym: "Distance Metric Learning" EXACT []
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
+
+[Term]
 id: Minimum:Layer
 name: Minimum Layer
 def: "Layer that computes the minimum (element-wise) a list of inputs. It takes as input a list of tensors, all of the same shape, and returns a single tensor (also of the same shape)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Minimum]
@@ -629,6 +749,26 @@ id: MultiHeadAttention:Layer
 name: MultiHeadAttention Layer
 def: "MultiHeadAttention layer. This is an implementation of multi-headed attention as described in the paper \"Attention is all you Need\" (Vaswani et al., 2017). If query, key, value are the same, then this is self-attention. Each timestep in query attends to the corresponding sequence in key, and returns a fixed-width vector.This layer first projects query, key and value. These are (effectively) a list of tensors of length num_attention_heads, where the corresponding shapes are (batch_size, <query dimensions>, key_dim), (batch_size, <key/value dimensions>, key_dim), (batch_size, <key/value dimensions>, value_dim).Then, the query and key tensors are dot-producted and scaled. These are softmaxed to obtain attention probabilities. The value tensors are then interpolated by these probabilities, then concatenated back to a single tensor. Finally, the result tensor with the last dimension as value_dim can take an linear projection and return. When using MultiHeadAttention inside a custom Layer, the custom Layer must implement build() and call MultiHeadAttention's _build_from_signature(). This enables weights to be restored correctly when the model is loaded." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/MultiHeadAttention]
 is_a: Attention:Layer ! Attention Layer
+
+[Term]
+id: Multiclass:Classification
+name: Multiclass Classification
+def: "Methods that lassify instances into one of three or more classes (classifying instances into one of two classes is called binary classification)." [https://en.wikipedia.org/wiki/Multiclass_classification]
+synonym: "Multinomial Classification" EXACT []
+is_a: https://w3id.org/aio/Classification ! Classification
+
+[Term]
+id: Multidimensional:Scaling
+name: Multidimensional Scaling
+def: "A method that translates information about the pairwise distances among a set of objects or individuals into a configuration of points mapped into an abstract Cartesian space." [https://en.wikipedia.org/wiki/Multidimensional_scaling]
+synonym: "MDS" EXACT []
+is_a: Dimensionality:Reduction ! Dimensionality Reduction
+
+[Term]
+id: Multimodal:Learning
+name: Multimodal Learning
+def: "Methods which can represent the joint representations of different modalities." []
+is_a: Machine:Learning ! Machine Learning
 
 [Term]
 id: Multiply:Layer
@@ -659,6 +799,13 @@ id: Normalization:Layer
 name: Normalization Layer
 def: "A preprocessing layer which normalizes continuous features." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Normalization]
 is_a: https://w3id.org/aio/Numerical_Features_Preprocessing_Layer ! Numerical Features Preprocessing Layer
+
+[Term]
+id: One-shot:Learning
+name: One-shot Learning
+def: "A method which aims to classify objects from one, or only a few, examples." [https://en.wikipedia.org/wiki/One-shot_learning]
+synonym: "OSL" EXACT []
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 
 [Term]
 id: Output:Layer
@@ -720,6 +867,12 @@ id: RNN:Layer
 name: RNN Layer
 def: "Base class for recurrent layers." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/RNN]
 is_a: Recurrent:Layer ! Recurrent Layer
+
+[Term]
+id: Random:Forest
+name: Random Forest
+def: "An ensemble learning method for classification, regression and other tasks that operates by constructing a multitude of decision trees at training time." [https://en.wikipedia.org/wiki/Random_forest]
+is_a: Ensemble:Learning ! Ensemble Learning
 
 [Term]
 id: RandomBrightness:Layer
@@ -798,14 +951,28 @@ is_a: Activation:Layer ! Activation Layer
 [Term]
 id: Recurrent:Layer
 name: Recurrent Layer
-def: "A layer of an RNB, composed of recurrent units and with the number of which is the hidden size of the layer." [https://docs.nvidia.com/deeplearning/performance/dl-performance-recurrent/index.html#recurrent-layer]
+def: "A layer of an RNB, composed of recurrent units and with the number of which is the hidden size of the layer." [https://docs.nvidia.com/deepLearning/performance/dl-performance-recurrent/index.html#recurrent-layer]
 is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Regression:Analysis
+name: Regression Analysis
+def: "A set of statistical processes for estimating the relationships between a dependent variable (often called the 'outcome' or 'response' variable, or a 'label' in machine learning parlance) and one or more independent variables (often called 'predictors', 'covariates', 'explanatory variables' or 'features')." [https://en.wikipedia.org/wiki/Regression_analysis]
+synonym: "Regression analysis" EXACT []
+synonym: "Regression model" EXACT []
+is_a: Supervised:Learning ! Supervised Learning
 
 [Term]
 id: Regularization:Layer
 name: Regularization Layer
 def: "Regularizers allow you to apply penalties on layer parameters or layer activity during optimization. These penalties are summed into the loss function that the network optimizes. Regularization penalties are applied on a per-layer basis." [https://keras.io/api/layers/regularizers/]
 is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: Reinforcement:Learning
+name: Reinforcement Learning
+def: "Methods that do not need labelled input/output pairs be presented, nor needing sub-optimal actions to be explicitly corrected. Instead they focus on finding a balance between exploration (of uncharted territory) and exploitation (of current knowledge)." [https://en.wikipedia.org/wiki/Reinforcement_learning]
+is_a: Machine:Learning ! Machine Learning
 
 [Term]
 id: RepeatVector:Layer
@@ -818,6 +985,13 @@ id: Representation:Bias
 name: Representation Bias
 def: "Arises due to non-random sampling of subgroups, causing trends estimated for one population to not be generalizable to data collected from a new population." [https://doi.org/10.6028/NIST.SP.1270]
 is_a: https://w3id.org/aio/Selection_And_Sampling_Bias ! Selection And Sampling Bias
+
+[Term]
+id: Representation:Learning
+name: Representation Learning
+def: "Methods that allow a system to discover the representations required for feature detection or classification from raw data." [https://en.wikipedia.org/wiki/Feature_learning]
+synonym: "Feature Learning" EXACT []
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 
 [Term]
 id: Rescaling:Layer
@@ -844,12 +1018,24 @@ def: "A preprocessing layer which resizes images. This layer resizes an image in
 is_a: https://w3id.org/aio/Image_Preprocessing_Layer ! Image Preprocessing Layer
 
 [Term]
+id: Ridge:Regression
+name: Ridge Regression
+def: "A method of estimating the coefficients of multiple-regression models in scenarios where the independent variables are highly correlated.[1] It has been used in many fields including econometrics, chemistry, and engineering." [https://en.wikipedia.org/wiki/Ridge_regression]
+is_a: Regression:Analysis ! Regression Analysis
+
+[Term]
 id: SeLu:Function
 name: SELU Function
 def: "The SELU activation function multiplies scale (> 1) with the output of the ELU function to ensure a slope larger than one for positive inputs." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/selu]
 synonym: "Scaled Exponential Linear Unit" EXACT []
 synonym: "SELU" RELATED []
 is_a: https://w3id.org/aio/Function
+
+[Term]
+id: Self-supervised:Learning
+name: Self-supervised Learning
+def: "Regarded as an intermediate form between supervised and unsupervised learning." [https://en.wikipedia.org/wiki/Self-supervised_learning]
+is_a: Machine:Learning ! Machine Learning
 
 [Term]
 id: SeparableConvolution1D:Layer
@@ -915,21 +1101,35 @@ def: "softsign(x) = x / (abs(x) + 1)" [https://www.tensorflow.org/api_docs/pytho
 is_a: https://w3id.org/aio/Function
 
 [Term]
+id: Sparse:Learning
+name: Sparse Learning
+def: "Methods which aim to find sparse representations of the input data in the form of a linear combination of basic elements as well as those basic elements themselves." [https://en.wikipedia.org/wiki/Sparse_dictionary_learning]
+synonym: "Sparse coding" EXACT []
+synonym: "Sparse dictionary Learning" EXACT []
+is_a: Representation:Learning ! Representation Learning
+
+[Term]
+id: Spatial:Regression
+name: Spatial Regression
+def: "Regression method used to model spatial relationships." [https://gisgeography.com/spatial-regression-models-arcgis/]
+is_a: Regression:Analysis ! Regression Analysis
+
+[Term]
 id: SpatialDropout1D:Layer
 name: SpatialDropout1D Layer
-def: "Spatial 1D version of Dropout. This version performs the same function as Dropout, however, it drops entire 1D feature maps instead of individual elements. If adjacent frames within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective learning rate decrease. In this case, SpatialDropout1D will help promote independence between feature maps and should be used instead." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/SpatialDropout1D]
+def: "Spatial 1D version of Dropout. This version performs the same function as Dropout, however, it drops entire 1D feature maps instead of individual elements. If adjacent frames within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective Learning rate decrease. In this case, SpatialDropout1D will help promote independence between feature maps and should be used instead." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/SpatialDropout1D]
 is_a: Regularization:Layer ! Regularization Layer
 
 [Term]
 id: SpatialDropout2D:Layer
 name: SpatialDropout2D Layer
-def: "Spatial 2D version of Dropout. This version performs the same function as Dropout, however, it drops entire 2D feature maps instead of individual elements. If adjacent pixels within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective learning rate decrease. In this case, SpatialDropout2D will help promote independence between feature maps and should be used instead.a" [https://www.tensorflow.org/api_docs/python/tf/keras/layers/SpatialDropout2D]
+def: "Spatial 2D version of Dropout. This version performs the same function as Dropout, however, it drops entire 2D feature maps instead of individual elements. If adjacent pixels within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective Learning rate decrease. In this case, SpatialDropout2D will help promote independence between feature maps and should be used instead.a" [https://www.tensorflow.org/api_docs/python/tf/keras/layers/SpatialDropout2D]
 is_a: Regularization:Layer ! Regularization Layer
 
 [Term]
 id: SpatialDropout3D:Layer
 name: SpatialDropout3D Layer
-def: "Spatial 3D version of Dropout. This version performs the same function as Dropout, however, it drops entire 3D feature maps instead of individual elements. If adjacent voxels within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective learning rate decrease. In this case, SpatialDropout3D will help promote independence between feature maps and should be used instead." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/SpatialDropout3D]
+def: "Spatial 3D version of Dropout. This version performs the same function as Dropout, however, it drops entire 3D feature maps instead of individual elements. If adjacent voxels within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective Learning rate decrease. In this case, SpatialDropout3D will help promote independence between feature maps and should be used instead." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/SpatialDropout3D]
 is_a: Regularization:Layer ! Regularization Layer
 
 [Term]
@@ -949,6 +1149,36 @@ id: Subtract:Layer
 name: Subtract Layer
 def: "Layer that subtracts two inputs. It takes as input a list of tensors of size 2, both of the same shape, and returns a single tensor, (inputs[0] - inputs[1]), also of the same shape." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Subtract]
 is_a: Merging:Layer ! Merging Layer
+
+[Term]
+id: Supervised:Biclustering
+name: Supervised Biclustering
+def: "Methods that simultaneously cluster the rows and columns of a labeled matrix, also taking into account the data label contributions to cluster coherence." [https://en.wikipedia.org/wiki/Biclustering]
+synonym: "Supervised Block Clustering" EXACT []
+synonym: "Supervised Co-clustering" EXACT []
+synonym: "Supervised Joint Clustering" EXACT []
+synonym: "Supervised Two-mode Clustering" EXACT []
+synonym: "Supervised Two-way Clustering" EXACT []
+is_a: https://w3id.org/aio/Biclustering ! Biclustering
+
+[Term]
+id: Supervised:Clustering
+name: Supervised Clustering
+def: "Methods that group a set of labeled objects in such a way that objects in the same group (called a cluster) are more similarly labeled (in some sense) relative to those in other groups (clusters)." [https://en.wikipedia.org/wiki/Cluster_analysis]
+synonym: "Cluster analysis" EXACT []
+is_a: https://w3id.org/aio/Clustering ! Clustering
+
+[Term]
+id: Supervised:Learning
+name: Supervised Learning
+def: "Methods that can learn a function that maps an input to an output based on example input-output pairs." [https://en.wikipedia.org/wiki/Supervised_learning]
+is_a: Machine:Learning ! Machine Learning
+
+[Term]
+id: Survival:Analysis
+name: Survival Analysis
+def: "Methods for nalyzing the expected duration of time until one event occurs, such as death in biological organisms and failure in mechanical systems." [https://en.wikipedia.org/wiki/Survival_analysis]
+is_a: Machine:Learning ! Machine Learning
 
 [Term]
 id: Survivorship:Bias
@@ -1001,6 +1231,12 @@ def: "This wrapper allows to apply a layer to every temporal slice of an input. 
 is_a: Recurrent:Layer ! Recurrent Layer
 
 [Term]
+id: Transfer:Learning
+name: Transfer Learning
+def: "Methods which can reuse or transfer information from previously learned tasks for the Learning of new tasks." [https://en.wikipedia.org/wiki/Transfer_learning]
+is_a: Machine:Learning ! Machine Learning
+
+[Term]
 id: Uncertainty:Bias
 name: Uncertainty Bias
 def: "Arises when predictive algorithms favor groups that are better represented in the training data, since there will be less uncertainty associated with those predictions." [https://doi.org/10.6028/NIST.SP.1270]
@@ -1011,6 +1247,30 @@ id: UnitNormalization:Layer
 name: UnitNormalization Layer
 def: "Unit normalization layer. Normalize a batch of inputs so that each input in the batch has a L2 norm equal to 1 (across the axes specified in axis)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/UnitNormalization]
 is_a: Recurrent:Layer ! Recurrent Layer
+
+[Term]
+id: Unsupervised:Biclustering
+name: Unsupervised Biclustering
+def: "Methods that simultaneously cluster the rows and columns of an unlabeled input matrix." [https://en.wikipedia.org/wiki/Biclustering]
+synonym: "Block Clustering" EXACT []
+synonym: "Co-clustering" EXACT []
+synonym: "Joint Clustering" EXACT []
+synonym: "Two-mode Clustering" EXACT []
+synonym: "Two-way Clustering" EXACT []
+is_a: https://w3id.org/aio/Biclustering ! Biclustering
+
+[Term]
+id: Unsupervised:Clustering
+name: Unsupervised Clustering
+def: "Methods that group a set of objects in such a way that objects without labels in the same group (called a cluster) are more similar (in some sense) to each other than to those in other groups (clusters)." [https://en.wikipedia.org/wiki/Cluster_analysis]
+synonym: "Cluster analysis" EXACT []
+is_a: https://w3id.org/aio/Clustering ! Clustering
+
+[Term]
+id: Unsupervised:Learning
+name: Unsupervised Learning
+def: "Algorithms that learns patterns from unlabeled data." [https://en.wikipedia.org/wiki/Unsupervised_learning]
+is_a: Machine:Learning ! Machine Learning
 
 [Term]
 id: UpSampling1D:Layer
@@ -1055,6 +1315,13 @@ def: "Abstract wrapper base class. Wrappers take another layer and augment it in
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
+id: Zero-shot:Learning
+name: Zero-shot Learning
+def: "Methods where at test time, a learner observes samples from classes, which were not observed during training, and needs to predict the class that they belong to." [https://en.wikipedia.org/wiki/Zero-shot_learning]
+synonym: "ZSL" EXACT []
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
+
+[Term]
 id: ZeroPadding1D:Layer
 name: ZeroPadding1D Layer
 def: "Zero-padding layer for 1D input (e.g. temporal sequence)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/ZeroPadding1D]
@@ -1075,7 +1342,7 @@ is_a: Reshaping:Layer ! Reshaping Layer
 [Term]
 id: eLu:Function
 name: ELU Function
-def: "The exponential linear unit (ELU) with alpha > 0 is: x if x > 0 and alpha * (exp(x) - 1) if x < 0 The ELU hyperparameter alpha controls the value to which an ELU saturates for negative net inputs. ELUs diminish the vanishing gradient effect. ELUs have negative values which pushes the mean of the activations closer to zero. Mean activations that are closer to zero enable faster learning as they bring the gradient closer to the natural gradient. ELUs saturate to a negative value when the argument gets smaller. Saturation means a small derivative which decreases the variation and the information that is propagated to the next layer." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/elu]
+def: "The exponential linear unit (ELU) with alpha > 0 is: x if x > 0 and alpha * (exp(x) - 1) if x < 0 The ELU hyperparameter alpha controls the value to which an ELU saturates for negative net inputs. ELUs diminish the vanishing gradient effect. ELUs have negative values which pushes the mean of the activations closer to zero. Mean activations that are closer to zero enable faster Learning as they bring the gradient closer to the natural gradient. ELUs saturate to a negative value when the argument gets smaller. Saturation means a small derivative which decreases the variation and the information that is propagated to the next layer." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/elu]
 synonym: "ELU" RELATED []
 synonym: "Exponential Linear Unit" EXACT []
 is_a: https://w3id.org/aio/Function
@@ -1083,7 +1350,7 @@ is_a: https://w3id.org/aio/Function
 [Term]
 id: https://w3id.org/aio/AE
 name: Auto Encoder Network
-def: "An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning). The encoding is validated and refined by attempting to regenerate the input from the encoding. The autoencoder learns a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore insignificant data (“noise”). (https://en.wikipedia.org/wiki/Autoencoder)" [https://en.wikipedia.org/wiki/Autoencoder]
+def: "An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised Learning). The encoding is validated and refined by attempting to regenerate the input from the encoding. The autoencoder learns a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore insignificant data (“noise”). (https://en.wikipedia.org/wiki/Autoencoder)" [https://en.wikipedia.org/wiki/Autoencoder]
 comment: Input, Hidden, Matched Output-Input
 synonym: "AE" EXACT []
 is_a: https://w3id.org/aio/UPN ! Unsupervised Pretrained Network
@@ -1091,7 +1358,7 @@ is_a: https://w3id.org/aio/UPN ! Unsupervised Pretrained Network
 [Term]
 id: https://w3id.org/aio/ANN
 name: Artificial Neural Network
-def: "An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a biological brain, can transmit a signal to other neurons. An artificial neuron receives a signal then processes it and can signal neurons connected to it. The \"signal\" at a connection is a real number, and the output of each neuron is computed by some non-linear function of the sum of its inputs. The connections are called edges. Neurons and edges typically have a weight that adjusts as learning proceeds. The weight increases or decreases the strength of the signal at a connection. Neurons may have a threshold such that a signal is sent only if the aggregate signal crosses that threshold. Typically, neurons are aggregated into layers. Different layers may perform different transformations on their inputs. Signals travel from the first layer (the input layer), to the last layer (the output layer), possibly after traversing the layers multiple times." [https://en.wikipedia.org/wiki/Artificial_neural_network]
+def: "An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a biological brain, can transmit a signal to other neurons. An artificial neuron receives a signal then processes it and can signal neurons connected to it. The \"signal\" at a connection is a real number, and the output of each neuron is computed by some non-linear function of the sum of its inputs. The connections are called edges. Neurons and edges typically have a weight that adjusts as Learning proceeds. The weight increases or decreases the strength of the signal at a connection. Neurons may have a threshold such that a signal is sent only if the aggregate signal crosses that threshold. Typically, neurons are aggregated into layers. Different layers may perform different transformations on their inputs. Signals travel from the first layer (the input layer), to the last layer (the output layer), possibly after traversing the layers multiple times." [https://en.wikipedia.org/wiki/Artificial_neural_network]
 synonym: "ANN" EXACT []
 synonym: "NN" EXACT []
 is_a: https://w3id.org/aio/Network ! Network
@@ -1107,6 +1374,12 @@ id: https://w3id.org/aio/Annotator_Reporting_Bias
 name: Annotator Reporting Bias
 def: "When users rely on automation as a heuristic replacement for their own information seeking and processing. A form of individual bias but often discussed as a group bias, or the larger effects on natural language processing models." [https://doi.org/10.6028/NIST.SP.1270]
 is_a: Individual:Bias ! Individual Bias
+
+[Term]
+id: https://w3id.org/aio/Association_Rule_Learning
+name: Association Rule Learning
+def: "A rule-based machine learning method for discovering interesting relations between variables in large databases. It is intended to identify strong rules discovered in databases using some measures of interestingness." [https://en.wikipedia.org/wiki/Association_rule_learning]
+is_a: Supervised:Learning ! Supervised Learning
 
 [Term]
 id: https://w3id.org/aio/Automation_Complacency_Bias
@@ -1125,7 +1398,7 @@ is_a: Individual:Bias ! Individual Bias
 [Term]
 id: https://w3id.org/aio/BM
 name: Boltzmann Machine Network
-def: "A Boltzmann machine is a type of stochastic recurrent neural network. It is a Markov random field. It was translated from statistical physics for use in cognitive science. The Boltzmann machine is based on a stochastic spin-glass model with an external field, i.e., a Sherrington–Kirkpatrick model that is a stochastic Ising Model[2] and applied to machine learning." [https://en.wikipedia.org/wiki/Boltzmann_machine]
+def: "A Boltzmann machine is a type of stochastic recurrent neural network. It is a Markov random field. It was translated from statistical physics for use in cognitive science. The Boltzmann machine is based on a stochastic spin-glass model with an external field, i.e., a Sherrington–Kirkpatrick model that is a stochastic Ising Model[2] and applied to machine Learning." [https://en.wikipedia.org/wiki/Boltzmann_machine]
 comment: Backfed Input, Probabilistic Hidden
 synonym: "BM" EXACT []
 synonym: "Sherrington–Kirkpatrick model with external field" EXACT []
@@ -1139,10 +1412,45 @@ name: Bias
 def: "Systematic error introduced into sampling or testing by selecting or encouraging one outcome or answer over others." [https://www.merriam-webster.com/dictionary/bias]
 
 [Term]
+id: https://w3id.org/aio/Biclustering
+name: Biclustering
+def: "Methods that simultaneously cluster the rows and columns of a matrix." [https://en.wikipedia.org/wiki/Biclustering]
+synonym: "Block Clustering" EXACT []
+synonym: "Co-clustering" EXACT []
+synonym: "Joint Clustering" EXACT []
+synonym: "Two-mode Clustering" EXACT []
+synonym: "Two-way Clustering" EXACT []
+is_a: Machine:Learning ! Machine Learning
+
+[Term]
 id: https://w3id.org/aio/Categorical_Features_Preprocessing_Layer
 name: Categorical Features Preprocessing Layer
 def: "A layer that performs categorical data preprocessing operations." [https://keras.io/guides/preprocessing_layers/]
 is_a: https://w3id.org/aio/Layer ! Layer
+
+[Term]
+id: https://w3id.org/aio/Causal_Graphical_Model
+name: Causal Graphical Model
+def: "Probabilistic graphical models used to encode assumptions about the data-generating process." [https://en.wikipedia.org/wiki/Causal_graph]
+synonym: "Casaul Bayesian Network" EXACT []
+synonym: "Casaul Graph" EXACT []
+synonym: "DAG" EXACT []
+synonym: "Directed Acyclic Graph" EXACT []
+synonym: "Path Diagram" EXACT []
+is_a: https://w3id.org/aio/Probabilistic_Graphical_Model ! Probabilistic Graphical Model
+
+[Term]
+id: https://w3id.org/aio/Classification
+name: Classification
+def: "Methods that distinguishand distribute kinds of \"things\" into different groups." [https://en.wikipedia.org/wiki/Classification_(general_theory)]
+is_a: Supervised:Learning ! Supervised Learning
+
+[Term]
+id: https://w3id.org/aio/Clustering
+name: Clustering
+def: "Methods that group a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense) to each other than to those in other groups (clusters)." [https://en.wikipedia.org/wiki/Cluster_analysis]
+synonym: "Cluster analysis" EXACT []
+is_a: Machine:Learning ! Machine Learning
 
 [Term]
 id: https://w3id.org/aio/Concept_Drift_Bias
@@ -1168,7 +1476,7 @@ is_a: https://w3id.org/aio/AE ! Auto Encoder Network
 [Term]
 id: https://w3id.org/aio/DBN
 name: Deep Belief Network
-def: "In machine learning, a deep belief network (DBN) is a generative graphical model, or alternatively a class of deep neural network, composed of multiple layers of latent variables (\"hidden units\"), with connections between the layers but not between units within each layer. When trained on a set of examples without supervision, a DBN can learn to probabilistically reconstruct its inputs. The layers then act as feature detectors. After this learning step, a DBN can be further trained with supervision to perform classification. DBNs can be viewed as a composition of simple, unsupervised networks such as restricted Boltzmann machines (RBMs) or autoencoders, where each sub-network's hidden layer serves as the visible layer for the next. An RBM is an undirected, generative energy-based model with a \"visible\" input layer and a hidden layer and connections between but not within layers. This composition leads to a fast, layer-by-layer unsupervised training procedure, where contrastive divergence is applied to each sub-network in turn, starting from the \"lowest\" pair of layers (the lowest visible layer is a training set). The observation that DBNs can be trained greedily, one layer at a time, led to one of the first effective deep learning algorithms. (https://en.wikipedia.org/wiki/Deep_belief_network)" [https://en.wikipedia.org/wiki/Deep_belief_network]
+def: "In machine Learning, a deep belief network (DBN) is a generative graphical model, or alternatively a class of deep neural network, composed of multiple layers of latent variables (\"hidden units\"), with connections between the layers but not between units within each layer. When trained on a set of examples without supervision, a DBN can learn to probabilistically reconstruct its inputs. The layers then act as feature detectors. After this Learning step, a DBN can be further trained with supervision to perform classification. DBNs can be viewed as a composition of simple, unsupervised networks such as restricted Boltzmann machines (RBMs) or autoencoders, where each sub-network's hidden layer serves as the visible layer for the next. An RBM is an undirected, generative energy-based model with a \"visible\" input layer and a hidden layer and connections between but not within layers. This composition leads to a fast, layer-by-layer unsupervised training procedure, where contrastive divergence is applied to each sub-network in turn, starting from the \"lowest\" pair of layers (the lowest visible layer is a training set). The observation that DBNs can be trained greedily, one layer at a time, led to one of the first effective deep Learning algorithms. (https://en.wikipedia.org/wiki/Deep_belief_network)" [https://en.wikipedia.org/wiki/Deep_belief_network]
 comment: Backfed Input, Probabilistic Hidden, Hidden, Matched Output-Input
 synonym: "DBN" EXACT []
 is_a: https://w3id.org/aio/UPN ! Unsupervised Pretrained Network
@@ -1215,7 +1523,7 @@ is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 [Term]
 id: https://w3id.org/aio/DNN
 name: Deep Neural Network
-def: "A deep neural network (DNN) is an artificial neural network (ANN) with multiple layers between the input and output layers.[13][2] There are different types of neural networks but they always consist of the same components: neurons, synapses, weights, biases, and functions. (https://en.wikipedia.org/wiki/Deep_learning#:~:text=A%20deep%20neural%20network%20(DNN,weights%2C%20biases%2C%20and%20functions.)" []
+def: "A deep neural network (DNN) is an artificial neural network (ANN) with multiple layers between the input and output layers.[13][2] There are different types of neural networks but they always consist of the same components: neurons, synapses, weights, biases, and functions. (https://en.wikipedia.org/wiki/Deep_Learning#:~:text=A%20deep%20neural%20network%20(DNN,weights%2C%20biases%2C%20and%20functions.)" []
 synonym: "DNN" EXACT []
 is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
 
@@ -1233,6 +1541,19 @@ def: "Arises from the addition of synthetic or redundant data samples to a datas
 is_a: https://w3id.org/aio/Selection_And_Sampling_Bias ! Selection And Sampling Bias
 
 [Term]
+id: https://w3id.org/aio/Deep_Active_Learning
+name: Deep Active Learning
+def: "The combination of deep learning and active learning, where active learning attempts to maximize a model’s performance gain while annotating the fewest samples possible." [https://arxiv.org/pdf/2009.00236.pdf]
+synonym: "DeepAL" EXACT []
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
+
+[Term]
+id: https://w3id.org/aio/Deep_Transfer_Learning
+name: Deep Transfer Learning
+def: "Deep transfer learning methods relax the hypothesis that the training data must be independent and identically distributed (i.i.d.) with the test data, which motivates us to use transfer learning to solve the problem of insufficient training data." [https://arxiv.org/abs/1808.01974]
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
+
+[Term]
 id: https://w3id.org/aio/Dunning-Kruger_Effect_Bias
 name: Dunning-Kruger Effect Bias
 def: "The tendency of people with low ability in a given area or task to overestimate their self-assessed ability. Typically measured by comparing self-assessment with objective performance, often called subjective ability and objective ability, respectively." [https://doi.org/10.6028/NIST.SP.1270]
@@ -1242,7 +1563,7 @@ is_a: Cognitive:Bias ! Cognitive Bias
 [Term]
 id: https://w3id.org/aio/ELM
 name: Extreme Learning Machine
-def: "Extreme learning machines are feedforward neural networks for classification, regression, clustering, sparse approximation, compression and feature learning with a single layer or multiple layers of hidden nodes, where the parameters of hidden nodes (not just the weights connecting inputs to hidden nodes) need not be tuned. These hidden nodes can be randomly assigned and never updated (i.e. they are random projection but with nonlinear transforms), or can be inherited from their ancestors without being changed. In most cases, the output weights of hidden nodes are usually learned in a single step, which essentially amounts to learning a linear model. (https://en.wikipedia.org/wiki/Extreme_learning_machine)" [https://en.wikipedia.org/wiki/Extreme_learning_machine]
+def: "Extreme Learning machines are feedforward neural networks for classification, regression, clustering, sparse approximation, compression and feature Learning with a single layer or multiple layers of hidden nodes, where the parameters of hidden nodes (not just the weights connecting inputs to hidden nodes) need not be tuned. These hidden nodes can be randomly assigned and never updated (i.e. they are random projection but with nonlinear transforms), or can be inherited from their ancestors without being changed. In most cases, the output weights of hidden nodes are usually learned in a single step, which essentially amounts to Learning a linear model. (https://en.wikipedia.org/wiki/Extreme_Learning_machine)" [https://en.wikipedia.org/wiki/Extreme_Learning_machine]
 comment: Input, Hidden, Output
 synonym: "ELM" EXACT []
 is_a: https://w3id.org/aio/FBN ! Feedback Network
@@ -1284,9 +1605,16 @@ def: "Effects that may occur when an algorithm learns from user behavior and fee
 is_a: https://w3id.org/aio/Use_And_Interpretation_Bias ! Use And Interpretation Bias
 
 [Term]
+id: https://w3id.org/aio/Fixed_Effects_Model
+name: Fixed Effects Model
+def: "A statistical model in which the model parameters are fixed or non-random quantities." [https://en.wikipedia.org/wiki/Fixed_effects_model]
+synonym: "FEM" EXACT []
+is_a: Regression:Analysis ! Regression Analysis
+
+[Term]
 id: https://w3id.org/aio/GAN
 name: Generative Adversarial Network
-def: "A generative adversarial network (GAN) is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in 2014. Two neural networks contest with each other in a game (in the form of a zero-sum game, where one agent's gain is another agent's loss). Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics. Though originally proposed as a form of generative model for unsupervised learning, GANs have also proven useful for semi-supervised learning, fully supervised learning,[ and reinforcement learning. The core idea of a GAN is based on the \"indirect\" training through the discriminator,[clarification needed] which itself is also being updated dynamically. This basically means that the generator is not trained to minimize the distance to a specific image, but rather to fool the discriminator. This enables the model to learn in an unsupervised manner." [https://en.wikipedia.org/wiki/Generative_adversarial_network]
+def: "A generative adversarial network (GAN) is a class of machine Learning frameworks designed by Ian Goodfellow and his colleagues in 2014. Two neural networks contest with each other in a game (in the form of a zero-sum game, where one agent's gain is another agent's loss). Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics. Though originally proposed as a form of generative model for unsupervised Learning, GANs have also proven useful for semi-supervised Learning, fully supervised Learning,[ and reinforcement Learning. The core idea of a GAN is based on the \"indirect\" training through the discriminator,[clarification needed] which itself is also being updated dynamically. This basically means that the generator is not trained to minimize the distance to a specific image, but rather to fool the discriminator. This enables the model to learn in an unsupervised manner." [https://en.wikipedia.org/wiki/Generative_adversarial_network]
 comment: Backfed Input, Hidden, Matched Output-Input, Hidden, Matched Output-Input
 synonym: "GAN" EXACT []
 is_a: https://w3id.org/aio/UPN ! Unsupervised Pretrained Network
@@ -1302,7 +1630,7 @@ is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 [Term]
 id: https://w3id.org/aio/GPCN
 name: Graph Convolutional Policy Network
-def: "Graph Convolutional Policy Network (GCPN), a general graph convolutional network based model for goal-directed graph generation through reinforcement learning. The model is trained to optimize domain-specific rewards and adversarial loss through policy gradient, and acts in an environment that incorporates domain-specific rules." [https://arxiv.org/abs/1806.02473]
+def: "Graph Convolutional Policy Network (GCPN), a general graph convolutional network based model for goal-directed graph generation through reinforcement Learning. The model is trained to optimize domain-specific rewards and adversarial loss through policy gradient, and acts in an environment that incorporates domain-specific rules." [https://arxiv.org/abs/1806.02473]
 comment: Input, Hidden, Hidden, Policy, Output
 synonym: "GPCN" EXACT []
 is_a: https://w3id.org/aio/GCN ! Graph Convolutional Network
@@ -1314,6 +1642,20 @@ def: "Gated recurrent units (GRUs) are a gating mechanism in recurrent neural ne
 comment: Input, Memory Cell, Output
 synonym: "GRU" EXACT []
 is_a: https://w3id.org/aio/LSTM ! Long Short Term Memory
+
+[Term]
+id: https://w3id.org/aio/Generalized_Few-shot_Learning
+name: Generalized Few-shot Learning
+def: "Methods that can learn novel classes from only few samples per class, preventing catastrophic forgetting of base classes, and classifier calibration across novel and base classes." [https://paperswithcode.com/paper/generalized-and-incremental-few-shot-learning/review/]
+synonym: "GFSL" EXACT []
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
+
+[Term]
+id: https://w3id.org/aio/Generalized_Linear_Model
+name: Generalized Linear Model
+def: "This model generalizes linear regression by allowing the linear model to be related to the response variable via a link function and by allowing the magnitude of the variance of each measurement to be a function of its predicted value." [https://en.wikipedia.org/wiki/Generalized_linear_model]
+synonym: "GLM" EXACT []
+is_a: Regression:Analysis ! Regression Analysis
 
 [Term]
 id: https://w3id.org/aio/HN
@@ -1350,9 +1692,32 @@ def: "A layer that performs image data preprocessing operations." [https://keras
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
+id: https://w3id.org/aio/Incremenetal_Few-shot_Learning
+name: Incremenetal Few-shot Learning
+def: "Methods that train a network on a base set of classes and then is presented several novel classes, each with only a few labeled examples." [https://arxiv.org/abs/1810.07218]
+synonym: "IFSL" EXACT []
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
+
+[Term]
+id: https://w3id.org/aio/K-nearest_Neighbor_Classification_Algorithm
+name: K-nearest Neighbor Classification Algorithm
+def: "An algorithm to classify objects by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors" [https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm]
+synonym: "K-NN" EXACT []
+synonym: "KNN" EXACT []
+is_a: https://w3id.org/aio/Classification;AIO:Clustering
+
+[Term]
+id: https://w3id.org/aio/K-nearest_Neighbor_Regression_Algorithm
+name: K-nearest Neighbor Regression Algorithm
+def: "An algorithm to assign the average of the values of k nearest neighbors to objects." [https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm]
+synonym: "K-NN" EXACT []
+synonym: "KNN" EXACT []
+is_a: Regression:Analysis ! Regression Analysis
+
+[Term]
 id: https://w3id.org/aio/KN
 name: Kohonen Network
-def: "A self-organizing map (SOM) or self-organizing feature map (SOFM) is an unsupervised machine learning technique used to produce a low-dimensional (typically two-dimensional) representation of a higher dimensional data set while preserving the topological structure of the data. For example, a data set with p variables measured in n observations could be represented as clusters of observations with similar values for the variables. These clusters then could be visualized as a two-dimensional \"map\" such that observations in proximal clusters have more similar values than observations in distal clusters. This can make high-dimensional data easier to visualize and analyze. An SOM is a type of artificial neural network but is trained using competitive learning rather than the error-correction learning (e.g., backpropagation with gradient descent) used by other artificial neural networks. The SOM was introduced by the Finnish professor Teuvo Kohonen in the 1980s and therefore is sometimes called a Kohonen map or Kohonen network.[1][2] The Kohonen map or network is a computationally convenient abstraction building on biological models of neural systems from the 1970s[3] and morphogenesis models dating back to Alan Turing in the 1950s." [https://en.wikipedia.org/wiki/Self-organizing_map]
+def: "A self-organizing map (SOM) or self-organizing feature map (SOFM) is an unsupervised machine Learning technique used to produce a low-dimensional (typically two-dimensional) representation of a higher dimensional data set while preserving the topological structure of the data. For example, a data set with p variables measured in n observations could be represented as clusters of observations with similar values for the variables. These clusters then could be visualized as a two-dimensional \"map\" such that observations in proximal clusters have more similar values than observations in distal clusters. This can make high-dimensional data easier to visualize and analyze. An SOM is a type of artificial neural network but is trained using competitive Learning rather than the error-correction Learning (e.g., backpropagation with gradient descent) used by other artificial neural networks. The SOM was introduced by the Finnish professor Teuvo Kohonen in the 1980s and therefore is sometimes called a Kohonen map or Kohonen network.[1][2] The Kohonen map or network is a computationally convenient abstraction building on biological models of neural systems from the 1970s[3] and morphogenesis models dating back to Alan Turing in the 1950s." [https://en.wikipedia.org/wiki/Self-organizing_map]
 comment: Input, Hidden
 synonym: "KN" EXACT []
 synonym: "Self-Organizing Feature Map" EXACT []
@@ -1372,7 +1737,7 @@ is_a: https://w3id.org/aio/Network ! Network
 [Term]
 id: https://w3id.org/aio/LSTM
 name: Long Short Term Memory
-def: "Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections. It can process not only single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition, speech recognition and anomaly detection in network traffic or IDSs (intrusion detection systems). A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell." [https://en.wikipedia.org/wiki/Long_short-term_memory]
+def: "Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep Learning. Unlike standard feedforward neural networks, LSTM has feedback connections. It can process not only single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition, speech recognition and anomaly detection in network traffic or IDSs (intrusion detection systems). A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell." [https://en.wikipedia.org/wiki/Long_short-term_memory]
 comment: Input, Memory Cell, Output
 synonym: "LSTM" EXACT []
 is_a: https://w3id.org/aio/RecNN ! Recurrent Neural Network
@@ -1399,6 +1764,17 @@ synonym: "MP" EXACT []
 is_a: https://w3id.org/aio/Network ! Network
 
 [Term]
+id: https://w3id.org/aio/Meta-Learning
+name: Meta-Learning
+def: "Automatic learning algorithms applied to metadata about machine Learning experiments." [https://en.wikipedia.org/wiki/Meta_learning_(computer_science)]
+is_a: Machine:Learning ! Machine Learning
+
+[Term]
+id: https://w3id.org/aio/Method
+name: Method
+def: "Method parent class." []
+
+[Term]
 id: https://w3id.org/aio/Mode_Confusion_Bias
 name: Mode Confusion Bias
 def: "When modal interfaces confuse human operators, who misunderstand which mode the system is using, taking actions which are correct for a different mode but incorrect for their current situation. This is the cause of many deadly accidents, but also a source of confusion in everyday life." [https://doi.org/10.6028/NIST.SP.1270]
@@ -1411,6 +1787,12 @@ def: "The bias introduced while using the data to select a single seemingly “b
 is_a: Processing:Bias ! Processing Bias
 
 [Term]
+id: https://w3id.org/aio/Multimodal_Deep_Learning
+name: Multimodal Deep Learning
+def: "Methods which can create models that can process and link information using various modalities." [https://arxiv.org/abs/2105.11087]
+is_a: https://w3id.org/aio/DNN ! Deep Neural Network
+
+[Term]
 id: https://w3id.org/aio/NTM
 name: Neural Turing Machine Network
 def: "A Neural Turing machine (NTMs) is a recurrent neural network model. The approach was published by Alex Graves et al. in 2014. NTMs combine the fuzzy pattern matching capabilities of neural networks with the algorithmic power of programmable computers. An NTM has a neural network controller coupled to external memory resources, which it interacts with through attentional mechanisms. The memory interactions are differentiable end-to-end, making it possible to optimize them using gradient descent. An NTM with a long short-term memory (LSTM) network controller can infer simple algorithms such as copying, sorting, and associative recall from examples alone." [https://en.wikipedia.org/wiki/Neural_Turing_machine]
@@ -1418,6 +1800,13 @@ comment: Input, Hidden, Spiking Hidden, Output
 synonym: "NTM" EXACT []
 is_a: https://w3id.org/aio/DFF ! Deep FeedFoward
 is_a: https://w3id.org/aio/LSTM ! Long Short Term Memory
+
+[Term]
+id: https://w3id.org/aio/Natural_Language_Processing
+name: Natural Language Processing
+def: "A subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language, in particular how to program computers to process and analyze large amounts of natural language data." [https://en.wikipedia.org/wiki/Natural_language_processing]
+synonym: "NLP" EXACT []
+is_a: Machine:Learning ! Machine Learning
 
 [Term]
 id: https://w3id.org/aio/Network
@@ -1439,11 +1828,40 @@ is_a: https://w3id.org/aio/Layer ! Layer
 [Term]
 id: https://w3id.org/aio/P
 name: Perceptron
-def: "The perceptron is an algorithm for supervised learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class. It is a type of linear classifier, i.e. a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector. (https://en.wikipedia.org/wiki/Perceptron)" []
+def: "The perceptron is an algorithm for supervised Learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class. It is a type of linear classifier, i.e. a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector. (https://en.wikipedia.org/wiki/Perceptron)" []
 comment: Input, Output
 synonym: "Single Layer Perceptron" EXACT []
 synonym: "SLP" EXACT []
 is_a: https://w3id.org/aio/ANN ! Artificial Neural Network
+
+[Term]
+id: https://w3id.org/aio/Principal_Component_Analysis
+name: Principal Component Analysis
+def: "A method for analyzing large datasets containing a high number of dimensions/features per observation, increasing the interpretability of data while preserving the maximum amount of information, and enabling the visualization of multidimensional data." [https://en.wikipedia.org/wiki/Principal_component_analysis]
+synonym: "PCA" EXACT []
+is_a: Dimensionality:Reduction ! Dimensionality Reduction
+
+[Term]
+id: https://w3id.org/aio/Probabilistic_Graphical_Model
+name: Probabilistic Graphical Model
+def: "A probabilistic model for which a graph expresses the conditional dependence structure between random variables." [https://en.wikipedia.org/wiki/Graphical_model]
+synonym: "Graphical Model" EXACT []
+synonym: "PGM" EXACT []
+synonym: "Structure Probabilistic Model" EXACT []
+is_a: Machine:Learning ! Machine Learning
+
+[Term]
+id: https://w3id.org/aio/Probabilistic_Topic_Model
+name: Probabilistic Topic Model
+def: "Methods that use statistical methods to analyze the words in each text to discover common themes, how those themes are connected to each other, and how they change over time." [https://pyro.ai/examples/prodlda.html]
+is_a: https://w3id.org/aio/Probabilistic_Graphical_Model ! Probabilistic Graphical Model
+
+[Term]
+id: https://w3id.org/aio/Proportional_Hazards_Model
+name: Proportional Hazards Model
+def: "A surival modeling method where the unique effect of a unit increase in a covariate is multiplicative with respect to the hazard rate." [https://en.wikipedia.org/wiki/Proportional_hazards_modelProportional Hazards Model]
+is_a: Regression:Analysis ! Regression Analysis
+is_a: Survival:Analysis ! Survival Analysis
 
 [Term]
 id: https://w3id.org/aio/RBM
@@ -1462,6 +1880,13 @@ synonym: "Radial Basis Function Network" EXACT []
 synonym: "RBFN" EXACT []
 synonym: "RBN" EXACT []
 is_a: https://w3id.org/aio/DFF ! Deep FeedFoward
+
+[Term]
+id: https://w3id.org/aio/Random_Effects_Model
+name: Random Effects Model
+def: "A statistical model where the model parameters are random variables." [https://en.wikipedia.org/wiki/Random_effects_model]
+synonym: "REM" EXACT []
+is_a: Regression:Analysis ! Regression Analysis
 
 [Term]
 id: https://w3id.org/aio/Rashomon_Effect_Bias
@@ -1483,7 +1908,7 @@ is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 [Term]
 id: https://w3id.org/aio/RecuNN
 name: Recursive Neural Network
-def: "A recursive neural network is a kind of deep neural network created by applying the same set of weights recursively over a structured input, to produce a structured prediction over variable-size input structures, or a scalar prediction on it, by traversing a given structure in topological order. Recursive neural networks, sometimes abbreviated as RvNNs, have been successful, for instance, in learning sequence and tree structures in natural language processing, mainly phrase and sentence continuous representations based on word embedding." [https://en.wikipedia.org/wiki/Recursive_neural_network]
+def: "A recursive neural network is a kind of deep neural network created by applying the same set of weights recursively over a structured input, to produce a structured prediction over variable-size input structures, or a scalar prediction on it, by traversing a given structure in topological order. Recursive neural networks, sometimes abbreviated as RvNNs, have been successful, for instance, in Learning sequence and tree structures in natural language processing, mainly phrase and sentence continuous representations based on word embedding." [https://en.wikipedia.org/wiki/Recursive_neural_network]
 synonym: "RecuNN" EXACT []
 synonym: "RvNN" EXACT []
 is_a: https://w3id.org/aio/DNN ! Deep Neural Network
@@ -1517,7 +1942,7 @@ is_a: https://w3id.org/aio/Network ! Network
 [Term]
 id: https://w3id.org/aio/SVM
 name: Support Vector Machine
-def: "In machine learning, support-vector machines (SVMs, also support-vector networks) are supervised learning models with associated learning algorithms that analyze data for classification and regression analysis. Developed at AT&T Bell Laboratories by Vladimir Vapnik with colleagues (Boser et al., 1992, Guyon et al., 1993, Vapnik et al., 1997) SVMs are one of the most robust prediction methods, being based on statistical learning frameworks or VC theory proposed by Vapnik (1982, 1995) and Chervonenkis (1974). Given a set of training examples, each marked as belonging to one of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier (although methods such as Platt scaling exist to use SVM in a probabilistic classification setting). SVM maps training examples to points in space so as to maximise the width of the gap between the two categories. New examples are then mapped into that same space and predicted to belong to a category based on which side of the gap they fall." [https://en.wikipedia.org/wiki/Support-vector_machine]
+def: "In machine Learning, support-vector machines (SVMs, also support-vector networks) are supervised Learning models with associated Learning algorithms that analyze data for classification and regression analysis. Developed at AT&T Bell Laboratories by Vladimir Vapnik with colleagues (Boser et al., 1992, Guyon et al., 1993, Vapnik et al., 1997) SVMs are one of the most robust prediction methods, being based on statistical Learning frameworks or VC theory proposed by Vapnik (1982, 1995) and Chervonenkis (1974). Given a set of training examples, each marked as belonging to one of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier (although methods such as Platt scaling exist to use SVM in a probabilistic classification setting). SVM maps training examples to points in space so as to maximise the width of the gap between the two categories. New examples are then mapped into that same space and predicted to belong to a category based on which side of the gap they fall." [https://en.wikipedia.org/wiki/Support-vector_machine]
 comment: Input, Hidden, Output
 synonym: "Supper Vector Network" EXACT []
 synonym: "SVM" EXACT []
@@ -1565,9 +1990,21 @@ def: "A layer that performs text data preprocessing operations." [https://keras.
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
+id: https://w3id.org/aio/Time_Series_Analysis
+name: Time Series Analysis
+def: "Methods for analyzing time series data in order to extract meaningful statistics and other characteristics of the data." [https://en.wikipedia.org/wiki/Time_series]
+is_a: Machine:Learning ! Machine Learning
+
+[Term]
+id: https://w3id.org/aio/Time_Series_Forecasting
+name: Time Series Forecasting
+def: "Methods that predict future values based on previously observed values." [https://en.wikipedia.org/wiki/Time_series]
+is_a: Machine:Learning ! Machine Learning
+
+[Term]
 id: https://w3id.org/aio/Transformer
 name: Transformer Network
-def: "A transformer is a deep learning model that adopts the mechanism of attention, differentially weighing the significance of each part of the input data. It is used primarily in the field of natural language processing (NLP) and in computer vision (CV). (https://en.wikipedia.org/wiki/Transformer_(machine_learning_model))" [https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)]
+def: "A transformer is a deep Learning model that adopts the mechanism of attention, differentially weighing the significance of each part of the input data. It is used primarily in the field of natural language processing (NLP) and in computer vision (CV). (https://en.wikipedia.org/wiki/Transformer_(machine_Learning_model))" [https://en.wikipedia.org/wiki/Transformer_(machine_Learning_model)]
 is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 
 [Term]
@@ -1576,6 +2013,14 @@ name: Unsupervised Pretrained Network
 def: "Unsupervised pre-training initializes a discriminative neural net from one which was trained using an unsupervised criterion, such as a deep belief network or a deep autoencoder. This method can sometimes help with both the optimization and the overfitting issues." [https://metacademy.org/graphs/concepts/unsupervised_pre_training#\:~\:text=Unsupervised%20pre%2Dtraining%20initializes%20a\,optimization%20and%20the%20overfitting%20issues]
 synonym: "UPN" EXACT []
 is_a: https://w3id.org/aio/Network ! Network
+
+[Term]
+id: https://w3id.org/aio/Unsupervised_Block_Clustering|Unsupervised_Co-clustering|Unsupervised_Unsupervised_Two-mode_Clustering|Unsupervised_Two-way_Clustering|Unsupervised_Joint_Clustering
+name: Unsupervised Block Clustering|Unsupervised Co-clustering|Unsupervised Unsupervised Two-mode Clustering|Unsupervised Two-way Clustering|Unsupervised Joint Clustering
+def: "An algorithm to group objects by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors" [https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm]
+synonym: "K-NN" EXACT []
+synonym: "KNN" EXACT []
+is_a: Machine:Learning ! Machine Learning
 
 [Term]
 id: https://w3id.org/aio/Use_And_Interpretation_Bias
@@ -1597,4 +2042,12 @@ def: "Variational autoencoders are meant to compress the input information into 
 comment: Input, Probabilistic Hidden, Matched Output-Input
 synonym: "VAE" EXACT []
 is_a: https://w3id.org/aio/AE ! Auto Encoder Network
+
+[Term]
+id: https://w3id.org/aio/t-Distributed_Stochastic_Neighbor_embedding
+name: t-Distributed Stochastic Neighbor embedding
+def: "A statistical method for visualizing high-dimensional data by giving each datapoint a location in a two or three-dimensional map." [https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding]
+synonym: "t-SNE" EXACT []
+synonym: "tSNE" EXACT []
+is_a: Dimensionality:Reduction ! Dimensionality Reduction
 
