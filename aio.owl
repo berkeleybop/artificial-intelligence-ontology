@@ -11,11 +11,11 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aio.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2022-10-24/aio.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2022-11-15/aio.owl"/>
         <dc:description>This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases.</dc:description>
         <dc:title>Artificial Intelligence Ontology</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-24</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-15</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2024,6 +2024,22 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Hopfield network is a form of recurrent artificial neural network and a type of spin glass system popularised by John Hopfield in 1982 as described earlier by Little in 1974 based on Ernst Ising&apos;s work with Wilhelm Lenz on the Ising model. Hopfield networks serve as content-addressable (&quot;associative&quot;) memory systems with binary threshold nodes, or with continuous variables. Hopfield networks also provide a model for understanding human memory. (https://en.wikipedia.org/wiki/Hopfield_network)</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Hopfield_network</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Hard_Sigmoid_Function -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Hard_Sigmoid_Function">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Function"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A faster approximation of the sigmoid activation. Piecewise linear approximation of the sigmoid function. Ref: &apos;https://en.wikipedia.org/wiki/Hard_sigmoid&apos;</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hard Sigmoid Function</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Hard_Sigmoid_Function"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A faster approximation of the sigmoid activation. Piecewise linear approximation of the sigmoid function. Ref: &apos;https://en.wikipedia.org/wiki/Hard_sigmoid&apos;</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tensorflow.org/api_docs/python/tf/keras/activations/hard_sigmoid</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5057,22 +5073,6 @@
     <!-- https://w3id.org/aio/Classification;AIO:Clustering -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Classification;AIO:Clustering"/>
-    
-
-
-    <!-- https://w3id.org/aio/Hard Sigmoid_Function -->
-
-    <owl:Class rdf:about="https://w3id.org/aio/Hard Sigmoid_Function">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Function"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A faster approximation of the sigmoid activation. Piecewise linear approximation of the sigmoid function. Ref: &apos;https://en.wikipedia.org/wiki/Hard_sigmoid&apos;</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hard Sigmoid Function</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Hard Sigmoid_Function"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A faster approximation of the sigmoid activation. Piecewise linear approximation of the sigmoid function. Ref: &apos;https://en.wikipedia.org/wiki/Hard_sigmoid&apos;</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tensorflow.org/api_docs/python/tf/keras/activations/hard_sigmoid</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 

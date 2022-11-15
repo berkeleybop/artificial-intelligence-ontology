@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: releases/2022-10-24
+data-version: releases/2022-11-15
 ontology: aio
 property_value: http://purl.org/dc/elements/1.1/description "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Artificial Intelligence Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-10-24" xsd:string
+property_value: owl:versionInfo "2022-11-15" xsd:string
 
 [Term]
 id: Activation:Layer
@@ -485,12 +485,6 @@ name: Groupthink Bias
 def: "A psychological phenomenon that occurs when people in a group tend to make non-optimal decisions based on their desire to conform to the group, or fear of dissenting with the group. In groupthink, individuals often refrain from expressing their personal disagreement with the group, hesitating to voice opinions that do not align with the group." [https://doi.org/10.6028/NIST.SP.1270]
 synonym: "Groupthink" EXACT []
 is_a: Group:Bias ! Group Bias
-
-[Term]
-id: Hard Sigmoid:Function
-name: Hard Sigmoid Function
-def: "A faster approximation of the sigmoid activation. Piecewise linear approximation of the sigmoid function. Ref: 'https://en.wikipedia.org/wiki/Hard_sigmoid'" [https://www.tensorflow.org/api_docs/python/tf/keras/activations/hard_sigmoid]
-is_a: https://w3id.org/aio/Function
 
 [Term]
 id: Hashing:Layer
@@ -1666,6 +1660,12 @@ synonym: "HN" EXACT []
 synonym: "Ising model of a neural network" EXACT []
 synonym: "Ising–Lenz–Little model" EXACT []
 is_a: https://w3id.org/aio/SCN ! Symmetrically Connected Network
+
+[Term]
+id: https://w3id.org/aio/Hard_Sigmoid_Function
+name: Hard Sigmoid Function
+def: "A faster approximation of the sigmoid activation. Piecewise linear approximation of the sigmoid function. Ref: 'https://en.wikipedia.org/wiki/Hard_sigmoid'" [https://www.tensorflow.org/api_docs/python/tf/keras/activations/hard_sigmoid]
+is_a: https://w3id.org/aio/Function
 
 [Term]
 id: https://w3id.org/aio/Hostile_Attribution_Bias
