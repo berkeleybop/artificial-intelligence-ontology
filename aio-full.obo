@@ -476,7 +476,11 @@ is_a: Pooling:Layer ! Pooling Layer
 id: Group:Bias
 name: Group Bias
 def: "A pattern of favoring members of one's in-group over out-group members. This can be expressed in evaluation of others, in allocation of resources, and in many other ways." [https://en.wikipedia.org/wiki/In-group_favoritism]
-synonym: "In-group Favoritism; In-group–out-group Bias; In-group bias; Intergroup bias; In-group preference" EXACT []
+synonym: "In-group bias" EXACT []
+synonym: "In-group Favoritism" EXACT []
+synonym: "In-group preference" EXACT []
+synonym: "In-group–out-group Bias" EXACT []
+synonym: "Intergroup bias" EXACT []
 is_a: Human:Bias ! Human Bias
 
 [Term]
@@ -1190,7 +1194,8 @@ is_a: https://w3id.org/aio/Function
 id: Systemic:Bias
 name: Systemic Bias
 def: "Biases that result from procedures and practices of particular institutions that operate in ways which result in certain social groups being advantaged or favored and others being disadvantaged or devalued." [https://doi.org/10.6028/NIST.SP.1270]
-synonym: "Institutional Bias; Societal Bias" EXACT []
+synonym: "Institutional Bias" EXACT []
+synonym: "Societal Bias" EXACT []
 is_a: https://w3id.org/aio/Bias ! Bias
 
 [Term]
@@ -1386,7 +1391,8 @@ is_a: Individual:Bias ! Individual Bias
 id: https://w3id.org/aio/Availability_Heuristic_Bias
 name: Availability Heuristic Bias
 def: "A mental shortcut whereby people tend to overweight what comes easily or quickly to mind, meaning that what is easier to recall—e.g., more “available”—receives greater emphasis in judgement and decision-making." [https://doi.org/10.6028/NIST.SP.1270]
-synonym: "Availability Heuristic; Availability Bias" EXACT []
+synonym: "Availability Bias" EXACT []
+synonym: "Availability Heuristic" EXACT []
 is_a: Individual:Bias ! Individual Bias
 
 [Term]
@@ -1699,12 +1705,21 @@ synonym: "IFSL" EXACT []
 is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 
 [Term]
+id: https://w3id.org/aio/K-nearest_Neighbor_Algorithm
+name: K-nearest Neighbor Algorithm
+def: "An algorithm to group objects by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors" [https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm]
+synonym: "K-NN" EXACT []
+synonym: "KNN" EXACT []
+is_a: Machine:Learning ! Machine Learning
+
+[Term]
 id: https://w3id.org/aio/K-nearest_Neighbor_Classification_Algorithm
 name: K-nearest Neighbor Classification Algorithm
 def: "An algorithm to classify objects by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors" [https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm]
 synonym: "K-NN" EXACT []
 synonym: "KNN" EXACT []
-is_a: https://w3id.org/aio/Classification;AIO:Clustering
+is_a: https://w3id.org/aio/Classification ! Classification
+is_a: https://w3id.org/aio/Clustering ! Clustering
 
 [Term]
 id: https://w3id.org/aio/K-nearest_Neighbor_Regression_Algorithm
@@ -1892,7 +1907,8 @@ is_a: Regression:Analysis ! Regression Analysis
 id: https://w3id.org/aio/Rashomon_Effect_Bias
 name: Rashomon Effect Bias
 def: "Refers to differences in perspective, memory and recall, interpretation, and reporting on the same event from multiple persons or witnesses." [https://doi.org/10.6028/NIST.SP.1270]
-synonym: "Rashomon Effect; Rashomon Principle" EXACT []
+synonym: "Rashomon Effect" EXACT []
+synonym: "Rashomon Principle" EXACT []
 is_a: Individual:Bias ! Individual Bias
 
 [Term]
@@ -1953,7 +1969,9 @@ is_a: https://w3id.org/aio/Network ! Network
 id: https://w3id.org/aio/Selection_And_Sampling_Bias
 name: Selection And Sampling Bias
 def: "Bias introduced by the selection of individuals, groups, or data for analysis in such a way that proper randomization is not achieved, thereby failing to ensure that the sample obtained is representative of the population intended to be analyzed." [https://en.wikipedia.org/wiki/Selection_bias]
-synonym: "Selection Bias; Sampling Bias; Selection Effect" EXACT []
+synonym: "Sampling Bias" EXACT []
+synonym: "Selection Bias" EXACT []
+synonym: "Selection Effect" EXACT []
 is_a: Computational:Bias ! Computational Bias
 
 [Term]
@@ -2013,14 +2031,6 @@ name: Unsupervised Pretrained Network
 def: "Unsupervised pre-training initializes a discriminative neural net from one which was trained using an unsupervised criterion, such as a deep belief network or a deep autoencoder. This method can sometimes help with both the optimization and the overfitting issues." [https://metacademy.org/graphs/concepts/unsupervised_pre_training#\:~\:text=Unsupervised%20pre%2Dtraining%20initializes%20a\,optimization%20and%20the%20overfitting%20issues]
 synonym: "UPN" EXACT []
 is_a: https://w3id.org/aio/Network ! Network
-
-[Term]
-id: https://w3id.org/aio/Unsupervised_Block_Clustering|Unsupervised_Co-clustering|Unsupervised_Unsupervised_Two-mode_Clustering|Unsupervised_Two-way_Clustering|Unsupervised_Joint_Clustering
-name: Unsupervised Block Clustering|Unsupervised Co-clustering|Unsupervised Unsupervised Two-mode Clustering|Unsupervised Two-way Clustering|Unsupervised Joint Clustering
-def: "An algorithm to group objects by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors" [https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm]
-synonym: "K-NN" EXACT []
-synonym: "KNN" EXACT []
-is_a: Machine:Learning ! Machine Learning
 
 [Term]
 id: https://w3id.org/aio/Use_And_Interpretation_Bias

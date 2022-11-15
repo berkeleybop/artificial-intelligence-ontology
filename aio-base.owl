@@ -334,7 +334,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/Availability_Heuristic_Bias">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Individual_Bias"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mental shortcut whereby people tend to overweight what comes easily or quickly to mind, meaning that what is easier to recall—e.g., more “available”—receives greater emphasis in judgement and decision-making.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Availability Heuristic; Availability Bias</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Availability Bias</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Availability Heuristic</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Availability Heuristic Bias</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1980,7 +1981,11 @@
     <owl:Class rdf:about="https://w3id.org/aio/Group_Bias">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Human_Bias"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pattern of favoring members of one&apos;s in-group over out-group members. This can be expressed in evaluation of others, in allocation of resources, and in many other ways.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In-group Favoritism; In-group–out-group Bias; In-group bias; Intergroup bias; In-group preference</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In-group Favoritism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In-group bias</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In-group preference</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In-group–out-group Bias</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intergroup bias</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Group Bias</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2368,10 +2373,29 @@
     
 
 
+    <!-- https://w3id.org/aio/K-nearest_Neighbor_Algorithm -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/K-nearest_Neighbor_Algorithm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An algorithm to group objects by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K-NN</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KNN</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K-nearest Neighbor Algorithm</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/K-nearest_Neighbor_Algorithm"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An algorithm to group objects by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/K-nearest_Neighbor_Classification_Algorithm -->
 
     <owl:Class rdf:about="https://w3id.org/aio/K-nearest_Neighbor_Classification_Algorithm">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Classification;AIO:Clustering"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Classification"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Clustering"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An algorithm to classify objects by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K-NN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KNN</oboInOwl:hasExactSynonym>
@@ -3703,7 +3727,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/Rashomon_Effect_Bias">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Individual_Bias"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Refers to differences in perspective, memory and recall, interpretation, and reporting on the same event from multiple persons or witnesses.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rashomon Effect; Rashomon Principle</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rashomon Effect</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rashomon Principle</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rashomon Effect Bias</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -4070,7 +4095,9 @@
     <owl:Class rdf:about="https://w3id.org/aio/Selection_And_Sampling_Bias">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Computational_Bias"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bias introduced by the selection of individuals, groups, or data for analysis in such a way that proper randomization is not achieved, thereby failing to ensure that the sample obtained is representative of the population intended to be analyzed.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selection Bias; Sampling Bias; Selection Effect</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sampling Bias</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selection Bias</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selection Effect</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selection And Sampling Bias</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -4548,7 +4575,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/Systemic_Bias">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Bias"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biases that result from procedures and practices of particular institutions that operate in ways which result in certain social groups being advantaged or favored and others being disadvantaged or devalued.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Institutional Bias; Societal Bias</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Institutional Bias</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Societal Bias</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Systemic Bias</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -5072,12 +5100,6 @@
     
 
 
-    <!-- https://w3id.org/aio/Classification;AIO:Clustering -->
-
-    <owl:Class rdf:about="https://w3id.org/aio/Classification;AIO:Clustering"/>
-    
-
-
     <!-- https://w3id.org/aio/Simpon&apos;s_Paradox_Bias -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Simpon&apos;s_Paradox_Bias">
@@ -5091,24 +5113,6 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A statistical phenomenon where the marginal association between two categorical variables is qualitatively different from the partial association between the same two variables after controlling for one or more other variables. For example, the statistical association or correlation that has been detected between two variables for an entire population disappears or reverses when the population is divided into subgroups.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.6028/NIST.SP.1270</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- https://w3id.org/aio/Unsupervised_Block_Clustering|Unsupervised_Co-clustering|Unsupervised_Unsupervised_Two-mode_Clustering|Unsupervised_Two-way_Clustering|Unsupervised_Joint_Clustering -->
-
-    <owl:Class rdf:about="https://w3id.org/aio/Unsupervised_Block_Clustering|Unsupervised_Co-clustering|Unsupervised_Unsupervised_Two-mode_Clustering|Unsupervised_Two-way_Clustering|Unsupervised_Joint_Clustering">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Machine_Learning"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An algorithm to group objects by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K-NN</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KNN</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unsupervised Block Clustering|Unsupervised Co-clustering|Unsupervised Unsupervised Two-mode Clustering|Unsupervised Two-way Clustering|Unsupervised Joint Clustering</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Unsupervised_Block_Clustering|Unsupervised_Co-clustering|Unsupervised_Unsupervised_Two-mode_Clustering|Unsupervised_Two-way_Clustering|Unsupervised_Joint_Clustering"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An algorithm to group objects by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
 
