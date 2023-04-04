@@ -2,7 +2,7 @@
 ![Build Status](https://github.com/berkeleybop/aio/workflows/CI/badge.svg)
 # Artificial Intelligence Ontology
 
-This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases.
+An ontology modeling classes and relationships describing deep learning networks, their component layers and activation functions, machine learning methods, as well as AI/ML potential biases.
 
 More information can be found at http://obofoundry.org/ontology/aio
 
