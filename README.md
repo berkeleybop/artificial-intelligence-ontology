@@ -2,6 +2,10 @@
 ![Build Status](https://github.com/berkeleybop/aio/workflows/CI/badge.svg)
 # Artificial Intelligence Ontology
 
+This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases.
+
+More information can be found at http://obofoundry.org/ontology/aio
+
 ### Move as much of this as possible into the Makefile
 
 ```Bash
@@ -36,10 +40,6 @@ dot aio.dot -Tpng -Grankdir=BT > learning-ontology.png
 - https://bioportal.bioontology.org/ontologies/AIO
 
 ----
-
-This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases.
-
-More information can be found at http://obofoundry.org/ontology/aio
 
 ## Versions
 
