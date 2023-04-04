@@ -34,7 +34,6 @@ dot aio.dot -Tpng -Grankdir=BT > learning-ontology.png
 
 ### BioPortal integration
 - https://bioportal.bioontology.org/ontologies/AIO
-- https://github.com/turbomam/aio/blob/main/partial_aio_bioportal_screenshot.png
 
 ----
 
