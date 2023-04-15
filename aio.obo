@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: releases/2022-11-15
+data-version: releases/2023-04-14
 ontology: aio
 property_value: http://purl.org/dc/elements/1.1/description "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Artificial Intelligence Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-11-15" xsd:string
+property_value: owl:versionInfo "2023-04-14" xsd:string
 
 [Term]
 id: Activation:Layer
@@ -203,7 +203,9 @@ is_a: Convolutional:Layer ! Convolutional Layer
 id: Convolution1D:Layer
 name: Convolution1D Layer
 def: "1D convolution layer (e.g. temporal convolution)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv1D]
+synonym: "Conv1d" EXACT []
 synonym: "Conv1D Layer" EXACT []
+synonym: "nn.Conv1d" EXACT []
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
@@ -211,13 +213,17 @@ id: Convolution1DTranspose:Layer
 name: Convolution1DTranspose Layer
 def: "Transposed convolution layer (sometimes called Deconvolution). The need for transposed convolutions generally arises from the desire to use a transformation going in the opposite direction of a normal convolution, i.e., from something that has the shape of the output of some convolution to something that has the shape of its input while maintaining a connectivity pattern that is compatible with said convolution. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers or None, does not include the sample axis), e.g. input_shape=(128, 3) for data with 128 time steps and 3 channels." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv1DTranspose]
 synonym: "Conv1DTranspose Layer" EXACT []
+synonym: "ConvTranspose1d" EXACT []
+synonym: "nn.ConvTranspose1d" EXACT []
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
 id: Convolution2D:Layer
 name: Convolution2D Layer
 def: "2D convolution layer (e.g. spatial convolution over images). This layer creates a convolution kernel that is convolved with the layer input to produce a tensor of outputs. If use_bias is True, a bias vector is created and added to the outputs. Finally, if activation is not None, it is applied to the outputs as well. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers or None, does not include the sample axis), e.g. input_shape=(128, 128, 3) for 128x128 RGB pictures in data_format=\"channels_last\". You can use None when a dimension has variable size." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv2D]
+synonym: "Conv2d" EXACT []
 synonym: "Conv2D Layer" EXACT []
+synonym: "nn.Conv2d" EXACT []
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
@@ -225,13 +231,17 @@ id: Convolution2DTranspose:Layer
 name: Convolution2DTranspose Layer
 def: "Transposed convolution layer (sometimes called Deconvolution)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv2DTranspose]
 synonym: "Conv2DTranspose Layer" EXACT []
+synonym: "ConvTranspose2d" EXACT []
+synonym: "nn.ConvTranspose2d" EXACT []
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
 id: Convolution3D:Layer
 name: Convolution3D Layer
 def: "3D convolution layer (e.g. spatial convolution over volumes). This layer creates a convolution kernel that is convolved with the layer input to produce a tensor of outputs. If use_bias is True, a bias vector is created and added to the outputs. Finally, if activation is not None, it is applied to the outputs as well. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers or None, does not include the sample axis), e.g. input_shape=(128, 128, 128, 1) for 128x128x128 volumes with a single channel, in data_format=\"channels_last\"." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv3D]
+synonym: "Conv3d" EXACT []
 synonym: "Conv3D Layer" EXACT []
+synonym: "nn.Conv3d" EXACT []
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
@@ -239,6 +249,8 @@ id: Convolution3DTranspose:Layer
 name: Convolution3DTranspose Layer
 def: "Transposed convolution layer (sometimes called Deconvolution). The need for transposed convolutions generally arises from the desire to use a transformation going in the opposite direction of a normal convolution, i.e., from something that has the shape of the output of some convolution to something that has the shape of its input while maintaining a connectivity pattern that is compatible with said convolution. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers or None, does not include the sample axis), e.g. input_shape=(128, 128, 128, 3) for a 128x128x128 volume with 3 channels if data_format=\"channels_last\"." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv3DTranspose]
 synonym: "Conv3DTranspose Layer" EXACT []
+synonym: "ConvTranspose3d" EXACT []
+synonym: "nn.ConvTranspose3d" EXACT []
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
@@ -427,7 +439,7 @@ id: GeLu:Function
 name: GELU Function
 def: "Gaussian error linear unit (GELU) computes x * P(X <= x), where P(X) ~ N(0, 1). The (GELU) nonlinearity weights inputs by their value, rather than gates inputs by their sign as in ReLU." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/gelu]
 synonym: "Gaussian Error Linear Unit" EXACT []
-synonym: "GELU" RELATED []
+synonym: "GELU" EXACT []
 is_a: https://w3id.org/aio/Function
 
 [Term]
@@ -695,6 +707,7 @@ id: MaxPooling1D:Layer
 name: MaxPooling1D Layer
 def: "Max pooling operation for 1D temporal data. Downsamples the input representation by taking the maximum value over a spatial window of size pool_size. The window is shifted by strides. The resulting output, when using the \"valid\" padding option, has a shape of: output_shape = (input_shape - pool_size + 1) / strides) The resulting output shape when using the \"same\" padding option is: output_shape = input_shape / strides." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/MaxPool1D]
 synonym: "MaxPool1D" EXACT []
+synonym: "MaxPool1d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
 [Term]
@@ -702,6 +715,7 @@ id: MaxPooling2D:Layer
 name: MaxPooling2D Layer
 def: "Max pooling operation for 2D spatial data." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/MaxPool2D]
 synonym: "MaxPool2D" EXACT []
+synonym: "MaxPool2d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
 [Term]
@@ -709,6 +723,7 @@ id: MaxPooling3D:Layer
 name: MaxPooling3D Layer
 def: "Max pooling operation for 3D data (spatial or spatio-temporal). Downsamples the input along its spatial dimensions (depth, height, and width) by taking the maximum value over an input window (of size defined by pool_size) for each channel of the input. The window is shifted by strides along each dimension." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/MaxPool3D]
 synonym: "MaxPool3D" EXACT []
+synonym: "MaxPool3d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
 [Term]
@@ -937,7 +952,7 @@ id: ReLU:Function
 name: ReLU Function
 def: "The ReLU activation function returns: max(x, 0), the element-wise maximum of 0 and the input tensor." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/relu]
 synonym: "Rectified Linear Unit" EXACT []
-synonym: "ReLU" RELATED []
+synonym: "ReLU" EXACT []
 is_a: https://w3id.org/aio/Function
 
 [Term]
@@ -1026,7 +1041,7 @@ id: SeLu:Function
 name: SELU Function
 def: "The SELU activation function multiplies scale (> 1) with the output of the ELU function to ensure a slope larger than one for positive inputs." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/selu]
 synonym: "Scaled Exponential Linear Unit" EXACT []
-synonym: "SELU" RELATED []
+synonym: "SELU" EXACT []
 is_a: https://w3id.org/aio/Function
 
 [Term]
@@ -1342,7 +1357,7 @@ is_a: Reshaping:Layer ! Reshaping Layer
 id: eLu:Function
 name: ELU Function
 def: "The exponential linear unit (ELU) with alpha > 0 is: x if x > 0 and alpha * (exp(x) - 1) if x < 0 The ELU hyperparameter alpha controls the value to which an ELU saturates for negative net inputs. ELUs diminish the vanishing gradient effect. ELUs have negative values which pushes the mean of the activations closer to zero. Mean activations that are closer to zero enable faster Learning as they bring the gradient closer to the natural gradient. ELUs saturate to a negative value when the argument gets smaller. Saturation means a small derivative which decreases the variation and the information that is propagated to the next layer." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/elu]
-synonym: "ELU" RELATED []
+synonym: "ELU" EXACT []
 synonym: "Exponential Linear Unit" EXACT []
 is_a: https://w3id.org/aio/Function
 
@@ -1405,6 +1420,27 @@ synonym: "Sherrington–Kirkpatrick model with external field" EXACT []
 synonym: "stochastic Hopfield network with hidden units" EXACT []
 synonym: "stochastic Ising-Lenz-Little model" EXACT []
 is_a: https://w3id.org/aio/SCN ! Symmetrically Connected Network
+
+[Term]
+id: https://w3id.org/aio/BatchNorm1D
+name: BatchNorm1D
+def: "Applies Batch Normalization over a 2D or 3D input as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift ." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.BatchNorm1d" EXACT []
+is_a: BatchNormalization:Layer ! BatchNormalization Layer
+
+[Term]
+id: https://w3id.org/aio/BatchNorm2D
+name: BatchNorm2D
+def: "Applies Batch Normalization over a 4D input (a mini-batch of 2D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift ." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.BatchNorm2d" EXACT []
+is_a: BatchNormalization:Layer ! BatchNormalization Layer
+
+[Term]
+id: https://w3id.org/aio/BatchNorm3D
+name: BatchNorm3D
+def: "Applies Batch Normalization over a 5D input (a mini-batch of 3D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift ." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.BatchNorm3d" EXACT []
+is_a: BatchNormalization:Layer ! BatchNormalization Layer
 
 [Term]
 id: https://w3id.org/aio/Bias
@@ -1658,6 +1694,13 @@ synonym: "GLM" EXACT []
 is_a: Regression:Analysis ! Regression Analysis
 
 [Term]
+id: https://w3id.org/aio/GroupNorm
+name: GroupNorm
+def: "Applies Group Normalization over a mini-batch of inputs as described in the paper Group Normalization" [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.GroupNorm" EXACT []
+is_a: Normalization:Layer ! Normalization Layer
+
+[Term]
 id: https://w3id.org/aio/HN
 name: Hopfield Network
 def: "A Hopfield network is a form of recurrent artificial neural network and a type of spin glass system popularised by John Hopfield in 1982 as described earlier by Little in 1974 based on Ernst Ising's work with Wilhelm Lenz on the Ising model. Hopfield networks serve as content-addressable (\"associative\") memory systems with binary threshold nodes, or with continuous variables. Hopfield networks also provide a model for understanding human memory. (https://en.wikipedia.org/wiki/Hopfield_network)" [https://en.wikipedia.org/wiki/Hopfield_network]
@@ -1703,6 +1746,27 @@ name: Incremenetal Few-shot Learning
 def: "Methods that train a network on a base set of classes and then is presented several novel classes, each with only a few labeled examples." [https://arxiv.org/abs/1810.07218]
 synonym: "IFSL" EXACT []
 is_a: https://w3id.org/aio/DNN ! Deep Neural Network
+
+[Term]
+id: https://w3id.org/aio/InstanceNorm1d
+name: InstanceNorm1d
+def: "Applies Instance Normalization over a 2D (unbatched) or 3D (batched) input as described in the paper Instance Normalization: The Missing Ingredient for Fast Stylization." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.InstanceNorm1d" EXACT []
+is_a: Normalization:Layer ! Normalization Layer
+
+[Term]
+id: https://w3id.org/aio/InstanceNorm2d
+name: InstanceNorm2d
+def: "Applies Instance Normalization over a 4D input (a mini-batch of 2D inputs with additional channel dimension) as described in the paper Instance Normalization: The Missing Ingredient for Fast Stylization." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.InstanceNorm2d" EXACT []
+is_a: Normalization:Layer ! Normalization Layer
+
+[Term]
+id: https://w3id.org/aio/InstanceNorm3d
+name: InstanceNorm3d
+def: "Applies Instance Normalization over a 5D input (a mini-batch of 3D inputs with additional channel dimension) as described in the paper Instance Normalization: The Missing Ingredient for Fast Stylization." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.InstanceNorm3d" EXACT []
+is_a: Normalization:Layer ! Normalization Layer
 
 [Term]
 id: https://w3id.org/aio/K-nearest_Neighbor_Algorithm
@@ -1761,6 +1825,62 @@ is_a: https://w3id.org/aio/RecNN ! Recurrent Neural Network
 id: https://w3id.org/aio/Layer
 name: Layer
 def: "Network layer parent class" []
+
+[Term]
+id: https://w3id.org/aio/LayerNorm
+name: LayerNorm
+def: "Applies Layer Normalization over a mini-batch of inputs as described in the paper Layer Normalization" [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.LayerNorm" EXACT []
+is_a: Normalization:Layer ! Normalization Layer
+
+[Term]
+id: https://w3id.org/aio/LazyBatchNorm1D
+name: LazyBatchNorm1D
+def: "A torch.nn.BatchNorm1d module with lazy initialization of the num_features argument of the BatchNorm1d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.LazyBatchNorm1d" EXACT []
+is_a: BatchNormalization:Layer ! BatchNormalization Layer
+
+[Term]
+id: https://w3id.org/aio/LazyBatchNorm2D
+name: LazyBatchNorm2D
+def: "A torch.nn.BatchNorm2d module with lazy initialization of the num_features argument of the BatchNorm2d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.LazyBatchNorm2d" EXACT []
+is_a: BatchNormalization:Layer ! BatchNormalization Layer
+
+[Term]
+id: https://w3id.org/aio/LazyBatchNorm3D
+name: LazyBatchNorm3D
+def: "A torch.nn.BatchNorm3d module with lazy initialization of the num_features argument of the BatchNorm3d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.LazyBatchNorm3d" EXACT []
+is_a: BatchNormalization:Layer ! BatchNormalization Layer
+
+[Term]
+id: https://w3id.org/aio/LazyInstanceNorm1d
+name: LazyInstanceNorm1d
+def: "A torch.nn.InstanceNorm1d module with lazy initialization of the num_features argument of the InstanceNorm1d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.LazyInstanceNorm1d" EXACT []
+is_a: Normalization:Layer ! Normalization Layer
+
+[Term]
+id: https://w3id.org/aio/LazyInstanceNorm2d
+name: LazyInstanceNorm2d
+def: "A torch.nn.InstanceNorm2d module with lazy initialization of the num_features argument of the InstanceNorm2d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.LazyInstanceNorm2d" EXACT []
+is_a: Normalization:Layer ! Normalization Layer
+
+[Term]
+id: https://w3id.org/aio/LazyInstanceNorm3d
+name: LazyInstanceNorm3d
+def: "A torch.nn.InstanceNorm3d module with lazy initialization of the num_features argument of the InstanceNorm3d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.LazyInstanceNorm3d" EXACT []
+is_a: Normalization:Layer ! Normalization Layer
+
+[Term]
+id: https://w3id.org/aio/LocalResponseNorm
+name: LocalResponseNorm
+def: "Applies local response normalization over an input signal composed of several input planes, where channels occupy the second dimension." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.LocalResponseNorm" EXACT []
+is_a: Normalization:Layer ! Normalization Layer
 
 [Term]
 id: https://w3id.org/aio/Loss_Of_Situational_Awareness_Bias
@@ -2000,6 +2120,13 @@ name: Sunk Cost Fallacy Bias
 def: "A human tendency where people opt to continue with an endeavor or behavior due to previously spent or invested resources, such as money, time, and effort, regardless of whether costs outweigh benefits. For example, in AI, the sunk cost fallacy could lead development teams and organizations to feel that because they have already invested so much time and money into a particular AI application, they must pursue it to market rather than deciding to end the effort, even in the face of significant technical debt and/or ethical debt." [https://doi.org/10.6028/NIST.SP.1270]
 synonym: "Sunk Cost Fallacy" EXACT []
 is_a: Group:Bias ! Group Bias
+
+[Term]
+id: https://w3id.org/aio/SyncBatchNorm
+name: SyncBatchNorm
+def: "Applies Batch Normalization over a N-Dimensional input (a mini-batch of [N-2]D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift ." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.SyncBatchNorm" EXACT []
+is_a: BatchNormalization:Layer ! BatchNormalization Layer
 
 [Term]
 id: https://w3id.org/aio/Text_Preprocessing_Layer
