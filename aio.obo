@@ -35,6 +35,7 @@ is_a: Regularization:Layer ! Regularization Layer
 id: AdaptiveAvgPool1D:Layer
 name: AdaptiveAvgPool1D Layer
 def: "Applies a 1D adaptive average pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "AdaptiveAvgPool1D" EXACT []
 synonym: "AdaptiveAvgPool1d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
@@ -42,6 +43,7 @@ is_a: Pooling:Layer ! Pooling Layer
 id: AdaptiveAvgPool2D:Layer
 name: AdaptiveAvgPool2D Layer
 def: "Applies a 2D adaptive average pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "AdaptiveAvgPool2D" EXACT []
 synonym: "AdaptiveAvgPool2d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
@@ -49,6 +51,7 @@ is_a: Pooling:Layer ! Pooling Layer
 id: AdaptiveAvgPool3D:Layer
 name: AdaptiveAvgPool3D Layer
 def: "Applies a 3D adaptive average pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "AdaptiveAvgPool3D" EXACT []
 synonym: "AdaptiveAvgPool3d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
@@ -56,6 +59,7 @@ is_a: Pooling:Layer ! Pooling Layer
 id: AdaptiveMaxPool1D:Layer
 name: AdaptiveMaxPool1D Layer
 def: "Applies a 1D adaptive max pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "AdaptiveMaxPool1D" EXACT []
 synonym: "AdaptiveMaxPool1d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
@@ -63,6 +67,7 @@ is_a: Pooling:Layer ! Pooling Layer
 id: AdaptiveMaxPool2D:Layer
 name: AdaptiveMaxPool2D Layer
 def: "Applies a 2D adaptive max pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "AdaptiveMaxPool2D" EXACT []
 synonym: "AdaptiveMaxPool2d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
@@ -70,6 +75,7 @@ is_a: Pooling:Layer ! Pooling Layer
 id: AdaptiveMaxPool3D:Layer
 name: AdaptiveMaxPool3D Layer
 def: "Applies a 3D adaptive max pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "AdaptiveMaxPool3D" EXACT []
 synonym: "AdaptiveMaxPool3d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
@@ -120,6 +126,7 @@ id: AveragePooling1D:Layer
 name: AveragePooling1D Layer
 def: "Average pooling for temporal data. Downsamples the input representation by taking the average value over the window defined by pool_size. The window is shifted by strides. The resulting output when using \"valid\" padding option has a shape of: output_shape = (input_shape - pool_size + 1) / strides). The resulting output shape when using the \"same\" padding option is: output_shape = input_shape / strides." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/AveragePooling1D]
 synonym: "AvgPool1D" EXACT []
+synonym: "AvgPool1d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
 [Term]
@@ -127,6 +134,7 @@ id: AveragePooling2D:Layer
 name: AveragePooling2D Layer
 def: "Average pooling operation for spatial data. Downsamples the input along its spatial dimensions (height and width) by taking the average value over an input window (of size defined by pool_size) for each channel of the input. The window is shifted by strides along each dimension. The resulting output when using \"valid\" padding option has a shape (number of rows or columns) of: output_shape = math.floor((input_shape - pool_size) / strides) + 1 (when input_shape >= pool_size). The resulting output shape when using the \"same\" padding option is: output_shape = math.floor((input_shape - 1) / strides) + 1." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/AveragePooling2D]
 synonym: "AvgPool2D" EXACT []
+synonym: "AvgPool2d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
 [Term]
@@ -134,12 +142,14 @@ id: AveragePooling3D:Layer
 name: AveragePooling3D Layer
 def: "Average pooling operation for 3D data (spatial or spatio-temporal). Downsamples the input along its spatial dimensions (depth, height, and width) by taking the average value over an input window (of size defined by pool_size) for each channel of the input. The window is shifted by strides along each dimension." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/AveragePooling3D]
 synonym: "AvgPool3D" EXACT []
+synonym: "AvgPool3d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
 [Term]
 id: AvgPool1D:Layer
 name: AvgPool1D Layer
 def: "Applies a 1D average pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "AvgPool1D" EXACT []
 synonym: "AvgPool1d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
@@ -147,6 +157,7 @@ is_a: Pooling:Layer ! Pooling Layer
 id: AvgPool2D:Layer
 name: AvgPool2D Layer
 def: "Applies a 2D average pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "AvgPool2D" EXACT []
 synonym: "AvgPool2d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
@@ -154,6 +165,7 @@ is_a: Pooling:Layer ! Pooling Layer
 id: AvgPool3D:Layer
 name: AvgPool3D Layer
 def: "Applies a 3D average pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "AvgPool3D" EXACT []
 synonym: "AvgPool3d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
@@ -161,6 +173,8 @@ is_a: Pooling:Layer ! Pooling Layer
 id: BatchNorm1D:Layer
 name: BatchNorm1D Layer
 def: "Applies Batch Normalization over a 2D or 3D input as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift ." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "BatchNorm1D" EXACT []
+synonym: "BatchNorm1d" EXACT []
 synonym: "nn.BatchNorm1d" EXACT []
 is_a: BatchNormalization:Layer ! BatchNormalization Layer
 
@@ -168,6 +182,8 @@ is_a: BatchNormalization:Layer ! BatchNormalization Layer
 id: BatchNorm2D:Layer
 name: BatchNorm2D Layer
 def: "Applies Batch Normalization over a 4D input (a mini-batch of 2D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift ." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "BatchNorm2D" EXACT []
+synonym: "BatchNorm2d" EXACT []
 synonym: "nn.BatchNorm2d" EXACT []
 is_a: BatchNormalization:Layer ! BatchNormalization Layer
 
@@ -175,6 +191,8 @@ is_a: BatchNormalization:Layer ! BatchNormalization Layer
 id: BatchNorm3D:Layer
 name: BatchNorm3D Layer
 def: "Applies Batch Normalization over a 5D input (a mini-batch of 3D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift ." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "BatchNorm3D" EXACT []
+synonym: "BatchNorm3d" EXACT []
 synonym: "nn.BatchNorm3d" EXACT []
 is_a: BatchNormalization:Layer ! BatchNormalization Layer
 
@@ -289,6 +307,8 @@ name: Convolution1D Layer
 def: "1D convolution layer (e.g. temporal convolution)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv1D]
 synonym: "Conv1d" EXACT []
 synonym: "Conv1D Layer" EXACT []
+synonym: "Convolution1D" EXACT []
+synonym: "Convolution1d" EXACT []
 synonym: "nn.Conv1d" EXACT []
 is_a: https://w3id.org/aio/Layer ! Layer
 
@@ -297,6 +317,8 @@ id: Convolution1DTranspose:Layer
 name: Convolution1DTranspose Layer
 def: "Transposed convolution layer (sometimes called Deconvolution). The need for transposed convolutions generally arises from the desire to use a transformation going in the opposite direction of a normal convolution, i.e., from something that has the shape of the output of some convolution to something that has the shape of its input while maintaining a connectivity pattern that is compatible with said convolution. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers or None, does not include the sample axis), e.g. input_shape=(128, 3) for data with 128 time steps and 3 channels." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv1DTranspose]
 synonym: "Conv1DTranspose Layer" EXACT []
+synonym: "Convolution1DTranspose" EXACT []
+synonym: "Convolution1dTranspose" EXACT []
 synonym: "ConvTranspose1d" EXACT []
 synonym: "nn.ConvTranspose1d" EXACT []
 is_a: https://w3id.org/aio/Layer ! Layer
@@ -307,6 +329,8 @@ name: Convolution2D Layer
 def: "2D convolution layer (e.g. spatial convolution over images). This layer creates a convolution kernel that is convolved with the layer input to produce a tensor of outputs. If use_bias is True, a bias vector is created and added to the outputs. Finally, if activation is not None, it is applied to the outputs as well. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers or None, does not include the sample axis), e.g. input_shape=(128, 128, 3) for 128x128 RGB pictures in data_format=\"channels_last\". You can use None when a dimension has variable size." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv2D]
 synonym: "Conv2d" EXACT []
 synonym: "Conv2D Layer" EXACT []
+synonym: "Convolution2D" EXACT []
+synonym: "Convolution2d" EXACT []
 synonym: "nn.Conv2d" EXACT []
 is_a: https://w3id.org/aio/Layer ! Layer
 
@@ -315,6 +339,8 @@ id: Convolution2DTranspose:Layer
 name: Convolution2DTranspose Layer
 def: "Transposed convolution layer (sometimes called Deconvolution)." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv2DTranspose]
 synonym: "Conv2DTranspose Layer" EXACT []
+synonym: "Convolution2DTranspose" EXACT []
+synonym: "Convolution2dTranspose" EXACT []
 synonym: "ConvTranspose2d" EXACT []
 synonym: "nn.ConvTranspose2d" EXACT []
 is_a: https://w3id.org/aio/Layer ! Layer
@@ -325,6 +351,8 @@ name: Convolution3D Layer
 def: "3D convolution layer (e.g. spatial convolution over volumes). This layer creates a convolution kernel that is convolved with the layer input to produce a tensor of outputs. If use_bias is True, a bias vector is created and added to the outputs. Finally, if activation is not None, it is applied to the outputs as well. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers or None, does not include the sample axis), e.g. input_shape=(128, 128, 128, 1) for 128x128x128 volumes with a single channel, in data_format=\"channels_last\"." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv3D]
 synonym: "Conv3d" EXACT []
 synonym: "Conv3D Layer" EXACT []
+synonym: "Convolution3D" EXACT []
+synonym: "Convolution3d" EXACT []
 synonym: "nn.Conv3d" EXACT []
 is_a: https://w3id.org/aio/Layer ! Layer
 
@@ -333,6 +361,8 @@ id: Convolution3DTranspose:Layer
 name: Convolution3DTranspose Layer
 def: "Transposed convolution layer (sometimes called Deconvolution). The need for transposed convolutions generally arises from the desire to use a transformation going in the opposite direction of a normal convolution, i.e., from something that has the shape of the output of some convolution to something that has the shape of its input while maintaining a connectivity pattern that is compatible with said convolution. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers or None, does not include the sample axis), e.g. input_shape=(128, 128, 128, 3) for a 128x128x128 volume with 3 channels if data_format=\"channels_last\"." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv3DTranspose]
 synonym: "Conv3DTranspose Layer" EXACT []
+synonym: "Convolution3DTranspose" EXACT []
+synonym: "Convolution3dTranspose" EXACT []
 synonym: "ConvTranspose3d" EXACT []
 synonym: "nn.ConvTranspose3d" EXACT []
 is_a: https://w3id.org/aio/Layer ! Layer
@@ -492,6 +522,7 @@ is_a: Reshaping:Layer ! Reshaping Layer
 id: FractionalMaxPool2D:Layer
 name: FractionalMaxPool2D Layer
 def: "Applies a 2D fractional max pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "FractionalMaxPool2D" EXACT []
 synonym: "FractionalMaxPool2d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
@@ -499,6 +530,7 @@ is_a: Pooling:Layer ! Pooling Layer
 id: FractionalMaxPool3D:Layer
 name: FractionalMaxPool3D Layer
 def: "Applies a 3D fractional max pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "FractionalMaxPool3D" EXACT []
 synonym: "FractionalMaxPool3d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
@@ -544,42 +576,48 @@ is_a: https://w3id.org/aio/Function
 id: GlobalAveragePooling1D:Layer
 name: GlobalAveragePooling1D Layer
 def: "Global average pooling operation for temporal data." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/GlobalAveragePooling1D]
-synonym: "GlobalAvgPool1D Layer" EXACT []
+synonym: "GlobalAvgPool1D" EXACT []
+synonym: "GlobalAvgPool1d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
 [Term]
 id: GlobalAveragePooling2D:Layer
 name: GlobalAveragePooling2D Layer
 def: "Global average pooling operation for spatial data." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/GlobalAveragePooling2D]
-synonym: "GlobalAvgPool2D Layer" EXACT []
+synonym: "GlobalAvgPool2D" EXACT []
+synonym: "GlobalAvgPool2d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
 [Term]
 id: GlobalAveragePooling3D:Layer
 name: GlobalAveragePooling3D Layer
 def: "Global Average pooling operation for 3D data." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/GlobalAveragePooling3D]
-synonym: "GlobalAvgPool3D Layer" EXACT []
+synonym: "GlobalAvgPool3D" EXACT []
+synonym: "GlobalAvgPool3d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
 [Term]
 id: GlobalMaxPooling1D:Layer
 name: GlobalMaxPooling1D Layer
 def: "Global max pooling operation for 1D temporal data." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/GlobalMaxPool1D]
-synonym: "GlobalMaxPool1D Layer" EXACT []
+synonym: "GlobalMaxPool1D" EXACT []
+synonym: "GlobalMaxPool1d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
 [Term]
 id: GlobalMaxPooling2D:Layer
 name: GlobalMaxPooling2D Layer
 def: "Global max pooling operation for spatial data." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/GlobalMaxPool2D]
-synonym: "GlobalMaxPool2D Layer" EXACT []
+synonym: "GlobalMaxPool2D" EXACT []
+synonym: "GlobalMaxPool2d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
 [Term]
 id: GlobalMaxPooling3D:Layer
 name: GlobalMaxPooling3D Layer
 def: "Global Max pooling operation for 3D data." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/GlobalMaxPool3D]
-synonym: "GlobalMaxPool3D Layer" EXACT []
+synonym: "GlobalMaxPool3D" EXACT []
+synonym: "GlobalMaxPool3d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
 [Term]
@@ -597,6 +635,7 @@ is_a: Human:Bias ! Human Bias
 id: GroupNorm:Layer
 name: GroupNorm Layer
 def: "Applies Group Normalization over a mini-batch of inputs as described in the paper Group Normalization" [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "GroupNorm" EXACT []
 synonym: "nn.GroupNorm" EXACT []
 is_a: Normalization:Layer ! Normalization Layer
 
@@ -685,6 +724,8 @@ is_a: https://w3id.org/aio/Layer ! Layer
 id: InstanceNorm1d:Layer
 name: InstanceNorm1d Layer
 def: "Applies Instance Normalization over a 2D (unbatched) or 3D (batched) input as described in the paper Instance Normalization: The Missing Ingredient for Fast Stylization." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "InstanceNorm1D" EXACT []
+synonym: "InstanceNorm1d" EXACT []
 synonym: "nn.InstanceNorm1d" EXACT []
 is_a: Normalization:Layer ! Normalization Layer
 
@@ -692,6 +733,8 @@ is_a: Normalization:Layer ! Normalization Layer
 id: InstanceNorm3d:Layer
 name: InstanceNorm3d Layer
 def: "Applies Instance Normalization over a 5D input (a mini-batch of 3D inputs with additional channel dimension) as described in the paper Instance Normalization: The Missing Ingredient for Fast Stylization." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "InstanceNorm3D" EXACT []
+synonym: "InstanceNorm3d" EXACT []
 synonym: "nn.InstanceNorm3d" EXACT []
 is_a: Normalization:Layer ! Normalization Layer
 
@@ -717,6 +760,7 @@ is_a: Individual:Bias ! Individual Bias
 id: LPPool1D:Layer
 name: LPPool1D Layer
 def: "Applies a 1D power-average pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "LPPool1D" EXACT []
 synonym: "LPPool1d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
@@ -724,6 +768,7 @@ is_a: Pooling:Layer ! Pooling Layer
 id: LPPool2D:Layer
 name: LPPool2D Layer
 def: "Applies a 2D power-average pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "LPPool2D" EXACT []
 synonym: "LPPool2d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
@@ -761,6 +806,7 @@ is_a: https://w3id.org/aio/Layer ! Layer
 id: LayerNorm:Layer
 name: LayerNorm Layer
 def: "Applies Layer Normalization over a mini-batch of inputs as described in the paper Layer Normalization" [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "LayerNorm" EXACT []
 synonym: "nn.LayerNorm" EXACT []
 is_a: Normalization:Layer ! Normalization Layer
 
@@ -774,6 +820,8 @@ is_a: Normalization:Layer ! Normalization Layer
 id: LazyBatchNorm1D:Layer
 name: LazyBatchNorm1D Layer
 def: "A torch.nn.BatchNorm1d module with lazy initialization of the num_features argument of the BatchNorm1d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "LazyBatchNorm1D" EXACT []
+synonym: "LazyBatchNorm1d" EXACT []
 synonym: "nn.LazyBatchNorm1d" EXACT []
 is_a: BatchNormalization:Layer ! BatchNormalization Layer
 
@@ -781,6 +829,8 @@ is_a: BatchNormalization:Layer ! BatchNormalization Layer
 id: LazyBatchNorm2D:Layer
 name: LazyBatchNorm2D Layer
 def: "A torch.nn.BatchNorm2d module with lazy initialization of the num_features argument of the BatchNorm2d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "LazyBatchNorm2D" EXACT []
+synonym: "LazyBatchNorm2d" EXACT []
 synonym: "nn.LazyBatchNorm2d" EXACT []
 is_a: BatchNormalization:Layer ! BatchNormalization Layer
 
@@ -788,6 +838,8 @@ is_a: BatchNormalization:Layer ! BatchNormalization Layer
 id: LazyBatchNorm3D:Layer
 name: LazyBatchNorm3D Layer
 def: "A torch.nn.BatchNorm3d module with lazy initialization of the num_features argument of the BatchNorm3d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "LazyBatchNorm3D" EXACT []
+synonym: "LazyBatchNorm3d" EXACT []
 synonym: "nn.LazyBatchNorm3d" EXACT []
 is_a: BatchNormalization:Layer ! BatchNormalization Layer
 
@@ -795,6 +847,8 @@ is_a: BatchNormalization:Layer ! BatchNormalization Layer
 id: LazyInstanceNorm1d:Layer
 name: LazyInstanceNorm1d Layer
 def: "A torch.nn.InstanceNorm1d module with lazy initialization of the num_features argument of the InstanceNorm1d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "LazyInstanceNorm1D" EXACT []
+synonym: "LazyInstanceNorm1d" EXACT []
 synonym: "nn.LazyInstanceNorm1d" EXACT []
 is_a: Normalization:Layer ! Normalization Layer
 
@@ -802,6 +856,8 @@ is_a: Normalization:Layer ! Normalization Layer
 id: LazyInstanceNorm2d:Layer
 name: LazyInstanceNorm2d Layer
 def: "A torch.nn.InstanceNorm2d module with lazy initialization of the num_features argument of the InstanceNorm2d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "LazyInstanceNorm2D" EXACT []
+synonym: "LazyInstanceNorm2d" EXACT []
 synonym: "nn.LazyInstanceNorm2d" EXACT []
 is_a: Normalization:Layer ! Normalization Layer
 
@@ -809,6 +865,8 @@ is_a: Normalization:Layer ! Normalization Layer
 id: LazyInstanceNorm3d:Layer
 name: LazyInstanceNorm3d Layer
 def: "A torch.nn.InstanceNorm3d module with lazy initialization of the num_features argument of the InstanceNorm3d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "LazyInstanceNorm3D" EXACT []
+synonym: "LazyInstanceNorm3d" EXACT []
 synonym: "nn.LazyInstanceNorm3d" EXACT []
 is_a: Normalization:Layer ! Normalization Layer
 
@@ -846,6 +904,7 @@ is_a: https://w3id.org/aio/Use_And_Interpretation_Bias ! Use And Interpretation 
 id: LocalResponseNorm:Layer
 name: LocalResponseNorm Layer
 def: "Applies local response normalization over an input signal composed of several input planes, where channels occupy the second dimension." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "LocalResponseNorm" EXACT []
 synonym: "nn.LocalResponseNorm" EXACT []
 is_a: Normalization:Layer ! Normalization Layer
 
@@ -897,6 +956,8 @@ name: MaxPooling1D Layer
 def: "Max pooling operation for 1D temporal data. Downsamples the input representation by taking the maximum value over a spatial window of size pool_size. The window is shifted by strides. The resulting output, when using the \"valid\" padding option, has a shape of: output_shape = (input_shape - pool_size + 1) / strides) The resulting output shape when using the \"same\" padding option is: output_shape = input_shape / strides." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/MaxPool1D]
 synonym: "MaxPool1D" EXACT []
 synonym: "MaxPool1d" EXACT []
+synonym: "MaxPooling1D" EXACT []
+synonym: "MaxPooling1d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
 [Term]
@@ -905,6 +966,8 @@ name: MaxPooling2D Layer
 def: "Max pooling operation for 2D spatial data." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/MaxPool2D]
 synonym: "MaxPool2D" EXACT []
 synonym: "MaxPool2d" EXACT []
+synonym: "MaxPooling2D" EXACT []
+synonym: "MaxPooling2d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
 [Term]
@@ -913,12 +976,15 @@ name: MaxPooling3D Layer
 def: "Max pooling operation for 3D data (spatial or spatio-temporal). Downsamples the input along its spatial dimensions (depth, height, and width) by taking the maximum value over an input window (of size defined by pool_size) for each channel of the input. The window is shifted by strides along each dimension." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/MaxPool3D]
 synonym: "MaxPool3D" EXACT []
 synonym: "MaxPool3d" EXACT []
+synonym: "MaxPooling3D" EXACT []
+synonym: "MaxPooling3d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
 [Term]
 id: MaxUnpool1D:Layer
 name: MaxUnpool1D Layer
 def: "Computes a partial inverse of MaxPool1d." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "MaxUnpool1D" EXACT []
 synonym: "MaxUnpool1d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
@@ -926,6 +992,7 @@ is_a: Pooling:Layer ! Pooling Layer
 id: MaxUnpool2D:Layer
 name: MaxUnpool2D Layer
 def: "Computes a partial inverse of MaxPool2d." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "MaxUnpool2D" EXACT []
 synonym: "MaxUnpool2d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
@@ -933,6 +1000,7 @@ is_a: Pooling:Layer ! Pooling Layer
 id: MaxUnpool3D:Layer
 name: MaxUnpool3D Layer
 def: "Computes a partial inverse of MaxPool3d." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "MaxUnpool3D" EXACT []
 synonym: "MaxUnpool3d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
@@ -1420,6 +1488,7 @@ id: SyncBatchNorm:Layer
 name: SyncBatchNorm Layer
 def: "Applies Batch Normalization over a N-Dimensional input (a mini-batch of [N-2]D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift ." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
 synonym: "nn.SyncBatchNorm" EXACT []
+synonym: "SyncBatchNorm" EXACT []
 is_a: BatchNormalization:Layer ! BatchNormalization Layer
 
 [Term]
@@ -1940,6 +2009,8 @@ is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 id: https://w3id.org/aio/InstanceNorm2d
 name: InstanceNorm2d
 def: "Applies Instance Normalization over a 4D input (a mini-batch of 2D inputs with additional channel dimension) as described in the paper Instance Normalization: The Missing Ingredient for Fast Stylization." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "InstanceNorm2D" EXACT []
+synonym: "InstanceNorm2d" EXACT []
 synonym: "nn.InstanceNorm2d" EXACT []
 is_a: Normalization:Layer ! Normalization Layer
 

@@ -188,6 +188,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/AdaptiveAvgPool1D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 1D adaptive average pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveAvgPool1D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveAvgPool1d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveAvgPool1D Layer</rdfs:label>
     </owl:Class>
@@ -205,6 +206,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/AdaptiveAvgPool2D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 2D adaptive average pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveAvgPool2D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveAvgPool2d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveAvgPool2D Layer</rdfs:label>
     </owl:Class>
@@ -222,6 +224,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/AdaptiveAvgPool3D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 3D adaptive average pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveAvgPool3D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveAvgPool3d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveAvgPool3D Layer</rdfs:label>
     </owl:Class>
@@ -239,6 +242,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/AdaptiveMaxPool1D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 1D adaptive max pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveMaxPool1D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveMaxPool1d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveMaxPool1D Layer</rdfs:label>
     </owl:Class>
@@ -256,6 +260,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/AdaptiveMaxPool2D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 2D adaptive max pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveMaxPool2D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveMaxPool2d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveMaxPool2D Layer</rdfs:label>
     </owl:Class>
@@ -273,6 +278,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/AdaptiveMaxPool3D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 3D adaptive max pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveMaxPool3D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveMaxPool3d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveMaxPool3D Layer</rdfs:label>
     </owl:Class>
@@ -454,6 +460,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Average pooling for temporal data. Downsamples the input representation by taking the average value over the window defined by pool_size. The window is shifted by strides. The resulting output when using &quot;valid&quot; padding option has a shape of: output_shape = (input_shape - pool_size + 1) / strides). The resulting output shape when using the &quot;same&quot; padding option is: output_shape = input_shape / strides.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool1D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool1d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AveragePooling1D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -471,6 +478,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Average pooling operation for spatial data. Downsamples the input along its spatial dimensions (height and width) by taking the average value over an input window (of size defined by pool_size) for each channel of the input. The window is shifted by strides along each dimension. The resulting output when using &quot;valid&quot; padding option has a shape (number of rows or columns) of: output_shape = math.floor((input_shape - pool_size) / strides) + 1 (when input_shape &gt;= pool_size). The resulting output shape when using the &quot;same&quot; padding option is: output_shape = math.floor((input_shape - 1) / strides) + 1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool2D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool2d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AveragePooling2D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -488,6 +496,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Average pooling operation for 3D data (spatial or spatio-temporal). Downsamples the input along its spatial dimensions (depth, height, and width) by taking the average value over an input window (of size defined by pool_size) for each channel of the input. The window is shifted by strides along each dimension.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool3D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool3d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AveragePooling3D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -520,6 +529,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/AvgPool1D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 1D average pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool1D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool1d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool1D Layer</rdfs:label>
     </owl:Class>
@@ -537,6 +547,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/AvgPool2D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 2D average pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool2D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool2d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool2D Layer</rdfs:label>
     </owl:Class>
@@ -554,6 +565,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/AvgPool3D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 3D average pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool3D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool3d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool3D Layer</rdfs:label>
     </owl:Class>
@@ -592,6 +604,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/BatchNorm1D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/BatchNormalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Batch Normalization over a 2D or 3D input as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift .</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BatchNorm1D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BatchNorm1d</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.BatchNorm1d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BatchNorm1D Layer</rdfs:label>
     </owl:Class>
@@ -609,6 +623,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/BatchNorm2D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/BatchNormalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Batch Normalization over a 4D input (a mini-batch of 2D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift .</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BatchNorm2D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BatchNorm2d</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.BatchNorm2d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BatchNorm2D Layer</rdfs:label>
     </owl:Class>
@@ -626,6 +642,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/BatchNorm3D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/BatchNormalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Batch Normalization over a 5D input (a mini-batch of 3D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift .</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BatchNorm3D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BatchNorm3d</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.BatchNorm3d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BatchNorm3D Layer</rdfs:label>
     </owl:Class>
@@ -1059,6 +1077,8 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transposed convolution layer (sometimes called Deconvolution). The need for transposed convolutions generally arises from the desire to use a transformation going in the opposite direction of a normal convolution, i.e., from something that has the shape of the output of some convolution to something that has the shape of its input while maintaining a connectivity pattern that is compatible with said convolution. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers or None, does not include the sample axis), e.g. input_shape=(128, 3) for data with 128 time steps and 3 channels.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conv1DTranspose Layer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ConvTranspose1d</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolution1DTranspose</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolution1dTranspose</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.ConvTranspose1d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolution1DTranspose Layer</rdfs:label>
     </owl:Class>
@@ -1078,6 +1098,8 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1D convolution layer (e.g. temporal convolution).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conv1D Layer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conv1d</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolution1D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolution1d</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.Conv1d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolution1D Layer</rdfs:label>
     </owl:Class>
@@ -1097,6 +1119,8 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transposed convolution layer (sometimes called Deconvolution).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conv2DTranspose Layer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ConvTranspose2d</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolution2DTranspose</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolution2dTranspose</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.ConvTranspose2d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolution2DTranspose Layer</rdfs:label>
     </owl:Class>
@@ -1116,6 +1140,8 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2D convolution layer (e.g. spatial convolution over images). This layer creates a convolution kernel that is convolved with the layer input to produce a tensor of outputs. If use_bias is True, a bias vector is created and added to the outputs. Finally, if activation is not None, it is applied to the outputs as well. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers or None, does not include the sample axis), e.g. input_shape=(128, 128, 3) for 128x128 RGB pictures in data_format=&quot;channels_last&quot;. You can use None when a dimension has variable size.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conv2D Layer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conv2d</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolution2D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolution2d</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.Conv2d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolution2D Layer</rdfs:label>
     </owl:Class>
@@ -1135,6 +1161,8 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transposed convolution layer (sometimes called Deconvolution). The need for transposed convolutions generally arises from the desire to use a transformation going in the opposite direction of a normal convolution, i.e., from something that has the shape of the output of some convolution to something that has the shape of its input while maintaining a connectivity pattern that is compatible with said convolution. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers or None, does not include the sample axis), e.g. input_shape=(128, 128, 128, 3) for a 128x128x128 volume with 3 channels if data_format=&quot;channels_last&quot;.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conv3DTranspose Layer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ConvTranspose3d</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolution3DTranspose</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolution3dTranspose</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.ConvTranspose3d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolution3DTranspose Layer</rdfs:label>
     </owl:Class>
@@ -1154,6 +1182,8 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3D convolution layer (e.g. spatial convolution over volumes). This layer creates a convolution kernel that is convolved with the layer input to produce a tensor of outputs. If use_bias is True, a bias vector is created and added to the outputs. Finally, if activation is not None, it is applied to the outputs as well. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers or None, does not include the sample axis), e.g. input_shape=(128, 128, 128, 1) for 128x128x128 volumes with a single channel, in data_format=&quot;channels_last&quot;.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conv3D Layer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conv3d</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolution3D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolution3d</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.Conv3d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolution3D Layer</rdfs:label>
     </owl:Class>
@@ -1884,6 +1914,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/FractionalMaxPool2D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 2D fractional max pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FractionalMaxPool2D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FractionalMaxPool2d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FractionalMaxPool2D Layer</rdfs:label>
     </owl:Class>
@@ -1901,6 +1932,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/FractionalMaxPool3D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 3D fractional max pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FractionalMaxPool3D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FractionalMaxPool3d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FractionalMaxPool3D Layer</rdfs:label>
     </owl:Class>
@@ -2128,7 +2160,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/GlobalAveragePooling1D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Global average pooling operation for temporal data.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalAvgPool1D Layer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalAvgPool1D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalAvgPool1d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalAveragePooling1D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2145,7 +2178,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/GlobalAveragePooling2D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Global average pooling operation for spatial data.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalAvgPool2D Layer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalAvgPool2D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalAvgPool2d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalAveragePooling2D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2162,7 +2196,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/GlobalAveragePooling3D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Global Average pooling operation for 3D data.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalAvgPool3D Layer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalAvgPool3D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalAvgPool3d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalAveragePooling3D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2179,7 +2214,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/GlobalMaxPooling1D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Global max pooling operation for 1D temporal data.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalMaxPool1D Layer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalMaxPool1D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalMaxPool1d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalMaxPooling1D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2196,7 +2232,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/GlobalMaxPooling2D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Global max pooling operation for spatial data.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalMaxPool2D Layer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalMaxPool2D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalMaxPool2d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalMaxPooling2D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2213,7 +2250,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/GlobalMaxPooling3D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Global Max pooling operation for 3D data.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalMaxPool3D Layer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalMaxPool3D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalMaxPool3d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalMaxPooling3D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2230,6 +2268,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/GroupNorm_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Normalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Group Normalization over a mini-batch of inputs as described in the paper Group Normalization</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GroupNorm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.GroupNorm</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GroupNorm Layer</rdfs:label>
     </owl:Class>
@@ -2596,6 +2635,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/InstanceNorm1d_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Normalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Instance Normalization over a 2D (unbatched) or 3D (batched) input as described in the paper Instance Normalization: The Missing Ingredient for Fast Stylization.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstanceNorm1D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstanceNorm1d</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.InstanceNorm1d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstanceNorm1d Layer</rdfs:label>
     </owl:Class>
@@ -2613,6 +2654,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/InstanceNorm2d">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Normalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Instance Normalization over a 4D input (a mini-batch of 2D inputs with additional channel dimension) as described in the paper Instance Normalization: The Missing Ingredient for Fast Stylization.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstanceNorm2D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstanceNorm2d</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.InstanceNorm2d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstanceNorm2d</rdfs:label>
     </owl:Class>
@@ -2630,6 +2673,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/InstanceNorm3d_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Normalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Instance Normalization over a 5D input (a mini-batch of 3D inputs with additional channel dimension) as described in the paper Instance Normalization: The Missing Ingredient for Fast Stylization.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstanceNorm3D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstanceNorm3d</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.InstanceNorm3d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstanceNorm3d Layer</rdfs:label>
     </owl:Class>
@@ -2772,6 +2817,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/LPPool1D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 1D power-average pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LPPool1D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LPPool1d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LPPool1D Layer</rdfs:label>
     </owl:Class>
@@ -2789,6 +2835,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/LPPool2D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 2D power-average pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LPPool2D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LPPool2d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LPPool2D Layer</rdfs:label>
     </owl:Class>
@@ -2915,6 +2962,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/LayerNorm_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Normalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Layer Normalization over a mini-batch of inputs as described in the paper Layer Normalization</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LayerNorm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.LayerNorm</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LayerNorm Layer</rdfs:label>
     </owl:Class>
@@ -2964,6 +3012,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/LazyBatchNorm1D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/BatchNormalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A torch.nn.BatchNorm1d module with lazy initialization of the num_features argument of the BatchNorm1d that is inferred from the input.size(1).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyBatchNorm1D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyBatchNorm1d</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.LazyBatchNorm1d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyBatchNorm1D Layer</rdfs:label>
     </owl:Class>
@@ -2981,6 +3031,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/LazyBatchNorm2D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/BatchNormalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A torch.nn.BatchNorm2d module with lazy initialization of the num_features argument of the BatchNorm2d that is inferred from the input.size(1).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyBatchNorm2D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyBatchNorm2d</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.LazyBatchNorm2d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyBatchNorm2D Layer</rdfs:label>
     </owl:Class>
@@ -2998,6 +3050,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/LazyBatchNorm3D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/BatchNormalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A torch.nn.BatchNorm3d module with lazy initialization of the num_features argument of the BatchNorm3d that is inferred from the input.size(1).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyBatchNorm3D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyBatchNorm3d</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.LazyBatchNorm3d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyBatchNorm3D Layer</rdfs:label>
     </owl:Class>
@@ -3015,6 +3069,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/LazyInstanceNorm1d_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Normalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A torch.nn.InstanceNorm1d module with lazy initialization of the num_features argument of the InstanceNorm1d that is inferred from the input.size(1).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyInstanceNorm1D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyInstanceNorm1d</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.LazyInstanceNorm1d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyInstanceNorm1d Layer</rdfs:label>
     </owl:Class>
@@ -3032,6 +3088,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/LazyInstanceNorm2d_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Normalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A torch.nn.InstanceNorm2d module with lazy initialization of the num_features argument of the InstanceNorm2d that is inferred from the input.size(1).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyInstanceNorm2D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyInstanceNorm2d</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.LazyInstanceNorm2d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyInstanceNorm2d Layer</rdfs:label>
     </owl:Class>
@@ -3049,6 +3107,8 @@
     <owl:Class rdf:about="https://w3id.org/aio/LazyInstanceNorm3d_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Normalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A torch.nn.InstanceNorm3d module with lazy initialization of the num_features argument of the InstanceNorm3d that is inferred from the input.size(1).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyInstanceNorm3D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyInstanceNorm3d</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.LazyInstanceNorm3d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyInstanceNorm3d Layer</rdfs:label>
     </owl:Class>
@@ -3146,6 +3206,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/LocalResponseNorm_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Normalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies local response normalization over an input signal composed of several input planes, where channels occupy the second dimension.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LocalResponseNorm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.LocalResponseNorm</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LocalResponseNorm Layer</rdfs:label>
     </owl:Class>
@@ -3313,6 +3374,8 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Max pooling operation for 1D temporal data. Downsamples the input representation by taking the maximum value over a spatial window of size pool_size. The window is shifted by strides. The resulting output, when using the &quot;valid&quot; padding option, has a shape of: output_shape = (input_shape - pool_size + 1) / strides) The resulting output shape when using the &quot;same&quot; padding option is: output_shape = input_shape / strides.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxPool1D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxPool1d</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxPooling1D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxPooling1d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxPooling1D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -3331,6 +3394,8 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Max pooling operation for 2D spatial data.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxPool2D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxPool2d</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxPooling2D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxPooling2d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxPooling2D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -3349,6 +3414,8 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Max pooling operation for 3D data (spatial or spatio-temporal). Downsamples the input along its spatial dimensions (depth, height, and width) by taking the maximum value over an input window (of size defined by pool_size) for each channel of the input. The window is shifted by strides along each dimension.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxPool3D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxPool3d</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxPooling3D</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxPooling3d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxPooling3D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -3365,6 +3432,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/MaxUnpool1D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computes a partial inverse of MaxPool1d.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxUnpool1D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxUnpool1d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxUnpool1D Layer</rdfs:label>
     </owl:Class>
@@ -3382,6 +3450,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/MaxUnpool2D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computes a partial inverse of MaxPool2d.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxUnpool2D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxUnpool2d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxUnpool2D Layer</rdfs:label>
     </owl:Class>
@@ -3399,6 +3468,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/MaxUnpool3D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computes a partial inverse of MaxPool3d.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxUnpool3D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxUnpool3d</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxUnpool3D Layer</rdfs:label>
     </owl:Class>
@@ -5115,6 +5185,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/SyncBatchNorm_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/BatchNormalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Batch Normalization over a N-Dimensional input (a mini-batch of [N-2]D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift .</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SyncBatchNorm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.SyncBatchNorm</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SyncBatchNorm Layer</rdfs:label>
     </owl:Class>
