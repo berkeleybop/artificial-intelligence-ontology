@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: releases/2023-04-14
+data-version: releases/2023-04-17
 ontology: aio
 property_value: http://purl.org/dc/elements/1.1/description "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Artificial Intelligence Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2023-04-14" xsd:string
+property_value: owl:versionInfo "2023-04-17" xsd:string
 
 [Term]
 id: Activation:Layer
@@ -30,6 +30,48 @@ id: ActivityRegularization:Layer
 name: ActivityRegularization Layer
 def: "Layer that applies an update to the cost function based input activity." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/ActivityRegularization]
 is_a: Regularization:Layer ! Regularization Layer
+
+[Term]
+id: AdaptiveAvgPool1D:Layer
+name: AdaptiveAvgPool1D Layer
+def: "Applies a 1D adaptive average pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "AdaptiveAvgPool1d" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: AdaptiveAvgPool2D:Layer
+name: AdaptiveAvgPool2D Layer
+def: "Applies a 2D adaptive average pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "AdaptiveAvgPool2d" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: AdaptiveAvgPool3D:Layer
+name: AdaptiveAvgPool3D Layer
+def: "Applies a 3D adaptive average pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "AdaptiveAvgPool3d" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: AdaptiveMaxPool1D:Layer
+name: AdaptiveMaxPool1D Layer
+def: "Applies a 1D adaptive max pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "AdaptiveMaxPool1d" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: AdaptiveMaxPool2D:Layer
+name: AdaptiveMaxPool2D Layer
+def: "Applies a 2D adaptive max pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "AdaptiveMaxPool2d" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: AdaptiveMaxPool3D:Layer
+name: AdaptiveMaxPool3D Layer
+def: "Applies a 3D adaptive max pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "AdaptiveMaxPool3d" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
 
 [Term]
 id: Add:Layer
@@ -93,6 +135,48 @@ name: AveragePooling3D Layer
 def: "Average pooling operation for 3D data (spatial or spatio-temporal). Downsamples the input along its spatial dimensions (depth, height, and width) by taking the average value over an input window (of size defined by pool_size) for each channel of the input. The window is shifted by strides along each dimension." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/AveragePooling3D]
 synonym: "AvgPool3D" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: AvgPool1D:Layer
+name: AvgPool1D Layer
+def: "Applies a 1D average pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "AvgPool1d" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: AvgPool2D:Layer
+name: AvgPool2D Layer
+def: "Applies a 2D average pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "AvgPool2d" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: AvgPool3D:Layer
+name: AvgPool3D Layer
+def: "Applies a 3D average pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "AvgPool3d" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: BatchNorm1D:Layer
+name: BatchNorm1D Layer
+def: "Applies Batch Normalization over a 2D or 3D input as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift ." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.BatchNorm1d" EXACT []
+is_a: BatchNormalization:Layer ! BatchNormalization Layer
+
+[Term]
+id: BatchNorm2D:Layer
+name: BatchNorm2D Layer
+def: "Applies Batch Normalization over a 4D input (a mini-batch of 2D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift ." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.BatchNorm2d" EXACT []
+is_a: BatchNormalization:Layer ! BatchNormalization Layer
+
+[Term]
+id: BatchNorm3D:Layer
+name: BatchNorm3D Layer
+def: "Applies Batch Normalization over a 5D input (a mini-batch of 3D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift ." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.BatchNorm3d" EXACT []
+is_a: BatchNormalization:Layer ! BatchNormalization Layer
 
 [Term]
 id: BatchNormalization:Layer
@@ -405,6 +489,20 @@ def: "Flattens the input. Does not affect the batch size." [https://www.tensorfl
 is_a: Reshaping:Layer ! Reshaping Layer
 
 [Term]
+id: FractionalMaxPool2D:Layer
+name: FractionalMaxPool2D Layer
+def: "Applies a 2D fractional max pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "FractionalMaxPool2d" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: FractionalMaxPool3D:Layer
+name: FractionalMaxPool3D Layer
+def: "Applies a 3D fractional max pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "FractionalMaxPool3d" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
 id: Funding:Bias
 name: Funding Bias
 def: "Arises when biased results are reported in order to support or satisfy the funding agency or financial supporter of the research study, but it can also be the individual researcher." [https://doi.org/10.6028/NIST.SP.1270]
@@ -496,6 +594,13 @@ synonym: "Intergroup bias" EXACT []
 is_a: Human:Bias ! Human Bias
 
 [Term]
+id: GroupNorm:Layer
+name: GroupNorm Layer
+def: "Applies Group Normalization over a mini-batch of inputs as described in the paper Group Normalization" [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.GroupNorm" EXACT []
+is_a: Normalization:Layer ! Normalization Layer
+
+[Term]
 id: Groupthink:Bias
 name: Groupthink Bias
 def: "A psychological phenomenon that occurs when people in a group tend to make non-optimal decisions based on their desire to conform to the group, or fear of dissenting with the group. In groupthink, individuals often refrain from expressing their personal disagreement with the group, hesitating to voice opinions that do not align with the group." [https://doi.org/10.6028/NIST.SP.1270]
@@ -577,6 +682,20 @@ def: "Specifies the rank, dtype and shape of every input to a layer. Layers can 
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
+id: InstanceNorm1d:Layer
+name: InstanceNorm1d Layer
+def: "Applies Instance Normalization over a 2D (unbatched) or 3D (batched) input as described in the paper Instance Normalization: The Missing Ingredient for Fast Stylization." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.InstanceNorm1d" EXACT []
+is_a: Normalization:Layer ! Normalization Layer
+
+[Term]
+id: InstanceNorm3d:Layer
+name: InstanceNorm3d Layer
+def: "Applies Instance Normalization over a 5D input (a mini-batch of 3D inputs with additional channel dimension) as described in the paper Instance Normalization: The Missing Ingredient for Fast Stylization." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.InstanceNorm3d" EXACT []
+is_a: Normalization:Layer ! Normalization Layer
+
+[Term]
 id: Institutional:Bias
 name: Institutional Bias
 def: "In contrast to biases exhibited at the level of individual persons, institutional bias refers to a tendency exhibited at the level of entire institutions, where practices or norms result in the favoring or disadvantaging of certain social groups. Common examples include institutional racism and institutional sexism." [https://doi.org/10.6028/NIST.SP.1270]
@@ -593,6 +712,20 @@ id: Interpretation:Bias
 name: Interpretation Bias
 def: "A form of information processing bias that can occur when users interpret algorithmic outputs according to their internalized biases and views." [https://doi.org/10.6028/NIST.SP.1270]
 is_a: Individual:Bias ! Individual Bias
+
+[Term]
+id: LPPool1D:Layer
+name: LPPool1D Layer
+def: "Applies a 1D power-average pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "LPPool1d" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: LPPool2D:Layer
+name: LPPool2D Layer
+def: "Applies a 2D power-average pooling over an input signal composed of several input planes." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "LPPool2d" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
 
 [Term]
 id: LSTM:Layer
@@ -625,9 +758,58 @@ def: "This is the class from which all layers inherit. A layer is a callable obj
 is_a: https://w3id.org/aio/Layer ! Layer
 
 [Term]
+id: LayerNorm:Layer
+name: LayerNorm Layer
+def: "Applies Layer Normalization over a mini-batch of inputs as described in the paper Layer Normalization" [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.LayerNorm" EXACT []
+is_a: Normalization:Layer ! Normalization Layer
+
+[Term]
 id: LayerNormalization:Layer
 name: LayerNormalization Layer
 def: "Layer normalization layer (Ba et al., 2016). Normalize the activations of the previous layer for each given example in a batch independently, rather than across a batch like Batch Normalization. i.e. applies a transformation that maintains the mean activation within each example close to 0 and the activation standard deviation close to 1. Given a tensor inputs, moments are calculated and normalization is performed across the axes specified in axis." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/LayerNormalization]
+is_a: Normalization:Layer ! Normalization Layer
+
+[Term]
+id: LazyBatchNorm1D:Layer
+name: LazyBatchNorm1D Layer
+def: "A torch.nn.BatchNorm1d module with lazy initialization of the num_features argument of the BatchNorm1d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.LazyBatchNorm1d" EXACT []
+is_a: BatchNormalization:Layer ! BatchNormalization Layer
+
+[Term]
+id: LazyBatchNorm2D:Layer
+name: LazyBatchNorm2D Layer
+def: "A torch.nn.BatchNorm2d module with lazy initialization of the num_features argument of the BatchNorm2d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.LazyBatchNorm2d" EXACT []
+is_a: BatchNormalization:Layer ! BatchNormalization Layer
+
+[Term]
+id: LazyBatchNorm3D:Layer
+name: LazyBatchNorm3D Layer
+def: "A torch.nn.BatchNorm3d module with lazy initialization of the num_features argument of the BatchNorm3d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.LazyBatchNorm3d" EXACT []
+is_a: BatchNormalization:Layer ! BatchNormalization Layer
+
+[Term]
+id: LazyInstanceNorm1d:Layer
+name: LazyInstanceNorm1d Layer
+def: "A torch.nn.InstanceNorm1d module with lazy initialization of the num_features argument of the InstanceNorm1d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.LazyInstanceNorm1d" EXACT []
+is_a: Normalization:Layer ! Normalization Layer
+
+[Term]
+id: LazyInstanceNorm2d:Layer
+name: LazyInstanceNorm2d Layer
+def: "A torch.nn.InstanceNorm2d module with lazy initialization of the num_features argument of the InstanceNorm2d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.LazyInstanceNorm2d" EXACT []
+is_a: Normalization:Layer ! Normalization Layer
+
+[Term]
+id: LazyInstanceNorm3d:Layer
+name: LazyInstanceNorm3d Layer
+def: "A torch.nn.InstanceNorm3d module with lazy initialization of the num_features argument of the InstanceNorm3d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.LazyInstanceNorm3d" EXACT []
 is_a: Normalization:Layer ! Normalization Layer
 
 [Term]
@@ -659,6 +841,13 @@ id: Linking:Bias
 name: Linking Bias
 def: "Arises when network attributes obtained from user connections, activities, or interactions differ and misrepresent the true behavior of the users." [https://doi.org/10.6028/NIST.SP.1270]
 is_a: https://w3id.org/aio/Use_And_Interpretation_Bias ! Use And Interpretation Bias
+
+[Term]
+id: LocalResponseNorm:Layer
+name: LocalResponseNorm Layer
+def: "Applies local response normalization over an input signal composed of several input planes, where channels occupy the second dimension." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.LocalResponseNorm" EXACT []
+is_a: Normalization:Layer ! Normalization Layer
 
 [Term]
 id: Locally-connected:Layer
@@ -724,6 +913,27 @@ name: MaxPooling3D Layer
 def: "Max pooling operation for 3D data (spatial or spatio-temporal). Downsamples the input along its spatial dimensions (depth, height, and width) by taking the maximum value over an input window (of size defined by pool_size) for each channel of the input. The window is shifted by strides along each dimension." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/MaxPool3D]
 synonym: "MaxPool3D" EXACT []
 synonym: "MaxPool3d" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: MaxUnpool1D:Layer
+name: MaxUnpool1D Layer
+def: "Computes a partial inverse of MaxPool1d." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "MaxUnpool1d" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: MaxUnpool2D:Layer
+name: MaxUnpool2D Layer
+def: "Computes a partial inverse of MaxPool2d." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "MaxUnpool2d" EXACT []
+is_a: Pooling:Layer ! Pooling Layer
+
+[Term]
+id: MaxUnpool3D:Layer
+name: MaxUnpool3D Layer
+def: "Computes a partial inverse of MaxPool3d." [https://pytorch.org/docs/stable/nn.html#pooling-layers]
+synonym: "MaxUnpool3d" EXACT []
 is_a: Pooling:Layer ! Pooling Layer
 
 [Term]
@@ -1206,6 +1416,13 @@ def: "x*sigmoid(x). It is a smooth, non-monotonic function that consistently mat
 is_a: https://w3id.org/aio/Function
 
 [Term]
+id: SyncBatchNorm:Layer
+name: SyncBatchNorm Layer
+def: "Applies Batch Normalization over a N-Dimensional input (a mini-batch of [N-2]D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift ." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
+synonym: "nn.SyncBatchNorm" EXACT []
+is_a: BatchNormalization:Layer ! BatchNormalization Layer
+
+[Term]
 id: Systemic:Bias
 name: Systemic Bias
 def: "Biases that result from procedures and practices of particular institutions that operate in ways which result in certain social groups being advantaged or favored and others being disadvantaged or devalued." [https://doi.org/10.6028/NIST.SP.1270]
@@ -1420,27 +1637,6 @@ synonym: "Sherrington–Kirkpatrick model with external field" EXACT []
 synonym: "stochastic Hopfield network with hidden units" EXACT []
 synonym: "stochastic Ising-Lenz-Little model" EXACT []
 is_a: https://w3id.org/aio/SCN ! Symmetrically Connected Network
-
-[Term]
-id: https://w3id.org/aio/BatchNorm1D
-name: BatchNorm1D
-def: "Applies Batch Normalization over a 2D or 3D input as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift ." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
-synonym: "nn.BatchNorm1d" EXACT []
-is_a: BatchNormalization:Layer ! BatchNormalization Layer
-
-[Term]
-id: https://w3id.org/aio/BatchNorm2D
-name: BatchNorm2D
-def: "Applies Batch Normalization over a 4D input (a mini-batch of 2D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift ." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
-synonym: "nn.BatchNorm2d" EXACT []
-is_a: BatchNormalization:Layer ! BatchNormalization Layer
-
-[Term]
-id: https://w3id.org/aio/BatchNorm3D
-name: BatchNorm3D
-def: "Applies Batch Normalization over a 5D input (a mini-batch of 3D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift ." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
-synonym: "nn.BatchNorm3d" EXACT []
-is_a: BatchNormalization:Layer ! BatchNormalization Layer
 
 [Term]
 id: https://w3id.org/aio/Bias
@@ -1694,13 +1890,6 @@ synonym: "GLM" EXACT []
 is_a: Regression:Analysis ! Regression Analysis
 
 [Term]
-id: https://w3id.org/aio/GroupNorm
-name: GroupNorm
-def: "Applies Group Normalization over a mini-batch of inputs as described in the paper Group Normalization" [https://pytorch.org/docs/stable/nn.html#normalization-layers]
-synonym: "nn.GroupNorm" EXACT []
-is_a: Normalization:Layer ! Normalization Layer
-
-[Term]
 id: https://w3id.org/aio/HN
 name: Hopfield Network
 def: "A Hopfield network is a form of recurrent artificial neural network and a type of spin glass system popularised by John Hopfield in 1982 as described earlier by Little in 1974 based on Ernst Ising's work with Wilhelm Lenz on the Ising model. Hopfield networks serve as content-addressable (\"associative\") memory systems with binary threshold nodes, or with continuous variables. Hopfield networks also provide a model for understanding human memory. (https://en.wikipedia.org/wiki/Hopfield_network)" [https://en.wikipedia.org/wiki/Hopfield_network]
@@ -1748,24 +1937,10 @@ synonym: "IFSL" EXACT []
 is_a: https://w3id.org/aio/DNN ! Deep Neural Network
 
 [Term]
-id: https://w3id.org/aio/InstanceNorm1d
-name: InstanceNorm1d
-def: "Applies Instance Normalization over a 2D (unbatched) or 3D (batched) input as described in the paper Instance Normalization: The Missing Ingredient for Fast Stylization." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
-synonym: "nn.InstanceNorm1d" EXACT []
-is_a: Normalization:Layer ! Normalization Layer
-
-[Term]
 id: https://w3id.org/aio/InstanceNorm2d
 name: InstanceNorm2d
 def: "Applies Instance Normalization over a 4D input (a mini-batch of 2D inputs with additional channel dimension) as described in the paper Instance Normalization: The Missing Ingredient for Fast Stylization." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
 synonym: "nn.InstanceNorm2d" EXACT []
-is_a: Normalization:Layer ! Normalization Layer
-
-[Term]
-id: https://w3id.org/aio/InstanceNorm3d
-name: InstanceNorm3d
-def: "Applies Instance Normalization over a 5D input (a mini-batch of 3D inputs with additional channel dimension) as described in the paper Instance Normalization: The Missing Ingredient for Fast Stylization." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
-synonym: "nn.InstanceNorm3d" EXACT []
 is_a: Normalization:Layer ! Normalization Layer
 
 [Term]
@@ -1825,62 +2000,6 @@ is_a: https://w3id.org/aio/RecNN ! Recurrent Neural Network
 id: https://w3id.org/aio/Layer
 name: Layer
 def: "Network layer parent class" []
-
-[Term]
-id: https://w3id.org/aio/LayerNorm
-name: LayerNorm
-def: "Applies Layer Normalization over a mini-batch of inputs as described in the paper Layer Normalization" [https://pytorch.org/docs/stable/nn.html#normalization-layers]
-synonym: "nn.LayerNorm" EXACT []
-is_a: Normalization:Layer ! Normalization Layer
-
-[Term]
-id: https://w3id.org/aio/LazyBatchNorm1D
-name: LazyBatchNorm1D
-def: "A torch.nn.BatchNorm1d module with lazy initialization of the num_features argument of the BatchNorm1d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
-synonym: "nn.LazyBatchNorm1d" EXACT []
-is_a: BatchNormalization:Layer ! BatchNormalization Layer
-
-[Term]
-id: https://w3id.org/aio/LazyBatchNorm2D
-name: LazyBatchNorm2D
-def: "A torch.nn.BatchNorm2d module with lazy initialization of the num_features argument of the BatchNorm2d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
-synonym: "nn.LazyBatchNorm2d" EXACT []
-is_a: BatchNormalization:Layer ! BatchNormalization Layer
-
-[Term]
-id: https://w3id.org/aio/LazyBatchNorm3D
-name: LazyBatchNorm3D
-def: "A torch.nn.BatchNorm3d module with lazy initialization of the num_features argument of the BatchNorm3d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
-synonym: "nn.LazyBatchNorm3d" EXACT []
-is_a: BatchNormalization:Layer ! BatchNormalization Layer
-
-[Term]
-id: https://w3id.org/aio/LazyInstanceNorm1d
-name: LazyInstanceNorm1d
-def: "A torch.nn.InstanceNorm1d module with lazy initialization of the num_features argument of the InstanceNorm1d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
-synonym: "nn.LazyInstanceNorm1d" EXACT []
-is_a: Normalization:Layer ! Normalization Layer
-
-[Term]
-id: https://w3id.org/aio/LazyInstanceNorm2d
-name: LazyInstanceNorm2d
-def: "A torch.nn.InstanceNorm2d module with lazy initialization of the num_features argument of the InstanceNorm2d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
-synonym: "nn.LazyInstanceNorm2d" EXACT []
-is_a: Normalization:Layer ! Normalization Layer
-
-[Term]
-id: https://w3id.org/aio/LazyInstanceNorm3d
-name: LazyInstanceNorm3d
-def: "A torch.nn.InstanceNorm3d module with lazy initialization of the num_features argument of the InstanceNorm3d that is inferred from the input.size(1)." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
-synonym: "nn.LazyInstanceNorm3d" EXACT []
-is_a: Normalization:Layer ! Normalization Layer
-
-[Term]
-id: https://w3id.org/aio/LocalResponseNorm
-name: LocalResponseNorm
-def: "Applies local response normalization over an input signal composed of several input planes, where channels occupy the second dimension." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
-synonym: "nn.LocalResponseNorm" EXACT []
-is_a: Normalization:Layer ! Normalization Layer
 
 [Term]
 id: https://w3id.org/aio/Loss_Of_Situational_Awareness_Bias
@@ -2120,13 +2239,6 @@ name: Sunk Cost Fallacy Bias
 def: "A human tendency where people opt to continue with an endeavor or behavior due to previously spent or invested resources, such as money, time, and effort, regardless of whether costs outweigh benefits. For example, in AI, the sunk cost fallacy could lead development teams and organizations to feel that because they have already invested so much time and money into a particular AI application, they must pursue it to market rather than deciding to end the effort, even in the face of significant technical debt and/or ethical debt." [https://doi.org/10.6028/NIST.SP.1270]
 synonym: "Sunk Cost Fallacy" EXACT []
 is_a: Group:Bias ! Group Bias
-
-[Term]
-id: https://w3id.org/aio/SyncBatchNorm
-name: SyncBatchNorm
-def: "Applies Batch Normalization over a N-Dimensional input (a mini-batch of [N-2]D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift ." [https://pytorch.org/docs/stable/nn.html#normalization-layers]
-synonym: "nn.SyncBatchNorm" EXACT []
-is_a: BatchNormalization:Layer ! BatchNormalization Layer
 
 [Term]
 id: https://w3id.org/aio/Text_Preprocessing_Layer

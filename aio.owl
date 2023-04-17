@@ -11,11 +11,11 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aio.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2023-04-14/aio.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2023-04-17/aio.owl"/>
         <dc:description>This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases.</dc:description>
         <dc:title>Artificial Intelligence Ontology</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-04-14</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-04-17</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -179,6 +179,108 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of selection bias that occurs when systems/platforms get their training data from their most active users, rather than those less active (or inactive).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.6028/NIST.SP.1270</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/AdaptiveAvgPool1D_Layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/AdaptiveAvgPool1D_Layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 1D adaptive average pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveAvgPool1d</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveAvgPool1D Layer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/AdaptiveAvgPool1D_Layer"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 1D adaptive average pooling over an input signal composed of several input planes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#pooling-layers</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/AdaptiveAvgPool2D_Layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/AdaptiveAvgPool2D_Layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 2D adaptive average pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveAvgPool2d</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveAvgPool2D Layer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/AdaptiveAvgPool2D_Layer"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 2D adaptive average pooling over an input signal composed of several input planes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#pooling-layers</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/AdaptiveAvgPool3D_Layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/AdaptiveAvgPool3D_Layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 3D adaptive average pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveAvgPool3d</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveAvgPool3D Layer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/AdaptiveAvgPool3D_Layer"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 3D adaptive average pooling over an input signal composed of several input planes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#pooling-layers</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/AdaptiveMaxPool1D_Layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/AdaptiveMaxPool1D_Layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 1D adaptive max pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveMaxPool1d</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveMaxPool1D Layer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/AdaptiveMaxPool1D_Layer"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 1D adaptive max pooling over an input signal composed of several input planes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#pooling-layers</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/AdaptiveMaxPool2D_Layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/AdaptiveMaxPool2D_Layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 2D adaptive max pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveMaxPool2d</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveMaxPool2D Layer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/AdaptiveMaxPool2D_Layer"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 2D adaptive max pooling over an input signal composed of several input planes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#pooling-layers</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/AdaptiveMaxPool3D_Layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/AdaptiveMaxPool3D_Layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 3D adaptive max pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveMaxPool3d</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AdaptiveMaxPool3D Layer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/AdaptiveMaxPool3D_Layer"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 3D adaptive max pooling over an input signal composed of several input planes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#pooling-layers</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -413,6 +515,57 @@
     
 
 
+    <!-- https://w3id.org/aio/AvgPool1D_Layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/AvgPool1D_Layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 1D average pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool1d</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool1D Layer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/AvgPool1D_Layer"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 1D average pooling over an input signal composed of several input planes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#pooling-layers</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/AvgPool2D_Layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/AvgPool2D_Layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 2D average pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool2d</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool2D Layer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/AvgPool2D_Layer"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 2D average pooling over an input signal composed of several input planes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#pooling-layers</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/AvgPool3D_Layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/AvgPool3D_Layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 3D average pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool3d</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgPool3D Layer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/AvgPool3D_Layer"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 3D average pooling over an input signal composed of several input planes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#pooling-layers</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/BM -->
 
     <owl:Class rdf:about="https://w3id.org/aio/BM">
@@ -434,16 +587,16 @@
     
 
 
-    <!-- https://w3id.org/aio/BatchNorm1D -->
+    <!-- https://w3id.org/aio/BatchNorm1D_Layer -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/BatchNorm1D">
+    <owl:Class rdf:about="https://w3id.org/aio/BatchNorm1D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/BatchNormalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Batch Normalization over a 2D or 3D input as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift .</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.BatchNorm1d</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BatchNorm1D</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BatchNorm1D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/BatchNorm1D"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/BatchNorm1D_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Batch Normalization over a 2D or 3D input as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift .</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#normalization-layers</oboInOwl:hasDbXref>
@@ -451,16 +604,16 @@
     
 
 
-    <!-- https://w3id.org/aio/BatchNorm2D -->
+    <!-- https://w3id.org/aio/BatchNorm2D_Layer -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/BatchNorm2D">
+    <owl:Class rdf:about="https://w3id.org/aio/BatchNorm2D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/BatchNormalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Batch Normalization over a 4D input (a mini-batch of 2D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift .</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.BatchNorm2d</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BatchNorm2D</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BatchNorm2D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/BatchNorm2D"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/BatchNorm2D_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Batch Normalization over a 4D input (a mini-batch of 2D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift .</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#normalization-layers</oboInOwl:hasDbXref>
@@ -468,16 +621,16 @@
     
 
 
-    <!-- https://w3id.org/aio/BatchNorm3D -->
+    <!-- https://w3id.org/aio/BatchNorm3D_Layer -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/BatchNorm3D">
+    <owl:Class rdf:about="https://w3id.org/aio/BatchNorm3D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/BatchNormalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Batch Normalization over a 5D input (a mini-batch of 3D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift .</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.BatchNorm3d</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BatchNorm3D</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BatchNorm3D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/BatchNorm3D"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/BatchNorm3D_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Batch Normalization over a 5D input (a mini-batch of 3D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift .</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#normalization-layers</oboInOwl:hasDbXref>
@@ -1726,6 +1879,40 @@
     
 
 
+    <!-- https://w3id.org/aio/FractionalMaxPool2D_Layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/FractionalMaxPool2D_Layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 2D fractional max pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FractionalMaxPool2d</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FractionalMaxPool2D Layer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/FractionalMaxPool2D_Layer"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 2D fractional max pooling over an input signal composed of several input planes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#pooling-layers</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/FractionalMaxPool3D_Layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/FractionalMaxPool3D_Layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 3D fractional max pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FractionalMaxPool3d</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FractionalMaxPool3D Layer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/FractionalMaxPool3D_Layer"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 3D fractional max pooling over an input signal composed of several input planes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#pooling-layers</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/Function -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Function"/>
@@ -2038,16 +2225,16 @@
     
 
 
-    <!-- https://w3id.org/aio/GroupNorm -->
+    <!-- https://w3id.org/aio/GroupNorm_Layer -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/GroupNorm">
+    <owl:Class rdf:about="https://w3id.org/aio/GroupNorm_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Normalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Group Normalization over a mini-batch of inputs as described in the paper Group Normalization</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.GroupNorm</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GroupNorm</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GroupNorm Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/GroupNorm"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/GroupNorm_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Group Normalization over a mini-batch of inputs as described in the paper Group Normalization</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#normalization-layers</oboInOwl:hasDbXref>
@@ -2404,16 +2591,16 @@
     
 
 
-    <!-- https://w3id.org/aio/InstanceNorm1d -->
+    <!-- https://w3id.org/aio/InstanceNorm1d_Layer -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/InstanceNorm1d">
+    <owl:Class rdf:about="https://w3id.org/aio/InstanceNorm1d_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Normalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Instance Normalization over a 2D (unbatched) or 3D (batched) input as described in the paper Instance Normalization: The Missing Ingredient for Fast Stylization.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.InstanceNorm1d</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstanceNorm1d</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstanceNorm1d Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/InstanceNorm1d"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/InstanceNorm1d_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Instance Normalization over a 2D (unbatched) or 3D (batched) input as described in the paper Instance Normalization: The Missing Ingredient for Fast Stylization.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#normalization-layers</oboInOwl:hasDbXref>
@@ -2438,16 +2625,16 @@
     
 
 
-    <!-- https://w3id.org/aio/InstanceNorm3d -->
+    <!-- https://w3id.org/aio/InstanceNorm3d_Layer -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/InstanceNorm3d">
+    <owl:Class rdf:about="https://w3id.org/aio/InstanceNorm3d_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Normalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Instance Normalization over a 5D input (a mini-batch of 3D inputs with additional channel dimension) as described in the paper Instance Normalization: The Missing Ingredient for Fast Stylization.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.InstanceNorm3d</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstanceNorm3d</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InstanceNorm3d Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/InstanceNorm3d"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/InstanceNorm3d_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Instance Normalization over a 5D input (a mini-batch of 3D inputs with additional channel dimension) as described in the paper Instance Normalization: The Missing Ingredient for Fast Stylization.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#normalization-layers</oboInOwl:hasDbXref>
@@ -2580,6 +2767,40 @@
     
 
 
+    <!-- https://w3id.org/aio/LPPool1D_Layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/LPPool1D_Layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 1D power-average pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LPPool1d</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LPPool1D Layer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LPPool1D_Layer"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 1D power-average pooling over an input signal composed of several input planes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#pooling-layers</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/LPPool2D_Layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/LPPool2D_Layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 2D power-average pooling over an input signal composed of several input planes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LPPool2d</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LPPool2D Layer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LPPool2D_Layer"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies a 2D power-average pooling over an input signal composed of several input planes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#pooling-layers</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/aio/LSM -->
 
     <owl:Class rdf:about="https://w3id.org/aio/LSM">
@@ -2689,16 +2910,16 @@
     
 
 
-    <!-- https://w3id.org/aio/LayerNorm -->
+    <!-- https://w3id.org/aio/LayerNorm_Layer -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/LayerNorm">
+    <owl:Class rdf:about="https://w3id.org/aio/LayerNorm_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Normalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Layer Normalization over a mini-batch of inputs as described in the paper Layer Normalization</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.LayerNorm</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LayerNorm</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LayerNorm Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LayerNorm"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LayerNorm_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Layer Normalization over a mini-batch of inputs as described in the paper Layer Normalization</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#normalization-layers</oboInOwl:hasDbXref>
@@ -2738,16 +2959,16 @@
     
 
 
-    <!-- https://w3id.org/aio/LazyBatchNorm1D -->
+    <!-- https://w3id.org/aio/LazyBatchNorm1D_Layer -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/LazyBatchNorm1D">
+    <owl:Class rdf:about="https://w3id.org/aio/LazyBatchNorm1D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/BatchNormalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A torch.nn.BatchNorm1d module with lazy initialization of the num_features argument of the BatchNorm1d that is inferred from the input.size(1).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.LazyBatchNorm1d</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyBatchNorm1D</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyBatchNorm1D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LazyBatchNorm1D"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LazyBatchNorm1D_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A torch.nn.BatchNorm1d module with lazy initialization of the num_features argument of the BatchNorm1d that is inferred from the input.size(1).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#normalization-layers</oboInOwl:hasDbXref>
@@ -2755,16 +2976,16 @@
     
 
 
-    <!-- https://w3id.org/aio/LazyBatchNorm2D -->
+    <!-- https://w3id.org/aio/LazyBatchNorm2D_Layer -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/LazyBatchNorm2D">
+    <owl:Class rdf:about="https://w3id.org/aio/LazyBatchNorm2D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/BatchNormalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A torch.nn.BatchNorm2d module with lazy initialization of the num_features argument of the BatchNorm2d that is inferred from the input.size(1).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.LazyBatchNorm2d</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyBatchNorm2D</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyBatchNorm2D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LazyBatchNorm2D"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LazyBatchNorm2D_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A torch.nn.BatchNorm2d module with lazy initialization of the num_features argument of the BatchNorm2d that is inferred from the input.size(1).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#normalization-layers</oboInOwl:hasDbXref>
@@ -2772,16 +2993,16 @@
     
 
 
-    <!-- https://w3id.org/aio/LazyBatchNorm3D -->
+    <!-- https://w3id.org/aio/LazyBatchNorm3D_Layer -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/LazyBatchNorm3D">
+    <owl:Class rdf:about="https://w3id.org/aio/LazyBatchNorm3D_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/BatchNormalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A torch.nn.BatchNorm3d module with lazy initialization of the num_features argument of the BatchNorm3d that is inferred from the input.size(1).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.LazyBatchNorm3d</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyBatchNorm3D</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyBatchNorm3D Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LazyBatchNorm3D"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LazyBatchNorm3D_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A torch.nn.BatchNorm3d module with lazy initialization of the num_features argument of the BatchNorm3d that is inferred from the input.size(1).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#normalization-layers</oboInOwl:hasDbXref>
@@ -2789,16 +3010,16 @@
     
 
 
-    <!-- https://w3id.org/aio/LazyInstanceNorm1d -->
+    <!-- https://w3id.org/aio/LazyInstanceNorm1d_Layer -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/LazyInstanceNorm1d">
+    <owl:Class rdf:about="https://w3id.org/aio/LazyInstanceNorm1d_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Normalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A torch.nn.InstanceNorm1d module with lazy initialization of the num_features argument of the InstanceNorm1d that is inferred from the input.size(1).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.LazyInstanceNorm1d</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyInstanceNorm1d</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyInstanceNorm1d Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LazyInstanceNorm1d"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LazyInstanceNorm1d_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A torch.nn.InstanceNorm1d module with lazy initialization of the num_features argument of the InstanceNorm1d that is inferred from the input.size(1).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#normalization-layers</oboInOwl:hasDbXref>
@@ -2806,16 +3027,16 @@
     
 
 
-    <!-- https://w3id.org/aio/LazyInstanceNorm2d -->
+    <!-- https://w3id.org/aio/LazyInstanceNorm2d_Layer -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/LazyInstanceNorm2d">
+    <owl:Class rdf:about="https://w3id.org/aio/LazyInstanceNorm2d_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Normalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A torch.nn.InstanceNorm2d module with lazy initialization of the num_features argument of the InstanceNorm2d that is inferred from the input.size(1).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.LazyInstanceNorm2d</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyInstanceNorm2d</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyInstanceNorm2d Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LazyInstanceNorm2d"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LazyInstanceNorm2d_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A torch.nn.InstanceNorm2d module with lazy initialization of the num_features argument of the InstanceNorm2d that is inferred from the input.size(1).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#normalization-layers</oboInOwl:hasDbXref>
@@ -2823,16 +3044,16 @@
     
 
 
-    <!-- https://w3id.org/aio/LazyInstanceNorm3d -->
+    <!-- https://w3id.org/aio/LazyInstanceNorm3d_Layer -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/LazyInstanceNorm3d">
+    <owl:Class rdf:about="https://w3id.org/aio/LazyInstanceNorm3d_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Normalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A torch.nn.InstanceNorm3d module with lazy initialization of the num_features argument of the InstanceNorm3d that is inferred from the input.size(1).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.LazyInstanceNorm3d</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyInstanceNorm3d</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LazyInstanceNorm3d Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LazyInstanceNorm3d"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LazyInstanceNorm3d_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A torch.nn.InstanceNorm3d module with lazy initialization of the num_features argument of the InstanceNorm3d that is inferred from the input.size(1).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#normalization-layers</oboInOwl:hasDbXref>
@@ -2920,16 +3141,16 @@
     
 
 
-    <!-- https://w3id.org/aio/LocalResponseNorm -->
+    <!-- https://w3id.org/aio/LocalResponseNorm_Layer -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/LocalResponseNorm">
+    <owl:Class rdf:about="https://w3id.org/aio/LocalResponseNorm_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Normalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies local response normalization over an input signal composed of several input planes, where channels occupy the second dimension.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.LocalResponseNorm</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LocalResponseNorm</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LocalResponseNorm Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LocalResponseNorm"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LocalResponseNorm_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies local response normalization over an input signal composed of several input planes, where channels occupy the second dimension.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#normalization-layers</oboInOwl:hasDbXref>
@@ -3135,6 +3356,57 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Max pooling operation for 3D data (spatial or spatio-temporal). Downsamples the input along its spatial dimensions (depth, height, and width) by taking the maximum value over an input window (of size defined by pool_size) for each channel of the input. The window is shifted by strides along each dimension.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tensorflow.org/api_docs/python/tf/keras/layers/MaxPool3D</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/MaxUnpool1D_Layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/MaxUnpool1D_Layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computes a partial inverse of MaxPool1d.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxUnpool1d</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxUnpool1D Layer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/MaxUnpool1D_Layer"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computes a partial inverse of MaxPool1d.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#pooling-layers</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/MaxUnpool2D_Layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/MaxUnpool2D_Layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computes a partial inverse of MaxPool2d.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxUnpool2d</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxUnpool2D Layer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/MaxUnpool2D_Layer"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computes a partial inverse of MaxPool2d.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#pooling-layers</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/MaxUnpool3D_Layer -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/MaxUnpool3D_Layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Pooling_Layer"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computes a partial inverse of MaxPool3d.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxUnpool3d</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxUnpool3D Layer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/MaxUnpool3D_Layer"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computes a partial inverse of MaxPool3d.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#pooling-layers</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4838,16 +5110,16 @@
     
 
 
-    <!-- https://w3id.org/aio/SyncBatchNorm -->
+    <!-- https://w3id.org/aio/SyncBatchNorm_Layer -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/SyncBatchNorm">
+    <owl:Class rdf:about="https://w3id.org/aio/SyncBatchNorm_Layer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/BatchNormalization_Layer"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Batch Normalization over a N-Dimensional input (a mini-batch of [N-2]D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift .</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nn.SyncBatchNorm</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SyncBatchNorm</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SyncBatchNorm Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/SyncBatchNorm"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/SyncBatchNorm_Layer"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies Batch Normalization over a N-Dimensional input (a mini-batch of [N-2]D inputs with additional channel dimension) as described in the paper Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift .</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pytorch.org/docs/stable/nn.html#normalization-layers</oboInOwl:hasDbXref>
