@@ -25,7 +25,7 @@ robot convert -i aio.owl -o aio.json
 npm i obographviz
 ./node_modules/obographviz/bin/og2dot.js aio.json > aio.dot
 #   assumes dot from graphviz is on the path
-dot aio.dot -Tpng -Grankdir=BT > learning-ontology.png
+dot aio.dot -Tsvg -Grankdir=BT > learning-ontology.svg
 
 ```
 

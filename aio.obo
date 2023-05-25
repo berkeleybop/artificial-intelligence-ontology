@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: releases/2023-04-17
+data-version: releases/2023-05-24
 ontology: aio
 property_value: http://purl.org/dc/elements/1.1/description "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Artificial Intelligence Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2023-04-17" xsd:string
+property_value: owl:versionInfo "2023-05-24" xsd:string
 
 [Term]
 id: Activation:Layer
