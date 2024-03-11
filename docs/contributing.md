@@ -1,0 +1,1 @@
+# How to contribute to ARTIFICIAL-INTELLIGENCE-ONTOLOGY
