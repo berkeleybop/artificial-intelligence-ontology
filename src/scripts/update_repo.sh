@@ -4,7 +4,7 @@ echo "(2) and add missing files, if any."
 
 set -e
 
-OID=deep-learning-ontology
+OID=artificial-intelligence-ontology
 ROOTDIR=../..
 SRCDIR=..
 CONFIG=$OID"-odk.yaml"

@@ -1,4 +1,4 @@
-These notes are for the EDITORS of deep-learning-ontology
+These notes are for the EDITORS of artificial-intelligence-ontology
 
 This project was created using the [ontology development kit](https://github.com/INCATools/ontology-development-kit). See the site for details.
 
@@ -14,17 +14,17 @@ You may also want to read the [GO ontology editors guide](http://go-ontology.rea
 
 ## Editors Version
 
-Make sure you have an ID range in the [idranges file](deep-learning-ontology-idranges.owl)
+Make sure you have an ID range in the [idranges file](artificial-intelligence-ontology-idranges.owl)
 
 If you do not have one, get one from the maintainer of this repo.
 
-The editors version is [deep-learning-ontology-edit.owl](deep-learning-ontology-edit.owl)
+The editors version is [artificial-intelligence-ontology-edit.owl](artificial-intelligence-ontology-edit.owl)
 
-** DO NOT EDIT deep-learning-ontology.obo OR deep-learning-ontology.owl in the top level directory **
+** DO NOT EDIT artificial-intelligence-ontology.obo OR artificial-intelligence-ontology.owl in the top level directory **
 
-[../../deep-learning-ontology.owl](../../deep-learning-ontology.owl) is the release version
+[../../artificial-intelligence-ontology.owl](../../artificial-intelligence-ontology.owl) is the release version
 
-To edit, open the file in Protege. First make sure you have the repository cloned, see [the GitHub project](https://github.com/turbomam/deep-learning-ontology) for details.
+To edit, open the file in Protege. First make sure you have the repository cloned, see [the GitHub project](https://github.com/turbomam/artificial-intelligence-ontology) for details.
 
 You should discuss the git workflow you should use with the maintainer
 of this repo, who should document it here. If you are the maintainer,
@@ -39,7 +39,7 @@ better to make changes on a branch, and make Pull Requests.
 
 These are stored in the file
 
- * [deep-learning-ontology-idranges.owl](deep-learning-ontology-idranges.owl)
+ * [artificial-intelligence-ontology-idranges.owl](artificial-intelligence-ontology-idranges.owl)
 
 ** ONLY USE IDs WITHIN YOUR RANGE!! **
 
@@ -96,7 +96,7 @@ If this looks good type:
 
     sh run.sh make prepare_release
 
-This generates derived files such as deep-learning-ontology.owl and deep-learning-ontology.obo and places
+This generates derived files such as artificial-intelligence-ontology.owl and artificial-intelligence-ontology.obo and places
 them in the top level (../..).
 
 Note that the versionIRI value automatically will be added, and will
@@ -114,16 +114,16 @@ Finally type:
 
 IMMEDIATELY AFTERWARDS (do *not* make further modifications) go here:
 
- * https://github.com/turbomam/deep-learning-ontology/releases
- * https://github.com/turbomam/deep-learning-ontology/releases/new
+ * https://github.com/turbomam/artificial-intelligence-ontology/releases
+ * https://github.com/turbomam/artificial-intelligence-ontology/releases/new
 
 __IMPORTANT__: The value of the "Tag version" field MUST be
 
     vYYYY-MM-DD
 
 The initial lowercase "v" is REQUIRED. The YYYY-MM-DD *must* match
-what is in the `owl:versionIRI` of the derived deep-learning-ontology.owl (`data-version` in
-deep-learning-ontology.obo). This will be today's date.
+what is in the `owl:versionIRI` of the derived artificial-intelligence-ontology.owl (`data-version` in
+artificial-intelligence-ontology.obo). This will be today's date.
 
 This cannot be changed after the fact, be sure to get this right!
 
@@ -140,19 +140,19 @@ The PURLs are already configured to pull from github. This means that
 BOTH ontology purls and versioned ontology purls will resolve to the
 correct ontologies. Try it!
 
- * http://purl.obolibrary.org/obo/deep-learning-ontology.owl <-- current ontology PURL
- * http://purl.obolibrary.org/obo/deep-learning-ontology/releases/YYYY-MM-DD.owl <-- change to the release you just made
+ * http://purl.obolibrary.org/obo/artificial-intelligence-ontology.owl <-- current ontology PURL
+ * http://purl.obolibrary.org/obo/artificial-intelligence-ontology/releases/YYYY-MM-DD.owl <-- change to the release you just made
 
 For questions on this contact Chris Mungall or email obo-admin AT obofoundry.org
 
 # Travis Continuous Integration System
 
-Check the build status here: [![Build Status](https://travis-ci.org/turbomam/deep-learning-ontology.svg?branch=master)](https://travis-ci.org/turbomam/deep-learning-ontology)
+Check the build status here: [![Build Status](https://travis-ci.org/turbomam/artificial-intelligence-ontology.svg?branch=master)](https://travis-ci.org/turbomam/artificial-intelligence-ontology)
 
 Note: if you have only just created this project you will need to authorize travis for this repo.
 
  1. Go to [https://travis-ci.org/profile/turbomam](https://travis-ci.org/profile/turbomam)
  2. click the "Sync account" button
- 3. Click the tick symbol next to deep-learning-ontology
+ 3. Click the tick symbol next to artificial-intelligence-ontology
 
 Travis builds should now be activated

@@ -1,27 +1,27 @@
-# PURL configuration for http://purl.obolibrary.org/obo/deep-learning-ontology
+# PURL configuration for http://purl.obolibrary.org/obo/artificial-intelligence-ontology
 
-idspace: DEEP-LEARNING-ONTOLOGY
-base_url: /obo/deep-learning-ontology
+idspace: artificial-intelligence-ontology
+base_url: /obo/artificial-intelligence-ontology
 
 products:
-- deep-learning-ontology.owl: https://raw.githubusercontent.com/turbomam/deep-learning-ontology/main/deep-learning-ontology.owl
-- deep-learning-ontology.obo: https://raw.githubusercontent.com/turbomam/deep-learning-ontology/main/deep-learning-ontology.obo
+- artificial-intelligence-ontology.owl: https://raw.githubusercontent.com/turbomam/artificial-intelligence-ontology/main/artificial-intelligence-ontology.owl
+- artificial-intelligence-ontology.obo: https://raw.githubusercontent.com/turbomam/artificial-intelligence-ontology/main/artificial-intelligence-ontology.obo
 
 term_browser: ontobee
 example_terms:
-- DEEP-LEARNING-ONTOLOGY_0000000
+- artificial-intelligence-ontology_0000000
 
 entries:
 
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/turbomam/deep-learning-ontology/v
+  replacement: https://raw.githubusercontent.com/turbomam/artificial-intelligence-ontology/v
 
 - prefix: /tracker/
-  replacement: https://github.com/turbomam/deep-learning-ontology/issues
+  replacement: https://github.com/turbomam/artificial-intelligence-ontology/issues
 
 - prefix: /about/
-  replacement: http://www.ontobee.org/ontology/DEEP-LEARNING-ONTOLOGY?iri=http://purl.obolibrary.org/obo/
+  replacement: http://www.ontobee.org/ontology/artificial-intelligence-ontology?iri=http://purl.obolibrary.org/obo/
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/turbomam/deep-learning-ontology/main/
+  replacement: https://raw.githubusercontent.com/turbomam/artificial-intelligence-ontology/main/
