@@ -1,0 +1,14 @@
+identifier,name,parent,description,related_concepts
+ID,LABEL,SC %,A rdfs:comment,A oboInOwl:hasRelatedSynonym
+AIO:DataPreparation,data preparation,,,"Techniques focused on preparing raw data for training, including cleaning, normalization, and tokenization."
+AIO:ModelEfficiency,model efficiency,,,"Techniques aimed at making models more efficient, such as knowledge distillation."
+AIO:TrainingStrategies,training strategies,,,"Specific strategies or methodologies employed during model training."
+AIO:DataEnhancement,data enhancement,,,"Methods that enhance the training data or its representation, including augmentation and feature extraction."
+AIO:Distillation,distillation,model efficiency,"Knowledge distillation involves training a smaller model to replicate the behavior of a larger model, aiming to compress the knowledge into a more compact form without significant loss of performance.",Knowledge compression|Teacher-student model
+AIO:TokenizationAndVocabularyReduction,tokenization and vocabulary reduction,data preparation,"Breaking down text data into manageable pieces called tokens and reducing the model's vocabulary to streamline processing.",Tokenization|Vocabulary size reduction
+AIO:CleaningAndNormalization,cleaning and normalization,data preparation,"Removing irrelevant data, correcting typos, and standardizing text to reduce noise and ensure consistency in the data.",Data cleaning|Text normalization
+AIO:SubwordSegmentation,subword segmentation,data preparation,"Utilizing techniques like Byte Pair Encoding (BPE) or SentencePiece to break down words into smaller units, allowing the model to handle a wide range of vocabulary with a fixed-size list.",Byte Pair Encoding|SentencePiece
+AIO:DataAugmentation,data augmentation,data enhancement,"Expanding the training dataset artificially by modifying existing data points to improve the model's robustness and generalization ability.",Paraphrasing|Synonym replacement
+AIO:CurriculumLearning,curriculum learning,training strategies,"Training the model on simpler tasks or easier data first, then gradually introducing more complex tasks to improve learning efficiency and performance.",Sequential learning|Complexity grading
+AIO:TransferLearning,transfer learning,training strategies,"Starting the training from a model already trained on a related task to reduce training time and improve performance on tasks with limited data.",Pretrained models|Adaptation
+AIO:FeatureExtraction,feature extraction,data enhancement,"Extracting specific features or patterns from the text before training to guide the model's learning process, including syntactic information or semantic embeddings.",Syntactic information|Semantic embeddings
