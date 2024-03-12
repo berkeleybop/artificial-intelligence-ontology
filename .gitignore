@@ -12,14 +12,14 @@ bin/
 src/ontology/mirror
 src/ontology/mirror/*
 src/ontology/reports/*
-src/ontology/deep-learning-ontology.owl
-src/ontology/deep-learning-ontology.obo
-src/ontology/deep-learning-ontology.json
-src/ontology/deep-learning-ontology-base.*
-src/ontology/deep-learning-ontology-basic.*
-src/ontology/deep-learning-ontology-full.*
-src/ontology/deep-learning-ontology-simple.*
-src/ontology/deep-learning-ontology-simple-non-classified.*
+src/ontology/artificial-intelligence-ontology.owl
+src/ontology/artificial-intelligence-ontology.obo
+src/ontology/artificial-intelligence-ontology.json
+src/ontology/artificial-intelligence-ontology-base.*
+src/ontology/artificial-intelligence-ontology-basic.*
+src/ontology/artificial-intelligence-ontology-full.*
+src/ontology/artificial-intelligence-ontology-simple.*
+src/ontology/artificial-intelligence-ontology-simple-non-classified.*
 
 src/ontology/seed.txt
 src/ontology/dosdp-tools.log
@@ -27,7 +27,7 @@ src/ontology/ed_definitions_merged.owl
 src/ontology/ontologyterms.txt
 src/ontology/simple_seed.txt
 src/ontology/patterns
-src/ontology/merged-deep-learning-ontology-edit.owl
+src/ontology/merged-artificial-intelligence-ontology-edit.owl
 
 src/ontology/target/
 src/ontology/tmp/*

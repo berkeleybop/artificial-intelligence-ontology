@@ -1,7 +1,8 @@
-## Customize Makefile settings for aio
+## Customize Makefile settings for artificial-intelligence-ontology
 ## 
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
+
 
 .PHONY: clean all
 
@@ -58,7 +59,3 @@ clean:
 	#  --mergeimports / --no-mergeimports, (default=mergeimports)
 	poetry run gen-owl $< \
 		--output $@
-
-
-
-

@@ -1,12 +1,12 @@
 ---
 layout: ontology_detail
-id: deep-learning-ontology
+id: artificial-intelligence-ontology
 title: Deep Learning Ontology
 jobs:
-  - id: https://travis-ci.org/turbomam/deep-learning-ontology
+  - id: https://travis-ci.org/turbomam/artificial-intelligence-ontology
     type: travis-ci
 build:
-  checkout: git clone https://github.com/turbomam/deep-learning-ontology.git
+  checkout: git clone https://github.com/turbomam/artificial-intelligence-ontology.git
   system: git
   path: "."
 contact:
@@ -15,24 +15,24 @@ contact:
   github: 
 description: Deep Learning Ontology is an ontology...
 domain: stuff
-homepage: https://github.com/turbomam/deep-learning-ontology
+homepage: https://github.com/turbomam/artificial-intelligence-ontology
 products:
-  - id: deep-learning-ontology.owl
+  - id: artificial-intelligence-ontology.owl
     name: "Deep Learning Ontology main release in OWL format"
-  - id: deep-learning-ontology.obo
+  - id: artificial-intelligence-ontology.obo
     name: "Deep Learning Ontology additional release in OBO format"
-  - id: deep-learning-ontology.json
+  - id: artificial-intelligence-ontology.json
     name: "Deep Learning Ontology additional release in OBOJSon format"
-  - id: deep-learning-ontology/deep-learning-ontology-base.owl
+  - id: artificial-intelligence-ontology/artificial-intelligence-ontology-base.owl
     name: "Deep Learning Ontology main release in OWL format"
-  - id: deep-learning-ontology/deep-learning-ontology-base.obo
+  - id: artificial-intelligence-ontology/artificial-intelligence-ontology-base.obo
     name: "Deep Learning Ontology additional release in OBO format"
-  - id: deep-learning-ontology/deep-learning-ontology-base.json
+  - id: artificial-intelligence-ontology/artificial-intelligence-ontology-base.json
     name: "Deep Learning Ontology additional release in OBOJSon format"
 dependencies:
 - id: swo
 
-tracker: https://github.com/turbomam/deep-learning-ontology/issues
+tracker: https://github.com/turbomam/artificial-intelligence-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY

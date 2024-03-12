@@ -3,8 +3,8 @@
 <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
 
   
-  <uri name="http://purl.obolibrary.org/obo/deep-learning-ontology/imports/swo_import.owl" uri="imports/swo_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/deep-learning-ontology/imports/swo_import.obo" uri="imports/swo_import.obo"/>
+  <uri name="http://purl.obolibrary.org/obo/artificial-intelligence-ontology/imports/swo_import.owl" uri="imports/swo_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/artificial-intelligence-ontology/imports/swo_import.obo" uri="imports/swo_import.obo"/>
   
 
 
