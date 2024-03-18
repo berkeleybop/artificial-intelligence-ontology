@@ -5,7 +5,6 @@ theme:
     - content.tabs.link
 plugins:
   - search
-  - table-reader
 markdown_extensions:
   - pymdownx.highlight:
   - pymdownx.inlinehilite
