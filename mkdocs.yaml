@@ -5,7 +5,6 @@ theme:
     - content.tabs.link
 plugins:
   - search
-  - table-reader
 markdown_extensions:
   - pymdownx.highlight:
   - pymdownx.inlinehilite
@@ -18,8 +17,8 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
 
-site_url: https://berkeleybop.github.io/False/
-repo_url: https://github.com/berkeleybop/False/
+site_url: https://berkeleybop.github.io/artificial-intelligence-ontology
+repo_url: https://github.com/berkeleybop/artificial-intelligence-ontology/
 
 nav:
   - Getting started: index.md
