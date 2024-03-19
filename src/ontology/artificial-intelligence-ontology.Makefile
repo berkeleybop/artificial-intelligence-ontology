@@ -29,7 +29,3 @@ components/%.owl: components/%.csv
 	  -t $< \
 	  annotate --annotation-file aio-annotations.ttl \
 	  -o $@
-
-clean:
-	rm -rf aio-src.tsv
-	rm -rf aio-edit.owl
