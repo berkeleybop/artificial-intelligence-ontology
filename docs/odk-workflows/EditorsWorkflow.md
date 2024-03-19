@@ -45,20 +45,20 @@ Using your editor of choice, perform the intended edit. For example:
 
 _Protégé_
 
-1. Open `src/ontology/artificial-intelligence-ontology-edit.owl` in Protégé
+1. Open `src/ontology/aio-edit.owl` in Protégé
 2. Make the change
 3. Save the file
 
 _TextEdit_
 
-1. Open `src/ontology/artificial-intelligence-ontology-edit.owl` in TextEdit (or Sublime, Atom, Vim, Nano)
+1. Open `src/ontology/aio-edit.owl` in TextEdit (or Sublime, Atom, Vim, Nano)
 2. Make the change
 3. Save the file
 
 Consider the following when making the edit.
 
 1. According to our development philosophy, the only places that should be manually edited are:
-    - `src/ontology/artificial-intelligence-ontology-edit.owl`
+    - `src/ontology/aio-edit.owl`
     - Any ROBOT templates you chose to use (the TSV files only)
     - Any DOSDP data tables you chose to use (the TSV files, and potentially the associated patterns)
     - components (anything in `src/ontology/components`), see [here](RepositoryFileStructure.md).

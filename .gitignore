@@ -12,14 +12,14 @@ bin/
 src/ontology/mirror
 src/ontology/mirror/*
 src/ontology/reports/*
-src/ontology/artificial-intelligence-ontology.owl
-src/ontology/artificial-intelligence-ontology.obo
-src/ontology/artificial-intelligence-ontology.json
-src/ontology/artificial-intelligence-ontology-base.*
-src/ontology/artificial-intelligence-ontology-basic.*
-src/ontology/artificial-intelligence-ontology-full.*
-src/ontology/artificial-intelligence-ontology-simple.*
-src/ontology/artificial-intelligence-ontology-simple-non-classified.*
+src/ontology/aio.owl
+src/ontology/aio.obo
+src/ontology/aio.json
+src/ontology/aio-base.*
+src/ontology/aio-basic.*
+src/ontology/aio-full.*
+src/ontology/aio-simple.*
+src/ontology/aio-simple-non-classified.*
 
 src/ontology/seed.txt
 src/ontology/dosdp-tools.log
@@ -27,7 +27,7 @@ src/ontology/ed_definitions_merged.owl
 src/ontology/ontologyterms.txt
 src/ontology/simple_seed.txt
 src/ontology/patterns
-src/ontology/merged-artificial-intelligence-ontology-edit.owl
+src/ontology/merged-aio-edit.owl
 
 src/ontology/target/
 src/ontology/tmp/*

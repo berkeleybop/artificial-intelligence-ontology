@@ -10,6 +10,6 @@ SELECT ?term ?xl ?y ?yl ?z ?zl WHERE {
   ?term rdfs:subClassOf ?z .
   ?z rdfs:label ?zl .
   
-  FILTER(isIRI(?term) && (STRSTARTS(str(?term), "http://purl.obolibrary.org/obo/ARTIFICIAL-INTELLIGENCE-ONTOLOGY_")))
+  FILTER(isIRI(?term) && (STRSTARTS(str(?term), "http://purl.obolibrary.org/obo/AIO_")))
 }
 
