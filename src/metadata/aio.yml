@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/aio
+
+idspace: AIO
+base_url: /obo/aio
+
+products:
+- aio.owl: https://raw.githubusercontent.com/berkeleybop/artificial-intelligence-ontology/main/aio.owl
+- aio.obo: https://raw.githubusercontent.com/berkeleybop/artificial-intelligence-ontology/main/aio.obo
+
+term_browser: ontobee
+example_terms:
+- AIO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/berkeleybop/artificial-intelligence-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/berkeleybop/artificial-intelligence-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/AIO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/berkeleybop/artificial-intelligence-ontology/main/
+

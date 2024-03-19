@@ -2,7 +2,7 @@
 
 ## Updating your ODK repository
 
-Your ODK repositories configuration is managed in `src/ontology/artificial-intelligence-ontology-odk.yaml`. The [ODK Project Configuration Schema](https://github.com/INCATools/ontology-development-kit/blob/master/docs/project-schema.md) defines all possible parameters that can be used in this config YAML. Once you have made your changes, you can run the following to apply your changes to the repository:
+Your ODK repositories configuration is managed in `src/ontology/aio-odk.yaml`. The [ODK Project Configuration Schema](https://github.com/INCATools/ontology-development-kit/blob/master/docs/project-schema.md) defines all possible parameters that can be used in this config YAML. Once you have made your changes, you can run the following to apply your changes to the repository:
 
 
 ```
@@ -42,17 +42,17 @@ import_group:
 
 Note: our ODK file should only have one `import_group` which can contain multiple imports (in the `products` section). Next, you run the [update repo workflow](#updating-your-odk-repository) to apply these changes. Note that by default, this module is going to be a SLME Bottom module, see [here](http://robot.obolibrary.org/extract). To change that or customise your module, see section "Customise an import". To finalise the addition of your import, perform the following steps:
 
-1. Add an import statement to your `src/ontology/artificial-intelligence-ontology-edit.owl` file. We suggest to do this using a text editor, by simply copying an existing import declaration and renaming it to the new ontology import, for example as follows:
+1. Add an import statement to your `src/ontology/aio-edit.owl` file. We suggest to do this using a text editor, by simply copying an existing import declaration and renaming it to the new ontology import, for example as follows:
     ```
     ...
-    Ontology(<http://purl.obolibrary.org/obo/artificial-intelligence-ontology.owl>
-    Import(<http://purl.obolibrary.org/obo/artificial-intelligence-ontology/imports/ro_import.owl>)
-    Import(<http://purl.obolibrary.org/obo/artificial-intelligence-ontology/imports/go_import.owl>)
+    Ontology(<http://purl.obolibrary.org/obo/aio.owl>
+    Import(<http://purl.obolibrary.org/obo/aio/imports/ro_import.owl>)
+    Import(<http://purl.obolibrary.org/obo/aio/imports/go_import.owl>)
     ...
     ```
 2. Add your imports redirect to your catalog file `src/ontology/catalog-v001.xml`, for example:
     ```
-    <uri name="http://purl.obolibrary.org/obo/artificial-intelligence-ontology/imports/go_import.owl" uri="imports/go_import.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/aio/imports/go_import.owl" uri="imports/go_import.owl"/>
     ```
 3. Test whether everything is in order:
     1. [Refresh your import](UpdateImports.md)
@@ -62,17 +62,17 @@ Note: The catalog file `src/ontology/catalog-v001.xml` has one purpose: redirect
 imports from URLs to local files. For example, if you have
 
 ```
-Import(<http://purl.obolibrary.org/obo/artificial-intelligence-ontology/imports/go_import.owl>)
+Import(<http://purl.obolibrary.org/obo/aio/imports/go_import.owl>)
 ```
 
 in your editors file (the ontology) and
 
 ```
-<uri name="http://purl.obolibrary.org/obo/artificial-intelligence-ontology/imports/go_import.owl" uri="imports/go_import.owl"/>
+<uri name="http://purl.obolibrary.org/obo/aio/imports/go_import.owl" uri="imports/go_import.owl"/>
 ```
 
 in your catalog, tools like `robot` or Protégé will recognize the statement
-in the catalog file to redirect the URL `http://purl.obolibrary.org/obo/artificial-intelligence-ontology/imports/go_import.owl`
+in the catalog file to redirect the URL `http://purl.obolibrary.org/obo/aio/imports/go_import.owl`
 to the local file `imports/go_import.owl` (which is in your `src/ontology` directory).
 
 ### Modify an existing import
@@ -83,8 +83,8 @@ If you simply wish to refresh your import in light of new terms, see [here](Upda
 
 To remove an existing import, perform the following steps:
 
-1. remove the import declaration from your `src/ontology/artificial-intelligence-ontology-edit.owl`.
-2. remove the id from your `src/ontology/artificial-intelligence-ontology-odk.yaml`, eg. `- id: go` from the list of `products` in the `import_group`.
+1. remove the import declaration from your `src/ontology/aio-edit.owl`.
+2. remove the id from your `src/ontology/aio-odk.yaml`, eg. `- id: go` from the list of `products` in the `import_group`.
 3. run [update repo workflow](#updating-your-odk-repository)
 4. delete the associated files manually:
     - `src/imports/go_import.owl`
@@ -95,7 +95,7 @@ To remove an existing import, perform the following steps:
 
 By default, an import module extracted from a source ontology will be a SLME module, see [here](http://robot.obolibrary.org/extract). There are various options to change the default.
 
-The following change to your repo config (`src/ontology/artificial-intelligence-ontology-odk.yaml`) will switch the go import from an SLME module to a simple ROBOT filter module:
+The following change to your repo config (`src/ontology/aio-odk.yaml`) will switch the go import from an SLME module to a simple ROBOT filter module:
 
 ```
 import_group:
@@ -122,7 +122,7 @@ import_group:
         - http://purl.obolibrary.org/obo/BFO
 ```
 
-If you wish to customise your import entirely, you can specify your own ROBOT command to do so. To do that, add the following to your repo config (`src/ontology/artificial-intelligence-ontology-odk.yaml`):
+If you wish to customise your import entirely, you can specify your own ROBOT command to do so. To do that, add the following to your repo config (`src/ontology/aio-odk.yaml`):
 
 ```
 import_group:
@@ -132,7 +132,7 @@ import_group:
       module_type: custom
 ```
 
-Now add a new goal in your custom Makefile (`src/ontology/artificial-intelligence-ontology.Makefile`, _not_ `src/ontology/Makefile`).
+Now add a new goal in your custom Makefile (`src/ontology/aio.Makefile`, _not_ `src/ontology/Makefile`).
 
 ```
 imports/go_import.owl: mirror/ro.owl imports/ro_terms_combined.txt
@@ -155,7 +155,7 @@ to another ROBOT pipeline.
 A component is an import which _belongs_ to your ontology, e.g. is managed by 
 you and your team. 
 
-1. Open `src/ontology/artificial-intelligence-ontology-odk.yaml`
+1. Open `src/ontology/aio-odk.yaml`
 1. If you dont have it yet, add a new top level section `components`
 1. Under the `components` section, add a new section called `products`. 
 This is where all your components are specified
@@ -174,17 +174,17 @@ be created which you can edit as you see fit. Typical ways to edit:
 
 1. Using a ROBOT template to generate the component (see below)
 1. Manually curating the component separately with Protégé or any other editor
-1. Providing a `components/mycomp.owl:` make target in `src/ontology/artificial-intelligence-ontology.Makefile`
+1. Providing a `components/mycomp.owl:` make target in `src/ontology/aio.Makefile`
 and provide a custom command to generate the component
     - `WARNING`: Note that the custom rule to generate the component _MUST NOT_ depend on any other ODK-generated file such as seed files and the like (see [issue](https://github.com/INCATools/ontology-development-kit/issues/637)).
-1. Providing an additional attribute for the component in `src/ontology/artificial-intelligence-ontology-odk.yaml`, `source`,
+1. Providing an additional attribute for the component in `src/ontology/aio-odk.yaml`, `source`,
 to specify that this component should simply be downloaded from somewhere on the web.
 
 ### Adding a new component based on a ROBOT template
 
 Since ODK 1.3.2, it is possible to simply link a ROBOT template to a component without having to specify any of the import logic. In order to add a new component that is connected to one or more template files, follow these steps:
 
-1. Open `src/ontology/artificial-intelligence-ontology-odk.yaml`.
+1. Open `src/ontology/aio-odk.yaml`.
 1. Make sure that `use_templates: TRUE` is set in the global project options. You should also make sure that `use_context: TRUE` is set in case you are using prefixes in your templates that are not known to `robot`, such as `OMOP:`, `CPONT:` and more. All non-standard prefixes you are using should be added to `config/context.json`.
 1. Add another component to the `products` section.
 1. To activate this component to be template-driven, simply say: `use_template: TRUE`. This will create an empty template for you in the templates directory, which will automatically be processed when recreating the component (e.g. `run.bat make recreate-mycomp`).

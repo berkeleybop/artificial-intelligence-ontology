@@ -52,7 +52,7 @@ This workflow is appropriate if:
 1. You prefer to manage all your imported terms in a single file (rather than multiple files like in the "Using term files" workflow above).
 2. You wish to augment your imported ontologies with additional information. This requires a cautionary discussion.
 
-To enable this workflow, you add the following to your ODK config file (`src/ontology/artificial-intelligence-ontology-odk.yaml`), and [update the repository](RepoManagement.md):
+To enable this workflow, you add the following to your ODK config file (`src/ontology/aio-odk.yaml`), and [update the repository](RepoManagement.md):
 
 ```
 use_custom_import_module: TRUE
@@ -152,7 +152,7 @@ When we use the base pipelines, we
 
 The first implementation of this pipeline is PATO, see https://github.com/pato-ontology/pato/blob/master/src/ontology/pato-odk.yaml.
 
-To check if your ontology uses this method, check src/ontology/artificial-intelligence-ontology-odk.yaml to see if `use_base_merging: TRUE` is declared under `import_group`
+To check if your ontology uses this method, check src/ontology/aio-odk.yaml to see if `use_base_merging: TRUE` is declared under `import_group`
 
 If your ontology uses Base Module approach, please use the following steps: 
 

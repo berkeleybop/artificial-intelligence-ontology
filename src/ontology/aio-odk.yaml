@@ -1,0 +1,34 @@
+id: aio
+title: Artificial Intelligence Ontology
+github_org: berkeleybop
+repo: artificial-intelligence-ontology
+import_group:
+  products:
+    - id: swo
+report_fail_on: none
+release_artefacts:
+  - base
+  - full
+primary_release: full
+export_formats:
+  - obo
+  - owl
+  - json
+allow_equivalents: all
+components:
+  products:
+    - filename: aio-component.owl
+
+robot_java_args: '-Xmx10G'
+
+robot_report:
+  ensure_owl2dl_profile: false
+  release_reports: true
+  fail_on: none
+  use_labels: false
+  custom_profile: false
+  report_on:
+    - edit
+
+documentation:
+  documentation_system: mkdocs

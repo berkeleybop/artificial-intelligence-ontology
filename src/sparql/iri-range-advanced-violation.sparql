@@ -15,7 +15,7 @@ WHERE {
     oboInOwl:inSubset
     dcterms:contributor  }
   ?term ?property ?value .
-  FILTER(isIRI(?term) && (STRSTARTS(str(?term), "http://purl.obolibrary.org/obo/ARTIFICIAL-INTELLIGENCE-ONTOLOGY_")))
+  FILTER(isIRI(?term) && (STRSTARTS(str(?term), "http://purl.obolibrary.org/obo/AIO_")))
   FILTER (!isIRI(?value))
 }
 
