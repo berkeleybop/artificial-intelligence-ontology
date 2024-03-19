@@ -1,1 +1,3 @@
-# How to cite ARTIFICIAL-INTELLIGENCE-ONTOLOGY
+# How to cite AIO
+
+TBA
