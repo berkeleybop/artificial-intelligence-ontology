@@ -1,42 +1,11 @@
 
-# Artificial Intelligence Ontology
+# Artificial Intelligence Ontology (AIO)
 
 An ontology modeling classes and relationships describing deep learning networks, their component layers and activation functions, machine learning methods, as well as AI/ML potential biases.
 
-More information can be found at http://obofoundry.org/ontology/aio
+More information can be found at <https://berkeleybop.github.io/artificial-intelligence-ontology/>
 
-### Move as much of this as possible into the Makefile
-
-```Bash
-cd src/ontology
-make clean
-make -f aio.Makefile aio-edit.owl
-make all
-less reports/aio-edit.owl-obo-report.tsv
-# optionally
-make release
-# optionally
-#   assumes robot on the system path
-#   how to use robot provided by ODK?
-cd ../..
-robot convert -i aio.owl -o aio.json
-# optionally
-#   assumes npm and node are on the system path
-npm i obographviz
-./node_modules/obographviz/bin/og2dot.js aio.json > aio.dot
-#   assumes dot from graphviz is on the path
-dot aio.dot -Tsvg -Grankdir=BT > learning-ontology.svg
-
-```
-
-### See also
-- https://github.com/cmungall/obographviz
-- https://www.npmjs.com/package/obographviz
-
-> (node:4752) [DEP0128] DeprecationWarning: Invalid 'main' field in '/Users/MAM/Documents/gitrepos/aio/node_modules/node-getopt/package.json' of './lib'. Please either fix that or report it to the module author
-
-### BioPortal integration
-- https://bioportal.bioontology.org/ontologies/AIO
+or on BioPortal at <https://bioportal.bioontology.org/ontologies/AIO>
 
 ----
 
@@ -44,11 +13,9 @@ dot aio.dot -Tsvg -Grankdir=BT > learning-ontology.svg
 
 ### Stable release versions
 
-The latest version of the ontology can always be found at:
+The latest version of the ontology can always be found in this repository in
 
-http://purl.obolibrary.org/obo/aio.owl
-
-(note this will not show up until the request has been approved by obofoundry.org)
+[aio.owl](aio.owl)
 
 ### Editors' version
 
@@ -60,4 +27,4 @@ Please use this GitHub repository's [Issue tracker](https://github.com/turbomam/
 
 ## Acknowledgements
 
-This ontology repository was created using the [ontology starter kit](https://github.com/INCATools/ontology-starter-kit)
+This ontology repository was created using the [Ontology Development Kit](https://github.com/INCATools/ontology-development-kit).
