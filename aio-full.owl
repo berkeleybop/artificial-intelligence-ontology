@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/aio.owl#"
-     xml:base="http://purl.obolibrary.org/obo/aio.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/aio/aio-full.owl#"
+     xml:base="http://purl.obolibrary.org/obo/aio/aio-full.owl"
      xmlns:dce="http://purl.org/dc/elements/1.1/"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -17,8 +17,8 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aio.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2024-03-19/aio.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aio/aio-full.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2024-03-19/aio-full.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Artificial Intelligence Ontology</dcterms:title>

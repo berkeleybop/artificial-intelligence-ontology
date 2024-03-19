@@ -9,6 +9,13 @@
 # Source of truth for AIO.
 # This is a ROBOT template.
 SRC_URL = 'https://docs.google.com/spreadsheets/d/1LVubUGg56YDGJ0VUdJDMNBPY8iFfissRfy4eM56bUFg/export?exportFormat=csv'
+SRC_CSV_FILE = aio-src.csv
+
+RELEASE_ASSETS = \
+  $(MAIN_FILES) \
+  $(SUBSET_FILES) \
+  $(REPORT_FILES) \
+  $(SRC_CSV_FILE)
 
 # TODO: ensure this gets checked in to the repo
 aio-src.csv:

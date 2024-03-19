@@ -1,0 +1,24 @@
+{
+  "graphs" : [ {
+    "id" : "http://purl.obolibrary.org/obo/aio/aio-base.json",
+    "meta" : {
+      "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/elements/1.1/type",
+        "val" : "http://purl.obolibrary.org/obo/IAO_8000001"
+      }, {
+        "pred" : "http://purl.org/dc/terms/description",
+        "val" : "None"
+      }, {
+        "pred" : "http://purl.org/dc/terms/license",
+        "val" : "https://creativecommons.org/licenses/unspecified"
+      }, {
+        "pred" : "http://purl.org/dc/terms/title",
+        "val" : "Artificial Intelligence Ontology"
+      }, {
+        "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "val" : "2024-03-19"
+      } ],
+      "version" : "http://purl.obolibrary.org/obo/aio/releases/2024-03-19/aio-base.json"
+    }
+  } ]
+}
