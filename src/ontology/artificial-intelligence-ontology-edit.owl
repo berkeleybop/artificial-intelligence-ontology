@@ -13,7 +13,7 @@ Ontology(<http://purl.obolibrary.org/obo/artificial-intelligence-ontology.owl>
 
 
 Import(<http://purl.obolibrary.org/obo/artificial-intelligence-ontology/imports/swo_import.owl>)
-
+Import(<http://purl.obolibrary.org/obo/aio/components/aio-component.owl>)
 
 
 Annotation(dcterms:description "None")
