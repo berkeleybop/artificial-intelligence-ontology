@@ -23,6 +23,14 @@ aio-component.owl: aio-src.tsv
 	  annotate --annotation-file aio-annotations.ttl \
 	  -o $@
 
+components/%.owl: components/%.csv
+	robot template \
+	  --add-prefix 'AIO: https://w3id.org/aio/' \
+	  --add-prefix 'oio: http://www.geneontology.org/formats/oboInOwl#' \
+	  -t $< \
+	  annotate --annotation-file aio-annotations.ttl \
+	  -o $@
+
 # hacky step for now - but we should treat as a proper component
 aio-edit.owl: aio-component.owl
 	cp $< $@
