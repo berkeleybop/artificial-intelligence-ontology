@@ -141,7 +141,7 @@ BOTH ontology purls and versioned ontology purls will resolve to the
 correct ontologies. Try it!
 
  * http://purl.obolibrary.org/obo/artificial-intelligence-ontology.owl <-- current ontology PURL
- * http://purl.obolibrary.org/obo/artificial-intelligence-ontology/releases/YYYY-MM-DD.owl <-- change to the release you just made
+ * http://purl.obolibrary.org/obo/aio/releases/YYYY-MM-DD.owl <-- change to the release you just made
 
 For questions on this contact Chris Mungall or email obo-admin AT obofoundry.org
 

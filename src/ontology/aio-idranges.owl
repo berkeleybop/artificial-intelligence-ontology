@@ -11,7 +11,7 @@ Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 Prefix: idrange: <http://purl.obolibrary.org/obo/ro/idrange/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 
-Ontology: <http://purl.obolibrary.org/obo/artificial-intelligence-ontology/artificial-intelligence-ontology-idranges.owl>
+Ontology: <http://purl.obolibrary.org/obo/aio/artificial-intelligence-ontology-idranges.owl>
 
 
 Annotations: 
