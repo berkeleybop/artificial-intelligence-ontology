@@ -6,7 +6,7 @@
   <uri name="http://purl.obolibrary.org/obo/artificial-intelligence-ontology/imports/swo_import.owl" uri="imports/swo_import.owl"/>
   <uri name="http://purl.obolibrary.org/obo/artificial-intelligence-ontology/imports/swo_import.obo" uri="imports/swo_import.obo"/>
   
-  <uri name="" uri="components/aio-component.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/aio/components/aio-component.owl" uri="components/aio-component.owl"/>
 
   
 
