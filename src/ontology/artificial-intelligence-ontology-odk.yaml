@@ -15,6 +15,9 @@ export_formats:
   - owl
   - json
 allow_equivalents: all
+components:
+  products:
+    - filename: aio-component.owl
 
 robot_java_args: '-Xmx10G'
 

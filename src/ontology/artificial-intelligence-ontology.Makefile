@@ -6,13 +6,15 @@
 
 .PHONY: clean all
 
-SRC_URL = 'https://docs.google.com/spreadsheets/d/1LVubUGg56YDGJ0VUdJDMNBPY8iFfissRfy4eM56bUFg/export?exportFormat=tsv'
+# Source of truth for AIO.
+# This is a ROBOT template.
+SRC_URL = 'https://docs.google.com/spreadsheets/d/1LVubUGg56YDGJ0VUdJDMNBPY8iFfissRfy4eM56bUFg/export?exportFormat=csv'
 
-aio-src.tsv:
+# TODO: ensure this gets checked in to the repo
+aio-src.csv:
 	curl -L -s $(SRC_URL) > $@
 
-# aio-component.owl: aio-src-t.tsv
-aio-component.owl: aio-src.tsv
+components/aio-component.owl: aio-src.csv
 	robot template \
 	  --add-prefix 'AIO: https://w3id.org/aio/' \
 	  --add-prefix 'oio: http://www.geneontology.org/formats/oboInOwl#' \
@@ -28,11 +30,6 @@ components/%.owl: components/%.csv
 	  annotate --annotation-file aio-annotations.ttl \
 	  -o $@
 
-# hacky step for now - but we should treat as a proper component
-aio-edit.owl: aio-component.owl
-	cp $< $@
-
 clean:
 	rm -rf aio-src.tsv
-	rm -rf aio-component.owl
 	rm -rf aio-edit.owl
