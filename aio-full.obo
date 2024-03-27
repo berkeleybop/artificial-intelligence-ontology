@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aio/releases/2024-03-19/aio-full.owl
+data-version: aio/releases/2024-03-27/aio-full.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -10,7 +10,7 @@ ontology: aio/aio-full
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "Artificial Intelligence Ontology" xsd:string
-property_value: owl:versionInfo "2024-03-19" xsd:string
+property_value: owl:versionInfo "2024-03-27" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
