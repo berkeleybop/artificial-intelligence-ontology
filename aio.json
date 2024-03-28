@@ -13,9 +13,9 @@
         "val" : "Artificial Intelligence Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-03-27"
+        "val" : "2024-03-28"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/aio/releases/2024-03-27/aio.json"
+      "version" : "http://purl.obolibrary.org/obo/aio/releases/2024-03-28/aio.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000002",
@@ -18618,7 +18618,7 @@
       "meta" : {
         "definition" : {
           "val" : "A surival modeling method where the unique effect of a unit increase in a covariate is multiplicative with respect to the hazard rate.",
-          "xrefs" : [ "https://en.wikipedia.org/wiki/Proportional_hazards_modelProportional Hazards Model" ]
+          "xrefs" : [ "https://en.wikipedia.org/wiki/Proportional_hazards_model" ]
         }
       }
     }, {
@@ -20959,11 +20959,11 @@
     }, {
       "sub" : "https://w3id.org/aio/AdvancedTechniques",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLM"
+      "obj" : "https://w3id.org/aio/LargeLanguageModel"
     }, {
       "sub" : "https://w3id.org/aio/Adversarial-ResistantLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMEnhancementStrategies"
+      "obj" : "https://w3id.org/aio/EnhancementStrategies"
     }, {
       "sub" : "https://w3id.org/aio/AlphaDropoutLayer",
       "pred" : "is_a",
@@ -20983,7 +20983,7 @@
     }, {
       "sub" : "https://w3id.org/aio/ApplicationFocus",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLM"
+      "obj" : "https://w3id.org/aio/LargeLanguageModel"
     }, {
       "sub" : "https://w3id.org/aio/ArtificialNeuralNetwork",
       "pred" : "is_a",
@@ -20999,7 +20999,7 @@
     }, {
       "sub" : "https://w3id.org/aio/AutoEncoderNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/UPN"
+      "obj" : "https://w3id.org/aio/UnsupervisedPretrainedNetwork"
     }, {
       "sub" : "https://w3id.org/aio/AutomationComplacencyBias",
       "pred" : "is_a",
@@ -21007,7 +21007,7 @@
     }, {
       "sub" : "https://w3id.org/aio/AutoregressiveLanguageModel",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLM"
+      "obj" : "https://w3id.org/aio/LargeLanguageModel"
     }, {
       "sub" : "https://w3id.org/aio/AvailabilityHeuristicBias",
       "pred" : "is_a",
@@ -21079,7 +21079,7 @@
     }, {
       "sub" : "https://w3id.org/aio/BoltzmannMachineNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/SCN"
+      "obj" : "https://w3id.org/aio/SymmetricallyConnectedNetwork"
     }, {
       "sub" : "https://w3id.org/aio/CategoricalFeaturesPreprocessingLayer",
       "pred" : "is_a",
@@ -21095,7 +21095,7 @@
     }, {
       "sub" : "https://w3id.org/aio/CausalLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMAdvancedTechniques"
+      "obj" : "https://w3id.org/aio/AdvancedTechniques"
     }, {
       "sub" : "https://w3id.org/aio/CenterCropLayer",
       "pred" : "is_a",
@@ -21119,7 +21119,7 @@
     }, {
       "sub" : "https://w3id.org/aio/CompositionalGeneralizationLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLM"
+      "obj" : "https://w3id.org/aio/LargeLanguageModel"
     }, {
       "sub" : "https://w3id.org/aio/ComputationalBias",
       "pred" : "is_a",
@@ -21147,23 +21147,23 @@
     }, {
       "sub" : "https://w3id.org/aio/ContinualLearning",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/ContinualLearningLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMTrainingParadigm"
+      "obj" : "https://w3id.org/aio/TrainingParadigm"
     }, {
       "sub" : "https://w3id.org/aio/ContrastiveLearning",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/ContrastiveLearningLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMAdvancedTechniques"
+      "obj" : "https://w3id.org/aio/AdvancedTechniques"
     }, {
       "sub" : "https://w3id.org/aio/ControllableLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMEnhancementStrategies"
+      "obj" : "https://w3id.org/aio/EnhancementStrategies"
     }, {
       "sub" : "https://w3id.org/aio/ConvLSTM1DLayer",
       "pred" : "is_a",
@@ -21219,7 +21219,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Cross-DomainLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMEnhancementStrategies"
+      "obj" : "https://w3id.org/aio/EnhancementStrategies"
     }, {
       "sub" : "https://w3id.org/aio/CurriculumLearning",
       "pred" : "is_a",
@@ -21227,11 +21227,11 @@
     }, {
       "sub" : "https://w3id.org/aio/CurriculumLearningLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMAdvancedTechniques"
+      "obj" : "https://w3id.org/aio/AdvancedTechniques"
     }, {
       "sub" : "https://w3id.org/aio/Data-to-TextLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMAdvancedTechniques"
+      "obj" : "https://w3id.org/aio/AdvancedTechniques"
     }, {
       "sub" : "https://w3id.org/aio/DataAugmentation",
       "pred" : "is_a",
@@ -21255,43 +21255,43 @@
     }, {
       "sub" : "https://w3id.org/aio/DecoderLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMModelArchitecture"
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/DeconvolutionalNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/DeepActiveLearning",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/DeepBeliefNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/UPN"
+      "obj" : "https://w3id.org/aio/UnsupervisedPretrainedNetwork"
     }, {
       "sub" : "https://w3id.org/aio/DeepConvolutionalInverseGraphicsNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/AE"
+      "obj" : "https://w3id.org/aio/AutoEncoderNetwork"
     }, {
       "sub" : "https://w3id.org/aio/DeepConvolutionalNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/DeepFeedFoward",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/DeepNeuralNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/ANN"
+      "obj" : "https://w3id.org/aio/ArtificialNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/DeepTransferLearning",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/DenoisingAutoEncoder",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/AE"
+      "obj" : "https://w3id.org/aio/AutoEncoderNetwork"
     }, {
       "sub" : "https://w3id.org/aio/DenseFeaturesLayer",
       "pred" : "is_a",
@@ -21319,7 +21319,7 @@
     }, {
       "sub" : "https://w3id.org/aio/DialogueLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMApplicationFocus"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/DifferentiableLLM",
       "pred" : "is_a",
@@ -21339,7 +21339,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Domain-AdaptedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMApplicationFocus"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/DotLayer",
       "pred" : "is_a",
@@ -21363,7 +21363,7 @@
     }, {
       "sub" : "https://w3id.org/aio/EchoStateNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/RecNN"
+      "obj" : "https://w3id.org/aio/RecurrentNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/EcologicalFallacyBias",
       "pred" : "is_a",
@@ -21375,7 +21375,7 @@
     }, {
       "sub" : "https://w3id.org/aio/EmbodiedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMApplicationFocus"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/EmergentBias",
       "pred" : "is_a",
@@ -21383,19 +21383,19 @@
     }, {
       "sub" : "https://w3id.org/aio/Encoder-DecoderLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMModelArchitecture"
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/EncoderLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMModelArchitecture"
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/Energy-BasedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMEnhancementStrategies"
+      "obj" : "https://w3id.org/aio/EnhancementStrategies"
     }, {
       "sub" : "https://w3id.org/aio/EnhancementStrategies",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLM"
+      "obj" : "https://w3id.org/aio/LargeLanguageModel"
     }, {
       "sub" : "https://w3id.org/aio/EnsembleLearning",
       "pred" : "is_a",
@@ -21407,7 +21407,7 @@
     }, {
       "sub" : "https://w3id.org/aio/EthicalLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMApplicationFocus"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/EvaluationBias",
       "pred" : "is_a",
@@ -21415,7 +21415,7 @@
     }, {
       "sub" : "https://w3id.org/aio/EvolutionaryLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMEnhancementStrategies"
+      "obj" : "https://w3id.org/aio/EnhancementStrategies"
     }, {
       "sub" : "https://w3id.org/aio/ExclusionBias",
       "pred" : "is_a",
@@ -21423,7 +21423,7 @@
     }, {
       "sub" : "https://w3id.org/aio/ExplainableLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMAdvancedTechniques"
+      "obj" : "https://w3id.org/aio/AdvancedTechniques"
     }, {
       "sub" : "https://w3id.org/aio/ExponentialFunction",
       "pred" : "is_a",
@@ -21431,11 +21431,11 @@
     }, {
       "sub" : "https://w3id.org/aio/ExtremeLearningMachine",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/FBN"
+      "obj" : "https://w3id.org/aio/FeedbackNetwork"
     }, {
       "sub" : "https://w3id.org/aio/FactorizedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLM"
+      "obj" : "https://w3id.org/aio/LargeLanguageModel"
     }, {
       "sub" : "https://w3id.org/aio/FeatureExtraction",
       "pred" : "is_a",
@@ -21443,11 +21443,11 @@
     }, {
       "sub" : "https://w3id.org/aio/FederatedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMTrainingParadigm"
+      "obj" : "https://w3id.org/aio/TrainingParadigm"
     }, {
       "sub" : "https://w3id.org/aio/FederatedLearning",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/FeedbackLoopBias",
       "pred" : "is_a",
@@ -21455,7 +21455,7 @@
     }, {
       "sub" : "https://w3id.org/aio/FeedbackNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/ANN"
+      "obj" : "https://w3id.org/aio/ArtificialNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/FixedEffectsModel",
       "pred" : "is_a",
@@ -21491,7 +21491,7 @@
     }, {
       "sub" : "https://w3id.org/aio/GatedRecurrentUnit",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LSTM"
+      "obj" : "https://w3id.org/aio/LongShortTermMemory"
     }, {
       "sub" : "https://w3id.org/aio/GaussianDropoutLayer",
       "pred" : "is_a",
@@ -21503,7 +21503,7 @@
     }, {
       "sub" : "https://w3id.org/aio/GeneralizedFew-shotLearning",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/GeneralizedLinearModel",
       "pred" : "is_a",
@@ -21511,23 +21511,23 @@
     }, {
       "sub" : "https://w3id.org/aio/GenerativeAdversarialNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/UPN"
+      "obj" : "https://w3id.org/aio/UnsupervisedPretrainedNetwork"
     }, {
       "sub" : "https://w3id.org/aio/GenerativeAdversarialNetwork-AugmentedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMApplicationFocus"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/GenerativeCommonsenseLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMApplicationFocus"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/GenerativeLanguageCircuit",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMAdvancedTechniques"
+      "obj" : "https://w3id.org/aio/AdvancedTechniques"
     }, {
       "sub" : "https://w3id.org/aio/GenerativeLanguageInterface",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLM"
+      "obj" : "https://w3id.org/aio/LargeLanguageModel"
     }, {
       "sub" : "https://w3id.org/aio/GlobalAveragePooling1DLayer",
       "pred" : "is_a",
@@ -21555,15 +21555,15 @@
     }, {
       "sub" : "https://w3id.org/aio/GraphConvolutionalNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/GraphConvolutionalPolicyNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/GCN"
+      "obj" : "https://w3id.org/aio/GraphConvolutionalNetwork"
     }, {
       "sub" : "https://w3id.org/aio/GraphLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMAdvancedTechniques"
+      "obj" : "https://w3id.org/aio/AdvancedTechniques"
     }, {
       "sub" : "https://w3id.org/aio/GroupBias",
       "pred" : "is_a",
@@ -21599,7 +21599,7 @@
     }, {
       "sub" : "https://w3id.org/aio/HierarchicalLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMAdvancedTechniques"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/HistoricalBias",
       "pred" : "is_a",
@@ -21607,7 +21607,7 @@
     }, {
       "sub" : "https://w3id.org/aio/HopfieldNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/SCN"
+      "obj" : "https://w3id.org/aio/SymmetricallyConnectedNetwork"
     }, {
       "sub" : "https://w3id.org/aio/HostileAttributionBias",
       "pred" : "is_a",
@@ -21635,11 +21635,11 @@
     }, {
       "sub" : "https://w3id.org/aio/ImplicitLanguageModel",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLM"
+      "obj" : "https://w3id.org/aio/LargeLanguageModel"
     }, {
       "sub" : "https://w3id.org/aio/IncremenetalFew-shotLearning",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/IndividualBias",
       "pred" : "is_a",
@@ -21679,7 +21679,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Instruction-TunedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMApplicationFocus"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/IntegerLookupLayer",
       "pred" : "is_a",
@@ -21687,7 +21687,7 @@
     }, {
       "sub" : "https://w3id.org/aio/InterpretableLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMEnhancementStrategies"
+      "obj" : "https://w3id.org/aio/EnhancementStrategies"
     }, {
       "sub" : "https://w3id.org/aio/InterpretationBias",
       "pred" : "is_a",
@@ -21711,7 +21711,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Knowledge-GroundedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMApplicationFocus"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/KohonenNetwork",
       "pred" : "is_a",
@@ -21739,7 +21739,7 @@
     }, {
       "sub" : "https://w3id.org/aio/LanguageInterfaceLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMAdvancedTechniques"
+      "obj" : "https://w3id.org/aio/AdvancedTechniques"
     }, {
       "sub" : "https://w3id.org/aio/LassoRegression",
       "pred" : "is_a",
@@ -21791,7 +21791,7 @@
     }, {
       "sub" : "https://w3id.org/aio/LifelongLearningLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMAdvancedTechniques"
+      "obj" : "https://w3id.org/aio/AdvancedTechniques"
     }, {
       "sub" : "https://w3id.org/aio/LinearFunction",
       "pred" : "is_a",
@@ -21831,7 +21831,7 @@
     }, {
       "sub" : "https://w3id.org/aio/LongShortTermMemory",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/RecNN"
+      "obj" : "https://w3id.org/aio/RecurrentNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/LossOfSituationalAwarenessBias",
       "pred" : "is_a",
@@ -21839,7 +21839,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Low-ResourceLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMEnhancementStrategies"
+      "obj" : "https://w3id.org/aio/EnhancementStrategies"
     }, {
       "sub" : "https://w3id.org/aio/MachineLearning",
       "pred" : "is_a",
@@ -21895,7 +21895,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Memory-AugmentedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLM"
+      "obj" : "https://w3id.org/aio/LargeLanguageModel"
     }, {
       "sub" : "https://w3id.org/aio/MergingLayer",
       "pred" : "is_a",
@@ -21907,11 +21907,11 @@
     }, {
       "sub" : "https://w3id.org/aio/Meta-LearningLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMTrainingParadigm"
+      "obj" : "https://w3id.org/aio/TrainingParadigm"
     }, {
       "sub" : "https://w3id.org/aio/MetricLearning",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/MinimumLayer",
       "pred" : "is_a",
@@ -21919,7 +21919,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Mixture-of-ExpertsLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMModelArchitecture"
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/ModeConfusionBias",
       "pred" : "is_a",
@@ -21927,7 +21927,7 @@
     }, {
       "sub" : "https://w3id.org/aio/ModelArchitecture",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLM"
+      "obj" : "https://w3id.org/aio/LargeLanguageModel"
     }, {
       "sub" : "https://w3id.org/aio/ModelSelectionBias",
       "pred" : "is_a",
@@ -21935,11 +21935,11 @@
     }, {
       "sub" : "https://w3id.org/aio/ModularLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMModelArchitecture"
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/Multi-TaskLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMApplicationFocus"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/MultiHeadAttentionLayer",
       "pred" : "is_a",
@@ -21955,15 +21955,15 @@
     }, {
       "sub" : "https://w3id.org/aio/MultilingualLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLM"
+      "obj" : "https://w3id.org/aio/LargeLanguageModel"
     }, {
       "sub" : "https://w3id.org/aio/MultimodalDeepLearning",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/MultimodalFusionLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMAdvancedTechniques"
+      "obj" : "https://w3id.org/aio/AdvancedTechniques"
     }, {
       "sub" : "https://w3id.org/aio/MultimodalLearning",
       "pred" : "is_a",
@@ -21971,7 +21971,7 @@
     }, {
       "sub" : "https://w3id.org/aio/MultimodalTransformer",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMApplicationFocus"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/MultiplyLayer",
       "pred" : "is_a",
@@ -21983,15 +21983,15 @@
     }, {
       "sub" : "https://w3id.org/aio/NeuralTuringMachineNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DFF"
+      "obj" : "https://w3id.org/aio/DeepFeedForward"
     }, {
       "sub" : "https://w3id.org/aio/NeuralTuringMachineNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LSTM"
+      "obj" : "https://w3id.org/aio/LongShortTermMemory"
     }, {
       "sub" : "https://w3id.org/aio/Neuro-SymbolicLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMApplicationFocus"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/NoiseDenseLayer",
       "pred" : "is_a",
@@ -22007,11 +22007,11 @@
     }, {
       "sub" : "https://w3id.org/aio/One-shotLearning",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/OrdinalLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMAdvancedTechniques"
+      "obj" : "https://w3id.org/aio/AdvancedTechniques"
     }, {
       "sub" : "https://w3id.org/aio/OutputLayer",
       "pred" : "is_a",
@@ -22023,7 +22023,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Perceptron",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/ANN"
+      "obj" : "https://w3id.org/aio/ArtificialNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/PermuteLayer",
       "pred" : "is_a",
@@ -22031,7 +22031,7 @@
     }, {
       "sub" : "https://w3id.org/aio/PersonalizedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLM"
+      "obj" : "https://w3id.org/aio/LargeLanguageModel"
     }, {
       "sub" : "https://w3id.org/aio/PoolingLayer",
       "pred" : "is_a",
@@ -22071,7 +22071,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Prompt-basedFine-TuningLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMTrainingParadigm"
+      "obj" : "https://w3id.org/aio/TrainingParadigm"
     }, {
       "sub" : "https://w3id.org/aio/ProportionalHazardsModel",
       "pred" : "is_a",
@@ -22087,7 +22087,7 @@
     }, {
       "sub" : "https://w3id.org/aio/RadialBasisNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DFF"
+      "obj" : "https://w3id.org/aio/DeepFeedFoward"
     }, {
       "sub" : "https://w3id.org/aio/RandomBrightnessLayer",
       "pred" : "is_a",
@@ -22143,7 +22143,7 @@
     }, {
       "sub" : "https://w3id.org/aio/RationalLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLM"
+      "obj" : "https://w3id.org/aio/LargeLanguageModel"
     }, {
       "sub" : "https://w3id.org/aio/ReLUFunction",
       "pred" : "is_a",
@@ -22159,19 +22159,19 @@
     }, {
       "sub" : "https://w3id.org/aio/RecurrentNeuralNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/RecursiveLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMModelArchitecture"
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/RecursiveLanguageModel",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMAdvancedTechniques"
+      "obj" : "https://w3id.org/aio/AdvancedTechniques"
     }, {
       "sub" : "https://w3id.org/aio/RecursiveNeuralNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/RegressionAnalysis",
       "pred" : "is_a",
@@ -22187,7 +22187,7 @@
     }, {
       "sub" : "https://w3id.org/aio/ReinforcementLearningLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMTrainingParadigm"
+      "obj" : "https://w3id.org/aio/TrainingParadigm"
     }, {
       "sub" : "https://w3id.org/aio/RepeatVectorLayer",
       "pred" : "is_a",
@@ -22199,7 +22199,7 @@
     }, {
       "sub" : "https://w3id.org/aio/RepresentationLearning",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/RescalingLayer",
       "pred" : "is_a",
@@ -22215,7 +22215,7 @@
     }, {
       "sub" : "https://w3id.org/aio/ResidualNeuralNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/ResizingLayer",
       "pred" : "is_a",
@@ -22223,11 +22223,11 @@
     }, {
       "sub" : "https://w3id.org/aio/RestrictedBoltzmannMachine",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/BM"
+      "obj" : "https://w3id.org/aio/BoltzmannMachineNetwork"
     }, {
       "sub" : "https://w3id.org/aio/Retrieval-AugmentedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMApplicationFocus"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/RidgeRegression",
       "pred" : "is_a",
@@ -22247,7 +22247,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Self-SupervisedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMTrainingParadigm"
+      "obj" : "https://w3id.org/aio/TrainingParadigm"
     }, {
       "sub" : "https://w3id.org/aio/Self-supervisedLearning",
       "pred" : "is_a",
@@ -22255,7 +22255,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Semi-SupervisedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMTrainingParadigm"
+      "obj" : "https://w3id.org/aio/TrainingParadigm"
     }, {
       "sub" : "https://w3id.org/aio/SeparableConvolution1DLayer",
       "pred" : "is_a",
@@ -22299,11 +22299,11 @@
     }, {
       "sub" : "https://w3id.org/aio/SparseAE",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/AE"
+      "obj" : "https://w3id.org/aio/AutoEncoderNetwork"
     }, {
       "sub" : "https://w3id.org/aio/SparseLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMTrainingParadigm"
+      "obj" : "https://w3id.org/aio/TrainingParadigm"
     }, {
       "sub" : "https://w3id.org/aio/SparseLearning",
       "pred" : "is_a",
@@ -22427,7 +22427,7 @@
     }, {
       "sub" : "https://w3id.org/aio/TrainingParadigm",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLM"
+      "obj" : "https://w3id.org/aio/LargeLanguageModel"
     }, {
       "sub" : "https://w3id.org/aio/TransferLearning",
       "pred" : "is_a",
@@ -22439,11 +22439,11 @@
     }, {
       "sub" : "https://w3id.org/aio/TransferLearningLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMEnhancementStrategies"
+      "obj" : "https://w3id.org/aio/EnhancementStrategies"
     }, {
       "sub" : "https://w3id.org/aio/TransformerNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/UncertaintyBias",
       "pred" : "is_a",
@@ -22463,7 +22463,7 @@
     }, {
       "sub" : "https://w3id.org/aio/UnsupervisedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMTrainingParadigm"
+      "obj" : "https://w3id.org/aio/TrainingParadigm"
     }, {
       "sub" : "https://w3id.org/aio/UnsupervisedLearning",
       "pred" : "is_a",
@@ -22495,7 +22495,7 @@
     }, {
       "sub" : "https://w3id.org/aio/VariationalAutoEncoder",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/AE"
+      "obj" : "https://w3id.org/aio/AutoEncoderNetwork"
     }, {
       "sub" : "https://w3id.org/aio/WrapperLayer",
       "pred" : "is_a",
@@ -22503,11 +22503,11 @@
     }, {
       "sub" : "https://w3id.org/aio/Zero-ShotLearningLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMEnhancementStrategies"
+      "obj" : "https://w3id.org/aio/EnhancementStrategies"
     }, {
       "sub" : "https://w3id.org/aio/Zero-shotLearning",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DNN"
+      "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/ZeroPadding1DLayer",
       "pred" : "is_a",
@@ -22523,11 +22523,11 @@
     }, {
       "sub" : "https://w3id.org/aio/node2vec-CBOW",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/W2VCBOW"
+      "obj" : "https://w3id.org/aio/word2vec-CBOW"
     }, {
       "sub" : "https://w3id.org/aio/node2vec-SkipGram",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/W2VSkipGram"
+      "obj" : "https://w3id.org/aio/word2vec-SkipGram"
     }, {
       "sub" : "https://w3id.org/aio/t-DistributedStochasticNeighborembedding",
       "pred" : "is_a",
@@ -22535,11 +22535,11 @@
     }, {
       "sub" : "https://w3id.org/aio/word2vec-CBOW",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/ANN"
+      "obj" : "https://w3id.org/aio/ArtificialNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/word2vec-SkipGram",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/ANN"
+      "obj" : "https://w3id.org/aio/ArtificialNeuralNetwork"
     }, {
       "sub" : "https://w3id.org/aio/Simpon'sParadoxBias",
       "pred" : "is_a",

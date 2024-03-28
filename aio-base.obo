@@ -1,9 +1,9 @@
 format-version: 1.2
-data-version: aio/releases/2024-03-27/aio-base.owl
+data-version: aio/releases/2024-03-28/aio-base.owl
 ontology: aio/aio-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "Artificial Intelligence Ontology" xsd:string
-property_value: owl:versionInfo "2024-03-27" xsd:string
+property_value: owl:versionInfo "2024-03-28" xsd:string
 

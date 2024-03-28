@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aio/releases/2024-03-27/aio-full.owl
+data-version: aio/releases/2024-03-28/aio-full.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -10,7 +10,7 @@ ontology: aio/aio-full
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "Artificial Intelligence Ontology" xsd:string
-property_value: owl:versionInfo "2024-03-27" xsd:string
+property_value: owl:versionInfo "2024-03-28" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -988,8 +988,8 @@ name: regulatory agency
 def: "A regulatory agency is a organization that has responsibility over or for  the legislation (acts and regulations) for a given sector of the government." []
 is_a: OBI:0000245 ! organization
 intersection_of: OBI:0000245 ! organization
-intersection_of: RO:0000087 OBI:0000014 ! has_role regulator role
-relationship: RO:0000087 OBI:0000014 ! has_role regulator role
+intersection_of: RO:0000087 OBI:0000014 ! has role regulator role
+relationship: RO:0000087 OBI:0000014 ! has role regulator role
 property_value: IAO:0000111 "regulatory agency" xsd:string
 property_value: IAO:0000112 "The US Environmental Protection Agency" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1212,7 +1212,7 @@ id: OBI:0000835
 name: manufacturer
 def: "A person or organization that has a manufacturer role" []
 is_a: BFO:0000040 ! material entity
-relationship: RO:0000087 OBI:0000571 ! has_role manufacturer role
+relationship: RO:0000087 OBI:0000571 ! has role manufacturer role
 property_value: IAO:0000111 "manufacturer" xsd:string
 property_value: IAO:0000114 IAO:0000123
 
@@ -1579,7 +1579,7 @@ id: OBI:0002989
 name: material supplier
 def: "A person or organization that provides material supplies to other people or organizations." []
 is_a: BFO:0000040 ! material entity
-relationship: RO:0000087 OBI:0000018 ! has_role material supplier role
+relationship: RO:0000087 OBI:0000018 ! has role material supplier role
 property_value: IAO:0000111 "material supplier" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "Rebecca Jackson" xsd:string
@@ -1611,8 +1611,8 @@ name: specimen
 def: "A material entity that has the specimen role." []
 is_a: BFO:0000040 ! material entity
 intersection_of: BFO:0000040 ! material entity
-intersection_of: RO:0000087 OBI:0000112 ! has_role specimen role
-relationship: RO:0000087 OBI:0000112 ! has_role specimen role
+intersection_of: RO:0000087 OBI:0000112 ! has role specimen role
+relationship: RO:0000087 OBI:0000112 ! has role specimen role
 property_value: IAO:0000111 "specimen" xsd:string
 property_value: IAO:0000112 "Biobanking of blood taken and stored in a freezer for potential future investigations stores specimen." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1866,14 +1866,14 @@ id: SWO:0000396
 name: software developer organization
 def: "An organization or legal entity (including single person) that is responsible for developing software. Developing includes aspects of design, coding and testing." []
 is_a: OBI:0000245 ! organization
-relationship: RO:0000087 SWO:0000392 ! has_role software developer role
+relationship: RO:0000087 SWO:0000392 ! has role software developer role
 
 [Term]
 id: SWO:0000397
 name: software publisher organization
 def: "An organization or legal entity (including single person) that is responsible for publishing software. Publishing here includes tasks such as designing and producing physical products, technical customer support, licensing arrangements and marketing." []
 is_a: OBI:0000245 ! organization
-relationship: RO:0000087 SWO:0000260 ! has_role publisher role
+relationship: RO:0000087 SWO:0000260 ! has role publisher role
 
 [Term]
 id: UO:0000001
@@ -2043,7 +2043,7 @@ is_a: https://w3id.org/aio/AttentionLayer ! Attention Layer
 id: https://w3id.org/aio/AdvancedTechniques
 name: Advanced Techniques
 def: "An abstract parent class grouping LLMs based on advanced techniques." []
-is_a: https://w3id.org/aio/LLM
+is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/Adversarial-ResistantLLM
@@ -2052,7 +2052,7 @@ def: "An adversarial-resistant LLM is engineered to withstand or mitigate the ef
 synonym: "adversarial attacks" RELATED []
 synonym: "Robust LLM" EXACT []
 synonym: "robustness" RELATED []
-is_a: https://w3id.org/aio/LLMEnhancementStrategies
+is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
 
 [Term]
 id: https://w3id.org/aio/AlphaDropoutLayer
@@ -2082,7 +2082,7 @@ is_a: https://w3id.org/aio/IndividualBias ! Individual Bias
 id: https://w3id.org/aio/ApplicationFocus
 name: Application Focus
 def: "An abstract parent class grouping LLMs based on application focus." []
-is_a: https://w3id.org/aio/LLM
+is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/ArtificialNeuralNetwork
@@ -2110,7 +2110,7 @@ name: Auto Encoder Network
 def: "An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised Learning). The encoding is validated and refined by attempting to regenerate the input from the encoding. The autoencoder learns a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore insignificant data (“noise”). (https://en.wikipedia.org/wiki/Autoencoder)" [https://en.wikipedia.org/wiki/Autoencoder] {type="owl:Axiom"}
 comment: Input, Hidden, Matched Output-Input
 synonym: "AE" EXACT []
-is_a: https://w3id.org/aio/UPN
+is_a: https://w3id.org/aio/UnsupervisedPretrainedNetwork ! Unsupervised Pretrained Network
 
 [Term]
 id: https://w3id.org/aio/AutomationComplacencyBias
@@ -2126,7 +2126,7 @@ def: "An autoregressive language model is a type of language model that generate
 synonym: "Autoregressive Language Model" EXACT []
 synonym: "generative language model" RELATED []
 synonym: "sequence-to-sequence model" RELATED []
-is_a: https://w3id.org/aio/LLM
+is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/AvailabilityHeuristicBias
@@ -2269,7 +2269,7 @@ synonym: "BM" EXACT []
 synonym: "Sherrington–Kirkpatrick model with external field" EXACT []
 synonym: "stochastic Hopfield network with hidden units" EXACT []
 synonym: "stochastic Ising-Lenz-Little model" EXACT []
-is_a: https://w3id.org/aio/SCN
+is_a: https://w3id.org/aio/SymmetricallyConnectedNetwork ! Symmetrically Connected Network
 
 [Term]
 id: https://w3id.org/aio/CategoricalFeaturesPreprocessingLayer
@@ -2301,7 +2301,7 @@ def: "A causal LLM only attends to previous tokens in the sequence when generati
 synonym: "autoregressive" RELATED []
 synonym: "Causal LLM" EXACT []
 synonym: "unidirectional" RELATED []
-is_a: https://w3id.org/aio/LLMAdvancedTechniques
+is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 
 [Term]
 id: https://w3id.org/aio/CenterCropLayer
@@ -2345,7 +2345,7 @@ def: "A compositional generalization LLM is trained to understand and recombine 
 synonym: "Compositional Generalization LLM" EXACT []
 synonym: "out-of-distribution generalization" RELATED []
 synonym: "systematic generalization" RELATED []
-is_a: https://w3id.org/aio/LLM
+is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/ComputationalBias
@@ -2391,7 +2391,7 @@ name: Continual Learning
 def: "A concept to learn a model for a large number of tasks sequentially without forgetting knowledge obtained from the preceding tasks, where the data in the old tasks are not available any more during training new ones." [https://paperswithcode.com/task/continual-learning] {type="owl:Axiom"}
 synonym: "Incremental Learning" EXACT []
 synonym: "Life-Long Learning" EXACT []
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/ContinualLearningLLM
@@ -2401,13 +2401,13 @@ synonym: "catastrophic forgetting" RELATED []
 synonym: "CL-LLM" EXACT []
 synonym: "Continual Learning LLM" EXACT []
 synonym: "lifelong learning" RELATED []
-is_a: https://w3id.org/aio/LLMTrainingParadigm
+is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
 
 [Term]
 id: https://w3id.org/aio/ContrastiveLearning
 name: Contrastive Learning
 def: "Learning that encourages augmentations (views) of the same input to have more similar representations compared to augmentations of different inputs." [https://arxiv.org/abs/2202.14037] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/ContrastiveLearningLLM
@@ -2415,7 +2415,7 @@ name: Contrastive Learning LLM
 def: "A contrastive learning LLM is trained to pull semantically similar samples closer together and push dissimilar samples apart in the representation space, learning high-quality features useful for downstream tasks." []
 synonym: "Contrastive Learning LLM" EXACT []
 synonym: "Representation learning" RELATED []
-is_a: https://w3id.org/aio/LLMAdvancedTechniques
+is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 
 [Term]
 id: https://w3id.org/aio/ControllableLLM
@@ -2424,7 +2424,7 @@ def: "A controllable LLM allows for explicit control over certain attributes of 
 synonym: "conditional generation" RELATED []
 synonym: "Controllable LLM" EXACT []
 synonym: "guided generation" RELATED []
-is_a: https://w3id.org/aio/LLMEnhancementStrategies
+is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
 
 [Term]
 id: https://w3id.org/aio/ConvLSTM1DLayer
@@ -2541,7 +2541,7 @@ def: "A cross-domain LLM is capable of performing well across a wide range of do
 synonym: "cross-domain transfer" RELATED []
 synonym: "domain adaptation" RELATED []
 synonym: "Domain-General LLM" EXACT []
-is_a: https://w3id.org/aio/LLMEnhancementStrategies
+is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
 
 [Term]
 id: https://w3id.org/aio/CurriculumLearning
@@ -2559,7 +2559,7 @@ name: Curriculum Learning LLM
 def: "A curriculum learning LLM is trained by presenting learning examples in a meaningful order from simple to complex, mimicking the learning trajectory followed by humans." []
 synonym: "Curriculum Learning LLM" EXACT []
 synonym: "Learning progression" RELATED []
-is_a: https://w3id.org/aio/LLMAdvancedTechniques
+is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 
 [Term]
 id: https://w3id.org/aio/Data-to-TextLLM
@@ -2567,7 +2567,7 @@ name: Data-to-Text LLM
 synonym: "A data-to-text LLM generates natural language descriptions from structured data sources like tables, graphs, knowledge bases, etc. Requiring grounding meaning representations." RELATED []
 synonym: "Data-to-Text LLM" EXACT []
 synonym: "Meaning representation" EXACT []
-is_a: https://w3id.org/aio/LLMAdvancedTechniques
+is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 
 [Term]
 id: https://w3id.org/aio/DataAugmentation
@@ -2624,7 +2624,7 @@ id: https://w3id.org/aio/DecoderLLM
 name: Decoder LLM
 def: "In the decoder-only architecture, the model consists of only a decoder, which is trained to predict the next token in a sequence given the previous tokens. The critical difference between the Decoder-only architecture and the Encoder-Decoder architecture is that the Decoder-only architecture does not have an explicit encoder to summarize the input information. Instead, the information is encoded implicitly in the hidden state of the decoder, which is updated at each step of the generation process." [https://www.practicalai.io/understanding-transformer-model-architectures/#\:~\:text=Encoder%2Donly&text=These%20models%20have%20a%20pre\,Named%20entity%20recognition] {type="owl:Axiom"}
 synonym: "LLM" EXACT []
-is_a: https://w3id.org/aio/LLMModelArchitecture
+is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 
 [Term]
 id: https://w3id.org/aio/DeconvolutionalNetwork
@@ -2632,14 +2632,14 @@ name: Deconvolutional Network
 def: "Deconvolutional Networks, a framework that permits the unsupervised construction of hierarchical image representations. These representations can be used for both low-level tasks such as denoising, as well as providing features for object recognition. Each level of the hierarchy groups information from the level beneath to form more complex features that exist over a larger scale in the image. (https://ieeexplore.ieee.org/document/5539957)" [https://ieeexplore.ieee.org/document/5539957] {type="owl:Axiom"}
 comment: Input, Kernel, Convolutional/Pool, Output
 synonym: "DN" EXACT []
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/DeepActiveLearning
 name: Deep Active Learning
 def: "The combination of deep learning and active learning, where active learning attempts to maximize a model’s performance gain while annotating the fewest samples possible." [https://arxiv.org/pdf/2009.00236.pdf] {type="owl:Axiom"}
 synonym: "DeepAL" EXACT []
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/DeepBeliefNetwork
@@ -2647,7 +2647,7 @@ name: Deep Belief Network
 def: "In machine Learning, a deep belief network (DBN) is a generative graphical model, or alternatively a class of deep neural network, composed of multiple layers of latent variables (\"hidden units\"), with connections between the layers but not between units within each layer. When trained on a set of examples without supervision, a DBN can learn to probabilistically reconstruct its inputs. The layers then act as feature detectors. After this Learning step, a DBN can be further trained with supervision to perform classification. DBNs can be viewed as a composition of simple, unsupervised networks such as restricted Boltzmann machines (RBMs) or autoencoders, where each sub-network's hidden layer serves as the visible layer for the next. An RBM is an undirected, generative energy-based model with a \"visible\" input layer and a hidden layer and connections between but not within layers. This composition leads to a fast, layer-by-layer unsupervised training procedure, where contrastive divergence is applied to each sub-network in turn, starting from the \"lowest\" pair of layers (the lowest visible layer is a training set). The observation that DBNs can be trained greedily, one layer at a time, led to one of the first effective deep Learning algorithms. (https://en.wikipedia.org/wiki/Deep_belief_network)" [https://en.wikipedia.org/wiki/Deep_belief_network] {type="owl:Axiom"}
 comment: Backfed Input, Probabilistic Hidden, Hidden, Matched Output-Input
 synonym: "DBN" EXACT []
-is_a: https://w3id.org/aio/UPN
+is_a: https://w3id.org/aio/UnsupervisedPretrainedNetwork ! Unsupervised Pretrained Network
 
 [Term]
 id: https://w3id.org/aio/DeepConvolutionalInverseGraphicsNetwork
@@ -2655,7 +2655,7 @@ name: Deep Convolutional Inverse Graphics Network
 def: "A Deep Convolution Inverse Graphics Network (DC-IGN) is a model that learns an interpretable representation of images. This representation is disentangled with respect to transformations such as out-of-plane rotations and lighting variations. The DC-IGN model is composed of multiple layers of convolution and de-convolution operators and is trained using the Stochastic Gradient Variational Bayes (SGVB) algorithm. (https://arxiv.org/abs/1503.03167)" []
 comment: Input, Kernel, Convolutional/Pool, Probabilistic Hidden, Convolutional/Pool, Kernel, Output
 synonym: "DCIGN" EXACT []
-is_a: https://w3id.org/aio/AE
+is_a: https://w3id.org/aio/AutoEncoderNetwork ! Auto Encoder Network
 
 [Term]
 id: https://w3id.org/aio/DeepConvolutionalNetwork
@@ -2666,7 +2666,7 @@ synonym: "CNN" EXACT []
 synonym: "ConvNet" EXACT []
 synonym: "Convolutional Neural Network" EXACT []
 synonym: "DCN" EXACT []
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/DeepFeedFoward
@@ -2678,20 +2678,20 @@ synonym: "Feedforward Network" EXACT []
 synonym: "FFN" EXACT []
 synonym: "MLP" EXACT []
 synonym: "Multilayer Perceptoron" EXACT []
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/DeepNeuralNetwork
 name: Deep Neural Network
 def: "A deep neural network (DNN) is an artificial neural network (ANN) with multiple layers between the input and output layers.[13][2] There are different types of neural networks but they always consist of the same components: neurons, synapses, weights, biases, and functions. (https://en.wikipedia.org/wiki/Deep_Learning#:~:text=A%20deep%20neural%20network%20(DNN,weights%2C%20biases%2C%20and%20functions.)" []
 synonym: "DNN" EXACT []
-is_a: https://w3id.org/aio/ANN
+is_a: https://w3id.org/aio/ArtificialNeuralNetwork ! Artificial Neural Network
 
 [Term]
 id: https://w3id.org/aio/DeepTransferLearning
 name: Deep Transfer Learning
 def: "Deep transfer learning methods relax the hypothesis that the training data must be independent and identically distributed (i.i.d.) with the test data, which motivates us to use transfer learning to solve the problem of insufficient training data." [https://arxiv.org/abs/1808.01974] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/DenoisingAutoEncoder
@@ -2699,7 +2699,7 @@ name: Denoising Auto Encoder
 def: "Denoising Auto Encoders (DAEs) take a partially corrupted input and are trained to recover the original undistorted input. In practice, the objective of denoising autoencoders is that of cleaning the corrupted input, or denoising. (https://en.wikipedia.org/wiki/Autoencoder)" []
 comment: Noisy Input, Hidden, Matched Output-Input
 synonym: "DAE" EXACT []
-is_a: https://w3id.org/aio/AE
+is_a: https://w3id.org/aio/AutoEncoderNetwork ! Auto Encoder Network
 
 [Term]
 id: https://w3id.org/aio/DenseFeaturesLayer
@@ -2744,7 +2744,7 @@ def: "A dialogue LLM is optimized for engaging in multi-turn conversations, unde
 synonym: "conversational AI" RELATED []
 synonym: "Dialogue LLM" EXACT []
 synonym: "multi-turn dialogue" RELATED []
-is_a: https://w3id.org/aio/LLMApplicationFocus
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/DifferentiableLLM
@@ -2785,7 +2785,7 @@ def: "A domain-adapted LLM is first pre-trained on a broad corpus, then fine-tun
 synonym: "domain robustness" RELATED []
 synonym: "Domain-Adapted LLM" EXACT []
 synonym: "transfer learning" RELATED []
-is_a: https://w3id.org/aio/LLMApplicationFocus
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/DotLayer
@@ -2826,7 +2826,7 @@ name: Echo State Network
 def: "The echo state network (ESN) is a type of reservoir computer that uses a recurrent neural network with a sparsely connected hidden layer (with typically 1% connectivity). The connectivity and weights of hidden neurons are fixed and randomly assigned. The weights of output neurons can be learned so that the network can produce or reproduce specific temporal patterns. The main interest of this network is that although its behaviour is non-linear, the only weights that are modified during training are for the synapses that connect the hidden neurons to output neurons. Thus, the error function is quadratic with respect to the parameter vector and can be differentiated easily to a linear system." [https://en.wikipedia.org/wiki/Echo_state_network#\:~\:text=The%20echo%20state%20network%20(ESN\,are%20fixed%20and%20randomly%20assigned] {type="owl:Axiom"}
 comment: Input, Recurrent, Output
 synonym: "ESN" EXACT []
-is_a: https://w3id.org/aio/RecNN
+is_a: https://w3id.org/aio/RecurrentNeuralNetwork ! Recurrent Neural Network
 
 [Term]
 id: https://w3id.org/aio/EcologicalFallacyBias
@@ -2847,7 +2847,7 @@ name: Embodied LLM
 def: "An embodied LLM integrates language with other modalities like vision, audio, robotics to enable grounded language understanding in real-world environments." []
 synonym: "Embodied LLM" EXACT []
 synonym: "multimodal grounding" RELATED []
-is_a: https://w3id.org/aio/LLMApplicationFocus
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/EmergentBias
@@ -2860,14 +2860,14 @@ id: https://w3id.org/aio/Encoder-DecoderLLM
 name: Encoder-Decoder LLM
 def: "The Encoder-Decoder architecture was the original transformer architecture introduced in the Attention Is All You Need (https://arxiv.org/abs/1706.03762) paper. The encoder processes the input sequence and generates a hidden representation that summarizes the input information. The decoder uses this hidden representation to generate the desired output sequence. The encoder and decoder are trained end-to-end to maximize the likelihood of the correct output sequence given the input sequence." [https://www.practicalai.io/understanding-transformer-model-architectures/#\:~\:text=Encoder%2Donly&text=These%20models%20have%20a%20pre\,Named%20entity%20recognition] {type="owl:Axiom"}
 synonym: "LLM" EXACT []
-is_a: https://w3id.org/aio/LLMModelArchitecture
+is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 
 [Term]
 id: https://w3id.org/aio/EncoderLLM
 name: Encoder LLM
 def: "The Encoder-only architecture is used when only encoding the input sequence is required and the decoder is not necessary. The input sequence is encoded into a fixed-length representation and then used as input to a classifier or a regressor to make a prediction. These models have a pre-trained general-purpose encoder but will require fine-tuning of the final classifier or regressor." [https://www.practicalai.io/understanding-transformer-model-architectures/#\:~\:text=Encoder%2Donly&text=These%20models%20have%20a%20pre\,Named%20entity%20recognition] {type="owl:Axiom"}
 synonym: "LLM" EXACT []
-is_a: https://w3id.org/aio/LLMModelArchitecture
+is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 
 [Term]
 id: https://w3id.org/aio/Energy-BasedLLM
@@ -2876,13 +2876,13 @@ def: "An energy-based LLM models the explicit probability density over token seq
 synonym: "energy scoring" RELATED []
 synonym: "Energy-Based LLM" EXACT []
 synonym: "explicit density modeling" RELATED []
-is_a: https://w3id.org/aio/LLMEnhancementStrategies
+is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
 
 [Term]
 id: https://w3id.org/aio/EnhancementStrategies
 name: Enhancement Strategies
 def: "An abstract parent class grouping LLMs based on enhancement strategies." []
-is_a: https://w3id.org/aio/LLM
+is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/EnsembleLearning
@@ -2904,7 +2904,7 @@ def: "An ethical LLM is trained to uphold certain ethical principles, values or 
 synonym: "constituitional AI" RELATED []
 synonym: "Ethical LLM" EXACT []
 synonym: "value alignment" RELATED []
-is_a: https://w3id.org/aio/LLMApplicationFocus
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/EvaluationBias
@@ -2919,7 +2919,7 @@ def: "An evolutionary LLM applies principles of evolutionary computation to opti
 synonym: "evolutionary algorithms" RELATED []
 synonym: "Evolutionary Language Model" EXACT []
 synonym: "genetic programming" RELATED []
-is_a: https://w3id.org/aio/LLMEnhancementStrategies
+is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
 
 [Term]
 id: https://w3id.org/aio/ExclusionBias
@@ -2935,7 +2935,7 @@ synonym: "Explainable Language Model" EXACT []
 synonym: "interpretability" RELATED []
 synonym: "model understanding" RELATED []
 synonym: "XAI LLM" EXACT []
-is_a: https://w3id.org/aio/LLMAdvancedTechniques
+is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 
 [Term]
 id: https://w3id.org/aio/ExponentialFunction
@@ -2949,7 +2949,7 @@ name: Extreme Learning Machine
 def: "Extreme Learning machines are feedforward neural networks for classification, regression, clustering, sparse approximation, compression and feature Learning with a single layer or multiple layers of hidden nodes, where the parameters of hidden nodes (not just the weights connecting inputs to hidden nodes) need not be tuned. These hidden nodes can be randomly assigned and never updated (i.e. they are random projection but with nonlinear transforms), or can be inherited from their ancestors without being changed. In most cases, the output weights of hidden nodes are usually learned in a single step, which essentially amounts to Learning a linear model. (https://en.wikipedia.org/wiki/Extreme_Learning_machine)" [https://en.wikipedia.org/wiki/Extreme_Learning_machine] {type="owl:Axiom"}
 comment: Input, Hidden, Output
 synonym: "ELM" EXACT []
-is_a: https://w3id.org/aio/FBN
+is_a: https://w3id.org/aio/FeedbackNetwork ! Feedback Network
 
 [Term]
 id: https://w3id.org/aio/FactorizedLLM
@@ -2958,7 +2958,7 @@ def: "A factorized LLM decomposes the full language modeling task into multiple 
 synonym: "Conditional masking" RELATED []
 synonym: "Factorized LLM" EXACT []
 synonym: "Product of experts" RELATED []
-is_a: https://w3id.org/aio/LLM
+is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/FeatureExtraction
@@ -2977,13 +2977,13 @@ def: "A federated LLM is trained in a decentralized manner across multiple devic
 synonym: "decentralized training" RELATED []
 synonym: "Federated LLM" EXACT []
 synonym: "privacy-preserving" RELATED []
-is_a: https://w3id.org/aio/LLMTrainingParadigm
+is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
 
 [Term]
 id: https://w3id.org/aio/FederatedLearning
 name: Federated Learning
 def: "A technique that trains an algorithm across multiple decentralized edge devices or servers holding local data samples, without exchanging them." [https://en.wikipedia.org/wiki/Federated_learning] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/FeedbackLoopBias
@@ -2997,7 +2997,7 @@ name: Feedback Network
 def: "A feedback based approach in which the representation is formed in an iterative manner based on a feedback received from previous iteration's output. (https://arxiv.org/abs/1612.09508)" []
 comment: Input, Hidden, Output, Hidden
 synonym: "FBN" EXACT []
-is_a: https://w3id.org/aio/ANN
+is_a: https://w3id.org/aio/ArtificialNeuralNetwork ! Artificial Neural Network
 
 [Term]
 id: https://w3id.org/aio/FixedEffectsModel
@@ -3060,7 +3060,7 @@ name: Gated Recurrent Unit
 def: "Gated recurrent units (GRUs) are a gating mechanism in recurrent neural networks, introduced in 2014 by Kyunghyun Cho et al. The GRU is like a long short-term memory (LSTM) with a forget gate, but has fewer parameters than LSTM, as it lacks an output gate. GRU's performance on certain tasks of polyphonic music modeling, speech signal modeling and natural language processing was found to be similar to that of LSTM.[4][5] GRUs have been shown to exhibit better performance on certain smaller and less frequent datasets." [https://en.wikipedia.org/wiki/Gated_recurrent_unit] {type="owl:Axiom"}
 comment: Input, Memory Cell, Output
 synonym: "GRU" EXACT []
-is_a: https://w3id.org/aio/LSTM
+is_a: https://w3id.org/aio/LongShortTermMemory ! Long Short Term Memory
 
 [Term]
 id: https://w3id.org/aio/GaussianDropoutLayer
@@ -3079,7 +3079,7 @@ id: https://w3id.org/aio/GeneralizedFew-shotLearning
 name: Generalized Few-shot Learning
 def: "Methods that can learn novel classes from only few samples per class, preventing catastrophic forgetting of base classes, and classifier calibration across novel and base classes." [https://paperswithcode.com/paper/generalized-and-incremental-few-shot-learning/review/] {type="owl:Axiom"}
 synonym: "GFSL" EXACT []
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/GeneralizedLinearModel
@@ -3094,7 +3094,7 @@ name: Generative Adversarial Network
 def: "A generative adversarial network (GAN) is a class of machine Learning frameworks designed by Ian Goodfellow and his colleagues in 2014. Two neural networks contest with each other in a game (in the form of a zero-sum game, where one agent's gain is another agent's loss). Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics. Though originally proposed as a form of generative model for unsupervised Learning, GANs have also proven useful for semi-supervised Learning, fully supervised Learning,[ and reinforcement Learning. The core idea of a GAN is based on the \"indirect\" training through the discriminator,[clarification needed] which itself is also being updated dynamically. This basically means that the generator is not trained to minimize the distance to a specific image, but rather to fool the discriminator. This enables the model to learn in an unsupervised manner." [https://en.wikipedia.org/wiki/Generative_adversarial_network] {type="owl:Axiom"}
 comment: Backfed Input, Hidden, Matched Output-Input, Hidden, Matched Output-Input
 synonym: "GAN" EXACT []
-is_a: https://w3id.org/aio/UPN
+is_a: https://w3id.org/aio/UnsupervisedPretrainedNetwork ! Unsupervised Pretrained Network
 
 [Term]
 id: https://w3id.org/aio/GenerativeAdversarialNetwork-AugmentedLLM
@@ -3104,7 +3104,7 @@ synonym: "adversarial training" RELATED []
 synonym: "GAN-LLM" EXACT []
 synonym: "Generative Adversarial Network-Augmented LLM" EXACT []
 synonym: "text generation" RELATED []
-is_a: https://w3id.org/aio/LLMApplicationFocus
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/GenerativeCommonsenseLLM
@@ -3113,7 +3113,7 @@ def: "A generative commonsense LLM is trained to understand and model basic phys
 synonym: "causal modeling" RELATED []
 synonym: "Generative Commonsense LLM" EXACT []
 synonym: "physical reasoning" RELATED []
-is_a: https://w3id.org/aio/LLMApplicationFocus
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/GenerativeLanguageCircuit
@@ -3123,7 +3123,7 @@ synonym: "analogy circuit" RELATED []
 synonym: "Generative Language Circuit" EXACT []
 synonym: "GLC" EXACT []
 synonym: "program synthesis" RELATED []
-is_a: https://w3id.org/aio/LLMAdvancedTechniques
+is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 
 [Term]
 id: https://w3id.org/aio/GenerativeLanguageInterface
@@ -3131,7 +3131,7 @@ name: Generative Language Interface
 def: "A generative language interface enables users to engage in an interactive dialogue with an LLM, providing feedback to guide and refine the generated outputs iteratively." []
 synonym: "Generative Language Interface" EXACT []
 synonym: "Interactive generation" RELATED []
-is_a: https://w3id.org/aio/LLM
+is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/GlobalAveragePooling1DLayer
@@ -3187,7 +3187,7 @@ name: Graph Convolutional Network
 def: "GCN is a type of convolutional neural network that can work directly on graphs and take advantage of their structural information. (https://arxiv.org/abs/1609.02907)" [https://arxiv.org/abs/1609.02907] {type="owl:Axiom"}
 comment: Input, Hidden, Hidden, Output
 synonym: "GCN" EXACT []
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/GraphConvolutionalPolicyNetwork
@@ -3195,7 +3195,7 @@ name: Graph Convolutional Policy Network
 def: "Graph Convolutional Policy Network (GCPN), a general graph convolutional network based model for goal-directed graph generation through reinforcement Learning. The model is trained to optimize domain-specific rewards and adversarial loss through policy gradient, and acts in an environment that incorporates domain-specific rules." [https://arxiv.org/abs/1806.02473] {type="owl:Axiom"}
 comment: Input, Hidden, Hidden, Policy, Output
 synonym: "GPCN" EXACT []
-is_a: https://w3id.org/aio/GCN
+is_a: https://w3id.org/aio/GraphConvolutionalNetwork ! Graph Convolutional Network
 
 [Term]
 id: https://w3id.org/aio/GraphLLM
@@ -3203,7 +3203,7 @@ name: Graph LLM
 def: "A graph LLM operates over structured inputs/outputs represented as graphs, enabling reasoning over explicit relational knowledge representations during language tasks." []
 synonym: "Graph LLM" EXACT []
 synonym: "Structured representations" RELATED []
-is_a: https://w3id.org/aio/LLMAdvancedTechniques
+is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 
 [Term]
 id: https://w3id.org/aio/GroupBias
@@ -3267,7 +3267,7 @@ name: Hierarchical LLM
 def: "A hierarchical LLM models language at multiple levels of granularity, learning hierarchical representations that can capture both low-level patterns and high-level abstractions." []
 synonym: "Hierarchical LLM" EXACT []
 synonym: "multi-scale representations" RELATED []
-is_a: https://w3id.org/aio/LLMAdvancedTechniques
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/HistoricalBias
@@ -3283,7 +3283,7 @@ comment: Backfed input
 synonym: "HN" EXACT []
 synonym: "Ising model of a neural network" EXACT []
 synonym: "Ising–Lenz–Little model" EXACT []
-is_a: https://w3id.org/aio/SCN
+is_a: https://w3id.org/aio/SymmetricallyConnectedNetwork ! Symmetrically Connected Network
 
 [Term]
 id: https://w3id.org/aio/HostileAttributionBias
@@ -3329,14 +3329,14 @@ def: "An implicit language model uses an energy function to score full sequences
 synonym: "Energy-based models" RELATED []
 synonym: "Implicit Language Model" EXACT []
 synonym: "Token-level scoring" RELATED []
-is_a: https://w3id.org/aio/LLM
+is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/IncremenetalFew-shotLearning
 name: Incremenetal Few-shot Learning
 def: "Methods that train a network on a base set of classes and then is presented several novel classes, each with only a few labeled examples." [https://arxiv.org/abs/1810.07218] {type="owl:Axiom"}
 synonym: "IFSL" EXACT []
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/IndividualBias
@@ -3405,7 +3405,7 @@ def: "An instruction-tuned LLM is fine-tuned to follow natural language instruct
 synonym: "constitutional AI" RELATED []
 synonym: "Instruction-Tuned LLM" EXACT []
 synonym: "natural language instructions" RELATED []
-is_a: https://w3id.org/aio/LLMApplicationFocus
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/IntegerLookupLayer
@@ -3420,7 +3420,7 @@ def: "An interpretable LLM prioritizes transparency and ease of understanding in
 synonym: "interpretability" RELATED []
 synonym: "Interpretable Language Model" EXACT []
 synonym: "model transparency" RELATED []
-is_a: https://w3id.org/aio/LLMEnhancementStrategies
+is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
 
 [Term]
 id: https://w3id.org/aio/InterpretationBias
@@ -3460,7 +3460,7 @@ def: "A knowledge-grounded LLM incorporates external knowledge sources or knowle
 synonym: "factual grounding" RELATED []
 synonym: "knowledge integration" RELATED []
 synonym: "Knowledge-Grounded LLM" EXACT []
-is_a: https://w3id.org/aio/LLMApplicationFocus
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/KohonenNetwork
@@ -3514,7 +3514,7 @@ name: Language Interface LLM
 def: "A language interface LLM supports interactive semantic parsing, enabling users to provide feedback/corrections which are used to dynamically refine and update the language model." []
 synonym: "Interactive learning" RELATED []
 synonym: "Language Interface LLM" EXACT []
-is_a: https://w3id.org/aio/LLMAdvancedTechniques
+is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 
 [Term]
 id: https://w3id.org/aio/LargeLanguageModel
@@ -3620,7 +3620,7 @@ synonym: "Catastrophic forgetting" RELATED []
 synonym: "Continual Learning LLM" EXACT []
 synonym: "Lifelong Learning LLM" EXACT []
 synonym: "Plasticity-Stability balance" RELATED []
-is_a: https://w3id.org/aio/LLMAdvancedTechniques
+is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 
 [Term]
 id: https://w3id.org/aio/LinearFunction
@@ -3685,7 +3685,7 @@ name: Long Short Term Memory
 def: "Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep Learning. Unlike standard feedforward neural networks, LSTM has feedback connections. It can process not only single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition, speech recognition and anomaly detection in network traffic or IDSs (intrusion detection systems). A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell." [https://en.wikipedia.org/wiki/Long_short-term_memory] {type="owl:Axiom"}
 comment: Input, Memory Cell, Output
 synonym: "LSTM" EXACT []
-is_a: https://w3id.org/aio/RecNN
+is_a: https://w3id.org/aio/RecurrentNeuralNetwork ! Recurrent Neural Network
 
 [Term]
 id: https://w3id.org/aio/LossOfSituationalAwarenessBias
@@ -3700,7 +3700,7 @@ def: "A low-resource LLM is optimized for performance in scenarios with limited 
 synonym: "Low-Resource Language Model" EXACT []
 synonym: "low-resource languages" RELATED []
 synonym: "resource-efficient" RELATED []
-is_a: https://w3id.org/aio/LLMEnhancementStrategies
+is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
 
 [Term]
 id: https://w3id.org/aio/MachineLearning
@@ -3811,7 +3811,7 @@ name: Memory-Augmented LLM
 def: "A memory-augmented LLM incorporates external writeable and readable memory components, allowing it to store and retrieve information over long contexts." []
 synonym: "external memory" RELATED []
 synonym: "Memory-Augmented LLM" EXACT []
-is_a: https://w3id.org/aio/LLM
+is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/MergingLayer
@@ -3832,7 +3832,7 @@ def: "A meta-learning LLM is trained in a way that allows it to quickly adapt to
 synonym: "few-shot adaptation" RELATED []
 synonym: "learning to learn" RELATED []
 synonym: "Meta-Learning LLM" EXACT []
-is_a: https://w3id.org/aio/LLMTrainingParadigm
+is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
 
 [Term]
 id: https://w3id.org/aio/Method
@@ -3844,7 +3844,7 @@ id: https://w3id.org/aio/MetricLearning
 name: Metric Learning
 def: "Methods which can learn a representation function that maps objects into an embedded space." [https://paperswithcode.com/task/metric-learning] {type="owl:Axiom"}
 synonym: "Distance Metric Learning" EXACT []
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/MinimumLayer
@@ -3860,7 +3860,7 @@ synonym: "conditional computation" RELATED []
 synonym: "Mixture-of-Experts LLM" EXACT []
 synonym: "model parallelism" RELATED []
 synonym: "MoE LLM" EXACT []
-is_a: https://w3id.org/aio/LLMModelArchitecture
+is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 
 [Term]
 id: https://w3id.org/aio/ModeConfusionBias
@@ -3872,7 +3872,7 @@ is_a: https://w3id.org/aio/IndividualBias ! Individual Bias
 id: https://w3id.org/aio/ModelArchitecture
 name: Model Architecture
 def: "An abstract parent class grouping LLMs based on model architecture." []
-is_a: https://w3id.org/aio/LLM
+is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/ModelEfficiency
@@ -3894,7 +3894,7 @@ def: "A modular LLM consists of multiple specialized components or skills that c
 synonym: "component skills" RELATED []
 synonym: "Modular LLM" EXACT []
 synonym: "skill composition" RELATED []
-is_a: https://w3id.org/aio/LLMModelArchitecture
+is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 
 [Term]
 id: https://w3id.org/aio/Multi-TaskLLM
@@ -3902,7 +3902,7 @@ name: Multi-Task LLM
 def: "A multi-task LLM is trained jointly on multiple language tasks simultaneously, learning shared representations that transfer across tasks." []
 synonym: "Multi-Task LLM" EXACT []
 synonym: "transfer learning" RELATED []
-is_a: https://w3id.org/aio/LLMApplicationFocus
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/MultiHeadAttentionLayer
@@ -3930,13 +3930,13 @@ name: Multilingual LLM
 def: "A multilingual LLM is trained on text from multiple languages, learning shared representations that enable zero-shot or few-shot transfer to new languages." []
 synonym: "cross-lingual transfer" RELATED []
 synonym: "Multilingual LLM" EXACT []
-is_a: https://w3id.org/aio/LLM
+is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/MultimodalDeepLearning
 name: Multimodal Deep Learning
 def: "Methods which can create models that can process and link information using various modalities." [https://arxiv.org/abs/2105.11087] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/MultimodalFusionLLM
@@ -3944,7 +3944,7 @@ name: Multimodal Fusion LLM
 def: "A multimodal fusion LLM learns joint representations across different modalities like text, vision and audio in an end-to-end fashion for better cross-modal understanding and generation." []
 synonym: "cross-modal grounding" RELATED []
 synonym: "Multimodal Fusion LLM" EXACT []
-is_a: https://w3id.org/aio/LLMAdvancedTechniques
+is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 
 [Term]
 id: https://w3id.org/aio/MultimodalLearning
@@ -3959,7 +3959,7 @@ def: "A multimodal transformer is a transformer architecture that can process an
 synonym: "Multimodal Transformer" EXACT []
 synonym: "unified encoder" RELATED []
 synonym: "vision-language model" RELATED []
-is_a: https://w3id.org/aio/LLMApplicationFocus
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/MultiplyLayer
@@ -3985,8 +3985,8 @@ name: Neural Turing Machine Network
 def: "A Neural Turing machine (NTMs) is a recurrent neural network model. The approach was published by Alex Graves et al. in 2014. NTMs combine the fuzzy pattern matching capabilities of neural networks with the algorithmic power of programmable computers. An NTM has a neural network controller coupled to external memory resources, which it interacts with through attentional mechanisms. The memory interactions are differentiable end-to-end, making it possible to optimize them using gradient descent. An NTM with a long short-term memory (LSTM) network controller can infer simple algorithms such as copying, sorting, and associative recall from examples alone." [https://en.wikipedia.org/wiki/Neural_Turing_machine] {type="owl:Axiom"}
 comment: Input, Hidden, Spiking Hidden, Output
 synonym: "NTM" EXACT []
-is_a: https://w3id.org/aio/DFF
-is_a: https://w3id.org/aio/LSTM
+is_a: https://w3id.org/aio/DeepFeedForward
+is_a: https://w3id.org/aio/LongShortTermMemory ! Long Short Term Memory
 
 [Term]
 id: https://w3id.org/aio/Neuro-SymbolicLLM
@@ -3995,7 +3995,7 @@ def: "A neuro-symbolic LLM combines neural language modeling with symbolic reaso
 synonym: "knowledge reasoning" RELATED []
 synonym: "Neuro-Symbolic LLM" EXACT []
 synonym: "symbolic grounding" RELATED []
-is_a: https://w3id.org/aio/LLMApplicationFocus
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/NoiseDenseLayer
@@ -4020,7 +4020,7 @@ id: https://w3id.org/aio/One-shotLearning
 name: One-shot Learning
 def: "A method which aims to classify objects from one, or only a few, examples." [https://en.wikipedia.org/wiki/One-shot_learning] {type="owl:Axiom"}
 synonym: "OSL" EXACT []
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/OrdinalLLM
@@ -4029,7 +4029,7 @@ def: "An ordinal LLM is trained to model ordinal relationships and rank outputs,
 synonym: "Ordinal LLM" EXACT []
 synonym: "preference modeling" RELATED []
 synonym: "ranking" RELATED []
-is_a: https://w3id.org/aio/LLMAdvancedTechniques
+is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 
 [Term]
 id: https://w3id.org/aio/OutputLayer
@@ -4050,7 +4050,7 @@ def: "The perceptron is an algorithm for supervised Learning of binary classifie
 comment: Input, Output
 synonym: "Single Layer Perceptron" EXACT []
 synonym: "SLP" EXACT []
-is_a: https://w3id.org/aio/ANN
+is_a: https://w3id.org/aio/ArtificialNeuralNetwork ! Artificial Neural Network
 
 [Term]
 id: https://w3id.org/aio/PermuteLayer
@@ -4064,7 +4064,7 @@ name: Personalized LLM
 def: "A personalized LLM adapts its language modeling and generation to the preferences, style and persona of individual users or audiences." []
 synonym: "Personalized LLM" EXACT []
 synonym: "user adaptation" RELATED []
-is_a: https://w3id.org/aio/LLM
+is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/PoolingLayer
@@ -4133,12 +4133,12 @@ synonym: "few-shot learning" RELATED []
 synonym: "in-context learning" RELATED []
 synonym: "Prompt-based Fine-Tuning LLM" EXACT []
 synonym: "Prompt-tuned LLM" EXACT []
-is_a: https://w3id.org/aio/LLMTrainingParadigm
+is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
 
 [Term]
 id: https://w3id.org/aio/ProportionalHazardsModel
 name: Proportional Hazards Model
-def: "A surival modeling method where the unique effect of a unit increase in a covariate is multiplicative with respect to the hazard rate." [https://en.wikipedia.org/wiki/Proportional_hazards_modelProportional Hazards Model] {type="owl:Axiom"}
+def: "A surival modeling method where the unique effect of a unit increase in a covariate is multiplicative with respect to the hazard rate." [https://en.wikipedia.org/wiki/Proportional_hazards_model] {type="owl:Axiom"}
 is_a: https://w3id.org/aio/RegressionAnalysis ! Regression Analysis
 is_a: https://w3id.org/aio/SurvivalAnalysis ! Survival Analysis
 
@@ -4156,7 +4156,7 @@ comment: Input, Hidden, Output
 synonym: "Radial Basis Function Network" EXACT []
 synonym: "RBFN" EXACT []
 synonym: "RBN" EXACT []
-is_a: https://w3id.org/aio/DFF
+is_a: https://w3id.org/aio/DeepFeedFoward ! Deep FeedFoward
 
 [Term]
 id: https://w3id.org/aio/RandomBrightnessLayer
@@ -4246,7 +4246,7 @@ def: "A rational LLM incorporates explicit reasoning capabilities, leveraging lo
 synonym: "logical inferences" RELATED []
 synonym: "Rational LLM" EXACT []
 synonym: "reasoning" RELATED []
-is_a: https://w3id.org/aio/LLM
+is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/ReLUFunction
@@ -4276,7 +4276,7 @@ comment: Input, Memory Cell, Output
 synonym: "RecNN" EXACT []
 synonym: "Recurrent Network" EXACT []
 synonym: "RN" EXACT []
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/RecursiveLLM
@@ -4286,7 +4286,7 @@ synonym: "iterative refinement" RELATED []
 synonym: "Recursive LLM" EXACT []
 synonym: "Self-Attending LLM" EXACT []
 synonym: "self-attention" RELATED []
-is_a: https://w3id.org/aio/LLMModelArchitecture
+is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 
 [Term]
 id: https://w3id.org/aio/RecursiveLanguageModel
@@ -4294,7 +4294,7 @@ name: Recursive Language Model
 def: "A recursive language model uses recursive neural network architectures like TreeLSTMs to learn syntactic composition functions, improving systematic generalization abilities." []
 synonym: "Compositional generalization" RELATED []
 synonym: "Recursive Language Model" EXACT []
-is_a: https://w3id.org/aio/LLMAdvancedTechniques
+is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 
 [Term]
 id: https://w3id.org/aio/RecursiveNeuralNetwork
@@ -4302,7 +4302,7 @@ name: Recursive Neural Network
 def: "A recursive neural network is a kind of deep neural network created by applying the same set of weights recursively over a structured input, to produce a structured prediction over variable-size input structures, or a scalar prediction on it, by traversing a given structure in topological order. Recursive neural networks, sometimes abbreviated as RvNNs, have been successful, for instance, in Learning sequence and tree structures in natural language processing, mainly phrase and sentence continuous representations based on word embedding." [https://en.wikipedia.org/wiki/Recursive_neural_network] {type="owl:Axiom"}
 synonym: "RecuNN" EXACT []
 synonym: "RvNN" EXACT []
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/RegressionAnalysis
@@ -4332,7 +4332,7 @@ synonym: "decision transformers" RELATED []
 synonym: "Reinforcement Learning LLM" EXACT []
 synonym: "reward modeling" RELATED []
 synonym: "RL-LLM" EXACT []
-is_a: https://w3id.org/aio/LLMTrainingParadigm
+is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
 
 [Term]
 id: https://w3id.org/aio/RepeatVectorLayer
@@ -4351,7 +4351,7 @@ id: https://w3id.org/aio/RepresentationLearning
 name: Representation Learning
 def: "Methods that allow a system to discover the representations required for feature detection or classification from raw data." [https://en.wikipedia.org/wiki/Feature_learning] {type="owl:Axiom"}
 synonym: "Feature Learning" EXACT []
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/RescalingLayer
@@ -4381,7 +4381,7 @@ synonym: "Deep Residual Network" EXACT []
 synonym: "DRN" EXACT []
 synonym: "ResNet" EXACT []
 synonym: "ResNN" EXACT []
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/ResizingLayer
@@ -4395,7 +4395,7 @@ name: Restricted Boltzmann Machine
 def: "A restricted Boltzmann machine (RBM) is a generative stochastic artificial neural network that can learn a probability distribution over its set of inputs." [https://en.wikipedia.org/wiki/Restricted_Boltzmann_machine] {type="owl:Axiom"}
 comment: Backfed Input, Probabilistic Hidden
 synonym: "RBM" EXACT []
-is_a: https://w3id.org/aio/BM
+is_a: https://w3id.org/aio/BoltzmannMachineNetwork ! Boltzmann Machine Network
 
 [Term]
 id: https://w3id.org/aio/Retrieval-AugmentedLLM
@@ -4404,7 +4404,7 @@ def: "A retrieval-augmented LLM combines a pre-trained language model with a ret
 synonym: "knowledge grounding" RELATED []
 synonym: "open-book question answering" RELATED []
 synonym: "Retrieval-Augmented LLM" EXACT []
-is_a: https://w3id.org/aio/LLMApplicationFocus
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/RidgeRegression
@@ -4441,7 +4441,7 @@ name: Self-Supervised LLM
 def: "A self-supervised LLM learns rich representations by solving pretext tasks that involve predicting parts of the input from other observed parts of the data, without relying on human-annotated labels." []
 synonym: "Pretext tasks" RELATED []
 synonym: "Self-Supervised LLM" EXACT []
-is_a: https://w3id.org/aio/LLMTrainingParadigm
+is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
 
 [Term]
 id: https://w3id.org/aio/Self-supervisedLearning
@@ -4455,7 +4455,7 @@ name: Semi-Supervised LLM
 def: "A semi-supervised LLM combines self-supervised pretraining on unlabeled data with supervised fine-tuning on labeled task data." []
 synonym: "self-training" RELATED []
 synonym: "Semi-Supervised LLM" EXACT []
-is_a: https://w3id.org/aio/LLMTrainingParadigm
+is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
 
 [Term]
 id: https://w3id.org/aio/SeparableConvolution1DLayer
@@ -4533,7 +4533,7 @@ name: Sparse AE
 def: "Sparse autoencoders may include more (rather than fewer) hidden units than inputs, but only a small number of the hidden units are allowed to be active at the same time (thus, sparse). This constraint forces the model to respond to the unique statistical features of the training data. (https://en.wikipedia.org/wiki/Autoencoder)" []
 comment: Input, Hidden, Matched Output-Input
 synonym: "SAE" EXACT []
-is_a: https://w3id.org/aio/AE
+is_a: https://w3id.org/aio/AutoEncoderNetwork ! Auto Encoder Network
 
 [Term]
 id: https://w3id.org/aio/SparseLLM
@@ -4542,7 +4542,7 @@ def: "A sparse LLM uses techniques like pruning or quantization to reduce the nu
 synonym: "model compression" RELATED []
 synonym: "parameter efficiency" RELATED []
 synonym: "Sparse LLM" EXACT []
-is_a: https://w3id.org/aio/LLMTrainingParadigm
+is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
 
 [Term]
 id: https://w3id.org/aio/SparseLearning
@@ -4755,7 +4755,7 @@ is_a: https://w3id.org/aio/DataPreparation ! Data Preparation
 id: https://w3id.org/aio/TrainingParadigm
 name: Training Paradigm
 def: "An abstract parent class grouping LLMs based on training paradigm." []
-is_a: https://w3id.org/aio/LLM
+is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/TrainingStrategies
@@ -4782,13 +4782,13 @@ name: Transfer Learning LLM
 def: "A transfer learning LLM leverages knowledge acquired during training on one task to improve performance on different but related tasks, facilitating more efficient learning and adaptation." []
 synonym: "transfer learning" RELATED []
 synonym: "Transfer LLM" EXACT []
-is_a: https://w3id.org/aio/LLMEnhancementStrategies
+is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
 
 [Term]
 id: https://w3id.org/aio/TransformerNetwork
 name: Transformer Network
 def: "A transformer is a deep Learning model that adopts the mechanism of attention, differentially weighing the significance of each part of the input data. It is used primarily in the field of natural language processing (NLP) and in computer vision (CV). (https://en.wikipedia.org/wiki/Transformer_(machine_Learning_model))" [https://en.wikipedia.org/wiki/Transformer_(machine_Learning_model)] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/UncertaintyBias
@@ -4826,7 +4826,7 @@ name: Unsupervised LLM
 def: "An unsupervised LLM is trained solely on unlabeled data using self-supervised objectives like masked language modeling, without any supervised fine-tuning." []
 synonym: "self-supervised" RELATED []
 synonym: "Unsupervised LLM" EXACT []
-is_a: https://w3id.org/aio/LLMTrainingParadigm
+is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
 
 [Term]
 id: https://w3id.org/aio/UnsupervisedLearning
@@ -4878,7 +4878,7 @@ name: Variational Auto Encoder
 def: "Variational autoencoders are meant to compress the input information into a constrained multivariate latent distribution (encoding) to reconstruct it as accurately as possible (decoding). (https://en.wikipedia.org/wiki/Variational_autoencoder)" []
 comment: Input, Probabilistic Hidden, Matched Output-Input
 synonym: "VAE" EXACT []
-is_a: https://w3id.org/aio/AE
+is_a: https://w3id.org/aio/AutoEncoderNetwork ! Auto Encoder Network
 
 [Term]
 id: https://w3id.org/aio/WrapperLayer
@@ -4892,14 +4892,14 @@ name: Zero-Shot Learning LLM
 def: "A zero-shot learning LLM is able to perform tasks or understand concepts it has not explicitly been trained on, demonstrating a high degree of generalization and understanding." []
 synonym: "zero-shot learning" RELATED []
 synonym: "Zero-Shot LLM" EXACT []
-is_a: https://w3id.org/aio/LLMEnhancementStrategies
+is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
 
 [Term]
 id: https://w3id.org/aio/Zero-shotLearning
 name: Zero-shot Learning
 def: "Methods where at test time, a learner observes samples from classes, which were not observed during training, and needs to predict the class that they belong to." [https://en.wikipedia.org/wiki/Zero-shot_learning] {type="owl:Axiom"}
 synonym: "ZSL" EXACT []
-is_a: https://w3id.org/aio/DNN
+is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
 id: https://w3id.org/aio/ZeroPadding1DLayer
@@ -4926,7 +4926,7 @@ def: "In the continuous bag-of-words architecture, the model predicts the curren
 comment: Input, Hidden, Output
 synonym: "CBOW" RELATED []
 synonym: "N2V-CBOW" EXACT []
-is_a: https://w3id.org/aio/W2VCBOW
+is_a: https://w3id.org/aio/word2vec-CBOW ! word2vec-CBOW
 
 [Term]
 id: https://w3id.org/aio/node2vec-SkipGram
@@ -4935,7 +4935,7 @@ def: "In the continuous skip-gram architecture, the model uses the current node 
 comment: Input, Hidden, Output
 synonym: "N2V-SkipGram" EXACT []
 synonym: "SkipGram" RELATED []
-is_a: https://w3id.org/aio/W2VSkipGram
+is_a: https://w3id.org/aio/word2vec-SkipGram ! word2vec-SkipGram
 
 [Term]
 id: https://w3id.org/aio/t-DistributedStochasticNeighborembedding
@@ -4952,7 +4952,7 @@ def: "In the continuous bag-of-words architecture, the model predicts the curren
 comment: Input, Hidden, Output
 synonym: "CBOW" RELATED []
 synonym: "W2V-CBOW" EXACT []
-is_a: https://w3id.org/aio/ANN
+is_a: https://w3id.org/aio/ArtificialNeuralNetwork ! Artificial Neural Network
 
 [Term]
 id: https://w3id.org/aio/word2vec-SkipGram
@@ -4961,7 +4961,7 @@ def: "In the continuous skip-gram architecture, the model uses the current word 
 comment: Input, Hidden, Output
 synonym: "SkipGram" RELATED []
 synonym: "W2V-SkipGram" EXACT []
-is_a: https://w3id.org/aio/ANN
+is_a: https://w3id.org/aio/ArtificialNeuralNetwork ! Artificial Neural Network
 
 [Typedef]
 id: BFO:0000050
@@ -5296,7 +5296,7 @@ property_value: IAO:0000116 "A role inheres in its bearer at all times for which
 property_value: IAO:0000118 "is role of" xsd:string
 property_value: IAO:0000118 "role_of" xsd:string
 is_a: RO:0000052 ! inheres in
-inverse_of: RO:0000087 ! has_role
+inverse_of: RO:0000087 ! has role
 
 [Typedef]
 id: RO:0000085
