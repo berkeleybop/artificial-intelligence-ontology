@@ -15787,8 +15787,8 @@
         } ]
       }
     }, {
-      "id" : "https://w3id.org/aio/DeepFeedFoward",
-      "lbl" : "Deep FeedFoward",
+      "id" : "https://w3id.org/aio/DeepFeedForward",
+      "lbl" : "Deep FeedForward",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -21286,7 +21286,7 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {
-      "sub" : "https://w3id.org/aio/DeepFeedFoward",
+      "sub" : "https://w3id.org/aio/DeepFeedForward",
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/DeepNeuralNetwork"
     }, {

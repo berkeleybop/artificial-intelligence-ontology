@@ -7916,13 +7916,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
     <!-- https://w3id.org/aio/DeepFeedForward -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/DeepFeedForward"/>
-    
-
-
-    <!-- https://w3id.org/aio/DeepFeedFoward -->
-
-    <owl:Class rdf:about="https://w3id.org/aio/DeepFeedFoward">
+    <owl:Class rdf:about="https://w3id.org/aio/DeepFeedForward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>The feedforward neural network was the first and simplest type of artificial neural network devised. In this network, the information moves in only one direction—forward—from the input nodes, through the hidden nodes (if any) and to the output nodes. There are no cycles or loops in the network.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>DFF</oboInOwl:hasExactSynonym>
@@ -7931,14 +7925,20 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasExactSynonym>MLP</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Multilayer Perceptoron</oboInOwl:hasExactSynonym>
         <rdfs:comment>Input, Hidden, Output</rdfs:comment>
-        <rdfs:label>Deep FeedFoward</rdfs:label>
+        <rdfs:label>Deep FeedForward</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/DeepFeedFoward"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/DeepFeedForward"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The feedforward neural network was the first and simplest type of artificial neural network devised. In this network, the information moves in only one direction—forward—from the input nodes, through the hidden nodes (if any) and to the output nodes. There are no cycles or loops in the network.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Feedforward_neural_network</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/DeepFeedFoward -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/DeepFeedFoward"/>
     
 
 

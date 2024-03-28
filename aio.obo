@@ -2669,8 +2669,8 @@ synonym: "DCN" EXACT []
 is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
-id: https://w3id.org/aio/DeepFeedFoward
-name: Deep FeedFoward
+id: https://w3id.org/aio/DeepFeedForward
+name: Deep FeedForward
 def: "The feedforward neural network was the first and simplest type of artificial neural network devised. In this network, the information moves in only one direction—forward—from the input nodes, through the hidden nodes (if any) and to the output nodes. There are no cycles or loops in the network." [https://en.wikipedia.org/wiki/Feedforward_neural_network] {type="owl:Axiom"}
 comment: Input, Hidden, Output
 synonym: "DFF" EXACT []
@@ -3990,7 +3990,7 @@ name: Neural Turing Machine Network
 def: "A Neural Turing machine (NTMs) is a recurrent neural network model. The approach was published by Alex Graves et al. in 2014. NTMs combine the fuzzy pattern matching capabilities of neural networks with the algorithmic power of programmable computers. An NTM has a neural network controller coupled to external memory resources, which it interacts with through attentional mechanisms. The memory interactions are differentiable end-to-end, making it possible to optimize them using gradient descent. An NTM with a long short-term memory (LSTM) network controller can infer simple algorithms such as copying, sorting, and associative recall from examples alone." [https://en.wikipedia.org/wiki/Neural_Turing_machine] {type="owl:Axiom"}
 comment: Input, Hidden, Spiking Hidden, Output
 synonym: "NTM" EXACT []
-is_a: https://w3id.org/aio/DeepFeedForward
+is_a: https://w3id.org/aio/DeepFeedForward ! Deep FeedForward
 is_a: https://w3id.org/aio/LongShortTermMemory ! Long Short Term Memory
 
 [Term]
@@ -4161,7 +4161,7 @@ comment: Input, Hidden, Output
 synonym: "Radial Basis Function Network" EXACT []
 synonym: "RBFN" EXACT []
 synonym: "RBN" EXACT []
-is_a: https://w3id.org/aio/DeepFeedFoward ! Deep FeedFoward
+is_a: https://w3id.org/aio/DeepFeedFoward
 
 [Term]
 id: https://w3id.org/aio/RandomBrightnessLayer
