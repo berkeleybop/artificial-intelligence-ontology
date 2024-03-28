@@ -2577,7 +2577,7 @@ synonym: "Data Enrichment" EXACT []
 synonym: "Data Expansion" EXACT []
 synonym: "Paraphrasing" RELATED []
 synonym: "Synonym replacement" RELATED []
-is_a: https://w3id.org/aio/DataEnhancement
+is_a: https://w3id.org/aio/DataEnhancement ! DataEnhancement
 
 [Term]
 id: https://w3id.org/aio/DataDredgingBias
@@ -2585,6 +2585,12 @@ name: Data Dredging Bias
 def: "A statistical bias in which testing huge numbers of hypotheses of a dataset may appear to yield statistical significance even when the results are statistically nonsignificant." [https://doi.org/10.6028/NIST.SP.1270] {type="owl:Axiom"}
 synonym: "Data Dredging" EXACT []
 is_a: https://w3id.org/aio/UseAndInterpretationBias ! Use And Interpretation Bias
+
+[Term]
+id: https://w3id.org/aio/DataEnhancement
+name: DataEnhancement
+def: "The processes and techniques used to improve data quality and value for better decision-making, analysis, and AI model training." [TBD] {type="owl:Axiom"}
+is_a: https://w3id.org/aio/Preprocessing ! Preprocessing
 
 [Term]
 id: https://w3id.org/aio/DataGenerationBias
@@ -2605,6 +2611,7 @@ def: "Techniques focused on preparing raw data for training, including cleaning,
 synonym: "Data Assembly" EXACT []
 synonym: "Data Curation" EXACT []
 synonym: "Data Processing" EXACT []
+is_a: https://w3id.org/aio/Preprocessing ! Preprocessing
 
 [Term]
 id: https://w3id.org/aio/DecisionTree
@@ -2961,7 +2968,7 @@ synonym: "Attribute Extraction" EXACT []
 synonym: "Feature Isolation" EXACT []
 synonym: "Semantic embeddings" RELATED []
 synonym: "Syntactic information" RELATED []
-is_a: https://w3id.org/aio/DataEnhancement
+is_a: https://w3id.org/aio/DataEnhancement ! DataEnhancement
 
 [Term]
 id: https://w3id.org/aio/FederatedLLM
@@ -3878,6 +3885,7 @@ name: Model Efficiency
 def: "Techniques aimed at making models more efficient, such as knowledge distillation." [TBD] {type="owl:Axiom"}
 synonym: "Computational Efficiency" EXACT []
 synonym: "Model Optimization" EXACT []
+is_a: https://w3id.org/aio/Preprocessing ! Preprocessing
 
 [Term]
 id: https://w3id.org/aio/ModelSelectionBias
@@ -4081,6 +4089,11 @@ id: https://w3id.org/aio/PopulationBias
 name: Population Bias
 def: "A form of selection bias that occurs when items that are more popular are more exposed and less popular items are under-represented.aSystematic distortions in demographics or other user characteristics between a population of users represented in a dataset or on a platform and some target population." [https://doi.org/10.6028/NIST.SP.1270] {type="owl:Axiom"}
 is_a: https://w3id.org/aio/SelectionAndSamplingBias ! Selection And Sampling Bias
+
+[Term]
+id: https://w3id.org/aio/Preprocessing
+name: Preprocessing
+def: "A range of techniques and processes applied to data before it is used in machine learning models or AI algorithms" [TBD] {type="owl:Axiom"}
 
 [Term]
 id: https://w3id.org/aio/PreprocessingLayer
@@ -4761,6 +4774,7 @@ name: Training Strategies
 def: "Specific strategies or methodologies employed during model training." [TBD] {type="owl:Axiom"}
 synonym: "Instructional Methods" EXACT []
 synonym: "Learning Techniques" EXACT []
+is_a: https://w3id.org/aio/Preprocessing ! Preprocessing
 
 [Term]
 id: https://w3id.org/aio/TransferLearning

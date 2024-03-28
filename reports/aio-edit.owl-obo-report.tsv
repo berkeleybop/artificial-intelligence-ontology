@@ -100,11 +100,9 @@ INFO	lowercase_definition	https://w3id.org/aio/SoftsignFunction	IAO:0000115	soft
 INFO	lowercase_definition	https://w3id.org/aio/SwishFunction	IAO:0000115	x*sigmoid(x). It is a smooth, non-monotonic function that consistently matches or outperforms ReLU on deep networks, it is unbounded above and bounded below.
 INFO	missing_superclass	obo:ARTIFICIAL-INTELLIGENCE-ONTOLOGY_0000000	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/Bias	rdfs:subClassOf	
-INFO	missing_superclass	https://w3id.org/aio/DataPreparation	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/Function	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/LargeLanguageModel	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/Layer	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/Method	rdfs:subClassOf	
-INFO	missing_superclass	https://w3id.org/aio/ModelEfficiency	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/Network	rdfs:subClassOf	
-INFO	missing_superclass	https://w3id.org/aio/TrainingStrategies	rdfs:subClassOf	
+INFO	missing_superclass	https://w3id.org/aio/Preprocessing	rdfs:subClassOf	

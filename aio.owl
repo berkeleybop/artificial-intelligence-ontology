@@ -7832,7 +7832,17 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
     <!-- https://w3id.org/aio/DataEnhancement -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/DataEnhancement"/>
+    <owl:Class rdf:about="https://w3id.org/aio/DataEnhancement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
+        <obo:IAO_0000115>The processes and techniques used to improve data quality and value for better decision-making, analysis, and AI model training.</obo:IAO_0000115>
+        <rdfs:label>DataEnhancement</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/DataEnhancement"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The processes and techniques used to improve data quality and value for better decision-making, analysis, and AI model training.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -7871,6 +7881,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- https://w3id.org/aio/DataPreparation -->
 
     <owl:Class rdf:about="https://w3id.org/aio/DataPreparation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
         <obo:IAO_0000115>Techniques focused on preparing raw data for training, including cleaning, normalization, and tokenization.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Data Assembly</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Data Curation</oboInOwl:hasExactSynonym>
@@ -10885,6 +10896,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- https://w3id.org/aio/ModelEfficiency -->
 
     <owl:Class rdf:about="https://w3id.org/aio/ModelEfficiency">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
         <obo:IAO_0000115>Techniques aimed at making models more efficient, such as knowledge distillation.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Computational Efficiency</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Model Optimization</oboInOwl:hasExactSynonym>
@@ -11388,6 +11400,21 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A form of selection bias that occurs when items that are more popular are more exposed and less popular items are under-represented.aSystematic distortions in demographics or other user characteristics between a population of users represented in a dataset or on a platform and some target population.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.6028/NIST.SP.1270</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Preprocessing -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/Preprocessing">
+        <obo:IAO_0000115>A range of techniques and processes applied to data before it is used in machine learning models or AI algorithms</obo:IAO_0000115>
+        <rdfs:label>Preprocessing</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Preprocessing"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A range of techniques and processes applied to data before it is used in machine learning models or AI algorithms</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -13011,6 +13038,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- https://w3id.org/aio/TrainingStrategies -->
 
     <owl:Class rdf:about="https://w3id.org/aio/TrainingStrategies">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
         <obo:IAO_0000115>Specific strategies or methodologies employed during model training.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Instructional Methods</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Learning Techniques</oboInOwl:hasExactSynonym>

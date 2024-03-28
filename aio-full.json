@@ -15641,6 +15641,16 @@
         } ]
       }
     }, {
+      "id" : "https://w3id.org/aio/DataEnhancement",
+      "lbl" : "DataEnhancement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The processes and techniques used to improve data quality and value for better decision-making, analysis, and AI model training.",
+          "xrefs" : [ "TBD" ]
+        }
+      }
+    }, {
       "id" : "https://w3id.org/aio/DataGenerationBias",
       "lbl" : "Data Generation Bias",
       "type" : "CLASS",
@@ -18571,6 +18581,16 @@
         }
       }
     }, {
+      "id" : "https://w3id.org/aio/Preprocessing",
+      "lbl" : "Preprocessing",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A range of techniques and processes applied to data before it is used in machine learning models or AI algorithms",
+          "xrefs" : [ "TBD" ]
+        }
+      }
+    }, {
       "id" : "https://w3id.org/aio/PreprocessingLayer",
       "lbl" : "Preprocessing Layer",
       "type" : "CLASS",
@@ -21319,6 +21339,10 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/UseAndInterpretationBias"
     }, {
+      "sub" : "https://w3id.org/aio/DataEnhancement",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/aio/Preprocessing"
+    }, {
       "sub" : "https://w3id.org/aio/DataGenerationBias",
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/SelectionAndSamplingBias"
@@ -21326,6 +21350,10 @@
       "sub" : "https://w3id.org/aio/DataImputation",
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/MachineLearning"
+    }, {
+      "sub" : "https://w3id.org/aio/DataPreparation",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/aio/Preprocessing"
     }, {
       "sub" : "https://w3id.org/aio/DecisionTree",
       "pred" : "is_a",
@@ -22007,6 +22035,10 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/LargeLanguageModel"
     }, {
+      "sub" : "https://w3id.org/aio/ModelEfficiency",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/aio/Preprocessing"
+    }, {
       "sub" : "https://w3id.org/aio/ModelSelectionBias",
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/ProcessingBias"
@@ -22506,6 +22538,10 @@
       "sub" : "https://w3id.org/aio/TrainingParadigm",
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/LargeLanguageModel"
+    }, {
+      "sub" : "https://w3id.org/aio/TrainingStrategies",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/aio/Preprocessing"
     }, {
       "sub" : "https://w3id.org/aio/TransferLearning",
       "pred" : "is_a",
