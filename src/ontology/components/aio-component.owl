@@ -82,18 +82,6 @@
     
 
 
-    <!-- https://w3id.org/aio/AE -->
-
-    <Class rdf:about="https://w3id.org/aio/AE"/>
-    
-
-
-    <!-- https://w3id.org/aio/ANN -->
-
-    <Class rdf:about="https://w3id.org/aio/ANN"/>
-    
-
-
     <!-- https://w3id.org/aio/AbstractRNNCell -->
 
     <Class rdf:about="https://w3id.org/aio/AbstractRNNCell">
@@ -318,7 +306,7 @@
     <!-- https://w3id.org/aio/AdvancedTechniques -->
 
     <Class rdf:about="https://w3id.org/aio/AdvancedTechniques">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLM"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
         <obo:IAO_0000115>An abstract parent class grouping LLMs based on advanced techniques.</obo:IAO_0000115>
         <rdfs:label>Advanced Techniques</rdfs:label>
     </Class>
@@ -328,7 +316,7 @@
     <!-- https://w3id.org/aio/Adversarial-ResistantLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Adversarial-ResistantLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMEnhancementStrategies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
         <obo:IAO_0000115>An adversarial-resistant LLM is engineered to withstand or mitigate the effects of adversarial attacks, ensuring reliable performance even in the presence of deliberately misleading input designed to confuse the model.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Robust LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>adversarial attacks</oboInOwl:hasRelatedSynonym>
@@ -405,7 +393,7 @@
     <!-- https://w3id.org/aio/ApplicationFocus -->
 
     <Class rdf:about="https://w3id.org/aio/ApplicationFocus">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLM"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
         <obo:IAO_0000115>An abstract parent class grouping LLMs based on application focus.</obo:IAO_0000115>
         <rdfs:label>Application Focus</rdfs:label>
     </Class>
@@ -465,7 +453,7 @@
     <!-- https://w3id.org/aio/AutoEncoderNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/AutoEncoderNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/UPN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/UnsupervisedPretrainedNetwork"/>
         <obo:IAO_0000115>An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised Learning). The encoding is validated and refined by attempting to regenerate the input from the encoding. The autoencoder learns a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore insignificant data (“noise”). (https://en.wikipedia.org/wiki/Autoencoder)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>AE</oboInOwl:hasExactSynonym>
         <rdfs:comment>Input, Hidden, Matched Output-Input</rdfs:comment>
@@ -500,7 +488,7 @@
     <!-- https://w3id.org/aio/AutoregressiveLanguageModel -->
 
     <Class rdf:about="https://w3id.org/aio/AutoregressiveLanguageModel">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLM"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
         <obo:IAO_0000115>An autoregressive language model is a type of language model that generates text sequentially, predicting one token at a time based on the previously generated tokens. It excels at natural language generation tasks by modeling the probability distribution over sequences of tokens.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Autoregressive Language Model</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>generative language model</oboInOwl:hasRelatedSynonym>
@@ -649,12 +637,6 @@
         <annotatedTarget>Applies a 3D average pooling over an input signal composed of several input planes.</annotatedTarget>
         <oboInOwl:hasDbXref>https://pytorch.org/docs/stable/nn.html#pooling-layers</oboInOwl:hasDbXref>
     </Axiom>
-    
-
-
-    <!-- https://w3id.org/aio/BM -->
-
-    <Class rdf:about="https://w3id.org/aio/BM"/>
     
 
 
@@ -831,7 +813,7 @@
     <!-- https://w3id.org/aio/BoltzmannMachineNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/BoltzmannMachineNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/SCN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/SymmetricallyConnectedNetwork"/>
         <obo:IAO_0000115>A Boltzmann machine is a type of stochastic recurrent neural network. It is a Markov random field. It was translated from statistical physics for use in cognitive science. The Boltzmann machine is based on a stochastic spin-glass model with an external field, i.e., a Sherrington–Kirkpatrick model that is a stochastic Ising Model[2] and applied to machine Learning.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>BM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Sherrington–Kirkpatrick model with external field</oboInOwl:hasExactSynonym>
@@ -905,7 +887,7 @@
     <!-- https://w3id.org/aio/CausalLLM -->
 
     <Class rdf:about="https://w3id.org/aio/CausalLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMAdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
         <obo:IAO_0000115>A causal LLM only attends to previous tokens in the sequence when generating text, modeling the probability distribution autoregressively from left-to-right or causally.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Causal LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>autoregressive</oboInOwl:hasRelatedSynonym>
@@ -997,7 +979,7 @@
     <!-- https://w3id.org/aio/CompositionalGeneralizationLLM -->
 
     <Class rdf:about="https://w3id.org/aio/CompositionalGeneralizationLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLM"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
         <obo:IAO_0000115>A compositional generalization LLM is trained to understand and recombine the underlying compositional structures in language, enabling better generalization to novel combinations and out-of-distribution examples.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Compositional Generalization LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>out-of-distribution generalization</oboInOwl:hasRelatedSynonym>
@@ -1108,7 +1090,7 @@
     <!-- https://w3id.org/aio/ContinualLearning -->
 
     <Class rdf:about="https://w3id.org/aio/ContinualLearning">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>A concept to learn a model for a large number of tasks sequentially without forgetting knowledge obtained from the preceding tasks, where the data in the old tasks are not available any more during training new ones.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Incremental Learning</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Life-Long Learning</oboInOwl:hasExactSynonym>
@@ -1126,7 +1108,7 @@
     <!-- https://w3id.org/aio/ContinualLearningLLM -->
 
     <Class rdf:about="https://w3id.org/aio/ContinualLearningLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMTrainingParadigm"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
         <obo:IAO_0000115>A continual learning LLM is designed to continually acquire new knowledge and skills over time, without forgetting previously learned information. This allows the model to adapt and expand its capabilities as new data becomes available.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>CL-LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Continual Learning LLM</oboInOwl:hasExactSynonym>
@@ -1140,7 +1122,7 @@
     <!-- https://w3id.org/aio/ContrastiveLearning -->
 
     <Class rdf:about="https://w3id.org/aio/ContrastiveLearning">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>Learning that encourages augmentations (views) of the same input to have more similar representations compared to augmentations of different inputs.</obo:IAO_0000115>
         <rdfs:label>Contrastive Learning</rdfs:label>
     </Class>
@@ -1156,7 +1138,7 @@
     <!-- https://w3id.org/aio/ContrastiveLearningLLM -->
 
     <Class rdf:about="https://w3id.org/aio/ContrastiveLearningLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMAdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
         <obo:IAO_0000115>A contrastive learning LLM is trained to pull semantically similar samples closer together and push dissimilar samples apart in the representation space, learning high-quality features useful for downstream tasks.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Contrastive Learning LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Representation learning</oboInOwl:hasRelatedSynonym>
@@ -1168,7 +1150,7 @@
     <!-- https://w3id.org/aio/ControllableLLM -->
 
     <Class rdf:about="https://w3id.org/aio/ControllableLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMEnhancementStrategies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
         <obo:IAO_0000115>A controllable LLM allows for explicit control over certain attributes of the generated text, such as style, tone, topic, or other desired characteristics, through conditioning or specialized training objectives.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Controllable LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>conditional generation</oboInOwl:hasRelatedSynonym>
@@ -1419,7 +1401,7 @@
     <!-- https://w3id.org/aio/Cross-DomainLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Cross-DomainLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMEnhancementStrategies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
         <obo:IAO_0000115>A cross-domain LLM is capable of performing well across a wide range of domains without significant loss in performance, facilitated by advanced domain adaptation techniques.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Domain-General LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>cross-domain transfer</oboInOwl:hasRelatedSynonym>
@@ -1446,7 +1428,7 @@
     <!-- https://w3id.org/aio/CurriculumLearningLLM -->
 
     <Class rdf:about="https://w3id.org/aio/CurriculumLearningLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMAdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
         <obo:IAO_0000115>A curriculum learning LLM is trained by presenting learning examples in a meaningful order from simple to complex, mimicking the learning trajectory followed by humans.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Curriculum Learning LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Learning progression</oboInOwl:hasRelatedSynonym>
@@ -1455,22 +1437,10 @@
     
 
 
-    <!-- https://w3id.org/aio/DFF -->
-
-    <Class rdf:about="https://w3id.org/aio/DFF"/>
-    
-
-
-    <!-- https://w3id.org/aio/DNN -->
-
-    <Class rdf:about="https://w3id.org/aio/DNN"/>
-    
-
-
     <!-- https://w3id.org/aio/Data-to-TextLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Data-to-TextLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMAdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
         <oboInOwl:hasExactSynonym>Data-to-Text LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Meaning representation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>A data-to-text LLM generates natural language descriptions from structured data sources like tables, graphs, knowledge bases, etc. Requiring grounding meaning representations.</oboInOwl:hasRelatedSynonym>
@@ -1584,7 +1554,7 @@
     <!-- https://w3id.org/aio/DecoderLLM -->
 
     <Class rdf:about="https://w3id.org/aio/DecoderLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMModelArchitecture"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>In the decoder-only architecture, the model consists of only a decoder, which is trained to predict the next token in a sequence given the previous tokens. The critical difference between the Decoder-only architecture and the Encoder-Decoder architecture is that the Decoder-only architecture does not have an explicit encoder to summarize the input information. Instead, the information is encoded implicitly in the hidden state of the decoder, which is updated at each step of the generation process.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>LLM</oboInOwl:hasExactSynonym>
         <rdfs:label>Decoder LLM</rdfs:label>
@@ -1601,7 +1571,7 @@
     <!-- https://w3id.org/aio/DeconvolutionalNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/DeconvolutionalNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>Deconvolutional Networks, a framework that permits the unsupervised construction of hierarchical image representations. These representations can be used for both low-level tasks such as denoising, as well as providing features for object recognition. Each level of the hierarchy groups information from the level beneath to form more complex features that exist over a larger scale in the image. (https://ieeexplore.ieee.org/document/5539957)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>DN</oboInOwl:hasExactSynonym>
         <rdfs:comment>Input, Kernel, Convolutional/Pool, Output</rdfs:comment>
@@ -1619,7 +1589,7 @@
     <!-- https://w3id.org/aio/DeepActiveLearning -->
 
     <Class rdf:about="https://w3id.org/aio/DeepActiveLearning">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>The combination of deep learning and active learning, where active learning attempts to maximize a model’s performance gain while annotating the fewest samples possible.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>DeepAL</oboInOwl:hasExactSynonym>
         <rdfs:label>Deep Active Learning</rdfs:label>
@@ -1636,7 +1606,7 @@
     <!-- https://w3id.org/aio/DeepBeliefNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/DeepBeliefNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/UPN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/UnsupervisedPretrainedNetwork"/>
         <obo:IAO_0000115>In machine Learning, a deep belief network (DBN) is a generative graphical model, or alternatively a class of deep neural network, composed of multiple layers of latent variables (&quot;hidden units&quot;), with connections between the layers but not between units within each layer. When trained on a set of examples without supervision, a DBN can learn to probabilistically reconstruct its inputs. The layers then act as feature detectors. After this Learning step, a DBN can be further trained with supervision to perform classification. DBNs can be viewed as a composition of simple, unsupervised networks such as restricted Boltzmann machines (RBMs) or autoencoders, where each sub-network&apos;s hidden layer serves as the visible layer for the next. An RBM is an undirected, generative energy-based model with a &quot;visible&quot; input layer and a hidden layer and connections between but not within layers. This composition leads to a fast, layer-by-layer unsupervised training procedure, where contrastive divergence is applied to each sub-network in turn, starting from the &quot;lowest&quot; pair of layers (the lowest visible layer is a training set). The observation that DBNs can be trained greedily, one layer at a time, led to one of the first effective deep Learning algorithms. (https://en.wikipedia.org/wiki/Deep_belief_network)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>DBN</oboInOwl:hasExactSynonym>
         <rdfs:comment>Backfed Input, Probabilistic Hidden, Hidden, Matched Output-Input</rdfs:comment>
@@ -1654,7 +1624,7 @@
     <!-- https://w3id.org/aio/DeepConvolutionalInverseGraphicsNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/DeepConvolutionalInverseGraphicsNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AE"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AutoEncoderNetwork"/>
         <obo:IAO_0000115>A Deep Convolution Inverse Graphics Network (DC-IGN) is a model that learns an interpretable representation of images. This representation is disentangled with respect to transformations such as out-of-plane rotations and lighting variations. The DC-IGN model is composed of multiple layers of convolution and de-convolution operators and is trained using the Stochastic Gradient Variational Bayes (SGVB) algorithm. (https://arxiv.org/abs/1503.03167)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>DCIGN</oboInOwl:hasExactSynonym>
         <rdfs:comment>Input, Kernel, Convolutional/Pool, Probabilistic Hidden, Convolutional/Pool, Kernel, Output</rdfs:comment>
@@ -1666,7 +1636,7 @@
     <!-- https://w3id.org/aio/DeepConvolutionalNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/DeepConvolutionalNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>A convolutional neural network (CNN, or ConvNet) is a class of artificial neural network, most commonly applied to analyze visual imagery. They are also known as shift invariant or space invariant artificial neural networks (SIANN), based on the shared-weight architecture of the convolution kernels or filters that slide along input features and provide translation equivariant responses known as feature maps. CNNs are regularized versions of multilayer perceptrons. (https://en.wikipedia.org/wiki/Convolutional_neural_network)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>CNN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ConvNet</oboInOwl:hasExactSynonym>
@@ -1684,10 +1654,16 @@
     
 
 
+    <!-- https://w3id.org/aio/DeepFeedForward -->
+
+    <Class rdf:about="https://w3id.org/aio/DeepFeedForward"/>
+    
+
+
     <!-- https://w3id.org/aio/DeepFeedFoward -->
 
     <Class rdf:about="https://w3id.org/aio/DeepFeedFoward">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>The feedforward neural network was the first and simplest type of artificial neural network devised. In this network, the information moves in only one direction—forward—from the input nodes, through the hidden nodes (if any) and to the output nodes. There are no cycles or loops in the network.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>DFF</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>FFN</oboInOwl:hasExactSynonym>
@@ -1709,7 +1685,7 @@
     <!-- https://w3id.org/aio/DeepNeuralNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/DeepNeuralNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ANN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ArtificialNeuralNetwork"/>
         <obo:IAO_0000115>A deep neural network (DNN) is an artificial neural network (ANN) with multiple layers between the input and output layers.[13][2] There are different types of neural networks but they always consist of the same components: neurons, synapses, weights, biases, and functions. (https://en.wikipedia.org/wiki/Deep_Learning#:~:text=A%20deep%20neural%20network%20(DNN,weights%2C%20biases%2C%20and%20functions.)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>DNN</oboInOwl:hasExactSynonym>
         <rdfs:label>Deep Neural Network</rdfs:label>
@@ -1720,7 +1696,7 @@
     <!-- https://w3id.org/aio/DeepTransferLearning -->
 
     <Class rdf:about="https://w3id.org/aio/DeepTransferLearning">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>Deep transfer learning methods relax the hypothesis that the training data must be independent and identically distributed (i.i.d.) with the test data, which motivates us to use transfer learning to solve the problem of insufficient training data.</obo:IAO_0000115>
         <rdfs:label>Deep Transfer Learning</rdfs:label>
     </Class>
@@ -1736,7 +1712,7 @@
     <!-- https://w3id.org/aio/DenoisingAutoEncoder -->
 
     <Class rdf:about="https://w3id.org/aio/DenoisingAutoEncoder">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AE"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AutoEncoderNetwork"/>
         <obo:IAO_0000115>Denoising Auto Encoders (DAEs) take a partially corrupted input and are trained to recover the original undistorted input. In practice, the objective of denoising autoencoders is that of cleaning the corrupted input, or denoising. (https://en.wikipedia.org/wiki/Autoencoder)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>DAE</oboInOwl:hasExactSynonym>
         <rdfs:comment>Noisy Input, Hidden, Matched Output-Input</rdfs:comment>
@@ -1844,7 +1820,7 @@
     <!-- https://w3id.org/aio/DialogueLLM -->
 
     <Class rdf:about="https://w3id.org/aio/DialogueLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>A dialogue LLM is optimized for engaging in multi-turn conversations, understanding context and generating relevant, coherent responses continuously over many dialogue turns.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Dialogue LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>conversational AI</oboInOwl:hasRelatedSynonym>
@@ -1917,7 +1893,7 @@
     <!-- https://w3id.org/aio/Domain-AdaptedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Domain-AdaptedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>A domain-adapted LLM is first pre-trained on a broad corpus, then fine-tuned on domain-specific data to specialize its capabilities for particular domains or applications, like scientific literature or code generation.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Domain-Adapted LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>domain robustness</oboInOwl:hasRelatedSynonym>
@@ -2013,7 +1989,7 @@
     <!-- https://w3id.org/aio/EchoStateNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/EchoStateNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/RecNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/RecurrentNeuralNetwork"/>
         <obo:IAO_0000115>The echo state network (ESN) is a type of reservoir computer that uses a recurrent neural network with a sparsely connected hidden layer (with typically 1% connectivity). The connectivity and weights of hidden neurons are fixed and randomly assigned. The weights of output neurons can be learned so that the network can produce or reproduce specific temporal patterns. The main interest of this network is that although its behaviour is non-linear, the only weights that are modified during training are for the synapses that connect the hidden neurons to output neurons. Thus, the error function is quadratic with respect to the parameter vector and can be differentiated easily to a linear system.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>ESN</oboInOwl:hasExactSynonym>
         <rdfs:comment>Input, Recurrent, Output</rdfs:comment>
@@ -2064,7 +2040,7 @@
     <!-- https://w3id.org/aio/EmbodiedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/EmbodiedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>An embodied LLM integrates language with other modalities like vision, audio, robotics to enable grounded language understanding in real-world environments.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Embodied LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>multimodal grounding</oboInOwl:hasRelatedSynonym>
@@ -2092,7 +2068,7 @@
     <!-- https://w3id.org/aio/Encoder-DecoderLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Encoder-DecoderLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMModelArchitecture"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>The Encoder-Decoder architecture was the original transformer architecture introduced in the Attention Is All You Need (https://arxiv.org/abs/1706.03762) paper. The encoder processes the input sequence and generates a hidden representation that summarizes the input information. The decoder uses this hidden representation to generate the desired output sequence. The encoder and decoder are trained end-to-end to maximize the likelihood of the correct output sequence given the input sequence.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>LLM</oboInOwl:hasExactSynonym>
         <rdfs:label>Encoder-Decoder LLM</rdfs:label>
@@ -2109,7 +2085,7 @@
     <!-- https://w3id.org/aio/EncoderLLM -->
 
     <Class rdf:about="https://w3id.org/aio/EncoderLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMModelArchitecture"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>The Encoder-only architecture is used when only encoding the input sequence is required and the decoder is not necessary. The input sequence is encoded into a fixed-length representation and then used as input to a classifier or a regressor to make a prediction. These models have a pre-trained general-purpose encoder but will require fine-tuning of the final classifier or regressor.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>LLM</oboInOwl:hasExactSynonym>
         <rdfs:label>Encoder LLM</rdfs:label>
@@ -2126,7 +2102,7 @@
     <!-- https://w3id.org/aio/Energy-BasedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Energy-BasedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMEnhancementStrategies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
         <obo:IAO_0000115>An energy-based LLM models the explicit probability density over token sequences using an energy function, rather than an autoregressive factorization. This can improve modeling of long-range dependencies and global coherence.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Energy-Based LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>energy scoring</oboInOwl:hasRelatedSynonym>
@@ -2139,7 +2115,7 @@
     <!-- https://w3id.org/aio/EnhancementStrategies -->
 
     <Class rdf:about="https://w3id.org/aio/EnhancementStrategies">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLM"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
         <obo:IAO_0000115>An abstract parent class grouping LLMs based on enhancement strategies.</obo:IAO_0000115>
         <rdfs:label>Enhancement Strategies</rdfs:label>
     </Class>
@@ -2182,7 +2158,7 @@
     <!-- https://w3id.org/aio/EthicalLLM -->
 
     <Class rdf:about="https://w3id.org/aio/EthicalLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>An ethical LLM is trained to uphold certain ethical principles, values or rules in its language generation to increase safety and trustworthiness.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Ethical LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>constituitional AI</oboInOwl:hasRelatedSynonym>
@@ -2211,7 +2187,7 @@
     <!-- https://w3id.org/aio/EvolutionaryLLM -->
 
     <Class rdf:about="https://w3id.org/aio/EvolutionaryLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMEnhancementStrategies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
         <obo:IAO_0000115>An evolutionary LLM applies principles of evolutionary computation to optimize its structure and parameters, evolving over time to improve performance.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Evolutionary Language Model</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>evolutionary algorithms</oboInOwl:hasRelatedSynonym>
@@ -2240,7 +2216,7 @@
     <!-- https://w3id.org/aio/ExplainableLLM -->
 
     <Class rdf:about="https://w3id.org/aio/ExplainableLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMAdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
         <obo:IAO_0000115>An explainable LLM is designed to provide insights into its decision-making process, making it easier for users to understand and trust the model&apos;s outputs. It incorporates mechanisms for interpreting and explaining its predictions in human-understandable terms.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Explainable Language Model</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>XAI LLM</oboInOwl:hasExactSynonym>
@@ -2270,7 +2246,7 @@
     <!-- https://w3id.org/aio/ExtremeLearningMachine -->
 
     <Class rdf:about="https://w3id.org/aio/ExtremeLearningMachine">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/FBN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/FeedbackNetwork"/>
         <obo:IAO_0000115>Extreme Learning machines are feedforward neural networks for classification, regression, clustering, sparse approximation, compression and feature Learning with a single layer or multiple layers of hidden nodes, where the parameters of hidden nodes (not just the weights connecting inputs to hidden nodes) need not be tuned. These hidden nodes can be randomly assigned and never updated (i.e. they are random projection but with nonlinear transforms), or can be inherited from their ancestors without being changed. In most cases, the output weights of hidden nodes are usually learned in a single step, which essentially amounts to Learning a linear model. (https://en.wikipedia.org/wiki/Extreme_Learning_machine)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>ELM</oboInOwl:hasExactSynonym>
         <rdfs:comment>Input, Hidden, Output</rdfs:comment>
@@ -2285,16 +2261,10 @@
     
 
 
-    <!-- https://w3id.org/aio/FBN -->
-
-    <Class rdf:about="https://w3id.org/aio/FBN"/>
-    
-
-
     <!-- https://w3id.org/aio/FactorizedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/FactorizedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLM"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
         <obo:IAO_0000115>A factorized LLM decomposes the full language modeling task into multiple sub-components or experts that each focus on a subset of the information. This enables more efficient scaling.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Factorized LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Conditional masking</oboInOwl:hasRelatedSynonym>
@@ -2321,7 +2291,7 @@
     <!-- https://w3id.org/aio/FederatedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/FederatedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMTrainingParadigm"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
         <obo:IAO_0000115>A federated LLM is trained in a decentralized manner across multiple devices or silos, without directly sharing private data. This enables collaborative training while preserving data privacy and security.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Federated LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>decentralized training</oboInOwl:hasRelatedSynonym>
@@ -2334,7 +2304,7 @@
     <!-- https://w3id.org/aio/FederatedLearning -->
 
     <Class rdf:about="https://w3id.org/aio/FederatedLearning">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>A technique that trains an algorithm across multiple decentralized edge devices or servers holding local data samples, without exchanging them.</obo:IAO_0000115>
         <rdfs:label>Federated Learning</rdfs:label>
     </Class>
@@ -2366,7 +2336,7 @@
     <!-- https://w3id.org/aio/FeedbackNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/FeedbackNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ANN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ArtificialNeuralNetwork"/>
         <obo:IAO_0000115>A feedback based approach in which the representation is formed in an iterative manner based on a feedback received from previous iteration&apos;s output. (https://arxiv.org/abs/1612.09508)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>FBN</oboInOwl:hasExactSynonym>
         <rdfs:comment>Input, Hidden, Output, Hidden</rdfs:comment>
@@ -2466,12 +2436,6 @@
     
 
 
-    <!-- https://w3id.org/aio/GCN -->
-
-    <Class rdf:about="https://w3id.org/aio/GCN"/>
-    
-
-
     <!-- https://w3id.org/aio/GELUFunction -->
 
     <Class rdf:about="https://w3id.org/aio/GELUFunction">
@@ -2525,7 +2489,7 @@
     <!-- https://w3id.org/aio/GatedRecurrentUnit -->
 
     <Class rdf:about="https://w3id.org/aio/GatedRecurrentUnit">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LSTM"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LongShortTermMemory"/>
         <obo:IAO_0000115>Gated recurrent units (GRUs) are a gating mechanism in recurrent neural networks, introduced in 2014 by Kyunghyun Cho et al. The GRU is like a long short-term memory (LSTM) with a forget gate, but has fewer parameters than LSTM, as it lacks an output gate. GRU&apos;s performance on certain tasks of polyphonic music modeling, speech signal modeling and natural language processing was found to be similar to that of LSTM.[4][5] GRUs have been shown to exhibit better performance on certain smaller and less frequent datasets.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>GRU</oboInOwl:hasExactSynonym>
         <rdfs:comment>Input, Memory Cell, Output</rdfs:comment>
@@ -2575,7 +2539,7 @@
     <!-- https://w3id.org/aio/GeneralizedFew-shotLearning -->
 
     <Class rdf:about="https://w3id.org/aio/GeneralizedFew-shotLearning">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>Methods that can learn novel classes from only few samples per class, preventing catastrophic forgetting of base classes, and classifier calibration across novel and base classes.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>GFSL</oboInOwl:hasExactSynonym>
         <rdfs:label>Generalized Few-shot Learning</rdfs:label>
@@ -2609,7 +2573,7 @@
     <!-- https://w3id.org/aio/GenerativeAdversarialNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/GenerativeAdversarialNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/UPN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/UnsupervisedPretrainedNetwork"/>
         <obo:IAO_0000115>A generative adversarial network (GAN) is a class of machine Learning frameworks designed by Ian Goodfellow and his colleagues in 2014. Two neural networks contest with each other in a game (in the form of a zero-sum game, where one agent&apos;s gain is another agent&apos;s loss). Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics. Though originally proposed as a form of generative model for unsupervised Learning, GANs have also proven useful for semi-supervised Learning, fully supervised Learning,[ and reinforcement Learning. The core idea of a GAN is based on the &quot;indirect&quot; training through the discriminator,[clarification needed] which itself is also being updated dynamically. This basically means that the generator is not trained to minimize the distance to a specific image, but rather to fool the discriminator. This enables the model to learn in an unsupervised manner.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>GAN</oboInOwl:hasExactSynonym>
         <rdfs:comment>Backfed Input, Hidden, Matched Output-Input, Hidden, Matched Output-Input</rdfs:comment>
@@ -2627,7 +2591,7 @@
     <!-- https://w3id.org/aio/GenerativeAdversarialNetwork-AugmentedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/GenerativeAdversarialNetwork-AugmentedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>A GAN-augmented LLM incorporates a generative adversarial network (GAN) into its training process, using a discriminator network to provide a signal for generating more realistic and coherent text. This adversarial training can improve the quality and diversity of generated text.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>GAN-LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Generative Adversarial Network-Augmented LLM</oboInOwl:hasExactSynonym>
@@ -2641,7 +2605,7 @@
     <!-- https://w3id.org/aio/GenerativeCommonsenseLLM -->
 
     <Class rdf:about="https://w3id.org/aio/GenerativeCommonsenseLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>A generative commonsense LLM is trained to understand and model basic physics, causality and common sense about how the real world works.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Generative Commonsense LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>causal modeling</oboInOwl:hasRelatedSynonym>
@@ -2654,7 +2618,7 @@
     <!-- https://w3id.org/aio/GenerativeLanguageCircuit -->
 
     <Class rdf:about="https://w3id.org/aio/GenerativeLanguageCircuit">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMAdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
         <obo:IAO_0000115>A generative language circuit is a type of LLM that learns to generate programs or code by training on input-output pairs, effectively learning the underlying &quot;program&quot; that maps inputs to outputs.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>GLC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Generative Language Circuit</oboInOwl:hasExactSynonym>
@@ -2668,7 +2632,7 @@
     <!-- https://w3id.org/aio/GenerativeLanguageInterface -->
 
     <Class rdf:about="https://w3id.org/aio/GenerativeLanguageInterface">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLM"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
         <obo:IAO_0000115>A generative language interface enables users to engage in an interactive dialogue with an LLM, providing feedback to guide and refine the generated outputs iteratively.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Generative Language Interface</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Interactive generation</oboInOwl:hasRelatedSynonym>
@@ -2788,7 +2752,7 @@
     <!-- https://w3id.org/aio/GraphConvolutionalNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/GraphConvolutionalNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>GCN is a type of convolutional neural network that can work directly on graphs and take advantage of their structural information. (https://arxiv.org/abs/1609.02907)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>GCN</oboInOwl:hasExactSynonym>
         <rdfs:comment>Input, Hidden, Hidden, Output</rdfs:comment>
@@ -2806,7 +2770,7 @@
     <!-- https://w3id.org/aio/GraphConvolutionalPolicyNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/GraphConvolutionalPolicyNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/GCN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/GraphConvolutionalNetwork"/>
         <obo:IAO_0000115>Graph Convolutional Policy Network (GCPN), a general graph convolutional network based model for goal-directed graph generation through reinforcement Learning. The model is trained to optimize domain-specific rewards and adversarial loss through policy gradient, and acts in an environment that incorporates domain-specific rules.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>GPCN</oboInOwl:hasExactSynonym>
         <rdfs:comment>Input, Hidden, Hidden, Policy, Output</rdfs:comment>
@@ -2824,7 +2788,7 @@
     <!-- https://w3id.org/aio/GraphLLM -->
 
     <Class rdf:about="https://w3id.org/aio/GraphLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMAdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
         <obo:IAO_0000115>A graph LLM operates over structured inputs/outputs represented as graphs, enabling reasoning over explicit relational knowledge representations during language tasks.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Graph LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Structured representations</oboInOwl:hasRelatedSynonym>
@@ -2972,7 +2936,7 @@
     <!-- https://w3id.org/aio/HierarchicalLLM -->
 
     <Class rdf:about="https://w3id.org/aio/HierarchicalLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMAdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>A hierarchical LLM models language at multiple levels of granularity, learning hierarchical representations that can capture both low-level patterns and high-level abstractions.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Hierarchical LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>multi-scale representations</oboInOwl:hasRelatedSynonym>
@@ -3000,7 +2964,7 @@
     <!-- https://w3id.org/aio/HopfieldNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/HopfieldNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/SCN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/SymmetricallyConnectedNetwork"/>
         <obo:IAO_0000115>A Hopfield network is a form of recurrent artificial neural network and a type of spin glass system popularised by John Hopfield in 1982 as described earlier by Little in 1974 based on Ernst Ising&apos;s work with Wilhelm Lenz on the Ising model. Hopfield networks serve as content-addressable (&quot;associative&quot;) memory systems with binary threshold nodes, or with continuous variables. Hopfield networks also provide a model for understanding human memory. (https://en.wikipedia.org/wiki/Hopfield_network)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>HN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Ising model of a neural network</oboInOwl:hasExactSynonym>
@@ -3117,7 +3081,7 @@
     <!-- https://w3id.org/aio/ImplicitLanguageModel -->
 
     <Class rdf:about="https://w3id.org/aio/ImplicitLanguageModel">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLM"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
         <obo:IAO_0000115>An implicit language model uses an energy function to score full sequences instead of factorizing probabilities autoregressively. This can better capture global properties and long-range dependencies.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Implicit Language Model</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Energy-based models</oboInOwl:hasRelatedSynonym>
@@ -3130,7 +3094,7 @@
     <!-- https://w3id.org/aio/IncremenetalFew-shotLearning -->
 
     <Class rdf:about="https://w3id.org/aio/IncremenetalFew-shotLearning">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>Methods that train a network on a base set of classes and then is presented several novel classes, each with only a few labeled examples.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>IFSL</oboInOwl:hasExactSynonym>
         <rdfs:label>Incremenetal Few-shot Learning</rdfs:label>
@@ -3297,7 +3261,7 @@
     <!-- https://w3id.org/aio/Instruction-TunedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Instruction-TunedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>An instruction-tuned LLM is fine-tuned to follow natural language instructions accurately and safely, learning to map from instructions to desired model behavior in a more controlled and principled way.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Instruction-Tuned LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>constitutional AI</oboInOwl:hasRelatedSynonym>
@@ -3326,7 +3290,7 @@
     <!-- https://w3id.org/aio/InterpretableLLM -->
 
     <Class rdf:about="https://w3id.org/aio/InterpretableLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMEnhancementStrategies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
         <obo:IAO_0000115>An interpretable LLM prioritizes transparency and ease of understanding in its operations, making its decision-making processes clear and rational to human users.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Interpretable Language Model</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>interpretability</oboInOwl:hasRelatedSynonym>
@@ -3410,7 +3374,7 @@
     <!-- https://w3id.org/aio/Knowledge-GroundedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Knowledge-GroundedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>A knowledge-grounded LLM incorporates external knowledge sources or knowledge bases into the model architecture, enabling it to generate more factually accurate and knowledge-aware text.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Knowledge-Grounded LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>factual grounding</oboInOwl:hasRelatedSynonym>
@@ -3442,39 +3406,9 @@
     
 
 
-    <!-- https://w3id.org/aio/LLM -->
-
-    <Class rdf:about="https://w3id.org/aio/LLM"/>
-    
-
-
-    <!-- https://w3id.org/aio/LLMAdvancedTechniques -->
-
-    <Class rdf:about="https://w3id.org/aio/LLMAdvancedTechniques"/>
-    
-
-
-    <!-- https://w3id.org/aio/LLMApplicationFocus -->
-
-    <Class rdf:about="https://w3id.org/aio/LLMApplicationFocus"/>
-    
-
-
-    <!-- https://w3id.org/aio/LLMEnhancementStrategies -->
-
-    <Class rdf:about="https://w3id.org/aio/LLMEnhancementStrategies"/>
-    
-
-
     <!-- https://w3id.org/aio/LLMModelArchitecture -->
 
     <Class rdf:about="https://w3id.org/aio/LLMModelArchitecture"/>
-    
-
-
-    <!-- https://w3id.org/aio/LLMTrainingParadigm -->
-
-    <Class rdf:about="https://w3id.org/aio/LLMTrainingParadigm"/>
     
 
 
@@ -3511,12 +3445,6 @@
         <annotatedTarget>Applies a 2D power-average pooling over an input signal composed of several input planes.</annotatedTarget>
         <oboInOwl:hasDbXref>https://pytorch.org/docs/stable/nn.html#pooling-layers</oboInOwl:hasDbXref>
     </Axiom>
-    
-
-
-    <!-- https://w3id.org/aio/LSTM -->
-
-    <Class rdf:about="https://w3id.org/aio/LSTM"/>
     
 
 
@@ -3571,7 +3499,7 @@
     <!-- https://w3id.org/aio/LanguageInterfaceLLM -->
 
     <Class rdf:about="https://w3id.org/aio/LanguageInterfaceLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMAdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
         <obo:IAO_0000115>A language interface LLM supports interactive semantic parsing, enabling users to provide feedback/corrections which are used to dynamically refine and update the language model.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Language Interface LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Interactive learning</oboInOwl:hasRelatedSynonym>
@@ -3813,7 +3741,7 @@
     <!-- https://w3id.org/aio/LifelongLearningLLM -->
 
     <Class rdf:about="https://w3id.org/aio/LifelongLearningLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMAdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
         <obo:IAO_0000115>A lifelong learning LLM can continually acquire new knowledge over time without forgetting previously learned information, maintaining a balance between plasticity and stability.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Continual Learning LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Lifelong Learning LLM</oboInOwl:hasExactSynonym>
@@ -3974,7 +3902,7 @@
     <!-- https://w3id.org/aio/LongShortTermMemory -->
 
     <Class rdf:about="https://w3id.org/aio/LongShortTermMemory">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/RecNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/RecurrentNeuralNetwork"/>
         <obo:IAO_0000115>Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep Learning. Unlike standard feedforward neural networks, LSTM has feedback connections. It can process not only single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition, speech recognition and anomaly detection in network traffic or IDSs (intrusion detection systems). A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>LSTM</oboInOwl:hasExactSynonym>
         <rdfs:comment>Input, Memory Cell, Output</rdfs:comment>
@@ -4008,7 +3936,7 @@
     <!-- https://w3id.org/aio/Low-ResourceLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Low-ResourceLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMEnhancementStrategies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
         <obo:IAO_0000115>A low-resource LLM is optimized for performance in scenarios with limited data, computational resources, or for languages with sparse datasets.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Low-Resource Language Model</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>low-resource languages</oboInOwl:hasRelatedSynonym>
@@ -4248,7 +4176,7 @@
     <!-- https://w3id.org/aio/Memory-AugmentedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Memory-AugmentedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLM"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
         <obo:IAO_0000115>A memory-augmented LLM incorporates external writeable and readable memory components, allowing it to store and retrieve information over long contexts.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Memory-Augmented LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>external memory</oboInOwl:hasRelatedSynonym>
@@ -4292,7 +4220,7 @@
     <!-- https://w3id.org/aio/Meta-LearningLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Meta-LearningLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMTrainingParadigm"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
         <obo:IAO_0000115>A meta-learning LLM is trained in a way that allows it to quickly adapt to new tasks or datasets through only a few examples or fine-tuning steps, leveraging meta-learned priors about how to efficiently learn.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Meta-Learning LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>few-shot adaptation</oboInOwl:hasRelatedSynonym>
@@ -4314,7 +4242,7 @@
     <!-- https://w3id.org/aio/MetricLearning -->
 
     <Class rdf:about="https://w3id.org/aio/MetricLearning">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>Methods which can learn a representation function that maps objects into an embedded space.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Distance Metric Learning</oboInOwl:hasExactSynonym>
         <rdfs:label>Metric Learning</rdfs:label>
@@ -4347,7 +4275,7 @@
     <!-- https://w3id.org/aio/Mixture-of-ExpertsLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Mixture-of-ExpertsLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMModelArchitecture"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>A Mixture-of-Experts LLM dynamically selects and combines outputs from multiple expert submodels, allowing for efficient scaling by conditionally activating only a subset of model components for each input.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Mixture-of-Experts LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>MoE LLM</oboInOwl:hasExactSynonym>
@@ -4377,7 +4305,7 @@
     <!-- https://w3id.org/aio/ModelArchitecture -->
 
     <Class rdf:about="https://w3id.org/aio/ModelArchitecture">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLM"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
         <obo:IAO_0000115>An abstract parent class grouping LLMs based on model architecture.</obo:IAO_0000115>
         <rdfs:label>Model Architecture</rdfs:label>
     </Class>
@@ -4414,7 +4342,7 @@
     <!-- https://w3id.org/aio/ModularLLM -->
 
     <Class rdf:about="https://w3id.org/aio/ModularLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMModelArchitecture"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>A modular LLM consists of multiple specialized components or skills that can be dynamically composed and recombined to solve complex tasks, mimicking the modular structure of human cognition.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Modular LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>component skills</oboInOwl:hasRelatedSynonym>
@@ -4427,7 +4355,7 @@
     <!-- https://w3id.org/aio/Multi-TaskLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Multi-TaskLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>A multi-task LLM is trained jointly on multiple language tasks simultaneously, learning shared representations that transfer across tasks.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Multi-Task LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>transfer learning</oboInOwl:hasRelatedSynonym>
@@ -4489,7 +4417,7 @@
     <!-- https://w3id.org/aio/MultilingualLLM -->
 
     <Class rdf:about="https://w3id.org/aio/MultilingualLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLM"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
         <obo:IAO_0000115>A multilingual LLM is trained on text from multiple languages, learning shared representations that enable zero-shot or few-shot transfer to new languages.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Multilingual LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>cross-lingual transfer</oboInOwl:hasRelatedSynonym>
@@ -4501,7 +4429,7 @@
     <!-- https://w3id.org/aio/MultimodalDeepLearning -->
 
     <Class rdf:about="https://w3id.org/aio/MultimodalDeepLearning">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>Methods which can create models that can process and link information using various modalities.</obo:IAO_0000115>
         <rdfs:label>Multimodal Deep Learning</rdfs:label>
     </Class>
@@ -4517,7 +4445,7 @@
     <!-- https://w3id.org/aio/MultimodalFusionLLM -->
 
     <Class rdf:about="https://w3id.org/aio/MultimodalFusionLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMAdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
         <obo:IAO_0000115>A multimodal fusion LLM learns joint representations across different modalities like text, vision and audio in an end-to-end fashion for better cross-modal understanding and generation.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Multimodal Fusion LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>cross-modal grounding</oboInOwl:hasRelatedSynonym>
@@ -4539,7 +4467,7 @@
     <!-- https://w3id.org/aio/MultimodalTransformer -->
 
     <Class rdf:about="https://w3id.org/aio/MultimodalTransformer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>A multimodal transformer is a transformer architecture that can process and relate information from different modalities, such as text, images, and audio. It uses a shared embedding space and attention mechanism to learn joint representations across modalities.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Multimodal Transformer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>unified encoder</oboInOwl:hasRelatedSynonym>
@@ -4594,8 +4522,8 @@
     <!-- https://w3id.org/aio/NeuralTuringMachineNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/NeuralTuringMachineNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DFF"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LSTM"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepFeedForward"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LongShortTermMemory"/>
         <obo:IAO_0000115>A Neural Turing machine (NTMs) is a recurrent neural network model. The approach was published by Alex Graves et al. in 2014. NTMs combine the fuzzy pattern matching capabilities of neural networks with the algorithmic power of programmable computers. An NTM has a neural network controller coupled to external memory resources, which it interacts with through attentional mechanisms. The memory interactions are differentiable end-to-end, making it possible to optimize them using gradient descent. An NTM with a long short-term memory (LSTM) network controller can infer simple algorithms such as copying, sorting, and associative recall from examples alone.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>NTM</oboInOwl:hasExactSynonym>
         <rdfs:comment>Input, Hidden, Spiking Hidden, Output</rdfs:comment>
@@ -4613,7 +4541,7 @@
     <!-- https://w3id.org/aio/Neuro-SymbolicLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Neuro-SymbolicLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>A neuro-symbolic LLM combines neural language modeling with symbolic reasoning components, leveraging structured knowledge representations and logical inferences to improve reasoning capabilities.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Neuro-Symbolic LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>knowledge reasoning</oboInOwl:hasRelatedSynonym>
@@ -4674,7 +4602,7 @@
     <!-- https://w3id.org/aio/One-shotLearning -->
 
     <Class rdf:about="https://w3id.org/aio/One-shotLearning">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>A method which aims to classify objects from one, or only a few, examples.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>OSL</oboInOwl:hasExactSynonym>
         <rdfs:label>One-shot Learning</rdfs:label>
@@ -4691,7 +4619,7 @@
     <!-- https://w3id.org/aio/OrdinalLLM -->
 
     <Class rdf:about="https://w3id.org/aio/OrdinalLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMAdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
         <obo:IAO_0000115>An ordinal LLM is trained to model ordinal relationships and rank outputs, rather than model probability distributions over text sequences directly.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Ordinal LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>preference modeling</oboInOwl:hasRelatedSynonym>
@@ -4736,7 +4664,7 @@
     <!-- https://w3id.org/aio/Perceptron -->
 
     <Class rdf:about="https://w3id.org/aio/Perceptron">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ANN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ArtificialNeuralNetwork"/>
         <obo:IAO_0000115>The perceptron is an algorithm for supervised Learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class. It is a type of linear classifier, i.e. a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector. (https://en.wikipedia.org/wiki/Perceptron)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>SLP</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Single Layer Perceptron</oboInOwl:hasExactSynonym>
@@ -4765,7 +4693,7 @@
     <!-- https://w3id.org/aio/PersonalizedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/PersonalizedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLM"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
         <obo:IAO_0000115>A personalized LLM adapts its language modeling and generation to the preferences, style and persona of individual users or audiences.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Personalized LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>user adaptation</oboInOwl:hasRelatedSynonym>
@@ -4926,7 +4854,7 @@
     <!-- https://w3id.org/aio/Prompt-basedFine-TuningLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Prompt-basedFine-TuningLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMTrainingParadigm"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
         <obo:IAO_0000115>A prompt-tuned LLM is fine-tuned on a small number of examples or prompts, rather than full task datasets. This allows for rapid adaptation to new tasks with limited data, leveraging the model&apos;s few-shot learning capabilities.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Prompt-based Fine-Tuning LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Prompt-tuned LLM</oboInOwl:hasExactSynonym>
@@ -4949,7 +4877,7 @@
         <annotatedSource rdf:resource="https://w3id.org/aio/ProportionalHazardsModel"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>A surival modeling method where the unique effect of a unit increase in a covariate is multiplicative with respect to the hazard rate.</annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Proportional_hazards_modelProportional Hazards Model</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Proportional_hazards_model</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -4973,7 +4901,7 @@
     <!-- https://w3id.org/aio/RadialBasisNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/RadialBasisNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DFF"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepFeedFoward"/>
         <obo:IAO_0000115>Like recurrent neural networks (RNNs), transformers are designed to handle sequential input data, such as natural language, for tasks such as translation and text summarization. However, unlike RNNs, transformers do not necessarily process the data in order. Rather, the attention mechanism provides context for any position in the input sequence.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>RBFN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>RBN</oboInOwl:hasExactSynonym>
@@ -5204,7 +5132,7 @@
     <!-- https://w3id.org/aio/RationalLLM -->
 
     <Class rdf:about="https://w3id.org/aio/RationalLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLM"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
         <obo:IAO_0000115>A rational LLM incorporates explicit reasoning capabilities, leveraging logical rules, axioms or external knowledge to make deductive inferences during language tasks.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Rational LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>logical inferences</oboInOwl:hasRelatedSynonym>
@@ -5248,12 +5176,6 @@
     
 
 
-    <!-- https://w3id.org/aio/RecNN -->
-
-    <Class rdf:about="https://w3id.org/aio/RecNN"/>
-    
-
-
     <!-- https://w3id.org/aio/RecurrentLayer -->
 
     <Class rdf:about="https://w3id.org/aio/RecurrentLayer">
@@ -5273,7 +5195,7 @@
     <!-- https://w3id.org/aio/RecurrentNeuralNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/RecurrentNeuralNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>A recurrent neural network (RNN) is a class of artificial neural networks where connections between nodes form a directed graph along a temporal sequence. This allows it to exhibit temporal dynamic behavior. Derived from feedforward neural networks, RNNs can use their internal state (memory) to process variable length sequences of inputs.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>RN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>RecNN</oboInOwl:hasExactSynonym>
@@ -5293,7 +5215,7 @@
     <!-- https://w3id.org/aio/RecursiveLLM -->
 
     <Class rdf:about="https://w3id.org/aio/RecursiveLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMModelArchitecture"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>A recursive or self-attending LLM incorporates recursive self-attention mechanisms, allowing it to iteratively refine its own outputs and capture long-range dependencies more effectively.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Recursive LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Self-Attending LLM</oboInOwl:hasExactSynonym>
@@ -5307,7 +5229,7 @@
     <!-- https://w3id.org/aio/RecursiveLanguageModel -->
 
     <Class rdf:about="https://w3id.org/aio/RecursiveLanguageModel">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMAdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
         <obo:IAO_0000115>A recursive language model uses recursive neural network architectures like TreeLSTMs to learn syntactic composition functions, improving systematic generalization abilities.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Recursive Language Model</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Compositional generalization</oboInOwl:hasRelatedSynonym>
@@ -5319,7 +5241,7 @@
     <!-- https://w3id.org/aio/RecursiveNeuralNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/RecursiveNeuralNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>A recursive neural network is a kind of deep neural network created by applying the same set of weights recursively over a structured input, to produce a structured prediction over variable-size input structures, or a scalar prediction on it, by traversing a given structure in topological order. Recursive neural networks, sometimes abbreviated as RvNNs, have been successful, for instance, in Learning sequence and tree structures in natural language processing, mainly phrase and sentence continuous representations based on word embedding.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>RecuNN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>RvNN</oboInOwl:hasExactSynonym>
@@ -5388,7 +5310,7 @@
     <!-- https://w3id.org/aio/ReinforcementLearningLLM -->
 
     <Class rdf:about="https://w3id.org/aio/ReinforcementLearningLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMTrainingParadigm"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
         <obo:IAO_0000115>An RL-LLM is a language model that is fine-tuned using reinforcement learning, where the model receives rewards for generating text that satisfies certain desired properties or objectives. This can improve the quality, safety, or alignment of generated text.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>RL-LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Reinforcement Learning LLM</oboInOwl:hasExactSynonym>
@@ -5434,7 +5356,7 @@
     <!-- https://w3id.org/aio/RepresentationLearning -->
 
     <Class rdf:about="https://w3id.org/aio/RepresentationLearning">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>Methods that allow a system to discover the representations required for feature detection or classification from raw data.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Feature Learning</oboInOwl:hasExactSynonym>
         <rdfs:label>Representation Learning</rdfs:label>
@@ -5500,7 +5422,7 @@
     <!-- https://w3id.org/aio/ResidualNeuralNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/ResidualNeuralNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>A residual neural network (ResNet) is an artificial neural network (ANN) of a kind that builds on constructs known from pyramidal cells in the cerebral cortex. Residual neural networks do this by utilizing skip connections, or shortcuts to jump over some layers. Typical ResNet models are implemented with double- or triple- layer skips that contain nonlinearities (ReLU) and batch normalization in between. An additional weight matrix may be used to learn the skip weights; these models are known as HighwayNets. Models with several parallel skips are referred to as DenseNets. In the context of residual neural networks, a non-residual network may be described as a &apos;plain network&apos;.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>DRN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Deep Residual Network</oboInOwl:hasExactSynonym>
@@ -5537,7 +5459,7 @@
     <!-- https://w3id.org/aio/RestrictedBoltzmannMachine -->
 
     <Class rdf:about="https://w3id.org/aio/RestrictedBoltzmannMachine">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/BM"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/BoltzmannMachineNetwork"/>
         <obo:IAO_0000115>A restricted Boltzmann machine (RBM) is a generative stochastic artificial neural network that can learn a probability distribution over its set of inputs.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>RBM</oboInOwl:hasExactSynonym>
         <rdfs:comment>Backfed Input, Probabilistic Hidden</rdfs:comment>
@@ -5555,7 +5477,7 @@
     <!-- https://w3id.org/aio/Retrieval-AugmentedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Retrieval-AugmentedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>A retrieval-augmented LLM combines a pre-trained language model with a retrieval system that can access external knowledge sources. This allows the model to condition its generation on relevant retrieved knowledge, improving factual accuracy and knowledge grounding.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Retrieval-Augmented LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>knowledge grounding</oboInOwl:hasRelatedSynonym>
@@ -5578,12 +5500,6 @@
         <annotatedTarget>A method of estimating the coefficients of multiple-regression models in scenarios where the independent variables are highly correlated.[1] It has been used in many fields including econometrics, chemistry, and engineering.</annotatedTarget>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Ridge_regression</oboInOwl:hasDbXref>
     </Axiom>
-    
-
-
-    <!-- https://w3id.org/aio/SCN -->
-
-    <Class rdf:about="https://w3id.org/aio/SCN"/>
     
 
 
@@ -5643,7 +5559,7 @@
     <!-- https://w3id.org/aio/Self-SupervisedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Self-SupervisedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMTrainingParadigm"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
         <obo:IAO_0000115>A self-supervised LLM learns rich representations by solving pretext tasks that involve predicting parts of the input from other observed parts of the data, without relying on human-annotated labels.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Self-Supervised LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Pretext tasks</oboInOwl:hasRelatedSynonym>
@@ -5671,7 +5587,7 @@
     <!-- https://w3id.org/aio/Semi-SupervisedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Semi-SupervisedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMTrainingParadigm"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
         <obo:IAO_0000115>A semi-supervised LLM combines self-supervised pretraining on unlabeled data with supervised fine-tuning on labeled task data.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Semi-Supervised LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>self-training</oboInOwl:hasRelatedSynonym>
@@ -5846,7 +5762,7 @@
     <!-- https://w3id.org/aio/SparseAE -->
 
     <Class rdf:about="https://w3id.org/aio/SparseAE">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AE"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AutoEncoderNetwork"/>
         <obo:IAO_0000115>Sparse autoencoders may include more (rather than fewer) hidden units than inputs, but only a small number of the hidden units are allowed to be active at the same time (thus, sparse). This constraint forces the model to respond to the unique statistical features of the training data. (https://en.wikipedia.org/wiki/Autoencoder)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>SAE</oboInOwl:hasExactSynonym>
         <rdfs:comment>Input, Hidden, Matched Output-Input</rdfs:comment>
@@ -5858,7 +5774,7 @@
     <!-- https://w3id.org/aio/SparseLLM -->
 
     <Class rdf:about="https://w3id.org/aio/SparseLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMTrainingParadigm"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
         <obo:IAO_0000115>A sparse LLM uses techniques like pruning or quantization to reduce the number of non-zero parameters in the model, making it more parameter-efficient and easier to deploy on resource-constrained devices.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Sparse LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>model compression</oboInOwl:hasRelatedSynonym>
@@ -6366,7 +6282,7 @@
     <!-- https://w3id.org/aio/TrainingParadigm -->
 
     <Class rdf:about="https://w3id.org/aio/TrainingParadigm">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLM"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
         <obo:IAO_0000115>An abstract parent class grouping LLMs based on training paradigm.</obo:IAO_0000115>
         <rdfs:label>Training Paradigm</rdfs:label>
     </Class>
@@ -6409,7 +6325,7 @@
     <!-- https://w3id.org/aio/TransferLearningLLM -->
 
     <Class rdf:about="https://w3id.org/aio/TransferLearningLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMEnhancementStrategies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
         <obo:IAO_0000115>A transfer learning LLM leverages knowledge acquired during training on one task to improve performance on different but related tasks, facilitating more efficient learning and adaptation.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Transfer LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>transfer learning</oboInOwl:hasRelatedSynonym>
@@ -6421,7 +6337,7 @@
     <!-- https://w3id.org/aio/TransformerNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/TransformerNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>A transformer is a deep Learning model that adopts the mechanism of attention, differentially weighing the significance of each part of the input data. It is used primarily in the field of natural language processing (NLP) and in computer vision (CV). (https://en.wikipedia.org/wiki/Transformer_(machine_Learning_model))</obo:IAO_0000115>
         <rdfs:label>Transformer Network</rdfs:label>
     </Class>
@@ -6431,12 +6347,6 @@
         <annotatedTarget>A transformer is a deep Learning model that adopts the mechanism of attention, differentially weighing the significance of each part of the input data. It is used primarily in the field of natural language processing (NLP) and in computer vision (CV). (https://en.wikipedia.org/wiki/Transformer_(machine_Learning_model))</annotatedTarget>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Transformer_(machine_Learning_model)</oboInOwl:hasDbXref>
     </Axiom>
-    
-
-
-    <!-- https://w3id.org/aio/UPN -->
-
-    <Class rdf:about="https://w3id.org/aio/UPN"/>
     
 
 
@@ -6513,7 +6423,7 @@
     <!-- https://w3id.org/aio/UnsupervisedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/UnsupervisedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMTrainingParadigm"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
         <obo:IAO_0000115>An unsupervised LLM is trained solely on unlabeled data using self-supervised objectives like masked language modeling, without any supervised fine-tuning.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Unsupervised LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>self-supervised</oboInOwl:hasRelatedSynonym>
@@ -6639,24 +6549,12 @@
     <!-- https://w3id.org/aio/VariationalAutoEncoder -->
 
     <Class rdf:about="https://w3id.org/aio/VariationalAutoEncoder">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AE"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AutoEncoderNetwork"/>
         <obo:IAO_0000115>Variational autoencoders are meant to compress the input information into a constrained multivariate latent distribution (encoding) to reconstruct it as accurately as possible (decoding). (https://en.wikipedia.org/wiki/Variational_autoencoder)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>VAE</oboInOwl:hasExactSynonym>
         <rdfs:comment>Input, Probabilistic Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label>Variational Auto Encoder</rdfs:label>
     </Class>
-    
-
-
-    <!-- https://w3id.org/aio/W2VCBOW -->
-
-    <Class rdf:about="https://w3id.org/aio/W2VCBOW"/>
-    
-
-
-    <!-- https://w3id.org/aio/W2VSkipGram -->
-
-    <Class rdf:about="https://w3id.org/aio/W2VSkipGram"/>
     
 
 
@@ -6679,7 +6577,7 @@
     <!-- https://w3id.org/aio/Zero-ShotLearningLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Zero-ShotLearningLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMEnhancementStrategies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
         <obo:IAO_0000115>A zero-shot learning LLM is able to perform tasks or understand concepts it has not explicitly been trained on, demonstrating a high degree of generalization and understanding.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Zero-Shot LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>zero-shot learning</oboInOwl:hasRelatedSynonym>
@@ -6691,7 +6589,7 @@
     <!-- https://w3id.org/aio/Zero-shotLearning -->
 
     <Class rdf:about="https://w3id.org/aio/Zero-shotLearning">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DNN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>Methods where at test time, a learner observes samples from classes, which were not observed during training, and needs to predict the class that they belong to.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>ZSL</oboInOwl:hasExactSynonym>
         <rdfs:label>Zero-shot Learning</rdfs:label>
@@ -6756,7 +6654,7 @@
     <!-- https://w3id.org/aio/node2vec-CBOW -->
 
     <Class rdf:about="https://w3id.org/aio/node2vec-CBOW">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/W2VCBOW"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/word2vec-CBOW"/>
         <obo:IAO_0000115>In the continuous bag-of-words architecture, the model predicts the current node from a window of surrounding context nodes. The order of context nodes does not influence prediction (bag-of-words assumption).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>N2V-CBOW</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>CBOW</oboInOwl:hasRelatedSynonym>
@@ -6775,7 +6673,7 @@
     <!-- https://w3id.org/aio/node2vec-SkipGram -->
 
     <Class rdf:about="https://w3id.org/aio/node2vec-SkipGram">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/W2VSkipGram"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/word2vec-SkipGram"/>
         <obo:IAO_0000115>In the continuous skip-gram architecture, the model uses the current node to predict the surrounding window of context nodes. The skip-gram architecture weighs nearby context nodes more heavily than more distant context nodes. (https://en.wikipedia.org/wiki/Word2vec)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>N2V-SkipGram</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>SkipGram</oboInOwl:hasRelatedSynonym>
@@ -6812,7 +6710,7 @@
     <!-- https://w3id.org/aio/word2vec-CBOW -->
 
     <Class rdf:about="https://w3id.org/aio/word2vec-CBOW">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ANN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ArtificialNeuralNetwork"/>
         <obo:IAO_0000115>In the continuous bag-of-words architecture, the model predicts the current word from a window of surrounding context words. The order of context words does not influence prediction (bag-of-words assumption). (https://en.wikipedia.org/wiki/Word2vec)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>W2V-CBOW</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>CBOW</oboInOwl:hasRelatedSynonym>
@@ -6831,7 +6729,7 @@
     <!-- https://w3id.org/aio/word2vec-SkipGram -->
 
     <Class rdf:about="https://w3id.org/aio/word2vec-SkipGram">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ANN"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ArtificialNeuralNetwork"/>
         <obo:IAO_0000115>In the continuous skip-gram architecture, the model uses the current word to predict the surrounding window of context words. The skip-gram architecture weighs nearby context words more heavily than more distant context words.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>W2V-SkipGram</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>SkipGram</oboInOwl:hasRelatedSynonym>
