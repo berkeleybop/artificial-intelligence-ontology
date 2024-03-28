@@ -8093,7 +8093,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- https://w3id.org/aio/DifferentiableLLM -->
 
     <owl:Class rdf:about="https://w3id.org/aio/DifferentiableLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMModelArchitecture"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>A differentiable LLM has an architecture amenable to full end-to-end training via backpropagation, without relying on teacher forcing or unlikelihood training objectives.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Differentiable LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>end-to-end training</oboInOwl:hasRelatedSynonym>
@@ -9663,12 +9663,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <owl:annotatedTarget>A self-organizing map (SOM) or self-organizing feature map (SOFM) is an unsupervised machine Learning technique used to produce a low-dimensional (typically two-dimensional) representation of a higher dimensional data set while preserving the topological structure of the data. For example, a data set with p variables measured in n observations could be represented as clusters of observations with similar values for the variables. These clusters then could be visualized as a two-dimensional &quot;map&quot; such that observations in proximal clusters have more similar values than observations in distal clusters. This can make high-dimensional data easier to visualize and analyze. An SOM is a type of artificial neural network but is trained using competitive Learning rather than the error-correction Learning (e.g., backpropagation with gradient descent) used by other artificial neural networks. The SOM was introduced by the Finnish professor Teuvo Kohonen in the 1980s and therefore is sometimes called a Kohonen map or Kohonen network.[1][2] The Kohonen map or network is a computationally convenient abstraction building on biological models of neural systems from the 1970s[3] and morphogenesis models dating back to Alan Turing in the 1950s.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Self-organizing_map</oboInOwl:hasDbXref>
     </owl:Axiom>
-    
-
-
-    <!-- https://w3id.org/aio/LLMModelArchitecture -->
-
-    <owl:Class rdf:about="https://w3id.org/aio/LLMModelArchitecture"/>
     
 
 

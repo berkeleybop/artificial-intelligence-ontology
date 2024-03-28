@@ -21323,7 +21323,7 @@
     }, {
       "sub" : "https://w3id.org/aio/DifferentiableLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LLMModelArchitecture"
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/DimensionalityReduction",
       "pred" : "is_a",
