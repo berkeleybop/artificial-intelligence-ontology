@@ -988,8 +988,8 @@ name: regulatory agency
 def: "A regulatory agency is a organization that has responsibility over or for  the legislation (acts and regulations) for a given sector of the government." []
 is_a: OBI:0000245 ! organization
 intersection_of: OBI:0000245 ! organization
-intersection_of: RO:0000087 OBI:0000014 ! has role regulator role
-relationship: RO:0000087 OBI:0000014 ! has role regulator role
+intersection_of: RO:0000087 OBI:0000014 ! has_role regulator role
+relationship: RO:0000087 OBI:0000014 ! has_role regulator role
 property_value: IAO:0000111 "regulatory agency" xsd:string
 property_value: IAO:0000112 "The US Environmental Protection Agency" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1212,7 +1212,7 @@ id: OBI:0000835
 name: manufacturer
 def: "A person or organization that has a manufacturer role" []
 is_a: BFO:0000040 ! material entity
-relationship: RO:0000087 OBI:0000571 ! has role manufacturer role
+relationship: RO:0000087 OBI:0000571 ! has_role manufacturer role
 property_value: IAO:0000111 "manufacturer" xsd:string
 property_value: IAO:0000114 IAO:0000123
 
@@ -1579,7 +1579,7 @@ id: OBI:0002989
 name: material supplier
 def: "A person or organization that provides material supplies to other people or organizations." []
 is_a: BFO:0000040 ! material entity
-relationship: RO:0000087 OBI:0000018 ! has role material supplier role
+relationship: RO:0000087 OBI:0000018 ! has_role material supplier role
 property_value: IAO:0000111 "material supplier" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "Rebecca Jackson" xsd:string
@@ -1611,8 +1611,8 @@ name: specimen
 def: "A material entity that has the specimen role." []
 is_a: BFO:0000040 ! material entity
 intersection_of: BFO:0000040 ! material entity
-intersection_of: RO:0000087 OBI:0000112 ! has role specimen role
-relationship: RO:0000087 OBI:0000112 ! has role specimen role
+intersection_of: RO:0000087 OBI:0000112 ! has_role specimen role
+relationship: RO:0000087 OBI:0000112 ! has_role specimen role
 property_value: IAO:0000111 "specimen" xsd:string
 property_value: IAO:0000112 "Biobanking of blood taken and stored in a freezer for potential future investigations stores specimen." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1866,14 +1866,14 @@ id: SWO:0000396
 name: software developer organization
 def: "An organization or legal entity (including single person) that is responsible for developing software. Developing includes aspects of design, coding and testing." []
 is_a: OBI:0000245 ! organization
-relationship: RO:0000087 SWO:0000392 ! has role software developer role
+relationship: RO:0000087 SWO:0000392 ! has_role software developer role
 
 [Term]
 id: SWO:0000397
 name: software publisher organization
 def: "An organization or legal entity (including single person) that is responsible for publishing software. Publishing here includes tasks such as designing and producing physical products, technical customer support, licensing arrangements and marketing." []
 is_a: OBI:0000245 ! organization
-relationship: RO:0000087 SWO:0000260 ! has role publisher role
+relationship: RO:0000087 SWO:0000260 ! has_role publisher role
 
 [Term]
 id: UO:0000001
@@ -4161,7 +4161,7 @@ comment: Input, Hidden, Output
 synonym: "Radial Basis Function Network" EXACT []
 synonym: "RBFN" EXACT []
 synonym: "RBN" EXACT []
-is_a: https://w3id.org/aio/DeepFeedFoward
+is_a: https://w3id.org/aio/DeepFeedForward ! Deep FeedForward
 
 [Term]
 id: https://w3id.org/aio/RandomBrightnessLayer
@@ -5301,7 +5301,7 @@ property_value: IAO:0000116 "A role inheres in its bearer at all times for which
 property_value: IAO:0000118 "is role of" xsd:string
 property_value: IAO:0000118 "role_of" xsd:string
 is_a: RO:0000052 ! inheres in
-inverse_of: RO:0000087 ! has role
+inverse_of: RO:0000087 ! has_role
 
 [Typedef]
 id: RO:0000085

@@ -22096,7 +22096,7 @@
     }, {
       "sub" : "https://w3id.org/aio/RadialBasisNetwork",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/DeepFeedFoward"
+      "obj" : "https://w3id.org/aio/DeepFeedForward"
     }, {
       "sub" : "https://w3id.org/aio/RandomBrightnessLayer",
       "pred" : "is_a",

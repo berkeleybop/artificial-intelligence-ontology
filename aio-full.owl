@@ -7936,12 +7936,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
     
 
 
-    <!-- https://w3id.org/aio/DeepFeedFoward -->
-
-    <owl:Class rdf:about="https://w3id.org/aio/DeepFeedFoward"/>
-    
-
-
     <!-- https://w3id.org/aio/DeepNeuralNetwork -->
 
     <owl:Class rdf:about="https://w3id.org/aio/DeepNeuralNetwork">
@@ -11158,7 +11152,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- https://w3id.org/aio/RadialBasisNetwork -->
 
     <owl:Class rdf:about="https://w3id.org/aio/RadialBasisNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepFeedFoward"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepFeedForward"/>
         <obo:IAO_0000115>Like recurrent neural networks (RNNs), transformers are designed to handle sequential input data, such as natural language, for tasks such as translation and text summarization. However, unlike RNNs, transformers do not necessarily process the data in order. Rather, the attention mechanism provides context for any position in the input sequence.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>RBFN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>RBN</oboInOwl:hasExactSynonym>
