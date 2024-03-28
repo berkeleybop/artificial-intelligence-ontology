@@ -988,8 +988,8 @@ name: regulatory agency
 def: "A regulatory agency is a organization that has responsibility over or for  the legislation (acts and regulations) for a given sector of the government." []
 is_a: OBI:0000245 ! organization
 intersection_of: OBI:0000245 ! organization
-intersection_of: RO:0000087 OBI:0000014 ! has_role regulator role
-relationship: RO:0000087 OBI:0000014 ! has_role regulator role
+intersection_of: RO:0000087 OBI:0000014 ! has role regulator role
+relationship: RO:0000087 OBI:0000014 ! has role regulator role
 property_value: IAO:0000111 "regulatory agency" xsd:string
 property_value: IAO:0000112 "The US Environmental Protection Agency" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1212,7 +1212,7 @@ id: OBI:0000835
 name: manufacturer
 def: "A person or organization that has a manufacturer role" []
 is_a: BFO:0000040 ! material entity
-relationship: RO:0000087 OBI:0000571 ! has_role manufacturer role
+relationship: RO:0000087 OBI:0000571 ! has role manufacturer role
 property_value: IAO:0000111 "manufacturer" xsd:string
 property_value: IAO:0000114 IAO:0000123
 
@@ -1579,7 +1579,7 @@ id: OBI:0002989
 name: material supplier
 def: "A person or organization that provides material supplies to other people or organizations." []
 is_a: BFO:0000040 ! material entity
-relationship: RO:0000087 OBI:0000018 ! has_role material supplier role
+relationship: RO:0000087 OBI:0000018 ! has role material supplier role
 property_value: IAO:0000111 "material supplier" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "Rebecca Jackson" xsd:string
@@ -1611,8 +1611,8 @@ name: specimen
 def: "A material entity that has the specimen role." []
 is_a: BFO:0000040 ! material entity
 intersection_of: BFO:0000040 ! material entity
-intersection_of: RO:0000087 OBI:0000112 ! has_role specimen role
-relationship: RO:0000087 OBI:0000112 ! has_role specimen role
+intersection_of: RO:0000087 OBI:0000112 ! has role specimen role
+relationship: RO:0000087 OBI:0000112 ! has role specimen role
 property_value: IAO:0000111 "specimen" xsd:string
 property_value: IAO:0000112 "Biobanking of blood taken and stored in a freezer for potential future investigations stores specimen." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1866,14 +1866,14 @@ id: SWO:0000396
 name: software developer organization
 def: "An organization or legal entity (including single person) that is responsible for developing software. Developing includes aspects of design, coding and testing." []
 is_a: OBI:0000245 ! organization
-relationship: RO:0000087 SWO:0000392 ! has_role software developer role
+relationship: RO:0000087 SWO:0000392 ! has role software developer role
 
 [Term]
 id: SWO:0000397
 name: software publisher organization
 def: "An organization or legal entity (including single person) that is responsible for publishing software. Publishing here includes tasks such as designing and producing physical products, technical customer support, licensing arrangements and marketing." []
 is_a: OBI:0000245 ! organization
-relationship: RO:0000087 SWO:0000260 ! has_role publisher role
+relationship: RO:0000087 SWO:0000260 ! has role publisher role
 
 [Term]
 id: UO:0000001
@@ -2812,7 +2812,7 @@ name: ELU Function
 def: "The exponential linear unit (ELU) with alpha > 0 is: x if x > 0 and alpha * (exp(x) - 1) if x < 0 The ELU hyperparameter alpha controls the value to which an ELU saturates for negative net inputs. ELUs diminish the vanishing gradient effect. ELUs have negative values which pushes the mean of the activations closer to zero. Mean activations that are closer to zero enable faster Learning as they bring the gradient closer to the natural gradient. ELUs saturate to a negative value when the argument gets smaller. Saturation means a small derivative which decreases the variation and the information that is propagated to the next layer." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/elu] {type="owl:Axiom"}
 synonym: "ELU" EXACT []
 synonym: "Exponential Linear Unit" EXACT []
-is_a: https://w3id.org/aio/Function
+is_a: https://w3id.org/aio/Function ! Function
 
 [Term]
 id: https://w3id.org/aio/ELULayer
@@ -2941,7 +2941,7 @@ is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 id: https://w3id.org/aio/ExponentialFunction
 name: Exponential Function
 def: "The exponential function is a mathematical function denoted by f(x)=exp or e^{x}." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/exponential] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/Function
+is_a: https://w3id.org/aio/Function ! Function
 
 [Term]
 id: https://w3id.org/aio/ExtremeLearningMachine
@@ -3029,6 +3029,11 @@ synonym: "FractionalMaxPool3d" EXACT []
 is_a: https://w3id.org/aio/PoolingLayer ! Pooling Layer
 
 [Term]
+id: https://w3id.org/aio/Function
+name: Function
+def: "Function parent class" []
+
+[Term]
 id: https://w3id.org/aio/FundingBias
 name: Funding Bias
 def: "Arises when biased results are reported in order to support or satisfy the funding agency or financial supporter of the research study, but it can also be the individual researcher." [https://doi.org/10.6028/NIST.SP.1270] {type="owl:Axiom"}
@@ -3040,7 +3045,7 @@ name: GELU Function
 def: "Gaussian error linear unit (GELU) computes x * P(X <= x), where P(X) ~ N(0, 1). The (GELU) nonlinearity weights inputs by their value, rather than gates inputs by their sign as in ReLU." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/gelu] {type="owl:Axiom"}
 synonym: "Gaussian Error Linear Unit" EXACT []
 synonym: "GELU" EXACT []
-is_a: https://w3id.org/aio/Function
+is_a: https://w3id.org/aio/Function ! Function
 
 [Term]
 id: https://w3id.org/aio/GRUCellLayer
@@ -3234,7 +3239,7 @@ is_a: https://w3id.org/aio/GroupBias ! Group Bias
 id: https://w3id.org/aio/HardSigmoidFunction
 name: Hard Sigmoid Function
 def: "A faster approximation of the sigmoid activation. Piecewise linear approximation of the sigmoid function. Ref: 'https://en.wikipedia.org/wiki/Hard_sigmoid'" [https://www.tensorflow.org/api_docs/python/tf/keras/activations/hard_sigmoid] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/Function
+is_a: https://w3id.org/aio/Function ! Function
 
 [Term]
 id: https://w3id.org/aio/HashingLayer
@@ -3626,7 +3631,7 @@ is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 id: https://w3id.org/aio/LinearFunction
 name: Linear Function
 def: "A linear function has the form f(x) = a + bx." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/linear] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/Function
+is_a: https://w3id.org/aio/Function ! Function
 
 [Term]
 id: https://w3id.org/aio/LinearRegression
@@ -4254,7 +4259,7 @@ name: ReLU Function
 def: "The ReLU activation function returns: max(x, 0), the element-wise maximum of 0 and the input tensor." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/relu] {type="owl:Axiom"}
 synonym: "Rectified Linear Unit" EXACT []
 synonym: "ReLU" EXACT []
-is_a: https://w3id.org/aio/Function
+is_a: https://w3id.org/aio/Function ! Function
 
 [Term]
 id: https://w3id.org/aio/ReLULayer
@@ -4418,7 +4423,7 @@ name: SELU Function
 def: "The SELU activation function multiplies scale (> 1) with the output of the ELU function to ensure a slope larger than one for positive inputs." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/selu] {type="owl:Axiom"}
 synonym: "Scaled Exponential Linear Unit" EXACT []
 synonym: "SELU" EXACT []
-is_a: https://w3id.org/aio/Function
+is_a: https://w3id.org/aio/Function ! Function
 
 [Term]
 id: https://w3id.org/aio/SelectionAndSamplingBias
@@ -4475,7 +4480,7 @@ is_a: https://w3id.org/aio/ConvolutionalLayer ! Convolutional Layer
 id: https://w3id.org/aio/SigmoidFunction
 name: Sigmoid Function
 def: "Applies the sigmoid activation function sigmoid(x) = 1 / (1 + exp(-x)). For small values (<-5), sigmoid returns a value close to zero, and for large values (>5) the result of the function gets close to 1. Sigmoid is equivalent to a 2-element Softmax, where the second element is assumed to be zero. The sigmoid function always returns a value between 0 and 1." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/sigmoid] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/Function
+is_a: https://w3id.org/aio/Function ! Function
 
 [Term]
 id: https://w3id.org/aio/SimpleRNNCellLayer
@@ -4507,7 +4512,7 @@ is_a: https://w3id.org/aio/Bias ! Bias
 id: https://w3id.org/aio/SoftmaxFunction
 name: Softmax Function
 def: "The elements of the output vector are in range (0, 1) and sum to 1. Each vector is handled independently. The axis argument sets which axis of the input the function is applied along. Softmax is often used as the activation for the last layer of a classification network because the result could be interpreted as a probability distribution. The softmax of each vector x is computed as exp(x) / tf.reduce_sum(exp(x)). The input values in are the log-odds of the resulting probability." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/softmax] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/Function
+is_a: https://w3id.org/aio/Function ! Function
 
 [Term]
 id: https://w3id.org/aio/SoftmaxLayer
@@ -4519,13 +4524,13 @@ is_a: https://w3id.org/aio/ActivationLayer ! Activation Layer
 id: https://w3id.org/aio/SoftplusFunction
 name: Softplus Function
 def: "softplus(x) = log(exp(x) + 1)" [https://www.tensorflow.org/api_docs/python/tf/keras/activations/softplus] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/Function
+is_a: https://w3id.org/aio/Function ! Function
 
 [Term]
 id: https://w3id.org/aio/SoftsignFunction
 name: Softsign Function
 def: "softsign(x) = x / (abs(x) + 1)" [https://www.tensorflow.org/api_docs/python/tf/keras/activations/softsign] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/Function
+is_a: https://w3id.org/aio/Function ! Function
 
 [Term]
 id: https://w3id.org/aio/SparseAE
@@ -4668,7 +4673,7 @@ is_a: https://w3id.org/aio/ProcessingBias ! Processing Bias
 id: https://w3id.org/aio/SwishFunction
 name: Swish Function
 def: "x*sigmoid(x). It is a smooth, non-monotonic function that consistently matches or outperforms ReLU on deep networks, it is unbounded above and bounded below." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/swish] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/Function
+is_a: https://w3id.org/aio/Function ! Function
 
 [Term]
 id: https://w3id.org/aio/SymmetricallyConnectedNetwork
@@ -4697,7 +4702,7 @@ id: https://w3id.org/aio/TanhFunction
 name: Tanh Function
 def: "Hyperbolic tangent activation function." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/tanh] {type="owl:Axiom"}
 synonym: "hyperbolic tangent" EXACT []
-is_a: https://w3id.org/aio/Function
+is_a: https://w3id.org/aio/Function ! Function
 
 [Term]
 id: https://w3id.org/aio/TemporalBias
@@ -5296,7 +5301,7 @@ property_value: IAO:0000116 "A role inheres in its bearer at all times for which
 property_value: IAO:0000118 "is role of" xsd:string
 property_value: IAO:0000118 "role_of" xsd:string
 is_a: RO:0000052 ! inheres in
-inverse_of: RO:0000087 ! has_role
+inverse_of: RO:0000087 ! has role
 
 [Typedef]
 id: RO:0000085

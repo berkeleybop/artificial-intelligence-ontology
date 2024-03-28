@@ -103,6 +103,7 @@ INFO	missing_superclass	obo:ARTIFICIAL-INTELLIGENCE-ONTOLOGY_0000000	rdfs:subCla
 INFO	missing_superclass	https://w3id.org/aio/Bias	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/DataEnhancement	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/DataPreparation	rdfs:subClassOf	
+INFO	missing_superclass	https://w3id.org/aio/Function	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/LargeLanguageModel	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/Layer	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/Method	rdfs:subClassOf	

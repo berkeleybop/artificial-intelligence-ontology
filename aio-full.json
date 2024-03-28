@@ -16477,6 +16477,15 @@
         } ]
       }
     }, {
+      "id" : "https://w3id.org/aio/Function",
+      "lbl" : "Function",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Function parent class"
+        }
+      }
+    }, {
       "id" : "https://w3id.org/aio/FundingBias",
       "lbl" : "Funding Bias",
       "type" : "CLASS",

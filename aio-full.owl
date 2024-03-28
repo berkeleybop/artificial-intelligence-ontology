@@ -8676,7 +8676,10 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
     <!-- https://w3id.org/aio/Function -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/Function"/>
+    <owl:Class rdf:about="https://w3id.org/aio/Function">
+        <obo:IAO_0000115>Function parent class</obo:IAO_0000115>
+        <rdfs:label>Function</rdfs:label>
+    </owl:Class>
     
 
 
