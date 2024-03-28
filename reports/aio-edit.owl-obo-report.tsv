@@ -1,6 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	multiple_definitions	https://w3id.org/aio/TransferLearning	IAO:0000115	Methods which can reuse or transfer information from previously learned tasks for the Learning of new tasks.
-ERROR	multiple_definitions	https://w3id.org/aio/TransferLearning	IAO:0000115	Starting the training from a model already trained on a related task to reduce training time and improve performance on tasks with limited data.
 WARN	duplicate_exact_synonym	https://w3id.org/aio/Biclustering	oboInOwl:hasExactSynonym	Two-way Clustering
 WARN	duplicate_exact_synonym	https://w3id.org/aio/UnsupervisedBiclustering	oboInOwl:hasExactSynonym	Two-way Clustering
 WARN	duplicate_exact_synonym	https://w3id.org/aio/Biclustering	oboInOwl:hasExactSynonym	Two-mode Clustering
@@ -82,7 +80,6 @@ WARN	duplicate_label_synonym	https://w3id.org/aio/PersonalizedLLM	oboInOwl:hasEx
 WARN	duplicate_label_synonym	https://w3id.org/aio/Prompt-basedFine-TuningLLM	oboInOwl:hasExactSynonym	Prompt-based Fine-Tuning LLM
 WARN	duplicate_label_synonym	https://w3id.org/aio/RationalLLM	oboInOwl:hasExactSynonym	Rational LLM
 WARN	duplicate_label_synonym	https://w3id.org/aio/RecursiveLLM	oboInOwl:hasExactSynonym	Recursive LLM
-WARN	duplicate_label_synonym	https://w3id.org/aio/RecursiveLanguageModel	oboInOwl:hasExactSynonym	Recursive Language Model
 WARN	duplicate_label_synonym	https://w3id.org/aio/ReinforcementLearningLLM	oboInOwl:hasExactSynonym	Reinforcement Learning LLM
 WARN	duplicate_label_synonym	https://w3id.org/aio/ReshapeLayer	oboInOwl:hasExactSynonym	Reshape Layer
 WARN	duplicate_label_synonym	https://w3id.org/aio/Retrieval-AugmentedLLM	oboInOwl:hasExactSynonym	Retrieval-Augmented LLM

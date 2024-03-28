@@ -14537,16 +14537,6 @@
         }
       }
     }, {
-      "id" : "https://w3id.org/aio/AdvancedTechniques",
-      "lbl" : "Advanced Techniques",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "An abstract parent class grouping LLMs based on advanced techniques.",
-          "xrefs" : [ "TBD" ]
-        }
-      }
-    }, {
       "id" : "https://w3id.org/aio/Adversarial-ResistantLLM",
       "lbl" : "Adversarial-Resistant LLM",
       "type" : "CLASS",
@@ -14612,7 +14602,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An abstract parent class grouping LLMs based on application focus.",
+          "val" : "An abstract parent class grouping LLMs based on model application focus.",
           "xrefs" : [ "TBD" ]
         }
       }
@@ -15855,12 +15845,15 @@
       "meta" : {
         "definition" : {
           "val" : "Denoising Auto Encoders (DAEs) take a partially corrupted input and are trained to recover the original undistorted input. In practice, the objective of denoising autoencoders is that of cleaning the corrupted input, or denoising. (https://en.wikipedia.org/wiki/Autoencoder)",
-          "xrefs" : [ "TBD" ]
+          "xrefs" : [ "https://doi.org/10.1145/1390156.1390294" ]
         },
         "comments" : [ "Noisy Input, Hidden, Matched Output-Input" ],
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "DAE"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Denoising Autoencoder"
         } ]
       }
     }, {
@@ -15994,7 +15987,7 @@
       "meta" : {
         "definition" : {
           "val" : "Knowledge distillation involves training a smaller model to replicate the behavior of a larger model, aiming to compress the knowledge into a more compact form without significant loss of performance.",
-          "xrefs" : [ "TBD" ]
+          "xrefs" : [ "https://doi.org/10.48550/arXiv.2105.13093" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -16211,7 +16204,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An abstract parent class grouping LLMs based on enhancement strategies.",
+          "val" : "An abstract parent class grouping LLMs based on model enhancement strategies.",
           "xrefs" : [ "TBD" ]
         }
       }
@@ -16860,7 +16853,7 @@
       "meta" : {
         "definition" : {
           "val" : "A graph LLM operates over structured inputs/outputs represented as graphs, enabling reasoning over explicit relational knowledge representations during language tasks.",
-          "xrefs" : [ "TBD" ]
+          "xrefs" : [ "https://doi.org/10.48550/arXiv.2311.12399" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -17266,6 +17259,26 @@
         }
       }
     }, {
+      "id" : "https://w3id.org/aio/InterfaceandIntegration",
+      "lbl" : "Interface and Integration",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An abstract parent class grouping LLMs based on model interfaces and integration.",
+          "xrefs" : [ "TBD" ]
+        }
+      }
+    }, {
+      "id" : "https://w3id.org/aio/InterpretabilityandEthics",
+      "lbl" : "Interpretability and Ethics",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An abstract parent class grouping LLMs based on model interpretability and ethics.",
+          "xrefs" : [ "TBD" ]
+        }
+      }
+    }, {
       "id" : "https://w3id.org/aio/InterpretableLLM",
       "lbl" : "Interpretable LLM",
       "type" : "CLASS",
@@ -17364,6 +17377,29 @@
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "knowledge integration"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/aio/KnowledgeTransfer",
+      "lbl" : "Knowledge Transfer",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Starting the training from a model already trained on a related task to reduce training time and improve performance on tasks with limited data.",
+          "xrefs" : [ "https://doi.org/10.1016/j.knosys.2015.01.010" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Inductive Transfer"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Skill Acquisition"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "Adaptation"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "Pretrained models"
         } ]
       }
     }, {
@@ -17652,6 +17688,16 @@
         "definition" : {
           "val" : "Leaky version of a Rectified Linear Unit.",
           "xrefs" : [ "https://www.tensorflow.org/api_docs/python/tf/keras/layers/LeakyReLU" ]
+        }
+      }
+    }, {
+      "id" : "https://w3id.org/aio/LearningParadigms",
+      "lbl" : "Learning Paradigms",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An abstract parent class grouping LLMs based on model learning paradigms.",
+          "xrefs" : [ "TBD" ]
         }
       }
     }, {
@@ -18183,7 +18229,7 @@
       "meta" : {
         "definition" : {
           "val" : "Techniques aimed at making models more efficient, such as knowledge distillation.",
-          "xrefs" : [ "TBD" ]
+          "xrefs" : [ "https://doi.org/10.1145/3578938" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -18587,7 +18633,7 @@
       "meta" : {
         "definition" : {
           "val" : "A range of techniques and processes applied to data before it is used in machine learning models or AI algorithms",
-          "xrefs" : [ "TBD" ]
+          "xrefs" : [ "https://doi.org/10.1109/ICDE.2019.00245" ]
         }
       }
     }, {
@@ -18981,11 +19027,11 @@
       "meta" : {
         "definition" : {
           "val" : "A recursive language model uses recursive neural network architectures like TreeLSTMs to learn syntactic composition functions, improving systematic generalization abilities.",
-          "xrefs" : [ "TBD" ]
+          "xrefs" : [ "https://doi.org/10.1609/aaai.v33i01.33017450" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
-          "val" : "Recursive Language Model"
+          "val" : "RLM"
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "Compositional generalization"
@@ -19419,8 +19465,8 @@
         }
       }
     }, {
-      "id" : "https://w3id.org/aio/SparseAE",
-      "lbl" : "Sparse AE",
+      "id" : "https://w3id.org/aio/SparseAutoEncoder",
+      "lbl" : "Sparse Auto Encoder",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -19431,6 +19477,12 @@
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "SAE"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Sparse AE"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Sparse Autoencoder"
         } ]
       }
     }, {
@@ -19845,16 +19897,6 @@
         } ]
       }
     }, {
-      "id" : "https://w3id.org/aio/TrainingParadigm",
-      "lbl" : "Training Paradigm",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "An abstract parent class grouping LLMs based on training paradigm.",
-          "xrefs" : [ "TBD" ]
-        }
-      }
-    }, {
       "id" : "https://w3id.org/aio/TrainingStrategies",
       "lbl" : "Training Strategies",
       "type" : "CLASS",
@@ -19877,22 +19919,9 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Starting the training from a model already trained on a related task to reduce training time and improve performance on tasks with limited data.",
-          "xrefs" : [ "TBD" ]
-        },
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
-          "val" : "Knowledge Transfer"
-        }, {
-          "pred" : "hasExactSynonym",
-          "val" : "Skill Acquisition"
-        }, {
-          "pred" : "hasRelatedSynonym",
-          "val" : "Adaptation"
-        }, {
-          "pred" : "hasRelatedSynonym",
-          "val" : "Pretrained models"
-        } ]
+          "val" : "Methods which can reuse or transfer information from previously learned tasks for the Learning of new tasks.",
+          "xrefs" : [ "https://en.wikipedia.org/wiki/Transfer_learning" ]
+        }
       }
     }, {
       "id" : "https://w3id.org/aio/TransferLearningLLM",
@@ -21055,10 +21084,6 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/AttentionLayer"
     }, {
-      "sub" : "https://w3id.org/aio/AdvancedTechniques",
-      "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LargeLanguageModel"
-    }, {
       "sub" : "https://w3id.org/aio/Adversarial-ResistantLLM",
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/EnhancementStrategies"
@@ -21105,7 +21130,7 @@
     }, {
       "sub" : "https://w3id.org/aio/AutoregressiveLanguageModel",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LargeLanguageModel"
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/AvailabilityHeuristicBias",
       "pred" : "is_a",
@@ -21193,7 +21218,7 @@
     }, {
       "sub" : "https://w3id.org/aio/CausalLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/AdvancedTechniques"
+      "obj" : "https://w3id.org/aio/InterpretabilityandEthics"
     }, {
       "sub" : "https://w3id.org/aio/CenterCropLayer",
       "pred" : "is_a",
@@ -21217,7 +21242,7 @@
     }, {
       "sub" : "https://w3id.org/aio/CompositionalGeneralizationLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LargeLanguageModel"
+      "obj" : "https://w3id.org/aio/LearningParadigms"
     }, {
       "sub" : "https://w3id.org/aio/ComputationalBias",
       "pred" : "is_a",
@@ -21249,7 +21274,7 @@
     }, {
       "sub" : "https://w3id.org/aio/ContinualLearningLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/TrainingParadigm"
+      "obj" : "https://w3id.org/aio/LearningParadigms"
     }, {
       "sub" : "https://w3id.org/aio/ContrastiveLearning",
       "pred" : "is_a",
@@ -21257,7 +21282,7 @@
     }, {
       "sub" : "https://w3id.org/aio/ContrastiveLearningLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/AdvancedTechniques"
+      "obj" : "https://w3id.org/aio/LearningParadigms"
     }, {
       "sub" : "https://w3id.org/aio/ControllableLLM",
       "pred" : "is_a",
@@ -21317,7 +21342,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Cross-DomainLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/EnhancementStrategies"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/CurriculumLearning",
       "pred" : "is_a",
@@ -21325,11 +21350,11 @@
     }, {
       "sub" : "https://w3id.org/aio/CurriculumLearningLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/AdvancedTechniques"
+      "obj" : "https://w3id.org/aio/LearningParadigms"
     }, {
       "sub" : "https://w3id.org/aio/Data-to-TextLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/AdvancedTechniques"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/DataAugmentation",
       "pred" : "is_a",
@@ -21445,7 +21470,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Domain-AdaptedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/ApplicationFocus"
+      "obj" : "https://w3id.org/aio/EnhancementStrategies"
     }, {
       "sub" : "https://w3id.org/aio/DotLayer",
       "pred" : "is_a",
@@ -21497,7 +21522,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Energy-BasedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/EnhancementStrategies"
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/EnhancementStrategies",
       "pred" : "is_a",
@@ -21521,7 +21546,7 @@
     }, {
       "sub" : "https://w3id.org/aio/EvolutionaryLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/EnhancementStrategies"
+      "obj" : "https://w3id.org/aio/LearningParadigms"
     }, {
       "sub" : "https://w3id.org/aio/ExclusionBias",
       "pred" : "is_a",
@@ -21529,7 +21554,7 @@
     }, {
       "sub" : "https://w3id.org/aio/ExplainableLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/AdvancedTechniques"
+      "obj" : "https://w3id.org/aio/InterpretabilityandEthics"
     }, {
       "sub" : "https://w3id.org/aio/ExponentialFunction",
       "pred" : "is_a",
@@ -21541,7 +21566,7 @@
     }, {
       "sub" : "https://w3id.org/aio/FactorizedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LargeLanguageModel"
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/FeatureExtraction",
       "pred" : "is_a",
@@ -21549,7 +21574,7 @@
     }, {
       "sub" : "https://w3id.org/aio/FederatedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/TrainingParadigm"
+      "obj" : "https://w3id.org/aio/EnhancementStrategies"
     }, {
       "sub" : "https://w3id.org/aio/FederatedLearning",
       "pred" : "is_a",
@@ -21621,7 +21646,7 @@
     }, {
       "sub" : "https://w3id.org/aio/GenerativeAdversarialNetwork-AugmentedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/ApplicationFocus"
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/GenerativeCommonsenseLLM",
       "pred" : "is_a",
@@ -21629,11 +21654,11 @@
     }, {
       "sub" : "https://w3id.org/aio/GenerativeLanguageCircuit",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/AdvancedTechniques"
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/GenerativeLanguageInterface",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LargeLanguageModel"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/GlobalAveragePooling1DLayer",
       "pred" : "is_a",
@@ -21669,7 +21694,7 @@
     }, {
       "sub" : "https://w3id.org/aio/GraphLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/AdvancedTechniques"
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/GroupBias",
       "pred" : "is_a",
@@ -21741,7 +21766,7 @@
     }, {
       "sub" : "https://w3id.org/aio/ImplicitLanguageModel",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LargeLanguageModel"
+      "obj" : "https://w3id.org/aio/InterpretabilityandEthics"
     }, {
       "sub" : "https://w3id.org/aio/IncremenetalFew-shotLearning",
       "pred" : "is_a",
@@ -21791,9 +21816,17 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/CategoricalFeaturesPreprocessingLayer"
     }, {
+      "sub" : "https://w3id.org/aio/InterfaceandIntegration",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/aio/LargeLanguageModel"
+    }, {
+      "sub" : "https://w3id.org/aio/InterpretabilityandEthics",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/aio/LargeLanguageModel"
+    }, {
       "sub" : "https://w3id.org/aio/InterpretableLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/EnhancementStrategies"
+      "obj" : "https://w3id.org/aio/InterpretabilityandEthics"
     }, {
       "sub" : "https://w3id.org/aio/InterpretationBias",
       "pred" : "is_a",
@@ -21817,7 +21850,11 @@
     }, {
       "sub" : "https://w3id.org/aio/Knowledge-GroundedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/ApplicationFocus"
+      "obj" : "https://w3id.org/aio/EnhancementStrategies"
+    }, {
+      "sub" : "https://w3id.org/aio/KnowledgeTransfer",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/aio/TrainingStrategies"
     }, {
       "sub" : "https://w3id.org/aio/KohonenNetwork",
       "pred" : "is_a",
@@ -21845,7 +21882,7 @@
     }, {
       "sub" : "https://w3id.org/aio/LanguageInterfaceLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/AdvancedTechniques"
+      "obj" : "https://w3id.org/aio/InterfaceandIntegration"
     }, {
       "sub" : "https://w3id.org/aio/LassoRegression",
       "pred" : "is_a",
@@ -21891,13 +21928,17 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/ActivationLayer"
     }, {
+      "sub" : "https://w3id.org/aio/LearningParadigms",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
+    }, {
       "sub" : "https://w3id.org/aio/Least-squaresAnalysis",
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/RegressionAnalysis"
     }, {
       "sub" : "https://w3id.org/aio/LifelongLearningLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/AdvancedTechniques"
+      "obj" : "https://w3id.org/aio/LearningParadigms"
     }, {
       "sub" : "https://w3id.org/aio/LinearFunction",
       "pred" : "is_a",
@@ -21945,7 +21986,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Low-ResourceLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/EnhancementStrategies"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/MachineLearning",
       "pred" : "is_a",
@@ -21961,7 +22002,7 @@
     }, {
       "sub" : "https://w3id.org/aio/MaskedLanguageModel",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/EncoderLLM"
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/MaskingLayer",
       "pred" : "is_a",
@@ -22001,7 +22042,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Memory-AugmentedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LargeLanguageModel"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/MergingLayer",
       "pred" : "is_a",
@@ -22013,7 +22054,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Meta-LearningLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/TrainingParadigm"
+      "obj" : "https://w3id.org/aio/LearningParadigms"
     }, {
       "sub" : "https://w3id.org/aio/MetricLearning",
       "pred" : "is_a",
@@ -22031,10 +22072,6 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/IndividualBias"
     }, {
-      "sub" : "https://w3id.org/aio/ModelArchitecture",
-      "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LargeLanguageModel"
-    }, {
       "sub" : "https://w3id.org/aio/ModelEfficiency",
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/Preprocessing"
@@ -22049,7 +22086,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Multi-TaskLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/ApplicationFocus"
+      "obj" : "https://w3id.org/aio/InterpretabilityandEthics"
     }, {
       "sub" : "https://w3id.org/aio/MultiHeadAttentionLayer",
       "pred" : "is_a",
@@ -22065,7 +22102,7 @@
     }, {
       "sub" : "https://w3id.org/aio/MultilingualLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LargeLanguageModel"
+      "obj" : "https://w3id.org/aio/LearningParadigms"
     }, {
       "sub" : "https://w3id.org/aio/MultimodalDeepLearning",
       "pred" : "is_a",
@@ -22073,7 +22110,11 @@
     }, {
       "sub" : "https://w3id.org/aio/MultimodalFusionLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/AdvancedTechniques"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
+    }, {
+      "sub" : "https://w3id.org/aio/MultimodalFusionLLM",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/aio/EnhancementStrategies"
     }, {
       "sub" : "https://w3id.org/aio/MultimodalLearning",
       "pred" : "is_a",
@@ -22081,7 +22122,7 @@
     }, {
       "sub" : "https://w3id.org/aio/MultimodalTransformer",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/ApplicationFocus"
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/MultiplyLayer",
       "pred" : "is_a",
@@ -22101,7 +22142,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Neuro-SymbolicLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/ApplicationFocus"
+      "obj" : "https://w3id.org/aio/InterpretabilityandEthics"
     }, {
       "sub" : "https://w3id.org/aio/NoiseDenseLayer",
       "pred" : "is_a",
@@ -22121,7 +22162,7 @@
     }, {
       "sub" : "https://w3id.org/aio/OrdinalLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/AdvancedTechniques"
+      "obj" : "https://w3id.org/aio/InterpretabilityandEthics"
     }, {
       "sub" : "https://w3id.org/aio/OutputLayer",
       "pred" : "is_a",
@@ -22141,7 +22182,7 @@
     }, {
       "sub" : "https://w3id.org/aio/PersonalizedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LargeLanguageModel"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/PoolingLayer",
       "pred" : "is_a",
@@ -22181,7 +22222,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Prompt-basedFine-TuningLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/TrainingParadigm"
+      "obj" : "https://w3id.org/aio/LearningParadigms"
     }, {
       "sub" : "https://w3id.org/aio/ProportionalHazardsModel",
       "pred" : "is_a",
@@ -22253,7 +22294,7 @@
     }, {
       "sub" : "https://w3id.org/aio/RationalLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LargeLanguageModel"
+      "obj" : "https://w3id.org/aio/ApplicationFocus"
     }, {
       "sub" : "https://w3id.org/aio/ReLUFunction",
       "pred" : "is_a",
@@ -22277,7 +22318,7 @@
     }, {
       "sub" : "https://w3id.org/aio/RecursiveLanguageModel",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/AdvancedTechniques"
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/RecursiveNeuralNetwork",
       "pred" : "is_a",
@@ -22297,7 +22338,7 @@
     }, {
       "sub" : "https://w3id.org/aio/ReinforcementLearningLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/TrainingParadigm"
+      "obj" : "https://w3id.org/aio/LearningParadigms"
     }, {
       "sub" : "https://w3id.org/aio/RepeatVectorLayer",
       "pred" : "is_a",
@@ -22337,7 +22378,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Retrieval-AugmentedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/ApplicationFocus"
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/RidgeRegression",
       "pred" : "is_a",
@@ -22357,7 +22398,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Self-SupervisedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/TrainingParadigm"
+      "obj" : "https://w3id.org/aio/LearningParadigms"
     }, {
       "sub" : "https://w3id.org/aio/Self-supervisedLearning",
       "pred" : "is_a",
@@ -22365,7 +22406,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Semi-SupervisedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/TrainingParadigm"
+      "obj" : "https://w3id.org/aio/LearningParadigms"
     }, {
       "sub" : "https://w3id.org/aio/SeparableConvolution1DLayer",
       "pred" : "is_a",
@@ -22407,13 +22448,13 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/Function"
     }, {
-      "sub" : "https://w3id.org/aio/SparseAE",
+      "sub" : "https://w3id.org/aio/SparseAutoEncoder",
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/AutoEncoderNetwork"
     }, {
       "sub" : "https://w3id.org/aio/SparseLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/TrainingParadigm"
+      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/SparseLearning",
       "pred" : "is_a",
@@ -22535,10 +22576,6 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/DataPreparation"
     }, {
-      "sub" : "https://w3id.org/aio/TrainingParadigm",
-      "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/LargeLanguageModel"
-    }, {
       "sub" : "https://w3id.org/aio/TrainingStrategies",
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/Preprocessing"
@@ -22547,13 +22584,9 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/MachineLearning"
     }, {
-      "sub" : "https://w3id.org/aio/TransferLearning",
-      "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/TrainingStrategies"
-    }, {
       "sub" : "https://w3id.org/aio/TransferLearningLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/EnhancementStrategies"
+      "obj" : "https://w3id.org/aio/LearningParadigms"
     }, {
       "sub" : "https://w3id.org/aio/TransformerNetwork",
       "pred" : "is_a",
@@ -22577,7 +22610,7 @@
     }, {
       "sub" : "https://w3id.org/aio/UnsupervisedLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/TrainingParadigm"
+      "obj" : "https://w3id.org/aio/LearningParadigms"
     }, {
       "sub" : "https://w3id.org/aio/UnsupervisedLearning",
       "pred" : "is_a",
@@ -22617,7 +22650,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Zero-ShotLearningLLM",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/EnhancementStrategies"
+      "obj" : "https://w3id.org/aio/LearningParadigms"
     }, {
       "sub" : "https://w3id.org/aio/Zero-shotLearning",
       "pred" : "is_a",

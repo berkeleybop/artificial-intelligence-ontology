@@ -988,8 +988,8 @@ name: regulatory agency
 def: "A regulatory agency is a organization that has responsibility over or for  the legislation (acts and regulations) for a given sector of the government." []
 is_a: OBI:0000245 ! organization
 intersection_of: OBI:0000245 ! organization
-intersection_of: RO:0000087 OBI:0000014 ! has role regulator role
-relationship: RO:0000087 OBI:0000014 ! has role regulator role
+intersection_of: RO:0000087 OBI:0000014 ! has_role regulator role
+relationship: RO:0000087 OBI:0000014 ! has_role regulator role
 property_value: IAO:0000111 "regulatory agency" xsd:string
 property_value: IAO:0000112 "The US Environmental Protection Agency" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1212,7 +1212,7 @@ id: OBI:0000835
 name: manufacturer
 def: "A person or organization that has a manufacturer role" []
 is_a: BFO:0000040 ! material entity
-relationship: RO:0000087 OBI:0000571 ! has role manufacturer role
+relationship: RO:0000087 OBI:0000571 ! has_role manufacturer role
 property_value: IAO:0000111 "manufacturer" xsd:string
 property_value: IAO:0000114 IAO:0000123
 
@@ -1579,7 +1579,7 @@ id: OBI:0002989
 name: material supplier
 def: "A person or organization that provides material supplies to other people or organizations." []
 is_a: BFO:0000040 ! material entity
-relationship: RO:0000087 OBI:0000018 ! has role material supplier role
+relationship: RO:0000087 OBI:0000018 ! has_role material supplier role
 property_value: IAO:0000111 "material supplier" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "Rebecca Jackson" xsd:string
@@ -1611,8 +1611,8 @@ name: specimen
 def: "A material entity that has the specimen role." []
 is_a: BFO:0000040 ! material entity
 intersection_of: BFO:0000040 ! material entity
-intersection_of: RO:0000087 OBI:0000112 ! has role specimen role
-relationship: RO:0000087 OBI:0000112 ! has role specimen role
+intersection_of: RO:0000087 OBI:0000112 ! has_role specimen role
+relationship: RO:0000087 OBI:0000112 ! has_role specimen role
 property_value: IAO:0000111 "specimen" xsd:string
 property_value: IAO:0000112 "Biobanking of blood taken and stored in a freezer for potential future investigations stores specimen." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1866,14 +1866,14 @@ id: SWO:0000396
 name: software developer organization
 def: "An organization or legal entity (including single person) that is responsible for developing software. Developing includes aspects of design, coding and testing." []
 is_a: OBI:0000245 ! organization
-relationship: RO:0000087 SWO:0000392 ! has role software developer role
+relationship: RO:0000087 SWO:0000392 ! has_role software developer role
 
 [Term]
 id: SWO:0000397
 name: software publisher organization
 def: "An organization or legal entity (including single person) that is responsible for publishing software. Publishing here includes tasks such as designing and producing physical products, technical customer support, licensing arrangements and marketing." []
 is_a: OBI:0000245 ! organization
-relationship: RO:0000087 SWO:0000260 ! has role publisher role
+relationship: RO:0000087 SWO:0000260 ! has_role publisher role
 
 [Term]
 id: UO:0000001
@@ -2040,12 +2040,6 @@ def: "Additive attention layer, a.k.a. Bahdanau-style attention." [https://www.t
 is_a: https://w3id.org/aio/AttentionLayer ! Attention Layer
 
 [Term]
-id: https://w3id.org/aio/AdvancedTechniques
-name: Advanced Techniques
-def: "An abstract parent class grouping LLMs based on advanced techniques." [TBD] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
-
-[Term]
 id: https://w3id.org/aio/Adversarial-ResistantLLM
 name: Adversarial-Resistant LLM
 def: "An adversarial-resistant LLM is engineered to withstand or mitigate the effects of adversarial attacks, ensuring reliable performance even in the presence of deliberately misleading input designed to confuse the model." [TBD] {type="owl:Axiom"}
@@ -2081,7 +2075,7 @@ is_a: https://w3id.org/aio/IndividualBias ! Individual Bias
 [Term]
 id: https://w3id.org/aio/ApplicationFocus
 name: Application Focus
-def: "An abstract parent class grouping LLMs based on application focus." [TBD] {type="owl:Axiom"}
+def: "An abstract parent class grouping LLMs based on model application focus." [TBD] {type="owl:Axiom"}
 is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
@@ -2126,7 +2120,7 @@ def: "An autoregressive language model is a type of language model that generate
 synonym: "Autoregressive Language Model" EXACT []
 synonym: "generative language model" RELATED []
 synonym: "sequence-to-sequence model" RELATED []
-is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
+is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 
 [Term]
 id: https://w3id.org/aio/AvailabilityHeuristicBias
@@ -2301,7 +2295,7 @@ def: "A causal LLM only attends to previous tokens in the sequence when generati
 synonym: "autoregressive" RELATED []
 synonym: "Causal LLM" EXACT []
 synonym: "unidirectional" RELATED []
-is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
+is_a: https://w3id.org/aio/InterpretabilityandEthics ! Interpretability and Ethics
 
 [Term]
 id: https://w3id.org/aio/CenterCropLayer
@@ -2345,7 +2339,7 @@ def: "A compositional generalization LLM is trained to understand and recombine 
 synonym: "Compositional Generalization LLM" EXACT []
 synonym: "out-of-distribution generalization" RELATED []
 synonym: "systematic generalization" RELATED []
-is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
+is_a: https://w3id.org/aio/LearningParadigms ! Learning Paradigms
 
 [Term]
 id: https://w3id.org/aio/ComputationalBias
@@ -2401,7 +2395,7 @@ synonym: "catastrophic forgetting" RELATED []
 synonym: "CL-LLM" EXACT []
 synonym: "Continual Learning LLM" EXACT []
 synonym: "lifelong learning" RELATED []
-is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
+is_a: https://w3id.org/aio/LearningParadigms ! Learning Paradigms
 
 [Term]
 id: https://w3id.org/aio/ContrastiveLearning
@@ -2415,7 +2409,7 @@ name: Contrastive Learning LLM
 def: "A contrastive learning LLM is trained to pull semantically similar samples closer together and push dissimilar samples apart in the representation space, learning high-quality features useful for downstream tasks." [TBD] {type="owl:Axiom"}
 synonym: "Contrastive Learning LLM" EXACT []
 synonym: "Representation learning" RELATED []
-is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
+is_a: https://w3id.org/aio/LearningParadigms ! Learning Paradigms
 
 [Term]
 id: https://w3id.org/aio/ControllableLLM
@@ -2541,7 +2535,7 @@ def: "A cross-domain LLM is capable of performing well across a wide range of do
 synonym: "cross-domain transfer" RELATED []
 synonym: "domain adaptation" RELATED []
 synonym: "Domain-General LLM" EXACT []
-is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/CurriculumLearning
@@ -2559,7 +2553,7 @@ name: Curriculum Learning LLM
 def: "A curriculum learning LLM is trained by presenting learning examples in a meaningful order from simple to complex, mimicking the learning trajectory followed by humans." [TBD] {type="owl:Axiom"}
 synonym: "Curriculum Learning LLM" EXACT []
 synonym: "Learning progression" RELATED []
-is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
+is_a: https://w3id.org/aio/LearningParadigms ! Learning Paradigms
 
 [Term]
 id: https://w3id.org/aio/Data-to-TextLLM
@@ -2567,7 +2561,7 @@ name: Data-to-Text LLM
 def: "A data-to-text LLM generates natural language descriptions from structured data sources like tables, graphs, knowledge bases, etc. Requiring grounding meaning representations." [TBD] {type="owl:Axiom"}
 synonym: "Data-to-Text LLM" EXACT []
 synonym: "Meaning representation" EXACT []
-is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/DataAugmentation
@@ -2696,9 +2690,10 @@ is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 [Term]
 id: https://w3id.org/aio/DenoisingAutoEncoder
 name: Denoising Auto Encoder
-def: "Denoising Auto Encoders (DAEs) take a partially corrupted input and are trained to recover the original undistorted input. In practice, the objective of denoising autoencoders is that of cleaning the corrupted input, or denoising. (https://en.wikipedia.org/wiki/Autoencoder)" [TBD] {type="owl:Axiom"}
+def: "Denoising Auto Encoders (DAEs) take a partially corrupted input and are trained to recover the original undistorted input. In practice, the objective of denoising autoencoders is that of cleaning the corrupted input, or denoising. (https://en.wikipedia.org/wiki/Autoencoder)" [https://doi.org/10.1145/1390156.1390294] {type="owl:Axiom"}
 comment: Noisy Input, Hidden, Matched Output-Input
 synonym: "DAE" EXACT []
+synonym: "Denoising Autoencoder" EXACT []
 is_a: https://w3id.org/aio/AutoEncoderNetwork ! Auto Encoder Network
 
 [Term]
@@ -2771,7 +2766,7 @@ is_a: https://w3id.org/aio/NumericalFeaturesPreprocessingLayer ! Numerical Featu
 [Term]
 id: https://w3id.org/aio/Distillation
 name: Distillation
-def: "Knowledge distillation involves training a smaller model to replicate the behavior of a larger model, aiming to compress the knowledge into a more compact form without significant loss of performance." [TBD] {type="owl:Axiom"}
+def: "Knowledge distillation involves training a smaller model to replicate the behavior of a larger model, aiming to compress the knowledge into a more compact form without significant loss of performance." [https://doi.org/10.48550/arXiv.2105.13093] {type="owl:Axiom"}
 synonym: "Knowledge compression" RELATED []
 synonym: "Purification" EXACT []
 synonym: "Refining" EXACT []
@@ -2785,7 +2780,7 @@ def: "A domain-adapted LLM is first pre-trained on a broad corpus, then fine-tun
 synonym: "domain robustness" RELATED []
 synonym: "Domain-Adapted LLM" EXACT []
 synonym: "transfer learning" RELATED []
-is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
+is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
 
 [Term]
 id: https://w3id.org/aio/DotLayer
@@ -2876,12 +2871,12 @@ def: "An energy-based LLM models the explicit probability density over token seq
 synonym: "energy scoring" RELATED []
 synonym: "Energy-Based LLM" EXACT []
 synonym: "explicit density modeling" RELATED []
-is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
+is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 
 [Term]
 id: https://w3id.org/aio/EnhancementStrategies
 name: Enhancement Strategies
-def: "An abstract parent class grouping LLMs based on enhancement strategies." [TBD] {type="owl:Axiom"}
+def: "An abstract parent class grouping LLMs based on model enhancement strategies." [TBD] {type="owl:Axiom"}
 is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
@@ -2919,7 +2914,7 @@ def: "An evolutionary LLM applies principles of evolutionary computation to opti
 synonym: "evolutionary algorithms" RELATED []
 synonym: "Evolutionary Language Model" EXACT []
 synonym: "genetic programming" RELATED []
-is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
+is_a: https://w3id.org/aio/LearningParadigms ! Learning Paradigms
 
 [Term]
 id: https://w3id.org/aio/ExclusionBias
@@ -2935,7 +2930,7 @@ synonym: "Explainable Language Model" EXACT []
 synonym: "interpretability" RELATED []
 synonym: "model understanding" RELATED []
 synonym: "XAI LLM" EXACT []
-is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
+is_a: https://w3id.org/aio/InterpretabilityandEthics ! Interpretability and Ethics
 
 [Term]
 id: https://w3id.org/aio/ExponentialFunction
@@ -2958,7 +2953,7 @@ def: "A factorized LLM decomposes the full language modeling task into multiple 
 synonym: "Conditional masking" RELATED []
 synonym: "Factorized LLM" EXACT []
 synonym: "Product of experts" RELATED []
-is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
+is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 
 [Term]
 id: https://w3id.org/aio/FeatureExtraction
@@ -2977,7 +2972,7 @@ def: "A federated LLM is trained in a decentralized manner across multiple devic
 synonym: "decentralized training" RELATED []
 synonym: "Federated LLM" EXACT []
 synonym: "privacy-preserving" RELATED []
-is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
+is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
 
 [Term]
 id: https://w3id.org/aio/FederatedLearning
@@ -3109,7 +3104,7 @@ synonym: "adversarial training" RELATED []
 synonym: "GAN-LLM" EXACT []
 synonym: "Generative Adversarial Network-Augmented LLM" EXACT []
 synonym: "text generation" RELATED []
-is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
+is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 
 [Term]
 id: https://w3id.org/aio/GenerativeCommonsenseLLM
@@ -3128,7 +3123,7 @@ synonym: "analogy circuit" RELATED []
 synonym: "Generative Language Circuit" EXACT []
 synonym: "GLC" EXACT []
 synonym: "program synthesis" RELATED []
-is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
+is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 
 [Term]
 id: https://w3id.org/aio/GenerativeLanguageInterface
@@ -3136,7 +3131,7 @@ name: Generative Language Interface
 def: "A generative language interface enables users to engage in an interactive dialogue with an LLM, providing feedback to guide and refine the generated outputs iteratively." [TBD] {type="owl:Axiom"}
 synonym: "Generative Language Interface" EXACT []
 synonym: "Interactive generation" RELATED []
-is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/GlobalAveragePooling1DLayer
@@ -3205,10 +3200,10 @@ is_a: https://w3id.org/aio/GraphConvolutionalNetwork ! Graph Convolutional Netwo
 [Term]
 id: https://w3id.org/aio/GraphLLM
 name: Graph LLM
-def: "A graph LLM operates over structured inputs/outputs represented as graphs, enabling reasoning over explicit relational knowledge representations during language tasks." [TBD] {type="owl:Axiom"}
+def: "A graph LLM operates over structured inputs/outputs represented as graphs, enabling reasoning over explicit relational knowledge representations during language tasks." [https://doi.org/10.48550/arXiv.2311.12399] {type="owl:Axiom"}
 synonym: "Graph LLM" EXACT []
 synonym: "Structured representations" RELATED []
-is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
+is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 
 [Term]
 id: https://w3id.org/aio/GroupBias
@@ -3334,7 +3329,7 @@ def: "An implicit language model uses an energy function to score full sequences
 synonym: "Energy-based models" RELATED []
 synonym: "Implicit Language Model" EXACT []
 synonym: "Token-level scoring" RELATED []
-is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
+is_a: https://w3id.org/aio/InterpretabilityandEthics ! Interpretability and Ethics
 
 [Term]
 id: https://w3id.org/aio/IncremenetalFew-shotLearning
@@ -3419,13 +3414,25 @@ def: "A preprocessing layer which maps integer features to contiguous ranges." [
 is_a: https://w3id.org/aio/CategoricalFeaturesPreprocessingLayer ! Categorical Features Preprocessing Layer
 
 [Term]
+id: https://w3id.org/aio/InterfaceandIntegration
+name: Interface and Integration
+def: "An abstract parent class grouping LLMs based on model interfaces and integration." [TBD] {type="owl:Axiom"}
+is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
+
+[Term]
+id: https://w3id.org/aio/InterpretabilityandEthics
+name: Interpretability and Ethics
+def: "An abstract parent class grouping LLMs based on model interpretability and ethics." [TBD] {type="owl:Axiom"}
+is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
+
+[Term]
 id: https://w3id.org/aio/InterpretableLLM
 name: Interpretable LLM
 def: "An interpretable LLM prioritizes transparency and ease of understanding in its operations, making its decision-making processes clear and rational to human users." [TBD] {type="owl:Axiom"}
 synonym: "interpretability" RELATED []
 synonym: "Interpretable Language Model" EXACT []
 synonym: "model transparency" RELATED []
-is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
+is_a: https://w3id.org/aio/InterpretabilityandEthics ! Interpretability and Ethics
 
 [Term]
 id: https://w3id.org/aio/InterpretationBias
@@ -3465,7 +3472,17 @@ def: "A knowledge-grounded LLM incorporates external knowledge sources or knowle
 synonym: "factual grounding" RELATED []
 synonym: "knowledge integration" RELATED []
 synonym: "Knowledge-Grounded LLM" EXACT []
-is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
+is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
+
+[Term]
+id: https://w3id.org/aio/KnowledgeTransfer
+name: Knowledge Transfer
+def: "Starting the training from a model already trained on a related task to reduce training time and improve performance on tasks with limited data." [https://doi.org/10.1016/j.knosys.2015.01.010] {type="owl:Axiom"}
+synonym: "Adaptation" RELATED []
+synonym: "Inductive Transfer" EXACT []
+synonym: "Pretrained models" RELATED []
+synonym: "Skill Acquisition" EXACT []
+is_a: https://w3id.org/aio/TrainingStrategies ! Training Strategies
 
 [Term]
 id: https://w3id.org/aio/KohonenNetwork
@@ -3519,7 +3536,7 @@ name: Language Interface LLM
 def: "A language interface LLM supports interactive semantic parsing, enabling users to provide feedback/corrections which are used to dynamically refine and update the language model." [TBD] {type="owl:Axiom"}
 synonym: "Interactive learning" RELATED []
 synonym: "Language Interface LLM" EXACT []
-is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
+is_a: https://w3id.org/aio/InterfaceandIntegration ! Interface and Integration
 
 [Term]
 id: https://w3id.org/aio/LargeLanguageModel
@@ -3612,6 +3629,12 @@ def: "Leaky version of a Rectified Linear Unit." [https://www.tensorflow.org/api
 is_a: https://w3id.org/aio/ActivationLayer ! Activation Layer
 
 [Term]
+id: https://w3id.org/aio/LearningParadigms
+name: Learning Paradigms
+def: "An abstract parent class grouping LLMs based on model learning paradigms." [TBD] {type="owl:Axiom"}
+is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
+
+[Term]
 id: https://w3id.org/aio/Least-squaresAnalysis
 name: Least-squares Analysis
 def: "A standard approach in regression analysis to approximate the solution of overdetermined systems(sets of equations in which there are more equations than unknowns) by minimizing the sum of the squares of the residuals (a residual being the difference between an observed value and the fitted value provided by a model) made in the results of each individual equation." [https://en.wikipedia.org/wiki/Least_squares] {type="owl:Axiom"}
@@ -3625,7 +3648,7 @@ synonym: "Catastrophic forgetting" RELATED []
 synonym: "Continual Learning LLM" EXACT []
 synonym: "Lifelong Learning LLM" EXACT []
 synonym: "Plasticity-Stability balance" RELATED []
-is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
+is_a: https://w3id.org/aio/LearningParadigms ! Learning Paradigms
 
 [Term]
 id: https://w3id.org/aio/LinearFunction
@@ -3705,7 +3728,7 @@ def: "A low-resource LLM is optimized for performance in scenarios with limited 
 synonym: "Low-Resource Language Model" EXACT []
 synonym: "low-resource languages" RELATED []
 synonym: "resource-efficient" RELATED []
-is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/MachineLearning
@@ -3736,7 +3759,7 @@ def: "A masked language model is a type of language model that is trained to pre
 synonym: "bidirectional encoder" RELATED []
 synonym: "denoising autoencoder" RELATED []
 synonym: "Masked Language Model" EXACT []
-is_a: https://w3id.org/aio/EncoderLLM ! Encoder LLM
+is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 
 [Term]
 id: https://w3id.org/aio/MaskingLayer
@@ -3816,7 +3839,7 @@ name: Memory-Augmented LLM
 def: "A memory-augmented LLM incorporates external writeable and readable memory components, allowing it to store and retrieve information over long contexts." [TBD] {type="owl:Axiom"}
 synonym: "external memory" RELATED []
 synonym: "Memory-Augmented LLM" EXACT []
-is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/MergingLayer
@@ -3837,7 +3860,7 @@ def: "A meta-learning LLM is trained in a way that allows it to quickly adapt to
 synonym: "few-shot adaptation" RELATED []
 synonym: "learning to learn" RELATED []
 synonym: "Meta-Learning LLM" EXACT []
-is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
+is_a: https://w3id.org/aio/LearningParadigms ! Learning Paradigms
 
 [Term]
 id: https://w3id.org/aio/Method
@@ -3877,12 +3900,11 @@ is_a: https://w3id.org/aio/IndividualBias ! Individual Bias
 id: https://w3id.org/aio/ModelArchitecture
 name: Model Architecture
 def: "An abstract parent class grouping LLMs based on model architecture." [TBD] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/ModelEfficiency
 name: Model Efficiency
-def: "Techniques aimed at making models more efficient, such as knowledge distillation." [TBD] {type="owl:Axiom"}
+def: "Techniques aimed at making models more efficient, such as knowledge distillation." [https://doi.org/10.1145/3578938] {type="owl:Axiom"}
 synonym: "Computational Efficiency" EXACT []
 synonym: "Model Optimization" EXACT []
 is_a: https://w3id.org/aio/Preprocessing ! Preprocessing
@@ -3908,7 +3930,7 @@ name: Multi-Task LLM
 def: "A multi-task LLM is trained jointly on multiple language tasks simultaneously, learning shared representations that transfer across tasks." [TBD] {type="owl:Axiom"}
 synonym: "Multi-Task LLM" EXACT []
 synonym: "transfer learning" RELATED []
-is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
+is_a: https://w3id.org/aio/InterpretabilityandEthics ! Interpretability and Ethics
 
 [Term]
 id: https://w3id.org/aio/MultiHeadAttentionLayer
@@ -3936,7 +3958,7 @@ name: Multilingual LLM
 def: "A multilingual LLM is trained on text from multiple languages, learning shared representations that enable zero-shot or few-shot transfer to new languages." [TBD] {type="owl:Axiom"}
 synonym: "cross-lingual transfer" RELATED []
 synonym: "Multilingual LLM" EXACT []
-is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
+is_a: https://w3id.org/aio/LearningParadigms ! Learning Paradigms
 
 [Term]
 id: https://w3id.org/aio/MultimodalDeepLearning
@@ -3950,7 +3972,8 @@ name: Multimodal Fusion LLM
 def: "A multimodal fusion LLM learns joint representations across different modalities like text, vision and audio in an end-to-end fashion for better cross-modal understanding and generation." [TBD] {type="owl:Axiom"}
 synonym: "cross-modal grounding" RELATED []
 synonym: "Multimodal Fusion LLM" EXACT []
-is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
+is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
 
 [Term]
 id: https://w3id.org/aio/MultimodalLearning
@@ -3965,7 +3988,7 @@ def: "A multimodal transformer is a transformer architecture that can process an
 synonym: "Multimodal Transformer" EXACT []
 synonym: "unified encoder" RELATED []
 synonym: "vision-language model" RELATED []
-is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
+is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 
 [Term]
 id: https://w3id.org/aio/MultiplyLayer
@@ -4001,7 +4024,7 @@ def: "A neuro-symbolic LLM combines neural language modeling with symbolic reaso
 synonym: "knowledge reasoning" RELATED []
 synonym: "Neuro-Symbolic LLM" EXACT []
 synonym: "symbolic grounding" RELATED []
-is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
+is_a: https://w3id.org/aio/InterpretabilityandEthics ! Interpretability and Ethics
 
 [Term]
 id: https://w3id.org/aio/NoiseDenseLayer
@@ -4035,7 +4058,7 @@ def: "An ordinal LLM is trained to model ordinal relationships and rank outputs,
 synonym: "Ordinal LLM" EXACT []
 synonym: "preference modeling" RELATED []
 synonym: "ranking" RELATED []
-is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
+is_a: https://w3id.org/aio/InterpretabilityandEthics ! Interpretability and Ethics
 
 [Term]
 id: https://w3id.org/aio/OutputLayer
@@ -4070,7 +4093,7 @@ name: Personalized LLM
 def: "A personalized LLM adapts its language modeling and generation to the preferences, style and persona of individual users or audiences." [TBD] {type="owl:Axiom"}
 synonym: "Personalized LLM" EXACT []
 synonym: "user adaptation" RELATED []
-is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/PoolingLayer
@@ -4093,7 +4116,7 @@ is_a: https://w3id.org/aio/SelectionAndSamplingBias ! Selection And Sampling Bia
 [Term]
 id: https://w3id.org/aio/Preprocessing
 name: Preprocessing
-def: "A range of techniques and processes applied to data before it is used in machine learning models or AI algorithms" [TBD] {type="owl:Axiom"}
+def: "A range of techniques and processes applied to data before it is used in machine learning models or AI algorithms" [https://doi.org/10.1109/ICDE.2019.00245] {type="owl:Axiom"}
 
 [Term]
 id: https://w3id.org/aio/PreprocessingLayer
@@ -4144,7 +4167,7 @@ synonym: "few-shot learning" RELATED []
 synonym: "in-context learning" RELATED []
 synonym: "Prompt-based Fine-Tuning LLM" EXACT []
 synonym: "Prompt-tuned LLM" EXACT []
-is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
+is_a: https://w3id.org/aio/LearningParadigms ! Learning Paradigms
 
 [Term]
 id: https://w3id.org/aio/ProportionalHazardsModel
@@ -4257,7 +4280,7 @@ def: "A rational LLM incorporates explicit reasoning capabilities, leveraging lo
 synonym: "logical inferences" RELATED []
 synonym: "Rational LLM" EXACT []
 synonym: "reasoning" RELATED []
-is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
+is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 
 [Term]
 id: https://w3id.org/aio/ReLUFunction
@@ -4302,10 +4325,10 @@ is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 [Term]
 id: https://w3id.org/aio/RecursiveLanguageModel
 name: Recursive Language Model
-def: "A recursive language model uses recursive neural network architectures like TreeLSTMs to learn syntactic composition functions, improving systematic generalization abilities." [TBD] {type="owl:Axiom"}
+def: "A recursive language model uses recursive neural network architectures like TreeLSTMs to learn syntactic composition functions, improving systematic generalization abilities." [https://doi.org/10.1609/aaai.v33i01.33017450] {type="owl:Axiom"}
 synonym: "Compositional generalization" RELATED []
-synonym: "Recursive Language Model" EXACT []
-is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
+synonym: "RLM" EXACT []
+is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 
 [Term]
 id: https://w3id.org/aio/RecursiveNeuralNetwork
@@ -4343,7 +4366,7 @@ synonym: "decision transformers" RELATED []
 synonym: "Reinforcement Learning LLM" EXACT []
 synonym: "reward modeling" RELATED []
 synonym: "RL-LLM" EXACT []
-is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
+is_a: https://w3id.org/aio/LearningParadigms ! Learning Paradigms
 
 [Term]
 id: https://w3id.org/aio/RepeatVectorLayer
@@ -4415,7 +4438,7 @@ def: "A retrieval-augmented LLM combines a pre-trained language model with a ret
 synonym: "knowledge grounding" RELATED []
 synonym: "open-book question answering" RELATED []
 synonym: "Retrieval-Augmented LLM" EXACT []
-is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
+is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 
 [Term]
 id: https://w3id.org/aio/RidgeRegression
@@ -4452,7 +4475,7 @@ name: Self-Supervised LLM
 def: "A self-supervised LLM learns rich representations by solving pretext tasks that involve predicting parts of the input from other observed parts of the data, without relying on human-annotated labels." [TBD] {type="owl:Axiom"}
 synonym: "Pretext tasks" RELATED []
 synonym: "Self-Supervised LLM" EXACT []
-is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
+is_a: https://w3id.org/aio/LearningParadigms ! Learning Paradigms
 
 [Term]
 id: https://w3id.org/aio/Self-supervisedLearning
@@ -4466,7 +4489,7 @@ name: Semi-Supervised LLM
 def: "A semi-supervised LLM combines self-supervised pretraining on unlabeled data with supervised fine-tuning on labeled task data." [TBD] {type="owl:Axiom"}
 synonym: "self-training" RELATED []
 synonym: "Semi-Supervised LLM" EXACT []
-is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
+is_a: https://w3id.org/aio/LearningParadigms ! Learning Paradigms
 
 [Term]
 id: https://w3id.org/aio/SeparableConvolution1DLayer
@@ -4539,11 +4562,13 @@ def: "softsign(x) = x / (abs(x) + 1)" [https://www.tensorflow.org/api_docs/pytho
 is_a: https://w3id.org/aio/Function ! Function
 
 [Term]
-id: https://w3id.org/aio/SparseAE
-name: Sparse AE
+id: https://w3id.org/aio/SparseAutoEncoder
+name: Sparse Auto Encoder
 def: "Sparse autoencoders may include more (rather than fewer) hidden units than inputs, but only a small number of the hidden units are allowed to be active at the same time (thus, sparse). This constraint forces the model to respond to the unique statistical features of the training data. (https://en.wikipedia.org/wiki/Autoencoder)" [TBD] {type="owl:Axiom"}
 comment: Input, Hidden, Matched Output-Input
 synonym: "SAE" EXACT []
+synonym: "Sparse AE" EXACT []
+synonym: "Sparse Autoencoder" EXACT []
 is_a: https://w3id.org/aio/AutoEncoderNetwork ! Auto Encoder Network
 
 [Term]
@@ -4553,7 +4578,7 @@ def: "A sparse LLM uses techniques like pruning or quantization to reduce the nu
 synonym: "model compression" RELATED []
 synonym: "parameter efficiency" RELATED []
 synonym: "Sparse LLM" EXACT []
-is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
+is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 
 [Term]
 id: https://w3id.org/aio/SparseLearning
@@ -4763,12 +4788,6 @@ synonym: "Vocabulary size reduction" RELATED []
 is_a: https://w3id.org/aio/DataPreparation ! Data Preparation
 
 [Term]
-id: https://w3id.org/aio/TrainingParadigm
-name: Training Paradigm
-def: "An abstract parent class grouping LLMs based on training paradigm." [TBD] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
-
-[Term]
 id: https://w3id.org/aio/TrainingStrategies
 name: Training Strategies
 def: "Specific strategies or methodologies employed during model training." [TBD] {type="owl:Axiom"}
@@ -4780,13 +4799,7 @@ is_a: https://w3id.org/aio/Preprocessing ! Preprocessing
 id: https://w3id.org/aio/TransferLearning
 name: Transfer Learning
 def: "Methods which can reuse or transfer information from previously learned tasks for the Learning of new tasks." [https://en.wikipedia.org/wiki/Transfer_learning] {type="owl:Axiom"}
-def: "Starting the training from a model already trained on a related task to reduce training time and improve performance on tasks with limited data." [TBD] {type="owl:Axiom"}
-synonym: "Adaptation" RELATED []
-synonym: "Knowledge Transfer" EXACT []
-synonym: "Pretrained models" RELATED []
-synonym: "Skill Acquisition" EXACT []
 is_a: https://w3id.org/aio/MachineLearning ! Machine Learning
-is_a: https://w3id.org/aio/TrainingStrategies ! Training Strategies
 
 [Term]
 id: https://w3id.org/aio/TransferLearningLLM
@@ -4794,7 +4807,7 @@ name: Transfer Learning LLM
 def: "A transfer learning LLM leverages knowledge acquired during training on one task to improve performance on different but related tasks, facilitating more efficient learning and adaptation." [TBD] {type="owl:Axiom"}
 synonym: "transfer learning" RELATED []
 synonym: "Transfer LLM" EXACT []
-is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
+is_a: https://w3id.org/aio/LearningParadigms ! Learning Paradigms
 
 [Term]
 id: https://w3id.org/aio/TransformerNetwork
@@ -4838,7 +4851,7 @@ name: Unsupervised LLM
 def: "An unsupervised LLM is trained solely on unlabeled data using self-supervised objectives like masked language modeling, without any supervised fine-tuning." [TBD] {type="owl:Axiom"}
 synonym: "self-supervised" RELATED []
 synonym: "Unsupervised LLM" EXACT []
-is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
+is_a: https://w3id.org/aio/LearningParadigms ! Learning Paradigms
 
 [Term]
 id: https://w3id.org/aio/UnsupervisedLearning
@@ -4904,7 +4917,7 @@ name: Zero-Shot Learning LLM
 def: "A zero-shot learning LLM is able to perform tasks or understand concepts it has not explicitly been trained on, demonstrating a high degree of generalization and understanding." [TBD] {type="owl:Axiom"}
 synonym: "zero-shot learning" RELATED []
 synonym: "Zero-Shot LLM" EXACT []
-is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
+is_a: https://w3id.org/aio/LearningParadigms ! Learning Paradigms
 
 [Term]
 id: https://w3id.org/aio/Zero-shotLearning
@@ -5308,7 +5321,7 @@ property_value: IAO:0000116 "A role inheres in its bearer at all times for which
 property_value: IAO:0000118 "is role of" xsd:string
 property_value: IAO:0000118 "role_of" xsd:string
 is_a: RO:0000052 ! inheres in
-inverse_of: RO:0000087 ! has role
+inverse_of: RO:0000087 ! has_role
 
 [Typedef]
 id: RO:0000085
