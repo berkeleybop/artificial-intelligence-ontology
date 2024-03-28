@@ -14542,7 +14542,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An abstract parent class grouping LLMs based on advanced techniques."
+          "val" : "An abstract parent class grouping LLMs based on advanced techniques.",
+          "xrefs" : [ "TBD" ]
         }
       }
     }, {
@@ -14551,7 +14552,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An adversarial-resistant LLM is engineered to withstand or mitigate the effects of adversarial attacks, ensuring reliable performance even in the presence of deliberately misleading input designed to confuse the model."
+          "val" : "An adversarial-resistant LLM is engineered to withstand or mitigate the effects of adversarial attacks, ensuring reliable performance even in the presence of deliberately misleading input designed to confuse the model.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -14610,7 +14612,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An abstract parent class grouping LLMs based on application focus."
+          "val" : "An abstract parent class grouping LLMs based on application focus.",
+          "xrefs" : [ "TBD" ]
         }
       }
     }, {
@@ -14685,7 +14688,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An autoregressive language model is a type of language model that generates text sequentially, predicting one token at a time based on the previously generated tokens. It excels at natural language generation tasks by modeling the probability distribution over sequences of tokens."
+          "val" : "An autoregressive language model is a type of language model that generates text sequentially, predicting one token at a time based on the previously generated tokens. It excels at natural language generation tasks by modeling the probability distribution over sequences of tokens.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -15040,7 +15044,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A causal LLM only attends to previous tokens in the sequence when generating text, modeling the probability distribution autoregressively from left-to-right or causally."
+          "val" : "A causal LLM only attends to previous tokens in the sequence when generating text, modeling the probability distribution autoregressively from left-to-right or causally.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -15079,7 +15084,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Removing irrelevant data, correcting typos, and standardizing text to reduce noise and ensure consistency in the data."
+          "val" : "Removing irrelevant data, correcting typos, and standardizing text to reduce noise and ensure consistency in the data.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -15125,7 +15131,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A compositional generalization LLM is trained to understand and recombine the underlying compositional structures in language, enabling better generalization to novel combinations and out-of-distribution examples."
+          "val" : "A compositional generalization LLM is trained to understand and recombine the underlying compositional structures in language, enabling better generalization to novel combinations and out-of-distribution examples.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -15229,7 +15236,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A continual learning LLM is designed to continually acquire new knowledge and skills over time, without forgetting previously learned information. This allows the model to adapt and expand its capabilities as new data becomes available."
+          "val" : "A continual learning LLM is designed to continually acquire new knowledge and skills over time, without forgetting previously learned information. This allows the model to adapt and expand its capabilities as new data becomes available.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -15261,7 +15269,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A contrastive learning LLM is trained to pull semantically similar samples closer together and push dissimilar samples apart in the representation space, learning high-quality features useful for downstream tasks."
+          "val" : "A contrastive learning LLM is trained to pull semantically similar samples closer together and push dissimilar samples apart in the representation space, learning high-quality features useful for downstream tasks.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -15277,7 +15286,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A controllable LLM allows for explicit control over certain attributes of the generated text, such as style, tone, topic, or other desired characteristics, through conditioning or specialized training objectives."
+          "val" : "A controllable LLM allows for explicit control over certain attributes of the generated text, such as style, tone, topic, or other desired characteristics, through conditioning or specialized training objectives.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -15522,7 +15532,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A cross-domain LLM is capable of performing well across a wide range of domains without significant loss in performance, facilitated by advanced domain adaptation techniques."
+          "val" : "A cross-domain LLM is capable of performing well across a wide range of domains without significant loss in performance, facilitated by advanced domain adaptation techniques.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -15541,7 +15552,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Training the model on simpler tasks or easier data first, then gradually introducing more complex tasks to improve learning efficiency and performance."
+          "val" : "Training the model on simpler tasks or easier data first, then gradually introducing more complex tasks to improve learning efficiency and performance.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -15563,7 +15575,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A curriculum learning LLM is trained by presenting learning examples in a meaningful order from simple to complex, mimicking the learning trajectory followed by humans."
+          "val" : "A curriculum learning LLM is trained by presenting learning examples in a meaningful order from simple to complex, mimicking the learning trajectory followed by humans.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -15578,15 +15591,16 @@
       "lbl" : "Data-to-Text LLM",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A data-to-text LLM generates natural language descriptions from structured data sources like tables, graphs, knowledge bases, etc. Requiring grounding meaning representations.",
+          "xrefs" : [ "TBD" ]
+        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "Data-to-Text LLM"
         }, {
           "pred" : "hasExactSynonym",
           "val" : "Meaning representation"
-        }, {
-          "pred" : "hasRelatedSynonym",
-          "val" : "A data-to-text LLM generates natural language descriptions from structured data sources like tables, graphs, knowledge bases, etc. Requiring grounding meaning representations."
         } ]
       }
     }, {
@@ -15595,7 +15609,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Expanding the training dataset artificially by modifying existing data points to improve the model's robustness and generalization ability."
+          "val" : "Expanding the training dataset artificially by modifying existing data points to improve the model's robustness and generalization ability.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -15626,22 +15641,6 @@
         } ]
       }
     }, {
-      "id" : "https://w3id.org/aio/DataEnhancement",
-      "lbl" : "Data Enhancement",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "Methods that enhance the training data or its representation, including augmentation and feature extraction."
-        },
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
-          "val" : "Data Improvement"
-        }, {
-          "pred" : "hasExactSynonym",
-          "val" : "Data Refinement"
-        } ]
-      }
-    }, {
       "id" : "https://w3id.org/aio/DataGenerationBias",
       "lbl" : "Data Generation Bias",
       "type" : "CLASS",
@@ -15667,7 +15666,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Techniques focused on preparing raw data for training, including cleaning, normalization, and tokenization."
+          "val" : "Techniques focused on preparing raw data for training, including cleaning, normalization, and tokenization.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -15754,7 +15754,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A Deep Convolution Inverse Graphics Network (DC-IGN) is a model that learns an interpretable representation of images. This representation is disentangled with respect to transformations such as out-of-plane rotations and lighting variations. The DC-IGN model is composed of multiple layers of convolution and de-convolution operators and is trained using the Stochastic Gradient Variational Bayes (SGVB) algorithm. (https://arxiv.org/abs/1503.03167)"
+          "val" : "A Deep Convolution Inverse Graphics Network (DC-IGN) is a model that learns an interpretable representation of images. This representation is disentangled with respect to transformations such as out-of-plane rotations and lighting variations. The DC-IGN model is composed of multiple layers of convolution and de-convolution operators and is trained using the Stochastic Gradient Variational Bayes (SGVB) algorithm. (https://arxiv.org/abs/1503.03167)",
+          "xrefs" : [ "TBD" ]
         },
         "comments" : [ "Input, Kernel, Convolutional/Pool, Probabilistic Hidden, Convolutional/Pool, Kernel, Output" ],
         "synonyms" : [ {
@@ -15819,7 +15820,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A deep neural network (DNN) is an artificial neural network (ANN) with multiple layers between the input and output layers.[13][2] There are different types of neural networks but they always consist of the same components: neurons, synapses, weights, biases, and functions. (https://en.wikipedia.org/wiki/Deep_Learning#:~:text=A%20deep%20neural%20network%20(DNN,weights%2C%20biases%2C%20and%20functions.)"
+          "val" : "A deep neural network (DNN) is an artificial neural network (ANN) with multiple layers between the input and output layers.[13][2] There are different types of neural networks but they always consist of the same components: neurons, synapses, weights, biases, and functions. (https://en.wikipedia.org/wiki/Deep_Learning#:~:text=A%20deep%20neural%20network%20(DNN,weights%2C%20biases%2C%20and%20functions.)",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -15842,7 +15844,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Denoising Auto Encoders (DAEs) take a partially corrupted input and are trained to recover the original undistorted input. In practice, the objective of denoising autoencoders is that of cleaning the corrupted input, or denoising. (https://en.wikipedia.org/wiki/Autoencoder)"
+          "val" : "Denoising Auto Encoders (DAEs) take a partially corrupted input and are trained to recover the original undistorted input. In practice, the objective of denoising autoencoders is that of cleaning the corrupted input, or denoising. (https://en.wikipedia.org/wiki/Autoencoder)",
+          "xrefs" : [ "TBD" ]
         },
         "comments" : [ "Noisy Input, Hidden, Matched Output-Input" ],
         "synonyms" : [ {
@@ -15916,7 +15919,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A dialogue LLM is optimized for engaging in multi-turn conversations, understanding context and generating relevant, coherent responses continuously over many dialogue turns."
+          "val" : "A dialogue LLM is optimized for engaging in multi-turn conversations, understanding context and generating relevant, coherent responses continuously over many dialogue turns.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -15935,7 +15939,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A differentiable LLM has an architecture amenable to full end-to-end training via backpropagation, without relying on teacher forcing or unlikelihood training objectives."
+          "val" : "A differentiable LLM has an architecture amenable to full end-to-end training via backpropagation, without relying on teacher forcing or unlikelihood training objectives.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -15978,7 +15983,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Knowledge distillation involves training a smaller model to replicate the behavior of a larger model, aiming to compress the knowledge into a more compact form without significant loss of performance."
+          "val" : "Knowledge distillation involves training a smaller model to replicate the behavior of a larger model, aiming to compress the knowledge into a more compact form without significant loss of performance.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -16000,7 +16006,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A domain-adapted LLM is first pre-trained on a broad corpus, then fine-tuned on domain-specific data to specialize its capabilities for particular domains or applications, like scientific literature or code generation."
+          "val" : "A domain-adapted LLM is first pre-trained on a broad corpus, then fine-tuned on domain-specific data to specialize its capabilities for particular domains or applications, like scientific literature or code generation.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -16119,7 +16126,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An embodied LLM integrates language with other modalities like vision, audio, robotics to enable grounded language understanding in real-world environments."
+          "val" : "An embodied LLM integrates language with other modalities like vision, audio, robotics to enable grounded language understanding in real-world environments.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -16173,7 +16181,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An energy-based LLM models the explicit probability density over token sequences using an energy function, rather than an autoregressive factorization. This can improve modeling of long-range dependencies and global coherence."
+          "val" : "An energy-based LLM models the explicit probability density over token sequences using an energy function, rather than an autoregressive factorization. This can improve modeling of long-range dependencies and global coherence.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -16192,7 +16201,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An abstract parent class grouping LLMs based on enhancement strategies."
+          "val" : "An abstract parent class grouping LLMs based on enhancement strategies.",
+          "xrefs" : [ "TBD" ]
         }
       }
     }, {
@@ -16225,7 +16235,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An ethical LLM is trained to uphold certain ethical principles, values or rules in its language generation to increase safety and trustworthiness."
+          "val" : "An ethical LLM is trained to uphold certain ethical principles, values or rules in its language generation to increase safety and trustworthiness.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -16254,7 +16265,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An evolutionary LLM applies principles of evolutionary computation to optimize its structure and parameters, evolving over time to improve performance."
+          "val" : "An evolutionary LLM applies principles of evolutionary computation to optimize its structure and parameters, evolving over time to improve performance.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -16283,7 +16295,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An explainable LLM is designed to provide insights into its decision-making process, making it easier for users to understand and trust the model's outputs. It incorporates mechanisms for interpreting and explaining its predictions in human-understandable terms."
+          "val" : "An explainable LLM is designed to provide insights into its decision-making process, making it easier for users to understand and trust the model's outputs. It incorporates mechanisms for interpreting and explaining its predictions in human-understandable terms.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -16330,7 +16343,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A factorized LLM decomposes the full language modeling task into multiple sub-components or experts that each focus on a subset of the information. This enables more efficient scaling."
+          "val" : "A factorized LLM decomposes the full language modeling task into multiple sub-components or experts that each focus on a subset of the information. This enables more efficient scaling.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -16349,7 +16363,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Extracting specific features or patterns from the text before training to guide the model's learning process, including syntactic information or semantic embeddings."
+          "val" : "Extracting specific features or patterns from the text before training to guide the model's learning process, including syntactic information or semantic embeddings.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -16371,7 +16386,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A federated LLM is trained in a decentralized manner across multiple devices or silos, without directly sharing private data. This enables collaborative training while preserving data privacy and security."
+          "val" : "A federated LLM is trained in a decentralized manner across multiple devices or silos, without directly sharing private data. This enables collaborative training while preserving data privacy and security.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -16410,7 +16426,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A feedback based approach in which the representation is formed in an iterative manner based on a feedback received from previous iteration's output. (https://arxiv.org/abs/1612.09508)"
+          "val" : "A feedback based approach in which the representation is formed in an iterative manner based on a feedback received from previous iteration's output. (https://arxiv.org/abs/1612.09508)",
+          "xrefs" : [ "TBD" ]
         },
         "comments" : [ "Input, Hidden, Output, Hidden" ],
         "synonyms" : [ {
@@ -16482,7 +16499,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Function parent class"
+          "val" : "Function parent class",
+          "xrefs" : [ "TBD" ]
         }
       }
     }, {
@@ -16616,7 +16634,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A GAN-augmented LLM incorporates a generative adversarial network (GAN) into its training process, using a discriminator network to provide a signal for generating more realistic and coherent text. This adversarial training can improve the quality and diversity of generated text."
+          "val" : "A GAN-augmented LLM incorporates a generative adversarial network (GAN) into its training process, using a discriminator network to provide a signal for generating more realistic and coherent text. This adversarial training can improve the quality and diversity of generated text.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -16638,7 +16657,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A generative commonsense LLM is trained to understand and model basic physics, causality and common sense about how the real world works."
+          "val" : "A generative commonsense LLM is trained to understand and model basic physics, causality and common sense about how the real world works.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -16657,7 +16677,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A generative language circuit is a type of LLM that learns to generate programs or code by training on input-output pairs, effectively learning the underlying \"program\" that maps inputs to outputs."
+          "val" : "A generative language circuit is a type of LLM that learns to generate programs or code by training on input-output pairs, effectively learning the underlying \"program\" that maps inputs to outputs.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -16679,7 +16700,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A generative language interface enables users to engage in an interactive dialogue with an LLM, providing feedback to guide and refine the generated outputs iteratively."
+          "val" : "A generative language interface enables users to engage in an interactive dialogue with an LLM, providing feedback to guide and refine the generated outputs iteratively.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -16827,7 +16849,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A graph LLM operates over structured inputs/outputs represented as graphs, enabling reasoning over explicit relational knowledge representations during language tasks."
+          "val" : "A graph LLM operates over structured inputs/outputs represented as graphs, enabling reasoning over explicit relational knowledge representations during language tasks.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -16951,7 +16974,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A hierarchical LLM models language at multiple levels of granularity, learning hierarchical representations that can capture both low-level patterns and high-level abstractions."
+          "val" : "A hierarchical LLM models language at multiple levels of granularity, learning hierarchical representations that can capture both low-level patterns and high-level abstractions.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -17062,7 +17086,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An implicit language model uses an energy function to score full sequences instead of factorizing probabilities autoregressively. This can better capture global properties and long-range dependencies."
+          "val" : "An implicit language model uses an energy function to score full sequences instead of factorizing probabilities autoregressively. This can better capture global properties and long-range dependencies.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -17206,7 +17231,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An instruction-tuned LLM is fine-tuned to follow natural language instructions accurately and safely, learning to map from instructions to desired model behavior in a more controlled and principled way."
+          "val" : "An instruction-tuned LLM is fine-tuned to follow natural language instructions accurately and safely, learning to map from instructions to desired model behavior in a more controlled and principled way.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -17235,7 +17261,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An interpretable LLM prioritizes transparency and ease of understanding in its operations, making its decision-making processes clear and rational to human users."
+          "val" : "An interpretable LLM prioritizes transparency and ease of understanding in its operations, making its decision-making processes clear and rational to human users.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -17315,7 +17342,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A knowledge-grounded LLM incorporates external knowledge sources or knowledge bases into the model architecture, enabling it to generate more factually accurate and knowledge-aware text."
+          "val" : "A knowledge-grounded LLM incorporates external knowledge sources or knowledge bases into the model architecture, enabling it to generate more factually accurate and knowledge-aware text.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -17425,7 +17453,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A language interface LLM supports interactive semantic parsing, enabling users to provide feedback/corrections which are used to dynamically refine and update the language model."
+          "val" : "A language interface LLM supports interactive semantic parsing, enabling users to provide feedback/corrections which are used to dynamically refine and update the language model.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -17465,7 +17494,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Network layer parent class"
+          "val" : "Network layer parent class",
+          "xrefs" : [ "TBD" ]
         }
       }
     }, {
@@ -17630,7 +17660,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A lifelong learning LLM can continually acquire new knowledge over time without forgetting previously learned information, maintaining a balance between plasticity and stability."
+          "val" : "A lifelong learning LLM can continually acquire new knowledge over time without forgetting previously learned information, maintaining a balance between plasticity and stability.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -17776,7 +17807,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A low-resource LLM is optimized for performance in scenarios with limited data, computational resources, or for languages with sparse datasets."
+          "val" : "A low-resource LLM is optimized for performance in scenarios with limited data, computational resources, or for languages with sparse datasets.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -17836,7 +17868,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A masked language model is a type of language model that is trained to predict randomly masked tokens in a sequence, based on the remaining unmasked tokens. This allows it to build deep bidirectional representations that can be effectively transferred to various NLP tasks via fine-tuning."
+          "val" : "A masked language model is a type of language model that is trained to predict randomly masked tokens in a sequence, based on the remaining unmasked tokens. This allows it to build deep bidirectional representations that can be effectively transferred to various NLP tasks via fine-tuning.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -18005,7 +18038,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A memory-augmented LLM incorporates external writeable and readable memory components, allowing it to store and retrieve information over long contexts."
+          "val" : "A memory-augmented LLM incorporates external writeable and readable memory components, allowing it to store and retrieve information over long contexts.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -18041,7 +18075,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A meta-learning LLM is trained in a way that allows it to quickly adapt to new tasks or datasets through only a few examples or fine-tuning steps, leveraging meta-learned priors about how to efficiently learn."
+          "val" : "A meta-learning LLM is trained in a way that allows it to quickly adapt to new tasks or datasets through only a few examples or fine-tuning steps, leveraging meta-learned priors about how to efficiently learn.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -18060,7 +18095,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Method parent class."
+          "val" : "Method parent class.",
+          "xrefs" : [ "TBD" ]
         }
       }
     }, {
@@ -18093,7 +18129,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A Mixture-of-Experts LLM dynamically selects and combines outputs from multiple expert submodels, allowing for efficient scaling by conditionally activating only a subset of model components for each input."
+          "val" : "A Mixture-of-Experts LLM dynamically selects and combines outputs from multiple expert submodels, allowing for efficient scaling by conditionally activating only a subset of model components for each input.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -18125,7 +18162,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An abstract parent class grouping LLMs based on model architecture."
+          "val" : "An abstract parent class grouping LLMs based on model architecture.",
+          "xrefs" : [ "TBD" ]
         }
       }
     }, {
@@ -18134,7 +18172,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Techniques aimed at making models more efficient, such as knowledge distillation."
+          "val" : "Techniques aimed at making models more efficient, such as knowledge distillation.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -18160,7 +18199,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A modular LLM consists of multiple specialized components or skills that can be dynamically composed and recombined to solve complex tasks, mimicking the modular structure of human cognition."
+          "val" : "A modular LLM consists of multiple specialized components or skills that can be dynamically composed and recombined to solve complex tasks, mimicking the modular structure of human cognition.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -18179,7 +18219,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A multi-task LLM is trained jointly on multiple language tasks simultaneously, learning shared representations that transfer across tasks."
+          "val" : "A multi-task LLM is trained jointly on multiple language tasks simultaneously, learning shared representations that transfer across tasks.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -18233,7 +18274,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A multilingual LLM is trained on text from multiple languages, learning shared representations that enable zero-shot or few-shot transfer to new languages."
+          "val" : "A multilingual LLM is trained on text from multiple languages, learning shared representations that enable zero-shot or few-shot transfer to new languages.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -18259,7 +18301,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A multimodal fusion LLM learns joint representations across different modalities like text, vision and audio in an end-to-end fashion for better cross-modal understanding and generation."
+          "val" : "A multimodal fusion LLM learns joint representations across different modalities like text, vision and audio in an end-to-end fashion for better cross-modal understanding and generation.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -18275,7 +18318,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Methods which can represent the joint representations of different modalities."
+          "val" : "Methods which can represent the joint representations of different modalities.",
+          "xrefs" : [ "TBD" ]
         }
       }
     }, {
@@ -18284,7 +18328,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A multimodal transformer is a transformer architecture that can process and relate information from different modalities, such as text, images, and audio. It uses a shared embedding space and attention mechanism to learn joint representations across modalities."
+          "val" : "A multimodal transformer is a transformer architecture that can process and relate information from different modalities, such as text, images, and audio. It uses a shared embedding space and attention mechanism to learn joint representations across modalities.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -18327,7 +18372,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Network parent class"
+          "val" : "Network parent class",
+          "xrefs" : [ "TBD" ]
         }
       }
     }, {
@@ -18351,7 +18397,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A neuro-symbolic LLM combines neural language modeling with symbolic reasoning components, leveraging structured knowledge representations and logical inferences to improve reasoning capabilities."
+          "val" : "A neuro-symbolic LLM combines neural language modeling with symbolic reasoning components, leveraging structured knowledge representations and logical inferences to improve reasoning capabilities.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -18414,7 +18461,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An ordinal LLM is trained to model ordinal relationships and rank outputs, rather than model probability distributions over text sequences directly."
+          "val" : "An ordinal LLM is trained to model ordinal relationships and rank outputs, rather than model probability distributions over text sequences directly.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -18453,7 +18501,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The perceptron is an algorithm for supervised Learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class. It is a type of linear classifier, i.e. a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector. (https://en.wikipedia.org/wiki/Perceptron)"
+          "val" : "The perceptron is an algorithm for supervised Learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class. It is a type of linear classifier, i.e. a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector. (https://en.wikipedia.org/wiki/Perceptron)",
+          "xrefs" : [ "TBD" ]
         },
         "comments" : [ "Input, Output" ],
         "synonyms" : [ {
@@ -18480,7 +18529,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A personalized LLM adapts its language modeling and generation to the preferences, style and persona of individual users or audiences."
+          "val" : "A personalized LLM adapts its language modeling and generation to the preferences, style and persona of individual users or audiences.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -18604,7 +18654,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A prompt-tuned LLM is fine-tuned on a small number of examples or prompts, rather than full task datasets. This allows for rapid adaptation to new tasks with limited data, leveraging the model's few-shot learning capabilities."
+          "val" : "A prompt-tuned LLM is fine-tuned on a small number of examples or prompts, rather than full task datasets. This allows for rapid adaptation to new tasks with limited data, leveraging the model's few-shot learning capabilities.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -18808,7 +18859,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A rational LLM incorporates explicit reasoning capabilities, leveraging logical rules, axioms or external knowledge to make deductive inferences during language tasks."
+          "val" : "A rational LLM incorporates explicit reasoning capabilities, leveraging logical rules, axioms or external knowledge to make deductive inferences during language tasks.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -18885,7 +18937,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A recursive or self-attending LLM incorporates recursive self-attention mechanisms, allowing it to iteratively refine its own outputs and capture long-range dependencies more effectively."
+          "val" : "A recursive or self-attending LLM incorporates recursive self-attention mechanisms, allowing it to iteratively refine its own outputs and capture long-range dependencies more effectively.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -18907,7 +18960,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A recursive language model uses recursive neural network architectures like TreeLSTMs to learn syntactic composition functions, improving systematic generalization abilities."
+          "val" : "A recursive language model uses recursive neural network architectures like TreeLSTMs to learn syntactic composition functions, improving systematic generalization abilities.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -18977,7 +19031,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An RL-LLM is a language model that is fine-tuned using reinforcement learning, where the model receives rewards for generating text that satisfies certain desired properties or objectives. This can improve the quality, safety, or alignment of generated text."
+          "val" : "An RL-LLM is a language model that is fine-tuned using reinforcement learning, where the model receives rewards for generating text that satisfies certain desired properties or objectives. This can improve the quality, safety, or alignment of generated text.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -19116,7 +19171,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A retrieval-augmented LLM combines a pre-trained language model with a retrieval system that can access external knowledge sources. This allows the model to condition its generation on relevant retrieved knowledge, improving factual accuracy and knowledge grounding."
+          "val" : "A retrieval-augmented LLM combines a pre-trained language model with a retrieval system that can access external knowledge sources. This allows the model to condition its generation on relevant retrieved knowledge, improving factual accuracy and knowledge grounding.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -19192,7 +19248,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A self-supervised LLM learns rich representations by solving pretext tasks that involve predicting parts of the input from other observed parts of the data, without relying on human-annotated labels."
+          "val" : "A self-supervised LLM learns rich representations by solving pretext tasks that involve predicting parts of the input from other observed parts of the data, without relying on human-annotated labels.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -19218,7 +19275,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A semi-supervised LLM combines self-supervised pretraining on unlabeled data with supervised fine-tuning on labeled task data."
+          "val" : "A semi-supervised LLM combines self-supervised pretraining on unlabeled data with supervised fine-tuning on labeled task data.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -19346,7 +19404,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Sparse autoencoders may include more (rather than fewer) hidden units than inputs, but only a small number of the hidden units are allowed to be active at the same time (thus, sparse). This constraint forces the model to respond to the unique statistical features of the training data. (https://en.wikipedia.org/wiki/Autoencoder)"
+          "val" : "Sparse autoencoders may include more (rather than fewer) hidden units than inputs, but only a small number of the hidden units are allowed to be active at the same time (thus, sparse). This constraint forces the model to respond to the unique statistical features of the training data. (https://en.wikipedia.org/wiki/Autoencoder)",
+          "xrefs" : [ "TBD" ]
         },
         "comments" : [ "Input, Hidden, Matched Output-Input" ],
         "synonyms" : [ {
@@ -19360,7 +19419,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A sparse LLM uses techniques like pruning or quantization to reduce the number of non-zero parameters in the model, making it more parameter-efficient and easier to deploy on resource-constrained devices."
+          "val" : "A sparse LLM uses techniques like pruning or quantization to reduce the number of non-zero parameters in the model, making it more parameter-efficient and easier to deploy on resource-constrained devices.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -19480,7 +19540,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Utilizing techniques like Byte Pair Encoding (BPE) or SentencePiece to break down words into smaller units, allowing the model to handle a wide range of vocabulary with a fixed-size list."
+          "val" : "Utilizing techniques like Byte Pair Encoding (BPE) or SentencePiece to break down words into smaller units, allowing the model to handle a wide range of vocabulary with a fixed-size list.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -19746,7 +19807,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Breaking down text data into manageable pieces called tokens and reducing the model's vocabulary to streamline processing."
+          "val" : "Breaking down text data into manageable pieces called tokens and reducing the model's vocabulary to streamline processing.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -19768,7 +19830,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An abstract parent class grouping LLMs based on training paradigm."
+          "val" : "An abstract parent class grouping LLMs based on training paradigm.",
+          "xrefs" : [ "TBD" ]
         }
       }
     }, {
@@ -19777,7 +19840,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Specific strategies or methodologies employed during model training."
+          "val" : "Specific strategies or methodologies employed during model training.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -19793,7 +19857,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Starting the training from a model already trained on a related task to reduce training time and improve performance on tasks with limited data."
+          "val" : "Starting the training from a model already trained on a related task to reduce training time and improve performance on tasks with limited data.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -19815,7 +19880,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A transfer learning LLM leverages knowledge acquired during training on one task to improve performance on different but related tasks, facilitating more efficient learning and adaptation."
+          "val" : "A transfer learning LLM leverages knowledge acquired during training on one task to improve performance on different but related tasks, facilitating more efficient learning and adaptation.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -19901,7 +19967,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An unsupervised LLM is trained solely on unlabeled data using self-supervised objectives like masked language modeling, without any supervised fine-tuning."
+          "val" : "An unsupervised LLM is trained solely on unlabeled data using self-supervised objectives like masked language modeling, without any supervised fine-tuning.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -19995,7 +20062,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Variational autoencoders are meant to compress the input information into a constrained multivariate latent distribution (encoding) to reconstruct it as accurately as possible (decoding). (https://en.wikipedia.org/wiki/Variational_autoencoder)"
+          "val" : "Variational autoencoders are meant to compress the input information into a constrained multivariate latent distribution (encoding) to reconstruct it as accurately as possible (decoding). (https://en.wikipedia.org/wiki/Variational_autoencoder)",
+          "xrefs" : [ "TBD" ]
         },
         "comments" : [ "Input, Probabilistic Hidden, Matched Output-Input" ],
         "synonyms" : [ {
@@ -20019,7 +20087,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A zero-shot learning LLM is able to perform tasks or understand concepts it has not explicitly been trained on, demonstrating a high degree of generalization and understanding."
+          "val" : "A zero-shot learning LLM is able to perform tasks or understand concepts it has not explicitly been trained on, demonstrating a high degree of generalization and understanding.",
+          "xrefs" : [ "TBD" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",

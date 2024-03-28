@@ -95,13 +95,11 @@ WARN	missing_definition	obo:ARTIFICIAL-INTELLIGENCE-ONTOLOGY_0000000	IAO:0000115
 WARN	missing_definition	dc:description	IAO:0000115	
 WARN	missing_definition	dc:license	IAO:0000115	
 WARN	missing_definition	dc:title	IAO:0000115	
-WARN	missing_definition	https://w3id.org/aio/Data-to-TextLLM	IAO:0000115	
 INFO	lowercase_definition	https://w3id.org/aio/SoftplusFunction	IAO:0000115	softplus(x) = log(exp(x) + 1)
 INFO	lowercase_definition	https://w3id.org/aio/SoftsignFunction	IAO:0000115	softsign(x) = x / (abs(x) + 1)
 INFO	lowercase_definition	https://w3id.org/aio/SwishFunction	IAO:0000115	x*sigmoid(x). It is a smooth, non-monotonic function that consistently matches or outperforms ReLU on deep networks, it is unbounded above and bounded below.
 INFO	missing_superclass	obo:ARTIFICIAL-INTELLIGENCE-ONTOLOGY_0000000	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/Bias	rdfs:subClassOf	
-INFO	missing_superclass	https://w3id.org/aio/DataEnhancement	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/DataPreparation	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/Function	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/LargeLanguageModel	rdfs:subClassOf	
