@@ -18123,16 +18123,6 @@
         } ]
       }
     }, {
-      "id" : "https://w3id.org/aio/Method",
-      "lbl" : "Method",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "Method parent class.",
-          "xrefs" : [ "TBD" ]
-        }
-      }
-    }, {
       "id" : "https://w3id.org/aio/MetricLearning",
       "lbl" : "Metric Learning",
       "type" : "CLASS",
@@ -18570,7 +18560,7 @@
           "val" : "Personalized LLM"
         }, {
           "pred" : "hasRelatedSynonym",
-          "val" : "user adaptation"
+          "val" : "user adaptation LLM"
         } ]
       }
     }, {
@@ -21960,10 +21950,6 @@
       "sub" : "https://w3id.org/aio/Low-ResourceLLM",
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/ApplicationFocus"
-    }, {
-      "sub" : "https://w3id.org/aio/MachineLearning",
-      "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/Method"
     }, {
       "sub" : "https://w3id.org/aio/ManifoldLearning",
       "pred" : "is_a",

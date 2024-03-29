@@ -99,6 +99,6 @@ INFO	missing_superclass	https://w3id.org/aio/Bias	rdfs:subClassOf
 INFO	missing_superclass	https://w3id.org/aio/Function	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/LargeLanguageModel	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/Layer	rdfs:subClassOf	
-INFO	missing_superclass	https://w3id.org/aio/Method	rdfs:subClassOf	
+INFO	missing_superclass	https://w3id.org/aio/MachineLearning	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/Network	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/Preprocessing	rdfs:subClassOf	

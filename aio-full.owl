@@ -10527,7 +10527,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- https://w3id.org/aio/MachineLearning -->
 
     <owl:Class rdf:about="https://w3id.org/aio/MachineLearning">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Method"/>
         <obo:IAO_0000115>A field of inquiry devoted to understanding and building methods that &apos;learn&apos;, that is, methods that leverage data to improve performance on some set of tasks.</obo:IAO_0000115>
         <rdfs:label>Machine Learning</rdfs:label>
     </owl:Class>
@@ -10821,21 +10820,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/Meta-LearningLLM"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A meta-learning LLM is trained in a way that allows it to quickly adapt to new tasks or datasets through only a few examples or fine-tuning steps, leveraging meta-learned priors about how to efficiently learn.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- https://w3id.org/aio/Method -->
-
-    <owl:Class rdf:about="https://w3id.org/aio/Method">
-        <obo:IAO_0000115>Method parent class.</obo:IAO_0000115>
-        <rdfs:label>Method</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Method"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Method parent class.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -11377,7 +11361,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>A personalized LLM adapts its language modeling and generation to the preferences, style and persona of individual users or audiences.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Personalized LLM</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym>user adaptation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>user adaptation LLM</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Personalized LLM</rdfs:label>
     </owl:Class>
     <owl:Axiom>
