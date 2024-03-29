@@ -13,9 +13,9 @@
         "val" : "Artificial Intelligence Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-03-28"
+        "val" : "2024-03-29"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/aio/releases/2024-03-28/aio-full.json"
+      "version" : "http://purl.obolibrary.org/obo/aio/releases/2024-03-29/aio-full.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000002",
@@ -16675,29 +16675,6 @@
         } ]
       }
     }, {
-      "id" : "https://w3id.org/aio/GenerativeLanguageCircuit",
-      "lbl" : "Generative Language Circuit",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A generative language circuit is a type of LLM that learns to generate programs or code by training on input-output pairs, effectively learning the underlying \"program\" that maps inputs to outputs.",
-          "xrefs" : [ "TBD" ]
-        },
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
-          "val" : "GLC"
-        }, {
-          "pred" : "hasExactSynonym",
-          "val" : "Generative Language Circuit"
-        }, {
-          "pred" : "hasRelatedSynonym",
-          "val" : "analogy circuit"
-        }, {
-          "pred" : "hasRelatedSynonym",
-          "val" : "program synthesis"
-        } ]
-      }
-    }, {
       "id" : "https://w3id.org/aio/GenerativeLanguageInterface",
       "lbl" : "Generative Language Interface",
       "type" : "CLASS",
@@ -21651,10 +21628,6 @@
       "sub" : "https://w3id.org/aio/GenerativeCommonsenseLLM",
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/ApplicationFocus"
-    }, {
-      "sub" : "https://w3id.org/aio/GenerativeLanguageCircuit",
-      "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/ModelArchitecture"
     }, {
       "sub" : "https://w3id.org/aio/GenerativeLanguageInterface",
       "pred" : "is_a",

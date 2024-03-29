@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aio/releases/2024-03-28/aio-full.owl
+data-version: aio/releases/2024-03-29/aio-full.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -10,7 +10,7 @@ ontology: aio/aio-full
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "Artificial Intelligence Ontology" xsd:string
-property_value: owl:versionInfo "2024-03-28" xsd:string
+property_value: owl:versionInfo "2024-03-29" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -3114,16 +3114,6 @@ synonym: "causal modeling" RELATED []
 synonym: "Generative Commonsense LLM" EXACT []
 synonym: "physical reasoning" RELATED []
 is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
-
-[Term]
-id: https://w3id.org/aio/GenerativeLanguageCircuit
-name: Generative Language Circuit
-def: "A generative language circuit is a type of LLM that learns to generate programs or code by training on input-output pairs, effectively learning the underlying \"program\" that maps inputs to outputs." [TBD] {type="owl:Axiom"}
-synonym: "analogy circuit" RELATED []
-synonym: "Generative Language Circuit" EXACT []
-synonym: "GLC" EXACT []
-synonym: "program synthesis" RELATED []
-is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 
 [Term]
 id: https://w3id.org/aio/GenerativeLanguageInterface

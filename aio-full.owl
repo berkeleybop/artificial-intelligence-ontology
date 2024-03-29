@@ -18,11 +18,11 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aio/aio-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2024-03-28/aio-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2024-03-29/aio-full.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Artificial Intelligence Ontology</dcterms:title>
-        <owl:versionInfo>2024-03-28</owl:versionInfo>
+        <owl:versionInfo>2024-03-29</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -9074,26 +9074,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/GenerativeCommonsenseLLM"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A generative commonsense LLM is trained to understand and model basic physics, causality and common sense about how the real world works.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- https://w3id.org/aio/GenerativeLanguageCircuit -->
-
-    <owl:Class rdf:about="https://w3id.org/aio/GenerativeLanguageCircuit">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
-        <obo:IAO_0000115>A generative language circuit is a type of LLM that learns to generate programs or code by training on input-output pairs, effectively learning the underlying &quot;program&quot; that maps inputs to outputs.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>GLC</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Generative Language Circuit</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym>analogy circuit</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>program synthesis</oboInOwl:hasRelatedSynonym>
-        <rdfs:label>Generative Language Circuit</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/GenerativeLanguageCircuit"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A generative language circuit is a type of LLM that learns to generate programs or code by training on input-output pairs, effectively learning the underlying &quot;program&quot; that maps inputs to outputs.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
     </owl:Axiom>
     

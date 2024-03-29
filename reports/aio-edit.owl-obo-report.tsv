@@ -54,7 +54,6 @@ WARN	duplicate_label_synonym	https://w3id.org/aio/FactorizedLLM	oboInOwl:hasExac
 WARN	duplicate_label_synonym	https://w3id.org/aio/FederatedLLM	oboInOwl:hasExactSynonym	Federated LLM
 WARN	duplicate_label_synonym	https://w3id.org/aio/GenerativeAdversarialNetwork-AugmentedLLM	oboInOwl:hasExactSynonym	Generative Adversarial Network-Augmented LLM
 WARN	duplicate_label_synonym	https://w3id.org/aio/GenerativeCommonsenseLLM	oboInOwl:hasExactSynonym	Generative Commonsense LLM
-WARN	duplicate_label_synonym	https://w3id.org/aio/GenerativeLanguageCircuit	oboInOwl:hasExactSynonym	Generative Language Circuit
 WARN	duplicate_label_synonym	https://w3id.org/aio/GenerativeLanguageInterface	oboInOwl:hasExactSynonym	Generative Language Interface
 WARN	duplicate_label_synonym	https://w3id.org/aio/GraphLLM	oboInOwl:hasExactSynonym	Graph LLM
 WARN	duplicate_label_synonym	https://w3id.org/aio/HierarchicalLLM	oboInOwl:hasExactSynonym	Hierarchical LLM
