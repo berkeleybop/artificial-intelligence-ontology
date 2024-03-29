@@ -303,16 +303,6 @@
     
 
 
-    <!-- https://w3id.org/aio/AdvancedTechniques -->
-
-    <Class rdf:about="https://w3id.org/aio/AdvancedTechniques">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
-        <obo:IAO_0000115>An abstract parent class grouping LLMs based on advanced techniques.</obo:IAO_0000115>
-        <rdfs:label>Advanced Techniques</rdfs:label>
-    </Class>
-    
-
-
     <!-- https://w3id.org/aio/Adversarial-ResistantLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Adversarial-ResistantLLM">
@@ -323,6 +313,12 @@
         <oboInOwl:hasRelatedSynonym>robustness</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Adversarial-Resistant LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Adversarial-ResistantLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An adversarial-resistant LLM is engineered to withstand or mitigate the effects of adversarial attacks, ensuring reliable performance even in the presence of deliberately misleading input designed to confuse the model.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -394,9 +390,15 @@
 
     <Class rdf:about="https://w3id.org/aio/ApplicationFocus">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
-        <obo:IAO_0000115>An abstract parent class grouping LLMs based on application focus.</obo:IAO_0000115>
+        <obo:IAO_0000115>An abstract parent class grouping LLMs based on model application focus.</obo:IAO_0000115>
         <rdfs:label>Application Focus</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An abstract parent class grouping LLMs based on model application focus.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -488,13 +490,19 @@
     <!-- https://w3id.org/aio/AutoregressiveLanguageModel -->
 
     <Class rdf:about="https://w3id.org/aio/AutoregressiveLanguageModel">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>An autoregressive language model is a type of language model that generates text sequentially, predicting one token at a time based on the previously generated tokens. It excels at natural language generation tasks by modeling the probability distribution over sequences of tokens.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Autoregressive Language Model</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>generative language model</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>sequence-to-sequence model</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Autoregressive Language Model</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/AutoregressiveLanguageModel"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An autoregressive language model is a type of language model that generates text sequentially, predicting one token at a time based on the previously generated tokens. It excels at natural language generation tasks by modeling the probability distribution over sequences of tokens.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -887,13 +895,19 @@
     <!-- https://w3id.org/aio/CausalLLM -->
 
     <Class rdf:about="https://w3id.org/aio/CausalLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/InterpretabilityandEthics"/>
         <obo:IAO_0000115>A causal LLM only attends to previous tokens in the sequence when generating text, modeling the probability distribution autoregressively from left-to-right or causally.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Causal LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>autoregressive</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>unidirectional</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Causal LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/CausalLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A causal LLM only attends to previous tokens in the sequence when generating text, modeling the probability distribution autoregressively from left-to-right or causally.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -940,6 +954,12 @@
         <oboInOwl:hasRelatedSynonym>Text normalization</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Cleaning And Normalization</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/CleaningAndNormalization"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Removing irrelevant data, correcting typos, and standardizing text to reduce noise and ensure consistency in the data.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -979,13 +999,19 @@
     <!-- https://w3id.org/aio/CompositionalGeneralizationLLM -->
 
     <Class rdf:about="https://w3id.org/aio/CompositionalGeneralizationLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LearningParadigms"/>
         <obo:IAO_0000115>A compositional generalization LLM is trained to understand and recombine the underlying compositional structures in language, enabling better generalization to novel combinations and out-of-distribution examples.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Compositional Generalization LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>out-of-distribution generalization</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>systematic generalization</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Compositional Generalization LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/CompositionalGeneralizationLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A compositional generalization LLM is trained to understand and recombine the underlying compositional structures in language, enabling better generalization to novel combinations and out-of-distribution examples.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -1108,7 +1134,7 @@
     <!-- https://w3id.org/aio/ContinualLearningLLM -->
 
     <Class rdf:about="https://w3id.org/aio/ContinualLearningLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LearningParadigms"/>
         <obo:IAO_0000115>A continual learning LLM is designed to continually acquire new knowledge and skills over time, without forgetting previously learned information. This allows the model to adapt and expand its capabilities as new data becomes available.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>CL-LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Continual Learning LLM</oboInOwl:hasExactSynonym>
@@ -1116,6 +1142,12 @@
         <oboInOwl:hasRelatedSynonym>lifelong learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Continual Learning LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/ContinualLearningLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A continual learning LLM is designed to continually acquire new knowledge and skills over time, without forgetting previously learned information. This allows the model to adapt and expand its capabilities as new data becomes available.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -1138,12 +1170,18 @@
     <!-- https://w3id.org/aio/ContrastiveLearningLLM -->
 
     <Class rdf:about="https://w3id.org/aio/ContrastiveLearningLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LearningParadigms"/>
         <obo:IAO_0000115>A contrastive learning LLM is trained to pull semantically similar samples closer together and push dissimilar samples apart in the representation space, learning high-quality features useful for downstream tasks.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Contrastive Learning LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Representation learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Contrastive Learning LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/ContrastiveLearningLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A contrastive learning LLM is trained to pull semantically similar samples closer together and push dissimilar samples apart in the representation space, learning high-quality features useful for downstream tasks.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -1157,6 +1195,12 @@
         <oboInOwl:hasRelatedSynonym>guided generation</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Controllable LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/ControllableLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A controllable LLM allows for explicit control over certain attributes of the generated text, such as style, tone, topic, or other desired characteristics, through conditioning or specialized training objectives.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -1401,13 +1445,19 @@
     <!-- https://w3id.org/aio/Cross-DomainLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Cross-DomainLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>A cross-domain LLM is capable of performing well across a wide range of domains without significant loss in performance, facilitated by advanced domain adaptation techniques.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Domain-General LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>cross-domain transfer</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>domain adaptation</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Cross-Domain LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Cross-DomainLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A cross-domain LLM is capable of performing well across a wide range of domains without significant loss in performance, facilitated by advanced domain adaptation techniques.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -1422,30 +1472,48 @@
         <oboInOwl:hasRelatedSynonym>Sequential learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Curriculum Learning</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/CurriculumLearning"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Training the model on simpler tasks or easier data first, then gradually introducing more complex tasks to improve learning efficiency and performance.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
     <!-- https://w3id.org/aio/CurriculumLearningLLM -->
 
     <Class rdf:about="https://w3id.org/aio/CurriculumLearningLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LearningParadigms"/>
         <obo:IAO_0000115>A curriculum learning LLM is trained by presenting learning examples in a meaningful order from simple to complex, mimicking the learning trajectory followed by humans.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Curriculum Learning LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Learning progression</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Curriculum Learning LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/CurriculumLearningLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A curriculum learning LLM is trained by presenting learning examples in a meaningful order from simple to complex, mimicking the learning trajectory followed by humans.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
     <!-- https://w3id.org/aio/Data-to-TextLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Data-to-TextLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
+        <obo:IAO_0000115>A data-to-text LLM generates natural language descriptions from structured data sources like tables, graphs, knowledge bases, etc. Requiring grounding meaning representations.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Data-to-Text LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Meaning representation</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym>A data-to-text LLM generates natural language descriptions from structured data sources like tables, graphs, knowledge bases, etc. Requiring grounding meaning representations.</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Data-to-Text LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Data-to-TextLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A data-to-text LLM generates natural language descriptions from structured data sources like tables, graphs, knowledge bases, etc. Requiring grounding meaning representations.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -1460,6 +1528,12 @@
         <oboInOwl:hasRelatedSynonym>Synonym replacement</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Data Augmentation</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/DataAugmentation"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Expanding the training dataset artificially by modifying existing data points to improve the model&apos;s robustness and generalization ability.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -1483,11 +1557,16 @@
     <!-- https://w3id.org/aio/DataEnhancement -->
 
     <Class rdf:about="https://w3id.org/aio/DataEnhancement">
-        <obo:IAO_0000115>Methods that enhance the training data or its representation, including augmentation and feature extraction.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Data Improvement</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Data Refinement</oboInOwl:hasExactSynonym>
-        <rdfs:label>Data Enhancement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
+        <obo:IAO_0000115>The processes and techniques used to improve data quality and value for better decision-making, analysis, and AI model training.</obo:IAO_0000115>
+        <rdfs:label>DataEnhancement</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/DataEnhancement"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>The processes and techniques used to improve data quality and value for better decision-making, analysis, and AI model training.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -1526,12 +1605,19 @@
     <!-- https://w3id.org/aio/DataPreparation -->
 
     <Class rdf:about="https://w3id.org/aio/DataPreparation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
         <obo:IAO_0000115>Techniques focused on preparing raw data for training, including cleaning, normalization, and tokenization.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Data Assembly</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Data Curation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Data Processing</oboInOwl:hasExactSynonym>
         <rdfs:label>Data Preparation</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/DataPreparation"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Techniques focused on preparing raw data for training, including cleaning, normalization, and tokenization.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -1630,6 +1716,12 @@
         <rdfs:comment>Input, Kernel, Convolutional/Pool, Probabilistic Hidden, Convolutional/Pool, Kernel, Output</rdfs:comment>
         <rdfs:label>Deep Convolutional Inverse Graphics Network</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/DeepConvolutionalInverseGraphicsNetwork"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A Deep Convolution Inverse Graphics Network (DC-IGN) is a model that learns an interpretable representation of images. This representation is disentangled with respect to transformations such as out-of-plane rotations and lighting variations. The DC-IGN model is composed of multiple layers of convolution and de-convolution operators and is trained using the Stochastic Gradient Variational Bayes (SGVB) algorithm. (https://arxiv.org/abs/1503.03167)</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -1656,13 +1748,7 @@
 
     <!-- https://w3id.org/aio/DeepFeedForward -->
 
-    <Class rdf:about="https://w3id.org/aio/DeepFeedForward"/>
-    
-
-
-    <!-- https://w3id.org/aio/DeepFeedFoward -->
-
-    <Class rdf:about="https://w3id.org/aio/DeepFeedFoward">
+    <Class rdf:about="https://w3id.org/aio/DeepFeedForward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>The feedforward neural network was the first and simplest type of artificial neural network devised. In this network, the information moves in only one direction—forward—from the input nodes, through the hidden nodes (if any) and to the output nodes. There are no cycles or loops in the network.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>DFF</oboInOwl:hasExactSynonym>
@@ -1671,10 +1757,10 @@
         <oboInOwl:hasExactSynonym>MLP</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Multilayer Perceptoron</oboInOwl:hasExactSynonym>
         <rdfs:comment>Input, Hidden, Output</rdfs:comment>
-        <rdfs:label>Deep FeedFoward</rdfs:label>
+        <rdfs:label>Deep FeedForward</rdfs:label>
     </Class>
     <Axiom>
-        <annotatedSource rdf:resource="https://w3id.org/aio/DeepFeedFoward"/>
+        <annotatedSource rdf:resource="https://w3id.org/aio/DeepFeedForward"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The feedforward neural network was the first and simplest type of artificial neural network devised. In this network, the information moves in only one direction—forward—from the input nodes, through the hidden nodes (if any) and to the output nodes. There are no cycles or loops in the network.</annotatedTarget>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Feedforward_neural_network</oboInOwl:hasDbXref>
@@ -1690,6 +1776,12 @@
         <oboInOwl:hasExactSynonym>DNN</oboInOwl:hasExactSynonym>
         <rdfs:label>Deep Neural Network</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A deep neural network (DNN) is an artificial neural network (ANN) with multiple layers between the input and output layers.[13][2] There are different types of neural networks but they always consist of the same components: neurons, synapses, weights, biases, and functions. (https://en.wikipedia.org/wiki/Deep_Learning#:~:text=A%20deep%20neural%20network%20(DNN,weights%2C%20biases%2C%20and%20functions.)</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -1715,9 +1807,16 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AutoEncoderNetwork"/>
         <obo:IAO_0000115>Denoising Auto Encoders (DAEs) take a partially corrupted input and are trained to recover the original undistorted input. In practice, the objective of denoising autoencoders is that of cleaning the corrupted input, or denoising. (https://en.wikipedia.org/wiki/Autoencoder)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>DAE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Denoising Autoencoder</oboInOwl:hasExactSynonym>
         <rdfs:comment>Noisy Input, Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label>Denoising Auto Encoder</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/DenoisingAutoEncoder"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Denoising Auto Encoders (DAEs) take a partially corrupted input and are trained to recover the original undistorted input. In practice, the objective of denoising autoencoders is that of cleaning the corrupted input, or denoising. (https://en.wikipedia.org/wiki/Autoencoder)</annotatedTarget>
+        <oboInOwl:hasDbXref>https://doi.org/10.1145/1390156.1390294</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -1827,19 +1926,31 @@
         <oboInOwl:hasRelatedSynonym>multi-turn dialogue</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Dialogue LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/DialogueLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A dialogue LLM is optimized for engaging in multi-turn conversations, understanding context and generating relevant, coherent responses continuously over many dialogue turns.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
     <!-- https://w3id.org/aio/DifferentiableLLM -->
 
     <Class rdf:about="https://w3id.org/aio/DifferentiableLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMModelArchitecture"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>A differentiable LLM has an architecture amenable to full end-to-end training via backpropagation, without relying on teacher forcing or unlikelihood training objectives.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Differentiable LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>end-to-end training</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>fully backpropagable</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Differentiable LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/DifferentiableLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A differentiable LLM has an architecture amenable to full end-to-end training via backpropagation, without relying on teacher forcing or unlikelihood training objectives.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -1887,19 +1998,31 @@
         <oboInOwl:hasRelatedSynonym>Teacher-student model</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Distillation</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Distillation"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Knowledge distillation involves training a smaller model to replicate the behavior of a larger model, aiming to compress the knowledge into a more compact form without significant loss of performance.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://doi.org/10.48550/arXiv.2105.13093</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
     <!-- https://w3id.org/aio/Domain-AdaptedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Domain-AdaptedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
         <obo:IAO_0000115>A domain-adapted LLM is first pre-trained on a broad corpus, then fine-tuned on domain-specific data to specialize its capabilities for particular domains or applications, like scientific literature or code generation.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Domain-Adapted LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>domain robustness</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>transfer learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Domain-Adapted LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Domain-AdaptedLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A domain-adapted LLM is first pre-trained on a broad corpus, then fine-tuned on domain-specific data to specialize its capabilities for particular domains or applications, like scientific literature or code generation.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -2046,6 +2169,12 @@
         <oboInOwl:hasRelatedSynonym>multimodal grounding</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Embodied LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/EmbodiedLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An embodied LLM integrates language with other modalities like vision, audio, robotics to enable grounded language understanding in real-world environments.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -2102,13 +2231,19 @@
     <!-- https://w3id.org/aio/Energy-BasedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Energy-BasedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>An energy-based LLM models the explicit probability density over token sequences using an energy function, rather than an autoregressive factorization. This can improve modeling of long-range dependencies and global coherence.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Energy-Based LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>energy scoring</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>explicit density modeling</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Energy-Based LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Energy-BasedLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An energy-based LLM models the explicit probability density over token sequences using an energy function, rather than an autoregressive factorization. This can improve modeling of long-range dependencies and global coherence.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -2116,9 +2251,15 @@
 
     <Class rdf:about="https://w3id.org/aio/EnhancementStrategies">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
-        <obo:IAO_0000115>An abstract parent class grouping LLMs based on enhancement strategies.</obo:IAO_0000115>
+        <obo:IAO_0000115>An abstract parent class grouping LLMs based on model enhancement strategies.</obo:IAO_0000115>
         <rdfs:label>Enhancement Strategies</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An abstract parent class grouping LLMs based on model enhancement strategies.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -2165,6 +2306,12 @@
         <oboInOwl:hasRelatedSynonym>value alignment</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Ethical LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/EthicalLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An ethical LLM is trained to uphold certain ethical principles, values or rules in its language generation to increase safety and trustworthiness.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -2187,13 +2334,19 @@
     <!-- https://w3id.org/aio/EvolutionaryLLM -->
 
     <Class rdf:about="https://w3id.org/aio/EvolutionaryLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LearningParadigms"/>
         <obo:IAO_0000115>An evolutionary LLM applies principles of evolutionary computation to optimize its structure and parameters, evolving over time to improve performance.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Evolutionary Language Model</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>evolutionary algorithms</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>genetic programming</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Evolutionary LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/EvolutionaryLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An evolutionary LLM applies principles of evolutionary computation to optimize its structure and parameters, evolving over time to improve performance.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -2216,7 +2369,7 @@
     <!-- https://w3id.org/aio/ExplainableLLM -->
 
     <Class rdf:about="https://w3id.org/aio/ExplainableLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/InterpretabilityandEthics"/>
         <obo:IAO_0000115>An explainable LLM is designed to provide insights into its decision-making process, making it easier for users to understand and trust the model&apos;s outputs. It incorporates mechanisms for interpreting and explaining its predictions in human-understandable terms.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Explainable Language Model</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>XAI LLM</oboInOwl:hasExactSynonym>
@@ -2224,6 +2377,12 @@
         <oboInOwl:hasRelatedSynonym>model understanding</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Explainable LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/ExplainableLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An explainable LLM is designed to provide insights into its decision-making process, making it easier for users to understand and trust the model&apos;s outputs. It incorporates mechanisms for interpreting and explaining its predictions in human-understandable terms.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -2264,13 +2423,19 @@
     <!-- https://w3id.org/aio/FactorizedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/FactorizedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>A factorized LLM decomposes the full language modeling task into multiple sub-components or experts that each focus on a subset of the information. This enables more efficient scaling.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Factorized LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Conditional masking</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Product of experts</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Factorized LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/FactorizedLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A factorized LLM decomposes the full language modeling task into multiple sub-components or experts that each focus on a subset of the information. This enables more efficient scaling.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -2285,19 +2450,31 @@
         <oboInOwl:hasRelatedSynonym>Syntactic information</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Feature Extraction</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/FeatureExtraction"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Extracting specific features or patterns from the text before training to guide the model&apos;s learning process, including syntactic information or semantic embeddings.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
     <!-- https://w3id.org/aio/FederatedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/FederatedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
         <obo:IAO_0000115>A federated LLM is trained in a decentralized manner across multiple devices or silos, without directly sharing private data. This enables collaborative training while preserving data privacy and security.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Federated LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>decentralized training</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>privacy-preserving</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Federated LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/FederatedLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A federated LLM is trained in a decentralized manner across multiple devices or silos, without directly sharing private data. This enables collaborative training while preserving data privacy and security.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -2342,6 +2519,12 @@
         <rdfs:comment>Input, Hidden, Output, Hidden</rdfs:comment>
         <rdfs:label>Feedback Network</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/FeedbackNetwork"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A feedback based approach in which the representation is formed in an iterative manner based on a feedback received from previous iteration&apos;s output. (https://arxiv.org/abs/1612.09508)</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -2416,7 +2599,16 @@
 
     <!-- https://w3id.org/aio/Function -->
 
-    <Class rdf:about="https://w3id.org/aio/Function"/>
+    <Class rdf:about="https://w3id.org/aio/Function">
+        <obo:IAO_0000115>Function parent class</obo:IAO_0000115>
+        <rdfs:label>Function</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Function"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Function parent class</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -2591,7 +2783,7 @@
     <!-- https://w3id.org/aio/GenerativeAdversarialNetwork-AugmentedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/GenerativeAdversarialNetwork-AugmentedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>A GAN-augmented LLM incorporates a generative adversarial network (GAN) into its training process, using a discriminator network to provide a signal for generating more realistic and coherent text. This adversarial training can improve the quality and diversity of generated text.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>GAN-LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Generative Adversarial Network-Augmented LLM</oboInOwl:hasExactSynonym>
@@ -2599,6 +2791,12 @@
         <oboInOwl:hasRelatedSynonym>text generation</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Generative Adversarial Network-Augmented LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/GenerativeAdversarialNetwork-AugmentedLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A GAN-augmented LLM incorporates a generative adversarial network (GAN) into its training process, using a discriminator network to provide a signal for generating more realistic and coherent text. This adversarial training can improve the quality and diversity of generated text.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -2612,32 +2810,30 @@
         <oboInOwl:hasRelatedSynonym>physical reasoning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Generative Commonsense LLM</rdfs:label>
     </Class>
-    
-
-
-    <!-- https://w3id.org/aio/GenerativeLanguageCircuit -->
-
-    <Class rdf:about="https://w3id.org/aio/GenerativeLanguageCircuit">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
-        <obo:IAO_0000115>A generative language circuit is a type of LLM that learns to generate programs or code by training on input-output pairs, effectively learning the underlying &quot;program&quot; that maps inputs to outputs.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>GLC</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Generative Language Circuit</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym>analogy circuit</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>program synthesis</oboInOwl:hasRelatedSynonym>
-        <rdfs:label>Generative Language Circuit</rdfs:label>
-    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/GenerativeCommonsenseLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A generative commonsense LLM is trained to understand and model basic physics, causality and common sense about how the real world works.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
     <!-- https://w3id.org/aio/GenerativeLanguageInterface -->
 
     <Class rdf:about="https://w3id.org/aio/GenerativeLanguageInterface">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>A generative language interface enables users to engage in an interactive dialogue with an LLM, providing feedback to guide and refine the generated outputs iteratively.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Generative Language Interface</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Interactive generation</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Generative Language Interface</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/GenerativeLanguageInterface"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A generative language interface enables users to engage in an interactive dialogue with an LLM, providing feedback to guide and refine the generated outputs iteratively.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -2788,12 +2984,18 @@
     <!-- https://w3id.org/aio/GraphLLM -->
 
     <Class rdf:about="https://w3id.org/aio/GraphLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>A graph LLM operates over structured inputs/outputs represented as graphs, enabling reasoning over explicit relational knowledge representations during language tasks.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Graph LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Structured representations</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Graph LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/GraphLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A graph LLM operates over structured inputs/outputs represented as graphs, enabling reasoning over explicit relational knowledge representations during language tasks.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://doi.org/10.48550/arXiv.2311.12399</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -2942,6 +3144,12 @@
         <oboInOwl:hasRelatedSynonym>multi-scale representations</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Hierarchical LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/HierarchicalLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A hierarchical LLM models language at multiple levels of granularity, learning hierarchical representations that can capture both low-level patterns and high-level abstractions.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -3081,13 +3289,19 @@
     <!-- https://w3id.org/aio/ImplicitLanguageModel -->
 
     <Class rdf:about="https://w3id.org/aio/ImplicitLanguageModel">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/InterpretabilityandEthics"/>
         <obo:IAO_0000115>An implicit language model uses an energy function to score full sequences instead of factorizing probabilities autoregressively. This can better capture global properties and long-range dependencies.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Implicit Language Model</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Energy-based models</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Token-level scoring</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Implicit Language Model</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/ImplicitLanguageModel"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An implicit language model uses an energy function to score full sequences instead of factorizing probabilities autoregressively. This can better capture global properties and long-range dependencies.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -3268,6 +3482,12 @@
         <oboInOwl:hasRelatedSynonym>natural language instructions</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Instruction-Tuned LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Instruction-TunedLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An instruction-tuned LLM is fine-tuned to follow natural language instructions accurately and safely, learning to map from instructions to desired model behavior in a more controlled and principled way.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -3287,16 +3507,54 @@
     
 
 
+    <!-- https://w3id.org/aio/InterfaceandIntegration -->
+
+    <Class rdf:about="https://w3id.org/aio/InterfaceandIntegration">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
+        <obo:IAO_0000115>An abstract parent class grouping LLMs based on model interfaces and integration.</obo:IAO_0000115>
+        <rdfs:label>Interface and Integration</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/InterfaceandIntegration"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An abstract parent class grouping LLMs based on model interfaces and integration.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/InterpretabilityandEthics -->
+
+    <Class rdf:about="https://w3id.org/aio/InterpretabilityandEthics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
+        <obo:IAO_0000115>An abstract parent class grouping LLMs based on model interpretability and ethics.</obo:IAO_0000115>
+        <rdfs:label>Interpretability and Ethics</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/InterpretabilityandEthics"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An abstract parent class grouping LLMs based on model interpretability and ethics.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
     <!-- https://w3id.org/aio/InterpretableLLM -->
 
     <Class rdf:about="https://w3id.org/aio/InterpretableLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/InterpretabilityandEthics"/>
         <obo:IAO_0000115>An interpretable LLM prioritizes transparency and ease of understanding in its operations, making its decision-making processes clear and rational to human users.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Interpretable Language Model</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>interpretability</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>model transparency</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Interpretable LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/InterpretableLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An interpretable LLM prioritizes transparency and ease of understanding in its operations, making its decision-making processes clear and rational to human users.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -3374,13 +3632,39 @@
     <!-- https://w3id.org/aio/Knowledge-GroundedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Knowledge-GroundedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
         <obo:IAO_0000115>A knowledge-grounded LLM incorporates external knowledge sources or knowledge bases into the model architecture, enabling it to generate more factually accurate and knowledge-aware text.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Knowledge-Grounded LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>factual grounding</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>knowledge integration</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Knowledge-Grounded LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Knowledge-GroundedLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A knowledge-grounded LLM incorporates external knowledge sources or knowledge bases into the model architecture, enabling it to generate more factually accurate and knowledge-aware text.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/KnowledgeTransfer -->
+
+    <Class rdf:about="https://w3id.org/aio/KnowledgeTransfer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingStrategies"/>
+        <obo:IAO_0000115>Starting the training from a model already trained on a related task to reduce training time and improve performance on tasks with limited data.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Inductive Transfer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Skill Acquisition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Adaptation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Pretrained models</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>Knowledge Transfer</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/KnowledgeTransfer"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Starting the training from a model already trained on a related task to reduce training time and improve performance on tasks with limited data.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://doi.org/10.1016/j.knosys.2015.01.010</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -3403,12 +3687,6 @@
         <annotatedTarget>A self-organizing map (SOM) or self-organizing feature map (SOFM) is an unsupervised machine Learning technique used to produce a low-dimensional (typically two-dimensional) representation of a higher dimensional data set while preserving the topological structure of the data. For example, a data set with p variables measured in n observations could be represented as clusters of observations with similar values for the variables. These clusters then could be visualized as a two-dimensional &quot;map&quot; such that observations in proximal clusters have more similar values than observations in distal clusters. This can make high-dimensional data easier to visualize and analyze. An SOM is a type of artificial neural network but is trained using competitive Learning rather than the error-correction Learning (e.g., backpropagation with gradient descent) used by other artificial neural networks. The SOM was introduced by the Finnish professor Teuvo Kohonen in the 1980s and therefore is sometimes called a Kohonen map or Kohonen network.[1][2] The Kohonen map or network is a computationally convenient abstraction building on biological models of neural systems from the 1970s[3] and morphogenesis models dating back to Alan Turing in the 1950s.</annotatedTarget>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Self-organizing_map</oboInOwl:hasDbXref>
     </Axiom>
-    
-
-
-    <!-- https://w3id.org/aio/LLMModelArchitecture -->
-
-    <Class rdf:about="https://w3id.org/aio/LLMModelArchitecture"/>
     
 
 
@@ -3499,12 +3777,18 @@
     <!-- https://w3id.org/aio/LanguageInterfaceLLM -->
 
     <Class rdf:about="https://w3id.org/aio/LanguageInterfaceLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/InterfaceandIntegration"/>
         <obo:IAO_0000115>A language interface LLM supports interactive semantic parsing, enabling users to provide feedback/corrections which are used to dynamically refine and update the language model.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Language Interface LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Interactive learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Language Interface LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/LanguageInterfaceLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A language interface LLM supports interactive semantic parsing, enabling users to provide feedback/corrections which are used to dynamically refine and update the language model.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -3546,6 +3830,12 @@
         <obo:IAO_0000115>Network layer parent class</obo:IAO_0000115>
         <rdfs:label>Layer</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Layer"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Network layer parent class</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -3722,6 +4012,22 @@
     
 
 
+    <!-- https://w3id.org/aio/LearningParadigms -->
+
+    <Class rdf:about="https://w3id.org/aio/LearningParadigms">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
+        <obo:IAO_0000115>An abstract parent class grouping LLMs based on model learning paradigms.</obo:IAO_0000115>
+        <rdfs:label>Learning Paradigms</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/LearningParadigms"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An abstract parent class grouping LLMs based on model learning paradigms.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
     <!-- https://w3id.org/aio/Least-squaresAnalysis -->
 
     <Class rdf:about="https://w3id.org/aio/Least-squaresAnalysis">
@@ -3741,7 +4047,7 @@
     <!-- https://w3id.org/aio/LifelongLearningLLM -->
 
     <Class rdf:about="https://w3id.org/aio/LifelongLearningLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LearningParadigms"/>
         <obo:IAO_0000115>A lifelong learning LLM can continually acquire new knowledge over time without forgetting previously learned information, maintaining a balance between plasticity and stability.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Continual Learning LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Lifelong Learning LLM</oboInOwl:hasExactSynonym>
@@ -3749,6 +4055,12 @@
         <oboInOwl:hasRelatedSynonym>Plasticity-Stability balance</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Lifelong Learning LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/LifelongLearningLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A lifelong learning LLM can continually acquire new knowledge over time without forgetting previously learned information, maintaining a balance between plasticity and stability.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -3936,20 +4248,25 @@
     <!-- https://w3id.org/aio/Low-ResourceLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Low-ResourceLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>A low-resource LLM is optimized for performance in scenarios with limited data, computational resources, or for languages with sparse datasets.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Low-Resource Language Model</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>low-resource languages</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>resource-efficient</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Low-Resource LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Low-ResourceLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A low-resource LLM is optimized for performance in scenarios with limited data, computational resources, or for languages with sparse datasets.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
     <!-- https://w3id.org/aio/MachineLearning -->
 
     <Class rdf:about="https://w3id.org/aio/MachineLearning">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Method"/>
         <obo:IAO_0000115>A field of inquiry devoted to understanding and building methods that &apos;learn&apos;, that is, methods that leverage data to improve performance on some set of tasks.</obo:IAO_0000115>
         <rdfs:label>Machine Learning</rdfs:label>
     </Class>
@@ -4001,13 +4318,19 @@
     <!-- https://w3id.org/aio/MaskedLanguageModel -->
 
     <Class rdf:about="https://w3id.org/aio/MaskedLanguageModel">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EncoderLLM"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>A masked language model is a type of language model that is trained to predict randomly masked tokens in a sequence, based on the remaining unmasked tokens. This allows it to build deep bidirectional representations that can be effectively transferred to various NLP tasks via fine-tuning.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Masked Language Model</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>bidirectional encoder</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>denoising autoencoder</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Masked Language Model</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/MaskedLanguageModel"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A masked language model is a type of language model that is trained to predict randomly masked tokens in a sequence, based on the remaining unmasked tokens. This allows it to build deep bidirectional representations that can be effectively transferred to various NLP tasks via fine-tuning.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -4176,12 +4499,18 @@
     <!-- https://w3id.org/aio/Memory-AugmentedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Memory-AugmentedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>A memory-augmented LLM incorporates external writeable and readable memory components, allowing it to store and retrieve information over long contexts.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Memory-Augmented LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>external memory</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Memory-Augmented LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Memory-AugmentedLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A memory-augmented LLM incorporates external writeable and readable memory components, allowing it to store and retrieve information over long contexts.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -4220,22 +4549,19 @@
     <!-- https://w3id.org/aio/Meta-LearningLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Meta-LearningLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LearningParadigms"/>
         <obo:IAO_0000115>A meta-learning LLM is trained in a way that allows it to quickly adapt to new tasks or datasets through only a few examples or fine-tuning steps, leveraging meta-learned priors about how to efficiently learn.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Meta-Learning LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>few-shot adaptation</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>learning to learn</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Meta-Learning LLM</rdfs:label>
     </Class>
-    
-
-
-    <!-- https://w3id.org/aio/Method -->
-
-    <Class rdf:about="https://w3id.org/aio/Method">
-        <obo:IAO_0000115>Method parent class.</obo:IAO_0000115>
-        <rdfs:label>Method</rdfs:label>
-    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Meta-LearningLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A meta-learning LLM is trained in a way that allows it to quickly adapt to new tasks or datasets through only a few examples or fine-tuning steps, leveraging meta-learned priors about how to efficiently learn.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -4283,6 +4609,12 @@
         <oboInOwl:hasRelatedSynonym>model parallelism</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Mixture-of-Experts LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Mixture-of-ExpertsLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A Mixture-of-Experts LLM dynamically selects and combines outputs from multiple expert submodels, allowing for efficient scaling by conditionally activating only a subset of model components for each input.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -4305,21 +4637,34 @@
     <!-- https://w3id.org/aio/ModelArchitecture -->
 
     <Class rdf:about="https://w3id.org/aio/ModelArchitecture">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>An abstract parent class grouping LLMs based on model architecture.</obo:IAO_0000115>
         <rdfs:label>Model Architecture</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An abstract parent class grouping LLMs based on model architecture.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
     <!-- https://w3id.org/aio/ModelEfficiency -->
 
     <Class rdf:about="https://w3id.org/aio/ModelEfficiency">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
         <obo:IAO_0000115>Techniques aimed at making models more efficient, such as knowledge distillation.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Computational Efficiency</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Model Optimization</oboInOwl:hasExactSynonym>
         <rdfs:label>Model Efficiency</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/ModelEfficiency"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Techniques aimed at making models more efficient, such as knowledge distillation.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://doi.org/10.1145/3578938</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -4349,18 +4694,30 @@
         <oboInOwl:hasRelatedSynonym>skill composition</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Modular LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/ModularLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A modular LLM consists of multiple specialized components or skills that can be dynamically composed and recombined to solve complex tasks, mimicking the modular structure of human cognition.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
     <!-- https://w3id.org/aio/Multi-TaskLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Multi-TaskLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/InterpretabilityandEthics"/>
         <obo:IAO_0000115>A multi-task LLM is trained jointly on multiple language tasks simultaneously, learning shared representations that transfer across tasks.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Multi-Task LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>transfer learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Multi-Task LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Multi-TaskLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A multi-task LLM is trained jointly on multiple language tasks simultaneously, learning shared representations that transfer across tasks.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -4417,12 +4774,18 @@
     <!-- https://w3id.org/aio/MultilingualLLM -->
 
     <Class rdf:about="https://w3id.org/aio/MultilingualLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LearningParadigms"/>
         <obo:IAO_0000115>A multilingual LLM is trained on text from multiple languages, learning shared representations that enable zero-shot or few-shot transfer to new languages.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Multilingual LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>cross-lingual transfer</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Multilingual LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/MultilingualLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A multilingual LLM is trained on text from multiple languages, learning shared representations that enable zero-shot or few-shot transfer to new languages.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -4445,12 +4808,19 @@
     <!-- https://w3id.org/aio/MultimodalFusionLLM -->
 
     <Class rdf:about="https://w3id.org/aio/MultimodalFusionLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
         <obo:IAO_0000115>A multimodal fusion LLM learns joint representations across different modalities like text, vision and audio in an end-to-end fashion for better cross-modal understanding and generation.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Multimodal Fusion LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>cross-modal grounding</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Multimodal Fusion LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/MultimodalFusionLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A multimodal fusion LLM learns joint representations across different modalities like text, vision and audio in an end-to-end fashion for better cross-modal understanding and generation.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -4461,19 +4831,31 @@
         <obo:IAO_0000115>Methods which can represent the joint representations of different modalities.</obo:IAO_0000115>
         <rdfs:label>Multimodal Learning</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/MultimodalLearning"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Methods which can represent the joint representations of different modalities.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
     <!-- https://w3id.org/aio/MultimodalTransformer -->
 
     <Class rdf:about="https://w3id.org/aio/MultimodalTransformer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>A multimodal transformer is a transformer architecture that can process and relate information from different modalities, such as text, images, and audio. It uses a shared embedding space and attention mechanism to learn joint representations across modalities.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Multimodal Transformer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>unified encoder</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>vision-language model</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Multimodal Transformer</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/MultimodalTransformer"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A multimodal transformer is a transformer architecture that can process and relate information from different modalities, such as text, images, and audio. It uses a shared embedding space and attention mechanism to learn joint representations across modalities.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -4516,6 +4898,12 @@
         <obo:IAO_0000115>Network parent class</obo:IAO_0000115>
         <rdfs:label>Network</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Network"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Network parent class</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -4541,13 +4929,19 @@
     <!-- https://w3id.org/aio/Neuro-SymbolicLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Neuro-SymbolicLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/InterpretabilityandEthics"/>
         <obo:IAO_0000115>A neuro-symbolic LLM combines neural language modeling with symbolic reasoning components, leveraging structured knowledge representations and logical inferences to improve reasoning capabilities.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Neuro-Symbolic LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>knowledge reasoning</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>symbolic grounding</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Neuro-Symbolic LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Neuro-SymbolicLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A neuro-symbolic LLM combines neural language modeling with symbolic reasoning components, leveraging structured knowledge representations and logical inferences to improve reasoning capabilities.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -4619,13 +5013,19 @@
     <!-- https://w3id.org/aio/OrdinalLLM -->
 
     <Class rdf:about="https://w3id.org/aio/OrdinalLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/InterpretabilityandEthics"/>
         <obo:IAO_0000115>An ordinal LLM is trained to model ordinal relationships and rank outputs, rather than model probability distributions over text sequences directly.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Ordinal LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>preference modeling</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>ranking</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Ordinal LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/OrdinalLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An ordinal LLM is trained to model ordinal relationships and rank outputs, rather than model probability distributions over text sequences directly.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -4671,6 +5071,12 @@
         <rdfs:comment>Input, Output</rdfs:comment>
         <rdfs:label>Perceptron</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Perceptron"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>The perceptron is an algorithm for supervised Learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class. It is a type of linear classifier, i.e. a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector. (https://en.wikipedia.org/wiki/Perceptron)</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -4693,12 +5099,18 @@
     <!-- https://w3id.org/aio/PersonalizedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/PersonalizedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>A personalized LLM adapts its language modeling and generation to the preferences, style and persona of individual users or audiences.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Personalized LLM</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym>user adaptation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>user adaptation LLM</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Personalized LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/PersonalizedLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A personalized LLM adapts its language modeling and generation to the preferences, style and persona of individual users or audiences.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -4746,6 +5158,21 @@
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>A form of selection bias that occurs when items that are more popular are more exposed and less popular items are under-represented.aSystematic distortions in demographics or other user characteristics between a population of users represented in a dataset or on a platform and some target population.</annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.6028/NIST.SP.1270</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/Preprocessing -->
+
+    <Class rdf:about="https://w3id.org/aio/Preprocessing">
+        <obo:IAO_0000115>A range of techniques and processes applied to data before it is used in machine learning models or AI algorithms</obo:IAO_0000115>
+        <rdfs:label>Preprocessing</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Preprocessing"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A range of techniques and processes applied to data before it is used in machine learning models or AI algorithms</annotatedTarget>
+        <oboInOwl:hasDbXref>https://doi.org/10.1109/ICDE.2019.00245</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -4854,7 +5281,7 @@
     <!-- https://w3id.org/aio/Prompt-basedFine-TuningLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Prompt-basedFine-TuningLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LearningParadigms"/>
         <obo:IAO_0000115>A prompt-tuned LLM is fine-tuned on a small number of examples or prompts, rather than full task datasets. This allows for rapid adaptation to new tasks with limited data, leveraging the model&apos;s few-shot learning capabilities.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Prompt-based Fine-Tuning LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Prompt-tuned LLM</oboInOwl:hasExactSynonym>
@@ -4862,6 +5289,12 @@
         <oboInOwl:hasRelatedSynonym>in-context learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Prompt-based Fine-Tuning LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Prompt-basedFine-TuningLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A prompt-tuned LLM is fine-tuned on a small number of examples or prompts, rather than full task datasets. This allows for rapid adaptation to new tasks with limited data, leveraging the model&apos;s few-shot learning capabilities.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -4901,7 +5334,7 @@
     <!-- https://w3id.org/aio/RadialBasisNetwork -->
 
     <Class rdf:about="https://w3id.org/aio/RadialBasisNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepFeedFoward"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepFeedForward"/>
         <obo:IAO_0000115>Like recurrent neural networks (RNNs), transformers are designed to handle sequential input data, such as natural language, for tasks such as translation and text summarization. However, unlike RNNs, transformers do not necessarily process the data in order. Rather, the attention mechanism provides context for any position in the input sequence.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>RBFN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>RBN</oboInOwl:hasExactSynonym>
@@ -5132,13 +5565,19 @@
     <!-- https://w3id.org/aio/RationalLLM -->
 
     <Class rdf:about="https://w3id.org/aio/RationalLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
         <obo:IAO_0000115>A rational LLM incorporates explicit reasoning capabilities, leveraging logical rules, axioms or external knowledge to make deductive inferences during language tasks.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Rational LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>logical inferences</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>reasoning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Rational LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/RationalLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A rational LLM incorporates explicit reasoning capabilities, leveraging logical rules, axioms or external knowledge to make deductive inferences during language tasks.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -5223,18 +5662,30 @@
         <oboInOwl:hasRelatedSynonym>self-attention</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Recursive LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/RecursiveLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A recursive or self-attending LLM incorporates recursive self-attention mechanisms, allowing it to iteratively refine its own outputs and capture long-range dependencies more effectively.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
     <!-- https://w3id.org/aio/RecursiveLanguageModel -->
 
     <Class rdf:about="https://w3id.org/aio/RecursiveLanguageModel">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>A recursive language model uses recursive neural network architectures like TreeLSTMs to learn syntactic composition functions, improving systematic generalization abilities.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Recursive Language Model</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>RLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Compositional generalization</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Recursive Language Model</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/RecursiveLanguageModel"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A recursive language model uses recursive neural network architectures like TreeLSTMs to learn syntactic composition functions, improving systematic generalization abilities.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://doi.org/10.1609/aaai.v33i01.33017450</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -5310,7 +5761,7 @@
     <!-- https://w3id.org/aio/ReinforcementLearningLLM -->
 
     <Class rdf:about="https://w3id.org/aio/ReinforcementLearningLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LearningParadigms"/>
         <obo:IAO_0000115>An RL-LLM is a language model that is fine-tuned using reinforcement learning, where the model receives rewards for generating text that satisfies certain desired properties or objectives. This can improve the quality, safety, or alignment of generated text.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>RL-LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Reinforcement Learning LLM</oboInOwl:hasExactSynonym>
@@ -5318,6 +5769,12 @@
         <oboInOwl:hasRelatedSynonym>reward modeling</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Reinforcement Learning LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/ReinforcementLearningLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An RL-LLM is a language model that is fine-tuned using reinforcement learning, where the model receives rewards for generating text that satisfies certain desired properties or objectives. This can improve the quality, safety, or alignment of generated text.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -5477,13 +5934,19 @@
     <!-- https://w3id.org/aio/Retrieval-AugmentedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Retrieval-AugmentedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>A retrieval-augmented LLM combines a pre-trained language model with a retrieval system that can access external knowledge sources. This allows the model to condition its generation on relevant retrieved knowledge, improving factual accuracy and knowledge grounding.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Retrieval-Augmented LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>knowledge grounding</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>open-book question answering</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Retrieval-Augmented LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Retrieval-AugmentedLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A retrieval-augmented LLM combines a pre-trained language model with a retrieval system that can access external knowledge sources. This allows the model to condition its generation on relevant retrieved knowledge, improving factual accuracy and knowledge grounding.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -5559,12 +6022,18 @@
     <!-- https://w3id.org/aio/Self-SupervisedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Self-SupervisedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LearningParadigms"/>
         <obo:IAO_0000115>A self-supervised LLM learns rich representations by solving pretext tasks that involve predicting parts of the input from other observed parts of the data, without relying on human-annotated labels.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Self-Supervised LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Pretext tasks</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Self-Supervised LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Self-SupervisedLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A self-supervised LLM learns rich representations by solving pretext tasks that involve predicting parts of the input from other observed parts of the data, without relying on human-annotated labels.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -5587,12 +6056,18 @@
     <!-- https://w3id.org/aio/Semi-SupervisedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Semi-SupervisedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LearningParadigms"/>
         <obo:IAO_0000115>A semi-supervised LLM combines self-supervised pretraining on unlabeled data with supervised fine-tuning on labeled task data.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Semi-Supervised LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>self-training</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Semi-Supervised LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Semi-SupervisedLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A semi-supervised LLM combines self-supervised pretraining on unlabeled data with supervised fine-tuning on labeled task data.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -5759,28 +6234,42 @@
     
 
 
-    <!-- https://w3id.org/aio/SparseAE -->
+    <!-- https://w3id.org/aio/SparseAutoEncoder -->
 
-    <Class rdf:about="https://w3id.org/aio/SparseAE">
+    <Class rdf:about="https://w3id.org/aio/SparseAutoEncoder">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AutoEncoderNetwork"/>
         <obo:IAO_0000115>Sparse autoencoders may include more (rather than fewer) hidden units than inputs, but only a small number of the hidden units are allowed to be active at the same time (thus, sparse). This constraint forces the model to respond to the unique statistical features of the training data. (https://en.wikipedia.org/wiki/Autoencoder)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>SAE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Sparse AE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Sparse Autoencoder</oboInOwl:hasExactSynonym>
         <rdfs:comment>Input, Hidden, Matched Output-Input</rdfs:comment>
-        <rdfs:label>Sparse AE</rdfs:label>
+        <rdfs:label>Sparse Auto Encoder</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/SparseAutoEncoder"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Sparse autoencoders may include more (rather than fewer) hidden units than inputs, but only a small number of the hidden units are allowed to be active at the same time (thus, sparse). This constraint forces the model to respond to the unique statistical features of the training data. (https://en.wikipedia.org/wiki/Autoencoder)</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
     <!-- https://w3id.org/aio/SparseLLM -->
 
     <Class rdf:about="https://w3id.org/aio/SparseLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
         <obo:IAO_0000115>A sparse LLM uses techniques like pruning or quantization to reduce the number of non-zero parameters in the model, making it more parameter-efficient and easier to deploy on resource-constrained devices.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Sparse LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>model compression</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>parameter efficiency</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Sparse LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/SparseLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A sparse LLM uses techniques like pruning or quantization to reduce the number of non-zero parameters in the model, making it more parameter-efficient and easier to deploy on resource-constrained devices.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -5942,6 +6431,12 @@
         <oboInOwl:hasRelatedSynonym>SentencePiece</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Subword Segmentation</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/SubwordSegmentation"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Utilizing techniques like Byte Pair Encoding (BPE) or SentencePiece to break down words into smaller units, allowing the model to handle a wide range of vocabulary with a fixed-size list.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -6276,27 +6771,30 @@
         <oboInOwl:hasRelatedSynonym>Vocabulary size reduction</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Tokenization And Vocabulary Reduction</rdfs:label>
     </Class>
-    
-
-
-    <!-- https://w3id.org/aio/TrainingParadigm -->
-
-    <Class rdf:about="https://w3id.org/aio/TrainingParadigm">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
-        <obo:IAO_0000115>An abstract parent class grouping LLMs based on training paradigm.</obo:IAO_0000115>
-        <rdfs:label>Training Paradigm</rdfs:label>
-    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/TokenizationAndVocabularyReduction"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Breaking down text data into manageable pieces called tokens and reducing the model&apos;s vocabulary to streamline processing.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
     <!-- https://w3id.org/aio/TrainingStrategies -->
 
     <Class rdf:about="https://w3id.org/aio/TrainingStrategies">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
         <obo:IAO_0000115>Specific strategies or methodologies employed during model training.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Instructional Methods</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Learning Techniques</oboInOwl:hasExactSynonym>
         <rdfs:label>Training Strategies</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/TrainingStrategies"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Specific strategies or methodologies employed during model training.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -6304,13 +6802,7 @@
 
     <Class rdf:about="https://w3id.org/aio/TransferLearning">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/MachineLearning"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingStrategies"/>
         <obo:IAO_0000115>Methods which can reuse or transfer information from previously learned tasks for the Learning of new tasks.</obo:IAO_0000115>
-        <obo:IAO_0000115>Starting the training from a model already trained on a related task to reduce training time and improve performance on tasks with limited data.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Knowledge Transfer</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Skill Acquisition</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym>Adaptation</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>Pretrained models</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Transfer Learning</rdfs:label>
     </Class>
     <Axiom>
@@ -6325,12 +6817,18 @@
     <!-- https://w3id.org/aio/TransferLearningLLM -->
 
     <Class rdf:about="https://w3id.org/aio/TransferLearningLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LearningParadigms"/>
         <obo:IAO_0000115>A transfer learning LLM leverages knowledge acquired during training on one task to improve performance on different but related tasks, facilitating more efficient learning and adaptation.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Transfer LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>transfer learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Transfer Learning LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/TransferLearningLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A transfer learning LLM leverages knowledge acquired during training on one task to improve performance on different but related tasks, facilitating more efficient learning and adaptation.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -6423,12 +6921,18 @@
     <!-- https://w3id.org/aio/UnsupervisedLLM -->
 
     <Class rdf:about="https://w3id.org/aio/UnsupervisedLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LearningParadigms"/>
         <obo:IAO_0000115>An unsupervised LLM is trained solely on unlabeled data using self-supervised objectives like masked language modeling, without any supervised fine-tuning.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Unsupervised LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>self-supervised</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Unsupervised LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/UnsupervisedLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An unsupervised LLM is trained solely on unlabeled data using self-supervised objectives like masked language modeling, without any supervised fine-tuning.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -6555,6 +7059,12 @@
         <rdfs:comment>Input, Probabilistic Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label>Variational Auto Encoder</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/VariationalAutoEncoder"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Variational autoencoders are meant to compress the input information into a constrained multivariate latent distribution (encoding) to reconstruct it as accurately as possible (decoding). (https://en.wikipedia.org/wiki/Variational_autoencoder)</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -6577,12 +7087,18 @@
     <!-- https://w3id.org/aio/Zero-ShotLearningLLM -->
 
     <Class rdf:about="https://w3id.org/aio/Zero-ShotLearningLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LearningParadigms"/>
         <obo:IAO_0000115>A zero-shot learning LLM is able to perform tasks or understand concepts it has not explicitly been trained on, demonstrating a high degree of generalization and understanding.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Zero-Shot LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>zero-shot learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Zero-Shot Learning LLM</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/Zero-ShotLearningLLM"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A zero-shot learning LLM is able to perform tasks or understand concepts it has not explicitly been trained on, demonstrating a high degree of generalization and understanding.</annotatedTarget>
+        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
