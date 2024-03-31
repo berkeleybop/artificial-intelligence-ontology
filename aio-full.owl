@@ -18,11 +18,11 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aio/aio-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2024-03-29/aio-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2024-03-31/aio-full.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Artificial Intelligence Ontology</dcterms:title>
-        <owl:versionInfo>2024-03-29</owl:versionInfo>
+        <owl:versionInfo>2024-03-31</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -10897,6 +10897,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- https://w3id.org/aio/ModelArchitecture -->
 
     <owl:Class rdf:about="https://w3id.org/aio/ModelArchitecture">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
         <obo:IAO_0000115>An abstract parent class grouping LLMs based on model architecture.</obo:IAO_0000115>
         <rdfs:label>Model Architecture</rdfs:label>
     </owl:Class>

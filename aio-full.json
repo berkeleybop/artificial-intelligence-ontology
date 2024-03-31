@@ -13,9 +13,9 @@
         "val" : "Artificial Intelligence Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-03-29"
+        "val" : "2024-03-31"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/aio/releases/2024-03-29/aio-full.json"
+      "version" : "http://purl.obolibrary.org/obo/aio/releases/2024-03-31/aio-full.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000002",
@@ -22030,6 +22030,10 @@
       "sub" : "https://w3id.org/aio/ModeConfusionBias",
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/IndividualBias"
+    }, {
+      "sub" : "https://w3id.org/aio/ModelArchitecture",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/aio/LargeLanguageModel"
     }, {
       "sub" : "https://w3id.org/aio/ModelEfficiency",
       "pred" : "is_a",

@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2024-03-29
+data-version: releases/2024-03-31
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -10,7 +10,7 @@ ontology: aio
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "Artificial Intelligence Ontology" xsd:string
-property_value: owl:versionInfo "2024-03-29" xsd:string
+property_value: owl:versionInfo "2024-03-31" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -3884,6 +3884,7 @@ is_a: https://w3id.org/aio/IndividualBias ! Individual Bias
 id: https://w3id.org/aio/ModelArchitecture
 name: Model Architecture
 def: "An abstract parent class grouping LLMs based on model architecture." [TBD] {type="owl:Axiom"}
+is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/ModelEfficiency
