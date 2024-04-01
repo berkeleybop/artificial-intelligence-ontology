@@ -1,0 +1,535 @@
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Function
+object_label: Function
+match_string: Function
+matches_whole_text: false
+subject_start: 27
+subject_end: 34
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/ActiveLearning
+object_label: Active Learning
+match_string: Active Learning
+matches_whole_text: false
+subject_start: 16
+subject_end: 30
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Function
+object_label: Function
+match_string: Function
+matches_whole_text: false
+subject_start: 36
+subject_end: 43
+--
+predicate_id: oio:hasRelatedSynonym
+object_id: https://w3id.org/aio/Adversarial-ResistantLLM
+object_label: adversarial attacks
+match_string: Adversarial Attacks
+matches_whole_text: false
+subject_start: 16
+subject_end: 34
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/DataAugmentation
+object_label: Data Augmentation
+match_string: Data Augmentation
+matches_whole_text: false
+subject_start: 34
+subject_end: 50
+--
+predicate_id: oio:hasRelatedSynonym
+object_id: https://w3id.org/aio/GenerativeAdversarialNetwork-AugmentedLLM
+object_label: adversarial training
+match_string: Adversarial Training
+matches_whole_text: false
+subject_start: 16
+subject_end: 35
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Function
+object_label: Function
+match_string: Function
+matches_whole_text: false
+subject_start: 25
+subject_end: 32
+--
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/RandomEffectsModel
+object_label: REM
+match_string: Rem
+matches_whole_text: false
+subject_start: 31
+subject_end: 33
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/ReinforcementLearning
+object_label: Reinforcement Learning
+match_string: Reinforcement Learning
+matches_whole_text: false
+subject_start: 25
+subject_end: 46
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Network
+object_label: Network
+match_string: Network
+matches_whole_text: false
+subject_start: 47
+subject_end: 53
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/RecurrentNeuralNetwork
+object_label: Recurrent Neural Network
+match_string: Recurrent Neural Network
+matches_whole_text: false
+subject_start: 30
+subject_end: 53
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Network
+object_label: Network
+match_string: Network
+matches_whole_text: false
+subject_start: 30
+subject_end: 36
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Clustering
+object_label: Clustering
+match_string: Clustering
+matches_whole_text: false
+subject_start: 16
+subject_end: 25
+--
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/DeepConvolutionalNetwork
+object_label: Convolutional Neural Network
+match_string: Convolutional Neural Network
+matches_whole_text: false
+subject_start: 16
+subject_end: 43
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Network
+object_label: Network
+match_string: Network
+matches_whole_text: false
+subject_start: 37
+subject_end: 43
+--
+predicate_id: oio:hasRelatedSynonym
+object_id: https://w3id.org/aio/KnowledgeTransfer
+object_label: Adaptation
+match_string: Adaptation
+matches_whole_text: false
+subject_start: 23
+subject_end: 32
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/DimensionalityReduction
+object_label: Dimensionality Reduction
+match_string: Dimensionality Reduction
+matches_whole_text: false
+subject_start: 16
+subject_end: 39
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/ReinforcementLearning
+object_label: Reinforcement Learning
+match_string: Reinforcement Learning
+matches_whole_text: false
+subject_start: 28
+subject_end: 49
+--
+predicate_id: oio:hasRelatedSynonym
+object_id: https://w3id.org/aio/Cross-DomainLLM
+object_label: domain adaptation
+match_string: Domain Adaptation
+matches_whole_text: false
+subject_start: 16
+subject_end: 32
+--
+predicate_id: oio:hasRelatedSynonym
+object_id: https://w3id.org/aio/KnowledgeTransfer
+object_label: Adaptation
+match_string: Adaptation
+matches_whole_text: false
+subject_start: 23
+subject_end: 32
+--
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/DeepConvolutionalNetwork
+object_label: CNN
+match_string: CNN
+matches_whole_text: false
+subject_start: 28
+subject_end: 30
+--
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/DeepFeedForward
+object_label: Feedforward Network
+match_string: Feedforward Network
+matches_whole_text: false
+subject_start: 16
+subject_end: 34
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Network
+object_label: Network
+match_string: Network
+matches_whole_text: false
+subject_start: 28
+subject_end: 34
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Network
+object_label: Network
+match_string: Network
+matches_whole_text: false
+subject_start: 29
+subject_end: 35
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/GeneralizedLinearModel
+object_label: Generalized Linear Model
+match_string: Generalized Linear Model
+matches_whole_text: false
+subject_start: 16
+subject_end: 39
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/GenerativeAdversarialNetwork
+object_label: Generative Adversarial Network
+match_string: Generative Adversarial Network
+matches_whole_text: false
+subject_start: 16
+subject_end: 45
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Network
+object_label: Network
+match_string: Network
+matches_whole_text: false
+subject_start: 39
+subject_end: 45
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/DataAugmentation
+object_label: Data Augmentation
+match_string: Data Augmentation
+matches_whole_text: false
+subject_start: 22
+subject_end: 38
+--
+predicate_id: oio:hasRelatedSynonym
+object_id: https://w3id.org/aio/ContrastiveLearningLLM
+object_label: Representation learning
+match_string: Representation Learning
+matches_whole_text: false
+subject_start: 22
+subject_end: 44
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/RepresentationLearning
+object_label: Representation Learning
+match_string: Representation Learning
+matches_whole_text: false
+subject_start: 22
+subject_end: 44
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/DataAugmentation
+object_label: Data Augmentation
+match_string: Data Augmentation
+matches_whole_text: false
+subject_start: 22
+subject_end: 38
+--
+predicate_id: oio:hasRelatedSynonym
+object_id: https://w3id.org/aio/ExplainableLLM
+object_label: interpretability
+match_string: Interpretability
+matches_whole_text: false
+subject_start: 16
+subject_end: 31
+--
+predicate_id: oio:hasRelatedSynonym
+object_id: https://w3id.org/aio/InterpretableLLM
+object_label: interpretability
+match_string: Interpretability
+matches_whole_text: false
+subject_start: 16
+subject_end: 31
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Distillation
+object_label: Distillation
+match_string: Distillation
+matches_whole_text: false
+subject_start: 26
+subject_end: 37
+--
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/KohonenNetwork
+object_label: KN
+match_string: Kn
+matches_whole_text: false
+subject_start: 16
+subject_end: 17
+--
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/ArtificialNeuralNetwork
+object_label: ANN
+match_string: Ann
+matches_whole_text: false
+subject_start: 23
+subject_end: 25
+--
+predicate_id: oio:hasRelatedSynonym
+object_id: https://w3id.org/aio/ContinualLearningLLM
+object_label: lifelong learning
+match_string: Lifelong Learning
+matches_whole_text: false
+subject_start: 16
+subject_end: 32
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Layer
+object_label: Layer
+match_string: Layer
+matches_whole_text: false
+subject_start: 39
+subject_end: 43
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Function
+object_label: Function
+match_string: Function
+matches_whole_text: false
+subject_start: 21
+subject_end: 28
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/MarkovChain
+object_label: Markov Chain
+match_string: Markov Chain
+matches_whole_text: false
+subject_start: 16
+subject_end: 27
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Meta-Learning
+object_label: Meta-Learning
+match_string: Meta-Learning
+matches_whole_text: false
+subject_start: 16
+subject_end: 28
+--
+predicate_id: oio:hasRelatedSynonym
+object_id: https://w3id.org/aio/SparseLLM
+object_label: model compression
+match_string: Model Compression
+matches_whole_text: false
+subject_start: 16
+subject_end: 32
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Network
+object_label: Network
+match_string: Network
+matches_whole_text: false
+subject_start: 16
+subject_end: 22
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Classification
+object_label: Classification
+match_string: Classification
+matches_whole_text: false
+subject_start: 31
+subject_end: 44
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/ReinforcementLearning
+object_label: Reinforcement Learning
+match_string: Reinforcement Learning
+matches_whole_text: false
+subject_start: 24
+subject_end: 45
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Function
+object_label: Function
+match_string: Function
+matches_whole_text: false
+subject_start: 23
+subject_end: 30
+--
+predicate_id: oio:hasRelatedSynonym
+object_id: https://w3id.org/aio/OrdinalLLM
+object_label: ranking
+match_string: Ranking
+matches_whole_text: false
+subject_start: 27
+subject_end: 33
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Network
+object_label: Network
+match_string: Network
+matches_whole_text: false
+subject_start: 27
+subject_end: 33
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Function
+object_label: Function
+match_string: Function
+matches_whole_text: false
+subject_start: 33
+subject_end: 40
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Network
+object_label: Network
+match_string: Network
+matches_whole_text: false
+subject_start: 33
+subject_end: 39
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/RecurrentNeuralNetwork
+object_label: Recurrent Neural Network
+match_string: Recurrent Neural Network
+matches_whole_text: false
+subject_start: 16
+subject_end: 39
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/ReinforcementLearning
+object_label: Reinforcement Learning
+match_string: Reinforcement Learning
+matches_whole_text: false
+subject_start: 16
+subject_end: 37
+--
+predicate_id: oio:hasRelatedSynonym
+object_id: https://w3id.org/aio/ContrastiveLearningLLM
+object_label: Representation learning
+match_string: Representation Learning
+matches_whole_text: false
+subject_start: 16
+subject_end: 38
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/RepresentationLearning
+object_label: Representation Learning
+match_string: Representation Learning
+matches_whole_text: false
+subject_start: 16
+subject_end: 38
+--
+predicate_id: oio:hasRelatedSynonym
+object_id: https://w3id.org/aio/Adversarial-ResistantLLM
+object_label: robustness
+match_string: Robustness
+matches_whole_text: false
+subject_start: 16
+subject_end: 25
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Self-supervisedLearning
+object_label: Self-supervised Learning
+match_string: Self-Supervised Learning
+matches_whole_text: false
+subject_start: 16
+subject_end: 39
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/SupervisedLearning
+object_label: Supervised Learning
+match_string: Supervised Learning
+matches_whole_text: false
+subject_start: 21
+subject_end: 39
+--
+predicate_id: oio:hasRelatedSynonym
+object_id: https://w3id.org/aio/UnsupervisedLLM
+object_label: self-supervised
+match_string: Self-Supervised
+matches_whole_text: false
+subject_start: 16
+subject_end: 30
+--
+predicate_id: oio:hasRelatedSynonym
+object_id: https://w3id.org/aio/Semi-SupervisedLLM
+object_label: self-training
+match_string: Self-Training
+matches_whole_text: false
+subject_start: 16
+subject_end: 28
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/SupervisedLearning
+object_label: Supervised Learning
+match_string: Supervised Learning
+matches_whole_text: false
+subject_start: 21
+subject_end: 39
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/SubwordSegmentation
+object_label: Subword Segmentation
+match_string: Subword Segmentation
+matches_whole_text: false
+subject_start: 16
+subject_end: 35
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Classification
+object_label: Classification
+match_string: Classification
+matches_whole_text: false
+subject_start: 21
+subject_end: 34
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/DataAugmentation
+object_label: Data Augmentation
+match_string: Data Augmentation
+matches_whole_text: false
+subject_start: 21
+subject_end: 37
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/TimeSeriesAnalysis
+object_label: Time Series Analysis
+match_string: Time Series Analysis
+matches_whole_text: false
+subject_start: 16
+subject_end: 35
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Network
+object_label: Network
+match_string: Network
+matches_whole_text: false
+subject_start: 21
+subject_end: 27
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Function
+object_label: Function
+match_string: Function
+matches_whole_text: false
+subject_start: 22
+subject_end: 29
+--
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/DataAugmentation
+object_label: Data Augmentation
+match_string: Data Augmentation
+matches_whole_text: false
+subject_start: 22
+subject_end: 38

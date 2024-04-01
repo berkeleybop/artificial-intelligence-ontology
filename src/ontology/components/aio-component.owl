@@ -4637,7 +4637,7 @@
     <!-- https://w3id.org/aio/ModelArchitecture -->
 
     <Class rdf:about="https://w3id.org/aio/ModelArchitecture">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LargeLanguageModel"/>
         <obo:IAO_0000115>An abstract parent class grouping LLMs based on model architecture.</obo:IAO_0000115>
         <rdfs:label>Model Architecture</rdfs:label>
     </Class>
