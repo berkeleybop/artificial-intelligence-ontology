@@ -12,7 +12,7 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 Ontology(<http://purl.obolibrary.org/obo/artificial-intelligence-ontology.owl>
 
 
-Import(<http://purl.obolibrary.org/obo/aio/imports/swo_import.owl>)
+# Import(<http://purl.obolibrary.org/obo/aio/imports/swo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/aio/components/aio-component.owl>)
 
 
