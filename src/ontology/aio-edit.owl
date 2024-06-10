@@ -22,6 +22,16 @@ Annotation(dcterms:title "Artificial Intelligence Ontology")
 
 
 Declaration(Class(<http://purl.obolibrary.org/obo/ARTIFICIAL-INTELLIGENCE-ONTOLOGY_0000000>))
+
+Declaration(NamedIndividual(<https://w3id.org/aio/BiasSubset>))
+Declaration(NamedIndividual(<https://w3id.org/aio/ClassSubset>))
+Declaration(NamedIndividual(<https://w3id.org/aio/FunctionSubset>))
+Declaration(NamedIndividual(<https://w3id.org/aio/LayerSubset>))
+Declaration(NamedIndividual(<https://w3id.org/aio/MachineLearningSubset>))
+Declaration(NamedIndividual(<https://w3id.org/aio/ModelSubset>))
+Declaration(NamedIndividual(<https://w3id.org/aio/NetworkSubset>))
+Declaration(NamedIndividual(<https://w3id.org/aio/PreprocessingSubset>))
+
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -42,6 +52,20 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ARTIFICIAL-INTELLIGENCE-ONTOLOGY_0000000> "root node"@en)
 
+
+############################
+#   Named Individuals
+############################
+
+
+AnnotationAssertion(rdfs:label <https://w3id.org/aio/BiasSubset> "Bias Subset"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/aio/ClassSubset> "Class Subset"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/aio/FunctionSubset> "Function Subset"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/aio/LayerSubset> "Layer Subset"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/aio/MachineLearningSubset> "Machine Learning Subset"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/aio/ModelSubset> "Model Subset"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/aio/NetworkSubset> "Network Subset"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/aio/PreprocessingSubset> "Preprocessing Subset"@en)
 
 )
 
