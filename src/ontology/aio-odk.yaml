@@ -4,7 +4,6 @@ github_org: berkeleybop
 repo: artificial-intelligence-ontology
 import_group:
   products:
-#    - id: swo
 report_fail_on: none
 release_artefacts:
   - base
