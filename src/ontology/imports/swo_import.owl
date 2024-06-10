@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/aio/imports/swo_import.owl>
-<http://purl.obolibrary.org/obo/aio/releases/2024-06-09/imports/swo_import.owl>
+<http://purl.obolibrary.org/obo/aio/releases/2024-06-10/imports/swo_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://www.ebi.ac.uk/swo/swo/releases/2023-03-05/swo.owl>)
-Annotation(owl:versionInfo "2024-06-09")
+Annotation(owl:versionInfo "2024-06-10")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000796>))
@@ -1259,7 +1259,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000086> "has 
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/RO_0000053>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/BFO_0000019>)
 
-# Object Property: <http://purl.obolibrary.org/obo/RO_0000087> (has role)
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000087> (has_role)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0000087> "this person has role this investigator role (more colloquially: this person has this role of investigator)"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000087> "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence"@en)

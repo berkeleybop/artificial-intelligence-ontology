@@ -21,8 +21,6 @@ Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Artificial Intelligence Ontology")
 
 
-Declaration(Class(<http://purl.obolibrary.org/obo/ARTIFICIAL-INTELLIGENCE-ONTOLOGY_0000000>))
-
 Declaration(NamedIndividual(<https://w3id.org/aio/BiasSubset>))
 Declaration(NamedIndividual(<https://w3id.org/aio/ClassSubset>))
 Declaration(NamedIndividual(<https://w3id.org/aio/FunctionSubset>))
@@ -48,15 +46,10 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/ARTIFICIAL-INTELLIGENCE-ONTOLOGY_0000000> (root node)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ARTIFICIAL-INTELLIGENCE-ONTOLOGY_0000000> "root node"@en)
-
 
 ############################
 #   Named Individuals
 ############################
-
 
 AnnotationAssertion(rdfs:label <https://w3id.org/aio/BiasSubset> "Bias Subset"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/aio/ClassSubset> "Class Subset"@en)
@@ -68,4 +61,3 @@ AnnotationAssertion(rdfs:label <https://w3id.org/aio/NetworkSubset> "Network Sub
 AnnotationAssertion(rdfs:label <https://w3id.org/aio/PreprocessingSubset> "Preprocessing Subset"@en)
 
 )
-
