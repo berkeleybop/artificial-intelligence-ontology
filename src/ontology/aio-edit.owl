@@ -21,7 +21,6 @@ Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Artificial Intelligence Ontology")
 
 
-Declaration(Class(<http://purl.obolibrary.org/obo/ARTIFICIAL-INTELLIGENCE-ONTOLOGY_0000000>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
