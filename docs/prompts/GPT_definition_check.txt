@@ -1,0 +1,2 @@
+It is possible that some definitions are no longer aligned with their class. Below are the newly generated definitions and their classes and further below is the original set. Use the original set to detect any case where the new definition does not match its class and report which those are.
+
