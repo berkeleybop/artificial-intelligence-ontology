@@ -1,0 +1,2 @@
+This is a ROBOT template for generating an OWL ontology. Change the values in the Description column to follow the Aristotelian genus/differentia style. The label of the parent should be used as the genus.
+
