@@ -1,7 +1,12 @@
+3218  model
 1608  network
+ 535  arch
  529  layer
  526  function
+ 358  language model
+ 319  var
  308  convolutional neural network
+ 233  normalization
  202  natural language processing
  192  reinforcement learning
  192  classification
@@ -10,6 +15,7 @@
  152  representation learning
  142  self-attention
  128  gan
+ 122  tar
  120  self-supervised
  113  generative adversarial network
  112  supervised learning
@@ -26,6 +32,7 @@
   63  lstm
   62  recurrent neural network
   62  adaptation
+  60  bert
   53  distillation
   52  masked language model
   50  convolutional layer
@@ -33,20 +40,19 @@
   45  domain adaptation
   45  ann
   43  rn
-  42  interpretability
   41  nn
   36  autoregressive
   32  transfer learning
   32  graph convolutional network
   30  machine learning
   30  adversarial training
-  29  robustness
   28  vae
-  27  feedforward network
   27  dn
   27  convnet
+  26  word2vec
   26  gcn
   22  attention layer
+  21  interpretability
   20  hidden layer
   20  feature learning
   19  rectified linear unit
@@ -73,7 +79,7 @@
   11  unsupervised learning
   11  embedding layer
   10  transformer network
-  10  model architecture
+  10  node2vec
   10  exponential linear unit
   10  active learning
    9  metric learning
@@ -86,10 +92,10 @@
    8  layernorm
    8  large language model
    8  gated recurrent unit
+   8  feed-forward network
    8  dcn
    8  curriculum learning
    8  cbow
-   8  adversarial attacks
    8  activation layer
    7  text generation
    7  sparse autoencoder
@@ -123,9 +129,11 @@
    4  continual learning
    4  computational efficiency
    4  binary classification
+   4  arma
    4  ae
    3  vision-language model
    3  unidirectional
+   3  transformer language model
    3  training strategies
    3  svm
    3  softmax layer
@@ -159,7 +167,6 @@
    2  self-organizing map
    2  scaled exponential linear unit
    2  recursive neural network
-   2  learning paradigms
    2  iterative refinement
    2  hopfield network
    2  hierarchical clustering
@@ -203,3 +210,4 @@
    1  data cleaning
    1  conv2d
    1  conditional masking
+   1  cleaning

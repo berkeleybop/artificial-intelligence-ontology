@@ -1,10 +1,73 @@
-predicate_id: rdfs:label
-object_id: BFO:0000034
-object_label: function
-match_string: Function
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 27
-subject_end: 34
+subject_start: 29
+subject_end: 33
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 29
+subject_end: 33
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 36
+subject_end: 40
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 36
+subject_end: 40
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 35
+subject_end: 39
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 35
+subject_end: 39
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 35
+subject_end: 39
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 35
+subject_end: 39
 
 ---
 predicate_id: rdfs:label
@@ -26,57 +89,12 @@ subject_end: 30
 
 ---
 predicate_id: rdfs:label
-object_id: IAO:0000064
-object_label: algorithm
-match_string: Algorithm
-matches_whole_text: false
-subject_start: 29
-subject_end: 37
-
----
-predicate_id: rdfs:label
-object_id: IAO:0000064
-object_label: algorithm
-match_string: Algorithm
-matches_whole_text: false
-subject_start: 29
-subject_end: 37
-
----
-predicate_id: rdfs:label
-object_id: BFO:0000034
-object_label: function
-match_string: Function
-matches_whole_text: false
-subject_start: 36
-subject_end: 43
-
----
-predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Function
 object_label: Function
 match_string: Function
 matches_whole_text: false
 subject_start: 36
 subject_end: 43
-
----
-predicate_id: oio:hasRelatedSynonym
-object_id: https://w3id.org/aio/Adversarial-ResistantLLM
-object_label: adversarial attacks
-match_string: Adversarial Attacks
-matches_whole_text: false
-subject_start: 16
-subject_end: 34
-
----
-predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
-matches_whole_text: false
-subject_start: 28
-subject_end: 32
 
 ---
 predicate_id: rdfs:label
@@ -89,21 +107,12 @@ subject_end: 50
 
 ---
 predicate_id: oio:hasRelatedSynonym
-object_id: https://w3id.org/aio/GenerativeAdversarialNetwork-AugmentedLLM
+object_id: https://w3id.org/aio/GenerativeAdversarialNetworkAugmentedLLM
 object_label: adversarial training
 match_string: Adversarial Training
 matches_whole_text: false
 subject_start: 16
 subject_end: 35
-
----
-predicate_id: rdfs:label
-object_id: BFO:0000034
-object_label: function
-match_string: Function
-matches_whole_text: false
-subject_start: 25
-subject_end: 32
 
 ---
 predicate_id: rdfs:label
@@ -122,6 +131,33 @@ match_string: Rem
 matches_whole_text: false
 subject_start: 31
 subject_end: 33
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 22
+subject_end: 26
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 22
+subject_end: 26
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/AutoregressiveConditionalHeteroskedasticity
+object_label: ARCH
+match_string: Arch
+matches_whole_text: false
+subject_start: 25
+subject_end: 28
 
 ---
 predicate_id: rdfs:label
@@ -160,6 +196,78 @@ subject_start: 30
 subject_end: 36
 
 ---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 27
+subject_end: 31
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 27
+subject_end: 31
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 27
+subject_end: 31
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 27
+subject_end: 31
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 34
+subject_end: 38
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 34
+subject_end: 38
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 26
+subject_end: 30
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 26
+subject_end: 30
+
+---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Clustering
 object_label: Clustering
@@ -169,13 +277,40 @@ subject_start: 16
 subject_end: 25
 
 ---
-predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 28
-subject_end: 32
+subject_start: 55
+subject_end: 59
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 55
+subject_end: 59
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 31
+subject_end: 35
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 31
+subject_end: 35
 
 ---
 predicate_id: oio:hasExactSynonym
@@ -196,6 +331,24 @@ subject_start: 37
 subject_end: 43
 
 ---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 26
+subject_end: 30
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 26
+subject_end: 30
+
+---
 predicate_id: oio:hasRelatedSynonym
 object_id: https://w3id.org/aio/KnowledgeTransfer
 object_label: Adaptation
@@ -203,15 +356,6 @@ match_string: Adaptation
 matches_whole_text: false
 subject_start: 23
 subject_end: 32
-
----
-predicate_id: rdfs:label
-object_id: OBI:0200050
-object_label: dimensionality reduction
-match_string: Dimensionality Reduction
-matches_whole_text: false
-subject_start: 16
-subject_end: 39
 
 ---
 predicate_id: rdfs:label
@@ -232,35 +376,26 @@ subject_start: 28
 subject_end: 49
 
 ---
-predicate_id: rdfs:label
-object_id: IAO:0000310
-object_label: document
-match_string: Document
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 23
+subject_start: 39
+subject_end: 43
 
 ---
 predicate_id: rdfs:label
-object_id: IAO:0000310
-object_label: document
-match_string: Document
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 23
-
----
-predicate_id: rdfs:label
-object_id: IAO:0000310
-object_label: document
-match_string: Document
-matches_whole_text: false
-subject_start: 16
-subject_end: 23
+subject_start: 39
+subject_end: 43
 
 ---
 predicate_id: oio:hasRelatedSynonym
-object_id: https://w3id.org/aio/Cross-DomainLLM
+object_id: https://w3id.org/aio/CrossDomainLLM
 object_label: domain adaptation
 match_string: Domain Adaptation
 matches_whole_text: false
@@ -277,13 +412,40 @@ subject_start: 23
 subject_end: 32
 
 ---
-predicate_id: rdfs:label
-object_id: BFO:0000001
-object_label: entity
-match_string: Entity
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 21
+subject_start: 33
+subject_end: 37
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 33
+subject_end: 37
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 39
+subject_end: 43
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 39
+subject_end: 43
 
 ---
 predicate_id: oio:hasExactSynonym
@@ -296,12 +458,57 @@ subject_end: 30
 
 ---
 predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/DeepFeedForward
-object_label: Feedforward Network
-match_string: Feedforward Network
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 34
+subject_start: 31
+subject_end: 35
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 31
+subject_end: 35
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 33
+subject_end: 37
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 33
+subject_end: 37
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 33
+subject_end: 37
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 33
+subject_end: 37
 
 ---
 predicate_id: rdfs:label
@@ -322,12 +529,48 @@ subject_start: 29
 subject_end: 35
 
 ---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 37
+subject_end: 41
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 37
+subject_end: 41
+
+---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/GeneralizedLinearModel
 object_label: Generalized Linear Model
 match_string: Generalized Linear Model
 matches_whole_text: false
 subject_start: 16
+subject_end: 39
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 35
+subject_end: 39
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 35
 subject_end: 39
 
 ---
@@ -349,13 +592,76 @@ subject_start: 39
 subject_end: 45
 
 ---
-predicate_id: rdfs:label
-object_id: IAO:0000038
-object_label: graph
-match_string: Graph
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 20
+subject_start: 33
+subject_end: 37
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 33
+subject_end: 37
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 27
+subject_end: 31
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 27
+subject_end: 31
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 36
+subject_end: 40
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 36
+subject_end: 40
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 33
+subject_end: 37
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 33
+subject_end: 37
 
 ---
 predicate_id: rdfs:label
@@ -367,31 +673,22 @@ subject_start: 22
 subject_end: 38
 
 ---
-predicate_id: rdfs:label
-object_id: IAO:0000038
-object_label: graph
-match_string: Graph
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 20
+subject_start: 22
+subject_end: 26
 
 ---
 predicate_id: rdfs:label
-object_id: IAO:0000038
-object_label: graph
-match_string: Graph
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 20
-
----
-predicate_id: rdfs:label
-object_id: IAO:0000038
-object_label: graph
-match_string: Graph
-matches_whole_text: false
-subject_start: 16
-subject_end: 20
+subject_start: 22
+subject_end: 26
 
 ---
 predicate_id: oio:hasRelatedSynonym
@@ -412,40 +709,22 @@ subject_start: 22
 subject_end: 44
 
 ---
-predicate_id: rdfs:label
-object_id: IAO:0000038
-object_label: graph
-match_string: Graph
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 20
+subject_start: 25
+subject_end: 29
 
 ---
 predicate_id: rdfs:label
-object_id: IAO:0000064
-object_label: algorithm
-match_string: Algorithm
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 33
-subject_end: 41
-
----
-predicate_id: rdfs:label
-object_id: IAO:0000064
-object_label: algorithm
-match_string: Algorithm
-matches_whole_text: false
-subject_start: 33
-subject_end: 41
-
----
-predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
-matches_whole_text: false
-subject_start: 16
-subject_end: 20
+subject_start: 25
+subject_end: 29
 
 ---
 predicate_id: rdfs:label
@@ -457,134 +736,206 @@ subject_start: 22
 subject_end: 38
 
 ---
-predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 20
+subject_start: 36
+subject_end: 40
 
 ---
 predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 20
+subject_start: 36
+subject_end: 40
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 32
+subject_end: 36
 
 ---
 predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 20
+subject_start: 32
+subject_end: 36
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 33
+subject_end: 37
 
 ---
 predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 20
+subject_start: 33
+subject_end: 37
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 22
+subject_end: 26
 
 ---
 predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 20
+subject_start: 22
+subject_end: 26
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 22
+subject_end: 26
 
 ---
 predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 20
+subject_start: 22
+subject_end: 26
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 34
+subject_end: 38
 
 ---
 predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 20
+subject_start: 34
+subject_end: 38
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 32
+subject_end: 36
 
 ---
 predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 20
+subject_start: 32
+subject_end: 36
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 35
+subject_end: 39
 
 ---
 predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 20
+subject_start: 35
+subject_end: 39
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 39
+subject_end: 43
 
 ---
 predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 20
+subject_start: 39
+subject_end: 43
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 37
+subject_end: 41
 
 ---
 predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 20
+subject_start: 37
+subject_end: 41
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 38
+subject_end: 42
 
 ---
 predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 20
-
----
-predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
-matches_whole_text: false
-subject_start: 16
-subject_end: 20
+subject_start: 38
+subject_end: 42
 
 ---
 predicate_id: oio:hasRelatedSynonym
 object_id: https://w3id.org/aio/ExplainableLLM
-object_label: interpretability
-match_string: Interpretability
-matches_whole_text: false
-subject_start: 16
-subject_end: 31
-
----
-predicate_id: oio:hasRelatedSynonym
-object_id: https://w3id.org/aio/InterpretableLLM
 object_label: interpretability
 match_string: Interpretability
 matches_whole_text: false
@@ -610,13 +961,121 @@ subject_start: 16
 subject_end: 17
 
 ---
-predicate_id: rdfs:label
-object_id: rdfs:label
-object_label: label
-match_string: Label
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/LanguageModel
+object_label: Language Model
+match_string: Language Model
 matches_whole_text: false
 subject_start: 16
-subject_end: 20
+subject_end: 29
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/LanguageModel
+object_label: Language Model
+match_string: Language Model
+matches_whole_text: false
+subject_start: 16
+subject_end: 29
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 25
+subject_end: 29
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 25
+subject_end: 29
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/LanguageModel
+object_label: Language Model
+match_string: Language Model
+matches_whole_text: false
+subject_start: 16
+subject_end: 29
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/LanguageModel
+object_label: Language Model
+match_string: Language Model
+matches_whole_text: false
+subject_start: 16
+subject_end: 29
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 25
+subject_end: 29
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 25
+subject_end: 29
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/LanguageModel
+object_label: Language Model
+match_string: Language Model
+matches_whole_text: false
+subject_start: 16
+subject_end: 29
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/LanguageModel
+object_label: Language Model
+match_string: Language Model
+matches_whole_text: false
+subject_start: 16
+subject_end: 29
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 25
+subject_end: 29
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 25
+subject_end: 29
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/VectorAutoregression
+object_label: VAR
+match_string: Var
+matches_whole_text: false
+subject_start: 23
+subject_end: 25
 
 ---
 predicate_id: oio:hasExactSynonym
@@ -628,6 +1087,42 @@ subject_start: 23
 subject_end: 25
 
 ---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 34
+subject_end: 38
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 34
+subject_end: 38
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 33
+subject_end: 37
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 33
+subject_end: 37
+
+---
 predicate_id: oio:hasRelatedSynonym
 object_id: https://w3id.org/aio/ContinualLearningLLM
 object_label: lifelong learning
@@ -635,6 +1130,42 @@ match_string: Lifelong Learning
 matches_whole_text: false
 subject_start: 16
 subject_end: 32
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 44
+subject_end: 48
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 44
+subject_end: 48
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 29
+subject_end: 33
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 29
+subject_end: 33
 
 ---
 predicate_id: rdfs:label
@@ -647,21 +1178,30 @@ subject_end: 43
 
 ---
 predicate_id: rdfs:label
-object_id: BFO:0000034
-object_label: function
-match_string: Function
-matches_whole_text: false
-subject_start: 21
-subject_end: 28
-
----
-predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Function
 object_label: Function
 match_string: Function
 matches_whole_text: false
 subject_start: 21
 subject_end: 28
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 36
+subject_end: 40
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 36
+subject_end: 40
 
 ---
 predicate_id: rdfs:label
@@ -673,40 +1213,49 @@ subject_start: 16
 subject_end: 27
 
 ---
-predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
-matches_whole_text: false
-subject_start: 24
-subject_end: 28
-
----
-predicate_id: rdfs:label
-object_id: IAO:0000064
-object_label: algorithm
-match_string: Algorithm
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
 subject_start: 30
-subject_end: 38
+subject_end: 34
 
 ---
 predicate_id: rdfs:label
-object_id: IAO:0000064
-object_label: algorithm
-match_string: Algorithm
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
 subject_start: 30
-subject_end: 38
+subject_end: 34
 
 ---
 predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Meta-Learning
+object_id: https://w3id.org/aio/MetaLearning
 object_label: Meta-Learning
 match_string: Meta-Learning
 matches_whole_text: false
 subject_start: 16
 subject_end: 28
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 16
+subject_end: 20
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 16
+subject_end: 20
 
 ---
 predicate_id: oio:hasRelatedSynonym
@@ -718,6 +1267,78 @@ subject_start: 16
 subject_end: 32
 
 ---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 16
+subject_end: 20
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 16
+subject_end: 20
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 43
+subject_end: 47
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 43
+subject_end: 47
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 34
+subject_end: 38
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 34
+subject_end: 38
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 38
+subject_end: 42
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 38
+subject_end: 42
+
+---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Network
 object_label: Network
@@ -725,6 +1346,15 @@ match_string: Network
 matches_whole_text: false
 subject_start: 16
 subject_end: 22
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/AutoregressiveConditionalHeteroskedasticity
+object_label: ARCH
+match_string: Arch
+matches_whole_text: false
+subject_start: 23
+subject_end: 26
 
 ---
 predicate_id: rdfs:label
@@ -737,6 +1367,51 @@ subject_end: 44
 
 ---
 predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Normalization
+object_label: Normalization
+match_string: Normalization
+matches_whole_text: false
+subject_start: 16
+subject_end: 28
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 20
+subject_end: 24
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 20
+subject_end: 24
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 33
+subject_end: 37
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 33
+subject_end: 37
+
+---
+predicate_id: rdfs:label
 object_id: https://w3id.org/aio/ReinforcementLearning
 object_label: Reinforcement Learning
 match_string: Reinforcement Learning
@@ -745,13 +1420,22 @@ subject_start: 24
 subject_end: 45
 
 ---
-predicate_id: rdfs:label
-object_id: BFO:0000034
-object_label: function
-match_string: Function
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 23
-subject_end: 30
+subject_start: 43
+subject_end: 47
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 43
+subject_end: 47
 
 ---
 predicate_id: rdfs:label
@@ -763,6 +1447,42 @@ subject_start: 23
 subject_end: 30
 
 ---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 38
+subject_end: 42
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 38
+subject_end: 42
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 35
+subject_end: 39
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 35
+subject_end: 39
+
+---
 predicate_id: oio:hasRelatedSynonym
 object_id: https://w3id.org/aio/OrdinalLLM
 object_label: ranking
@@ -772,13 +1492,94 @@ subject_start: 27
 subject_end: 33
 
 ---
-predicate_id: rdfs:label
-object_id: UO:0000196
-object_label: pH
-match_string: Ph
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 17
+subject_start: 30
+subject_end: 34
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 30
+subject_end: 34
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 28
+subject_end: 32
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 28
+subject_end: 32
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 33
+subject_end: 37
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 33
+subject_end: 37
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 32
+subject_end: 36
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 32
+subject_end: 36
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 34
+subject_end: 38
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 34
+subject_end: 38
 
 ---
 predicate_id: rdfs:label
@@ -790,13 +1591,40 @@ subject_start: 27
 subject_end: 33
 
 ---
-predicate_id: rdfs:label
-object_id: BFO:0000034
-object_label: function
-match_string: Function
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 33
-subject_end: 40
+subject_start: 35
+subject_end: 39
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 35
+subject_end: 39
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 41
+subject_end: 45
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 41
+subject_end: 45
 
 ---
 predicate_id: rdfs:label
@@ -835,6 +1663,24 @@ subject_start: 16
 subject_end: 37
 
 ---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 36
+subject_end: 40
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 36
+subject_end: 40
+
+---
 predicate_id: oio:hasRelatedSynonym
 object_id: https://w3id.org/aio/ContrastiveLearningLLM
 object_label: Representation learning
@@ -853,26 +1699,62 @@ subject_start: 16
 subject_end: 38
 
 ---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 44
+subject_end: 48
+
+---
 predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 44
+subject_end: 48
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 37
+subject_end: 41
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 37
+subject_end: 41
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
 subject_start: 27
 subject_end: 31
 
 ---
-predicate_id: oio:hasRelatedSynonym
-object_id: https://w3id.org/aio/Adversarial-ResistantLLM
-object_label: robustness
-match_string: Robustness
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 16
-subject_end: 25
+subject_start: 27
+subject_end: 31
 
 ---
 predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Self-supervisedLearning
+object_id: https://w3id.org/aio/SelfsupervisedLearning
 object_label: Self-supervised Learning
 match_string: Self-Supervised Learning
 matches_whole_text: false
@@ -899,12 +1781,30 @@ subject_end: 30
 
 ---
 predicate_id: oio:hasRelatedSynonym
-object_id: https://w3id.org/aio/Semi-SupervisedLLM
+object_id: https://w3id.org/aio/SemiSupervisedLLM
 object_label: self-training
 match_string: Self-Training
 matches_whole_text: false
 subject_start: 16
 subject_end: 28
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 38
+subject_end: 42
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 38
+subject_end: 42
 
 ---
 predicate_id: rdfs:label
@@ -916,6 +1816,96 @@ subject_start: 21
 subject_end: 39
 
 ---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 33
+subject_end: 37
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 33
+subject_end: 37
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 37
+subject_end: 41
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 37
+subject_end: 41
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 34
+subject_end: 38
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 34
+subject_end: 38
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 47
+subject_end: 51
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 47
+subject_end: 51
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 40
+subject_end: 44
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 40
+subject_end: 44
+
+---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/SubwordSegmentation
 object_label: Subword Segmentation
@@ -923,6 +1913,42 @@ match_string: Subword Segmentation
 matches_whole_text: false
 subject_start: 16
 subject_end: 35
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 30
+subject_end: 34
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 30
+subject_end: 34
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 41
+subject_end: 45
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 41
+subject_end: 45
 
 ---
 predicate_id: rdfs:label
@@ -934,6 +1960,24 @@ subject_start: 21
 subject_end: 34
 
 ---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 36
+subject_end: 40
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 36
+subject_end: 40
+
+---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/DataAugmentation
 object_label: Data Augmentation
@@ -943,22 +1987,58 @@ subject_start: 21
 subject_end: 37
 
 ---
-predicate_id: rdfs:label
-object_id: BFO:0000015
-object_label: process
-match_string: Process
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 30
-subject_end: 36
+subject_start: 31
+subject_end: 35
 
 ---
 predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 24
-subject_end: 28
+subject_start: 31
+subject_end: 35
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 34
+subject_end: 38
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 34
+subject_end: 38
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 41
+subject_end: 45
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 41
+subject_end: 45
 
 ---
 predicate_id: rdfs:label
@@ -970,6 +2050,24 @@ subject_start: 16
 subject_end: 35
 
 ---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 38
+subject_end: 42
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 38
+subject_end: 42
+
+---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Network
 object_label: Network
@@ -979,22 +2077,22 @@ subject_start: 21
 subject_end: 27
 
 ---
-predicate_id: rdfs:label
-object_id: IAO:0000101
-object_label: image
-match_string: Image
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 25
-subject_end: 29
+subject_start: 20
+subject_end: 24
 
 ---
 predicate_id: rdfs:label
-object_id: BFO:0000034
-object_label: function
-match_string: Function
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 22
-subject_end: 29
+subject_start: 20
+subject_end: 24
 
 ---
 predicate_id: rdfs:label
@@ -1006,6 +2104,15 @@ subject_start: 22
 subject_end: 29
 
 ---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/VectorAutoregression
+object_label: VAR
+match_string: Var
+matches_whole_text: false
+subject_start: 16
+subject_end: 18
+
+---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/DataAugmentation
 object_label: Data Augmentation
@@ -1015,19 +2122,199 @@ subject_start: 22
 subject_end: 38
 
 ---
-predicate_id: rdfs:label
-object_id: BFO:0000019
-object_label: quality
-match_string: Quality
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
-subject_start: 22
-subject_end: 28
+subject_start: 27
+subject_end: 31
 
 ---
 predicate_id: rdfs:label
-object_id: PATO:0000001
-object_label: quality
-match_string: Quality
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 27
+subject_end: 31
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 36
+subject_end: 40
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 36
+subject_end: 40
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
 matches_whole_text: false
 subject_start: 22
-subject_end: 28
+subject_end: 26
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 22
+subject_end: 26
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 42
+subject_end: 46
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 42
+subject_end: 46
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 44
+subject_end: 48
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 44
+subject_end: 48
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 30
+subject_end: 34
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 30
+subject_end: 34
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 34
+subject_end: 38
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 34
+subject_end: 38
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 39
+subject_end: 43
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 39
+subject_end: 43
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 37
+subject_end: 41
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 37
+subject_end: 41
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 48
+subject_end: 52
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 48
+subject_end: 52
+
+---
+predicate_id: oio:hasExactSynonym
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 31
+subject_end: 35
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/Model
+object_label: Model
+match_string: Model
+matches_whole_text: false
+subject_start: 31
+subject_end: 35

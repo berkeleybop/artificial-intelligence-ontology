@@ -1,22 +1,4 @@
 predicate_id: rdfs:label
-object_id: IAO:0000038
-object_label: graph
-match_string: Graph
-matches_whole_text: false
-subject_start: 10
-subject_end: 14
-
----
-predicate_id: rdfs:label
-object_id: BFO:0000015
-object_label: process
-match_string: Process
-matches_whole_text: false
-subject_start: 27
-subject_end: 33
-
----
-predicate_id: rdfs:label
 object_id: https://w3id.org/aio/NaturalLanguageProcessing
 object_label: Natural Language Processing
 match_string: Natural Language Processing

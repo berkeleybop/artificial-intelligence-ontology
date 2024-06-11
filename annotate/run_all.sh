@@ -11,3 +11,9 @@ runoak -i ../aio.owl annotate --text-file methods_reformat_collection.txt > meth
 source AIO_only.sh
 source PWC_AIO_general_counts.sh
 source PWC_AIO_counts.sh
+
+
+grep  match_string methods_reformat_collection_annotate_AIOonly.txt  | sort | uniq | wc
+ grep object_label methods_reformat_annotate_AIOonly.txt | sort | uniq | wc
+
+
