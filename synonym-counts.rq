@@ -1,0 +1,18 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix oio: <http://www.geneontology.org/formats/oboInOwl#>
+
+select ?branch (count(distinct ?synonym) as ?synonym_count)
+ where {
+    values ?syn_type {
+        oio:hasExactSynonym
+        oio:hasRelatedSynonym
+    }
+    ?branch rdfs:subClassOf owl:Thing .
+    ?child_class rdfs:subClassOf* ?branch .
+    ?child_class ?syn_type ?synonym .
+}
+group by ?branch
+order by ?branch
+
+
