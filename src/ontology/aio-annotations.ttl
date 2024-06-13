@@ -1,12 +1,10 @@
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
-@prefix example: <https://github.com/ontodev/robot/examples/> . 
-@prefix dc: <http://purl.org/dc/elements/1.1/> . 
-@prefix terms: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
 <https://w3id.org/aio/aio.owl>
   rdf:type owl:Ontology ;
-  dc:title "Artificial Intelligence Ontology" ;
-  terms:license <http://creativecommons.org/licenses/by/4.0/> ;
-  dc:description "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases." .
+  dcterms:title "Artificial Intelligence Ontology" ;
+  dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dcterms:description "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases." .
