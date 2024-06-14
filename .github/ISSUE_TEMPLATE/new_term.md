@@ -1,3 +1,10 @@
+---
+name: New Term Request
+about: Use this template for requesting a new term.
+title: "[NEW TERM]"
+labels: enhancement
+---
+
 For new term requests, please provide the following information:
 
 ## Preferred term label
