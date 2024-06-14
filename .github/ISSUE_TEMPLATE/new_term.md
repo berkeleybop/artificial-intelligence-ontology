@@ -2,27 +2,42 @@
 name: New Term Request
 about: Use this template for requesting a new term.
 title: "[NEW TERM]"
-labels: enhancement
----
-
-For new term requests, please provide the following information:
-
-## Preferred term label
-
-(e.g., Asplenia)
-
-## Synonyms
-
-(e.g., Absent spleen)
-
-## Textual definition
-
-the definition should be understandable even for non-specialists. Include a PubMed ID to refer to any relevant article that provides additional information about the suggested term.
-
-## Suggested parent term
-
-Please look in the hierarchy in a browser such as [OLS](http://www.ebi.ac.uk/ols/ontologies/artificial-intelligence-ontology)
-
-## Attribution
-
-If you would like a nanoattribution, please indicate your ORCID id
+labels: [enhancement]
+body:
+    - type: markdown
+      attributes:
+        value: For new term requests, please provide the following information.
+    - type: input
+      id: term_label
+      attributes:
+        label: Preferred Term Label
+        description: What should the label of the new term be? Or, if it already exists, what is its label?
+        placeholder: NamedThing
+      validations:
+        required: true
+    - type: input
+      id: term_synonyms
+      attributes:
+        label: Preferred Synonyms
+        description: Should there be any synoyms for this term, whether it already exists or is being proposed?
+    - type: input
+      id: textual_definition
+      attributes:
+        label: Textual Definition
+        description: What should the definition of this term be? The definition should be understandable even for non-specialists.
+    - type: input
+      id: reference
+      attributes:
+        label: Reference
+        description: Please provide a source for the existence of this term as a URL or DOI.
+    - type: input
+      id: suggested_parent_term
+      attributes:
+        label: Suggested Parent Term
+        description: Please provide a potential parent term if you are suggesting creation of a new term.
+    - type: input
+      id: contributor_orcid
+      attributes:
+        label: Curator
+        description: If you would like a nanoattribution, please probvide your ORCID id.
+        placeholder: 0000-0001-2345-6789
