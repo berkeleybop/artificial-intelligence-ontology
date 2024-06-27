@@ -7,18 +7,18 @@
         "val" : "http://purl.obolibrary.org/obo/IAO_8000001"
       }, {
         "pred" : "http://purl.org/dc/terms/description",
-        "val" : "None"
+        "val" : "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases."
       }, {
         "pred" : "http://purl.org/dc/terms/license",
-        "val" : "https://creativecommons.org/licenses/unspecified"
+        "val" : "http://creativecommons.org/licenses/by/4.0/"
       }, {
         "pred" : "http://purl.org/dc/terms/title",
         "val" : "Artificial Intelligence Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-03-31"
+        "val" : "2024-06-26"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/aio/releases/2024-03-31/aio-base.json"
+      "version" : "http://purl.obolibrary.org/obo/aio/releases/2024-06-26/aio-base.json"
     }
   } ]
 }

@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/aio/aio-base.owl#"
      xml:base="http://purl.obolibrary.org/obo/aio/aio-base.owl"
-     xmlns:dce="http://purl.org/dc/elements/1.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
+     xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -9,12 +11,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aio/aio-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2024-03-31/aio-base.owl"/>
-        <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <dcterms:description>None</dcterms:description>
-        <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2024-06-26/aio-base.owl"/>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
+        <dcterms:description>This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases.</dcterms:description>
+        <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>Artificial Intelligence Ontology</dcterms:title>
-        <owl:versionInfo>2024-03-31</owl:versionInfo>
+        <owl:versionInfo>2024-06-26</owl:versionInfo>
     </owl:Ontology>
     
 
