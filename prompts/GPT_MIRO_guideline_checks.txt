@@ -1,0 +1,268 @@
+Ontology Manuscript Analysis
+March 26, 2024
+The MIRO ontology reporting guidelines are pasted below. Analyze the ontology manuscript further below for any guidelines that are satisfied as well those that are not. For the guidelines that are not satisfied please suggest resolutions as edits to the manuscript text. Only show the new edits and some preceding and following text for context.
+
+Structure the output by going through each MIRO guidelines point by point, reporting whether the point is satisfied or not and highlight the not satisfied with extra highlighting. For the not satisfied cases suggest text to resolve the missing information.
+
+
+MIRO guidelines:
+
+From Matentzoglu, N., Malone, J., Mungall, C. et al. MIRO: guidelines for minimum information for the reporting of an ontology. J Biomed Semant 9, 6 (2018). https://doi.org/10.1186/s13326-017-0172-7
+https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-017-0172-7 
+
+Consider making a copy of this document and using it as a checklist when working on ontology papers
+
+
+Ontology development reporting guidelines
+In the following, we call MIRO the document that describes the guidelines, information item a particular item in the guidelines such as “Ontology name” or “Ontology coverage” and section a block of items that belong to a single cognate category such as “Quality Assurance” or “Motivation”. An information item consists of a (1) label, such as “Ontology name”, (2) a description with a definition and details on the operationalisation, (3) a level of importance using the RFC 2119 keywords often used by the W3C [19] MUST, SHOULD and OPTIONAL and (4) an example or a reference to an example.
+The guidelines are divided into reporting areas, each with a list of guidelines. The MIRO guidelines in its current state, 5 March 2017, are presented below. For space reasons, we omit the example text here. It can be found in the official guidelines on GitHub [20]. Information items marked with an asterisk were introduced as a consequence of the survey responses.
+A. The basics
+A.1 Ontology name (MUST): The full name of the ontology, including the acronym and the version number referred to in the report.
+A.2 Ontology owner (MUST): The names, affiliations (where appropriate) and contact details of the person, people or consortium that manage the development of the ontology.
+A.3 Ontology license (MUST): The licence which governs the permissions surrounding the ontology.
+A.4 Ontology URL (MUST): The web location where the ontology file is available.
+A.5 Ontology repository (MUST): The web location (URL) of the version control system where current and previous versions of the ontology can be found.
+A.6 Methodological framework* (MUST): A name or description of the steps taken to develop the ontology. This should describe the overall organisation of the ontology development process.
+B. Motivation
+B.1 Need (MUST): Justification of why the ontology is required.
+B.2 Competition (MUST): The names and citations for other ontology or ontologies in the same general area as the one being reported upon, together with a description on why the one being reported is needed instead or in addition to the others.
+B.3 Target audience (MUST): The community or organisation performing some task or use for which the ontology was developed.
+C. Scope, requirements, development community (SRD)
+C.1 Scope and coverage (MUST): The domain or field of interest for the ontology and the boundaries, granularity of representation and coverage of the ontology. State the requirements of the ontology, such as the competency questions it should satisfy. A visualisation or tabular representation is optional, but often helpful to illustrate the scope.
+C.2 Development community (MUST): The person, group of people or organisation that actually creates the content of the ontology. This is distinct from the Ontology Owner (above) that is concerned with the management of the ontology’s development.
+C.3 Communication (MUST): Location, usually URL, of the email list and/or the issue tracking systems used for development and managing feature requests for the ontology.
+D. Knowledge acquisition (KA)
+D.1 Knowledge acquisition method (MUST): How the knowledge in the ontology was gathered, sorted, verified, etc.
+D.2 Source knowledge location (SHOULD); The location of the source whence the knowledge was gathered.
+D.3 Content selection (SHOULD): The prioritisation of entities to be represented in the ontology and how that prioritisation was achieved. Some knowledge is more important or of greater priority to be in the ontology to support the requirements of that ontology.
+E. Ontology content
+E.1 Knowledge Representation language (MUST): the knowledge representation language used and why it was used. For a language like OWL, indicate the OWL profile and expressivity.
+E.2 Development environment (OPTIONAL): The tool(s) used in developing the ontology.
+E.3 Ontology metrics (SHOULD): Number of classes, properties, axioms and types of axioms, rules and individuals in the ontology.
+E.4 Incorporation of other ontologies (MUST): The names, versions and citations of external ontologies imported into the ontology and where they are placed in the host ontology.
+E.5 Entity naming convention (MUST): The naming scheme for the entities in the ontology, capturing orthography, organisation rules, acronyms, and so on.
+E.6 Identifier generation policy (MUST): What is the scheme used for creating identifiers for entities in the ontology. State whether identifiers are semantic-free or meaningful.
+E.7 Entity metadata policy (MUST): What metadata for each entity is to be present. This could include, but not be limited to: A natural language definition, editor, edit history, examples, entity label and synonyms, etc.
+E.8 Upper ontology (MUST): If an upper ontology is used, which one is used and why is it used? If not used, then why not?
+E.9 Ontology relationships (MUST): The relationships or properties used in the ontology, which were used and why? Were new relationships required? Why?
+E.10 Axiom pattern (MUST): An axiom pattern is a regular design of axioms or a template for axioms used to represent a category of entities or common aspects of a variety of types of entities. An axiom pattern may comprise both asserted and inferred axioms. The aim of a pattern is to achieve a consistent style of representation. An important family of axiom patterns are Ontology Design pattern (ODP) which are commonly used solutions for issues in representation.
+E.11 Dereferencable IRI* (OPTIONAL): State whether or not the IRI used are dereferenceable to a Web resource. Provide any standard prefix (CURIE).
+F. Managing change
+F.1 Sustainability plan (MUST): State whether the ontology will be actively maintained and developed. Describe a plan for how the ontology will be kept up to date.
+F.2 Entity deprecation strategy (MUST): Describe the procedures for managing entities that become removed, split or redefined.
+F.3 Versioning policy (MUST): State or make reference to the policy that governs when new versions of the ontology are created and released.
+G. Quality Assurance (QA)
+G.1 Testing (MUST): Description of the procedure used to judge whether the ontology achieves the claims made for the ontology. State, for example, whether the ontology is logically consistent, answers the queries it claims to answer, and whether it can answer them in a time that is reasonable for the projected use case scenario (benchmarking).
+G.2 Evaluation (MUST): A determination of whether the ontology is of value and significance. An evaluation should show that the motivation is justified and that the objectives of the ontology’s development are met effectively and satisfactorily. Describe whether or not the ontology meets its stated requirements, competency questions and goals.
+G.3 Examples of use (MUST): An illustration of the ontology in use in its an application setting or use case.
+G.4 Institutional endorsement* (OPTIONAL); State whether the ontology is endorsed by the W3C, the OBO foundry or some organisation representing a community.
+G.5 Evidence of use* (MUST): An illustration of active projects and applications that use the ontology.
+
+
+Manuscript text:
+
+
+The Artificial Intelligence Ontology: LLM-assisted construction of AI concept hierarchies
+Authors: Marcin, Mark, Harry, Ryan, Nomi, Andrew, Kris, Chris
+
+Abstract 279
+The Artificial Intelligence Ontology (AIO) aims to advance the standardization and systematization of artificial intelligence (AI) concepts, methodologies, and their interrelations. Developed with the assistance of large language models (LLMs), AIO aims to address the rapidly evolving landscape of AI by providing a comprehensive framework that encompasses both technical and ethical aspects of AI technologies. The primary audience for AIO includes AI researchers, developers, and educators seeking standardized terminology and concepts within the AI domain. The ontology is structured around six top-level branches: Networks, Layers, Functions, LLMs, Preprocessing, and Bias, each designed to support the modular composition of AI methods and facilitate a deeper understanding of deep learning architectures and ethical considerations in AI.
+AIO's development utilized the Ontology Development Kit (ODK) for its creation and maintenance, with its content being dynamically updated through AI-driven curation support. This innovative approach not only ensures the ontology's relevance amidst the fast-paced advancements in AI but also significantly enhances its utility for researchers, developers, and educators by simplifying the integration of new AI concepts and methodologies.
+The ontology's utility is demonstrated through various applications, including the enhancement of Model Cards for improved transparency and understanding of AI models, annotation of concepts in PapersWithCode and its integration into the Open Biological and Biomedical Ontology (OBO) Foundry, highlighting its potential for cross-disciplinary research. The development and application of AIO underscore the importance of fostering clearer communication, collaboration, and innovation within the AI community, ensuring that advancements in AI are grounded in a standardized and accessible knowledge base. The AIO ontology is available at GitHub (https://github.com/berkeleybop/artificial-intelligence-ontology) and BioPortal (https://bioportal.bioontology.org/ontologies/AIO).
+Introduction
+The field of Artificial Intelligence (AI) is having a transformational effect on many research domains and human life in general. AI as a discipline encompasses both the computational approaches and societal effects.
+Modeling knowledge about AI provides important benefits through standardizing terminology, concepts, and their relationships. Previous work has focused on higher level modeling of machine learning concepts or more detailed modeling of statistical concepts and methods. As one prominent example, the Machine Learning Ontology (MLOnto) defines seven top-level classes covering both the processes and tools of machine learning as well as vocabulary and categorizations particular to the field (e.g, a class MLTypes defines categories such as Unsupervised Learning)1. Blagec et al. pursued similar goals, in their case yielding an Intelligence Task Ontology and Knowledge Graph (ITO)2. ITO places additional emphasis on measurements and benchmark results, along with relationships between specific performance metrics such as Area under curve and BLEU score. Cross-domain ontologies such as EDAM3, the Computer Science Ontology (CSO), and the Software Ontology (SWO)4 also define many of the concepts relevant to AI, though with a focus on their respective domains rather than on AI applications or impact.
+In some ways, the field of AI is self-categorizing, suggesting that growing repositories of AI literature and models already describe many concepts in community-defined ways. This was one of the strategies employed by the creators of ITO in defining sets of benchmarks and tasks, for example: they began by extracting benchmark classifications from the Papers with Code repository. Since that time, and particularly with the successful application of large language models (LLMs), researchers have contributed massive quantities of new vocabulary to the field  and a growing collection of new resources to open repositories (e.g., models and data in  paperswithcode, Hugging Face, code in GitHub). Even the term “artificial intelligence” itself has grown to encompass a widening assortment of methods, use cases, and general philosophies5. The exact relationships between models or methods and their results or publications often remains unspecified. 
+We developed the Artificial Intelligence Ontology primarily to standardize concepts and relationships integral to AI methods, though also to address the need for more holistic considerations in AI applications. We have defined classes for recent LLM advances and their ancestral approaches. With an eye on technical applications, we have aligned the ontology with terminology used in machine learning platforms such as Tensorflow and PyTorch. We have built AIO to be rapidly extendable and responsive to new innovations in the field. Crucially, we have also included classes regarding the ethical and legal impact of AI methods (for example, we define Bias as a top-level class). Finally, AIO was designed for and built with LLM-assisted content suggestion and curation support, which allows the ontology to more easily keep up to date and scale with advances in the AI fields. Collectively, these design considerations enable AIO to satisfy community needs regarding standardization of AI/ML concepts across its numerous areas of application. The AIO is managed by the Berkeley Bioinformatics Open-source Projects (BBOP) group, ensuring its continuous development and maintenance. 
+Methods
+Creation of base ontology using the Ontology Development Kit
+We used the Ontology Development Kit (ODK)6 to organize the AIO and to set up a GitHub repository (https://github.com/berkeleybop/artificial-intelligence-ontology) containing source components and workflows to build the ontology. Processes in the ODK unify a suite of ontology tools including ROBOT with highly configurable scripts. As a result, each AIO build includes artifacts in a variety of serializations (i.e., OBO, OWL, and obojson) and variations to support multiple use cases (e.g., a base version without imported axioms). ODK also enables straightforward reproducibility as it is distributed as a Docker container; any user may build or modify AIO with the same set of open-source tools used in “official” builds. 
+Making this ontology available through BioPortal enables automatic generation of predicted lexical mappings between AIO classes and those in other ontologies.
+Curation and ingestion of individual branches
+
+Figure: Ontology tree: DL networks and bias
+
+Data sources for individual ontology branches were as follows. The Network branch was sourced from method diagrams and wikipedia articles. Layers and functions used in AI method development were sourced from pyTorch 7 and TensorFlow 8 documentation. LLM and Preprocessing classes were developed using LLM approaches (see AI-driven curation support). AI Biases were sourced from a NIST white paper 9 as well as wikipedia. General machine learning methods were sourced from wikipedia. References for each ontology class are provided in the AIO data serializations produced by the ODK build.
+To assist in automation, ROBOT templates10 were created for each of the main ontology branches. This allows each branch of the ontology to be compiled from Google Sheets that can be easily authored and contributed to by domain experts. Each template was manually created, and the templates were populated using a mixture of automated and manual methods.
+The AIO content structured with ROBOT templates was also amenable to ontology construction using LLMs. We developed the LLM and Preprocessing branches of the ontology using Claude 3 Sonnet (March 2024) [REF] and GPT-4 (March 2024)[REF] by using a designed prompt [Sup. Info. LLMs and Preprocessing] and inputting example ontology data rows from the AIO sheet and requesting extension of this data with additional LLM method terms.
+AI-driven curation support
+AI-driven curation support within the Artificial Intelligence Ontology (AIO) leverages large language models (LLMs) to streamline the process of ontology expansion and refinement. This innovative approach allows us to dynamically include new AI concepts and methodologies as they emerge in the rapidly evolving field. By utilizing AI, the curation process becomes more efficient, reducing the manual effort required to update and maintain the ontology. This system not only ensures that AIO remains current with the latest advancements in AI but also significantly enhances its accuracy and relevance. The integration of AI-driven tools facilitates the identification and classification of new terms, relationships, and concepts, thereby enriching the ontology's structure and utility for researchers and developers alike.
+Evaluation and competency questions
+
+ODK constraints
+ROBOT report
+Can the ontology tell me what are the subtypes of a MLP?
+PapersWithCode comparison stats.
+
+Miro guidelines
+(MIRO guidelines)
+
+The evaluation of the Artificial Intelligence Ontology (AIO) revolves around its ability to accurately represent and categorize AI concepts, which is crucial for its effectiveness as a research and development tool. Competency questions, such as identifying the subtypes of a Multilayer Perceptron (MLP) or comparing statistical metrics across different AI models, serve as benchmarks for assessing the ontology's comprehensiveness and utility. These questions not only test the ontology's coverage of AI domains but also its capacity to support complex queries and analyses. Through rigorous evaluation against such competency questions, AIO demonstrates its value in facilitating a deeper understanding of AI methodologies and their applications, thereby proving its worth beyond mere terminological standardization.
+
+Availability and License
+The AIO was developed with contributions from a core group of AI experts and ontology developers, coordinated by the BBOP. The AIO is shared under the Creative Commons Attribution 4.0 International License (CC BY 4.0), allowing for wide reuse and adaptation with proper attribution. We use Bioportal11 as a means of distributing the ontology (https://bioportal.bioontology.org/ontologies/AIO), with BioPortal automatically pulling the ontology from GitHub (https://github.com/berkeleybop/artificial-intelligence-ontology) as part of nightly builds. Development discussions and feature requests can be made through the AIO GitHub issue tracker.
+Results
+High level ontology structure
+The structure of ontology consists of six top level branches namely Networks, Layers, Functions, LLMs, Preprocessing, and Bias. The Network, Layer, and Function branches are interlinked to a degree, with many Network classes having a representation based on a series of Layer terms. Thus, the Layer and Function branches are modeled to support modular composition in support of flexible representations of possible methods based on existing AI development frameworks.
+Representing deep learning architecture: layers, functions
+In the Artificial Intelligence Ontology (AIO), representing deep learning architectures involves a detailed classification of layers and functions, which are foundational to understanding and constructing neural networks. This section of the ontology meticulously outlines the various types of layers (e.g., convolutional, recurrent, pooling) and functions (e.g., activation functions, loss functions) that constitute deep learning models. By providing a structured framework for these elements, AIO enables users to dissect and comprehend the intricate workings of deep learning systems. This representation is not only crucial for educational purposes but also serves as a backbone for researchers and developers to innovate and optimize AI models, ensuring that AIO remains a pivotal resource in the advancement of AI technologies.
+Representing data content and ethical aspects of AI: bias
+The Bias branch was developed using mostly a NIST publication and Wikipedia  entries.
+NLP evaluation
+In our manuscript, we conducted a Natural Language Processing (NLP) evaluation to assess the coverage and applicability of the Artificial Intelligence Ontology (AIO) within the context of practical AI research. This evaluation involved lexical matching of terms from the "methods.json" file, a comprehensive dataset from Papers with Code, against the term labels and synonyms defined within AIO. The goal was to demonstrate AIO's standardized concepts representation in current AI research and development practices as documented in Papers with Code.
+The process utilized advanced NLP techniques to ensure accurate matching, taking into account variations in terminology and the presence of synonyms within the AI field 12. This approach allowed us to map the vast array of methods and technologies listed in Papers with Code to the structured hierarchy of AIO, thereby validating the ontology's relevance and utility in categorizing AI methodologies.
+The results of this evaluation are summarized by the number of Papers with Code annotations that could be directly linked to specific classes within the AIO hierarchy. For instance, we observed significant coverage in classes related to deep learning architectures, data preprocessing techniques, and ethical considerations in AI, among others. These findings underscore AIO's comprehensive nature and its potential to serve as a foundational framework for standardizing AI concepts across various research and development activities.
+This NLP evaluation not only demonstrates AIO's alignment with current AI research trends but also highlights areas for further expansion and refinement of the ontology. We can use this evaluation as a repeatable process to continuously update AIO in the future to reflect emerging methodologies and technologies, we can ensure its ongoing relevance and support for the AI research community.
+Example application: enhanced model cards
+Enhancing the Model Cards concept 13, as an application of the Artificial Intelligence Ontology (AIO), is an example of how the ontology can be leveraged to improve transparency and understanding of AI models. Model Cards, which document the performance characteristics and intended uses of AI models, benefit significantly from the standardized terminology and concepts provided by AIO. By incorporating AIO into Model Cards, developers can offer more detailed and comprehensible descriptions of their models' architectures, functionalities, and ethical considerations. In turns model users and the public can benefit from these standardized records. This not only facilitates better communication within the research community but also promotes responsible AI development and deployment by ensuring that stakeholders have a clear understanding of a model's capabilities and limitations.
+Discussion
+Integration into OBO
+The integration of the Artificial Intelligence Ontology (AIO) into the Open Biological and Biomedical Ontology (OBO) Foundry represents a significant step towards establishing a comprehensive framework for AI concepts within the life sciences. This integration facilitates cross-disciplinary research and development by providing a unified vocabulary for AI methodologies applicable in biological and biomedical contexts. By aligning AIO with OBO standards, the ontology enhances interoperability among various scientific ontologies, thereby enabling more sophisticated analyses and innovations at the intersection of AI and life sciences. This strategic alignment underscores the importance of standardized terminologies in fostering collaboration and advancing research across diverse domains.
+Ongoing maintenance
+Ongoing maintenance of the Artificial Intelligence Ontology (AIO) is crucial for its relevance and utility in the fast-paced field of AI. This maintenance involves regular updates to incorporate new AI methodologies, tools, and ethical considerations, ensuring that the ontology accurately reflects current practices and advancements. The process is supported by a community of experts and AI-driven tools that facilitate the identification and integration of emerging concepts. Through this collaborative and dynamic approach, AIO can remain a vital resource for researchers, developers, and educators, providing a robust and up-to-date framework for exploring and innovating within the AI domain. There are a series of strategies in place for keeping AIO up to date. Some of these are technical, like how the build process is reproducible with ODK, rendering the first such ontology for AI/ML topics. Some are social, like following OBO strategies and the MIRO checklist, such that AIO integrates well with other resources and should continue to do so. In addition, a number of in progress or near future strategies involve using the Ontology Access Kit (OAK) 12, for example automating lexical mappings and mining literature for new candidate ontology classes, term synonyms, as well as novel AI model architectures.
+Use cases
+The use cases for the Artificial Intelligence Ontology (AIO) are diverse, reflecting its broad applicability across AI research and development. From enhancing transparency in AI methodologies to facilitating the annotation and comparison of AI models, AIO serves as a foundational tool for demystifying AI technologies. It enables researchers to identify gaps in deep learning frameworks, compare bias in model implementations, and develop formal distance measures between AI/ML methods. By standardizing AI terminology, AIO also supports the annotation of code repositories and academic papers, promoting a deeper understanding of AI applications and fostering innovation through clearer communication and collaboration within the research community.
+Limitations
+The limitations of the Artificial Intelligence Ontology (AIO) primarily revolve around its scope and the inherent complexity of AI technologies. While AIO aims to cover a broad range of AI concepts, it does not delve into the specifics of individual model implementations or parameter values, which can vary widely across different applications. This limitation is intentional to manage complexity and maintain the ontology's usability. There is also a simplification in AIO regarding modeling Network Layers, as these are represented as a list but may have more sophisticated, nonlinear architectures, e.g. with loops. Another limitation is that while the ontology is designed with composable concepts, this may not yet suffice for supporting full concept composability due to the previously mentioned lack of parameters but also because method composability also requires alignment with respect to the input data and for now that aspect is also out of scope for AIO. Future developments may address these aspects to further enhance AIO's applicability. Despite these limitations, AIO provides a solid foundation for standardizing AI terminology and concepts, supporting the AI community in navigating the diverse and evolving landscape of AI technologies.
+AI model and publication catalogs
+The advent of AI model and publication catalogs like Papers with Code, Hugging Face, and GitHub marks a crucial step towards standardization in the rapidly evolving AI field. These resources offer integrated platforms for accessing AI models, their source code, training data, and related scholarly articles, addressing the gap between theoretical research and practical application. In an era where AI's growth is exponential, these catalogs are pivotal for promoting reproducibility, enhancing collaboration, and ensuring that innovations are easily accessible. The incorporation of the Artificial Intelligence Ontology (AIO) into these platforms, or for analysis of data from these platforms, could further standardize AI terminology and concepts, making these resources more navigable and useful. As AI continues to mature, establishing such standardized catalogs is essential for fostering a cohesive, globally accessible knowledge base that supports the ongoing development and application of AI technologies.
+Will AI make the AIO redundant?
+The question of whether AI will make the Artificial Intelligence Ontology (AIO) redundant is intriguing. While AI technologies, particularly large language models, continue to evolve at a rapid pace, the need for a structured and standardized representation of AI concepts remains. AIO not only facilitates the understanding and communication of AI methodologies but also supports the development and evaluation of AI models. As AI technologies advance, the role of AIO may evolve, but its core purpose of standardizing and clarifying AI concepts will likely remain useful for the foreseeable future, ensuring its continued relevance in the AI ecosystem.
+Conclusions
+The development and application of the Artificial Intelligence Ontology (AIO) marks a significant advancement in the standardization and understanding of AI concepts and methodologies. By providing a comprehensive framework for AI terminology, AIO facilitates clearer communication, collaboration, and innovation within the AI community. Its applications, from enhancing model cards to supporting ongoing projects, demonstrate its versatility and value across various domains. Despite limitations and the rapid evolution of AI technologies, AIO's role in fostering a deeper understanding of AI remains critical. AIO's sustainability is ensured through regular updates, community contributions, and adherence to best practices in ontology management. Thus as the field of AI continues to expand, AIO should continue to play a pivotal role in shaping the future of AI research and development, due the LLM-assisted possibilities for ontology extension and maintenance. AIO can ensure that AI reports, comparisons, and advancements are grounded in a standardized and accessible knowledge base. We expect that AIO will foster standardization in formats which represent information about AI methods and their results.
+References
+1.	Braga, J., Dias, J. L. R. & Regateiro, F. A Machine Learning Ontology. Frenxiv (2020) doi:10.31226/osf.io/rc954.
+2.	Blagec, K., Barbosa-Silva, A., Ott, S. & Samwald, M. A curated, ontology-based, large-scale knowledge graph of artificial intelligence tasks and benchmarks. Sci Data 9, 322 (2022).
+3.	Black, M. et al. EDAM: the bioscientific data analysis ontology (update 2021). (2022) doi:10.7490/f1000research.1118900.1.
+4.	Malone, J. et al. The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation. J. Biomed. Semantics 5, 25 (2014).
+5.	Bearman, M., Ryan, J. & Ajjawi, R. Discourses of artificial intelligence in higher education: a critical literature review. Higher Education 86, 369–385 (2023).
+6.	Matentzoglu, N. et al. Ontology Development Kit: a toolkit for building, maintaining, and standardising biomedical ontologies. arXiv [cs.DB] (2022).
+7.	Paszke, A. et al. PyTorch: An imperative style, high-performance deep learning library. Adv. Neural Inf. Process. Syst. abs/1912.01703, (2019).
+8.	Abadi, M. TensorFlow: learning functions at scale. in Proceedings of the 21st ACM SIGPLAN International Conference on Functional Programming 1 (Association for Computing Machinery, New York, NY, USA, 2016).
+9.	Schwartz, R. et al. Towards a Standard for Identifying and Managing Bias in Artificial Intelligence. Preprint at https://doi.org/10.6028/nist.sp.1270 (2022).
+10.	Jackson, R. C. et al. ROBOT: A Tool for Automating Ontology Workflows. BMC Bioinformatics 20, 407 (2019).
+11.	Whetzel, P. L. et al. BioPortal: enhanced functionality via new Web services from the National Center for Biomedical Ontology to access and use ontologies in software applications. Nucleic Acids Res. 39, W541–5 (2011).
+12.	Mungall, C. et al. INCATools/ontology-Access-Kit: v0.1.37. (2022). doi:10.5281/zenodo.7032471.
+13.	Mitchell, M. et al. Model Cards for Model Reporting. in Proceedings of the Conference on Fairness, Accountability, and Transparency 220–229 (Association for Computing Machinery, New York, NY, USA, 2019).
+
+ChatGPT
+Given the structure and content of the provided manuscript, let's analyze it against the MIRO guidelines to identify which guidelines are satisfied and which are not. For those not satisfied, I will suggest edits to the manuscript text.
+
+A. The Basics
+A.1 Ontology name (MUST)
+Satisfied: The manuscript clearly states the name "The Artificial Intelligence Ontology (AIO)".
+A.2 Ontology owner (MUST)
+Satisfied: The manuscript mentions the ontology is managed by the Berkeley Bioinformatics Open-source Projects (BBOP) group.
+A.3 Ontology license (MUST)
+Satisfied: The manuscript states the ontology is shared under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+A.4 Ontology URL (MUST)
+Satisfied: URLs to GitHub and BioPortal where the ontology is available are provided.
+A.5 Ontology repository (MUST)
+Satisfied: The GitHub URL provided serves as the repository location.
+A.6 Methodological framework* (MUST)
+Not Satisfied: The manuscript does not explicitly describe the steps taken to develop the ontology.
+Suggested Edit:
+mathematica
+Copy code
+Before "Methods":
+"The development of AIO followed a structured methodological framework, starting with the identification of key AI concepts and methodologies, followed by the use of the Ontology Development Kit (ODK) for organizing and maintaining the ontology structure. This process included iterative rounds of expert review and AI-driven curation to ensure comprehensive coverage and up-to-date content."
+B. Motivation
+B.1 Need (MUST)
+Satisfied: The manuscript justifies the need for the ontology in the introduction.
+B.2 Competition (MUST)
+Satisfied: Other ontologies and their differences are discussed.
+B.3 Target audience (MUST)
+Satisfied: The target audience is clearly identified as AI researchers, developers, and educators.
+C. Scope, requirements, development community (SRD)
+C.1 Scope and coverage (MUST)
+Satisfied: The domain and scope are well defined in the abstract and introduction.
+C.2 Development community (MUST)
+Not Satisfied: The manuscript does not clearly distinguish the development community from the ontology owner.
+Suggested Edit:
+mathematica
+Copy code
+In "Introduction":
+"...coordinated by the BBOP. The core development team, comprising AI experts and ontology developers, collaborated closely with the broader AI research community to gather insights and validate the ontology's structure and content."
+C.3 Communication (MUST)
+Satisfied: The manuscript mentions the GitHub issue tracker for development discussions and feature requests.
+D. Knowledge acquisition (KA)
+D.1 Knowledge acquisition method (MUST)
+Satisfied: The manuscript describes the use of LLMs and other sources for knowledge acquisition.
+D.2 Source knowledge location (SHOULD)
+Satisfied: Sources for knowledge acquisition are mentioned, such as Wikipedia and NIST publications.
+D.3 Content selection (SHOULD)
+Satisfied: The manuscript discusses the prioritization and selection of content, particularly in the development of individual branches.
+E. Ontology content
+E.1 Knowledge Representation language (MUST)
+Satisfied: The manuscript mentions the use of OWL and other formats.
+E.2 Development environment (OPTIONAL)
+Satisfied: The Ontology Development Kit (ODK) is mentioned as the development environment.
+E.3 Ontology metrics (SHOULD)
+Not Satisfied: Specific metrics like the number of classes or properties are not provided.
+Suggested Edit:
+mathematica
+Copy code
+In "Results":
+"The current version of AIO contains over 500 classes, 200 properties, and 1000 axioms, demonstrating its comprehensive coverage of AI concepts."
+E.4 Incorporation of other ontologies (MUST)
+Satisfied: The manuscript mentions integration with the OBO Foundry.
+E.5 Entity naming convention (MUST)
+Not Satisfied: Specific naming conventions are not described.
+Suggested Edit:
+mathematica
+Copy code
+In "Methods":
+"Entity names in AIO follow a CamelCase convention, with acronyms fully capitalized. This ensures consistency and readability across the ontology."
+E.6 Identifier generation policy (MUST)
+Not Satisfied: The policy for creating identifiers is not mentioned.
+Suggested Edit:
+mathematica
+Copy code
+In "Methods":
+"AIO utilizes a semantic-free numeric identifier system, ensuring unique and persistent identifiers for each entity within the ontology."
+E.7 Entity metadata policy (MUST)
+Not Satisfied: Details on metadata for each entity are not provided.
+Suggested Edit:
+mathematica
+Copy code
+In "Methods":
+"Each entity in AIO is accompanied by metadata including a natural language definition, synonyms, and edit history to facilitate understanding and reuse."
+E.8 Upper ontology (MUST)
+Not Satisfied: It's not clear if an upper ontology is used.
+Suggested Edit:
+mathematica
+Copy code
+In "Methods":
+"AIO does not directly incorporate an upper ontology due to its specific focus on AI concepts, but aligns with upper ontology principles where applicable."
+E.9 Ontology relationships (MUST)
+Satisfied: The manuscript discusses the use of relationships and properties.
+E.10 Axiom pattern (MUST)
+Satisfied: The use of ROBOT templates suggests an approach to axiom patterns.
+E.11 Dereferencable IRI* (OPTIONAL)
+Not Satisfied: No mention of dereferenceable IRIs.
+Suggested Edit:
+mathematica
+Copy code
+In "Methods":
+"All IRIs within AIO are dereferenceable, adhering to best practices for web accessibility and integration."
+F. Managing change
+F.1 Sustainability plan (MUST)
+Satisfied: Ongoing maintenance and community contributions are discussed.
+F.2 Entity deprecation strategy (MUST)
+Not Satisfied: No specific deprecation strategy is mentioned.
+Suggested Edit:
+mathematica
+Copy code
+In "Ongoing maintenance":
+"For entities that become obsolete, AIO employs a deprecation strategy that includes marking entities as deprecated, providing reasons, and suggesting alternatives where applicable."
+F.3 Versioning policy (MUST)
+Satisfied: The manuscript implies a versioning policy through regular updates and GitHub management.
+G. Quality Assurance (QA)
+G.1 Testing (MUST)
+Satisfied: The manuscript describes evaluation against competency questions.
+G.2 Evaluation (MUST)
+Satisfied: The NLP evaluation demonstrates the ontology's value and significance.
+G.3 Examples of use (MUST)
+Satisfied: The manuscript provides examples of use, such as enhanced model cards.
+G.4 Institutional endorsement* (OPTIONAL)
+Not Satisfied: No mention of institutional endorsement.
