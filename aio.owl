@@ -18,11 +18,11 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aio.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2024-03-28/aio.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2024-08-02/aio.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Artificial Intelligence Ontology</dcterms:title>
-        <owl:versionInfo>2024-03-28</owl:versionInfo>
+        <owl:versionInfo>2024-08-02</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -6570,12 +6570,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <obo:IAO_0000115>An abstract parent class grouping LLMs based on advanced techniques.</obo:IAO_0000115>
         <rdfs:label>Advanced Techniques</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An abstract parent class grouping LLMs based on advanced techniques.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -6589,12 +6583,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>robustness</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Adversarial-Resistant LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Adversarial-ResistantLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An adversarial-resistant LLM is engineered to withstand or mitigate the effects of adversarial attacks, ensuring reliable performance even in the presence of deliberately misleading input designed to confuse the model.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -6669,12 +6657,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <obo:IAO_0000115>An abstract parent class grouping LLMs based on application focus.</obo:IAO_0000115>
         <rdfs:label>Application Focus</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/ApplicationFocus"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An abstract parent class grouping LLMs based on application focus.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -6773,12 +6755,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>sequence-to-sequence model</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Autoregressive Language Model</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/AutoregressiveLanguageModel"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An autoregressive language model is a type of language model that generates text sequentially, predicting one token at a time based on the previously generated tokens. It excels at natural language generation tasks by modeling the probability distribution over sequences of tokens.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -7178,12 +7154,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>unidirectional</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Causal LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/CausalLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A causal LLM only attends to previous tokens in the sequence when generating text, modeling the probability distribution autoregressively from left-to-right or causally.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -7230,12 +7200,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>Text normalization</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Cleaning And Normalization</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/CleaningAndNormalization"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Removing irrelevant data, correcting typos, and standardizing text to reduce noise and ensure consistency in the data.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -7282,12 +7246,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>systematic generalization</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Compositional Generalization LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/CompositionalGeneralizationLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A compositional generalization LLM is trained to understand and recombine the underlying compositional structures in language, enabling better generalization to novel combinations and out-of-distribution examples.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -7418,12 +7376,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>lifelong learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Continual Learning LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/ContinualLearningLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A continual learning LLM is designed to continually acquire new knowledge and skills over time, without forgetting previously learned information. This allows the model to adapt and expand its capabilities as new data becomes available.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -7452,12 +7404,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>Representation learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Contrastive Learning LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/ContrastiveLearningLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A contrastive learning LLM is trained to pull semantically similar samples closer together and push dissimilar samples apart in the representation space, learning high-quality features useful for downstream tasks.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -7471,12 +7417,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>guided generation</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Controllable LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/ControllableLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A controllable LLM allows for explicit control over certain attributes of the generated text, such as style, tone, topic, or other desired characteristics, through conditioning or specialized training objectives.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -7728,12 +7668,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>domain adaptation</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Cross-Domain LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Cross-DomainLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A cross-domain LLM is capable of performing well across a wide range of domains without significant loss in performance, facilitated by advanced domain adaptation techniques.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -7748,12 +7682,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>Sequential learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Curriculum Learning</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/CurriculumLearning"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Training the model on simpler tasks or easier data first, then gradually introducing more complex tasks to improve learning efficiency and performance.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -7766,12 +7694,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>Learning progression</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Curriculum Learning LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/CurriculumLearningLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A curriculum learning LLM is trained by presenting learning examples in a meaningful order from simple to complex, mimicking the learning trajectory followed by humans.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -7779,17 +7701,11 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
     <owl:Class rdf:about="https://w3id.org/aio/Data-to-TextLLM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/AdvancedTechniques"/>
-        <obo:IAO_0000115>A data-to-text LLM generates natural language descriptions from structured data sources like tables, graphs, knowledge bases, etc. Requiring grounding meaning representations.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Data-to-Text LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Meaning representation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>A data-to-text LLM generates natural language descriptions from structured data sources like tables, graphs, knowledge bases, etc. Requiring grounding meaning representations.</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Data-to-Text LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Data-to-TextLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A data-to-text LLM generates natural language descriptions from structured data sources like tables, graphs, knowledge bases, etc. Requiring grounding meaning representations.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -7804,12 +7720,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>Synonym replacement</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Data Augmentation</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/DataAugmentation"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Expanding the training dataset artificially by modifying existing data points to improve the model&apos;s robustness and generalization ability.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -7833,16 +7743,11 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- https://w3id.org/aio/DataEnhancement -->
 
     <owl:Class rdf:about="https://w3id.org/aio/DataEnhancement">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
-        <obo:IAO_0000115>The processes and techniques used to improve data quality and value for better decision-making, analysis, and AI model training.</obo:IAO_0000115>
-        <rdfs:label>DataEnhancement</rdfs:label>
+        <obo:IAO_0000115>Methods that enhance the training data or its representation, including augmentation and feature extraction.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Data Improvement</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Data Refinement</oboInOwl:hasExactSynonym>
+        <rdfs:label>Data Enhancement</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/DataEnhancement"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The processes and techniques used to improve data quality and value for better decision-making, analysis, and AI model training.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -7881,19 +7786,12 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- https://w3id.org/aio/DataPreparation -->
 
     <owl:Class rdf:about="https://w3id.org/aio/DataPreparation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
         <obo:IAO_0000115>Techniques focused on preparing raw data for training, including cleaning, normalization, and tokenization.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Data Assembly</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Data Curation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Data Processing</oboInOwl:hasExactSynonym>
         <rdfs:label>Data Preparation</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/DataPreparation"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Techniques focused on preparing raw data for training, including cleaning, normalization, and tokenization.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -7992,12 +7890,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <rdfs:comment>Input, Kernel, Convolutional/Pool, Probabilistic Hidden, Convolutional/Pool, Kernel, Output</rdfs:comment>
         <rdfs:label>Deep Convolutional Inverse Graphics Network</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/DeepConvolutionalInverseGraphicsNetwork"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A Deep Convolution Inverse Graphics Network (DC-IGN) is a model that learns an interpretable representation of images. This representation is disentangled with respect to transformations such as out-of-plane rotations and lighting variations. The DC-IGN model is composed of multiple layers of convolution and de-convolution operators and is trained using the Stochastic Gradient Variational Bayes (SGVB) algorithm. (https://arxiv.org/abs/1503.03167)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -8024,7 +7916,13 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
     <!-- https://w3id.org/aio/DeepFeedForward -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/DeepFeedForward">
+    <owl:Class rdf:about="https://w3id.org/aio/DeepFeedForward"/>
+    
+
+
+    <!-- https://w3id.org/aio/DeepFeedFoward -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/DeepFeedFoward">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
         <obo:IAO_0000115>The feedforward neural network was the first and simplest type of artificial neural network devised. In this network, the information moves in only one direction—forward—from the input nodes, through the hidden nodes (if any) and to the output nodes. There are no cycles or loops in the network.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>DFF</oboInOwl:hasExactSynonym>
@@ -8033,10 +7931,10 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasExactSynonym>MLP</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Multilayer Perceptoron</oboInOwl:hasExactSynonym>
         <rdfs:comment>Input, Hidden, Output</rdfs:comment>
-        <rdfs:label>Deep FeedForward</rdfs:label>
+        <rdfs:label>Deep FeedFoward</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/DeepFeedForward"/>
+        <owl:annotatedSource rdf:resource="https://w3id.org/aio/DeepFeedFoward"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The feedforward neural network was the first and simplest type of artificial neural network devised. In this network, the information moves in only one direction—forward—from the input nodes, through the hidden nodes (if any) and to the output nodes. There are no cycles or loops in the network.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Feedforward_neural_network</oboInOwl:hasDbXref>
@@ -8052,12 +7950,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasExactSynonym>DNN</oboInOwl:hasExactSynonym>
         <rdfs:label>Deep Neural Network</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A deep neural network (DNN) is an artificial neural network (ANN) with multiple layers between the input and output layers.[13][2] There are different types of neural networks but they always consist of the same components: neurons, synapses, weights, biases, and functions. (https://en.wikipedia.org/wiki/Deep_Learning#:~:text=A%20deep%20neural%20network%20(DNN,weights%2C%20biases%2C%20and%20functions.)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -8086,12 +7978,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <rdfs:comment>Noisy Input, Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label>Denoising Auto Encoder</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/DenoisingAutoEncoder"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Denoising Auto Encoders (DAEs) take a partially corrupted input and are trained to recover the original undistorted input. In practice, the objective of denoising autoencoders is that of cleaning the corrupted input, or denoising. (https://en.wikipedia.org/wiki/Autoencoder)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -8201,31 +8087,19 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>multi-turn dialogue</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Dialogue LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/DialogueLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A dialogue LLM is optimized for engaging in multi-turn conversations, understanding context and generating relevant, coherent responses continuously over many dialogue turns.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
     <!-- https://w3id.org/aio/DifferentiableLLM -->
 
     <owl:Class rdf:about="https://w3id.org/aio/DifferentiableLLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/LLMModelArchitecture"/>
         <obo:IAO_0000115>A differentiable LLM has an architecture amenable to full end-to-end training via backpropagation, without relying on teacher forcing or unlikelihood training objectives.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Differentiable LLM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>end-to-end training</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>fully backpropagable</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Differentiable LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/DifferentiableLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A differentiable LLM has an architecture amenable to full end-to-end training via backpropagation, without relying on teacher forcing or unlikelihood training objectives.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -8273,12 +8147,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>Teacher-student model</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Distillation</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Distillation"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Knowledge distillation involves training a smaller model to replicate the behavior of a larger model, aiming to compress the knowledge into a more compact form without significant loss of performance.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -8292,12 +8160,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>transfer learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Domain-Adapted LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Domain-AdaptedLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A domain-adapted LLM is first pre-trained on a broad corpus, then fine-tuned on domain-specific data to specialize its capabilities for particular domains or applications, like scientific literature or code generation.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -8444,12 +8306,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>multimodal grounding</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Embodied LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/EmbodiedLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An embodied LLM integrates language with other modalities like vision, audio, robotics to enable grounded language understanding in real-world environments.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -8513,12 +8369,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>explicit density modeling</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Energy-Based LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Energy-BasedLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An energy-based LLM models the explicit probability density over token sequences using an energy function, rather than an autoregressive factorization. This can improve modeling of long-range dependencies and global coherence.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -8529,12 +8379,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <obo:IAO_0000115>An abstract parent class grouping LLMs based on enhancement strategies.</obo:IAO_0000115>
         <rdfs:label>Enhancement Strategies</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/EnhancementStrategies"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An abstract parent class grouping LLMs based on enhancement strategies.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -8581,12 +8425,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>value alignment</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Ethical LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/EthicalLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An ethical LLM is trained to uphold certain ethical principles, values or rules in its language generation to increase safety and trustworthiness.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -8616,12 +8454,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>genetic programming</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Evolutionary LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/EvolutionaryLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An evolutionary LLM applies principles of evolutionary computation to optimize its structure and parameters, evolving over time to improve performance.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -8652,12 +8484,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>model understanding</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Explainable LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/ExplainableLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An explainable LLM is designed to provide insights into its decision-making process, making it easier for users to understand and trust the model&apos;s outputs. It incorporates mechanisms for interpreting and explaining its predictions in human-understandable terms.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -8705,12 +8531,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>Product of experts</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Factorized LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/FactorizedLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A factorized LLM decomposes the full language modeling task into multiple sub-components or experts that each focus on a subset of the information. This enables more efficient scaling.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -8725,12 +8545,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>Syntactic information</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Feature Extraction</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/FeatureExtraction"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Extracting specific features or patterns from the text before training to guide the model&apos;s learning process, including syntactic information or semantic embeddings.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -8744,12 +8558,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>privacy-preserving</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Federated LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/FederatedLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A federated LLM is trained in a decentralized manner across multiple devices or silos, without directly sharing private data. This enables collaborative training while preserving data privacy and security.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -8794,12 +8602,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <rdfs:comment>Input, Hidden, Output, Hidden</rdfs:comment>
         <rdfs:label>Feedback Network</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/FeedbackNetwork"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A feedback based approach in which the representation is formed in an iterative manner based on a feedback received from previous iteration&apos;s output. (https://arxiv.org/abs/1612.09508)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -8874,16 +8676,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
     <!-- https://w3id.org/aio/Function -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/Function">
-        <obo:IAO_0000115>Function parent class</obo:IAO_0000115>
-        <rdfs:label>Function</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Function"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Function parent class</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="https://w3id.org/aio/Function"/>
     
 
 
@@ -9066,12 +8859,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>text generation</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Generative Adversarial Network-Augmented LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/GenerativeAdversarialNetwork-AugmentedLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A GAN-augmented LLM incorporates a generative adversarial network (GAN) into its training process, using a discriminator network to provide a signal for generating more realistic and coherent text. This adversarial training can improve the quality and diversity of generated text.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -9085,12 +8872,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>physical reasoning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Generative Commonsense LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/GenerativeCommonsenseLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A generative commonsense LLM is trained to understand and model basic physics, causality and common sense about how the real world works.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -9105,12 +8886,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>program synthesis</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Generative Language Circuit</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/GenerativeLanguageCircuit"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A generative language circuit is a type of LLM that learns to generate programs or code by training on input-output pairs, effectively learning the underlying &quot;program&quot; that maps inputs to outputs.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -9123,12 +8898,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>Interactive generation</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Generative Language Interface</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/GenerativeLanguageInterface"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A generative language interface enables users to engage in an interactive dialogue with an LLM, providing feedback to guide and refine the generated outputs iteratively.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -9285,12 +9054,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>Structured representations</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Graph LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/GraphLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A graph LLM operates over structured inputs/outputs represented as graphs, enabling reasoning over explicit relational knowledge representations during language tasks.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -9439,12 +9202,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>multi-scale representations</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Hierarchical LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/HierarchicalLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A hierarchical LLM models language at multiple levels of granularity, learning hierarchical representations that can capture both low-level patterns and high-level abstractions.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -9591,12 +9348,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>Token-level scoring</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Implicit Language Model</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/ImplicitLanguageModel"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An implicit language model uses an energy function to score full sequences instead of factorizing probabilities autoregressively. This can better capture global properties and long-range dependencies.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -9777,12 +9528,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>natural language instructions</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Instruction-Tuned LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Instruction-TunedLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An instruction-tuned LLM is fine-tuned to follow natural language instructions accurately and safely, learning to map from instructions to desired model behavior in a more controlled and principled way.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -9812,12 +9557,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>model transparency</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Interpretable LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/InterpretableLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An interpretable LLM prioritizes transparency and ease of understanding in its operations, making its decision-making processes clear and rational to human users.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -9902,12 +9641,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>knowledge integration</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Knowledge-Grounded LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Knowledge-GroundedLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A knowledge-grounded LLM incorporates external knowledge sources or knowledge bases into the model architecture, enabling it to generate more factually accurate and knowledge-aware text.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -9930,6 +9663,12 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <owl:annotatedTarget>A self-organizing map (SOM) or self-organizing feature map (SOFM) is an unsupervised machine Learning technique used to produce a low-dimensional (typically two-dimensional) representation of a higher dimensional data set while preserving the topological structure of the data. For example, a data set with p variables measured in n observations could be represented as clusters of observations with similar values for the variables. These clusters then could be visualized as a two-dimensional &quot;map&quot; such that observations in proximal clusters have more similar values than observations in distal clusters. This can make high-dimensional data easier to visualize and analyze. An SOM is a type of artificial neural network but is trained using competitive Learning rather than the error-correction Learning (e.g., backpropagation with gradient descent) used by other artificial neural networks. The SOM was introduced by the Finnish professor Teuvo Kohonen in the 1980s and therefore is sometimes called a Kohonen map or Kohonen network.[1][2] The Kohonen map or network is a computationally convenient abstraction building on biological models of neural systems from the 1970s[3] and morphogenesis models dating back to Alan Turing in the 1950s.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Self-organizing_map</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/aio/LLMModelArchitecture -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/LLMModelArchitecture"/>
     
 
 
@@ -10026,12 +9765,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>Interactive learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Language Interface LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LanguageInterfaceLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A language interface LLM supports interactive semantic parsing, enabling users to provide feedback/corrections which are used to dynamically refine and update the language model.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -10073,12 +9806,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <obo:IAO_0000115>Network layer parent class</obo:IAO_0000115>
         <rdfs:label>Layer</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Layer"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Network layer parent class</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -10282,12 +10009,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>Plasticity-Stability balance</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Lifelong Learning LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/LifelongLearningLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A lifelong learning LLM can continually acquire new knowledge over time without forgetting previously learned information, maintaining a balance between plasticity and stability.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -10482,12 +10203,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>resource-efficient</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Low-Resource LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Low-ResourceLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A low-resource LLM is optimized for performance in scenarios with limited data, computational resources, or for languages with sparse datasets.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -10553,12 +10268,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>denoising autoencoder</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Masked Language Model</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/MaskedLanguageModel"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A masked language model is a type of language model that is trained to predict randomly masked tokens in a sequence, based on the remaining unmasked tokens. This allows it to build deep bidirectional representations that can be effectively transferred to various NLP tasks via fine-tuning.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -10733,12 +10442,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>external memory</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Memory-Augmented LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Memory-AugmentedLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A memory-augmented LLM incorporates external writeable and readable memory components, allowing it to store and retrieve information over long contexts.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -10784,12 +10487,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>learning to learn</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Meta-Learning LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Meta-LearningLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A meta-learning LLM is trained in a way that allows it to quickly adapt to new tasks or datasets through only a few examples or fine-tuning steps, leveraging meta-learned priors about how to efficiently learn.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -10799,12 +10496,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <obo:IAO_0000115>Method parent class.</obo:IAO_0000115>
         <rdfs:label>Method</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Method"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Method parent class.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -10852,12 +10543,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>model parallelism</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Mixture-of-Experts LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Mixture-of-ExpertsLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A Mixture-of-Experts LLM dynamically selects and combines outputs from multiple expert submodels, allowing for efficient scaling by conditionally activating only a subset of model components for each input.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -10884,30 +10569,17 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <obo:IAO_0000115>An abstract parent class grouping LLMs based on model architecture.</obo:IAO_0000115>
         <rdfs:label>Model Architecture</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/ModelArchitecture"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An abstract parent class grouping LLMs based on model architecture.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
     <!-- https://w3id.org/aio/ModelEfficiency -->
 
     <owl:Class rdf:about="https://w3id.org/aio/ModelEfficiency">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
         <obo:IAO_0000115>Techniques aimed at making models more efficient, such as knowledge distillation.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Computational Efficiency</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Model Optimization</oboInOwl:hasExactSynonym>
         <rdfs:label>Model Efficiency</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/ModelEfficiency"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Techniques aimed at making models more efficient, such as knowledge distillation.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -10937,12 +10609,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>skill composition</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Modular LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/ModularLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A modular LLM consists of multiple specialized components or skills that can be dynamically composed and recombined to solve complex tasks, mimicking the modular structure of human cognition.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -10955,12 +10621,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>transfer learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Multi-Task LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Multi-TaskLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A multi-task LLM is trained jointly on multiple language tasks simultaneously, learning shared representations that transfer across tasks.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -11023,12 +10683,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>cross-lingual transfer</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Multilingual LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/MultilingualLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A multilingual LLM is trained on text from multiple languages, learning shared representations that enable zero-shot or few-shot transfer to new languages.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -11057,12 +10711,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>cross-modal grounding</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Multimodal Fusion LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/MultimodalFusionLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A multimodal fusion LLM learns joint representations across different modalities like text, vision and audio in an end-to-end fashion for better cross-modal understanding and generation.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -11073,12 +10721,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <obo:IAO_0000115>Methods which can represent the joint representations of different modalities.</obo:IAO_0000115>
         <rdfs:label>Multimodal Learning</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/MultimodalLearning"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Methods which can represent the joint representations of different modalities.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -11092,12 +10734,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>vision-language model</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Multimodal Transformer</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/MultimodalTransformer"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A multimodal transformer is a transformer architecture that can process and relate information from different modalities, such as text, images, and audio. It uses a shared embedding space and attention mechanism to learn joint representations across modalities.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -11140,12 +10776,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <obo:IAO_0000115>Network parent class</obo:IAO_0000115>
         <rdfs:label>Network</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Network"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Network parent class</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -11178,12 +10808,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>symbolic grounding</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Neuro-Symbolic LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Neuro-SymbolicLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A neuro-symbolic LLM combines neural language modeling with symbolic reasoning components, leveraging structured knowledge representations and logical inferences to improve reasoning capabilities.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -11262,12 +10886,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>ranking</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Ordinal LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/OrdinalLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An ordinal LLM is trained to model ordinal relationships and rank outputs, rather than model probability distributions over text sequences directly.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -11313,12 +10931,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <rdfs:comment>Input, Output</rdfs:comment>
         <rdfs:label>Perceptron</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Perceptron"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The perceptron is an algorithm for supervised Learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class. It is a type of linear classifier, i.e. a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector. (https://en.wikipedia.org/wiki/Perceptron)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -11347,12 +10959,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>user adaptation</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Personalized LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/PersonalizedLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A personalized LLM adapts its language modeling and generation to the preferences, style and persona of individual users or audiences.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -11400,21 +11006,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A form of selection bias that occurs when items that are more popular are more exposed and less popular items are under-represented.aSystematic distortions in demographics or other user characteristics between a population of users represented in a dataset or on a platform and some target population.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.6028/NIST.SP.1270</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- https://w3id.org/aio/Preprocessing -->
-
-    <owl:Class rdf:about="https://w3id.org/aio/Preprocessing">
-        <obo:IAO_0000115>A range of techniques and processes applied to data before it is used in machine learning models or AI algorithms</obo:IAO_0000115>
-        <rdfs:label>Preprocessing</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Preprocessing"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A range of techniques and processes applied to data before it is used in machine learning models or AI algorithms</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -11531,12 +11122,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>in-context learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Prompt-based Fine-Tuning LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Prompt-basedFine-TuningLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A prompt-tuned LLM is fine-tuned on a small number of examples or prompts, rather than full task datasets. This allows for rapid adaptation to new tasks with limited data, leveraging the model&apos;s few-shot learning capabilities.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -11576,7 +11161,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- https://w3id.org/aio/RadialBasisNetwork -->
 
     <owl:Class rdf:about="https://w3id.org/aio/RadialBasisNetwork">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepFeedForward"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepFeedFoward"/>
         <obo:IAO_0000115>Like recurrent neural networks (RNNs), transformers are designed to handle sequential input data, such as natural language, for tasks such as translation and text summarization. However, unlike RNNs, transformers do not necessarily process the data in order. Rather, the attention mechanism provides context for any position in the input sequence.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>RBFN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>RBN</oboInOwl:hasExactSynonym>
@@ -11814,12 +11399,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>reasoning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Rational LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/RationalLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A rational LLM incorporates explicit reasoning capabilities, leveraging logical rules, axioms or external knowledge to make deductive inferences during language tasks.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -11904,12 +11483,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>self-attention</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Recursive LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/RecursiveLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A recursive or self-attending LLM incorporates recursive self-attention mechanisms, allowing it to iteratively refine its own outputs and capture long-range dependencies more effectively.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -11922,12 +11495,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>Compositional generalization</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Recursive Language Model</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/RecursiveLanguageModel"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A recursive language model uses recursive neural network architectures like TreeLSTMs to learn syntactic composition functions, improving systematic generalization abilities.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -12010,12 +11577,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>reward modeling</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Reinforcement Learning LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/ReinforcementLearningLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An RL-LLM is a language model that is fine-tuned using reinforcement learning, where the model receives rewards for generating text that satisfies certain desired properties or objectives. This can improve the quality, safety, or alignment of generated text.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -12182,12 +11743,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>open-book question answering</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Retrieval-Augmented LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Retrieval-AugmentedLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A retrieval-augmented LLM combines a pre-trained language model with a retrieval system that can access external knowledge sources. This allows the model to condition its generation on relevant retrieved knowledge, improving factual accuracy and knowledge grounding.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -12269,12 +11824,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>Pretext tasks</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Self-Supervised LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Self-SupervisedLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A self-supervised LLM learns rich representations by solving pretext tasks that involve predicting parts of the input from other observed parts of the data, without relying on human-annotated labels.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -12303,12 +11852,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>self-training</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Semi-Supervised LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Semi-SupervisedLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A semi-supervised LLM combines self-supervised pretraining on unlabeled data with supervised fine-tuning on labeled task data.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -12484,12 +12027,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <rdfs:comment>Input, Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label>Sparse AE</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/SparseAE"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Sparse autoencoders may include more (rather than fewer) hidden units than inputs, but only a small number of the hidden units are allowed to be active at the same time (thus, sparse). This constraint forces the model to respond to the unique statistical features of the training data. (https://en.wikipedia.org/wiki/Autoencoder)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -12503,12 +12040,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>parameter efficiency</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Sparse LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/SparseLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A sparse LLM uses techniques like pruning or quantization to reduce the number of non-zero parameters in the model, making it more parameter-efficient and easier to deploy on resource-constrained devices.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -12670,12 +12201,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>SentencePiece</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Subword Segmentation</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/SubwordSegmentation"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Utilizing techniques like Byte Pair Encoding (BPE) or SentencePiece to break down words into smaller units, allowing the model to handle a wide range of vocabulary with a fixed-size list.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -13010,12 +12535,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>Vocabulary size reduction</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Tokenization And Vocabulary Reduction</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/TokenizationAndVocabularyReduction"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Breaking down text data into manageable pieces called tokens and reducing the model&apos;s vocabulary to streamline processing.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -13026,30 +12545,17 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <obo:IAO_0000115>An abstract parent class grouping LLMs based on training paradigm.</obo:IAO_0000115>
         <rdfs:label>Training Paradigm</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/TrainingParadigm"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An abstract parent class grouping LLMs based on training paradigm.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
     <!-- https://w3id.org/aio/TrainingStrategies -->
 
     <owl:Class rdf:about="https://w3id.org/aio/TrainingStrategies">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
         <obo:IAO_0000115>Specific strategies or methodologies employed during model training.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Instructional Methods</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Learning Techniques</oboInOwl:hasExactSynonym>
         <rdfs:label>Training Strategies</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/TrainingStrategies"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Specific strategies or methodologies employed during model training.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -13072,12 +12578,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <owl:annotatedTarget>Methods which can reuse or transfer information from previously learned tasks for the Learning of new tasks.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Transfer_learning</oboInOwl:hasDbXref>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/TransferLearning"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Starting the training from a model already trained on a related task to reduce training time and improve performance on tasks with limited data.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -13090,12 +12590,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>transfer learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Transfer Learning LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/TransferLearningLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A transfer learning LLM leverages knowledge acquired during training on one task to improve performance on different but related tasks, facilitating more efficient learning and adaptation.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -13194,12 +12688,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>self-supervised</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Unsupervised LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/UnsupervisedLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An unsupervised LLM is trained solely on unlabeled data using self-supervised objectives like masked language modeling, without any supervised fine-tuning.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -13326,12 +12814,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <rdfs:comment>Input, Probabilistic Hidden, Matched Output-Input</rdfs:comment>
         <rdfs:label>Variational Auto Encoder</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/VariationalAutoEncoder"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Variational autoencoders are meant to compress the input information into a constrained multivariate latent distribution (encoding) to reconstruct it as accurately as possible (decoding). (https://en.wikipedia.org/wiki/Variational_autoencoder)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -13360,12 +12842,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <oboInOwl:hasRelatedSynonym>zero-shot learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Zero-Shot Learning LLM</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/Zero-ShotLearningLLM"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A zero-shot learning LLM is able to perform tasks or understand concepts it has not explicitly been trained on, demonstrating a high degree of generalization and understanding.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TBD</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -19392,138 +18868,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0019002"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
-                                <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0019001"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002264"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
-                                <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002263"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#q"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#q"/>
-                                <swrl:argument2 rdf:resource="urn:swrl:var#u"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0012011"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#u"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
                         <swrl:argument1 rdf:resource="urn:swrl#w"/>
                         <swrl:argument2 rdf:resource="urn:swrl#p"/>
@@ -20533,9 +19877,141 @@ e.g.  if GP X enables ATPase coupled transporter activity&apos; and &apos;ATPase
             </rdf:Description>
         </swrl:head>
     </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0019002"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0019001"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002264"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002263"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#q"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#q"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#u"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0012011"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 

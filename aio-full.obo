@@ -1,16 +1,25 @@
 format-version: 1.2
-data-version: aio/releases/2024-03-28/aio-full.owl
+data-version: aio/releases/2024-08-02/aio-full.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
 subsetdef: ro-eco ""
 subsetdef: RO:0002259 ""
+idspace: dce http://purl.org/dc/elements/1.1/ 
+idspace: dcterms http://purl.org/dc/terms/ 
+idspace: efo http://www.ebi.ac.uk/efo/ 
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
+idspace: skos http://www.w3.org/2004/02/skos/core# 
+idspace: swo http://www.ebi.ac.uk/swo/ 
+idspace: swrl http://www.w3.org/2003/11/swrl# 
+idspace: swrla http://swrl.stanford.edu/ontologies/3.3/swrla.owl# 
+idspace: swrlb http://www.w3.org/2003/11/swrlb# 
 ontology: aio/aio-full
-property_value: http://purl.org/dc/terms/description "None" xsd:string
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
-property_value: http://purl.org/dc/terms/title "Artificial Intelligence Ontology" xsd:string
-property_value: owl:versionInfo "2024-03-28" xsd:string
+property_value: dcterms:description "None" xsd:string
+property_value: dcterms:license https://creativecommons.org/licenses/unspecified
+property_value: dcterms:title "Artificial Intelligence Ontology" xsd:string
+property_value: owl:versionInfo "2024-08-02" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -42,7 +51,7 @@ name: root node
 [Term]
 id: BFO:0000001
 name: entity
-disjoint_from: ObsoleteClass ! Obsolete Class
+disjoint_from: oboInOwl:ObsoleteClass ! Obsolete Class
 property_value: BFO:0000179 "entity" xsd:string
 property_value: BFO:0000180 "Entity" xsd:string
 property_value: IAO:0000112 "Julius Caesar" xsd:string
@@ -403,7 +412,6 @@ id: IAO:0000010
 name: software
 def: "Software is a plan specification composed of a series of instructions that can be \ninterpreted by or directly executed by a processing unit." []
 is_a: IAO:0000104 ! plan specification
-property_value: exactMatch "http://www.ebi.ac.uk/swo/SWO_0000001" xsd:string
 property_value: IAO:0000111 "software" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000116 "see sourceforge tracker discussion at http://sourceforge.net/tracker/index.php?func=detail&aid=1958818&group_id=177891&atid=886178" xsd:string
@@ -412,13 +420,14 @@ property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
 property_value: IAO:0000117 "PERSON: Chris Stoeckert" xsd:string
 property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
 property_value: IAO:0000119 "GROUP: OBI" xsd:string
+property_value: skos:exactMatch "http://www.ebi.ac.uk/swo/SWO_0000001" xsd:string
 
 [Term]
 id: IAO:0000027
 name: data item
 def: "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." []
 is_a: IAO:0000030 ! information content entity
-relationship: SWO:0000741 IAO:0000098 ! is encoded in data format specification
+relationship: swo:SWO_0000741 IAO:0000098 ! data format specification
 property_value: IAO:0000111 "data item" xsd:string
 property_value: IAO:0000112 "Data items include counts of things, analyte concentrations, and statistical summaries." xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -1292,7 +1301,7 @@ def: "A material entity that has two or more specimens as its parts." []
 is_a: BFO:0000040 ! material entity
 intersection_of: BFO:0000040 ! material entity
 intersection_of: RO:0002351 OBI:0100051 {all_only="true"} ! has member specimen
-property_value: http://purl.org/dc/elements/1.1/source "Biobank" xsd:string
+property_value: dce:source "Biobank" xsd:string
 property_value: IAO:0000111 "collection of specimens" xsd:string
 property_value: IAO:0000112 "Blood cells collected from multiple donors over the course of a study." xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -1838,42 +1847,10 @@ property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "James Malone" xsd:string
 
 [Term]
-id: ObsoleteClass
-name: Obsolete Class
-
-[Term]
 id: PATO:0000001
 name: quality
 def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG] {type="owl:Axiom"}
 is_a: BFO:0000020 ! specifically dependent continuant
-
-[Term]
-id: SWO:0000260
-name: publisher role
-def: "A publisher role is a role borne by an organization or individual in which they are responsible for making software available to a particular consumer group. Such organizations or individuals do need to be involved in the development of the software." []
-is_a: BFO:0000023 ! role
-property_value: IAO:0000119 "James Malone" xsd:string
-
-[Term]
-id: SWO:0000392
-name: software developer role
-def: "Software developer role is a role borne by an organization or individual in which they are responsible for authoring software." []
-is_a: BFO:0000023 ! role
-property_value: IAO:0000119 "James Malone" xsd:string
-
-[Term]
-id: SWO:0000396
-name: software developer organization
-def: "An organization or legal entity (including single person) that is responsible for developing software. Developing includes aspects of design, coding and testing." []
-is_a: OBI:0000245 ! organization
-relationship: RO:0000087 SWO:0000392 ! has_role software developer role
-
-[Term]
-id: SWO:0000397
-name: software publisher organization
-def: "An organization or legal entity (including single person) that is responsible for publishing software. Publishing here includes tasks such as designing and producing physical products, technical customer support, licensing arrangements and marketing." []
-is_a: OBI:0000245 ! organization
-relationship: RO:0000087 SWO:0000260 ! has_role publisher role
 
 [Term]
 id: UO:0000001
@@ -2042,13 +2019,13 @@ is_a: https://w3id.org/aio/AttentionLayer ! Attention Layer
 [Term]
 id: https://w3id.org/aio/AdvancedTechniques
 name: Advanced Techniques
-def: "An abstract parent class grouping LLMs based on advanced techniques." [TBD] {type="owl:Axiom"}
+def: "An abstract parent class grouping LLMs based on advanced techniques." []
 is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/Adversarial-ResistantLLM
 name: Adversarial-Resistant LLM
-def: "An adversarial-resistant LLM is engineered to withstand or mitigate the effects of adversarial attacks, ensuring reliable performance even in the presence of deliberately misleading input designed to confuse the model." [TBD] {type="owl:Axiom"}
+def: "An adversarial-resistant LLM is engineered to withstand or mitigate the effects of adversarial attacks, ensuring reliable performance even in the presence of deliberately misleading input designed to confuse the model." []
 synonym: "adversarial attacks" RELATED []
 synonym: "Robust LLM" EXACT []
 synonym: "robustness" RELATED []
@@ -2081,7 +2058,7 @@ is_a: https://w3id.org/aio/IndividualBias ! Individual Bias
 [Term]
 id: https://w3id.org/aio/ApplicationFocus
 name: Application Focus
-def: "An abstract parent class grouping LLMs based on application focus." [TBD] {type="owl:Axiom"}
+def: "An abstract parent class grouping LLMs based on application focus." []
 is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
@@ -2122,7 +2099,7 @@ is_a: https://w3id.org/aio/IndividualBias ! Individual Bias
 [Term]
 id: https://w3id.org/aio/AutoregressiveLanguageModel
 name: Autoregressive Language Model
-def: "An autoregressive language model is a type of language model that generates text sequentially, predicting one token at a time based on the previously generated tokens. It excels at natural language generation tasks by modeling the probability distribution over sequences of tokens." [TBD] {type="owl:Axiom"}
+def: "An autoregressive language model is a type of language model that generates text sequentially, predicting one token at a time based on the previously generated tokens. It excels at natural language generation tasks by modeling the probability distribution over sequences of tokens." []
 synonym: "Autoregressive Language Model" EXACT []
 synonym: "generative language model" RELATED []
 synonym: "sequence-to-sequence model" RELATED []
@@ -2297,7 +2274,7 @@ is_a: https://w3id.org/aio/ProbabilisticGraphicalModel ! Probabilistic Graphical
 [Term]
 id: https://w3id.org/aio/CausalLLM
 name: Causal LLM
-def: "A causal LLM only attends to previous tokens in the sequence when generating text, modeling the probability distribution autoregressively from left-to-right or causally." [TBD] {type="owl:Axiom"}
+def: "A causal LLM only attends to previous tokens in the sequence when generating text, modeling the probability distribution autoregressively from left-to-right or causally." []
 synonym: "autoregressive" RELATED []
 synonym: "Causal LLM" EXACT []
 synonym: "unidirectional" RELATED []
@@ -2318,7 +2295,7 @@ is_a: https://w3id.org/aio/SupervisedLearning ! Supervised Learning
 [Term]
 id: https://w3id.org/aio/CleaningAndNormalization
 name: Cleaning And Normalization
-def: "Removing irrelevant data, correcting typos, and standardizing text to reduce noise and ensure consistency in the data." [TBD] {type="owl:Axiom"}
+def: "Removing irrelevant data, correcting typos, and standardizing text to reduce noise and ensure consistency in the data." []
 synonym: "Data cleaning" RELATED []
 synonym: "Data Cleansing" EXACT []
 synonym: "Standardization" EXACT []
@@ -2341,7 +2318,7 @@ is_a: https://w3id.org/aio/IndividualBias ! Individual Bias
 [Term]
 id: https://w3id.org/aio/CompositionalGeneralizationLLM
 name: Compositional Generalization LLM
-def: "A compositional generalization LLM is trained to understand and recombine the underlying compositional structures in language, enabling better generalization to novel combinations and out-of-distribution examples." [TBD] {type="owl:Axiom"}
+def: "A compositional generalization LLM is trained to understand and recombine the underlying compositional structures in language, enabling better generalization to novel combinations and out-of-distribution examples." []
 synonym: "Compositional Generalization LLM" EXACT []
 synonym: "out-of-distribution generalization" RELATED []
 synonym: "systematic generalization" RELATED []
@@ -2396,7 +2373,7 @@ is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 [Term]
 id: https://w3id.org/aio/ContinualLearningLLM
 name: Continual Learning LLM
-def: "A continual learning LLM is designed to continually acquire new knowledge and skills over time, without forgetting previously learned information. This allows the model to adapt and expand its capabilities as new data becomes available." [TBD] {type="owl:Axiom"}
+def: "A continual learning LLM is designed to continually acquire new knowledge and skills over time, without forgetting previously learned information. This allows the model to adapt and expand its capabilities as new data becomes available." []
 synonym: "catastrophic forgetting" RELATED []
 synonym: "CL-LLM" EXACT []
 synonym: "Continual Learning LLM" EXACT []
@@ -2412,7 +2389,7 @@ is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 [Term]
 id: https://w3id.org/aio/ContrastiveLearningLLM
 name: Contrastive Learning LLM
-def: "A contrastive learning LLM is trained to pull semantically similar samples closer together and push dissimilar samples apart in the representation space, learning high-quality features useful for downstream tasks." [TBD] {type="owl:Axiom"}
+def: "A contrastive learning LLM is trained to pull semantically similar samples closer together and push dissimilar samples apart in the representation space, learning high-quality features useful for downstream tasks." []
 synonym: "Contrastive Learning LLM" EXACT []
 synonym: "Representation learning" RELATED []
 is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
@@ -2420,7 +2397,7 @@ is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 [Term]
 id: https://w3id.org/aio/ControllableLLM
 name: Controllable LLM
-def: "A controllable LLM allows for explicit control over certain attributes of the generated text, such as style, tone, topic, or other desired characteristics, through conditioning or specialized training objectives." [TBD] {type="owl:Axiom"}
+def: "A controllable LLM allows for explicit control over certain attributes of the generated text, such as style, tone, topic, or other desired characteristics, through conditioning or specialized training objectives." []
 synonym: "conditional generation" RELATED []
 synonym: "Controllable LLM" EXACT []
 synonym: "guided generation" RELATED []
@@ -2537,7 +2514,7 @@ is_a: https://w3id.org/aio/Layer ! Layer
 [Term]
 id: https://w3id.org/aio/Cross-DomainLLM
 name: Cross-Domain LLM
-def: "A cross-domain LLM is capable of performing well across a wide range of domains without significant loss in performance, facilitated by advanced domain adaptation techniques." [TBD] {type="owl:Axiom"}
+def: "A cross-domain LLM is capable of performing well across a wide range of domains without significant loss in performance, facilitated by advanced domain adaptation techniques." []
 synonym: "cross-domain transfer" RELATED []
 synonym: "domain adaptation" RELATED []
 synonym: "Domain-General LLM" EXACT []
@@ -2546,7 +2523,7 @@ is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
 [Term]
 id: https://w3id.org/aio/CurriculumLearning
 name: Curriculum Learning
-def: "Training the model on simpler tasks or easier data first, then gradually introducing more complex tasks to improve learning efficiency and performance." [TBD] {type="owl:Axiom"}
+def: "Training the model on simpler tasks or easier data first, then gradually introducing more complex tasks to improve learning efficiency and performance." []
 synonym: "Complexity grading" RELATED []
 synonym: "Sequential Learning" EXACT []
 synonym: "Sequential learning" RELATED []
@@ -2556,7 +2533,7 @@ is_a: https://w3id.org/aio/TrainingStrategies ! Training Strategies
 [Term]
 id: https://w3id.org/aio/CurriculumLearningLLM
 name: Curriculum Learning LLM
-def: "A curriculum learning LLM is trained by presenting learning examples in a meaningful order from simple to complex, mimicking the learning trajectory followed by humans." [TBD] {type="owl:Axiom"}
+def: "A curriculum learning LLM is trained by presenting learning examples in a meaningful order from simple to complex, mimicking the learning trajectory followed by humans." []
 synonym: "Curriculum Learning LLM" EXACT []
 synonym: "Learning progression" RELATED []
 is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
@@ -2564,7 +2541,7 @@ is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 [Term]
 id: https://w3id.org/aio/Data-to-TextLLM
 name: Data-to-Text LLM
-def: "A data-to-text LLM generates natural language descriptions from structured data sources like tables, graphs, knowledge bases, etc. Requiring grounding meaning representations." [TBD] {type="owl:Axiom"}
+synonym: "A data-to-text LLM generates natural language descriptions from structured data sources like tables, graphs, knowledge bases, etc. Requiring grounding meaning representations." RELATED []
 synonym: "Data-to-Text LLM" EXACT []
 synonym: "Meaning representation" EXACT []
 is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
@@ -2572,12 +2549,12 @@ is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 [Term]
 id: https://w3id.org/aio/DataAugmentation
 name: Data Augmentation
-def: "Expanding the training dataset artificially by modifying existing data points to improve the model's robustness and generalization ability." [TBD] {type="owl:Axiom"}
+def: "Expanding the training dataset artificially by modifying existing data points to improve the model's robustness and generalization ability." []
 synonym: "Data Enrichment" EXACT []
 synonym: "Data Expansion" EXACT []
 synonym: "Paraphrasing" RELATED []
 synonym: "Synonym replacement" RELATED []
-is_a: https://w3id.org/aio/DataEnhancement ! DataEnhancement
+is_a: https://w3id.org/aio/DataEnhancement ! Data Enhancement
 
 [Term]
 id: https://w3id.org/aio/DataDredgingBias
@@ -2588,9 +2565,10 @@ is_a: https://w3id.org/aio/UseAndInterpretationBias ! Use And Interpretation Bia
 
 [Term]
 id: https://w3id.org/aio/DataEnhancement
-name: DataEnhancement
-def: "The processes and techniques used to improve data quality and value for better decision-making, analysis, and AI model training." [TBD] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/Preprocessing ! Preprocessing
+name: Data Enhancement
+def: "Methods that enhance the training data or its representation, including augmentation and feature extraction." []
+synonym: "Data Improvement" EXACT []
+synonym: "Data Refinement" EXACT []
 
 [Term]
 id: https://w3id.org/aio/DataGenerationBias
@@ -2607,11 +2585,10 @@ is_a: https://w3id.org/aio/MachineLearning ! Machine Learning
 [Term]
 id: https://w3id.org/aio/DataPreparation
 name: Data Preparation
-def: "Techniques focused on preparing raw data for training, including cleaning, normalization, and tokenization." [TBD] {type="owl:Axiom"}
+def: "Techniques focused on preparing raw data for training, including cleaning, normalization, and tokenization." []
 synonym: "Data Assembly" EXACT []
 synonym: "Data Curation" EXACT []
 synonym: "Data Processing" EXACT []
-is_a: https://w3id.org/aio/Preprocessing ! Preprocessing
 
 [Term]
 id: https://w3id.org/aio/DecisionTree
@@ -2652,7 +2629,7 @@ is_a: https://w3id.org/aio/UnsupervisedPretrainedNetwork ! Unsupervised Pretrain
 [Term]
 id: https://w3id.org/aio/DeepConvolutionalInverseGraphicsNetwork
 name: Deep Convolutional Inverse Graphics Network
-def: "A Deep Convolution Inverse Graphics Network (DC-IGN) is a model that learns an interpretable representation of images. This representation is disentangled with respect to transformations such as out-of-plane rotations and lighting variations. The DC-IGN model is composed of multiple layers of convolution and de-convolution operators and is trained using the Stochastic Gradient Variational Bayes (SGVB) algorithm. (https://arxiv.org/abs/1503.03167)" [TBD] {type="owl:Axiom"}
+def: "A Deep Convolution Inverse Graphics Network (DC-IGN) is a model that learns an interpretable representation of images. This representation is disentangled with respect to transformations such as out-of-plane rotations and lighting variations. The DC-IGN model is composed of multiple layers of convolution and de-convolution operators and is trained using the Stochastic Gradient Variational Bayes (SGVB) algorithm. (https://arxiv.org/abs/1503.03167)" []
 comment: Input, Kernel, Convolutional/Pool, Probabilistic Hidden, Convolutional/Pool, Kernel, Output
 synonym: "DCIGN" EXACT []
 is_a: https://w3id.org/aio/AutoEncoderNetwork ! Auto Encoder Network
@@ -2669,8 +2646,8 @@ synonym: "DCN" EXACT []
 is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 
 [Term]
-id: https://w3id.org/aio/DeepFeedForward
-name: Deep FeedForward
+id: https://w3id.org/aio/DeepFeedFoward
+name: Deep FeedFoward
 def: "The feedforward neural network was the first and simplest type of artificial neural network devised. In this network, the information moves in only one direction—forward—from the input nodes, through the hidden nodes (if any) and to the output nodes. There are no cycles or loops in the network." [https://en.wikipedia.org/wiki/Feedforward_neural_network] {type="owl:Axiom"}
 comment: Input, Hidden, Output
 synonym: "DFF" EXACT []
@@ -2683,7 +2660,7 @@ is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 [Term]
 id: https://w3id.org/aio/DeepNeuralNetwork
 name: Deep Neural Network
-def: "A deep neural network (DNN) is an artificial neural network (ANN) with multiple layers between the input and output layers.[13][2] There are different types of neural networks but they always consist of the same components: neurons, synapses, weights, biases, and functions. (https://en.wikipedia.org/wiki/Deep_Learning#:~:text=A%20deep%20neural%20network%20(DNN,weights%2C%20biases%2C%20and%20functions.)" [TBD] {type="owl:Axiom"}
+def: "A deep neural network (DNN) is an artificial neural network (ANN) with multiple layers between the input and output layers.[13][2] There are different types of neural networks but they always consist of the same components: neurons, synapses, weights, biases, and functions. (https://en.wikipedia.org/wiki/Deep_Learning#:~:text=A%20deep%20neural%20network%20(DNN,weights%2C%20biases%2C%20and%20functions.)" []
 synonym: "DNN" EXACT []
 is_a: https://w3id.org/aio/ArtificialNeuralNetwork ! Artificial Neural Network
 
@@ -2696,7 +2673,7 @@ is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 [Term]
 id: https://w3id.org/aio/DenoisingAutoEncoder
 name: Denoising Auto Encoder
-def: "Denoising Auto Encoders (DAEs) take a partially corrupted input and are trained to recover the original undistorted input. In practice, the objective of denoising autoencoders is that of cleaning the corrupted input, or denoising. (https://en.wikipedia.org/wiki/Autoencoder)" [TBD] {type="owl:Axiom"}
+def: "Denoising Auto Encoders (DAEs) take a partially corrupted input and are trained to recover the original undistorted input. In practice, the objective of denoising autoencoders is that of cleaning the corrupted input, or denoising. (https://en.wikipedia.org/wiki/Autoencoder)" []
 comment: Noisy Input, Hidden, Matched Output-Input
 synonym: "DAE" EXACT []
 is_a: https://w3id.org/aio/AutoEncoderNetwork ! Auto Encoder Network
@@ -2740,7 +2717,7 @@ is_a: https://w3id.org/aio/SelectionAndSamplingBias ! Selection And Sampling Bia
 [Term]
 id: https://w3id.org/aio/DialogueLLM
 name: Dialogue LLM
-def: "A dialogue LLM is optimized for engaging in multi-turn conversations, understanding context and generating relevant, coherent responses continuously over many dialogue turns." [TBD] {type="owl:Axiom"}
+def: "A dialogue LLM is optimized for engaging in multi-turn conversations, understanding context and generating relevant, coherent responses continuously over many dialogue turns." []
 synonym: "conversational AI" RELATED []
 synonym: "Dialogue LLM" EXACT []
 synonym: "multi-turn dialogue" RELATED []
@@ -2749,11 +2726,11 @@ is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 [Term]
 id: https://w3id.org/aio/DifferentiableLLM
 name: Differentiable LLM
-def: "A differentiable LLM has an architecture amenable to full end-to-end training via backpropagation, without relying on teacher forcing or unlikelihood training objectives." [TBD] {type="owl:Axiom"}
+def: "A differentiable LLM has an architecture amenable to full end-to-end training via backpropagation, without relying on teacher forcing or unlikelihood training objectives." []
 synonym: "Differentiable LLM" EXACT []
 synonym: "end-to-end training" RELATED []
 synonym: "fully backpropagable" RELATED []
-is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
+is_a: https://w3id.org/aio/LLMModelArchitecture
 
 [Term]
 id: https://w3id.org/aio/DimensionalityReduction
@@ -2771,7 +2748,7 @@ is_a: https://w3id.org/aio/NumericalFeaturesPreprocessingLayer ! Numerical Featu
 [Term]
 id: https://w3id.org/aio/Distillation
 name: Distillation
-def: "Knowledge distillation involves training a smaller model to replicate the behavior of a larger model, aiming to compress the knowledge into a more compact form without significant loss of performance." [TBD] {type="owl:Axiom"}
+def: "Knowledge distillation involves training a smaller model to replicate the behavior of a larger model, aiming to compress the knowledge into a more compact form without significant loss of performance." []
 synonym: "Knowledge compression" RELATED []
 synonym: "Purification" EXACT []
 synonym: "Refining" EXACT []
@@ -2781,7 +2758,7 @@ is_a: https://w3id.org/aio/ModelEfficiency ! Model Efficiency
 [Term]
 id: https://w3id.org/aio/Domain-AdaptedLLM
 name: Domain-Adapted LLM
-def: "A domain-adapted LLM is first pre-trained on a broad corpus, then fine-tuned on domain-specific data to specialize its capabilities for particular domains or applications, like scientific literature or code generation." [TBD] {type="owl:Axiom"}
+def: "A domain-adapted LLM is first pre-trained on a broad corpus, then fine-tuned on domain-specific data to specialize its capabilities for particular domains or applications, like scientific literature or code generation." []
 synonym: "domain robustness" RELATED []
 synonym: "Domain-Adapted LLM" EXACT []
 synonym: "transfer learning" RELATED []
@@ -2812,7 +2789,7 @@ name: ELU Function
 def: "The exponential linear unit (ELU) with alpha > 0 is: x if x > 0 and alpha * (exp(x) - 1) if x < 0 The ELU hyperparameter alpha controls the value to which an ELU saturates for negative net inputs. ELUs diminish the vanishing gradient effect. ELUs have negative values which pushes the mean of the activations closer to zero. Mean activations that are closer to zero enable faster Learning as they bring the gradient closer to the natural gradient. ELUs saturate to a negative value when the argument gets smaller. Saturation means a small derivative which decreases the variation and the information that is propagated to the next layer." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/elu] {type="owl:Axiom"}
 synonym: "ELU" EXACT []
 synonym: "Exponential Linear Unit" EXACT []
-is_a: https://w3id.org/aio/Function ! Function
+is_a: https://w3id.org/aio/Function
 
 [Term]
 id: https://w3id.org/aio/ELULayer
@@ -2844,7 +2821,7 @@ is_a: https://w3id.org/aio/Layer ! Layer
 [Term]
 id: https://w3id.org/aio/EmbodiedLLM
 name: Embodied LLM
-def: "An embodied LLM integrates language with other modalities like vision, audio, robotics to enable grounded language understanding in real-world environments." [TBD] {type="owl:Axiom"}
+def: "An embodied LLM integrates language with other modalities like vision, audio, robotics to enable grounded language understanding in real-world environments." []
 synonym: "Embodied LLM" EXACT []
 synonym: "multimodal grounding" RELATED []
 is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
@@ -2872,7 +2849,7 @@ is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 [Term]
 id: https://w3id.org/aio/Energy-BasedLLM
 name: Energy-Based LLM
-def: "An energy-based LLM models the explicit probability density over token sequences using an energy function, rather than an autoregressive factorization. This can improve modeling of long-range dependencies and global coherence." [TBD] {type="owl:Axiom"}
+def: "An energy-based LLM models the explicit probability density over token sequences using an energy function, rather than an autoregressive factorization. This can improve modeling of long-range dependencies and global coherence." []
 synonym: "energy scoring" RELATED []
 synonym: "Energy-Based LLM" EXACT []
 synonym: "explicit density modeling" RELATED []
@@ -2881,7 +2858,7 @@ is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
 [Term]
 id: https://w3id.org/aio/EnhancementStrategies
 name: Enhancement Strategies
-def: "An abstract parent class grouping LLMs based on enhancement strategies." [TBD] {type="owl:Axiom"}
+def: "An abstract parent class grouping LLMs based on enhancement strategies." []
 is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
@@ -2900,7 +2877,7 @@ is_a: https://w3id.org/aio/ProcessingBias ! Processing Bias
 [Term]
 id: https://w3id.org/aio/EthicalLLM
 name: Ethical LLM
-def: "An ethical LLM is trained to uphold certain ethical principles, values or rules in its language generation to increase safety and trustworthiness." [TBD] {type="owl:Axiom"}
+def: "An ethical LLM is trained to uphold certain ethical principles, values or rules in its language generation to increase safety and trustworthiness." []
 synonym: "constituitional AI" RELATED []
 synonym: "Ethical LLM" EXACT []
 synonym: "value alignment" RELATED []
@@ -2915,7 +2892,7 @@ is_a: https://w3id.org/aio/SelectionAndSamplingBias ! Selection And Sampling Bia
 [Term]
 id: https://w3id.org/aio/EvolutionaryLLM
 name: Evolutionary LLM
-def: "An evolutionary LLM applies principles of evolutionary computation to optimize its structure and parameters, evolving over time to improve performance." [TBD] {type="owl:Axiom"}
+def: "An evolutionary LLM applies principles of evolutionary computation to optimize its structure and parameters, evolving over time to improve performance." []
 synonym: "evolutionary algorithms" RELATED []
 synonym: "Evolutionary Language Model" EXACT []
 synonym: "genetic programming" RELATED []
@@ -2930,7 +2907,7 @@ is_a: https://w3id.org/aio/SelectionAndSamplingBias ! Selection And Sampling Bia
 [Term]
 id: https://w3id.org/aio/ExplainableLLM
 name: Explainable LLM
-def: "An explainable LLM is designed to provide insights into its decision-making process, making it easier for users to understand and trust the model's outputs. It incorporates mechanisms for interpreting and explaining its predictions in human-understandable terms." [TBD] {type="owl:Axiom"}
+def: "An explainable LLM is designed to provide insights into its decision-making process, making it easier for users to understand and trust the model's outputs. It incorporates mechanisms for interpreting and explaining its predictions in human-understandable terms." []
 synonym: "Explainable Language Model" EXACT []
 synonym: "interpretability" RELATED []
 synonym: "model understanding" RELATED []
@@ -2941,7 +2918,7 @@ is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 id: https://w3id.org/aio/ExponentialFunction
 name: Exponential Function
 def: "The exponential function is a mathematical function denoted by f(x)=exp or e^{x}." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/exponential] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/Function ! Function
+is_a: https://w3id.org/aio/Function
 
 [Term]
 id: https://w3id.org/aio/ExtremeLearningMachine
@@ -2954,7 +2931,7 @@ is_a: https://w3id.org/aio/FeedbackNetwork ! Feedback Network
 [Term]
 id: https://w3id.org/aio/FactorizedLLM
 name: Factorized LLM
-def: "A factorized LLM decomposes the full language modeling task into multiple sub-components or experts that each focus on a subset of the information. This enables more efficient scaling." [TBD] {type="owl:Axiom"}
+def: "A factorized LLM decomposes the full language modeling task into multiple sub-components or experts that each focus on a subset of the information. This enables more efficient scaling." []
 synonym: "Conditional masking" RELATED []
 synonym: "Factorized LLM" EXACT []
 synonym: "Product of experts" RELATED []
@@ -2963,17 +2940,17 @@ is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 [Term]
 id: https://w3id.org/aio/FeatureExtraction
 name: Feature Extraction
-def: "Extracting specific features or patterns from the text before training to guide the model's learning process, including syntactic information or semantic embeddings." [TBD] {type="owl:Axiom"}
+def: "Extracting specific features or patterns from the text before training to guide the model's learning process, including syntactic information or semantic embeddings." []
 synonym: "Attribute Extraction" EXACT []
 synonym: "Feature Isolation" EXACT []
 synonym: "Semantic embeddings" RELATED []
 synonym: "Syntactic information" RELATED []
-is_a: https://w3id.org/aio/DataEnhancement ! DataEnhancement
+is_a: https://w3id.org/aio/DataEnhancement ! Data Enhancement
 
 [Term]
 id: https://w3id.org/aio/FederatedLLM
 name: Federated LLM
-def: "A federated LLM is trained in a decentralized manner across multiple devices or silos, without directly sharing private data. This enables collaborative training while preserving data privacy and security." [TBD] {type="owl:Axiom"}
+def: "A federated LLM is trained in a decentralized manner across multiple devices or silos, without directly sharing private data. This enables collaborative training while preserving data privacy and security." []
 synonym: "decentralized training" RELATED []
 synonym: "Federated LLM" EXACT []
 synonym: "privacy-preserving" RELATED []
@@ -2994,7 +2971,7 @@ is_a: https://w3id.org/aio/UseAndInterpretationBias ! Use And Interpretation Bia
 [Term]
 id: https://w3id.org/aio/FeedbackNetwork
 name: Feedback Network
-def: "A feedback based approach in which the representation is formed in an iterative manner based on a feedback received from previous iteration's output. (https://arxiv.org/abs/1612.09508)" [TBD] {type="owl:Axiom"}
+def: "A feedback based approach in which the representation is formed in an iterative manner based on a feedback received from previous iteration's output. (https://arxiv.org/abs/1612.09508)" []
 comment: Input, Hidden, Output, Hidden
 synonym: "FBN" EXACT []
 is_a: https://w3id.org/aio/ArtificialNeuralNetwork ! Artificial Neural Network
@@ -3029,11 +3006,6 @@ synonym: "FractionalMaxPool3d" EXACT []
 is_a: https://w3id.org/aio/PoolingLayer ! Pooling Layer
 
 [Term]
-id: https://w3id.org/aio/Function
-name: Function
-def: "Function parent class" [TBD] {type="owl:Axiom"}
-
-[Term]
 id: https://w3id.org/aio/FundingBias
 name: Funding Bias
 def: "Arises when biased results are reported in order to support or satisfy the funding agency or financial supporter of the research study, but it can also be the individual researcher." [https://doi.org/10.6028/NIST.SP.1270] {type="owl:Axiom"}
@@ -3045,7 +3017,7 @@ name: GELU Function
 def: "Gaussian error linear unit (GELU) computes x * P(X <= x), where P(X) ~ N(0, 1). The (GELU) nonlinearity weights inputs by their value, rather than gates inputs by their sign as in ReLU." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/gelu] {type="owl:Axiom"}
 synonym: "Gaussian Error Linear Unit" EXACT []
 synonym: "GELU" EXACT []
-is_a: https://w3id.org/aio/Function ! Function
+is_a: https://w3id.org/aio/Function
 
 [Term]
 id: https://w3id.org/aio/GRUCellLayer
@@ -3104,7 +3076,7 @@ is_a: https://w3id.org/aio/UnsupervisedPretrainedNetwork ! Unsupervised Pretrain
 [Term]
 id: https://w3id.org/aio/GenerativeAdversarialNetwork-AugmentedLLM
 name: Generative Adversarial Network-Augmented LLM
-def: "A GAN-augmented LLM incorporates a generative adversarial network (GAN) into its training process, using a discriminator network to provide a signal for generating more realistic and coherent text. This adversarial training can improve the quality and diversity of generated text." [TBD] {type="owl:Axiom"}
+def: "A GAN-augmented LLM incorporates a generative adversarial network (GAN) into its training process, using a discriminator network to provide a signal for generating more realistic and coherent text. This adversarial training can improve the quality and diversity of generated text." []
 synonym: "adversarial training" RELATED []
 synonym: "GAN-LLM" EXACT []
 synonym: "Generative Adversarial Network-Augmented LLM" EXACT []
@@ -3114,7 +3086,7 @@ is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 [Term]
 id: https://w3id.org/aio/GenerativeCommonsenseLLM
 name: Generative Commonsense LLM
-def: "A generative commonsense LLM is trained to understand and model basic physics, causality and common sense about how the real world works." [TBD] {type="owl:Axiom"}
+def: "A generative commonsense LLM is trained to understand and model basic physics, causality and common sense about how the real world works." []
 synonym: "causal modeling" RELATED []
 synonym: "Generative Commonsense LLM" EXACT []
 synonym: "physical reasoning" RELATED []
@@ -3123,7 +3095,7 @@ is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
 [Term]
 id: https://w3id.org/aio/GenerativeLanguageCircuit
 name: Generative Language Circuit
-def: "A generative language circuit is a type of LLM that learns to generate programs or code by training on input-output pairs, effectively learning the underlying \"program\" that maps inputs to outputs." [TBD] {type="owl:Axiom"}
+def: "A generative language circuit is a type of LLM that learns to generate programs or code by training on input-output pairs, effectively learning the underlying \"program\" that maps inputs to outputs." []
 synonym: "analogy circuit" RELATED []
 synonym: "Generative Language Circuit" EXACT []
 synonym: "GLC" EXACT []
@@ -3133,7 +3105,7 @@ is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 [Term]
 id: https://w3id.org/aio/GenerativeLanguageInterface
 name: Generative Language Interface
-def: "A generative language interface enables users to engage in an interactive dialogue with an LLM, providing feedback to guide and refine the generated outputs iteratively." [TBD] {type="owl:Axiom"}
+def: "A generative language interface enables users to engage in an interactive dialogue with an LLM, providing feedback to guide and refine the generated outputs iteratively." []
 synonym: "Generative Language Interface" EXACT []
 synonym: "Interactive generation" RELATED []
 is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
@@ -3205,7 +3177,7 @@ is_a: https://w3id.org/aio/GraphConvolutionalNetwork ! Graph Convolutional Netwo
 [Term]
 id: https://w3id.org/aio/GraphLLM
 name: Graph LLM
-def: "A graph LLM operates over structured inputs/outputs represented as graphs, enabling reasoning over explicit relational knowledge representations during language tasks." [TBD] {type="owl:Axiom"}
+def: "A graph LLM operates over structured inputs/outputs represented as graphs, enabling reasoning over explicit relational knowledge representations during language tasks." []
 synonym: "Graph LLM" EXACT []
 synonym: "Structured representations" RELATED []
 is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
@@ -3239,7 +3211,7 @@ is_a: https://w3id.org/aio/GroupBias ! Group Bias
 id: https://w3id.org/aio/HardSigmoidFunction
 name: Hard Sigmoid Function
 def: "A faster approximation of the sigmoid activation. Piecewise linear approximation of the sigmoid function. Ref: 'https://en.wikipedia.org/wiki/Hard_sigmoid'" [https://www.tensorflow.org/api_docs/python/tf/keras/activations/hard_sigmoid] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/Function ! Function
+is_a: https://w3id.org/aio/Function
 
 [Term]
 id: https://w3id.org/aio/HashingLayer
@@ -3269,7 +3241,7 @@ is_a: https://w3id.org/aio/Clustering ! Clustering
 [Term]
 id: https://w3id.org/aio/HierarchicalLLM
 name: Hierarchical LLM
-def: "A hierarchical LLM models language at multiple levels of granularity, learning hierarchical representations that can capture both low-level patterns and high-level abstractions." [TBD] {type="owl:Axiom"}
+def: "A hierarchical LLM models language at multiple levels of granularity, learning hierarchical representations that can capture both low-level patterns and high-level abstractions." []
 synonym: "Hierarchical LLM" EXACT []
 synonym: "multi-scale representations" RELATED []
 is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
@@ -3330,7 +3302,7 @@ is_a: https://w3id.org/aio/IndividualBias ! Individual Bias
 [Term]
 id: https://w3id.org/aio/ImplicitLanguageModel
 name: Implicit Language Model
-def: "An implicit language model uses an energy function to score full sequences instead of factorizing probabilities autoregressively. This can better capture global properties and long-range dependencies." [TBD] {type="owl:Axiom"}
+def: "An implicit language model uses an energy function to score full sequences instead of factorizing probabilities autoregressively. This can better capture global properties and long-range dependencies." []
 synonym: "Energy-based models" RELATED []
 synonym: "Implicit Language Model" EXACT []
 synonym: "Token-level scoring" RELATED []
@@ -3406,7 +3378,7 @@ is_a: https://w3id.org/aio/Bias ! Bias
 [Term]
 id: https://w3id.org/aio/Instruction-TunedLLM
 name: Instruction-Tuned LLM
-def: "An instruction-tuned LLM is fine-tuned to follow natural language instructions accurately and safely, learning to map from instructions to desired model behavior in a more controlled and principled way." [TBD] {type="owl:Axiom"}
+def: "An instruction-tuned LLM is fine-tuned to follow natural language instructions accurately and safely, learning to map from instructions to desired model behavior in a more controlled and principled way." []
 synonym: "constitutional AI" RELATED []
 synonym: "Instruction-Tuned LLM" EXACT []
 synonym: "natural language instructions" RELATED []
@@ -3421,7 +3393,7 @@ is_a: https://w3id.org/aio/CategoricalFeaturesPreprocessingLayer ! Categorical F
 [Term]
 id: https://w3id.org/aio/InterpretableLLM
 name: Interpretable LLM
-def: "An interpretable LLM prioritizes transparency and ease of understanding in its operations, making its decision-making processes clear and rational to human users." [TBD] {type="owl:Axiom"}
+def: "An interpretable LLM prioritizes transparency and ease of understanding in its operations, making its decision-making processes clear and rational to human users." []
 synonym: "interpretability" RELATED []
 synonym: "Interpretable Language Model" EXACT []
 synonym: "model transparency" RELATED []
@@ -3461,7 +3433,7 @@ is_a: https://w3id.org/aio/RegressionAnalysis ! Regression Analysis
 [Term]
 id: https://w3id.org/aio/Knowledge-GroundedLLM
 name: Knowledge-Grounded LLM
-def: "A knowledge-grounded LLM incorporates external knowledge sources or knowledge bases into the model architecture, enabling it to generate more factually accurate and knowledge-aware text." [TBD] {type="owl:Axiom"}
+def: "A knowledge-grounded LLM incorporates external knowledge sources or knowledge bases into the model architecture, enabling it to generate more factually accurate and knowledge-aware text." []
 synonym: "factual grounding" RELATED []
 synonym: "knowledge integration" RELATED []
 synonym: "Knowledge-Grounded LLM" EXACT []
@@ -3516,7 +3488,7 @@ is_a: https://w3id.org/aio/Layer ! Layer
 [Term]
 id: https://w3id.org/aio/LanguageInterfaceLLM
 name: Language Interface LLM
-def: "A language interface LLM supports interactive semantic parsing, enabling users to provide feedback/corrections which are used to dynamically refine and update the language model." [TBD] {type="owl:Axiom"}
+def: "A language interface LLM supports interactive semantic parsing, enabling users to provide feedback/corrections which are used to dynamically refine and update the language model." []
 synonym: "Interactive learning" RELATED []
 synonym: "Language Interface LLM" EXACT []
 is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
@@ -3536,7 +3508,7 @@ is_a: https://w3id.org/aio/RegressionAnalysis ! Regression Analysis
 [Term]
 id: https://w3id.org/aio/Layer
 name: Layer
-def: "Network layer parent class" [TBD] {type="owl:Axiom"}
+def: "Network layer parent class" []
 
 [Term]
 id: https://w3id.org/aio/LayerLayer
@@ -3620,7 +3592,7 @@ is_a: https://w3id.org/aio/RegressionAnalysis ! Regression Analysis
 [Term]
 id: https://w3id.org/aio/LifelongLearningLLM
 name: Lifelong Learning LLM
-def: "A lifelong learning LLM can continually acquire new knowledge over time without forgetting previously learned information, maintaining a balance between plasticity and stability." [TBD] {type="owl:Axiom"}
+def: "A lifelong learning LLM can continually acquire new knowledge over time without forgetting previously learned information, maintaining a balance between plasticity and stability." []
 synonym: "Catastrophic forgetting" RELATED []
 synonym: "Continual Learning LLM" EXACT []
 synonym: "Lifelong Learning LLM" EXACT []
@@ -3631,7 +3603,7 @@ is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 id: https://w3id.org/aio/LinearFunction
 name: Linear Function
 def: "A linear function has the form f(x) = a + bx." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/linear] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/Function ! Function
+is_a: https://w3id.org/aio/Function
 
 [Term]
 id: https://w3id.org/aio/LinearRegression
@@ -3701,7 +3673,7 @@ is_a: https://w3id.org/aio/IndividualBias ! Individual Bias
 [Term]
 id: https://w3id.org/aio/Low-ResourceLLM
 name: Low-Resource LLM
-def: "A low-resource LLM is optimized for performance in scenarios with limited data, computational resources, or for languages with sparse datasets." [TBD] {type="owl:Axiom"}
+def: "A low-resource LLM is optimized for performance in scenarios with limited data, computational resources, or for languages with sparse datasets." []
 synonym: "Low-Resource Language Model" EXACT []
 synonym: "low-resource languages" RELATED []
 synonym: "resource-efficient" RELATED []
@@ -3732,7 +3704,7 @@ is_a: https://w3id.org/aio/Network ! Network
 [Term]
 id: https://w3id.org/aio/MaskedLanguageModel
 name: Masked Language Model
-def: "A masked language model is a type of language model that is trained to predict randomly masked tokens in a sequence, based on the remaining unmasked tokens. This allows it to build deep bidirectional representations that can be effectively transferred to various NLP tasks via fine-tuning." [TBD] {type="owl:Axiom"}
+def: "A masked language model is a type of language model that is trained to predict randomly masked tokens in a sequence, based on the remaining unmasked tokens. This allows it to build deep bidirectional representations that can be effectively transferred to various NLP tasks via fine-tuning." []
 synonym: "bidirectional encoder" RELATED []
 synonym: "denoising autoencoder" RELATED []
 synonym: "Masked Language Model" EXACT []
@@ -3813,7 +3785,7 @@ is_a: https://w3id.org/aio/SelectionAndSamplingBias ! Selection And Sampling Bia
 [Term]
 id: https://w3id.org/aio/Memory-AugmentedLLM
 name: Memory-Augmented LLM
-def: "A memory-augmented LLM incorporates external writeable and readable memory components, allowing it to store and retrieve information over long contexts." [TBD] {type="owl:Axiom"}
+def: "A memory-augmented LLM incorporates external writeable and readable memory components, allowing it to store and retrieve information over long contexts." []
 synonym: "external memory" RELATED []
 synonym: "Memory-Augmented LLM" EXACT []
 is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
@@ -3833,7 +3805,7 @@ is_a: https://w3id.org/aio/MachineLearning ! Machine Learning
 [Term]
 id: https://w3id.org/aio/Meta-LearningLLM
 name: Meta-Learning LLM
-def: "A meta-learning LLM is trained in a way that allows it to quickly adapt to new tasks or datasets through only a few examples or fine-tuning steps, leveraging meta-learned priors about how to efficiently learn." [TBD] {type="owl:Axiom"}
+def: "A meta-learning LLM is trained in a way that allows it to quickly adapt to new tasks or datasets through only a few examples or fine-tuning steps, leveraging meta-learned priors about how to efficiently learn." []
 synonym: "few-shot adaptation" RELATED []
 synonym: "learning to learn" RELATED []
 synonym: "Meta-Learning LLM" EXACT []
@@ -3842,7 +3814,7 @@ is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
 [Term]
 id: https://w3id.org/aio/Method
 name: Method
-def: "Method parent class." [TBD] {type="owl:Axiom"}
+def: "Method parent class." []
 
 [Term]
 id: https://w3id.org/aio/MetricLearning
@@ -3860,7 +3832,7 @@ is_a: https://w3id.org/aio/MergingLayer ! Merging Layer
 [Term]
 id: https://w3id.org/aio/Mixture-of-ExpertsLLM
 name: Mixture-of-Experts LLM
-def: "A Mixture-of-Experts LLM dynamically selects and combines outputs from multiple expert submodels, allowing for efficient scaling by conditionally activating only a subset of model components for each input." [TBD] {type="owl:Axiom"}
+def: "A Mixture-of-Experts LLM dynamically selects and combines outputs from multiple expert submodels, allowing for efficient scaling by conditionally activating only a subset of model components for each input." []
 synonym: "conditional computation" RELATED []
 synonym: "Mixture-of-Experts LLM" EXACT []
 synonym: "model parallelism" RELATED []
@@ -3876,16 +3848,15 @@ is_a: https://w3id.org/aio/IndividualBias ! Individual Bias
 [Term]
 id: https://w3id.org/aio/ModelArchitecture
 name: Model Architecture
-def: "An abstract parent class grouping LLMs based on model architecture." [TBD] {type="owl:Axiom"}
+def: "An abstract parent class grouping LLMs based on model architecture." []
 is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/ModelEfficiency
 name: Model Efficiency
-def: "Techniques aimed at making models more efficient, such as knowledge distillation." [TBD] {type="owl:Axiom"}
+def: "Techniques aimed at making models more efficient, such as knowledge distillation." []
 synonym: "Computational Efficiency" EXACT []
 synonym: "Model Optimization" EXACT []
-is_a: https://w3id.org/aio/Preprocessing ! Preprocessing
 
 [Term]
 id: https://w3id.org/aio/ModelSelectionBias
@@ -3896,7 +3867,7 @@ is_a: https://w3id.org/aio/ProcessingBias ! Processing Bias
 [Term]
 id: https://w3id.org/aio/ModularLLM
 name: Modular LLM
-def: "A modular LLM consists of multiple specialized components or skills that can be dynamically composed and recombined to solve complex tasks, mimicking the modular structure of human cognition." [TBD] {type="owl:Axiom"}
+def: "A modular LLM consists of multiple specialized components or skills that can be dynamically composed and recombined to solve complex tasks, mimicking the modular structure of human cognition." []
 synonym: "component skills" RELATED []
 synonym: "Modular LLM" EXACT []
 synonym: "skill composition" RELATED []
@@ -3905,7 +3876,7 @@ is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 [Term]
 id: https://w3id.org/aio/Multi-TaskLLM
 name: Multi-Task LLM
-def: "A multi-task LLM is trained jointly on multiple language tasks simultaneously, learning shared representations that transfer across tasks." [TBD] {type="owl:Axiom"}
+def: "A multi-task LLM is trained jointly on multiple language tasks simultaneously, learning shared representations that transfer across tasks." []
 synonym: "Multi-Task LLM" EXACT []
 synonym: "transfer learning" RELATED []
 is_a: https://w3id.org/aio/ApplicationFocus ! Application Focus
@@ -3933,7 +3904,7 @@ is_a: https://w3id.org/aio/DimensionalityReduction ! Dimensionality Reduction
 [Term]
 id: https://w3id.org/aio/MultilingualLLM
 name: Multilingual LLM
-def: "A multilingual LLM is trained on text from multiple languages, learning shared representations that enable zero-shot or few-shot transfer to new languages." [TBD] {type="owl:Axiom"}
+def: "A multilingual LLM is trained on text from multiple languages, learning shared representations that enable zero-shot or few-shot transfer to new languages." []
 synonym: "cross-lingual transfer" RELATED []
 synonym: "Multilingual LLM" EXACT []
 is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
@@ -3947,7 +3918,7 @@ is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 [Term]
 id: https://w3id.org/aio/MultimodalFusionLLM
 name: Multimodal Fusion LLM
-def: "A multimodal fusion LLM learns joint representations across different modalities like text, vision and audio in an end-to-end fashion for better cross-modal understanding and generation." [TBD] {type="owl:Axiom"}
+def: "A multimodal fusion LLM learns joint representations across different modalities like text, vision and audio in an end-to-end fashion for better cross-modal understanding and generation." []
 synonym: "cross-modal grounding" RELATED []
 synonym: "Multimodal Fusion LLM" EXACT []
 is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
@@ -3955,13 +3926,13 @@ is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
 [Term]
 id: https://w3id.org/aio/MultimodalLearning
 name: Multimodal Learning
-def: "Methods which can represent the joint representations of different modalities." [TBD] {type="owl:Axiom"}
+def: "Methods which can represent the joint representations of different modalities." []
 is_a: https://w3id.org/aio/MachineLearning ! Machine Learning
 
 [Term]
 id: https://w3id.org/aio/MultimodalTransformer
 name: Multimodal Transformer
-def: "A multimodal transformer is a transformer architecture that can process and relate information from different modalities, such as text, images, and audio. It uses a shared embedding space and attention mechanism to learn joint representations across modalities." [TBD] {type="owl:Axiom"}
+def: "A multimodal transformer is a transformer architecture that can process and relate information from different modalities, such as text, images, and audio. It uses a shared embedding space and attention mechanism to learn joint representations across modalities." []
 synonym: "Multimodal Transformer" EXACT []
 synonym: "unified encoder" RELATED []
 synonym: "vision-language model" RELATED []
@@ -3983,7 +3954,7 @@ is_a: https://w3id.org/aio/MachineLearning ! Machine Learning
 [Term]
 id: https://w3id.org/aio/Network
 name: Network
-def: "Network parent class" [TBD] {type="owl:Axiom"}
+def: "Network parent class" []
 
 [Term]
 id: https://w3id.org/aio/NeuralTuringMachineNetwork
@@ -3991,13 +3962,13 @@ name: Neural Turing Machine Network
 def: "A Neural Turing machine (NTMs) is a recurrent neural network model. The approach was published by Alex Graves et al. in 2014. NTMs combine the fuzzy pattern matching capabilities of neural networks with the algorithmic power of programmable computers. An NTM has a neural network controller coupled to external memory resources, which it interacts with through attentional mechanisms. The memory interactions are differentiable end-to-end, making it possible to optimize them using gradient descent. An NTM with a long short-term memory (LSTM) network controller can infer simple algorithms such as copying, sorting, and associative recall from examples alone." [https://en.wikipedia.org/wiki/Neural_Turing_machine] {type="owl:Axiom"}
 comment: Input, Hidden, Spiking Hidden, Output
 synonym: "NTM" EXACT []
-is_a: https://w3id.org/aio/DeepFeedForward ! Deep FeedForward
+is_a: https://w3id.org/aio/DeepFeedForward
 is_a: https://w3id.org/aio/LongShortTermMemory ! Long Short Term Memory
 
 [Term]
 id: https://w3id.org/aio/Neuro-SymbolicLLM
 name: Neuro-Symbolic LLM
-def: "A neuro-symbolic LLM combines neural language modeling with symbolic reasoning components, leveraging structured knowledge representations and logical inferences to improve reasoning capabilities." [TBD] {type="owl:Axiom"}
+def: "A neuro-symbolic LLM combines neural language modeling with symbolic reasoning components, leveraging structured knowledge representations and logical inferences to improve reasoning capabilities." []
 synonym: "knowledge reasoning" RELATED []
 synonym: "Neuro-Symbolic LLM" EXACT []
 synonym: "symbolic grounding" RELATED []
@@ -4031,7 +4002,7 @@ is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 [Term]
 id: https://w3id.org/aio/OrdinalLLM
 name: Ordinal LLM
-def: "An ordinal LLM is trained to model ordinal relationships and rank outputs, rather than model probability distributions over text sequences directly." [TBD] {type="owl:Axiom"}
+def: "An ordinal LLM is trained to model ordinal relationships and rank outputs, rather than model probability distributions over text sequences directly." []
 synonym: "Ordinal LLM" EXACT []
 synonym: "preference modeling" RELATED []
 synonym: "ranking" RELATED []
@@ -4052,7 +4023,7 @@ is_a: https://w3id.org/aio/ActivationLayer ! Activation Layer
 [Term]
 id: https://w3id.org/aio/Perceptron
 name: Perceptron
-def: "The perceptron is an algorithm for supervised Learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class. It is a type of linear classifier, i.e. a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector. (https://en.wikipedia.org/wiki/Perceptron)" [TBD] {type="owl:Axiom"}
+def: "The perceptron is an algorithm for supervised Learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class. It is a type of linear classifier, i.e. a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector. (https://en.wikipedia.org/wiki/Perceptron)" []
 comment: Input, Output
 synonym: "Single Layer Perceptron" EXACT []
 synonym: "SLP" EXACT []
@@ -4067,7 +4038,7 @@ is_a: https://w3id.org/aio/ReshapingLayer ! Reshaping Layer
 [Term]
 id: https://w3id.org/aio/PersonalizedLLM
 name: Personalized LLM
-def: "A personalized LLM adapts its language modeling and generation to the preferences, style and persona of individual users or audiences." [TBD] {type="owl:Axiom"}
+def: "A personalized LLM adapts its language modeling and generation to the preferences, style and persona of individual users or audiences." []
 synonym: "Personalized LLM" EXACT []
 synonym: "user adaptation" RELATED []
 is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
@@ -4089,11 +4060,6 @@ id: https://w3id.org/aio/PopulationBias
 name: Population Bias
 def: "A form of selection bias that occurs when items that are more popular are more exposed and less popular items are under-represented.aSystematic distortions in demographics or other user characteristics between a population of users represented in a dataset or on a platform and some target population." [https://doi.org/10.6028/NIST.SP.1270] {type="owl:Axiom"}
 is_a: https://w3id.org/aio/SelectionAndSamplingBias ! Selection And Sampling Bias
-
-[Term]
-id: https://w3id.org/aio/Preprocessing
-name: Preprocessing
-def: "A range of techniques and processes applied to data before it is used in machine learning models or AI algorithms" [TBD] {type="owl:Axiom"}
 
 [Term]
 id: https://w3id.org/aio/PreprocessingLayer
@@ -4139,7 +4105,7 @@ is_a: https://w3id.org/aio/ComputationalBias ! Computational Bias
 [Term]
 id: https://w3id.org/aio/Prompt-basedFine-TuningLLM
 name: Prompt-based Fine-Tuning LLM
-def: "A prompt-tuned LLM is fine-tuned on a small number of examples or prompts, rather than full task datasets. This allows for rapid adaptation to new tasks with limited data, leveraging the model's few-shot learning capabilities." [TBD] {type="owl:Axiom"}
+def: "A prompt-tuned LLM is fine-tuned on a small number of examples or prompts, rather than full task datasets. This allows for rapid adaptation to new tasks with limited data, leveraging the model's few-shot learning capabilities." []
 synonym: "few-shot learning" RELATED []
 synonym: "in-context learning" RELATED []
 synonym: "Prompt-based Fine-Tuning LLM" EXACT []
@@ -4167,7 +4133,7 @@ comment: Input, Hidden, Output
 synonym: "Radial Basis Function Network" EXACT []
 synonym: "RBFN" EXACT []
 synonym: "RBN" EXACT []
-is_a: https://w3id.org/aio/DeepFeedForward ! Deep FeedForward
+is_a: https://w3id.org/aio/DeepFeedFoward ! Deep FeedFoward
 
 [Term]
 id: https://w3id.org/aio/RandomBrightnessLayer
@@ -4253,7 +4219,7 @@ is_a: https://w3id.org/aio/IndividualBias ! Individual Bias
 [Term]
 id: https://w3id.org/aio/RationalLLM
 name: Rational LLM
-def: "A rational LLM incorporates explicit reasoning capabilities, leveraging logical rules, axioms or external knowledge to make deductive inferences during language tasks." [TBD] {type="owl:Axiom"}
+def: "A rational LLM incorporates explicit reasoning capabilities, leveraging logical rules, axioms or external knowledge to make deductive inferences during language tasks." []
 synonym: "logical inferences" RELATED []
 synonym: "Rational LLM" EXACT []
 synonym: "reasoning" RELATED []
@@ -4265,7 +4231,7 @@ name: ReLU Function
 def: "The ReLU activation function returns: max(x, 0), the element-wise maximum of 0 and the input tensor." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/relu] {type="owl:Axiom"}
 synonym: "Rectified Linear Unit" EXACT []
 synonym: "ReLU" EXACT []
-is_a: https://w3id.org/aio/Function ! Function
+is_a: https://w3id.org/aio/Function
 
 [Term]
 id: https://w3id.org/aio/ReLULayer
@@ -4292,7 +4258,7 @@ is_a: https://w3id.org/aio/DeepNeuralNetwork ! Deep Neural Network
 [Term]
 id: https://w3id.org/aio/RecursiveLLM
 name: Recursive LLM
-def: "A recursive or self-attending LLM incorporates recursive self-attention mechanisms, allowing it to iteratively refine its own outputs and capture long-range dependencies more effectively." [TBD] {type="owl:Axiom"}
+def: "A recursive or self-attending LLM incorporates recursive self-attention mechanisms, allowing it to iteratively refine its own outputs and capture long-range dependencies more effectively." []
 synonym: "iterative refinement" RELATED []
 synonym: "Recursive LLM" EXACT []
 synonym: "Self-Attending LLM" EXACT []
@@ -4302,7 +4268,7 @@ is_a: https://w3id.org/aio/ModelArchitecture ! Model Architecture
 [Term]
 id: https://w3id.org/aio/RecursiveLanguageModel
 name: Recursive Language Model
-def: "A recursive language model uses recursive neural network architectures like TreeLSTMs to learn syntactic composition functions, improving systematic generalization abilities." [TBD] {type="owl:Axiom"}
+def: "A recursive language model uses recursive neural network architectures like TreeLSTMs to learn syntactic composition functions, improving systematic generalization abilities." []
 synonym: "Compositional generalization" RELATED []
 synonym: "Recursive Language Model" EXACT []
 is_a: https://w3id.org/aio/AdvancedTechniques ! Advanced Techniques
@@ -4338,7 +4304,7 @@ is_a: https://w3id.org/aio/MachineLearning ! Machine Learning
 [Term]
 id: https://w3id.org/aio/ReinforcementLearningLLM
 name: Reinforcement Learning LLM
-def: "An RL-LLM is a language model that is fine-tuned using reinforcement learning, where the model receives rewards for generating text that satisfies certain desired properties or objectives. This can improve the quality, safety, or alignment of generated text." [TBD] {type="owl:Axiom"}
+def: "An RL-LLM is a language model that is fine-tuned using reinforcement learning, where the model receives rewards for generating text that satisfies certain desired properties or objectives. This can improve the quality, safety, or alignment of generated text." []
 synonym: "decision transformers" RELATED []
 synonym: "Reinforcement Learning LLM" EXACT []
 synonym: "reward modeling" RELATED []
@@ -4411,7 +4377,7 @@ is_a: https://w3id.org/aio/BoltzmannMachineNetwork ! Boltzmann Machine Network
 [Term]
 id: https://w3id.org/aio/Retrieval-AugmentedLLM
 name: Retrieval-Augmented LLM
-def: "A retrieval-augmented LLM combines a pre-trained language model with a retrieval system that can access external knowledge sources. This allows the model to condition its generation on relevant retrieved knowledge, improving factual accuracy and knowledge grounding." [TBD] {type="owl:Axiom"}
+def: "A retrieval-augmented LLM combines a pre-trained language model with a retrieval system that can access external knowledge sources. This allows the model to condition its generation on relevant retrieved knowledge, improving factual accuracy and knowledge grounding." []
 synonym: "knowledge grounding" RELATED []
 synonym: "open-book question answering" RELATED []
 synonym: "Retrieval-Augmented LLM" EXACT []
@@ -4429,7 +4395,7 @@ name: SELU Function
 def: "The SELU activation function multiplies scale (> 1) with the output of the ELU function to ensure a slope larger than one for positive inputs." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/selu] {type="owl:Axiom"}
 synonym: "Scaled Exponential Linear Unit" EXACT []
 synonym: "SELU" EXACT []
-is_a: https://w3id.org/aio/Function ! Function
+is_a: https://w3id.org/aio/Function
 
 [Term]
 id: https://w3id.org/aio/SelectionAndSamplingBias
@@ -4449,7 +4415,7 @@ is_a: https://w3id.org/aio/IndividualBias ! Individual Bias
 [Term]
 id: https://w3id.org/aio/Self-SupervisedLLM
 name: Self-Supervised LLM
-def: "A self-supervised LLM learns rich representations by solving pretext tasks that involve predicting parts of the input from other observed parts of the data, without relying on human-annotated labels." [TBD] {type="owl:Axiom"}
+def: "A self-supervised LLM learns rich representations by solving pretext tasks that involve predicting parts of the input from other observed parts of the data, without relying on human-annotated labels." []
 synonym: "Pretext tasks" RELATED []
 synonym: "Self-Supervised LLM" EXACT []
 is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
@@ -4463,7 +4429,7 @@ is_a: https://w3id.org/aio/MachineLearning ! Machine Learning
 [Term]
 id: https://w3id.org/aio/Semi-SupervisedLLM
 name: Semi-Supervised LLM
-def: "A semi-supervised LLM combines self-supervised pretraining on unlabeled data with supervised fine-tuning on labeled task data." [TBD] {type="owl:Axiom"}
+def: "A semi-supervised LLM combines self-supervised pretraining on unlabeled data with supervised fine-tuning on labeled task data." []
 synonym: "self-training" RELATED []
 synonym: "Semi-Supervised LLM" EXACT []
 is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
@@ -4486,7 +4452,7 @@ is_a: https://w3id.org/aio/ConvolutionalLayer ! Convolutional Layer
 id: https://w3id.org/aio/SigmoidFunction
 name: Sigmoid Function
 def: "Applies the sigmoid activation function sigmoid(x) = 1 / (1 + exp(-x)). For small values (<-5), sigmoid returns a value close to zero, and for large values (>5) the result of the function gets close to 1. Sigmoid is equivalent to a 2-element Softmax, where the second element is assumed to be zero. The sigmoid function always returns a value between 0 and 1." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/sigmoid] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/Function ! Function
+is_a: https://w3id.org/aio/Function
 
 [Term]
 id: https://w3id.org/aio/SimpleRNNCellLayer
@@ -4518,7 +4484,7 @@ is_a: https://w3id.org/aio/Bias ! Bias
 id: https://w3id.org/aio/SoftmaxFunction
 name: Softmax Function
 def: "The elements of the output vector are in range (0, 1) and sum to 1. Each vector is handled independently. The axis argument sets which axis of the input the function is applied along. Softmax is often used as the activation for the last layer of a classification network because the result could be interpreted as a probability distribution. The softmax of each vector x is computed as exp(x) / tf.reduce_sum(exp(x)). The input values in are the log-odds of the resulting probability." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/softmax] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/Function ! Function
+is_a: https://w3id.org/aio/Function
 
 [Term]
 id: https://w3id.org/aio/SoftmaxLayer
@@ -4530,18 +4496,18 @@ is_a: https://w3id.org/aio/ActivationLayer ! Activation Layer
 id: https://w3id.org/aio/SoftplusFunction
 name: Softplus Function
 def: "softplus(x) = log(exp(x) + 1)" [https://www.tensorflow.org/api_docs/python/tf/keras/activations/softplus] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/Function ! Function
+is_a: https://w3id.org/aio/Function
 
 [Term]
 id: https://w3id.org/aio/SoftsignFunction
 name: Softsign Function
 def: "softsign(x) = x / (abs(x) + 1)" [https://www.tensorflow.org/api_docs/python/tf/keras/activations/softsign] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/Function ! Function
+is_a: https://w3id.org/aio/Function
 
 [Term]
 id: https://w3id.org/aio/SparseAE
 name: Sparse AE
-def: "Sparse autoencoders may include more (rather than fewer) hidden units than inputs, but only a small number of the hidden units are allowed to be active at the same time (thus, sparse). This constraint forces the model to respond to the unique statistical features of the training data. (https://en.wikipedia.org/wiki/Autoencoder)" [TBD] {type="owl:Axiom"}
+def: "Sparse autoencoders may include more (rather than fewer) hidden units than inputs, but only a small number of the hidden units are allowed to be active at the same time (thus, sparse). This constraint forces the model to respond to the unique statistical features of the training data. (https://en.wikipedia.org/wiki/Autoencoder)" []
 comment: Input, Hidden, Matched Output-Input
 synonym: "SAE" EXACT []
 is_a: https://w3id.org/aio/AutoEncoderNetwork ! Auto Encoder Network
@@ -4549,7 +4515,7 @@ is_a: https://w3id.org/aio/AutoEncoderNetwork ! Auto Encoder Network
 [Term]
 id: https://w3id.org/aio/SparseLLM
 name: Sparse LLM
-def: "A sparse LLM uses techniques like pruning or quantization to reduce the number of non-zero parameters in the model, making it more parameter-efficient and easier to deploy on resource-constrained devices." [TBD] {type="owl:Axiom"}
+def: "A sparse LLM uses techniques like pruning or quantization to reduce the number of non-zero parameters in the model, making it more parameter-efficient and easier to deploy on resource-constrained devices." []
 synonym: "model compression" RELATED []
 synonym: "parameter efficiency" RELATED []
 synonym: "Sparse LLM" EXACT []
@@ -4615,7 +4581,7 @@ is_a: https://w3id.org/aio/MergingLayer ! Merging Layer
 [Term]
 id: https://w3id.org/aio/SubwordSegmentation
 name: Subword Segmentation
-def: "Utilizing techniques like Byte Pair Encoding (BPE) or SentencePiece to break down words into smaller units, allowing the model to handle a wide range of vocabulary with a fixed-size list." [TBD] {type="owl:Axiom"}
+def: "Utilizing techniques like Byte Pair Encoding (BPE) or SentencePiece to break down words into smaller units, allowing the model to handle a wide range of vocabulary with a fixed-size list." []
 synonym: "Byte Pair Encoding" RELATED []
 synonym: "Fragmentation" EXACT []
 synonym: "Part-word Division" EXACT []
@@ -4679,7 +4645,7 @@ is_a: https://w3id.org/aio/ProcessingBias ! Processing Bias
 id: https://w3id.org/aio/SwishFunction
 name: Swish Function
 def: "x*sigmoid(x). It is a smooth, non-monotonic function that consistently matches or outperforms ReLU on deep networks, it is unbounded above and bounded below." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/swish] {type="owl:Axiom"}
-is_a: https://w3id.org/aio/Function ! Function
+is_a: https://w3id.org/aio/Function
 
 [Term]
 id: https://w3id.org/aio/SymmetricallyConnectedNetwork
@@ -4708,7 +4674,7 @@ id: https://w3id.org/aio/TanhFunction
 name: Tanh Function
 def: "Hyperbolic tangent activation function." [https://www.tensorflow.org/api_docs/python/tf/keras/activations/tanh] {type="owl:Axiom"}
 synonym: "hyperbolic tangent" EXACT []
-is_a: https://w3id.org/aio/Function ! Function
+is_a: https://w3id.org/aio/Function
 
 [Term]
 id: https://w3id.org/aio/TemporalBias
@@ -4755,7 +4721,7 @@ is_a: https://w3id.org/aio/MachineLearning ! Machine Learning
 [Term]
 id: https://w3id.org/aio/TokenizationAndVocabularyReduction
 name: Tokenization And Vocabulary Reduction
-def: "Breaking down text data into manageable pieces called tokens and reducing the model's vocabulary to streamline processing." [TBD] {type="owl:Axiom"}
+def: "Breaking down text data into manageable pieces called tokens and reducing the model's vocabulary to streamline processing." []
 synonym: "Lexical Simplification" EXACT []
 synonym: "Tokenization" RELATED []
 synonym: "Vocabulary Condensation" EXACT []
@@ -4765,22 +4731,21 @@ is_a: https://w3id.org/aio/DataPreparation ! Data Preparation
 [Term]
 id: https://w3id.org/aio/TrainingParadigm
 name: Training Paradigm
-def: "An abstract parent class grouping LLMs based on training paradigm." [TBD] {type="owl:Axiom"}
+def: "An abstract parent class grouping LLMs based on training paradigm." []
 is_a: https://w3id.org/aio/LargeLanguageModel ! Large Language Model
 
 [Term]
 id: https://w3id.org/aio/TrainingStrategies
 name: Training Strategies
-def: "Specific strategies or methodologies employed during model training." [TBD] {type="owl:Axiom"}
+def: "Specific strategies or methodologies employed during model training." []
 synonym: "Instructional Methods" EXACT []
 synonym: "Learning Techniques" EXACT []
-is_a: https://w3id.org/aio/Preprocessing ! Preprocessing
 
 [Term]
 id: https://w3id.org/aio/TransferLearning
 name: Transfer Learning
 def: "Methods which can reuse or transfer information from previously learned tasks for the Learning of new tasks." [https://en.wikipedia.org/wiki/Transfer_learning] {type="owl:Axiom"}
-def: "Starting the training from a model already trained on a related task to reduce training time and improve performance on tasks with limited data." [TBD] {type="owl:Axiom"}
+def: "Starting the training from a model already trained on a related task to reduce training time and improve performance on tasks with limited data." []
 synonym: "Adaptation" RELATED []
 synonym: "Knowledge Transfer" EXACT []
 synonym: "Pretrained models" RELATED []
@@ -4791,7 +4756,7 @@ is_a: https://w3id.org/aio/TrainingStrategies ! Training Strategies
 [Term]
 id: https://w3id.org/aio/TransferLearningLLM
 name: Transfer Learning LLM
-def: "A transfer learning LLM leverages knowledge acquired during training on one task to improve performance on different but related tasks, facilitating more efficient learning and adaptation." [TBD] {type="owl:Axiom"}
+def: "A transfer learning LLM leverages knowledge acquired during training on one task to improve performance on different but related tasks, facilitating more efficient learning and adaptation." []
 synonym: "transfer learning" RELATED []
 synonym: "Transfer LLM" EXACT []
 is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
@@ -4835,7 +4800,7 @@ is_a: https://w3id.org/aio/Clustering ! Clustering
 [Term]
 id: https://w3id.org/aio/UnsupervisedLLM
 name: Unsupervised LLM
-def: "An unsupervised LLM is trained solely on unlabeled data using self-supervised objectives like masked language modeling, without any supervised fine-tuning." [TBD] {type="owl:Axiom"}
+def: "An unsupervised LLM is trained solely on unlabeled data using self-supervised objectives like masked language modeling, without any supervised fine-tuning." []
 synonym: "self-supervised" RELATED []
 synonym: "Unsupervised LLM" EXACT []
 is_a: https://w3id.org/aio/TrainingParadigm ! Training Paradigm
@@ -4887,7 +4852,7 @@ is_a: https://w3id.org/aio/IndividualBias ! Individual Bias
 [Term]
 id: https://w3id.org/aio/VariationalAutoEncoder
 name: Variational Auto Encoder
-def: "Variational autoencoders are meant to compress the input information into a constrained multivariate latent distribution (encoding) to reconstruct it as accurately as possible (decoding). (https://en.wikipedia.org/wiki/Variational_autoencoder)" [TBD] {type="owl:Axiom"}
+def: "Variational autoencoders are meant to compress the input information into a constrained multivariate latent distribution (encoding) to reconstruct it as accurately as possible (decoding). (https://en.wikipedia.org/wiki/Variational_autoencoder)" []
 comment: Input, Probabilistic Hidden, Matched Output-Input
 synonym: "VAE" EXACT []
 is_a: https://w3id.org/aio/AutoEncoderNetwork ! Auto Encoder Network
@@ -4901,7 +4866,7 @@ is_a: https://w3id.org/aio/Layer ! Layer
 [Term]
 id: https://w3id.org/aio/Zero-ShotLearningLLM
 name: Zero-Shot Learning LLM
-def: "A zero-shot learning LLM is able to perform tasks or understand concepts it has not explicitly been trained on, demonstrating a high degree of generalization and understanding." [TBD] {type="owl:Axiom"}
+def: "A zero-shot learning LLM is able to perform tasks or understand concepts it has not explicitly been trained on, demonstrating a high degree of generalization and understanding." []
 synonym: "zero-shot learning" RELATED []
 synonym: "Zero-Shot LLM" EXACT []
 is_a: https://w3id.org/aio/EnhancementStrategies ! Enhancement Strategies
@@ -4974,6 +4939,38 @@ comment: Input, Hidden, Output
 synonym: "SkipGram" RELATED []
 synonym: "W2V-SkipGram" EXACT []
 is_a: https://w3id.org/aio/ArtificialNeuralNetwork ! Artificial Neural Network
+
+[Term]
+id: oboInOwl:ObsoleteClass
+name: Obsolete Class
+
+[Term]
+id: swo:SWO_0000260
+name: publisher role
+def: "A publisher role is a role borne by an organization or individual in which they are responsible for making software available to a particular consumer group. Such organizations or individuals do need to be involved in the development of the software." []
+is_a: BFO:0000023 ! role
+property_value: IAO:0000119 "James Malone" xsd:string
+
+[Term]
+id: swo:SWO_0000392
+name: software developer role
+def: "Software developer role is a role borne by an organization or individual in which they are responsible for authoring software." []
+is_a: BFO:0000023 ! role
+property_value: IAO:0000119 "James Malone" xsd:string
+
+[Term]
+id: swo:SWO_0000396
+name: software developer organization
+def: "An organization or legal entity (including single person) that is responsible for developing software. Developing includes aspects of design, coding and testing." []
+is_a: OBI:0000245 ! organization
+relationship: RO:0000087 swo:SWO_0000392 ! has_role software developer role
+
+[Term]
+id: swo:SWO_0000397
+name: software publisher organization
+def: "An organization or legal entity (including single person) that is responsible for publishing software. Publishing here includes tasks such as designing and producing physical products, technical customer support, licensing arrangements and marketing." []
+is_a: OBI:0000245 ! organization
+relationship: RO:0000087 swo:SWO_0000260 ! has_role publisher role
 
 [Typedef]
 id: BFO:0000050
@@ -5061,7 +5058,7 @@ id: BFO:0000062
 name: preceded by
 def: "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
 subset: ro-eco
-property_value: http://purl.org/dc/elements/1.1/source "http://www.obofoundry.org/ro/#OBO_REL:preceded_by" xsd:string
+property_value: dce:source "http://www.obofoundry.org/ro/#OBO_REL:preceded_by" xsd:string
 property_value: IAO:0000111 "preceded by" xsd:string
 property_value: IAO:0000116 "An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other." xsd:string
 property_value: IAO:0000118 "is preceded by" xsd:string
@@ -5090,7 +5087,7 @@ id: IAO:0000136
 name: is about
 def: "'is about' relates an information entity to other entities in which the information entity holds some information which dscribes some facet of the other entity, such as the arrow direction on a sign." []
 def: "A (currently) primitive relation that relates an information artifact to an entity." []
-property_value: http://purl.org/dc/terms/creator "Alan Ruttenberg" xsd:string
+property_value: dcterms:creator "Alan Ruttenberg" xsd:string
 property_value: IAO:0000112 "This document is about information artifacts and their representations" xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000116 "7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of \"mentions\" relation. Weaken the is_about relationship to be primitive. \n\nWe will try to build it back up by elaborating the various subproperties that are more precisely defined.\n\nSome currently missing phenomena that should be considered \"about\" are predications - \"The only person who knows the answer is sitting beside me\" , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic." xsd:string
@@ -5225,7 +5222,7 @@ id: RO:0000056
 name: participates in
 def: "a relation between a continuant and a process, in which the continuant is somehow involved in the process" []
 comment: Please see the official RO definition for the inverse of this property, 'has participant.'
-property_value: http://purl.org/dc/terms/creator "Andy Brown" xsd:string
+property_value: dcterms:creator "Andy Brown" xsd:string
 property_value: IAO:0000111 "participates in" xsd:string
 property_value: IAO:0000112 "this blood clot participates in this blood coagulation" xsd:string
 property_value: IAO:0000112 "this input material (or this output material) participates in this process" xsd:string
@@ -5240,8 +5237,8 @@ id: RO:0000057
 name: has participant
 def: "a relation between a process and a continuant, in which the continuant is somehow involved in the process" []
 def: "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process." []
-property_value: http://purl.org/dc/elements/1.1/source "http://www.obofoundry.org/ro/#OBO_REL:has_participant" xsd:string
-property_value: http://purl.org/dc/terms/creator "Andy Brown" xsd:string
+property_value: dce:source "http://www.obofoundry.org/ro/#OBO_REL:has_participant" xsd:string
+property_value: dcterms:creator "Andy Brown" xsd:string
 property_value: IAO:0000111 "has participant" xsd:string
 property_value: IAO:0000112 "The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time." xsd:string
 property_value: IAO:0000112 "this blood coagulation has participant this blood clot" xsd:string
@@ -5590,7 +5587,7 @@ id: RO:0002222
 name: temporally related to
 comment: A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.
 subset: ro-eco
-property_value: http://purl.org/dc/terms/source "https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1" xsd:anyURI
+property_value: dcterms:source "https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1" xsd:anyURI
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000119 https://en.wikipedia.org/wiki/Allen%27s_interval_algebra
@@ -5641,7 +5638,7 @@ def: "p is causally upstream of, positive effect q iff p is casually upstream of
 comment: holds between x and y if and only if x is causally upstream of y and the progression of x increases the frequency, rate or extent of y
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-6601-2165
+property_value: dcterms:creator https://orcid.org/0000-0002-6601-2165
 property_value: RO:0004049 RO:0002411
 is_a: RO:0002411 ! causally upstream of
 is_a: RO:0004047 ! causally upstream of or within, positive effect
@@ -5652,7 +5649,7 @@ name: causally upstream of, negative effect
 def: "p is causally upstream of, negative effect q iff p is casually upstream of q, and the execution of p decreases the execution of q." []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-6601-2165
+property_value: dcterms:creator https://orcid.org/0000-0002-6601-2165
 property_value: RO:0004050 RO:0002411
 is_a: RO:0002411 ! causally upstream of
 is_a: RO:0004046 ! causally upstream of or within, negative effect
@@ -5940,12 +5937,12 @@ name: interacts with
 def: "A relationship that holds between two entities in which the processes executed by the two entities are causally connected." []
 subset: ro-eco
 synonym: "in pairwise interaction with" EXACT []
-property_value: closeMatch "http://purl.obolibrary.org/obo/MI_0914" xsd:anyURI
 property_value: IAO:0000116 "Considering relabeling as 'pairwise interacts with'" xsd:anyURI
 property_value: IAO:0000116 "This relation and all sub-relations can be applied to either (1) pairs of entities that are interacting at any moment of time (2) populations or species of entity whose members have the disposition to interact (3) classes whose members have the disposition to interact." xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000232 "Note that this relationship type, and sub-relationship types may be redundant with process terms from other ontologies. For example, the symbiotic relationship hierarchy parallels GO. The relations are provided as a convenient shortcut. Consider using the more expressive processual form to capture your data. In the future, these relations will be linked to their cognate processes through rules." xsd:string
 property_value: seeAlso "http://purl.obolibrary.org/obo/ro/docs/interaction-relations/" xsd:anyURI
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/MI_0914" xsd:anyURI
 domain: BFO:0000040 ! material entity
 range: BFO:0000040 ! material entity
 is_symmetric: true
@@ -5954,11 +5951,11 @@ is_symmetric: true
 id: RO:0002436
 name: molecularly interacts with
 def: "An interaction relationship in which the two partners are molecular entities that directly physically interact with each other for example via a stable binding interaction or a brief interaction during which one modifies the other." []
-property_value: closeMatch "http://purl.obolibrary.org/obo/MI_0915" xsd:anyURI
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "binds" xsd:string
 property_value: IAO:0000118 "molecularly binds with" xsd:string
 property_value: seeAlso ECO:0000353
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/MI_0915" xsd:anyURI
 is_symmetric: true
 is_a: RO:0002434 ! interacts with
 
@@ -6298,7 +6295,7 @@ creation_date: 2021-11-08T12:00:00Z
 id: RO:0019000
 name: regulates characteristic
 def: "A relationship that holds between a process and a characteristic in which process (P) regulates characteristic (C) iff: P results in the existence of C OR affects the intensity or magnitude of C." []
-property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-8688-6599
+property_value: dcterms:contributor https://orcid.org/0000-0002-8688-6599
 domain: BFO:0000015 ! process
 range: PATO:0000001 ! quality
 holds_over_chain: RO:0002211 RO:0019000
@@ -6308,7 +6305,7 @@ is_a: RO:0002410 ! causally related to
 id: RO:0019001
 name: positively regulates characteristic
 def: "A relationship that holds between a process and a characteristic in which process (P) positively regulates characteristic (C) iff: P results in an increase in the intensity or magnitude of C." []
-property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-8688-6599
+property_value: dcterms:contributor https://orcid.org/0000-0002-8688-6599
 holds_over_chain: RO:0002213 RO:0019001
 is_a: RO:0019000 ! regulates characteristic
 
@@ -6316,40 +6313,40 @@ is_a: RO:0019000 ! regulates characteristic
 id: RO:0019002
 name: negatively regulates characteristic
 def: "A relationship that holds between a process and a characteristic in which process (P) negatively regulates characteristic (C) iff: P results in a decrease in the intensity or magnitude of C." []
-property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-8688-6599
+property_value: dcterms:contributor https://orcid.org/0000-0002-8688-6599
 holds_over_chain: RO:0002212 RO:0019001
 holds_over_chain: RO:0002213 RO:0019002
 is_a: RO:0019000 ! regulates characteristic
 
 [Typedef]
-id: SWO:0000131
+id: swo:SWO_0000131
 name: directly preceded by
 def: "Entity A is 'directly preceded by' entity B if there are no intermediate entities temporally between the two entities. WIthin SWO this property is mainly used to describe versions of entities such as software." []
-property_value: http://purl.org/dc/terms/creator "OBO Foundry" xsd:string
+property_value: dcterms:creator "OBO Foundry" xsd:string
 property_value: IAO:0000112 "Microsoft version 2007 is directly preceded by Microsoft version 2003." xsd:string
 property_value: IAO:0000119 "Allyson Lister" xsd:string
-is_a: SWO:0000301 ! follows
-inverse_of: SWO:0000132 ! directly followed by
+is_a: swo:SWO_0000301 ! follows
+inverse_of: swo:SWO_0000132 ! directly followed by
 
 [Typedef]
-id: SWO:0000132
+id: swo:SWO_0000132
 name: directly followed by
 def: "'directly followed by' is an object property which further specializes the parent 'followed by' property. In the assertion 'C directly followed by C1', says that Cs generally are immediately followed by C1s." []
 property_value: IAO:0000119 "Allyson Lister" xsd:string
-is_a: SWO:0000300 ! followed by
+is_a: swo:SWO_0000300 ! followed by
 
 [Typedef]
-id: SWO:0000300
+id: swo:SWO_0000300
 name: followed by
 comment: AL 2.9.22: When incorporating all BFO annotations, it became clear that we were using BFO 'precedes' (which was the original parent for 'directly followed by') incorrectly. 'precedes' has a range  and domain of occurent, and the IAO version number class is an ICE, which is a continuant. This led to an inconsistent ontology. To fix this for now, we have created a new class that performs a similar function to BFO 'precedes' but without the domain/range restrictions.
 
 [Typedef]
-id: SWO:0000301
+id: swo:SWO_0000301
 name: follows
 comment: AL 2.9.22: When incorporating all BFO annotations, it became clear that we were using BFO 'precedes' and 'preceded by' (which was the original parent for 'directly preceded by') incorrectly. 'precedes' has a range  and domain of occurent, and the IAO version number class is an ICE, which is a continuant. This led to an inconsistent ontology. To fix this for now, we have created a new class (and this, its inverse) that performs a similar function to BFO 'precedes' but without the domain/range restrictions.
 
 [Typedef]
-id: SWO:0000741
+id: swo:SWO_0000741
 name: is encoded in
 def: "Is encoded in is an \"is about\" relationship which describes the type of encoding used for the referenced class." []
 property_value: IAO:0000112 "Linking a type of software to its particular programming language." xsd:string
