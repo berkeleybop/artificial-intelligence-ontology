@@ -16,6 +16,9 @@ export_formats:
   - json
 allow_equivalents: all
 components:
+  use_mappings: true
+  mappings:
+    - aio-to-mlo.sssom.tsv
   products:
     - filename: aio-component.owl
 
