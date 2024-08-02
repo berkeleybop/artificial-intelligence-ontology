@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                21936a282e756d45cf5d11aa757e3afaa4994839f1bede700deb535d7b6b70bc
+CONFIG_HASH=                f4ecabc0cb33d8b61ea2bdffaa6325b4ade4c3e1a18b820e51b21bcd28b3ada7
 
 
 # ----------------------------------------
@@ -56,6 +56,12 @@ ANNOTATE_CONVERT_FILE =     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONT
 OTHER_SRC =                 $(COMPONENTSDIR)/aio-component.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
+MAPPINGDIR=                 ../mappings
+MAPPING_TESTER=             sssom validate
+SSSOMPY=                    sssom
+MAPPINGS=                   aio-to-mlo 
+MAPPING_RELEASE_FILES=      $(foreach n,$(MAPPINGS), $(MAPPINGDIR)/$(n).sssom.tsv)
+
 
 FORMATS = $(sort  obo owl json owl)
 FORMATS_INCL_TSV = $(sort $(FORMATS) tsv)
@@ -187,7 +193,7 @@ all_subsets: $(SUBSET_FILES)
 # ----------------------------------------
 
 
-MAPPINGS = 
+MAPPINGS =  aio-to-mlo
 
 MAPPING_FILES = $(patsubst %, $(MAPPINGDIR)/%.sssom.tsv, $(MAPPINGS))
 
@@ -481,6 +487,22 @@ custom_reports: $(EDIT_PREPROCESSED) | $(REPORTDIR)
 ifneq ($(SPARQL_EXPORTS_ARGS),)
 	$(ROBOT) query -f tsv --use-graphs true -i $< $(SPARQL_EXPORTS_ARGS)
 endif
+# ----------------------------------------
+# SSSOM Mapping Files
+# ----------------------------------------
+
+validate-sssom-%:
+	tsvalid $(MAPPINGDIR)/$*.sssom.tsv --comment "#"
+	sssom validate $(MAPPINGDIR)/$*.sssom.tsv
+
+# This mappingset is manually curated, so we only check that the file actually exists.
+$(MAPPINGDIR)/aio-to-mlo.sssom.tsv:
+	test -f $@
+
+validate_mappings:
+	$(MAKE_FAST) $(foreach n,$(MAPPINGS), validate-sssom-$(n))
+
+
 
 # ----------------------------------------
 # Release artefacts: export formats

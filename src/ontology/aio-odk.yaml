@@ -2,9 +2,14 @@ id: aio
 title: Artificial Intelligence Ontology
 github_org: berkeleybop
 repo: artificial-intelligence-ontology
+use_mappings: true
 import_group:
   products:
     - id: swo
+sssom_mappingset_group:
+  products:
+    - id: aio-to-mlo
+      maintenance: manual
 report_fail_on: none
 release_artefacts:
   - base
@@ -16,9 +21,6 @@ export_formats:
   - json
 allow_equivalents: all
 components:
-  use_mappings: true
-  mappings:
-    - aio-to-mlo.sssom.tsv
   products:
     - filename: aio-component.owl
 
