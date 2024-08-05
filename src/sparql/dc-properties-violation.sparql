@@ -6,6 +6,6 @@
 SELECT ?term ?predicate WHERE {
   ?term ?predicate ?value .
   FILTER(STRSTARTS(STR(?predicate), "http://purl.org/dc/elements/1.1/"))
-  FILTER(isIRI(?term) && (STRSTARTS(str(?term), "http://purl.obolibrary.org/obo/AIO_")))
+  FILTER(isIRI(?term) && (STRSTARTS(str(?term), "https://w3id.org/aio/")))
 }
 

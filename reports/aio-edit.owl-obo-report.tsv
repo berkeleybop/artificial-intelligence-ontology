@@ -1,4 +1,28 @@
 Level	Rule Name	Subject	Property	Value
+<<<<<<< HEAD
+ERROR	multiple_definitions	https://w3id.org/aio/TransferLearning	IAO:0000115	Methods which can reuse or transfer information from previously learned tasks for the Learning of new tasks.
+ERROR	multiple_definitions	https://w3id.org/aio/TransferLearning	IAO:0000115	Starting the training from a model already trained on a related task to reduce training time and improve performance on tasks with limited data.
+WARN	duplicate_exact_synonym	https://w3id.org/aio/Biclustering	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/UnsupervisedBiclustering	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/DecoderLLM	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/Encoder-DecoderLLM	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/EncoderLLM	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/LargeLanguageModel	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/K-nearestNeighborAlgorithm	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/K-nearestNeighborClassificationAlgorithm	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/K-nearestNeighborRegressionAlgorithm	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/ContinualLearningLLM	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/LifelongLearningLLM	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/Clustering	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/SupervisedClustering	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/UnsupervisedClustering	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/AveragePooling3DLayer	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/AvgPool3DLayer	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/AveragePooling2DLayer	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/AvgPool2DLayer	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/AveragePooling1DLayer	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	https://w3id.org/aio/AvgPool1DLayer	oboInOwl:hasExactSynonym	
+=======
 WARN	duplicate_exact_synonym	https://w3id.org/aio/Biclustering	oboInOwl:hasExactSynonym	Two-way Clustering
 WARN	duplicate_exact_synonym	https://w3id.org/aio/UnsupervisedBiclustering	oboInOwl:hasExactSynonym	Two-way Clustering
 WARN	duplicate_exact_synonym	https://w3id.org/aio/Biclustering	oboInOwl:hasExactSynonym	Two-mode Clustering
@@ -36,6 +60,7 @@ WARN	duplicate_exact_synonym	https://w3id.org/aio/AveragePooling1DLayer	oboInOwl
 WARN	duplicate_exact_synonym	https://w3id.org/aio/AveragePooling1DLayer	oboInOwl:hasExactSynonym	AvgPool1d
 WARN	duplicate_exact_synonym	https://w3id.org/aio/AvgPool1DLayer	oboInOwl:hasExactSynonym	AvgPool1D
 WARN	duplicate_exact_synonym	https://w3id.org/aio/AvgPool1DLayer	oboInOwl:hasExactSynonym	AvgPool1d
+>>>>>>> origin/main
 WARN	duplicate_label_synonym	https://w3id.org/aio/AutoregressiveLanguageModel	oboInOwl:hasExactSynonym	Autoregressive Language Model
 WARN	duplicate_label_synonym	https://w3id.org/aio/CausalLLM	oboInOwl:hasExactSynonym	Causal LLM
 WARN	duplicate_label_synonym	https://w3id.org/aio/CompositionalGeneralizationLLM	oboInOwl:hasExactSynonym	Compositional Generalization LLM
@@ -91,14 +116,21 @@ WARN	missing_definition	obo:ARTIFICIAL-INTELLIGENCE-ONTOLOGY_0000000	IAO:0000115
 WARN	missing_definition	dc:description	IAO:0000115	
 WARN	missing_definition	dc:license	IAO:0000115	
 WARN	missing_definition	dc:title	IAO:0000115	
+WARN	missing_definition	https://w3id.org/aio/Data-to-TextLLM	IAO:0000115	
 INFO	lowercase_definition	https://w3id.org/aio/SoftplusFunction	IAO:0000115	softplus(x) = log(exp(x) + 1)
 INFO	lowercase_definition	https://w3id.org/aio/SoftsignFunction	IAO:0000115	softsign(x) = x / (abs(x) + 1)
 INFO	lowercase_definition	https://w3id.org/aio/SwishFunction	IAO:0000115	x*sigmoid(x). It is a smooth, non-monotonic function that consistently matches or outperforms ReLU on deep networks, it is unbounded above and bounded below.
 INFO	missing_superclass	obo:ARTIFICIAL-INTELLIGENCE-ONTOLOGY_0000000	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/Bias	rdfs:subClassOf	
-INFO	missing_superclass	https://w3id.org/aio/Function	rdfs:subClassOf	
+INFO	missing_superclass	https://w3id.org/aio/DataEnhancement	rdfs:subClassOf	
+INFO	missing_superclass	https://w3id.org/aio/DataPreparation	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/LargeLanguageModel	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/Layer	rdfs:subClassOf	
+<<<<<<< HEAD
+INFO	missing_superclass	https://w3id.org/aio/Method	rdfs:subClassOf	
+INFO	missing_superclass	https://w3id.org/aio/ModelEfficiency	rdfs:subClassOf	
+=======
 INFO	missing_superclass	https://w3id.org/aio/MachineLearning	rdfs:subClassOf	
+>>>>>>> origin/main
 INFO	missing_superclass	https://w3id.org/aio/Network	rdfs:subClassOf	
-INFO	missing_superclass	https://w3id.org/aio/Preprocessing	rdfs:subClassOf	
+INFO	missing_superclass	https://w3id.org/aio/TrainingStrategies	rdfs:subClassOf	
