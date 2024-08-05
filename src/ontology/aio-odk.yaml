@@ -5,6 +5,7 @@ repo: artificial-intelligence-ontology
 use_mappings: true
 import_group:
   products:
+<<<<<<< HEAD
     - id: swo
 sssom_mappingset_group:
   products:
@@ -12,6 +13,8 @@ sssom_mappingset_group:
       maintenance: manual
 namespaces:
   - https://w3id.org/aio/
+=======
+>>>>>>> origin/main
 report_fail_on: none
 release_artefacts:
   - base

@@ -1,4 +1,5 @@
 Level	Rule Name	Subject	Property	Value
+<<<<<<< HEAD
 ERROR	multiple_definitions	https://w3id.org/aio/TransferLearning	IAO:0000115	Methods which can reuse or transfer information from previously learned tasks for the Learning of new tasks.
 ERROR	multiple_definitions	https://w3id.org/aio/TransferLearning	IAO:0000115	Starting the training from a model already trained on a related task to reduce training time and improve performance on tasks with limited data.
 WARN	duplicate_exact_synonym	https://w3id.org/aio/Biclustering	oboInOwl:hasExactSynonym	
@@ -21,6 +22,45 @@ WARN	duplicate_exact_synonym	https://w3id.org/aio/AveragePooling2DLayer	oboInOwl
 WARN	duplicate_exact_synonym	https://w3id.org/aio/AvgPool2DLayer	oboInOwl:hasExactSynonym	
 WARN	duplicate_exact_synonym	https://w3id.org/aio/AveragePooling1DLayer	oboInOwl:hasExactSynonym	
 WARN	duplicate_exact_synonym	https://w3id.org/aio/AvgPool1DLayer	oboInOwl:hasExactSynonym	
+=======
+WARN	duplicate_exact_synonym	https://w3id.org/aio/Biclustering	oboInOwl:hasExactSynonym	Two-way Clustering
+WARN	duplicate_exact_synonym	https://w3id.org/aio/UnsupervisedBiclustering	oboInOwl:hasExactSynonym	Two-way Clustering
+WARN	duplicate_exact_synonym	https://w3id.org/aio/Biclustering	oboInOwl:hasExactSynonym	Two-mode Clustering
+WARN	duplicate_exact_synonym	https://w3id.org/aio/UnsupervisedBiclustering	oboInOwl:hasExactSynonym	Two-mode Clustering
+WARN	duplicate_exact_synonym	https://w3id.org/aio/DecoderLLM	oboInOwl:hasExactSynonym	LLM
+WARN	duplicate_exact_synonym	https://w3id.org/aio/Encoder-DecoderLLM	oboInOwl:hasExactSynonym	LLM
+WARN	duplicate_exact_synonym	https://w3id.org/aio/EncoderLLM	oboInOwl:hasExactSynonym	LLM
+WARN	duplicate_exact_synonym	https://w3id.org/aio/LargeLanguageModel	oboInOwl:hasExactSynonym	LLM
+WARN	duplicate_exact_synonym	https://w3id.org/aio/K-nearestNeighborAlgorithm	oboInOwl:hasExactSynonym	KNN
+WARN	duplicate_exact_synonym	https://w3id.org/aio/K-nearestNeighborClassificationAlgorithm	oboInOwl:hasExactSynonym	KNN
+WARN	duplicate_exact_synonym	https://w3id.org/aio/K-nearestNeighborRegressionAlgorithm	oboInOwl:hasExactSynonym	KNN
+WARN	duplicate_exact_synonym	https://w3id.org/aio/K-nearestNeighborAlgorithm	oboInOwl:hasExactSynonym	K-NN
+WARN	duplicate_exact_synonym	https://w3id.org/aio/K-nearestNeighborClassificationAlgorithm	oboInOwl:hasExactSynonym	K-NN
+WARN	duplicate_exact_synonym	https://w3id.org/aio/K-nearestNeighborRegressionAlgorithm	oboInOwl:hasExactSynonym	K-NN
+WARN	duplicate_exact_synonym	https://w3id.org/aio/Biclustering	oboInOwl:hasExactSynonym	Joint Clustering
+WARN	duplicate_exact_synonym	https://w3id.org/aio/UnsupervisedBiclustering	oboInOwl:hasExactSynonym	Joint Clustering
+WARN	duplicate_exact_synonym	https://w3id.org/aio/ContinualLearningLLM	oboInOwl:hasExactSynonym	Continual Learning LLM
+WARN	duplicate_exact_synonym	https://w3id.org/aio/LifelongLearningLLM	oboInOwl:hasExactSynonym	Continual Learning LLM
+WARN	duplicate_exact_synonym	https://w3id.org/aio/Biclustering	oboInOwl:hasExactSynonym	Co-clustering
+WARN	duplicate_exact_synonym	https://w3id.org/aio/UnsupervisedBiclustering	oboInOwl:hasExactSynonym	Co-clustering
+WARN	duplicate_exact_synonym	https://w3id.org/aio/Clustering	oboInOwl:hasExactSynonym	Cluster analysis
+WARN	duplicate_exact_synonym	https://w3id.org/aio/SupervisedClustering	oboInOwl:hasExactSynonym	Cluster analysis
+WARN	duplicate_exact_synonym	https://w3id.org/aio/UnsupervisedClustering	oboInOwl:hasExactSynonym	Cluster analysis
+WARN	duplicate_exact_synonym	https://w3id.org/aio/Biclustering	oboInOwl:hasExactSynonym	Block Clustering
+WARN	duplicate_exact_synonym	https://w3id.org/aio/UnsupervisedBiclustering	oboInOwl:hasExactSynonym	Block Clustering
+WARN	duplicate_exact_synonym	https://w3id.org/aio/AveragePooling3DLayer	oboInOwl:hasExactSynonym	AvgPool3D
+WARN	duplicate_exact_synonym	https://w3id.org/aio/AveragePooling3DLayer	oboInOwl:hasExactSynonym	AvgPool3d
+WARN	duplicate_exact_synonym	https://w3id.org/aio/AvgPool3DLayer	oboInOwl:hasExactSynonym	AvgPool3D
+WARN	duplicate_exact_synonym	https://w3id.org/aio/AvgPool3DLayer	oboInOwl:hasExactSynonym	AvgPool3d
+WARN	duplicate_exact_synonym	https://w3id.org/aio/AveragePooling2DLayer	oboInOwl:hasExactSynonym	AvgPool2D
+WARN	duplicate_exact_synonym	https://w3id.org/aio/AveragePooling2DLayer	oboInOwl:hasExactSynonym	AvgPool2d
+WARN	duplicate_exact_synonym	https://w3id.org/aio/AvgPool2DLayer	oboInOwl:hasExactSynonym	AvgPool2D
+WARN	duplicate_exact_synonym	https://w3id.org/aio/AvgPool2DLayer	oboInOwl:hasExactSynonym	AvgPool2d
+WARN	duplicate_exact_synonym	https://w3id.org/aio/AveragePooling1DLayer	oboInOwl:hasExactSynonym	AvgPool1D
+WARN	duplicate_exact_synonym	https://w3id.org/aio/AveragePooling1DLayer	oboInOwl:hasExactSynonym	AvgPool1d
+WARN	duplicate_exact_synonym	https://w3id.org/aio/AvgPool1DLayer	oboInOwl:hasExactSynonym	AvgPool1D
+WARN	duplicate_exact_synonym	https://w3id.org/aio/AvgPool1DLayer	oboInOwl:hasExactSynonym	AvgPool1d
+>>>>>>> origin/main
 WARN	duplicate_label_synonym	https://w3id.org/aio/AutoregressiveLanguageModel	oboInOwl:hasExactSynonym	Autoregressive Language Model
 WARN	duplicate_label_synonym	https://w3id.org/aio/CausalLLM	oboInOwl:hasExactSynonym	Causal LLM
 WARN	duplicate_label_synonym	https://w3id.org/aio/CompositionalGeneralizationLLM	oboInOwl:hasExactSynonym	Compositional Generalization LLM
@@ -39,7 +79,6 @@ WARN	duplicate_label_synonym	https://w3id.org/aio/FactorizedLLM	oboInOwl:hasExac
 WARN	duplicate_label_synonym	https://w3id.org/aio/FederatedLLM	oboInOwl:hasExactSynonym	Federated LLM
 WARN	duplicate_label_synonym	https://w3id.org/aio/GenerativeAdversarialNetwork-AugmentedLLM	oboInOwl:hasExactSynonym	Generative Adversarial Network-Augmented LLM
 WARN	duplicate_label_synonym	https://w3id.org/aio/GenerativeCommonsenseLLM	oboInOwl:hasExactSynonym	Generative Commonsense LLM
-WARN	duplicate_label_synonym	https://w3id.org/aio/GenerativeLanguageCircuit	oboInOwl:hasExactSynonym	Generative Language Circuit
 WARN	duplicate_label_synonym	https://w3id.org/aio/GenerativeLanguageInterface	oboInOwl:hasExactSynonym	Generative Language Interface
 WARN	duplicate_label_synonym	https://w3id.org/aio/GraphLLM	oboInOwl:hasExactSynonym	Graph LLM
 WARN	duplicate_label_synonym	https://w3id.org/aio/HierarchicalLLM	oboInOwl:hasExactSynonym	Hierarchical LLM
@@ -65,7 +104,6 @@ WARN	duplicate_label_synonym	https://w3id.org/aio/PersonalizedLLM	oboInOwl:hasEx
 WARN	duplicate_label_synonym	https://w3id.org/aio/Prompt-basedFine-TuningLLM	oboInOwl:hasExactSynonym	Prompt-based Fine-Tuning LLM
 WARN	duplicate_label_synonym	https://w3id.org/aio/RationalLLM	oboInOwl:hasExactSynonym	Rational LLM
 WARN	duplicate_label_synonym	https://w3id.org/aio/RecursiveLLM	oboInOwl:hasExactSynonym	Recursive LLM
-WARN	duplicate_label_synonym	https://w3id.org/aio/RecursiveLanguageModel	oboInOwl:hasExactSynonym	Recursive Language Model
 WARN	duplicate_label_synonym	https://w3id.org/aio/ReinforcementLearningLLM	oboInOwl:hasExactSynonym	Reinforcement Learning LLM
 WARN	duplicate_label_synonym	https://w3id.org/aio/ReshapeLayer	oboInOwl:hasExactSynonym	Reshape Layer
 WARN	duplicate_label_synonym	https://w3id.org/aio/Retrieval-AugmentedLLM	oboInOwl:hasExactSynonym	Retrieval-Augmented LLM
@@ -88,7 +126,11 @@ INFO	missing_superclass	https://w3id.org/aio/DataEnhancement	rdfs:subClassOf
 INFO	missing_superclass	https://w3id.org/aio/DataPreparation	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/LargeLanguageModel	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/Layer	rdfs:subClassOf	
+<<<<<<< HEAD
 INFO	missing_superclass	https://w3id.org/aio/Method	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/ModelEfficiency	rdfs:subClassOf	
+=======
+INFO	missing_superclass	https://w3id.org/aio/MachineLearning	rdfs:subClassOf	
+>>>>>>> origin/main
 INFO	missing_superclass	https://w3id.org/aio/Network	rdfs:subClassOf	
 INFO	missing_superclass	https://w3id.org/aio/TrainingStrategies	rdfs:subClassOf	

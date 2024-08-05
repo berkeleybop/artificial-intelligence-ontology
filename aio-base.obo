@@ -1,4 +1,5 @@
 format-version: 1.2
+<<<<<<< HEAD
 data-version: aio/releases/2024-08-02/aio-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
@@ -3024,4 +3025,13 @@ comment: Input, Hidden, Output
 synonym: "SkipGram" RELATED []
 synonym: "W2V-SkipGram" EXACT []
 is_a: https://w3id.org/aio/ArtificialNeuralNetwork ! Artificial Neural Network
+=======
+data-version: aio/releases/2024-06-26/aio-base.owl
+ontology: aio/aio-base
+property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
+property_value: http://purl.org/dc/terms/description "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases." xsd:string
+property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
+property_value: http://purl.org/dc/terms/title "Artificial Intelligence Ontology" xsd:string
+property_value: owl:versionInfo "2024-06-26" xsd:string
+>>>>>>> origin/main
 

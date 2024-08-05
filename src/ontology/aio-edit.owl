@@ -1,47 +1,95 @@
-
-Prefix(:=<http://purl.obolibrary.org/obo/artificial-intelligence-ontology.owl#>)
-Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
+Prefix(:=<https://w3id.org/aio>)
+Prefix(BFO:=<http://purl.obolibrary.org/obo/BFO_>)
+Prefix(IAO:=<http://purl.obolibrary.org/obo/IAO_>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/artificial-intelligence-ontology.owl>
+Ontology(<https://w3id.org/aio/artificial-intelligence-ontology.owl>
 
-
-Import(<http://purl.obolibrary.org/obo/aio/imports/swo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/aio/components/aio-component.owl>)
 
-
-Annotation(dcterms:description "None")
-Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
+Annotation(dcterms:description "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases.")
+Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Artificial Intelligence Ontology")
 
-
-Declaration(Class(<http://purl.obolibrary.org/obo/ARTIFICIAL-INTELLIGENCE-ONTOLOGY_0000000>))
+Declaration(AnnotationProperty(IAO:0000115))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
+
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))
+
+Declaration(AnnotationProperty(<https://w3id.org/aio/BiasSubset>))
+Declaration(AnnotationProperty(<https://w3id.org/aio/ClassSubset>))
+Declaration(AnnotationProperty(<https://w3id.org/aio/FunctionSubset>))
+Declaration(AnnotationProperty(<https://w3id.org/aio/LayerSubset>))
+Declaration(AnnotationProperty(<https://w3id.org/aio/MachineLearningSubset>))
+Declaration(AnnotationProperty(<https://w3id.org/aio/ModelSubset>))
+Declaration(AnnotationProperty(<https://w3id.org/aio/NetworkSubset>))
+Declaration(AnnotationProperty(<https://w3id.org/aio/PreprocessingSubset>))
+
+Declaration(ObjectProperty(BFO:0000050))
+Declaration(ObjectProperty(BFO:0000051))
 
 ############################
 #   Annotation Properties
 ############################
 
+AnnotationAssertion(IAO:0000115 IAO:0000115 "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.")
+
+AnnotationAssertion(IAO:0000115 dcterms:description "Description may include but is not limited to: an abstract, table of contents, reference to a graphical representation of content or a free-text account of the content.")
+AnnotationAssertion(IAO:0000115 dcterms:license "A legal document giving official permission to do something with the resource.")
+AnnotationAssertion(IAO:0000115 dcterms:title "A name given to the resource.")
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/aio/BiasSubset> "Bias Subset"@en)
+AnnotationAssertion(rdfs:comment <https://w3id.org/aio/ClassSubset> "Class Subset"@en)
+AnnotationAssertion(rdfs:comment <https://w3id.org/aio/FunctionSubset> "Function Subset"@en)
+AnnotationAssertion(rdfs:comment <https://w3id.org/aio/LayerSubset> "Layer Subset"@en)
+AnnotationAssertion(rdfs:comment <https://w3id.org/aio/MachineLearningSubset> "Machine Learning Subset"@en)
+AnnotationAssertion(rdfs:comment <https://w3id.org/aio/ModelSubset> "Model Subset"@en)
+AnnotationAssertion(rdfs:comment <https://w3id.org/aio/NetworkSubset> "Network Subset"@en)
+AnnotationAssertion(rdfs:comment <https://w3id.org/aio/PreprocessingSubset> "Preprocessing Subset"@en)
+
+
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#SubsetProperty> "subset_property"@en)
+
+AnnotationAssertion(rdfs:label IAO:0000115 "definition")
+
 AnnotationAssertion(rdfs:label dcterms:description "description")
 AnnotationAssertion(rdfs:label dcterms:license "license")
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
+SubAnnotationPropertyOf(<https://w3id.org/aio/BiasSubset> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+SubAnnotationPropertyOf(<https://w3id.org/aio/ClassSubset> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+SubAnnotationPropertyOf(<https://w3id.org/aio/FunctionSubset> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+SubAnnotationPropertyOf(<https://w3id.org/aio/LayerSubset> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+SubAnnotationPropertyOf(<https://w3id.org/aio/MachineLearningSubset> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+SubAnnotationPropertyOf(<https://w3id.org/aio/ModelSubset> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+SubAnnotationPropertyOf(<https://w3id.org/aio/NetworkSubset> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+SubAnnotationPropertyOf(<https://w3id.org/aio/PreprocessingSubset> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+############################
+#   Object Properties
+############################
+
+
+AnnotationAssertion(IAO:0000115 BFO:0000050 "A core relation that holds between a part and its whole"@en)
+AnnotationAssertion(IAO:0000115 BFO:0000051 "A core relation that holds between a whole and its part"@en)
+AnnotationAssertion(rdfs:label BFO:0000050 "part of"@en)
+AnnotationAssertion(rdfs:label BFO:0000051 "has part"@en)
 
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/ARTIFICIAL-INTELLIGENCE-ONTOLOGY_0000000> (root node)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ARTIFICIAL-INTELLIGENCE-ONTOLOGY_0000000> "root node"@en)
-
+############################
+#   Named Individuals
+############################
 
 )
-

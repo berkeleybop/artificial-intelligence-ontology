@@ -1,0 +1,16 @@
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/NaturalLanguageProcessing
+object_label: Natural Language Processing
+match_string: Natural Language Processing
+matches_whole_text: false
+subject_start: 10
+subject_end: 36
+
+---
+predicate_id: rdfs:label
+object_id: https://w3id.org/aio/ReinforcementLearning
+object_label: Reinforcement Learning
+match_string: Reinforcement Learning
+matches_whole_text: false
+subject_start: 10
+subject_end: 31
