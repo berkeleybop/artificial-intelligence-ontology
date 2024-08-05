@@ -24,11 +24,26 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0002587 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002587">
+        <owl:equivalentClass rdf:resource="https://w3id.org/aio/MachineLearning"/>
+        <rdfs:label>machine learning</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000">
         <rdfs:label xml:lang="en">data transformation</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/aio/MachineLearning -->
+
+    <owl:Class rdf:about="https://w3id.org/aio/MachineLearning"/>
     
 
 
