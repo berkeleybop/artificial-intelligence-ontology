@@ -21,6 +21,62 @@
     
 
 
+    <!-- http://example.com/Bias -->
+
+    <Class rdf:about="http://example.com/Bias">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </Class>
+    
+
+
+    <!-- http://example.com/Layer -->
+
+    <Class rdf:about="http://example.com/Layer">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </Class>
+    
+
+
+    <!-- http://example.com/MachineLearningTask -->
+
+    <Class rdf:about="http://example.com/MachineLearningTask">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </Class>
+    
+
+
+    <!-- http://example.com/MathematicalFunction -->
+
+    <Class rdf:about="http://example.com/MathematicalFunction">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </Class>
+    
+
+
+    <!-- http://example.com/Model -->
+
+    <Class rdf:about="http://example.com/Model">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </Class>
+    
+
+
+    <!-- http://example.com/Network -->
+
+    <Class rdf:about="http://example.com/Network">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </Class>
+    
+
+
+    <!-- http://example.com/Preprocessing -->
+
+    <Class rdf:about="http://example.com/Preprocessing">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016"/>
@@ -36,62 +92,6 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    
-
-
-    <!-- https://w3id.org/aio/Bias -->
-
-    <Class rdf:about="https://w3id.org/aio/Bias">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-    </Class>
-    
-
-
-    <!-- https://w3id.org/aio/Function -->
-
-    <Class rdf:about="https://w3id.org/aio/Function">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    </Class>
-    
-
-
-    <!-- https://w3id.org/aio/Layer -->
-
-    <Class rdf:about="https://w3id.org/aio/Layer">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    </Class>
-    
-
-
-    <!-- https://w3id.org/aio/MachineLearning -->
-
-    <Class rdf:about="https://w3id.org/aio/MachineLearning">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    </Class>
-    
-
-
-    <!-- https://w3id.org/aio/Model -->
-
-    <Class rdf:about="https://w3id.org/aio/Model">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    </Class>
-    
-
-
-    <!-- https://w3id.org/aio/Network -->
-
-    <Class rdf:about="https://w3id.org/aio/Network">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    </Class>
-    
-
-
-    <!-- https://w3id.org/aio/Preprocessing -->
-
-    <Class rdf:about="https://w3id.org/aio/Preprocessing">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    </Class>
 </rdf:RDF>
 
 

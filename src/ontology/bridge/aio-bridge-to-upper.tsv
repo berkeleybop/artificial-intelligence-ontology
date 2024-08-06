@@ -1,9 +1,9 @@
-CJM col 1	CJM col 2	AIO current label	AIO propsed label	OBO label	OBO id
-		ID			SC % 
-Bias	disposition	aio:Bias		disposition	BFO:0000016
-Function	rename to MathematicalFunction, place under Planned Process?	aio:Function	aio:MathematicalFunction	planned process	OBI:0000011
-Layer	information artefavt	aio:Layer		information content entity	IAO:0000030
-Machine Learning	relabel to Machine Learning Task. Planned Process	aio:MachineLearning	aio:MachineLearningTask	planned process	OBI:0000011
-Model	Information Artefact	aio:Model		information content entity	IAO:0000030
-Network	Information Aretfact	aio:Network		information content entity	IAO:0000030
-Preprocessing	Planned Process	aio:Preprocessing		planned process	OBI:0000011
+AIO label	OBO label	OBO id
+ID		SC %
+aio:Bias	disposition	BFO:0000016
+aio:MathematicalFunction	planned process	OBI:0000011
+aio:Layer	information content entity	IAO:0000030
+aio:MachineLearningTask	planned process	OBI:0000011
+aio:Model	information content entity	IAO:0000030
+aio:Network	information content entity	IAO:0000030
+aio:Preprocessing	planned process	OBI:0000011
