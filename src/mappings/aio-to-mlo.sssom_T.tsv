@@ -1,36 +1,3 @@
-# curie_map:
-#   aio: http://w3id.org/sssom/unknown_prefix/aio/
-#   cso: http://w3id.org/sssom/unknown_prefix/cso/
-#   oio: http://www.geneontology.org/formats/oboInOwl#
-#   owl: http://www.w3.org/2002/07/owl#
-#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
-#   rdfs: http://www.w3.org/2000/01/rdf-schema#
-#   semapv: https://w3id.org/semapv/vocab/
-#   skos: http://www.w3.org/2004/02/skos/core#
-#   sssom: https://w3id.org/sssom/
-# license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/98ce935b-061f-4458-9166-ab544a218b78
-subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
-EDAM:data_2600	Pathway or network	skos:closeMatch	aio:Network	Network	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	network
-EDAM:format_3602	pgm	skos:closeMatch	aio:Probabilistic_Graphical_Model	Probabilistic Graphical Model	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	pgm
-EDAM:format_3988	LSM	skos:closeMatch	aio:LSM	Liquid State Machine Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	lsm
-EDAM:operation_2990	Classification	skos:closeMatch	aio:Classification	Classification	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	classification
-EDAM:operation_3432	Clustering	skos:closeMatch	aio:Clustering	Clustering	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	clustering
-EDAM:operation_3557	Imputation	skos:closeMatch	aio:Data_Imputation	Data Imputation	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	data imputation
-EDAM:operation_3659	Regression analysis	skos:closeMatch	aio:Regression_Analysis	Regression Analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	regression analysis
-EDAM:operation_3659	Regression analysis	skos:closeMatch	aio:Regression_Analysis	Regression Analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	regression analysis
-EDAM:operation_3891	Essential dynamics	skos:closeMatch	aio:Principal_Component_Analysis	Principal Component Analysis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	pca
-EDAM:operation_3935	Dimensionality reduction	skos:closeMatch	aio:Dimensionality_Reduction	Dimensionality Reduction	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	dimension reduction
-EDAM:operation_3935	Dimensionality reduction	skos:closeMatch	aio:Dimensionality_Reduction	Dimensionality Reduction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dimensionality reduction
-EDAM:operation_3960	Principal component analysis	skos:closeMatch	aio:Principal_Component_Analysis	Principal Component Analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	principal component analysis
-EDAM:topic_0218	Natural language processing	skos:closeMatch	aio:Natural_Language_Processing	Natural Language Processing	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	nlp
-EDAM:topic_0218	Natural language processing	skos:closeMatch	aio:Natural_Language_Processing	Natural Language Processing	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	natural language processing
-EDAM:topic_2269	Statistics and probability	skos:closeMatch	aio:Probabilistic_Graphical_Model	Probabilistic Graphical Model	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	probabilistic graphical model
-EDAM:topic_3474	Machine learning	skos:closeMatch	aio:Active_Learning	Active Learning	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	active learning
-EDAM:topic_3474	Machine learning	skos:closeMatch	aio:Machine_Learning	Machine Learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	machine learning
-EDAM:topic_3474	Machine learning	skos:closeMatch	aio:Reinforcement_Learning	Reinforcement Learning	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	reinforcement learning
-EDAM:topic_3474	Machine learning	skos:closeMatch	aio:Supervised_Learning	Supervised Learning	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	supervised learning
-EDAM:topic_3474	Machine learning	skos:closeMatch	aio:Unsupervised_Learning	Unsupervised Learning	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	unsupervised learning
 aio:AveragePooling1D_Layer	AveragePooling1D Layer	skos:closeMatch	aio:AvgPool1D_Layer	AvgPool1D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool1d
 aio:AveragePooling1D_Layer	AveragePooling1D Layer	skos:closeMatch	aio:AvgPool1D_Layer	AvgPool1D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool1d
 aio:AveragePooling1D_Layer	AveragePooling1D Layer	skos:closeMatch	aio:AvgPool1D_Layer	AvgPool1D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool1d
