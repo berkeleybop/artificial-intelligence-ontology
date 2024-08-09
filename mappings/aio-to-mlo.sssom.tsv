@@ -1,0 +1,43 @@
+# curie_map:
+#   aio: http://w3id.org/sssom/unknown_prefix/aio/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/b5618bac-c47f-4c10-97ee-edcffb3df244
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+aio:AveragePooling1D_Layer	AveragePooling1D Layer	skos:closeMatch	aio:AvgPool1D_Layer	AvgPool1D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool1d
+aio:AveragePooling1D_Layer	AveragePooling1D Layer	skos:closeMatch	aio:AvgPool1D_Layer	AvgPool1D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool1d
+aio:AveragePooling1D_Layer	AveragePooling1D Layer	skos:closeMatch	aio:AvgPool1D_Layer	AvgPool1D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool1d
+aio:AveragePooling1D_Layer	AveragePooling1D Layer	skos:closeMatch	aio:AvgPool1D_Layer	AvgPool1D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool1d
+aio:AveragePooling2D_Layer	AveragePooling2D Layer	skos:closeMatch	aio:AvgPool2D_Layer	AvgPool2D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool2d
+aio:AveragePooling2D_Layer	AveragePooling2D Layer	skos:closeMatch	aio:AvgPool2D_Layer	AvgPool2D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool2d
+aio:AveragePooling2D_Layer	AveragePooling2D Layer	skos:closeMatch	aio:AvgPool2D_Layer	AvgPool2D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool2d
+aio:AveragePooling2D_Layer	AveragePooling2D Layer	skos:closeMatch	aio:AvgPool2D_Layer	AvgPool2D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool2d
+aio:AveragePooling3D_Layer	AveragePooling3D Layer	skos:closeMatch	aio:AvgPool3D_Layer	AvgPool3D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool3d
+aio:AveragePooling3D_Layer	AveragePooling3D Layer	skos:closeMatch	aio:AvgPool3D_Layer	AvgPool3D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool3d
+aio:AveragePooling3D_Layer	AveragePooling3D Layer	skos:closeMatch	aio:AvgPool3D_Layer	AvgPool3D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool3d
+aio:AveragePooling3D_Layer	AveragePooling3D Layer	skos:closeMatch	aio:AvgPool3D_Layer	AvgPool3D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool3d
+aio:Biclustering	Biclustering	skos:closeMatch	aio:Unsupervised_Biclustering	Unsupervised Biclustering	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	block clustering
+aio:Biclustering	Biclustering	skos:closeMatch	aio:Unsupervised_Biclustering	Unsupervised Biclustering	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	co-clustering
+aio:Biclustering	Biclustering	skos:closeMatch	aio:Unsupervised_Biclustering	Unsupervised Biclustering	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	joint clustering
+aio:Biclustering	Biclustering	skos:closeMatch	aio:Unsupervised_Biclustering	Unsupervised Biclustering	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	two-mode clustering
+aio:Biclustering	Biclustering	skos:closeMatch	aio:Unsupervised_Biclustering	Unsupervised Biclustering	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	two-way clustering
+aio:Clustering	Clustering	skos:closeMatch	aio:Supervised_Clustering	Supervised Clustering	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	cluster analysis
+aio:Clustering	Clustering	skos:closeMatch	aio:Unsupervised_Clustering	Unsupervised Clustering	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	cluster analysis
+aio:Institutional_Bias	Institutional Bias	skos:closeMatch	aio:Systemic_Bias	Systemic Bias	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	institutional bias
+aio:K-nearest_Neighbor_Algorithm	K-nearest Neighbor Algorithm	skos:closeMatch	aio:K-nearest_Neighbor_Classification_Algorithm	K-nearest Neighbor Classification Algorithm	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	k-nn
+aio:K-nearest_Neighbor_Algorithm	K-nearest Neighbor Algorithm	skos:closeMatch	aio:K-nearest_Neighbor_Classification_Algorithm	K-nearest Neighbor Classification Algorithm	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	knn
+aio:K-nearest_Neighbor_Algorithm	K-nearest Neighbor Algorithm	skos:closeMatch	aio:K-nearest_Neighbor_Regression_Algorithm	K-nearest Neighbor Regression Algorithm	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	k-nn
+aio:K-nearest_Neighbor_Algorithm	K-nearest Neighbor Algorithm	skos:closeMatch	aio:K-nearest_Neighbor_Regression_Algorithm	K-nearest Neighbor Regression Algorithm	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	knn
+aio:K-nearest_Neighbor_Classification_Algorithm	K-nearest Neighbor Classification Algorithm	skos:closeMatch	aio:K-nearest_Neighbor_Regression_Algorithm	K-nearest Neighbor Regression Algorithm	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	k-nn
+aio:K-nearest_Neighbor_Classification_Algorithm	K-nearest Neighbor Classification Algorithm	skos:closeMatch	aio:K-nearest_Neighbor_Regression_Algorithm	K-nearest Neighbor Regression Algorithm	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	knn
+aio:N2V_CBOW	node2vec-CBOW	skos:closeMatch	aio:W2V_CBOW	word2vec-CBOW	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	cbow
+aio:N2V_SkipGram	node2vec-SkipGram	skos:closeMatch	aio:W2V_SkipGram	word2vec-SkipGram	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	skipgram
+aio:Societal_Bias	Societal Bias	skos:closeMatch	aio:Systemic_Bias	Systemic Bias	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	societal bias
+aio:Supervised_Clustering	Supervised Clustering	skos:closeMatch	aio:Unsupervised_Clustering	Unsupervised Clustering	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	cluster analysis
+
