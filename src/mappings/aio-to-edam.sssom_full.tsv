@@ -9,149 +9,26 @@
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/18f09b93-8ab9-4eb4-b409-26a9f27f6d9a
+# mapping_set_id: https://w3id.org/sssom/mappings/689fe299-5338-4ec6-b24e-ed0cb1c4421f
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
-EDAM:citation	Citation	skos:closeMatch	EDAM:data_0970	Citation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	citation
-EDAM:data_0582	Ontology	skos:closeMatch	EDAM:topic_0089	Ontology and terminology	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	ontology
-EDAM:data_0858	Sequence signature matches	skos:closeMatch	EDAM:operation_0300	Sequence profile alignment	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasNarrowSynonym	profile-profile alignment
-EDAM:data_0858	Sequence signature matches	skos:closeMatch	EDAM:operation_0300	Sequence profile alignment	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasNarrowSynonym	sequence-profile alignment
-EDAM:data_0858	Sequence signature matches	skos:closeMatch	EDAM:operation_0300	Sequence profile alignment	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	sequence profile alignment
-EDAM:data_0863	Sequence alignment	skos:closeMatch	EDAM:operation_0292	Sequence alignment	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sequence alignment
-EDAM:data_0872	Phylogenetic tree	skos:closeMatch	EDAM:topic_0084	Phylogeny	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	phylogeny
-EDAM:data_0878	Protein secondary structure alignment	skos:closeMatch	EDAM:operation_2488	Protein secondary structure comparison	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	protein secondary structure alignment
-EDAM:data_0881	RNA secondary structure alignment	skos:closeMatch	EDAM:operation_0502	RNA secondary structure alignment	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	secondary structure alignment (rna)
-EDAM:data_0881	RNA secondary structure alignment	skos:closeMatch	EDAM:operation_0502	RNA secondary structure alignment	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rna secondary structure alignment
-EDAM:data_0886	Structure alignment	skos:closeMatch	EDAM:operation_0295	Structure alignment	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	structure alignment
-EDAM:data_0890	Structural (3D) profile alignment	skos:closeMatch	EDAM:operation_0295	Structure alignment	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	structural profile alignment
-EDAM:data_0893	Sequence-structure alignment	skos:closeMatch	EDAM:operation_0302	Protein threading	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	sequence-structure alignment
-EDAM:data_0897	Protein property	skos:closeMatch	EDAM:topic_0123	Protein properties	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	protein properties
-EDAM:data_0925	Sequence assembly	skos:closeMatch	EDAM:operation_0310	Sequence assembly	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sequence assembly
-EDAM:data_0925	Sequence assembly	skos:closeMatch	EDAM:topic_0196	Sequence assembly	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sequence assembly
-EDAM:data_0945	Peptide identification	skos:closeMatch	EDAM:operation_3631	Peptide identification	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	peptide identification
-EDAM:data_0945	Peptide identification	skos:closeMatch	EDAM:topic_0121	Proteomics	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	peptide identification
-EDAM:data_1008	Polypeptide chain ID	skos:closeMatch	EDAM:data_2626	PeptideAtlas ID	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	pdbml:pdbx_pdb_strand_id
-EDAM:data_1016	Sequence position	skos:closeMatch	EDAM:data_2012	Sequence coordinates	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	pdbml:_atom_site.id
-EDAM:data_1025	Gene identifier	skos:closeMatch	EDAM:data_2727	Promoter ID	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	moby:geneaccessionlist
-EDAM:data_1239	Restriction digest	skos:closeMatch	EDAM:operation_0365	Restriction digest	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	restriction digest
-EDAM:data_1255	Sequence features	skos:closeMatch	EDAM:operation_0253	Sequence feature detection	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	so:0000110
-EDAM:data_1255	Sequence features	skos:closeMatch	EDAM:topic_0160	Sequence sites, features and motifs	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	sequence features
-EDAM:data_1261	Sequence composition report	skos:closeMatch	EDAM:topic_0157	Sequence composition, complexity and repeats	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	sequence composition
-EDAM:data_1274	Map	skos:closeMatch	EDAM:format_3285	MAP	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	map
-EDAM:data_1352	Regular expression	skos:closeMatch	EDAM:regex	Regular expression	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	regular expression
-EDAM:data_1459	Nucleic acid structure	skos:closeMatch	EDAM:topic_0097	Nucleic acid structure analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	nucleic acid structure
-EDAM:data_1460	Protein structure	skos:closeMatch	EDAM:topic_2814	Protein structure analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	protein structure
-EDAM:data_1463	Small molecule structure	skos:closeMatch	EDAM:topic_0154	Small molecules	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	chebi:23367
-EDAM:data_1464	DNA structure	skos:closeMatch	EDAM:topic_0097	Nucleic acid structure analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	dna structure
-EDAM:data_1465	RNA structure	skos:closeMatch	EDAM:topic_0097	Nucleic acid structure analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	rna structure
-EDAM:data_1493	RNA structure alignment	skos:closeMatch	EDAM:topic_0097	Nucleic acid structure analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	rna structure alignment
-EDAM:data_1872	Taxonomic classification	skos:closeMatch	EDAM:operation_3460	Taxonomic classification	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	taxonomic classification
-EDAM:data_1916	Alignment	skos:closeMatch	EDAM:operation_2928	Alignment	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	alignment
-EDAM:data_2044	Sequence	skos:closeMatch	EDAM:topic_0080	Sequence analysis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	sequences
 EDAM:data_2600	Pathway or network	skos:closeMatch	aio:Network	Network	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	network
-EDAM:data_2956	Protein secondary structure	skos:closeMatch	EDAM:operation_2488	Protein secondary structure comparison	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	protein secondary structure
-EDAM:data_2956	Protein secondary structure	skos:closeMatch	EDAM:topic_3542	Protein secondary structure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	protein secondary structure
-EDAM:data_2977	Nucleic acid sequence	skos:closeMatch	EDAM:data_3494	DNA sequence	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	dna sequence
-EDAM:data_3028	Taxonomy	skos:closeMatch	EDAM:topic_0637	Taxonomy	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	taxonomy
-EDAM:data_3134	Gene transcript report	skos:closeMatch	EDAM:topic_3512	Gene transcripts	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	mrna features
-EDAM:data_3275	Phenotype name	skos:closeMatch	EDAM:topic_0625	Genotype and phenotype	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	phenotype
-EDAM:data_3505	Bibliography	skos:closeMatch	EDAM:topic_3068	Literature and language	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	bibliography
-EDAM:data_3717	Isolation report	skos:closeMatch	EDAM:data_3720	Geographic location	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	geographic location
-EDAM:data_3717	Isolation report	skos:closeMatch	EDAM:data_3721	Isolation source	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	isolation source
-EDAM:data_3756	Localisation score	skos:closeMatch	EDAM:operation_3755	PTM localisation	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	ptm localisation
-EDAM:documentation	Documentation	skos:closeMatch	EDAM:topic_3068	Literature and language	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	documentation
-EDAM:format_1212	dna	skos:closeMatch	EDAM:topic_0654	DNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dna
-EDAM:format_1213	rna	skos:closeMatch	EDAM:topic_0099	RNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rna
-EDAM:format_1921	Alignment format	skos:closeMatch	EDAM:format_3811	XMFA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	alignment format
-EDAM:format_1997	PHYLIP format	skos:closeMatch	EDAM:format_3819	Relaxed PHYLIP Interleaved	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	phylip interleaved format
-EDAM:format_3309	CT	skos:closeMatch	EDAM:topic_3452	Tomography	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	ct
 EDAM:format_3602	pgm	skos:closeMatch	aio:Probabilistic_Graphical_Model	Probabilistic Graphical Model	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	pgm
 EDAM:format_3988	LSM	skos:closeMatch	aio:LSM	Liquid State Machine Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	lsm
-EDAM:has_input	has input	skos:closeMatch	EDAM:has_output	has output	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	obo_rel:has_participant
-EDAM:is_format_of	is format of	skos:closeMatch	EDAM:is_topic_of	is topic of	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	obo_rel:quality_of
-EDAM:is_input_of	is input of	skos:closeMatch	EDAM:is_output_of	is output of	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	obo_rel:participates_in
-EDAM:operation_0279	Nucleic acid folding analysis	skos:closeMatch	EDAM:topic_0082	Structure prediction	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	nucleic acid folding
-EDAM:operation_0282	Genetic mapping	skos:closeMatch	EDAM:topic_0102	Mapping	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	linkage mapping
-EDAM:operation_0303	Fold recognition	skos:closeMatch	EDAM:topic_0082	Structure prediction	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	protein fold recognition
-EDAM:operation_0306	Text mining	skos:closeMatch	EDAM:topic_0218	Natural language processing	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	literature mining
-EDAM:operation_0306	Text mining	skos:closeMatch	EDAM:topic_0218	Natural language processing	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	text analytics
-EDAM:operation_0306	Text mining	skos:closeMatch	EDAM:topic_0218	Natural language processing	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	text data mining
-EDAM:operation_0306	Text mining	skos:closeMatch	EDAM:topic_0218	Natural language processing	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	text mining
-EDAM:operation_0310	Sequence assembly	skos:closeMatch	EDAM:topic_0196	Sequence assembly	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sequence assembly
-EDAM:operation_0314	Gene expression profiling	skos:closeMatch	EDAM:topic_0203	Gene expression	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	gene expression profiling
-EDAM:operation_0323	Phylogenetic inference	skos:closeMatch	EDAM:operation_3478	Phylogenetic reconstruction	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	phylogenetic reconstruction
-EDAM:operation_0337	Visualisation	skos:closeMatch	EDAM:topic_0092	Data visualisation	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	data visualisation
-EDAM:operation_0362	Genome annotation	skos:closeMatch	EDAM:topic_0622	Genomics	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	genome annotation
-EDAM:operation_0474	Protein structure prediction	skos:closeMatch	EDAM:topic_0082	Structure prediction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	protein structure prediction
-EDAM:operation_0475	Nucleic acid structure prediction	skos:closeMatch	EDAM:topic_0082	Structure prediction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	nucleic acid structure prediction
-EDAM:operation_0477	Protein modelling	skos:closeMatch	EDAM:topic_2275	Molecular modelling	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	comparative modelling
-EDAM:operation_0477	Protein modelling	skos:closeMatch	EDAM:topic_2275	Molecular modelling	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	homology modelling
-EDAM:operation_0478	Molecular docking	skos:closeMatch	EDAM:topic_2275	Molecular modelling	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	molecular docking
-EDAM:operation_1777	Protein function prediction	skos:closeMatch	EDAM:topic_1775	Function analysis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	protein function analysis
-EDAM:operation_1777	Protein function prediction	skos:closeMatch	EDAM:topic_1775	Function analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	protein function prediction
-EDAM:operation_2403	Sequence analysis	skos:closeMatch	EDAM:topic_0080	Sequence analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sequence analysis
-EDAM:operation_2406	Protein structure analysis	skos:closeMatch	EDAM:topic_2814	Protein structure analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	protein structure analysis
-EDAM:operation_2429	Mapping	skos:closeMatch	EDAM:topic_0102	Mapping	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mapping
-EDAM:operation_2441	RNA structure prediction	skos:closeMatch	EDAM:topic_0082	Structure prediction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	rna structure prediction
-EDAM:operation_2442	DNA structure prediction	skos:closeMatch	EDAM:topic_0082	Structure prediction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	dna structure prediction
-EDAM:operation_2476	Molecular dynamics	skos:closeMatch	EDAM:topic_0176	Molecular dynamics	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasNarrowSynonym	protein dynamics
-EDAM:operation_2476	Molecular dynamics	skos:closeMatch	EDAM:topic_0176	Molecular dynamics	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	molecular dynamics
-EDAM:operation_2480	Structure analysis	skos:closeMatch	EDAM:topic_0081	Structure analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	structure analysis
-EDAM:operation_2481	Nucleic acid structure analysis	skos:closeMatch	EDAM:topic_0097	Nucleic acid structure analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nucleic acid structure analysis
-EDAM:operation_2488	Protein secondary structure comparison	skos:closeMatch	EDAM:topic_3542	Protein secondary structure	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	protein secondary structure
 EDAM:operation_2990	Classification	skos:closeMatch	aio:Classification	Classification	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	classification
-EDAM:operation_3095	Nucleic acid design	skos:closeMatch	EDAM:topic_0082	Structure prediction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	nucleic acid design
-EDAM:operation_3196	Genotyping	skos:closeMatch	EDAM:topic_0625	Genotype and phenotype	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	genotyping
 EDAM:operation_3432	Clustering	skos:closeMatch	aio:Clustering	Clustering	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	clustering
 EDAM:operation_3557	Imputation	skos:closeMatch	aio:Data_Imputation	Data Imputation	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	data imputation
-EDAM:operation_3631	Peptide identification	skos:closeMatch	EDAM:topic_0121	Proteomics	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	peptide identification
 EDAM:operation_3659	Regression analysis	skos:closeMatch	aio:Regression_Analysis	Regression Analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	regression analysis
 EDAM:operation_3659	Regression analysis	skos:closeMatch	aio:Regression_Analysis	Regression Analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	regression analysis
-EDAM:operation_3680	RNA-Seq analysis	skos:closeMatch	EDAM:topic_3170	RNA-Seq	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	rna-seq analysis
 EDAM:operation_3891	Essential dynamics	skos:closeMatch	aio:Principal_Component_Analysis	Principal Component Analysis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	pca
-EDAM:operation_3923	Genome resequencing	skos:closeMatch	EDAM:topic_3673	Whole genome sequencing	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasNarrowSynonym	whole genome resequencing
 EDAM:operation_3935	Dimensionality reduction	skos:closeMatch	aio:Dimensionality_Reduction	Dimensionality Reduction	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	dimension reduction
 EDAM:operation_3935	Dimensionality reduction	skos:closeMatch	aio:Dimensionality_Reduction	Dimensionality Reduction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dimensionality reduction
 EDAM:operation_3960	Principal component analysis	skos:closeMatch	aio:Principal_Component_Analysis	Principal Component Analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	principal component analysis
-EDAM:operation_4008	Protein design	skos:closeMatch	EDAM:topic_0130	Protein folding, stability and design	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasNarrowSynonym	rational protein design
-EDAM:operation_4008	Protein design	skos:closeMatch	EDAM:topic_0130	Protein folding, stability and design	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	protein design
-EDAM:operation_4009	Small molecule design	skos:closeMatch	EDAM:topic_0209	Medicinal chemistry	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	drug design
 EDAM:topic_0218	Natural language processing	skos:closeMatch	aio:Natural_Language_Processing	Natural Language Processing	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	nlp
 EDAM:topic_0218	Natural language processing	skos:closeMatch	aio:Natural_Language_Processing	Natural Language Processing	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	natural language processing
 EDAM:topic_2269	Statistics and probability	skos:closeMatch	aio:Probabilistic_Graphical_Model	Probabilistic Graphical Model	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	probabilistic graphical model
-EDAM:topic_3308	Transcriptomics	skos:closeMatch	EDAM:topic_3941	Metatranscriptomics	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	metatranscriptomics
 EDAM:topic_3474	Machine learning	skos:closeMatch	aio:Active_Learning	Active Learning	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	active learning
 EDAM:topic_3474	Machine learning	skos:closeMatch	aio:Machine_Learning	Machine Learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	machine learning
 EDAM:topic_3474	Machine learning	skos:closeMatch	aio:Reinforcement_Learning	Reinforcement Learning	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	reinforcement learning
 EDAM:topic_3474	Machine learning	skos:closeMatch	aio:Supervised_Learning	Supervised Learning	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	supervised learning
 EDAM:topic_3474	Machine learning	skos:closeMatch	aio:Unsupervised_Learning	Unsupervised Learning	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	unsupervised learning
-aio:AveragePooling1D_Layer	AveragePooling1D Layer	skos:closeMatch	aio:AvgPool1D_Layer	AvgPool1D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool1d
-aio:AveragePooling1D_Layer	AveragePooling1D Layer	skos:closeMatch	aio:AvgPool1D_Layer	AvgPool1D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool1d
-aio:AveragePooling1D_Layer	AveragePooling1D Layer	skos:closeMatch	aio:AvgPool1D_Layer	AvgPool1D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool1d
-aio:AveragePooling1D_Layer	AveragePooling1D Layer	skos:closeMatch	aio:AvgPool1D_Layer	AvgPool1D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool1d
-aio:AveragePooling2D_Layer	AveragePooling2D Layer	skos:closeMatch	aio:AvgPool2D_Layer	AvgPool2D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool2d
-aio:AveragePooling2D_Layer	AveragePooling2D Layer	skos:closeMatch	aio:AvgPool2D_Layer	AvgPool2D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool2d
-aio:AveragePooling2D_Layer	AveragePooling2D Layer	skos:closeMatch	aio:AvgPool2D_Layer	AvgPool2D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool2d
-aio:AveragePooling2D_Layer	AveragePooling2D Layer	skos:closeMatch	aio:AvgPool2D_Layer	AvgPool2D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool2d
-aio:AveragePooling3D_Layer	AveragePooling3D Layer	skos:closeMatch	aio:AvgPool3D_Layer	AvgPool3D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool3d
-aio:AveragePooling3D_Layer	AveragePooling3D Layer	skos:closeMatch	aio:AvgPool3D_Layer	AvgPool3D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool3d
-aio:AveragePooling3D_Layer	AveragePooling3D Layer	skos:closeMatch	aio:AvgPool3D_Layer	AvgPool3D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool3d
-aio:AveragePooling3D_Layer	AveragePooling3D Layer	skos:closeMatch	aio:AvgPool3D_Layer	AvgPool3D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool3d
-aio:Biclustering	Biclustering	skos:closeMatch	aio:Unsupervised_Biclustering	Unsupervised Biclustering	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	block clustering
-aio:Biclustering	Biclustering	skos:closeMatch	aio:Unsupervised_Biclustering	Unsupervised Biclustering	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	co-clustering
-aio:Biclustering	Biclustering	skos:closeMatch	aio:Unsupervised_Biclustering	Unsupervised Biclustering	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	joint clustering
-aio:Biclustering	Biclustering	skos:closeMatch	aio:Unsupervised_Biclustering	Unsupervised Biclustering	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	two-mode clustering
-aio:Biclustering	Biclustering	skos:closeMatch	aio:Unsupervised_Biclustering	Unsupervised Biclustering	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	two-way clustering
-aio:Clustering	Clustering	skos:closeMatch	aio:Supervised_Clustering	Supervised Clustering	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	cluster analysis
-aio:Clustering	Clustering	skos:closeMatch	aio:Unsupervised_Clustering	Unsupervised Clustering	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	cluster analysis
-aio:Institutional_Bias	Institutional Bias	skos:closeMatch	aio:Systemic_Bias	Systemic Bias	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	institutional bias
-aio:K-nearest_Neighbor_Algorithm	K-nearest Neighbor Algorithm	skos:closeMatch	aio:K-nearest_Neighbor_Classification_Algorithm	K-nearest Neighbor Classification Algorithm	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	k-nn
-aio:K-nearest_Neighbor_Algorithm	K-nearest Neighbor Algorithm	skos:closeMatch	aio:K-nearest_Neighbor_Classification_Algorithm	K-nearest Neighbor Classification Algorithm	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	knn
-aio:K-nearest_Neighbor_Algorithm	K-nearest Neighbor Algorithm	skos:closeMatch	aio:K-nearest_Neighbor_Regression_Algorithm	K-nearest Neighbor Regression Algorithm	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	k-nn
-aio:K-nearest_Neighbor_Algorithm	K-nearest Neighbor Algorithm	skos:closeMatch	aio:K-nearest_Neighbor_Regression_Algorithm	K-nearest Neighbor Regression Algorithm	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	knn
-aio:K-nearest_Neighbor_Classification_Algorithm	K-nearest Neighbor Classification Algorithm	skos:closeMatch	aio:K-nearest_Neighbor_Regression_Algorithm	K-nearest Neighbor Regression Algorithm	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	k-nn
-aio:K-nearest_Neighbor_Classification_Algorithm	K-nearest Neighbor Classification Algorithm	skos:closeMatch	aio:K-nearest_Neighbor_Regression_Algorithm	K-nearest Neighbor Regression Algorithm	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	knn
-aio:N2V_CBOW	node2vec-CBOW	skos:closeMatch	aio:W2V_CBOW	word2vec-CBOW	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	cbow
-aio:N2V_SkipGram	node2vec-SkipGram	skos:closeMatch	aio:W2V_SkipGram	word2vec-SkipGram	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	skipgram
-aio:Societal_Bias	Societal Bias	skos:closeMatch	aio:Systemic_Bias	Systemic Bias	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	societal bias
-aio:Supervised_Clustering	Supervised Clustering	skos:closeMatch	aio:Unsupervised_Clustering	Unsupervised Clustering	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	cluster analysis
 
