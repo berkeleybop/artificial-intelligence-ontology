@@ -1,11 +1,3 @@
-poetry run runoak -i sqlite:obo:aio -a sqlite:obo:cso lexmatch -o aio-to-cso.sssom.tsv &> lexmatch_cso.out
-poetry run runoak -i sqlite:obo:aio -a sqlite:obo:swi lexmatch -o aio-to-swo.sssom.tsv &> lexmatch_swo.out
-poetry run runoak -i sqlite:obo:aio -a sqlite:obo:edam lexmatch -o aio-to-edam.sssom.tsv &> lexmatch_edam.out
-poetry run runoak -i sqlite:obo:aio -a sqlite:obo:mlo lexmatch -o aio-to-mlo.sssom.tsv &> lexmatch_mlo.out
-poetry run runoak -i sqlite:obo:aio -a sqlite:obo:obiws lexmatch -o aio-to-obiws.sssom.tsv &> lexmatch_obiws.out
-poetry run runoak -i sqlite:obo:aio -a sqlite:obo:ito lexmatch -o aio-to-ito.sssom.tsv &> lexmatch_ito.out
-poetry run runoak -i sqlite:obo:aio -a sqlite:obo:ncit lexmatch -o aio-to-ncit.sssom.tsv &> lexmatch_ncit.out
-  
 cp aio-to-cso.sssom.tsv aio-to-cso.sssom_full.tsv
 cp aio-to-edam.sssom.tsv aio-to-edam.sssom_full.tsv
 cp aio-to-ito.sssom.tsv aio-to-ito.sssom_full.tsv
