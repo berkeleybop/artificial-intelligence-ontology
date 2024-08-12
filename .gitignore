@@ -1,4 +1,6 @@
 .idea/
+.venv/
+.vscode/
 
 .DS_Store
 semantic.cache
