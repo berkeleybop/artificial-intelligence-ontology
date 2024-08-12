@@ -1,0 +1,64 @@
+# curie_map:
+#   aio: http://w3id.org/sssom/unknown_prefix/aio/
+#   cso: http://w3id.org/sssom/unknown_prefix/cso/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/98ce935b-061f-4458-9166-ab544a218b78
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+cso:ann	ann	skos:closeMatch	aio:ANN	Artificial Neural Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	ann
+cso:artificial_neural_network	artificial neural network	skos:closeMatch	aio:ANN	Artificial Neural Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	artificial neural network
+cso:bayesian_network	bayesian network	skos:closeMatch	aio:Bayesian_Network	Bayesian Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bayesian network
+cso:binary_classification	binary classification	skos:closeMatch	aio:Binary_Classification	Binary Classification	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	binary classification
+cso:cluster_analysis	cluster analysis	skos:closeMatch	aio:Clustering	Clustering	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	cluster analysis
+cso:cluster_analysis	cluster analysis	skos:closeMatch	aio:Supervised_Clustering	Supervised Clustering	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	cluster analysis
+cso:cluster_analysis	cluster analysis	skos:closeMatch	aio:Unsupervised_Clustering	Unsupervised Clustering	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	cluster analysis
+cso:clustering	clustering	skos:closeMatch	aio:Clustering	Clustering	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	clustering
+cso:cnn	cnn	skos:closeMatch	aio:DCN	Deep Convolutional Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	cnn
+cso:concept_drift	concept drift	skos:closeMatch	aio:Concept_Drift_Bias	Concept Drift Bias	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	concept drift
+cso:decision_tree	decision tree	skos:closeMatch	aio:Decision_Tree	Decision Tree	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	decision tree
+cso:dimensionality_reduction	dimensionality reduction	skos:closeMatch	aio:Dimensionality_Reduction	Dimensionality Reduction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dimensionality reduction
+cso:directed_acyclic_graph	directed acyclic graph	skos:closeMatch	aio:Causal_Graphical_Model	Causal Graphical Model	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	directed acyclic graph
+cso:echo_state_network	echo state network	skos:closeMatch	aio:ESN	Echo State Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	echo state network
+cso:ensemble_learning	ensemble learning	skos:closeMatch	aio:Ensemble_Learning	Ensemble Learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ensemble learning
+cso:extreme_learning_machine	extreme learning machine	skos:closeMatch	aio:ELM	Extreme Learning Machine	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	extreme learning machine
+cso:gan	gan	skos:closeMatch	aio:GAN	Generative Adversarial Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	gan
+cso:gated_recurrent_unit	gated recurrent unit	skos:closeMatch	aio:GRU	Gated Recurrent Unit	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gated recurrent unit
+cso:graphical_model	graphical model	skos:closeMatch	aio:Probabilistic_Graphical_Model	Probabilistic Graphical Model	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	graphical model
+cso:hierarchical_clustering	hierarchical clustering	skos:closeMatch	aio:Hierarchical_Clustering	Hierarchical Clustering	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hierarchical clustering
+cso:k-nn	k-nn	skos:closeMatch	aio:K-nearest_Neighbor_Algorithm	K-nearest Neighbor Algorithm	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	k-nn
+cso:k-nn	k-nn	skos:closeMatch	aio:K-nearest_Neighbor_Classification_Algorithm	K-nearest Neighbor Classification Algorithm	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	k-nn
+cso:k-nn	k-nn	skos:closeMatch	aio:K-nearest_Neighbor_Regression_Algorithm	K-nearest Neighbor Regression Algorithm	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	k-nn
+cso:knn	knn	skos:closeMatch	aio:K-nearest_Neighbor_Algorithm	K-nearest Neighbor Algorithm	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	knn
+cso:knn	knn	skos:closeMatch	aio:K-nearest_Neighbor_Classification_Algorithm	K-nearest Neighbor Classification Algorithm	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	knn
+cso:knn	knn	skos:closeMatch	aio:K-nearest_Neighbor_Regression_Algorithm	K-nearest Neighbor Regression Algorithm	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	knn
+cso:least-squares_analysis	least-squares analysis	skos:closeMatch	aio:Least-squares_Analysis	Least-squares Analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	least-squares analysis
+cso:life-long_learning	life-long learning	skos:closeMatch	aio:Continual_Learning	Continual Learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	life-long learning
+cso:logistic_regression	logistic regression	skos:closeMatch	aio:Logistic_Regression	Logistic Regression	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	logistic regression
+cso:lstm	lstm	skos:closeMatch	aio:LSTM	Long Short Term Memory	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	lstm
+cso:machine_learning	machine learning	skos:closeMatch	aio:Machine_Learning	Machine Learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	machine learning
+cso:manifold_learning	manifold learning	skos:closeMatch	aio:Manifold_Learning	Manifold Learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	manifold learning
+cso:markov_chain	markov chain	skos:closeMatch	aio:MC	Markov Chain	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	markov chain
+cso:markov_process	markov process	skos:closeMatch	aio:MC	Markov Chain	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	markov process
+cso:multiclass_classification	multiclass classification	skos:closeMatch	aio:Multiclass_Classification	Multiclass Classification	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	multiclass classification
+cso:natural_language_processing	natural language processing	skos:closeMatch	aio:Natural_Language_Processing	Natural Language Processing	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	natural language processing
+cso:nlp	nlp	skos:closeMatch	aio:Natural_Language_Processing	Natural Language Processing	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	nlp
+cso:output_layer	output layer	skos:closeMatch	aio:Output_Layer	Output Layer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	output layer
+cso:proportional_hazards_model	proportional hazards model	skos:closeMatch	aio:Proportional_Hazards_Model	Proportional Hazards Model	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	proportional hazards model
+cso:random_forest	random forest	skos:closeMatch	aio:Random_Forest	Random Forest	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	random forest
+cso:recurrent_neural_network	recurrent neural network	skos:closeMatch	aio:RecNN	Recurrent Neural Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	recurrent neural network
+cso:regression_analysis	regression analysis	skos:closeMatch	aio:Regression_Analysis	Regression Analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	regression analysis
+cso:regression_analysis	regression analysis	skos:closeMatch	aio:Regression_Analysis	Regression Analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	regression analysis
+cso:regression_model	regression model	skos:closeMatch	aio:Regression_Analysis	Regression Analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	regression model
+cso:reinforcement_learning	reinforcement learning	skos:closeMatch	aio:Reinforcement_Learning	Reinforcement Learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reinforcement learning
+cso:self-organizing_feature_map	self-organizing feature map	skos:closeMatch	aio:KN	Kohonen Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	self-organizing feature map
+cso:self-organizing_map	self-organizing map	skos:closeMatch	aio:KN	Kohonen Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	self-organizing map
+cso:som	som	skos:closeMatch	aio:KN	Kohonen Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	som
+cso:support_vector_machine	support vector machine	skos:closeMatch	aio:SVM	Support Vector Machine	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	support vector machine
+cso:svm	svm	skos:closeMatch	aio:SVM	Support Vector Machine	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	svm
+cso:unsupervised_learning	unsupervised learning	skos:closeMatch	aio:Unsupervised_Learning	Unsupervised Learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	unsupervised learning
