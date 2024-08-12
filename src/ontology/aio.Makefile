@@ -22,6 +22,8 @@ aio-src.csv:
 	curl -L -s $(SRC_URL) > $@
 
 components/aio-component.owl: aio-src.csv
+	# the prefix AIO is used in the Google Sheet so we provide an expansion here
+	# but aio-edit.owl asserts the same expansion for aio, so that becomes authoritative downstream
 	robot template \
 	  --add-prefix 'AIO: https://w3id.org/aio/' \
 	  --add-prefix 'oio: http://www.geneontology.org/formats/oboInOwl#' \
