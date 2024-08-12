@@ -1,4 +1,4 @@
-Prefix(:=<https://w3id.org/aio>)
+Prefix(aio:=<https://w3id.org/aio/>)
 Prefix(BFO:=<http://purl.obolibrary.org/obo/BFO_>)
 Prefix(IAO:=<http://purl.obolibrary.org/obo/IAO_>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)

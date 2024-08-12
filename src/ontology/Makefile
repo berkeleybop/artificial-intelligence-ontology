@@ -18,10 +18,10 @@ CONFIG_HASH=                e057f9f24dce4058e13705bc59f45fc4ca814ee95f6006fffb3a
 # ----------------------------------------
 # these can be overwritten on the command line
 
-OBOBASE=                    http://purl.obolibrary.org/obo
-URIBASE=                    http://purl.obolibrary.org/obo
+OBOBASE=                    https://w3id.org/aio
+URIBASE=                    https://w3id.org/aio
 ONT=                        aio
-ONTBASE=                    http://purl.obolibrary.org/obo/aio
+ONTBASE=                    https://w3id.org/aio
 EDIT_FORMAT=                owl
 SRC =                       $(ONT)-edit.$(EDIT_FORMAT)
 MAKE_FAST=                  $(MAKE) IMP=false PAT=false COMP=false MIR=false
