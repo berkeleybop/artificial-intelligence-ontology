@@ -1,16 +1,19 @@
-# curie_map:										
-#   aio: http://w3id.org/sssom/unknown_prefix/aio/										
-#   cso: http://w3id.org/sssom/unknown_prefix/cso/										
-#   oio: http://www.geneontology.org/formats/oboInOwl#										
-#   owl: http://www.w3.org/2002/07/owl#										
-#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#										
-#   rdfs: http://www.w3.org/2000/01/rdf-schema#										
-#   semapv: https://w3id.org/semapv/vocab/										
-#   skos: http://www.w3.org/2004/02/skos/core#										
-#   sssom: https://w3id.org/sssom/										
-# license: https://w3id.org/sssom/license/unspecified										
-# mapping_set_id: https://w3id.org/sssom/mappings/98ce935b-061f-4458-9166-ab544a218b78										
+# curie_map:
+#   aio: http://w3id.org/sssom/unknown_prefix/aio/
+#   cso: http://w3id.org/sssom/unknown_prefix/cso/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/98ce935b-061f-4458-9166-ab544a218b78
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+OBI:0000700	support vector machine	skos:closeMatch	aio:SVM	Support Vector Machine	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	support vector machine
+OBI:0200042	hierarchical clustering	skos:closeMatch	aio:Hierarchical_Clustering	Hierarchical Clustering	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hierarchical clustering
+OBI:0200050	dimensionality reduction	skos:closeMatch	aio:Dimensionality_Reduction	Dimensionality Reduction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dimensionality reduction
 aio:AveragePooling1D_Layer	AveragePooling1D Layer	skos:closeMatch	aio:AvgPool1D_Layer	AvgPool1D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool1d
 aio:AveragePooling1D_Layer	AveragePooling1D Layer	skos:closeMatch	aio:AvgPool1D_Layer	AvgPool1D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool1d
 aio:AveragePooling1D_Layer	AveragePooling1D Layer	skos:closeMatch	aio:AvgPool1D_Layer	AvgPool1D Layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	avgpool1d
