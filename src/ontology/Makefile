@@ -701,3 +701,5 @@ endef
 export data
 
 include aio.Makefile
+
+make-aio: clean clean-extras remove-old-input components-from-new-input all
