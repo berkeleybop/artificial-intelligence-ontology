@@ -1,0 +1,15 @@
+PREFIX  obo:  <http://purl.obolibrary.org/obo/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT  ?parent ?parent_label ?child ?child_def
+WHERE
+  { ?child  rdfs:subClassOf  ?parent
+    MINUS
+      { ?child  rdfs:subClassOf  <http://www.w3.org/2002/07/owl#Thing> }
+    FILTER isURI(?parent)
+    OPTIONAL
+      { ?child  obo:IAO_0000115  ?child_def }
+    OPTIONAL
+      { ?parent rdfs:label ?parent_label }
+  }
+ORDER BY ?parent ?child
