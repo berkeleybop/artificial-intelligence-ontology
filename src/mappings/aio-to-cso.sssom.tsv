@@ -1,23 +1,21 @@
-# curie_map:
-#   aio: http://w3id.org/sssom/unknown_prefix/aio/
-#   cso: http://w3id.org/sssom/unknown_prefix/cso/
-#   oio: http://www.geneontology.org/formats/oboInOwl#
-#   owl: http://www.w3.org/2002/07/owl#
-#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
-#   rdfs: http://www.w3.org/2000/01/rdf-schema#
-#   semapv: https://w3id.org/semapv/vocab/
-#   skos: http://www.w3.org/2004/02/skos/core#
-#   sssom: https://w3id.org/sssom/
-# license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/98ce935b-061f-4458-9166-ab544a218b78
+# curie_map:										
+#   aio: http://w3id.org/sssom/unknown_prefix/aio/										
+#   cso: http://w3id.org/sssom/unknown_prefix/cso/										
+#   oio: http://www.geneontology.org/formats/oboInOwl#										
+#   owl: http://www.w3.org/2002/07/owl#										
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#										
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#										
+#   semapv: https://w3id.org/semapv/vocab/										
+#   skos: http://www.w3.org/2004/02/skos/core#										
+#   sssom: https://w3id.org/sssom/										
+# license: https://w3id.org/sssom/license/unspecified										
+# mapping_set_id: https://w3id.org/sssom/mappings/98ce935b-061f-4458-9166-ab544a218b78										
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 cso:ann	ann	skos:closeMatch	https://w3id.org/aio/ArtificialNeuralNetwork	Artificial Neural Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	ann
 cso:artificial_neural_network	artificial neural network	skos:closeMatch	https://w3id.org/aio/ArtificialNeuralNetwork	Artificial Neural Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	artificial neural network
 cso:bayesian_network	bayesian network	skos:closeMatch	https://w3id.org/aio/BayesianNetwork	Bayesian Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bayesian network
 cso:binary_classification	binary classification	skos:closeMatch	https://w3id.org/aio/BinaryClassification	Binary Classification	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	binary classification
 cso:cluster_analysis	cluster analysis	skos:closeMatch	https://w3id.org/aio/Clustering	Clustering	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	cluster analysis
-cso:cluster_analysis	cluster analysis	skos:closeMatch	https://w3id.org/aio/SupervisedClustering	Supervised Clustering	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	cluster analysis
-cso:cluster_analysis	cluster analysis	skos:closeMatch	https://w3id.org/aio/UnsupervisedClustering	Unsupervised Clustering	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	cluster analysis
 cso:clustering	clustering	skos:closeMatch	https://w3id.org/aio/Clustering	Clustering	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	clustering
 cso:cnn	cnn	skos:closeMatch	https://w3id.org/aio/DeepConvolutionalNetwork	Deep Convolutional Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	cnn
 cso:computational_efficiency	computational efficiency	skos:closeMatch	https://w3id.org/aio/ModelEfficiency	Model Efficiency	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	computational efficiency
@@ -37,16 +35,10 @@ cso:gated_recurrent_unit	gated recurrent unit	skos:closeMatch	https://w3id.org/a
 cso:genetic_programming	genetic programming	skos:closeMatch	https://w3id.org/aio/EvolutionaryLLM	Evolutionary LLM	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	genetic programming
 cso:graphical_model	graphical model	skos:closeMatch	https://w3id.org/aio/ProbabilisticGraphicalModel	Probabilistic Graphical Model	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	graphical model
 cso:hierarchical_clustering	hierarchical clustering	skos:closeMatch	https://w3id.org/aio/HierarchicalClustering	Hierarchical Clustering	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hierarchical clustering
-cso:interpretability	interpretability	skos:closeMatch	https://w3id.org/aio/ExplainableLLM	Explainable LLM	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	interpretability
 cso:k-nn	k-nn	skos:closeMatch	https://w3id.org/aio/KnearestNeighborAlgorithm	K-nearest Neighbor Algorithm	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	k-nn
-cso:k-nn	k-nn	skos:closeMatch	https://w3id.org/aio/KnearestNeighborClassificationAlgorithm	K-nearest Neighbor Classification Algorithm	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	k-nn
-cso:k-nn	k-nn	skos:closeMatch	https://w3id.org/aio/KnearestNeighborRegressionAlgorithm	K-nearest Neighbor Regression Algorithm	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	k-nn
 cso:knn	knn	skos:closeMatch	https://w3id.org/aio/KnearestNeighborAlgorithm	K-nearest Neighbor Algorithm	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	knn
-cso:knn	knn	skos:closeMatch	https://w3id.org/aio/KnearestNeighborClassificationAlgorithm	K-nearest Neighbor Classification Algorithm	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	knn
-cso:knn	knn	skos:closeMatch	https://w3id.org/aio/KnearestNeighborRegressionAlgorithm	K-nearest Neighbor Regression Algorithm	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	knn
 cso:knowledge_transfer	knowledge transfer	skos:closeMatch	https://w3id.org/aio/KnowledgeTransfer	Knowledge Transfer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	knowledge transfer
 cso:language_model	language model	skos:closeMatch	https://w3id.org/aio/LanguageModel	Language Model	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	language model
-cso:language_model	language model	skos:closeMatch	https://w3id.org/aio/LanguageModel	Language Model	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	language model
 cso:least-squares_analysis	least-squares analysis	skos:closeMatch	https://w3id.org/aio/LeastsquaresAnalysis	Least-squares Analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	least-squares analysis
 cso:life-long_learning	life-long learning	skos:closeMatch	https://w3id.org/aio/ContinualLearning	Continual Learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	life-long learning
 cso:logistic_regression	logistic regression	skos:closeMatch	https://w3id.org/aio/LogisticRegression	Logistic Regression	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	logistic regression
@@ -59,13 +51,11 @@ cso:multiclass_classification	multiclass classification	skos:closeMatch	https://
 cso:natural_language_processing	natural language processing	skos:closeMatch	https://w3id.org/aio/NaturalLanguageProcessing	Natural Language Processing	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	natural language processing
 cso:nlp	nlp	skos:closeMatch	https://w3id.org/aio/NaturalLanguageProcessing	Natural Language Processing	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	nlp
 cso:output_layer	output layer	skos:closeMatch	https://w3id.org/aio/OutputLayer	Output Layer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	output layer
-cso:privacy-preserving	privacy-preserving	skos:closeMatch	https://w3id.org/aio/FederatedLLM	Federated LLM	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	privacy-preserving
 cso:proportional_hazards_model	proportional hazards model	skos:closeMatch	https://w3id.org/aio/ProportionalHazardsModel	Proportional Hazards Model	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	proportional hazards model
 cso:random_forest	random forest	skos:closeMatch	https://w3id.org/aio/RandomForest	Random Forest	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	random forest
 cso:reasoning	reasoning	skos:closeMatch	https://w3id.org/aio/ReasoningLLM	Reasoning LLM	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	reasoning
 cso:recurrent_neural_network	recurrent neural network	skos:closeMatch	https://w3id.org/aio/RecurrentNeuralNetwork	Recurrent Neural Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	recurrent neural network
 cso:regression_analysis	regression analysis	skos:closeMatch	https://w3id.org/aio/RegressionAnalysis	Regression Analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	regression analysis
-cso:regression_analysis	regression analysis	skos:closeMatch	https://w3id.org/aio/RegressionAnalysis	Regression Analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	regression analysis
 cso:regression_model	regression model	skos:closeMatch	https://w3id.org/aio/RegressionAnalysis	Regression Analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	regression model
 cso:reinforcement_learning	reinforcement learning	skos:closeMatch	https://w3id.org/aio/ReinforcementLearning	Reinforcement Learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reinforcement learning
 cso:self-organizing_feature_map	self-organizing feature map	skos:closeMatch	https://w3id.org/aio/KohonenNetwork	Kohonen Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	self-organizing feature map
