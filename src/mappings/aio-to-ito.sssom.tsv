@@ -1,0 +1,133 @@
+# curie_map:										
+#   aio: http://w3id.org/sssom/unknown_prefix/aio/										
+#   ito: http://w3id.org/sssom/unknown_prefix/ito/										
+#   oio: http://www.geneontology.org/formats/oboInOwl#										
+#   owl: http://www.w3.org/2002/07/owl#										
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#										
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#										
+#   semapv: https://w3id.org/semapv/vocab/										
+#   skos: http://www.w3.org/2004/02/skos/core#										
+#   sssom: https://w3id.org/sssom/										
+# license: https://w3id.org/sssom/license/unspecified										
+# mapping_set_id: https://w3id.org/sssom/mappings/d9d2417b-e875-4d64-98eb-e317574b26e8										
+aio:NaturalLanguageProcessing	Natural Language Processing	skos:closeMatch	ito:ITO_00141	Natural language processing	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	natural language processing
+aio:CrossDomainLLM	Cross-Domain LLM	skos:closeMatch	ito:ITO_00248	Domain adaptation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	domain adaptation
+aio:PromptbasedFineTuningLLM	Prompt-based Fine-Tuning LLM	skos:closeMatch	ito:ITO_00473	Few-shot learning	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	few-shot learning
+aio:OneshotLearning	One-shot Learning	skos:closeMatch	ito:ITO_00476	One-shot learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	one-shot learning
+aio:ZeroshotLearning	Zero-shot Learning	skos:closeMatch	ito:ITO_00482	Zero-shot learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	zero-shot learning
+aio:ReasoningLLM	Reasoning LLM	skos:closeMatch	ito:ITO_00506x	Reasoning	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	reasoning
+aio:TimeSeriesAnalysis	Time Series Analysis	skos:closeMatch	ito:ITO_00510	Time Series Analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	time series analysis
+aio:TimeSeriesForecasting	Time Series Forecasting	skos:closeMatch	ito:ITO_00514	Time series forecasting	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	time series forecasting
+aio:GenerativeAdversarialNetworkAugmentedLLM	Generative Adversarial Network-Augmented LLM	skos:closeMatch	ito:ITO_00530	Text generation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	text generation
+aio:RepresentationLearning	Representation Learning	skos:closeMatch	ito:ITO_00565	Representation learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	representation learning
+aio:TransferLearning	Transfer Learning	skos:closeMatch	ito:ITO_00713	Transfer learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	transfer learning
+aio:VocabularyReduction	Vocabulary Reduction	skos:closeMatch	ito:ITO_00757	Lexical Simplification	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	lexical simplification
+aio:Classification	Classification	skos:closeMatch	ito:ITO_00774	Classification	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	classification
+aio:Tokenization	Tokenization	skos:closeMatch	ito:ITO_00915	Lexical Analysis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	lexical analysis
+aio:MultilingualLLM	Multilingual LLM	skos:closeMatch	ito:ITO_00969	Cross-lingual transfer	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	cross-lingual transfer
+aio:SurvivalAnalysis	Survival Analysis	skos:closeMatch	ito:ITO_00984	Survival Analysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	survival analysis
+aio:SparseLLM	Sparse LLM	skos:closeMatch	ito:ITO_01005	Model compression	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	model compression
+aio:DataAugmentation	Data Augmentation	skos:closeMatch	ito:ITO_01009	Data Augmentation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	data augmentation
+aio:DimensionalityReduction	Dimensionality Reduction	skos:closeMatch	ito:ITO_01113	Dimensionality Reduction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dimensionality reduction
+aio:ActiveLearning	Active Learning	skos:closeMatch	ito:ITO_01202	Active learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	active learning
+aio:MetaLearning	Meta-Learning	skos:closeMatch	ito:ITO_01262	Meta-learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	meta-learning
+aio:MetricLearning	Metric Learning	skos:closeMatch	ito:ITO_01349	Metric learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metric learning
+aio:Tokenization	Tokenization	skos:closeMatch	ito:ITO_01376	Tokenization	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tokenization
+aio:Clustering	Clustering	skos:closeMatch	ito:ITO_01395	Clustering	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	clustering
+aio:SparseLearning	Sparse Learning	skos:closeMatch	ito:ITO_01463	Sparse learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sparse learning
+aio:ContinualLearning	Continual Learning	skos:closeMatch	ito:ITO_01486	Continual learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	continual learning
+aio:ReinforcementLearning	Reinforcement Learning	skos:closeMatch	ito:ITO_01512	Reinforcement learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reinforcement learning
+aio:SelfsupervisedLearning	Self-supervised Learning	skos:closeMatch	ito:ITO_01517	Self-supervised learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	self-supervised learning
+aio:ReasoningLLM	Reasoning LLM	skos:closeMatch	ito:ITO_01635x	Reasoning	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	reasoning
+aio:DeepConvolutionalNetwork	Deep Convolutional Network	skos:closeMatch	ito:ITO_07816	CNN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	cnn
+aio:SelectionAndSamplingBias	Selection And Sampling Bias	skos:closeMatch	ito:ITO_17424	Selection bias	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	selection bias
+aio:ContrastiveLearning	Contrastive Learning	skos:closeMatch	ito:ITO_17433	Contrastive learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	contrastive learning
+aio:CurriculumLearning	Curriculum Learning	skos:closeMatch	ito:ITO_17466x	Curriculum learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	curriculum learning
+aio:ContinualLearning	Continual Learning	skos:closeMatch	ito:ITO_17479	Incremental learning	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	incremental learning
+aio:CompositionalGeneralizationLLM	Compositional Generalization LLM	skos:closeMatch	ito:ITO_17488x	Systematic generalization	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	systematic generalization
+aio:MultimodalDeepLearning	Multimodal Deep Learning	skos:closeMatch	ito:ITO_17494	Multimodal deep learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	multimodal deep learning
+aio:FederatedLearning	Federated Learning	skos:closeMatch	ito:ITO_17535	Federated learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	federated learning
+aio:EnsembleLearning	Ensemble Learning	skos:closeMatch	ito:ITO_17541	Ensemble Learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ensemble learning
+aio:GeneralizedFewshotLearning	Generalized Few-shot Learning	skos:closeMatch	ito:ITO_17566	Generalized few-shot learning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	generalized few-shot learning
+aio:DeepConvolutionalNetwork	Deep Convolutional Network	skos:closeMatch	ito:ITO_17804	CNN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	cnn
+aio:KohonenNetwork	Kohonen Network	skos:closeMatch	ito:ITO_18164	SOM	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	som
+aio:LongShortTermMemory	Long Short Term Memory	skos:closeMatch	ito:ITO_18262	LSTM	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	lstm
+aio:DeepBeliefNetwork	Deep Belief Network	skos:closeMatch	ito:ITO_18757	DBN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	dbn
+aio:SupportVectorMachine	Support Vector Machine	skos:closeMatch	ito:ITO_18767	SVM	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	svm
+aio:Convolution3DLayer	Convolution3D Layer	skos:closeMatch	ito:ITO_18892	Conv3D	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	conv3d
+aio:LongShortTermMemory	Long Short Term Memory	skos:closeMatch	ito:ITO_19480	lstm	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	lstm
+aio:ArtificialNeuralNetwork	Artificial Neural Network	skos:closeMatch	ito:ITO_19518	NN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	nn
+aio:ResidualNeuralNetwork	Residual Neural Network	skos:closeMatch	ito:ITO_19738	ResNet	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	resnet
+aio:DynamicConditionalCorrelation	Dynamic Conditional Correlation	skos:closeMatch	ito:ITO_20586	DCC	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	dcc
+aio:GatedRecurrentUnit	Gated Recurrent Unit	skos:closeMatch	ito:ITO_20808	GRU	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	gru
+aio:DeepNeuralNetwork	Deep Neural Network	skos:closeMatch	ito:ITO_20863	DNN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	dnn
+aio:BidirectionalTransformerLanguageModel	Bidirectional Transformer Language Model	skos:closeMatch	ito:ITO_21359	BERT	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	bert
+aio:GraphConvolutionalNetwork	Graph Convolutional Network	skos:closeMatch	ito:ITO_21549	GCN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	gcn
+aio:BidirectionalTransformerLanguageModel	Bidirectional Transformer Language Model	skos:closeMatch	ito:ITO_21772	Bert	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	bert
+aio:DeepFeedForwardNetwork	Deep Feed-Forward Network	skos:closeMatch	ito:ITO_21776	MLP	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	mlp
+aio:GenerativeAdversarialNetwork	Generative Adversarial Network	skos:closeMatch	ito:ITO_22249	GAN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	gan
+aio:KnearestNeighborAlgorithm	K-nearest Neighbor Algorithm	skos:closeMatch	ito:ITO_22705	KNN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	knn
+aio:ResidualNeuralNetwork	Residual Neural Network	skos:closeMatch	ito:ITO_22768	DRN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	drn
+aio:MultimodalTransformer	Multimodal Transformer	skos:closeMatch	ito:ITO_23141	Multimodal Transformer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	multimodal transformer
+aio:ContinualLearning	Continual Learning	skos:closeMatch	ito:ITO_23552	Incremental learning	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	incremental learning
+aio:RadialBasisNetwork	Radial Basis Network	skos:closeMatch	ito:ITO_23713	RBFN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	rbfn
+aio:ExtremeLearningMachine	Extreme Learning Machine	skos:closeMatch	ito:ITO_24358	ELM	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	elm
+aio:KnearestNeighborAlgorithm	K-nearest Neighbor Algorithm	skos:closeMatch	ito:ITO_25751	k-NN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	k-nn
+aio:DeepConvolutionalNetwork	Deep Convolutional Network	skos:closeMatch	ito:ITO_26247	DCN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	dcn
+aio:AutoregressiveIntegratedMovingAverage	Autoregressive Integrated Moving Average	skos:closeMatch	ito:ITO_27545	ARIMA	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	arima
+aio:DeepConvolutionalNetwork	Deep Convolutional Network	skos:closeMatch	ito:ITO_28284	ConvNet	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	convnet
+aio:RandomForest	Random Forest	skos:closeMatch	ito:ITO_28410	Random Forest	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	random forest
+aio:node2vec	node2vec	skos:closeMatch	ito:ITO_29043	node2vec	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	node2vec
+aio:LogisticRegression	Logistic Regression	skos:closeMatch	ito:ITO_29161	Logistic Regression	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	logistic regression
+aio:AutoEncoderNetwork	Auto Encoder Network	skos:closeMatch	ito:ITO_31021	AE	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	ae
+aio:DecisionTree	Decision Tree	skos:closeMatch	ito:ITO_31967	Decision Tree	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	decision tree
+aio:KnearestNeighborAlgorithm	K-nearest Neighbor Algorithm	skos:closeMatch	ito:ITO_31969	K-NN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	k-nn
+aio:LogisticRegression	Logistic Regression	skos:closeMatch	ito:ITO_31970	Logistic regression	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	logistic regression
+aio:VariationalAutoEncoder	Variational Auto Encoder	skos:closeMatch	ito:ITO_33688	VAE	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	vae
+aio:GenerativeAdversarialNetworkAugmentedLLM	Generative Adversarial Network-Augmented LLM	skos:closeMatch	ito:ITO_34523	Adversarial Training	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	adversarial training
+aio:SemiSupervisedLLM	Semi-Supervised LLM	skos:closeMatch	ito:ITO_34553	Self-training	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	self-training
+aio:KohonenNetwork	Kohonen Network	skos:closeMatch	ito:ITO_35232	Self-Organizing Map	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	self-organizing map
+aio:SparseLearning	Sparse Learning	skos:closeMatch	ito:ITO_37668	Sparse Coding	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	sparse coding
+aio:MarkovChain	Markov Chain	skos:closeMatch	ito:ITO_37874	MP	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	mp
+aio:KnowledgeTransfer	Knowledge Transfer	skos:closeMatch	ito:ITO_38014	Knowledge Transfer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	knowledge transfer
+aio:Network	Network	skos:closeMatch	ito:ITO_38336	Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	network
+aio:DeepConvolutionalNetwork	Deep Convolutional Network	skos:closeMatch	ito:ITO_38364	cnn	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	cnn
+aio:AutoregressiveMovingAverage	Autoregressive Moving Average	skos:closeMatch	ito:ITO_38580	ARMA	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	arma
+aio:RecursiveLLM	Recursive LLM	skos:closeMatch	ito:ITO_38610	Self-attention	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	self-attention
+aio:RandomForest	Random Forest	skos:closeMatch	ito:ITO_39395	random forest	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	random forest
+aio:BoltzmannMachineNetwork	Boltzmann Machine Network	skos:closeMatch	ito:ITO_39448	BM	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	bm
+aio:NaturalLanguageProcessing	Natural Language Processing	skos:closeMatch	ito:ITO_39650	NLP	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	nlp
+aio:MarkovChain	Markov Chain	skos:closeMatch	ito:ITO_40570	MC	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	mc
+aio:LinearRegression	Linear Regression	skos:closeMatch	ito:ITO_41776	Linear Regression	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	linear regression
+aio:node2vec	node2vec	skos:closeMatch	ito:ITO_41822	Node2vec	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	node2vec
+aio:DeepFeedForwardNetwork	Deep Feed-Forward Network	skos:closeMatch	ito:ITO_42601	mlp	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	mlp
+aio:node2vec	node2vec	skos:closeMatch	ito:ITO_42645	N2V	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	n2v
+aio:Model	Model	skos:closeMatch	ito:ITO_43238	model	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	model
+aio:CrossDomainLLM	Cross-Domain LLM	skos:closeMatch	ito:ITO_44034	Domain adaptation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	domain adaptation
+aio:ArtificialNeuralNetwork	Artificial Neural Network	skos:closeMatch	ito:ITO_46627	ANN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	ann
+aio:CrossDomainLLM	Cross-Domain LLM	skos:closeMatch	ito:ITO_49341	Domain Adaptation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	domain adaptation
+aio:RecurrentNeuralNetwork	Recurrent Neural Network	skos:closeMatch	ito:ITO_50211	RN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	rn
+aio:BidirectionalTransformerLanguageModel	Bidirectional Transformer Language Model	skos:closeMatch	ito:ITO_50995	BERT	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	bert
+aio:AutoregressiveConditionalHeteroskedasticity	Autoregressive Conditional Heteroskedasticity	skos:closeMatch	ito:ITO_56041	ARCH	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	arch
+aio:TransformerLanguageModel	Transformer Language Model	skos:closeMatch	ito:ITO_56363	Transformer LM	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	transformer lm
+aio:PrincipalComponentAnalysis	Principal Component Analysis	skos:closeMatch	ito:ITO_60181	PCA	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	pca
+aio:DeepBeliefNetwork	Deep Belief Network	skos:closeMatch	ito:ITO_i1U1t2M4UnEDRSOUI	DBN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	dbn
+aio:AutoEncoderNetwork	Auto Encoder Network	skos:closeMatch	ito:ITO_i3jvXSgFjgh4jxH5L	AE	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	ae
+aio:PrincipalComponentAnalysis	Principal Component Analysis	skos:closeMatch	ito:ITO_i7eOVTvKcX8X6cTeF	PCA	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	pca
+aio:DeepConvolutionalNetwork	Deep Convolutional Network	skos:closeMatch	ito:ITO_iAJCf78scYQB3WUx8	CNN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	cnn
+aio:LongShortTermMemory	Long Short Term Memory	skos:closeMatch	ito:ITO_ic7O140o7n5nTZFK5	LSTM	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	lstm
+aio:KnearestNeighborAlgorithm	K-nearest Neighbor Algorithm	skos:closeMatch	ito:ITO_iepdoSzceIW0pwotO	KNN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	knn
+aio:ArtificialNeuralNetwork	Artificial Neural Network	skos:closeMatch	ito:ITO_iG14HxdeKSJ2unzJy	NN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	nn
+aio:SparseLearning	Sparse Learning	skos:closeMatch	ito:ITO_ihkR924Ur2yGDZNyF	Sparse Coding	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	sparse coding
+aio:DeepFeedForwardNetwork	Deep Feed-Forward Network	skos:closeMatch	ito:ITO_ijgeVNCWzLRUEUqfp	MLP	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	mlp
+aio:GraphConvolutionalNetwork	Graph Convolutional Network	skos:closeMatch	ito:ITO_inncucAw0ji3c4Efr	GCN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	gcn
+aio:KnearestNeighborAlgorithm	K-nearest Neighbor Algorithm	skos:closeMatch	ito:ITO_iofe4WkZ1vuxsTlhP	KNN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	knn
+aio:BidirectionalTransformerLanguageModel	Bidirectional Transformer Language Model	skos:closeMatch	ito:ITO_iq5S8w9AsL6IH6pCF	Bert	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	bert
+aio:DeepConvolutionalNetwork	Deep Convolutional Network	skos:closeMatch	ito:ITO_iQTSud0ncF6lHMU9q	CNN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	cnn
+aio:LongShortTermMemory	Long Short Term Memory	skos:closeMatch	ito:ITO_irU8RBik7FX0wt77u	lstm	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	lstm
+aio:SupportVectorMachine	Support Vector Machine	skos:closeMatch	ito:ITO_itkvmJPutI1we5q1H	SVM	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	svm
+aio:LogisticRegression	Logistic Regression	skos:closeMatch	ito:ITO_iVjxBxfzrZtC9S2XU	Logistic Regression	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	logistic regression
+aio:AutoEncoderNetwork	Auto Encoder Network	skos:closeMatch	ito:ITO_iVxbRVMbogDQo9VeI	AE	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	ae
+aio:DeepConvolutionalNetwork	Deep Convolutional Network	skos:closeMatch	ito:ITO_iXUuoJXL74iyEZVjW	CNN	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	cnn
+aio:SupportVectorMachine	Support Vector Machine	skos:closeMatch	ito:ITO_iYkxpRtyLrUouvylX	SVM	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	svm
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
