@@ -1,11 +1,3 @@
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 29
-subject_end: 33
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -14,7 +6,7 @@ matches_whole_text: false
 subject_start: 29
 subject_end: 33
 --
-predicate_id: oio:hasExactSynonym
+predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
@@ -27,14 +19,6 @@ object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
-subject_start: 36
-subject_end: 40
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
 subject_start: 35
 subject_end: 39
 --
@@ -45,30 +29,6 @@ match_string: Model
 matches_whole_text: false
 subject_start: 35
 subject_end: 39
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 35
-subject_end: 39
---
-predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 35
-subject_end: 39
---
-predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Function
-object_label: Function
-match_string: Function
-matches_whole_text: false
-subject_start: 27
-subject_end: 34
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/ActiveLearning
@@ -77,14 +37,6 @@ match_string: Active Learning
 matches_whole_text: false
 subject_start: 16
 subject_end: 30
---
-predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Function
-object_label: Function
-match_string: Function
-matches_whole_text: false
-subject_start: 36
-subject_end: 43
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/DataAugmentation
@@ -102,14 +54,6 @@ matches_whole_text: false
 subject_start: 16
 subject_end: 35
 --
-predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Function
-object_label: Function
-match_string: Function
-matches_whole_text: false
-subject_start: 25
-subject_end: 32
---
 predicate_id: oio:hasExactSynonym
 object_id: https://w3id.org/aio/RandomEffectsModel
 object_label: REM
@@ -117,14 +61,6 @@ match_string: Rem
 matches_whole_text: false
 subject_start: 31
 subject_end: 33
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 22
-subject_end: 26
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -174,7 +110,7 @@ matches_whole_text: false
 subject_start: 30
 subject_end: 36
 --
-predicate_id: oio:hasExactSynonym
+predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
@@ -189,30 +125,6 @@ match_string: Model
 matches_whole_text: false
 subject_start: 27
 subject_end: 31
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 27
-subject_end: 31
---
-predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 27
-subject_end: 31
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 34
-subject_end: 38
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -221,14 +133,6 @@ match_string: Model
 matches_whole_text: false
 subject_start: 34
 subject_end: 38
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 26
-subject_end: 30
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -246,14 +150,6 @@ matches_whole_text: false
 subject_start: 16
 subject_end: 25
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 55
-subject_end: 59
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -261,14 +157,6 @@ match_string: Model
 matches_whole_text: false
 subject_start: 55
 subject_end: 59
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 31
-subject_end: 35
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -293,14 +181,6 @@ match_string: Network
 matches_whole_text: false
 subject_start: 37
 subject_end: 43
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 26
-subject_end: 30
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -334,14 +214,6 @@ matches_whole_text: false
 subject_start: 28
 subject_end: 49
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 39
-subject_end: 43
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -366,14 +238,6 @@ matches_whole_text: false
 subject_start: 23
 subject_end: 32
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 33
-subject_end: 37
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -381,14 +245,6 @@ match_string: Model
 matches_whole_text: false
 subject_start: 33
 subject_end: 37
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 39
-subject_end: 43
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -406,14 +262,6 @@ matches_whole_text: false
 subject_start: 28
 subject_end: 30
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 31
-subject_end: 35
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -422,23 +270,7 @@ matches_whole_text: false
 subject_start: 31
 subject_end: 35
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 33
-subject_end: 37
---
 predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 33
-subject_end: 37
---
-predicate_id: oio:hasExactSynonym
 object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
@@ -470,14 +302,6 @@ matches_whole_text: false
 subject_start: 29
 subject_end: 35
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 37
-subject_end: 41
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -492,14 +316,6 @@ object_label: Generalized Linear Model
 match_string: Generalized Linear Model
 matches_whole_text: false
 subject_start: 16
-subject_end: 39
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 35
 subject_end: 39
 --
 predicate_id: rdfs:label
@@ -526,14 +342,6 @@ matches_whole_text: false
 subject_start: 39
 subject_end: 45
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 33
-subject_end: 37
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -541,14 +349,6 @@ match_string: Model
 matches_whole_text: false
 subject_start: 33
 subject_end: 37
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 27
-subject_end: 31
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -558,14 +358,6 @@ matches_whole_text: false
 subject_start: 27
 subject_end: 31
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 36
-subject_end: 40
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -573,14 +365,6 @@ match_string: Model
 matches_whole_text: false
 subject_start: 36
 subject_end: 40
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 33
-subject_end: 37
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -597,14 +381,6 @@ match_string: Data Augmentation
 matches_whole_text: false
 subject_start: 22
 subject_end: 38
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 22
-subject_end: 26
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -630,14 +406,6 @@ matches_whole_text: false
 subject_start: 22
 subject_end: 44
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 25
-subject_end: 29
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -654,7 +422,7 @@ matches_whole_text: false
 subject_start: 22
 subject_end: 38
 --
-predicate_id: oio:hasExactSynonym
+predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
@@ -667,26 +435,10 @@ object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
-subject_start: 36
-subject_end: 40
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
 subject_start: 32
 subject_end: 36
 --
 predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 32
-subject_end: 36
---
-predicate_id: oio:hasExactSynonym
 object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
@@ -699,14 +451,6 @@ object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
-subject_start: 33
-subject_end: 37
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
 subject_start: 22
 subject_end: 26
 --
@@ -718,23 +462,7 @@ matches_whole_text: false
 subject_start: 22
 subject_end: 26
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 22
-subject_end: 26
---
 predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 22
-subject_end: 26
---
-predicate_id: oio:hasExactSynonym
 object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
@@ -747,26 +475,10 @@ object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
-subject_start: 34
-subject_end: 38
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
 subject_start: 32
 subject_end: 36
 --
 predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 32
-subject_end: 36
---
-predicate_id: oio:hasExactSynonym
 object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
@@ -779,14 +491,6 @@ object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
-subject_start: 35
-subject_end: 39
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
 subject_start: 39
 subject_end: 43
 --
@@ -795,32 +499,8 @@ object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
-subject_start: 39
-subject_end: 43
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
 subject_start: 37
 subject_end: 41
---
-predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 37
-subject_end: 41
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 38
-subject_end: 42
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -854,28 +534,12 @@ matches_whole_text: false
 subject_start: 16
 subject_end: 17
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/LanguageModel
-object_label: Language Model
-match_string: Language Model
-matches_whole_text: false
-subject_start: 16
-subject_end: 29
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/LanguageModel
 object_label: Language Model
 match_string: Language Model
 matches_whole_text: false
 subject_start: 16
-subject_end: 29
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 25
 subject_end: 29
 --
 predicate_id: rdfs:label
@@ -886,28 +550,12 @@ matches_whole_text: false
 subject_start: 25
 subject_end: 29
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/LanguageModel
-object_label: Language Model
-match_string: Language Model
-matches_whole_text: false
-subject_start: 16
-subject_end: 29
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/LanguageModel
 object_label: Language Model
 match_string: Language Model
 matches_whole_text: false
 subject_start: 16
-subject_end: 29
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 25
 subject_end: 29
 --
 predicate_id: rdfs:label
@@ -918,28 +566,12 @@ matches_whole_text: false
 subject_start: 25
 subject_end: 29
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/LanguageModel
-object_label: Language Model
-match_string: Language Model
-matches_whole_text: false
-subject_start: 16
-subject_end: 29
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/LanguageModel
 object_label: Language Model
 match_string: Language Model
 matches_whole_text: false
 subject_start: 16
-subject_end: 29
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 25
 subject_end: 29
 --
 predicate_id: rdfs:label
@@ -966,14 +598,6 @@ matches_whole_text: false
 subject_start: 23
 subject_end: 25
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 34
-subject_end: 38
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -981,14 +605,6 @@ match_string: Model
 matches_whole_text: false
 subject_start: 34
 subject_end: 38
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 33
-subject_end: 37
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -1006,14 +622,6 @@ matches_whole_text: false
 subject_start: 16
 subject_end: 32
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 44
-subject_end: 48
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -1021,14 +629,6 @@ match_string: Model
 matches_whole_text: false
 subject_start: 44
 subject_end: 48
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 29
-subject_end: 33
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -1047,22 +647,6 @@ subject_start: 39
 subject_end: 43
 --
 predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Function
-object_label: Function
-match_string: Function
-matches_whole_text: false
-subject_start: 21
-subject_end: 28
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 36
-subject_end: 40
---
-predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
@@ -1077,14 +661,6 @@ match_string: Markov Chain
 matches_whole_text: false
 subject_start: 16
 subject_end: 27
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 30
-subject_end: 34
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -1102,14 +678,6 @@ matches_whole_text: false
 subject_start: 16
 subject_end: 28
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 16
-subject_end: 20
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -1126,14 +694,6 @@ matches_whole_text: false
 subject_start: 16
 subject_end: 32
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 16
-subject_end: 20
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -1142,7 +702,7 @@ matches_whole_text: false
 subject_start: 16
 subject_end: 20
 --
-predicate_id: oio:hasExactSynonym
+predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
@@ -1155,32 +715,8 @@ object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
-subject_start: 43
-subject_end: 47
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
 subject_start: 34
 subject_end: 38
---
-predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 34
-subject_end: 38
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 38
-subject_end: 42
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -1222,14 +758,6 @@ matches_whole_text: false
 subject_start: 16
 subject_end: 28
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 20
-subject_end: 24
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -1237,14 +765,6 @@ match_string: Model
 matches_whole_text: false
 subject_start: 20
 subject_end: 24
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 33
-subject_end: 37
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -1262,14 +782,6 @@ matches_whole_text: false
 subject_start: 24
 subject_end: 45
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 43
-subject_end: 47
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -1279,36 +791,12 @@ subject_start: 43
 subject_end: 47
 --
 predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Function
-object_label: Function
-match_string: Function
-matches_whole_text: false
-subject_start: 23
-subject_end: 30
---
-predicate_id: oio:hasExactSynonym
 object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
 subject_start: 38
 subject_end: 42
---
-predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 38
-subject_end: 42
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 35
-subject_end: 39
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -1326,14 +814,6 @@ matches_whole_text: false
 subject_start: 27
 subject_end: 33
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 30
-subject_end: 34
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -1342,7 +822,7 @@ matches_whole_text: false
 subject_start: 30
 subject_end: 34
 --
-predicate_id: oio:hasExactSynonym
+predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
@@ -1355,14 +835,6 @@ object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
-subject_start: 28
-subject_end: 32
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
 subject_start: 33
 subject_end: 37
 --
@@ -1371,32 +843,8 @@ object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
-subject_start: 33
-subject_end: 37
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
 subject_start: 32
 subject_end: 36
---
-predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 32
-subject_end: 36
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 34
-subject_end: 38
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -1414,14 +862,6 @@ matches_whole_text: false
 subject_start: 27
 subject_end: 33
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 35
-subject_end: 39
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -1430,14 +870,6 @@ matches_whole_text: false
 subject_start: 35
 subject_end: 39
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 41
-subject_end: 45
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -1445,14 +877,6 @@ match_string: Model
 matches_whole_text: false
 subject_start: 41
 subject_end: 45
---
-predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Function
-object_label: Function
-match_string: Function
-matches_whole_text: false
-subject_start: 33
-subject_end: 40
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Network
@@ -1478,14 +902,6 @@ matches_whole_text: false
 subject_start: 16
 subject_end: 37
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 36
-subject_end: 40
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -1510,7 +926,7 @@ matches_whole_text: false
 subject_start: 16
 subject_end: 38
 --
-predicate_id: oio:hasExactSynonym
+predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
@@ -1523,32 +939,8 @@ object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
-subject_start: 44
-subject_end: 48
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
 subject_start: 37
 subject_end: 41
---
-predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 37
-subject_end: 41
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 27
-subject_end: 31
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -1590,14 +982,6 @@ matches_whole_text: false
 subject_start: 16
 subject_end: 28
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 38
-subject_end: 42
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -1614,14 +998,6 @@ matches_whole_text: false
 subject_start: 21
 subject_end: 39
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 33
-subject_end: 37
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -1630,7 +1006,7 @@ matches_whole_text: false
 subject_start: 33
 subject_end: 37
 --
-predicate_id: oio:hasExactSynonym
+predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
@@ -1643,14 +1019,6 @@ object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
-subject_start: 37
-subject_end: 41
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
 subject_start: 34
 subject_end: 38
 --
@@ -1659,32 +1027,8 @@ object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
-subject_start: 34
-subject_end: 38
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
 subject_start: 47
 subject_end: 51
---
-predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 47
-subject_end: 51
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 40
-subject_end: 44
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -1702,14 +1046,6 @@ matches_whole_text: false
 subject_start: 16
 subject_end: 35
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 30
-subject_end: 34
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -1717,14 +1053,6 @@ match_string: Model
 matches_whole_text: false
 subject_start: 30
 subject_end: 34
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 41
-subject_end: 45
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -1742,14 +1070,6 @@ matches_whole_text: false
 subject_start: 21
 subject_end: 34
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 36
-subject_end: 40
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -1766,7 +1086,7 @@ matches_whole_text: false
 subject_start: 21
 subject_end: 37
 --
-predicate_id: oio:hasExactSynonym
+predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
@@ -1779,32 +1099,8 @@ object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
-subject_start: 31
-subject_end: 35
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
 subject_start: 34
 subject_end: 38
---
-predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 34
-subject_end: 38
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 41
-subject_end: 45
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
@@ -1822,14 +1118,6 @@ matches_whole_text: false
 subject_start: 16
 subject_end: 35
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 38
-subject_end: 42
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -1846,14 +1134,6 @@ matches_whole_text: false
 subject_start: 21
 subject_end: 27
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 20
-subject_end: 24
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -1861,14 +1141,6 @@ match_string: Model
 matches_whole_text: false
 subject_start: 20
 subject_end: 24
---
-predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Function
-object_label: Function
-match_string: Function
-matches_whole_text: false
-subject_start: 22
-subject_end: 29
 --
 predicate_id: oio:hasExactSynonym
 object_id: https://w3id.org/aio/VectorAutoregression
@@ -1886,14 +1158,6 @@ matches_whole_text: false
 subject_start: 22
 subject_end: 38
 --
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 27
-subject_end: 31
---
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
@@ -1902,7 +1166,7 @@ matches_whole_text: false
 subject_start: 27
 subject_end: 31
 --
-predicate_id: oio:hasExactSynonym
+predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
@@ -1915,26 +1179,10 @@ object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
-subject_start: 36
-subject_end: 40
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
 subject_start: 22
 subject_end: 26
 --
 predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 22
-subject_end: 26
---
-predicate_id: oio:hasExactSynonym
 object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
@@ -1947,26 +1195,10 @@ object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
-subject_start: 42
-subject_end: 46
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
 subject_start: 44
 subject_end: 48
 --
 predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 44
-subject_end: 48
---
-predicate_id: oio:hasExactSynonym
 object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
@@ -1979,26 +1211,10 @@ object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
-subject_start: 30
-subject_end: 34
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
 subject_start: 34
 subject_end: 38
 --
 predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 34
-subject_end: 38
---
-predicate_id: oio:hasExactSynonym
 object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
@@ -2011,14 +1227,6 @@ object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
-subject_start: 39
-subject_end: 43
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
 subject_start: 37
 subject_end: 41
 --
@@ -2027,32 +1235,8 @@ object_id: https://w3id.org/aio/Model
 object_label: Model
 match_string: Model
 matches_whole_text: false
-subject_start: 37
-subject_end: 41
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
 subject_start: 48
 subject_end: 52
---
-predicate_id: rdfs:label
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 48
-subject_end: 52
---
-predicate_id: oio:hasExactSynonym
-object_id: https://w3id.org/aio/Model
-object_label: Model
-match_string: Model
-matches_whole_text: false
-subject_start: 31
-subject_end: 35
 --
 predicate_id: rdfs:label
 object_id: https://w3id.org/aio/Model
