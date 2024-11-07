@@ -30,7 +30,7 @@ These include:
 | AIO label                | OBO label                  | OBO id      |
 |--------------------------|----------------------------|-------------|
 | aio:Bias                 | disposition                | BFO:0000016 |
-| aio:MathematicalFunction | planned process            | OBI:0000011 |
+| aio:MathematicalFunction | planned process            | IAO:0000033 |
 | aio:Layer                | information content entity | IAO:0000030 |
 | aio:MachineLearningTask  | planned process            | OBI:0000011 |
 | aio:Model                | information content entity | IAO:0000030 |
