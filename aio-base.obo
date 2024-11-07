@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: https://w3id.org/aio/releases/2024-08-14/aio-base.owl
+data-version: https://w3id.org/aio/releases/2024-11-07/aio-base.owl
 subsetdef: aio:ActivationFunctionSubset "Activation Function Subset"
 subsetdef: aio:BiasSubset "Bias Subset"
 subsetdef: aio:ClassSubset "Class Subset"
@@ -19,7 +19,7 @@ property_value: dc:type IAO:8000001
 property_value: dcterms:description "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases." xsd:string
 property_value: dcterms:license http://creativecommons.org/licenses/by/4.0/
 property_value: dcterms:title "Artificial Intelligence Ontology" xsd:string
-property_value: owl:versionInfo "2024-08-14" xsd:string
+property_value: owl:versionInfo "2024-11-07" xsd:string
 
 [Term]
 id: aio:AbstractRNNCell
@@ -751,7 +751,7 @@ is_a: aio:LargeLanguageModel ! Large Language Model
 id: aio:CurriculumLearning
 name: Curriculum Learning
 def: "A training strategy in machine learning where models are trained on data in a meaningful order starting with simpler examples and gradually increasing the complexity to improve learning efficiency and model performance." []
-subset: aio:PreprocessingSubset
+subset: aio:TrainingStrategySubset
 synonym: "Complexity grading" RELATED []
 synonym: "Sequential Learning" EXACT []
 synonym: "Sequential learning" RELATED []
@@ -1871,11 +1871,10 @@ is_a: aio:LargeLanguageModel ! Large Language Model
 id: aio:KnowledgeTransfer
 name: Knowledge Transfer
 def: "A training strategy in which knowledge is passed from one entity such as a person organization or system to another facilitating learning and adaptation in the receiving entity through various methods such as teaching training or data exchange." [https://doi.org/10.1016/j.knosys.2015.01.010]
-subset: aio:PreprocessingSubset
+subset: aio:TrainingStrategySubset
 synonym: "Adaptation" RELATED []
 synonym: "Inductive Transfer" EXACT []
 synonym: "Pretrained models" RELATED []
-synonym: "Skill Acquisition" EXACT []
 is_a: aio:TrainingStrategies ! Training Strategies
 
 [Term]
@@ -2183,7 +2182,7 @@ is_a: aio:LargeLanguageModel ! Large Language Model
 [Term]
 id: aio:MachineLearningTask
 name: Machine Learning Task
-def: "A field of inquiry devoted to understanding and building methods that learn from data to improve performance on a set of tasks." [https://doi.org/10.6028/NIST.SP.1270]
+def: "A process intended to build methods that learn from data." [https://doi.org/10.6028/NIST.SP.1270]
 subset: aio:MachineLearningSubset
 synonym: "Machine Learning" RELATED []
 
@@ -2390,15 +2389,6 @@ def: "An abstract representation of a complex system generally assembled as a se
 subset: aio:ModelSubset
 
 [Term]
-id: aio:ModelEfficiency
-name: Model Efficiency
-def: "A preprocessing aimed at making models more efficient, such as knowledge distillation." [https://doi.org/10.1145/3578938]
-subset: aio:PreprocessingSubset
-synonym: "Computational Efficiency" EXACT []
-synonym: "Model Optimization" EXACT []
-is_a: aio:Preprocessing ! Preprocessing
-
-[Term]
 id: aio:ModelSelectionBias
 name: Model Selection Bias
 def: "A processing bias introduced when using data to select a single \"best\" model from many or when an explanatory variable has a weak relationship with the response variable." [https://doi.org/10.6028/NIST.SP.1270]
@@ -2542,7 +2532,7 @@ is_a: aio:MachineLearningTask ! Machine Learning Task
 [Term]
 id: aio:Network
 name: Network
-def: "A system of interconnected nodes or entities for communication computation or data exchange." []
+def: "A system of interconnected nodes or entities for communication, computation or data exchange." []
 subset: aio:ClassSubset
 
 [Term]
@@ -3384,7 +3374,7 @@ def: "A bias characterized by the tendency to continue an endeavor due to previo
 comment: The tendency to continue an endeavor due to previously invested resources, despite costs outweighing benefits.
 subset: aio:BiasSubset
 synonym: "Sunk Cost Fallacy" EXACT []
-is_a: aio:Bias ! Bias
+is_a: aio:IndividualBias ! Individual Bias
 
 [Term]
 id: aio:SupervisedBiclustering
@@ -3560,10 +3550,9 @@ is_a: aio:DataPreparation ! Data Preparation
 id: aio:TrainingStrategies
 name: Training Strategies
 def: "A preprocessing used to train machine learning models including techniques such as supervised learning unsupervised learning reinforcement learning and transfer learning aimed at optimizing model performance." []
-subset: aio:PreprocessingSubset
+subset: aio:TrainingStrategySubset
 synonym: "Instructional Methods" EXACT []
 synonym: "Learning Techniques" EXACT []
-is_a: aio:Preprocessing ! Preprocessing
 
 [Term]
 id: aio:TransferLearning
