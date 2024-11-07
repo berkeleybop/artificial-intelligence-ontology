@@ -1,0 +1,9 @@
+id	compared_with	agents	class_count	deprecated_class_count	non_deprecated_class_count	class_count_with_text_definitions	class_count_without_text_definitions	object_property_count	annotation_property_count	named_individual_count	subset_count	rdf_triple_count	subclass_of_axiom_count	equivalent_classes_axiom_count	entailed_edge_count_by_predicate	distinct_synonym_count	synonym_statement_count	class_count_by_category	contributor_summary	change_summary	merged_class_query	deprecated_property_count	edge_count_by_predicate_rdfs:subClassOf	synonym_statement_count_by_predicate_hasExactSynonym	class_count_by_subset_aio:BiasSubset	class_count_by_subset_aio:ClassSubset	class_count_by_subset_aio:InstanceNormalizationLayerSubset	class_count_by_subset_aio:LayerSubset	edge_count_by_predicate_BFO:0000051	synonym_statement_count_by_predicate_hasRelatedSynonym	class_count_by_subset_aio:MachineLearningSubset	class_count_by_subset_aio:NetworkSubset	class_count_by_subset_aio:ActivationFunctionSubset	class_count_by_subset_aio:FunctionSubset	class_count_by_subset_aio:ModelSubset	class_count_by_subset_aio:PreprocessingSubset	class_count_by_subset_aio:TrainingStrategySubset
+Bias			61	0	61	61	0	0	0	0	1	353	61	0	{}	26	26	{}	{}	{}	0	0	61	26	61												
+Layer			168	0	168	168	0	0	0	0	3	1040	168	0	{}	71	74	{}	{}	{}	0	0	168	71		1	3	167									
+Machine Learning Task			57	0	57	57	0	0	0	0	2	364	63	0	{}	55	57	{}	{}	{}	0	0	57	52					6	3	48	9					
+Mathematical Function			14	0	14	14	0	0	0	0	3	101	14	0	{}	10	10	{}	{}	{}	0	0	14	10		1							10	13			
+Model			76	0	76	76	0	0	0	0	1	545	76	0	{}	157	160	{}	{}	{}	0	0	76	74						83					76		
+Network			52	0	52	52	0	0	0	0	3	447	117	0	{}	82	82	{}	{}	{}	0	0	52	79		1			65	3		48			3		
+Preprocessing			11	0	11	11	0	0	0	0	1	83	11	0	{}	28	28	{}	{}	{}	0	0	11	18						10						11	
+Training Strategies			3	0	3	3	0	0	0	0	1	24	3	0	{}	9	9	{}	{}	{}	0	0	3	5						4							3

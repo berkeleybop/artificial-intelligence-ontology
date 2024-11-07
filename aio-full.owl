@@ -13,11 +13,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/aio/aio-full.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/aio/releases/2024-08-14/aio-full.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/aio/releases/2024-11-07/aio-full.owl"/>
         <dcterms:description>This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>Artificial Intelligence Ontology</dcterms:title>
-        <owl:versionInfo>2024-08-14</owl:versionInfo>
+        <owl:versionInfo>2024-11-07</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1758,7 +1758,7 @@
         <oboInOwl:hasExactSynonym>Structured Learning</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Complexity grading</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Sequential learning</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/PreprocessingSubset"/>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/TrainingStrategySubset"/>
         <rdfs:label>Curriculum Learning</rdfs:label>
     </owl:Class>
     
@@ -4158,10 +4158,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingStrategies"/>
         <obo:IAO_0000115>A training strategy in which knowledge is passed from one entity such as a person organization or system to another facilitating learning and adaptation in the receiving entity through various methods such as teaching training or data exchange.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Inductive Transfer</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Skill Acquisition</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Adaptation</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Pretrained models</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/PreprocessingSubset"/>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/TrainingStrategySubset"/>
         <rdfs:label>Knowledge Transfer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -4852,7 +4851,7 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/MachineLearningTask">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <obo:IAO_0000115>A field of inquiry devoted to understanding and building methods that learn from data to improve performance on a set of tasks.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process intended to build methods that learn from data.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Machine Learning</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/MachineLearningSubset"/>
         <rdfs:label>Machine Learning Task</rdfs:label>
@@ -4860,7 +4859,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/MachineLearningTask"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A field of inquiry devoted to understanding and building methods that learn from data to improve performance on a set of tasks.</owl:annotatedTarget>
+        <owl:annotatedTarget>A process intended to build methods that learn from data.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://doi.org/10.6028/NIST.SP.1270"/>
     </owl:Axiom>
     
@@ -5297,25 +5296,6 @@
     
 
 
-    <!-- https://w3id.org/aio/ModelEfficiency -->
-
-    <owl:Class rdf:about="https://w3id.org/aio/ModelEfficiency">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
-        <obo:IAO_0000115>A preprocessing aimed at making models more efficient, such as knowledge distillation.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Computational Efficiency</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Model Optimization</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/PreprocessingSubset"/>
-        <rdfs:label>Model Efficiency</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/aio/ModelEfficiency"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A preprocessing aimed at making models more efficient, such as knowledge distillation.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://doi.org/10.1145/3578938"/>
-    </owl:Axiom>
-    
-
-
     <!-- https://w3id.org/aio/ModelSelectionBias -->
 
     <owl:Class rdf:about="https://w3id.org/aio/ModelSelectionBias">
@@ -5607,7 +5587,7 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/Network">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <obo:IAO_0000115>A system of interconnected nodes or entities for communication computation or data exchange.</obo:IAO_0000115>
+        <obo:IAO_0000115>A system of interconnected nodes or entities for communication, computation or data exchange.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/ClassSubset"/>
         <rdfs:label>Network</rdfs:label>
     </owl:Class>
@@ -7373,7 +7353,7 @@
     <!-- https://w3id.org/aio/SunkCostFallacyBias -->
 
     <owl:Class rdf:about="https://w3id.org/aio/SunkCostFallacyBias">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Bias"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/IndividualBias"/>
         <obo:IAO_0000115>A bias characterized by the tendency to continue an endeavor due to previously invested resources despite costs outweighing benefits.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Sunk Cost Fallacy</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/BiasSubset"/>
@@ -7771,11 +7751,11 @@
     <!-- https://w3id.org/aio/TrainingStrategies -->
 
     <owl:Class rdf:about="https://w3id.org/aio/TrainingStrategies">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0000115>A preprocessing used to train machine learning models including techniques such as supervised learning unsupervised learning reinforcement learning and transfer learning aimed at optimizing model performance.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Instructional Methods</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Learning Techniques</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/PreprocessingSubset"/>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/TrainingStrategySubset"/>
         <rdfs:label>Training Strategies</rdfs:label>
     </owl:Class>
     

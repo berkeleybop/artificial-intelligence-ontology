@@ -6,7 +6,9 @@ authors = ["Marcin Pawel Joachimiak <MJoachimiak@lbl.gov>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-schema-automator = "^0.2.7"
+#schema-automator = "^0.2.7" # transiently incompatible with semsql, for creating aio.db? 
+semsql = "^0.3.3"
+oaklib = "^0.6.18"
 
 [tool.poetry.dev-dependencies]
 black = "^22.6.0"

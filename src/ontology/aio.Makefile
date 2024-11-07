@@ -51,7 +51,10 @@ components-from-new-input: remove-old-input
 	make components/aio-component.owl
 
 aio.db: aio.owl # requires that rdftab and relation0graph have been installed locally and are on the default path
-	poetry run semsql make $@
+# truly local build saying ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+# or create with docker run  -v $PWD:/work -w /work -ti linkml/semantic-sql semsql make aio.db
+	#poetry run semsql make $@
+	docker run  -v $$PWD:/work -w /work -ti linkml/semantic-sql semsql make $@
 	rm -rf aio-relation-graph.tsv.gz
 
 aio-root-statistics.tsv: aio.db # could use sqlite:obo:aio if the file in the BBOP S3 bucket is new enough

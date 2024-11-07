@@ -13,9 +13,9 @@
         "val" : "Artificial Intelligence Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-08-14"
+        "val" : "2024-11-07"
       } ],
-      "version" : "https://w3id.org/aio/releases/2024-08-14/aio.json"
+      "version" : "https://w3id.org/aio/releases/2024-11-07/aio.json"
     },
     "nodes" : [ {
       "id" : "https://w3id.org/aio/AbstractRNNCell",
@@ -1307,7 +1307,7 @@
         "definition" : {
           "val" : "A training strategy in machine learning where models are trained on data in a meaningful order starting with simpler examples and gradually increasing the complexity to improve learning efficiency and model performance."
         },
-        "subsets" : [ "https://w3id.org/aio/PreprocessingSubset" ],
+        "subsets" : [ "https://w3id.org/aio/TrainingStrategySubset" ],
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "Sequential Learning"
@@ -3221,13 +3221,10 @@
           "val" : "A training strategy in which knowledge is passed from one entity such as a person organization or system to another facilitating learning and adaptation in the receiving entity through various methods such as teaching training or data exchange.",
           "xrefs" : [ "https://doi.org/10.1016/j.knosys.2015.01.010" ]
         },
-        "subsets" : [ "https://w3id.org/aio/PreprocessingSubset" ],
+        "subsets" : [ "https://w3id.org/aio/TrainingStrategySubset" ],
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "Inductive Transfer"
-        }, {
-          "pred" : "hasExactSynonym",
-          "val" : "Skill Acquisition"
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "Adaptation"
@@ -3739,7 +3736,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A field of inquiry devoted to understanding and building methods that learn from data to improve performance on a set of tasks.",
+          "val" : "A process intended to build methods that learn from data.",
           "xrefs" : [ "https://doi.org/10.6028/NIST.SP.1270" ]
         },
         "subsets" : [ "https://w3id.org/aio/MachineLearningSubset" ],
@@ -4105,24 +4102,6 @@
         "subsets" : [ "https://w3id.org/aio/ModelSubset" ]
       }
     }, {
-      "id" : "https://w3id.org/aio/ModelEfficiency",
-      "lbl" : "Model Efficiency",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A preprocessing aimed at making models more efficient, such as knowledge distillation.",
-          "xrefs" : [ "https://doi.org/10.1145/3578938" ]
-        },
-        "subsets" : [ "https://w3id.org/aio/PreprocessingSubset" ],
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
-          "val" : "Computational Efficiency"
-        }, {
-          "pred" : "hasExactSynonym",
-          "val" : "Model Optimization"
-        } ]
-      }
-    }, {
       "id" : "https://w3id.org/aio/ModelSelectionBias",
       "lbl" : "Model Selection Bias",
       "type" : "CLASS",
@@ -4378,7 +4357,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A system of interconnected nodes or entities for communication computation or data exchange."
+          "val" : "A system of interconnected nodes or entities for communication, computation or data exchange."
         },
         "subsets" : [ "https://w3id.org/aio/ClassSubset" ]
       }
@@ -6091,7 +6070,7 @@
         "definition" : {
           "val" : "A preprocessing used to train machine learning models including techniques such as supervised learning unsupervised learning reinforcement learning and transfer learning aimed at optimizing model performance."
         },
-        "subsets" : [ "https://w3id.org/aio/PreprocessingSubset" ],
+        "subsets" : [ "https://w3id.org/aio/TrainingStrategySubset" ],
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "Instructional Methods"
@@ -8047,10 +8026,6 @@
       "pred" : "is_a",
       "obj" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
-      "sub" : "https://w3id.org/aio/ModelEfficiency",
-      "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/Preprocessing"
-    }, {
       "sub" : "https://w3id.org/aio/ModelSelectionBias",
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/ProcessingBias"
@@ -8557,7 +8532,7 @@
     }, {
       "sub" : "https://w3id.org/aio/SunkCostFallacyBias",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/Bias"
+      "obj" : "https://w3id.org/aio/IndividualBias"
     }, {
       "sub" : "https://w3id.org/aio/SupervisedBiclustering",
       "pred" : "is_a",
@@ -8653,7 +8628,7 @@
     }, {
       "sub" : "https://w3id.org/aio/TrainingStrategies",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/Preprocessing"
+      "obj" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
       "sub" : "https://w3id.org/aio/TransferLearning",
       "pred" : "is_a",
