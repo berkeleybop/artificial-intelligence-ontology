@@ -24,13 +24,19 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    
+
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033"/>
+
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
@@ -50,7 +56,7 @@
     <!-- https://w3id.org/aio/Layer -->
 
     <Class rdf:about="https://w3id.org/aio/Layer">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/"/>
     </Class>
     
 
@@ -66,7 +72,7 @@
     <!-- https://w3id.org/aio/MathematicalFunction -->
 
     <Class rdf:about="https://w3id.org/aio/MathematicalFunction">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
     </Class>
     
 
