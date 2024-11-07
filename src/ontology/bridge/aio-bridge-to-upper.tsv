@@ -1,9 +1,10 @@
 AIO label	OBO label	OBO id
 ID		SC %
 aio:Bias	disposition	BFO:0000016
-aio:MathematicalFunction	planned process	IAO:0000033
+aio:MathematicalFunction	directive information entity	IAO:0000033
 aio:Layer	information content entity	IAO:0000030
 aio:MachineLearningTask	planned process	OBI:0000011
 aio:Model	information content entity	IAO:0000030
 aio:Network	information content entity	IAO:0000030
 aio:Preprocessing	planned process	OBI:0000011
+aio:TrainingStrategies	directive information entity	IAO:0000033
