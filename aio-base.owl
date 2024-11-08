@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/aio/aio-base.owl#"
-     xml:base="http://purl.obolibrary.org/obo/aio/aio-base.owl"
+<rdf:RDF xmlns="https://w3id.org/aio/aio-base.owl#"
+     xml:base="https://w3id.org/aio/aio-base.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
      xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
@@ -13,8 +13,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aio/aio-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2024-11-08/aio-base.owl"/>
+    <owl:Ontology rdf:about="https://w3id.org/aio/aio-base.owl">
+        <owl:versionIRI rdf:resource="https://w3id.org/aio/releases/2024-11-08/aio-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>

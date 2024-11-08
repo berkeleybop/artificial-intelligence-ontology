@@ -1,6 +1,6 @@
 {
   "graphs" : [ {
-    "id" : "http://purl.obolibrary.org/obo/aio.json",
+    "id" : "https://w3id.org/aio/aio.json",
     "meta" : {
       "basicPropertyValues" : [ {
         "pred" : "http://purl.org/dc/terms/description",
@@ -15,7 +15,7 @@
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
         "val" : "2024-11-08"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/aio/releases/2024-11-08/aio.json"
+      "version" : "https://w3id.org/aio/releases/2024-11-08/aio.json"
     },
     "nodes" : [ {
       "id" : "https://w3id.org/aio/AbstractRNNCell",
