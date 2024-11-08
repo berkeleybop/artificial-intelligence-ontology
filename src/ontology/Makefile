@@ -18,10 +18,10 @@ CONFIG_HASH=                e057f9f24dce4058e13705bc59f45fc4ca814ee95f6006fffb3a
 # ----------------------------------------
 # these can be overwritten on the command line
 
-OBOBASE=                    https://w3id.org/aio
-URIBASE=                    https://w3id.org/aio
+OBOBASE=                    http://purl.obolibrary.org/obo
+URIBASE=                    http://purl.obolibrary.org/obo
 ONT=                        aio
-ONTBASE=                    https://w3id.org/aio
+ONTBASE=                    http://purl.obolibrary.org/obo/aio
 EDIT_FORMAT=                owl
 SRC =                       $(ONT)-edit.$(EDIT_FORMAT)
 MAKE_FAST=                  $(MAKE) IMP=false PAT=false COMP=false MIR=false
@@ -165,7 +165,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-#IMPORTS =  swo
+IMPORTS =  swo
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -435,12 +435,12 @@ IMP_LARGE=true # Global parameter to bypass handling of large imports
 ifeq ($(strip $(MIR)),true)
 
 
-### ONTOLOGY: swo
-#.PHONY: mirror-swo
-#.PRECIOUS: $(MIRRORDIR)/swo.owl
-#mirror-swo: | $(TMPDIR)
-#	curl -L $(OBOBASE)/swo.owl --create-dirs -o $(TMPDIR)/swo-download.owl --retry 4 --max-time 200 && \
-#	$(ROBOT) convert -i $(TMPDIR)/swo-download.owl -o $(TMPDIR)/$@.owl
+## ONTOLOGY: swo
+.PHONY: mirror-swo
+.PRECIOUS: $(MIRRORDIR)/swo.owl
+mirror-swo: | $(TMPDIR)
+	curl -L $(OBOBASE)/swo.owl --create-dirs -o $(TMPDIR)/swo-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) convert -i $(TMPDIR)/swo-download.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
@@ -701,5 +701,3 @@ endef
 export data
 
 include aio.Makefile
-
-make-aio: clean clean-extras remove-old-input components-from-new-input all
