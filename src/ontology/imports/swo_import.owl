@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/aio/imports/swo_import.owl>
-<http://purl.obolibrary.org/obo/aio/releases/2024-08-02/imports/swo_import.owl>
+<http://purl.obolibrary.org/obo/aio/releases/2024-11-08/imports/swo_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://www.ebi.ac.uk/swo/swo/releases/2023-03-05/swo.owl>)
-Annotation(owl:versionInfo "2024-08-02")
+Annotation(owl:versionInfo "2024-11-08")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000796>))
@@ -164,6 +164,7 @@ Declaration(Class(<http://www.ebi.ac.uk/swo/SWO_0000392>))
 Declaration(Class(<http://www.ebi.ac.uk/swo/SWO_0000396>))
 Declaration(Class(<http://www.ebi.ac.uk/swo/SWO_0000397>))
 Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
+Declaration(Class(owl:Thing))
 Declaration(ObjectProperty(<http://purl.obofoundry.org/obo/IAO_0000136>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
@@ -767,9 +768,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/valid_for_gocam>)
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/ro/subsets#ro-eco>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/date>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
@@ -1259,7 +1258,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000086> "has 
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/RO_0000053>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/BFO_0000019>)
 
-# Object Property: <http://purl.obolibrary.org/obo/RO_0000087> (has_role)
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000087> (has role)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0000087> "this person has role this investigator role (more colloquially: this person has this role of investigator)"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000087> "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence"@en)

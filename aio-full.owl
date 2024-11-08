@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/aio/aio-full.owl#"
-     xml:base="https://w3id.org/aio/aio-full.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/aio/aio-full.owl#"
+     xml:base="http://purl.obolibrary.org/obo/aio/aio-full.owl"
      xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
      xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
      xmlns:aio="https://w3id.org/aio/"
@@ -12,12 +12,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://w3id.org/aio/aio-full.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/aio/releases/2024-11-07/aio-full.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aio/aio-full.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aio/releases/2024-11-08/aio-full.owl"/>
         <dcterms:description>This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>Artificial Intelligence Ontology</dcterms:title>
-        <owl:versionInfo>2024-11-07</owl:versionInfo>
+        <owl:versionInfo>2024-11-08</owl:versionInfo>
     </owl:Ontology>
     
 
