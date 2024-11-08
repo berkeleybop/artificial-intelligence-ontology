@@ -165,7 +165,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-#IMPORTS =  swo
+IMPORTS =  swo
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -435,14 +435,6 @@ IMP_LARGE=true # Global parameter to bypass handling of large imports
 ifeq ($(strip $(MIR)),true)
 
 
-### ONTOLOGY: swo
-#.PHONY: mirror-swo
-#.PRECIOUS: $(MIRRORDIR)/swo.owl
-#mirror-swo: | $(TMPDIR)
-#	curl -L $(OBOBASE)/swo.owl --create-dirs -o $(TMPDIR)/swo-download.owl --retry 4 --max-time 200 && \
-#	$(ROBOT) convert -i $(TMPDIR)/swo-download.owl -o $(TMPDIR)/$@.owl
-
-
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
 	if [ -f $(TMPDIR)/mirror-$*.owl ]; then if cmp -s $(TMPDIR)/mirror-$*.owl $@ ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." &&\
 		cp $(TMPDIR)/mirror-$*.owl $@; fi; fi
@@ -701,5 +693,3 @@ endef
 export data
 
 include aio.Makefile
-
-make-aio: clean clean-extras remove-old-input components-from-new-input all

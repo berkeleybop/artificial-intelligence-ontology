@@ -16,9 +16,9 @@
         "val" : "Artificial Intelligence Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-11-07"
+        "val" : "2024-11-08"
       } ],
-      "version" : "https://w3id.org/aio/releases/2024-11-07/aio-base.json"
+      "version" : "https://w3id.org/aio/releases/2024-11-08/aio-base.json"
     },
     "nodes" : [ {
       "id" : "https://w3id.org/aio/AbstractRNNCell",

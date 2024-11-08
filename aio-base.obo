@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: https://w3id.org/aio/releases/2024-11-07/aio-base.owl
+data-version: https://w3id.org/aio/releases/2024-11-08/aio-base.owl
 subsetdef: aio:ActivationFunctionSubset "Activation Function Subset"
 subsetdef: aio:BiasSubset "Bias Subset"
 subsetdef: aio:ClassSubset "Class Subset"
@@ -19,7 +19,7 @@ property_value: dc:type IAO:8000001
 property_value: dcterms:description "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases." xsd:string
 property_value: dcterms:license http://creativecommons.org/licenses/by/4.0/
 property_value: dcterms:title "Artificial Intelligence Ontology" xsd:string
-property_value: owl:versionInfo "2024-11-07" xsd:string
+property_value: owl:versionInfo "2024-11-08" xsd:string
 
 [Term]
 id: aio:AbstractRNNCell
