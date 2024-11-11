@@ -4,7 +4,13 @@
 ## changes here rather than in the main Makefile
 
 
-.PHONY: clean all
+.PHONY: clean all all-extras-all all-extras-clean all-extras-build
+
+all-extras-all: all-extras-clean all-extras-build
+
+all-extras-clean: clean clean-extras remove-old-input
+
+all-extras-build: components-from-new-input all bridge/aio-bridge-to-upper.owl
 
 # Source of truth for AIO.
 # This is a ROBOT template.
@@ -40,7 +46,7 @@ components/%.owl: components/%.csv
 	  -o $@
 
 clean-extras:
-	rm -rf aio.db aio-root-statistics* aio-2024-06-26.owl current-vs-2024-06-26-diff*
+	rm -rf aio.db aio-root-statistics* bridge/aio-bridge-to-upper.owl aio-2024-06-26.owl current-vs-2024-06-26-diff* aio-relation-graph.tsv.gz
 
 remove-old-input:
 	rm -rf aio-src.csv
@@ -49,6 +55,12 @@ remove-old-input:
 components-from-new-input: remove-old-input
 	make aio-src.csv
 	make components/aio-component.owl
+
+bridge/aio-bridge-to-upper.owl: bridge/aio-bridge-to-upper.tsv
+	robot template \
+    --prefix 'aio: https://w3id.org/aio/' \
+    --template $< \
+    --output $@
 
 aio.db: aio.owl # requires that rdftab and relation0graph have been installed locally and are on the default path
 # truly local build saying ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
