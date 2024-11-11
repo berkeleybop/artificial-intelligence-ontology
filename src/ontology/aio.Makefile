@@ -56,4 +56,10 @@ components-from-new-input: remove-old-input
 	make aio-src.csv
 	make components/aio-component.owl
 
+bridge/aio-bridge-to-upper.owl: bridge/aio-bridge-to-upper.tsv
+	robot template \
+    --prefix 'aio: https://w3id.org/aio/' \
+    --template $< \
+    --output $@
+
 include stats-with-semsql.Makefile
