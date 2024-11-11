@@ -14,12 +14,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/aio/aio-base.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/aio/releases/2024-11-08/aio-base.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/aio/releases/2024-11-11/aio-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>Artificial Intelligence Ontology</dcterms:title>
-        <owl:versionInfo>2024-11-08</owl:versionInfo>
+        <owl:versionInfo>2024-11-11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1720,7 +1720,7 @@
     <!-- https://w3id.org/aio/CurriculumLearning -->
 
     <owl:Class rdf:about="https://w3id.org/aio/CurriculumLearning">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingStrategies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingStrategy"/>
         <obo:IAO_0000115>A training strategy in machine learning where models are trained on data in a meaningful order starting with simpler examples and gradually increasing the complexity to improve learning efficiency and model performance.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Sequential Learning</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Structured Learning</oboInOwl:hasExactSynonym>
@@ -1782,6 +1782,7 @@
     <owl:Class rdf:about="https://w3id.org/aio/DataEnhancement">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
         <obo:IAO_0000115>A preprocessing used to improve the quality diversity and volume of data available for training machine learning models, such as data augmentation synthesis and enrichment to enhance model robustness and accuracy.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>AIO:PreprocessingSubset</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/PreprocessingSubset"/>
         <rdfs:label>DataEnhancement</rdfs:label>
     </owl:Class>
@@ -2359,7 +2360,7 @@
     <!-- https://w3id.org/aio/Distillation -->
 
     <owl:Class rdf:about="https://w3id.org/aio/Distillation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingStrategy"/>
         <obo:IAO_0000115>A preprocessing that trains a smaller model to replicate the behavior of a larger model aiming to compress the knowledge into a more compact form without significant loss of performance.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Purification</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Refining</oboInOwl:hasExactSynonym>
@@ -4123,7 +4124,7 @@
     <!-- https://w3id.org/aio/KnowledgeTransfer -->
 
     <owl:Class rdf:about="https://w3id.org/aio/KnowledgeTransfer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingStrategies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/aio/TrainingStrategy"/>
         <obo:IAO_0000115>A training strategy in which knowledge is passed from one entity such as a person organization or system to another facilitating learning and adaptation in the receiving entity through various methods such as teaching training or data exchange.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Inductive Transfer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Adaptation</oboInOwl:hasRelatedSynonym>
@@ -5876,14 +5877,14 @@
 
     <owl:Class rdf:about="https://w3id.org/aio/Preprocessing">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <obo:IAO_0000115>The series of steps applied to raw data before it is used in a machine learning model including tasks such as normalization scaling encoding and transformation to ensure the data is in an appropriate format and quality for analysis.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process applied to raw data before it is used in a machine learning model, including tasks such as normalization, scaling, encoding, and transformation, to ensure the data is in an appropriate format and quality for analysis.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/PreprocessingSubset"/>
         <rdfs:label>Preprocessing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/Preprocessing"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The series of steps applied to raw data before it is used in a machine learning model including tasks such as normalization scaling encoding and transformation to ensure the data is in an appropriate format and quality for analysis.</owl:annotatedTarget>
+        <owl:annotatedTarget>A process applied to raw data before it is used in a machine learning model, including tasks such as normalization, scaling, encoding, and transformation, to ensure the data is in an appropriate format and quality for analysis.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://doi.org/10.1109/ICDE.2019.00245"/>
     </owl:Axiom>
     
@@ -7716,15 +7717,15 @@
     
 
 
-    <!-- https://w3id.org/aio/TrainingStrategies -->
+    <!-- https://w3id.org/aio/TrainingStrategy -->
 
-    <owl:Class rdf:about="https://w3id.org/aio/TrainingStrategies">
+    <owl:Class rdf:about="https://w3id.org/aio/TrainingStrategy">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0000115>A preprocessing used to train machine learning models including techniques such as supervised learning unsupervised learning reinforcement learning and transfer learning aimed at optimizing model performance.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Instructional Methods</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Learning Techniques</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/TrainingStrategySubset"/>
-        <rdfs:label>Training Strategies</rdfs:label>
+        <rdfs:label>TrainingStrategy</rdfs:label>
     </owl:Class>
     
 

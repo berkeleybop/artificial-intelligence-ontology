@@ -16,9 +16,9 @@
         "val" : "Artificial Intelligence Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-11-08"
+        "val" : "2024-11-11"
       } ],
-      "version" : "https://w3id.org/aio/releases/2024-11-08/aio-base.json"
+      "version" : "https://w3id.org/aio/releases/2024-11-11/aio-base.json"
     },
     "nodes" : [ {
       "id" : "https://w3id.org/aio/AbstractRNNCell",
@@ -1385,7 +1385,11 @@
         "definition" : {
           "val" : "A preprocessing used to improve the quality diversity and volume of data available for training machine learning models, such as data augmentation synthesis and enrichment to enhance model robustness and accuracy."
         },
-        "subsets" : [ "https://w3id.org/aio/PreprocessingSubset" ]
+        "subsets" : [ "https://w3id.org/aio/PreprocessingSubset" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "AIO:PreprocessingSubset"
+        } ]
       }
     }, {
       "id" : "https://w3id.org/aio/DataGenerationBias",
@@ -4618,7 +4622,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The series of steps applied to raw data before it is used in a machine learning model including tasks such as normalization scaling encoding and transformation to ensure the data is in an appropriate format and quality for analysis.",
+          "val" : "A process applied to raw data before it is used in a machine learning model, including tasks such as normalization, scaling, encoding, and transformation, to ensure the data is in an appropriate format and quality for analysis.",
           "xrefs" : [ "https://doi.org/10.1109/ICDE.2019.00245" ]
         },
         "subsets" : [ "https://w3id.org/aio/PreprocessingSubset" ]
@@ -6066,8 +6070,8 @@
         } ]
       }
     }, {
-      "id" : "https://w3id.org/aio/TrainingStrategies",
-      "lbl" : "Training Strategies",
+      "id" : "https://w3id.org/aio/TrainingStrategy",
+      "lbl" : "TrainingStrategy",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -7062,7 +7066,7 @@
     }, {
       "sub" : "https://w3id.org/aio/CurriculumLearning",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/TrainingStrategies"
+      "obj" : "https://w3id.org/aio/TrainingStrategy"
     }, {
       "sub" : "https://w3id.org/aio/CurriculumLearningLLM",
       "pred" : "is_a",
@@ -7274,7 +7278,7 @@
     }, {
       "sub" : "https://w3id.org/aio/Distillation",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/Preprocessing"
+      "obj" : "https://w3id.org/aio/TrainingStrategy"
     }, {
       "sub" : "https://w3id.org/aio/DomainAdaptedLLM",
       "pred" : "is_a",
@@ -7714,7 +7718,7 @@
     }, {
       "sub" : "https://w3id.org/aio/KnowledgeTransfer",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/aio/TrainingStrategies"
+      "obj" : "https://w3id.org/aio/TrainingStrategy"
     }, {
       "sub" : "https://w3id.org/aio/KohonenNetwork",
       "pred" : "is_a",
@@ -8592,7 +8596,7 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/aio/DataPreparation"
     }, {
-      "sub" : "https://w3id.org/aio/TrainingStrategies",
+      "sub" : "https://w3id.org/aio/TrainingStrategy",
       "pred" : "is_a",
       "obj" : "http://www.w3.org/2002/07/owl#Thing"
     }, {

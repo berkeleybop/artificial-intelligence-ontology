@@ -1652,6 +1652,7 @@
     <Class rdf:about="https://w3id.org/aio/DataEnhancement">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
         <obo:IAO_0000115>A preprocessing used to improve the quality diversity and volume of data available for training machine learning models, such as data augmentation synthesis and enrichment to enhance model robustness and accuracy.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>AIO:PreprocessingSubset</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/PreprocessingSubset"/>
         <rdfs:label>DataEnhancement</rdfs:label>
     </Class>

@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: https://w3id.org/aio/releases/2024-11-08/aio-base.owl
+data-version: https://w3id.org/aio/releases/2024-11-11/aio-base.owl
 subsetdef: aio:ActivationFunctionSubset "Activation Function Subset"
 subsetdef: aio:BiasSubset "Bias Subset"
 subsetdef: aio:ClassSubset "Class Subset"
@@ -19,7 +19,7 @@ property_value: dc:type IAO:8000001
 property_value: dcterms:description "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases." xsd:string
 property_value: dcterms:license http://creativecommons.org/licenses/by/4.0/
 property_value: dcterms:title "Artificial Intelligence Ontology" xsd:string
-property_value: owl:versionInfo "2024-11-08" xsd:string
+property_value: owl:versionInfo "2024-11-11" xsd:string
 
 [Term]
 id: aio:AbstractRNNCell
@@ -756,7 +756,7 @@ synonym: "Complexity grading" RELATED []
 synonym: "Sequential Learning" EXACT []
 synonym: "Sequential learning" RELATED []
 synonym: "Structured Learning" EXACT []
-is_a: aio:TrainingStrategies ! Training Strategies
+is_a: aio:TrainingStrategy ! TrainingStrategy
 
 [Term]
 id: aio:CurriculumLearningLLM
@@ -790,6 +790,7 @@ id: aio:DataEnhancement
 name: DataEnhancement
 def: "A preprocessing used to improve the quality diversity and volume of data available for training machine learning models, such as data augmentation synthesis and enrichment to enhance model robustness and accuracy." []
 subset: aio:PreprocessingSubset
+synonym: "AIO:PreprocessingSubset" EXACT []
 is_a: aio:Preprocessing ! Preprocessing
 
 [Term]
@@ -1040,7 +1041,7 @@ synonym: "Knowledge compression" RELATED []
 synonym: "Purification" EXACT []
 synonym: "Refining" EXACT []
 synonym: "Teacher-student model" RELATED []
-is_a: aio:Preprocessing ! Preprocessing
+is_a: aio:TrainingStrategy ! TrainingStrategy
 
 [Term]
 id: aio:DomainAdaptedLLM
@@ -1875,7 +1876,7 @@ subset: aio:TrainingStrategySubset
 synonym: "Adaptation" RELATED []
 synonym: "Inductive Transfer" EXACT []
 synonym: "Pretrained models" RELATED []
-is_a: aio:TrainingStrategies ! Training Strategies
+is_a: aio:TrainingStrategy ! TrainingStrategy
 
 [Term]
 id: aio:KohonenNetwork
@@ -2689,7 +2690,7 @@ is_a: aio:SelectionAndSamplingBias ! Selection And Sampling Bias
 [Term]
 id: aio:Preprocessing
 name: Preprocessing
-def: "The series of steps applied to raw data before it is used in a machine learning model including tasks such as normalization scaling encoding and transformation to ensure the data is in an appropriate format and quality for analysis." [https://doi.org/10.1109/ICDE.2019.00245]
+def: "A process applied to raw data before it is used in a machine learning model, including tasks such as normalization, scaling, encoding, and transformation, to ensure the data is in an appropriate format and quality for analysis." [https://doi.org/10.1109/ICDE.2019.00245]
 subset: aio:PreprocessingSubset
 
 [Term]
@@ -3547,8 +3548,8 @@ synonym: "Text Segmentation" EXACT []
 is_a: aio:DataPreparation ! Data Preparation
 
 [Term]
-id: aio:TrainingStrategies
-name: Training Strategies
+id: aio:TrainingStrategy
+name: TrainingStrategy
 def: "A preprocessing used to train machine learning models including techniques such as supervised learning unsupervised learning reinforcement learning and transfer learning aimed at optimizing model performance." []
 subset: aio:TrainingStrategySubset
 synonym: "Instructional Methods" EXACT []
