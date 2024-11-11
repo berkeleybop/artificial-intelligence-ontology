@@ -64,12 +64,3 @@ aio-root-statistics.tsv: aio.db # could use sqlite:obo:aio if the file in the BB
 
 aio-root-statistics-transposed-filtered.tsv: aio-root-statistics.tsv
 	python ../scripts/transpose_filter_statistics.py < $< > $@
-
-aio-2024-06-26.owl:
-	wget -O $@ "https://raw.githubusercontent.com/berkeleybop/artificial-intelligence-ontology/v2024-06-26/aio.owl"
-
-current-vs-2024-06-26-diff.txt: aio.owl aio-2024-06-26.owl
-	robot diff --left $< --right aio-2024-06-26.owl --output $@
-
-current-vs-2024-06-26-diff-skip-defs.txt: current-vs-2024-06-26-diff.txt
-	cat $< | grep -v IAO_0000115 > $@
