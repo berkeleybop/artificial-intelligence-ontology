@@ -1,0 +1,4 @@
+id	Bias	Layer	Machine Learning Task	Mathematical Function	Model	Network	Preprocessing	TrainingStrategy
+class_count	61	168	57	14	76	52	10	4
+subclass_of_axiom_count	61	168	63	14	76	117	10	4
+distinct_synonym_count	26	71	55	10	157	82	25	13
