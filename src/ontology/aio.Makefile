@@ -50,14 +50,4 @@ components-from-new-input: remove-old-input
 	make aio-src.csv
 	make components/aio-component.owl
 
-aio-2024-06-26.owl:
-	wget -O $@ "https://raw.githubusercontent.com/berkeleybop/artificial-intelligence-ontology/v2024-06-26/aio.owl"
-
-current-vs-2024-06-26-diff.txt: aio.owl aio-2024-06-26.owl
-	robot diff --left $< --right aio-2024-06-26.owl --output $@
-
-current-vs-2024-06-26-diff-skip-defs.txt: current-vs-2024-06-26-diff.txt
-	cat $< | grep -v IAO_0000115 > $@
-
-
 include stats-with-semsql.Makefile
