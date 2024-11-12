@@ -18,7 +18,6 @@ cso:binary_classification	binary classification	skos:closeMatch	https://w3id.org
 cso:cluster_analysis	cluster analysis	skos:closeMatch	https://w3id.org/aio/Clustering	Clustering	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	cluster analysis
 cso:clustering	clustering	skos:closeMatch	https://w3id.org/aio/Clustering	Clustering	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	clustering
 cso:cnn	cnn	skos:closeMatch	https://w3id.org/aio/DeepConvolutionalNetwork	Deep Convolutional Network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	cnn
-cso:computational_efficiency	computational efficiency	skos:closeMatch	https://w3id.org/aio/ModelEfficiency	Model Efficiency	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	computational efficiency
 cso:concept_drift	concept drift	skos:closeMatch	https://w3id.org/aio/ConceptDriftBias	Concept Drift Bias	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	concept drift
 cso:data_augmentation	data augmentation	skos:closeMatch	https://w3id.org/aio/DataAugmentation	Data Augmentation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	data augmentation
 cso:data_cleaning	data cleaning	skos:closeMatch	https://w3id.org/aio/Cleaning	Cleaning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	data cleaning
