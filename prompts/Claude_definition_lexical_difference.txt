@@ -1,0 +1,2 @@
+determine the lexical differences between the "Legacy Description" and "Claude opus Aristotelian definition" columns. I would use a jacquard or k-mer approach, but I trust you to choose what's best. generate a tsv file with tow columns: the ID and the difference.
+
