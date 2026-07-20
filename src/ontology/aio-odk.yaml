@@ -31,7 +31,7 @@ robot_java_args: '-Xmx10G'
 robot_report:
   ensure_owl2dl_profile: false
   release_reports: true
-  fail_on: none
+  fail_on: error
   use_labels: false
   custom_profile: false
   report_on:

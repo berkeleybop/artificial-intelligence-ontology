@@ -12,6 +12,13 @@ all-extras-clean: clean clean-extras remove-old-input
 
 all-extras-build: components-from-new-input all bridge/aio-bridge-to-upper.owl
 
+# Fail QC on ROBOT report ERRORs (matches cell-ontology, uberon, pato).
+# The source of truth for this is robot_report.fail_on in aio-odk.yaml; this
+# override makes it effective now, before the next `make update_repo`
+# regenerates the main Makefile from that config. aio.Makefile is included
+# after the generated default (REPORT_FAIL_ON = none), so this wins.
+REPORT_FAIL_ON = ERROR
+
 # Source of truth for AIO.
 # This is a ROBOT template.
 SRC_URL = 'https://docs.google.com/spreadsheets/d/1LVubUGg56YDGJ0VUdJDMNBPY8iFfissRfy4eM56bUFg/export?exportFormat=csv'
