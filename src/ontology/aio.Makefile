@@ -78,6 +78,7 @@ bridge/aio-bridge-to-upper.owl: bridge/aio-bridge-to-upper.tsv
 # object/datatype punning fixed in issue #93.
 .PHONY: validate-el-profile
 validate-el-profile:
+	@mkdir -p $(REPORTDIR)
 	robot validate-profile --profile EL --input $(RELEASEDIR)/aio.owl --output $(REPORTDIR)/aio-el-profile.txt
 
 # Run the EL profile check as part of the standard test suite.
