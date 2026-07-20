@@ -16,9 +16,9 @@
         "val" : "Artificial Intelligence Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-11-11"
+        "val" : "2026-07-20"
       } ],
-      "version" : "https://w3id.org/aio/releases/2024-11-11/aio-base.json"
+      "version" : "https://w3id.org/aio/releases/2026-07-20/aio-base.json"
     },
     "nodes" : [ {
       "id" : "https://w3id.org/aio/AbstractRNNCell",
@@ -1276,7 +1276,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A layer that crops along spatial dimensions (depth",
+          "val" : "A layer that crops along spatial dimensions (depth, height and width) for 3D input.",
           "xrefs" : [ "https://www.tensorflow.org/api_docs/python/tf/keras/layers/Cropping3D" ]
         },
         "comments" : [ "Cropping layer for 3D data (e.g. spatial or spatio-temporal)." ],
@@ -1759,7 +1759,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A numerical features prepreprocessing layer which buckets continuous features by ranges.",
+          "val" : "A numerical features preprocessing layer which buckets continuous features by ranges.",
           "xrefs" : [ "https://www.tensorflow.org/api_docs/python/tf/keras/layers/Discretization" ]
         },
         "subsets" : [ "https://w3id.org/aio/LayerSubset" ]
@@ -3031,7 +3031,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A layer that specifies the rank",
+          "val" : "A layer that specifies the rank, dtype and shape of every input to a layer.",
           "xrefs" : [ "https://www.tensorflow.org/api_docs/python/tf/keras/layers/InputSpec" ]
         },
         "comments" : [ "Specifies the rank, dtype and shape of every input to a layer. Layers can expose (if appropriate) an input_spec attribute: an instance of InputSpec, or a nested structure of InputSpec instances (one per input tensor). These objects enable the layer to run input compatibility checks for input structure, input rank, input shape, and input dtype. A None entry in a shape is compatible with any dimension, a None shape is compatible with any shape." ],
@@ -3187,7 +3187,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An regression analysis that assigns the average of the values of k nearest neighbors to objects.",
+          "val" : "A regression analysis that assigns the average of the values of k nearest neighbors to objects.",
           "xrefs" : [ "https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm" ]
         },
         "subsets" : [ "https://w3id.org/aio/MachineLearningSubset" ],
@@ -3402,7 +3402,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A layer that form which other layers can inherit.",
+          "val" : "A layer from which other layers can inherit.",
           "xrefs" : [ "https://www.tensorflow.org/api_docs/python/tf/keras/layers/Layer" ]
         },
         "comments" : [ "This is the class from which all layers inherit. A layer is a callable object that takes as input one or more tensors and that outputs one or more tensors. It involves computation, defined in the call() method, and a state (weight variables). State can be created in various places, at the convenience of the subclass implementer: in __init__(); in the optional build() method, which is invoked by the first __call__() to the layer, and supplies the shape(s) of the input(s), which may not have been known at initialization time; in the first invocation of call(), with some caveats discussed below. Users will just instantiate a layer and then treat it as a callable." ],
@@ -4443,7 +4443,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A numerical features prepreprocessing layer that normalizes continuous features.",
+          "val" : "A numerical features preprocessing layer that normalizes continuous features.",
           "xrefs" : [ "https://www.tensorflow.org/api_docs/python/tf/keras/layers/Normalization" ]
         },
         "subsets" : [ "https://w3id.org/aio/LayerSubset" ]
@@ -4465,7 +4465,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A deep neural network that classified objects from one or only a few examples.",
+          "val" : "A deep neural network that classifies objects from one or only a few examples.",
           "xrefs" : [ "https://en.wikipedia.org/wiki/One-shot_learning" ]
         },
         "subsets" : [ "https://w3id.org/aio/NetworkSubset" ],
@@ -6297,7 +6297,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A layer that upsamples the input by repeating each depth",
+          "val" : "A layer that upsamples the input by repeating each depth, height and width size times.",
           "xrefs" : [ "https://www.tensorflow.org/api_docs/python/tf/keras/layers/UpSampling3D" ]
         },
         "comments" : [ "Upsampling layer for 3D inputs." ],
@@ -6432,7 +6432,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A reshaping layer that zero-pads the input along the depth",
+          "val" : "A reshaping layer that zero-pads the input along the depth, height and width dimensions.",
           "xrefs" : [ "https://www.tensorflow.org/api_docs/python/tf/keras/layers/ZeroPadding3D" ]
         },
         "comments" : [ "Zero-padding layer for 3D data (spatial or spatio-temporal)." ],
