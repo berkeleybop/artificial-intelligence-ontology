@@ -31,3 +31,6 @@ jobs:
           DEFAULT_BRANCH: main
         run: cd src/ontology && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' test IMP=false PAT=false MIR=false
 
+      - name: Check source sheet drift (labels + definitions)
+        run: python3 src/scripts/check_sheet_drift.py src/ontology/aio-src.csv
+
