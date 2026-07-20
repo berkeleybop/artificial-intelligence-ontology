@@ -79,7 +79,7 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Data properties
+    // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
@@ -89,7 +89,7 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
-    <DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
     
 
 
@@ -321,6 +321,9 @@
 
     <Class rdf:about="https://w3id.org/aio/AdditionLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
+        <obo:IAO_0000115>A layer that adds inputs from one or more other layers to cells or neurons of a target layer.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
+        <rdfs:label>Addition Layer</rdfs:label>
     </Class>
     
 
@@ -736,6 +739,9 @@
 
     <Class rdf:about="https://w3id.org/aio/BackfedInputLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/InputLayer"/>
+        <obo:IAO_0000115>An input layer that receives values from another layer.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
+        <rdfs:label>Backfed Input Layer</rdfs:label>
     </Class>
     
 
@@ -801,7 +807,18 @@
 
     <Class rdf:about="https://w3id.org/aio/BatchNormalizationLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/NormalizationLayer"/>
+        <obo:IAO_0000115>A normalization layer that normalizes its inputs applying a transformation that maintains the mean close to 0 and the standard deviation close to 1.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>BatchNorm</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
+        <rdfs:comment>Layer that normalizes its inputs. Batch normalization applies a transformation that maintains the mean output close to 0 and the output standard deviation close to 1. Importantly, batch normalization works differently during training and during inference. During training (i.e. when using fit() or when calling the layer/model with the argument training=True), the layer normalizes its output using the mean and standard deviation of the current batch of inputs. That is to say, for each channel being normalized, the layer returns gamma * (batch - mean(batch)) / sqrt(var(batch) + epsilon) + beta, where: epsilon is small constant (configurable as part of the constructor arguments), gamma is a learned scaling factor (initialized as 1), which can be disabled by passing scale=False to the constructor. beta is a learned offset factor (initialized as 0), which can be disabled by passing center=False to the constructor. During inference (i.e. when using evaluate() or predict() or when calling the layer/model with the argument training=False (which is the default), the layer normalizes its output using a moving average of the mean and standard deviation of the batches it has seen during training. That is to say, it returns gamma * (batch - self.moving_mean) / sqrt(self.moving_var + epsilon) + beta. self.moving_mean and self.moving_var are non-trainable variables that are updated each time the layer in called in training mode, as such: moving_mean = moving_mean * momentum + mean(batch) * (1 - momentum) moving_var = moving_var * momentum + var(batch) * (1 - momentum).</rdfs:comment>
+        <rdfs:label>BatchNormalization Layer</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/BatchNormalizationLayer"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A normalization layer that normalizes its inputs applying a transformation that maintains the mean close to 0 and the standard deviation close to 1.</annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://www.tensorflow.org/api_docs/python/tf/keras/layers/BatchNormalization"/>
+    </Axiom>
     
 
 
@@ -1515,7 +1532,17 @@
 
     <Class rdf:about="https://w3id.org/aio/ConvolutionalLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
+        <obo:IAO_0000115>A layer that contains a set of filters (or kernels) parameters of which are to be learned throughout the training.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
+        <rdfs:comment>A convolutional layer is the main building block of a CNN. It contains a set of filters (or kernels), parameters of which are to be learned throughout the training. The size of the filters is usually smaller than the actual image. Each filter convolves with the image and creates an activation map.</rdfs:comment>
+        <rdfs:label>Convolutional Layer</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/ConvolutionalLayer"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A layer that contains a set of filters (or kernels) parameters of which are to be learned throughout the training.</annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://www.sciencedirect.com/topics/engineering/convolutional-layer"/>
+    </Axiom>
     
 
 
@@ -3520,7 +3547,17 @@
 
     <Class rdf:about="https://w3id.org/aio/HiddenLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
+        <obo:IAO_0000115>A layer located between the input and output that performs nonlinear transformations of the inputs entered into the network.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
+        <rdfs:comment>A hidden layer is located between the input and output of the algorithm, in which the function applies weights to the inputs and directs them through an activation function as the output. In short, the hidden layers perform nonlinear transformations of the inputs entered into the network. Hidden layers vary depending on the function of the neural network, and similarly, the layers may vary depending on their associated weights.</rdfs:comment>
+        <rdfs:label>Hidden Layer</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/HiddenLayer"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A layer located between the input and output that performs nonlinear transformations of the inputs entered into the network.</annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://deepai.org/machine-Learning-glossary-and-terms/hidden-layer-machine-Learning"/>
+    </Axiom>
     
 
 
@@ -3806,7 +3843,17 @@
 
     <Class rdf:about="https://w3id.org/aio/InputLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
+        <obo:IAO_0000115>A layer composed of artificial input neurons that brings the initial data into the system for further processing by subsequent layers.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
+        <rdfs:comment>The input layer of a neural network is composed of artificial input neurons, and brings the initial data into the system for further processing by subsequent layers of artificial neurons. The input layer is the very beginning of the workflow for the artificial neural network.</rdfs:comment>
+        <rdfs:label>Input Layer</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/InputLayer"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A layer composed of artificial input neurons that brings the initial data into the system for further processing by subsequent layers.</annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://www.techopedia.com/definition/33262/input-layer-neural-networks"/>
+    </Axiom>
     
 
 
@@ -3971,6 +4018,9 @@
 
     <Class rdf:about="https://w3id.org/aio/KernelLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
+        <obo:IAO_0000115>A layer that obtains the dot product of input values or subsets of input values.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
+        <rdfs:label>Kernel Layer</rdfs:label>
     </Class>
     
 
@@ -4838,6 +4888,9 @@
 
     <Class rdf:about="https://w3id.org/aio/MatchedInputOutputLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/InputLayer"/>
+        <obo:IAO_0000115>An input layer with a shape corresponding to that of the output layer.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
+        <rdfs:label>Matched Input-Output Layer</rdfs:label>
     </Class>
     
 
@@ -5034,7 +5087,16 @@
 
     <Class rdf:about="https://w3id.org/aio/MemoryCellLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
+        <obo:IAO_0000115>A layer of cells, each with an internal state or weights.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
+        <rdfs:label>Memory Cell Layer</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/MemoryCellLayer"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A layer of cells, each with an internal state or weights.</annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://doi.org/10.1162/neco.1997.9.8.1735"/>
+    </Axiom>
     
 
 
@@ -5555,7 +5617,16 @@
 
     <Class rdf:about="https://w3id.org/aio/NoisyInputLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/InputLayer"/>
+        <obo:IAO_0000115>An input layer that adds noise to each value.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
+        <rdfs:label>Noisy Input Layer</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/NoisyInputLayer"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An input layer that adds noise to each value.</annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://doi.org/10.1109/21.155944"/>
+    </Axiom>
     
 
 
@@ -5640,7 +5711,17 @@
 
     <Class rdf:about="https://w3id.org/aio/OutputLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
+        <obo:IAO_0000115>A layer containing the last neurons in the network that produces given outputs for the program.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
+        <rdfs:comment>The output layer in an artificial neural network is the last layer of neurons that produces given outputs for the program. Though they are made much like other artificial neurons in the neural network, output layer neurons may be built or observed in a different way, given that they are the last “actor” nodes on the network.</rdfs:comment>
+        <rdfs:label>Output Layer</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/OutputLayer"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A layer containing the last neurons in the network that produces given outputs for the program.</annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://www.techopedia.com/definition/33263/output-layer-neural-networks"/>
+    </Axiom>
     
 
 
@@ -5725,6 +5806,9 @@
 
     <Class rdf:about="https://w3id.org/aio/PolicyLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
+        <obo:IAO_0000115>A layer that, after taking a set of states or values as input, predicts a probability distribution of actions to take.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
+        <rdfs:label>Policy Layer</rdfs:label>
     </Class>
     
 
@@ -5733,7 +5817,17 @@
 
     <Class rdf:about="https://w3id.org/aio/PoolingLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
+        <obo:IAO_0000115>A layer that serves to mitigate the sensitivity of convolutional layers to location and spatially downsample representations.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
+        <rdfs:comment>Pooling layers serve the dual purposes of mitigating the sensitivity of convolutional layers to location and of spatially downsampling representations.</rdfs:comment>
+        <rdfs:label>Pooling Layer</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/PoolingLayer"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A layer that serves to mitigate the sensitivity of convolutional layers to location and spatially downsample representations.</annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://d2l.ai/chapter_convolutional-neural-networks/pooling.html"/>
+    </Axiom>
     
 
 
@@ -5865,6 +5959,9 @@
 
     <Class rdf:about="https://w3id.org/aio/ProbabilisticHiddenLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/HiddenLayer"/>
+        <obo:IAO_0000115>A hidden layer that estimates the probability of a sample being within a certain category.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
+        <rdfs:label>Probabilistic Hidden Layer</rdfs:label>
     </Class>
     
 
@@ -6253,7 +6350,17 @@
 
     <Class rdf:about="https://w3id.org/aio/ReLULayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ActivationLayer"/>
+        <obo:IAO_0000115>An activation layer that applies the rectified linear unit function element-wise.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
+        <rdfs:comment>Rectified Linear Unit activation function. With default values, it returns element-wise max(x, 0).</rdfs:comment>
+        <rdfs:label>ReLU Layer</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/ReLULayer"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An activation layer that applies the rectified linear unit function element-wise.</annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://www.tensorflow.org/api_docs/python/tf/keras/layers/ReLU"/>
+    </Axiom>
     
 
 
@@ -6282,7 +6389,16 @@
 
     <Class rdf:about="https://w3id.org/aio/RecurrentLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
+        <obo:IAO_0000115>A layer composed of recurrent units with the number equal to the hidden size of the layer.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
+        <rdfs:label>Recurrent Layer</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/RecurrentLayer"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A layer composed of recurrent units with the number equal to the hidden size of the layer.</annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://docs.nvidia.com/deepLearning/performance/dl-performance-recurrent/index.html#recurrent-layer"/>
+    </Axiom>
     
 
 
@@ -7145,7 +7261,16 @@
 
     <Class rdf:about="https://w3id.org/aio/SpikingHiddenLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/HiddenLayer"/>
+        <obo:IAO_0000115>A hidden layer that makes connections to an additional, heterogeneous hidden layer; modeled after biological neural networks.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
+        <rdfs:label>Spiking Hidden Layer</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="https://w3id.org/aio/SpikingHiddenLayer"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A hidden layer that makes connections to an additional, heterogeneous hidden layer; modeled after biological neural networks.</annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://doi.org/10.1016/S0893-6080(97)00011-7"/>
+    </Axiom>
     
 
 
@@ -8008,6 +8133,9 @@
 
     <Class rdf:about="https://w3id.org/aio/WeightedLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
+        <obo:IAO_0000115>A layer of values to be applied to other cells or neurons in a network.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
+        <rdfs:label>Weighted Layer</rdfs:label>
     </Class>
     
 
@@ -8357,181 +8485,6 @@
         <annotatedTarget>A word2vec that predicts surrounding context words from the current word, giving more weight to nearby context words than distant ones.</annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Word2vec"/>
     </Axiom>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="https://w3id.org/aio/AdditionLayer">
-        <obo:IAO_0000115>A layer that adds inputs from one or more other layers to cells or neurons of a target layer.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:label>Addition Layer</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/aio/BackfedInputLayer">
-        <obo:IAO_0000115>An input layer that receives values from another layer.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:label>Backfed Input Layer</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/aio/BatchNormalizationLayer">
-        <obo:IAO_0000115>A normalization layer that normalizes its inputs applying a transformation that maintains the mean close to 0 and the standard deviation close to 1.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>BatchNorm</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:comment>Layer that normalizes its inputs. Batch normalization applies a transformation that maintains the mean output close to 0 and the output standard deviation close to 1. Importantly, batch normalization works differently during training and during inference. During training (i.e. when using fit() or when calling the layer/model with the argument training=True), the layer normalizes its output using the mean and standard deviation of the current batch of inputs. That is to say, for each channel being normalized, the layer returns gamma * (batch - mean(batch)) / sqrt(var(batch) + epsilon) + beta, where: epsilon is small constant (configurable as part of the constructor arguments), gamma is a learned scaling factor (initialized as 1), which can be disabled by passing scale=False to the constructor. beta is a learned offset factor (initialized as 0), which can be disabled by passing center=False to the constructor. During inference (i.e. when using evaluate() or predict() or when calling the layer/model with the argument training=False (which is the default), the layer normalizes its output using a moving average of the mean and standard deviation of the batches it has seen during training. That is to say, it returns gamma * (batch - self.moving_mean) / sqrt(self.moving_var + epsilon) + beta. self.moving_mean and self.moving_var are non-trainable variables that are updated each time the layer in called in training mode, as such: moving_mean = moving_mean * momentum + mean(batch) * (1 - momentum) moving_var = moving_var * momentum + var(batch) * (1 - momentum).</rdfs:comment>
-        <rdfs:label>BatchNormalization Layer</rdfs:label>
-    </rdf:Description>
-    <Axiom>
-        <annotatedSource rdf:resource="https://w3id.org/aio/BatchNormalizationLayer"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>A normalization layer that normalizes its inputs applying a transformation that maintains the mean close to 0 and the standard deviation close to 1.</annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://www.tensorflow.org/api_docs/python/tf/keras/layers/BatchNormalization"/>
-    </Axiom>
-    <rdf:Description rdf:about="https://w3id.org/aio/ConvolutionalLayer">
-        <obo:IAO_0000115>A layer that contains a set of filters (or kernels) parameters of which are to be learned throughout the training.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:comment>A convolutional layer is the main building block of a CNN. It contains a set of filters (or kernels), parameters of which are to be learned throughout the training. The size of the filters is usually smaller than the actual image. Each filter convolves with the image and creates an activation map.</rdfs:comment>
-        <rdfs:label>Convolutional Layer</rdfs:label>
-    </rdf:Description>
-    <Axiom>
-        <annotatedSource rdf:resource="https://w3id.org/aio/ConvolutionalLayer"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>A layer that contains a set of filters (or kernels) parameters of which are to be learned throughout the training.</annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://www.sciencedirect.com/topics/engineering/convolutional-layer"/>
-    </Axiom>
-    <rdf:Description rdf:about="https://w3id.org/aio/HiddenLayer">
-        <obo:IAO_0000115>A layer located between the input and output that performs nonlinear transformations of the inputs entered into the network.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:comment>A hidden layer is located between the input and output of the algorithm, in which the function applies weights to the inputs and directs them through an activation function as the output. In short, the hidden layers perform nonlinear transformations of the inputs entered into the network. Hidden layers vary depending on the function of the neural network, and similarly, the layers may vary depending on their associated weights.</rdfs:comment>
-        <rdfs:label>Hidden Layer</rdfs:label>
-    </rdf:Description>
-    <Axiom>
-        <annotatedSource rdf:resource="https://w3id.org/aio/HiddenLayer"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>A layer located between the input and output that performs nonlinear transformations of the inputs entered into the network.</annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://deepai.org/machine-Learning-glossary-and-terms/hidden-layer-machine-Learning"/>
-    </Axiom>
-    <rdf:Description rdf:about="https://w3id.org/aio/InputLayer">
-        <obo:IAO_0000115>A layer composed of artificial input neurons that brings the initial data into the system for further processing by subsequent layers.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:comment>The input layer of a neural network is composed of artificial input neurons, and brings the initial data into the system for further processing by subsequent layers of artificial neurons. The input layer is the very beginning of the workflow for the artificial neural network.</rdfs:comment>
-        <rdfs:label>Input Layer</rdfs:label>
-    </rdf:Description>
-    <Axiom>
-        <annotatedSource rdf:resource="https://w3id.org/aio/InputLayer"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>A layer composed of artificial input neurons that brings the initial data into the system for further processing by subsequent layers.</annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://www.techopedia.com/definition/33262/input-layer-neural-networks"/>
-    </Axiom>
-    <rdf:Description rdf:about="https://w3id.org/aio/KernelLayer">
-        <obo:IAO_0000115>A layer that obtains the dot product of input values or subsets of input values.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:label>Kernel Layer</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/aio/MatchedInputOutputLayer">
-        <obo:IAO_0000115>An input layer with a shape corresponding to that of the output layer.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:label>Matched Input-Output Layer</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/aio/MemoryCellLayer">
-        <obo:IAO_0000115>A layer of cells, each with an internal state or weights.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:label>Memory Cell Layer</rdfs:label>
-    </rdf:Description>
-    <Axiom>
-        <annotatedSource rdf:resource="https://w3id.org/aio/MemoryCellLayer"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>A layer of cells, each with an internal state or weights.</annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://doi.org/10.1162/neco.1997.9.8.1735"/>
-    </Axiom>
-    <rdf:Description rdf:about="https://w3id.org/aio/NoisyInputLayer">
-        <obo:IAO_0000115>An input layer that adds noise to each value.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:label>Noisy Input Layer</rdfs:label>
-    </rdf:Description>
-    <Axiom>
-        <annotatedSource rdf:resource="https://w3id.org/aio/NoisyInputLayer"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>An input layer that adds noise to each value.</annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://doi.org/10.1109/21.155944"/>
-    </Axiom>
-    <rdf:Description rdf:about="https://w3id.org/aio/OutputLayer">
-        <obo:IAO_0000115>A layer containing the last neurons in the network that produces given outputs for the program.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:comment>The output layer in an artificial neural network is the last layer of neurons that produces given outputs for the program. Though they are made much like other artificial neurons in the neural network, output layer neurons may be built or observed in a different way, given that they are the last “actor” nodes on the network.</rdfs:comment>
-        <rdfs:label>Output Layer</rdfs:label>
-    </rdf:Description>
-    <Axiom>
-        <annotatedSource rdf:resource="https://w3id.org/aio/OutputLayer"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>A layer containing the last neurons in the network that produces given outputs for the program.</annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://www.techopedia.com/definition/33263/output-layer-neural-networks"/>
-    </Axiom>
-    <rdf:Description rdf:about="https://w3id.org/aio/PolicyLayer">
-        <obo:IAO_0000115>A layer that, after taking a set of states or values as input, predicts a probability distribution of actions to take.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:label>Policy Layer</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/aio/PoolingLayer">
-        <obo:IAO_0000115>A layer that serves to mitigate the sensitivity of convolutional layers to location and spatially downsample representations.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:comment>Pooling layers serve the dual purposes of mitigating the sensitivity of convolutional layers to location and of spatially downsampling representations.</rdfs:comment>
-        <rdfs:label>Pooling Layer</rdfs:label>
-    </rdf:Description>
-    <Axiom>
-        <annotatedSource rdf:resource="https://w3id.org/aio/PoolingLayer"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>A layer that serves to mitigate the sensitivity of convolutional layers to location and spatially downsample representations.</annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://d2l.ai/chapter_convolutional-neural-networks/pooling.html"/>
-    </Axiom>
-    <rdf:Description rdf:about="https://w3id.org/aio/ProbabilisticHiddenLayer">
-        <obo:IAO_0000115>A hidden layer that estimates the probability of a sample being within a certain category.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:label>Probabilistic Hidden Layer</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/aio/ReLULayer">
-        <obo:IAO_0000115>An activation layer that applies the rectified linear unit function element-wise.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:comment>Rectified Linear Unit activation function. With default values, it returns element-wise max(x, 0).</rdfs:comment>
-        <rdfs:label>ReLU Layer</rdfs:label>
-    </rdf:Description>
-    <Axiom>
-        <annotatedSource rdf:resource="https://w3id.org/aio/ReLULayer"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>An activation layer that applies the rectified linear unit function element-wise.</annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://www.tensorflow.org/api_docs/python/tf/keras/layers/ReLU"/>
-    </Axiom>
-    <rdf:Description rdf:about="https://w3id.org/aio/RecurrentLayer">
-        <obo:IAO_0000115>A layer composed of recurrent units with the number equal to the hidden size of the layer.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:label>Recurrent Layer</rdfs:label>
-    </rdf:Description>
-    <Axiom>
-        <annotatedSource rdf:resource="https://w3id.org/aio/RecurrentLayer"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>A layer composed of recurrent units with the number equal to the hidden size of the layer.</annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://docs.nvidia.com/deepLearning/performance/dl-performance-recurrent/index.html#recurrent-layer"/>
-    </Axiom>
-    <rdf:Description rdf:about="https://w3id.org/aio/SpikingHiddenLayer">
-        <obo:IAO_0000115>A hidden layer that makes connections to an additional, heterogeneous hidden layer; modeled after biological neural networks.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:label>Spiking Hidden Layer</rdfs:label>
-    </rdf:Description>
-    <Axiom>
-        <annotatedSource rdf:resource="https://w3id.org/aio/SpikingHiddenLayer"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>A hidden layer that makes connections to an additional, heterogeneous hidden layer; modeled after biological neural networks.</annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://doi.org/10.1016/S0893-6080(97)00011-7"/>
-    </Axiom>
-    <rdf:Description rdf:about="https://w3id.org/aio/WeightedLayer">
-        <obo:IAO_0000115>A layer of values to be applied to other cells or neurons in a network.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:label>Weighted Layer</rdfs:label>
-    </rdf:Description>
 </rdf:RDF>
 
 

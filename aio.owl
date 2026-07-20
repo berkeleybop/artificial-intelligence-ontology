@@ -213,24 +213,10 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <obo:IAO_0000115 xml:lang="en">A core relation that holds between a whole and its part</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -8392,21 +8378,6 @@
         <owl:annotatedTarget>A word2vec that predicts surrounding context words from the current word, giving more weight to nearby context words than distant ones.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Word2vec"/>
     </owl:Axiom>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
-        <obo:IAO_0000115 xml:lang="en">A core relation that holds between a whole and its part</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">has part</rdfs:label>
-    </rdf:Description>
 </rdf:RDF>
 
 

@@ -1,0 +1,10 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# Declare the BFO relations used by the aio-src.csv ROBOT template
+# ("SC BFO:0000051 some %" on the layer parts column) as object properties.
+# Without this, `robot template` mints a spurious owl:DatatypeProperty
+# declaration for has part, which (together with the ObjectProperty
+# declaration in aio-edit.owl) puts the release outside the OWL EL/DL
+# profile. See issue #93.
+<http://purl.obolibrary.org/obo/BFO_0000051> a owl:ObjectProperty .
+<http://purl.obolibrary.org/obo/BFO_0000050> a owl:ObjectProperty .

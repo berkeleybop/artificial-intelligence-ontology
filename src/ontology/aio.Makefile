@@ -34,10 +34,13 @@ RELEASE_ASSETS = \
 aio-src.csv:
 	curl -L -s $(SRC_URL) > $@
 
-components/aio-component.owl: aio-src.csv
+components/aio-component.owl: aio-src.csv relation-declarations.ttl
 	# the prefix AIO is used in the Google Sheet so we provide an expansion here
 	# but aio-edit.owl asserts the same expansion for aio, so that becomes authoritative downstream
+	# --input declares the BFO relations as object properties so `robot template` does not
+	# mint a spurious owl:DatatypeProperty for has part (issue #93)
 	robot template \
+	  --input relation-declarations.ttl \
 	  --add-prefix 'AIO: https://w3id.org/aio/' \
 	  --add-prefix 'oio: http://www.geneontology.org/formats/oboInOwl#' \
 	  -t $< \

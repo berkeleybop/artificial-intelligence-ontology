@@ -6607,7 +6607,7 @@
       "id" : "http://purl.obolibrary.org/obo/BFO_0000051",
       "lbl" : "has part",
       "type" : "PROPERTY",
-      "propertyType" : "DATA",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "A core relation that holds between a whole and its part"
