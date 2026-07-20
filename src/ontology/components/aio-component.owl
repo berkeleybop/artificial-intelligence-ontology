@@ -1559,7 +1559,7 @@
 
     <Class rdf:about="https://w3id.org/aio/Cropping3DLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
-        <obo:IAO_0000115>A layer that crops along spatial dimensions (depth</obo:IAO_0000115>
+        <obo:IAO_0000115>A layer that crops along spatial dimensions (depth, height and width) for 3D input.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
         <rdfs:comment>Cropping layer for 3D data (e.g. spatial or spatio-temporal).</rdfs:comment>
         <rdfs:label>Cropping3D Layer</rdfs:label>
@@ -1567,7 +1567,7 @@
     <Axiom>
         <annotatedSource rdf:resource="https://w3id.org/aio/Cropping3DLayer"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>A layer that crops along spatial dimensions (depth</annotatedTarget>
+        <annotatedTarget>A layer that crops along spatial dimensions (depth, height and width) for 3D input.</annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Cropping3D"/>
     </Axiom>
     
@@ -2238,14 +2238,14 @@
 
     <Class rdf:about="https://w3id.org/aio/DiscretizationLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/NumericalFeaturesPreprocessingLayer"/>
-        <obo:IAO_0000115>A numerical features prepreprocessing layer which buckets continuous features by ranges.</obo:IAO_0000115>
+        <obo:IAO_0000115>A numerical features preprocessing layer which buckets continuous features by ranges.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
         <rdfs:label>Discretization Layer</rdfs:label>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="https://w3id.org/aio/DiscretizationLayer"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>A numerical features prepreprocessing layer which buckets continuous features by ranges.</annotatedTarget>
+        <annotatedTarget>A numerical features preprocessing layer which buckets continuous features by ranges.</annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Discretization"/>
     </Axiom>
     
@@ -3831,7 +3831,7 @@
 
     <Class rdf:about="https://w3id.org/aio/InputSpecLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
-        <obo:IAO_0000115>A layer that specifies the rank</obo:IAO_0000115>
+        <obo:IAO_0000115>A layer that specifies the rank, dtype and shape of every input to a layer.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
         <rdfs:comment>Specifies the rank, dtype and shape of every input to a layer. Layers can expose (if appropriate) an input_spec attribute: an instance of InputSpec, or a nested structure of InputSpec instances (one per input tensor). These objects enable the layer to run input compatibility checks for input structure, input rank, input shape, and input dtype. A None entry in a shape is compatible with any dimension, a None shape is compatible with any shape.</rdfs:comment>
         <rdfs:label>InputSpec Layer</rdfs:label>
@@ -3839,7 +3839,7 @@
     <Axiom>
         <annotatedSource rdf:resource="https://w3id.org/aio/InputSpecLayer"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>A layer that specifies the rank</annotatedTarget>
+        <annotatedTarget>A layer that specifies the rank, dtype and shape of every input to a layer.</annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://www.tensorflow.org/api_docs/python/tf/keras/layers/InputSpec"/>
     </Axiom>
     
@@ -4017,7 +4017,7 @@
 
     <Class rdf:about="https://w3id.org/aio/KnearestNeighborRegressionAlgorithm">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/RegressionAnalysis"/>
-        <obo:IAO_0000115>An regression analysis that assigns the average of the values of k nearest neighbors to objects.</obo:IAO_0000115>
+        <obo:IAO_0000115>A regression analysis that assigns the average of the values of k nearest neighbors to objects.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>K-NN Regression</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>KNN Regression</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/MachineLearningSubset"/>
@@ -4026,7 +4026,7 @@
     <Axiom>
         <annotatedSource rdf:resource="https://w3id.org/aio/KnearestNeighborRegressionAlgorithm"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>An regression analysis that assigns the average of the values of k nearest neighbors to objects.</annotatedTarget>
+        <annotatedTarget>A regression analysis that assigns the average of the values of k nearest neighbors to objects.</annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm"/>
     </Axiom>
     
@@ -4276,7 +4276,7 @@
 
     <Class rdf:about="https://w3id.org/aio/LayerLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
-        <obo:IAO_0000115>A layer that form which other layers can inherit.</obo:IAO_0000115>
+        <obo:IAO_0000115>A layer from which other layers can inherit.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
         <rdfs:comment>This is the class from which all layers inherit. A layer is a callable object that takes as input one or more tensors and that outputs one or more tensors. It involves computation, defined in the call() method, and a state (weight variables). State can be created in various places, at the convenience of the subclass implementer: in __init__(); in the optional build() method, which is invoked by the first __call__() to the layer, and supplies the shape(s) of the input(s), which may not have been known at initialization time; in the first invocation of call(), with some caveats discussed below. Users will just instantiate a layer and then treat it as a callable.</rdfs:comment>
         <rdfs:label>Layer Layer</rdfs:label>
@@ -4284,7 +4284,7 @@
     <Axiom>
         <annotatedSource rdf:resource="https://w3id.org/aio/LayerLayer"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>A layer that form which other layers can inherit.</annotatedTarget>
+        <annotatedTarget>A layer from which other layers can inherit.</annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Layer"/>
     </Axiom>
     
@@ -5574,14 +5574,14 @@
 
     <Class rdf:about="https://w3id.org/aio/NormalizationLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/NumericalFeaturesPreprocessingLayer"/>
-        <obo:IAO_0000115>A numerical features prepreprocessing layer that normalizes continuous features.</obo:IAO_0000115>
+        <obo:IAO_0000115>A numerical features preprocessing layer that normalizes continuous features.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
         <rdfs:label>Normalization Layer</rdfs:label>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="https://w3id.org/aio/NormalizationLayer"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>A numerical features prepreprocessing layer that normalizes continuous features.</annotatedTarget>
+        <annotatedTarget>A numerical features preprocessing layer that normalizes continuous features.</annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Normalization"/>
     </Axiom>
     
@@ -5608,7 +5608,7 @@
 
     <Class rdf:about="https://w3id.org/aio/OneshotLearning">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/DeepNeuralNetwork"/>
-        <obo:IAO_0000115>A deep neural network that classified objects from one or only a few examples.</obo:IAO_0000115>
+        <obo:IAO_0000115>A deep neural network that classifies objects from one or only a few examples.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>OSL</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/NetworkSubset"/>
         <rdfs:label>One-shot Learning</rdfs:label>
@@ -5616,7 +5616,7 @@
     <Axiom>
         <annotatedSource rdf:resource="https://w3id.org/aio/OneshotLearning"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>A deep neural network that classified objects from one or only a few examples.</annotatedTarget>
+        <annotatedTarget>A deep neural network that classifies objects from one or only a few examples.</annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/One-shot_learning"/>
     </Axiom>
     
@@ -7896,7 +7896,7 @@
 
     <Class rdf:about="https://w3id.org/aio/UpSampling3DLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
-        <obo:IAO_0000115>A layer that upsamples the input by repeating each depth</obo:IAO_0000115>
+        <obo:IAO_0000115>A layer that upsamples the input by repeating each depth, height and width size times.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
         <rdfs:comment>Upsampling layer for 3D inputs.</rdfs:comment>
         <rdfs:label>UpSampling3D Layer</rdfs:label>
@@ -7904,7 +7904,7 @@
     <Axiom>
         <annotatedSource rdf:resource="https://w3id.org/aio/UpSampling3DLayer"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>A layer that upsamples the input by repeating each depth</annotatedTarget>
+        <annotatedTarget>A layer that upsamples the input by repeating each depth, height and width size times.</annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://www.tensorflow.org/api_docs/python/tf/keras/layers/UpSampling3D"/>
     </Axiom>
     
@@ -8070,7 +8070,7 @@
 
     <Class rdf:about="https://w3id.org/aio/ZeroPadding3DLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/ReshapingLayer"/>
-        <obo:IAO_0000115>A reshaping layer that zero-pads the input along the depth</obo:IAO_0000115>
+        <obo:IAO_0000115>A reshaping layer that zero-pads the input along the depth, height and width dimensions.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
         <rdfs:comment>Zero-padding layer for 3D data (spatial or spatio-temporal).</rdfs:comment>
         <rdfs:label>ZeroPadding3D Layer</rdfs:label>
@@ -8078,7 +8078,7 @@
     <Axiom>
         <annotatedSource rdf:resource="https://w3id.org/aio/ZeroPadding3DLayer"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget>A reshaping layer that zero-pads the input along the depth</annotatedTarget>
+        <annotatedTarget>A reshaping layer that zero-pads the input along the depth, height and width dimensions.</annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://www.tensorflow.org/api_docs/python/tf/keras/layers/ZeroPadding3D"/>
     </Axiom>
     
