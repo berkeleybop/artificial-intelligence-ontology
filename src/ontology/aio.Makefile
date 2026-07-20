@@ -83,4 +83,14 @@ validate-el-profile:
 # Run the EL profile check as part of the standard test suite.
 test: validate-el-profile
 
+# Check that the committed aio-src.csv still agrees with the source Google Sheet
+# on labels and definitions (guards against silent sheet/repo drift). Re-homed
+# here (from a qc.yml step) so it survives `make update_repo`. The script passes
+# if the sheet cannot be fetched, so a network blip does not fail the build.
+.PHONY: validate-sheet-drift
+validate-sheet-drift:
+	python3 ../scripts/check_sheet_drift.py aio-src.csv
+
+test: validate-sheet-drift
+
 include stats-with-semsql.Makefile

@@ -19,18 +19,15 @@ jobs:
   ontology_qc:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    container: obolibrary/odkfull:v1.5.2
+    container: obolibrary/odkfull:v1.6.1
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Run ontology QC checks
         env:
           DEFAULT_BRANCH: main
         run: cd src/ontology && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' test IMP=false PAT=false MIR=false
-
-      - name: Check source sheet drift (labels + definitions)
-        run: python3 src/scripts/check_sheet_drift.py src/ontology/aio-src.csv
 

@@ -16,4 +16,3 @@ WHERE {
   FILTER(isIRI(?term) && (STRSTARTS(str(?term), "https://w3id.org/aio/")))
   FILTER (!isIRI(?value))
 }
-

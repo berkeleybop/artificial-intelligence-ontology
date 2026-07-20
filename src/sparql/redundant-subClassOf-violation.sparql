@@ -12,4 +12,3 @@ SELECT ?term ?xl ?y ?yl ?z ?zl WHERE {
   
   FILTER(isIRI(?term) && (STRSTARTS(str(?term), "https://w3id.org/aio/")))
 }
-

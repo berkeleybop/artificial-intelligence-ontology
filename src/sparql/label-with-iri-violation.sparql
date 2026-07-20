@@ -6,4 +6,3 @@ WHERE {
   FILTER (REGEX(?value, "http[s]?[:]"))
   FILTER(isIRI(?term) && (STRSTARTS(str(?term), "https://w3id.org/aio/")))
 }
-
