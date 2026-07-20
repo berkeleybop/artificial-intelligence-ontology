@@ -34,7 +34,7 @@ dependencies:
 
 tracker: https://github.com/berkeleybop/artificial-intelligence-ontology/issues
 license:
-  url: https://creativecommons.org/licenses/by/4.0/
+  url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY 4.0
 activity_status: active
 ---
