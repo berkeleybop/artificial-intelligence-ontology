@@ -806,7 +806,6 @@ id: aio:DataEnhancement
 name: DataEnhancement
 def: "A preprocessing used to improve the quality diversity and volume of data available for training machine learning models, such as data augmentation synthesis and enrichment to enhance model robustness and accuracy." []
 subset: aio:PreprocessingSubset
-synonym: "AIO:PreprocessingSubset" EXACT []
 is_a: aio:Preprocessing ! Preprocessing
 
 [Term]
@@ -1052,7 +1051,7 @@ is_a: aio:NumericalFeaturesPreprocessingLayer ! Numerical Features Preprocessing
 id: aio:Distillation
 name: Distillation
 def: "A preprocessing that trains a smaller model to replicate the behavior of a larger model aiming to compress the knowledge into a more compact form without significant loss of performance." [https://doi.org/10.48550/arXiv.2105.13093]
-subset: aio:PreprocessingSubset
+subset: aio:TrainingStrategySubset
 synonym: "Knowledge compression" RELATED []
 synonym: "Purification" EXACT []
 synonym: "Refining" EXACT []

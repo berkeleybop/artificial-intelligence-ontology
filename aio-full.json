@@ -1430,11 +1430,7 @@
         "definition" : {
           "val" : "A preprocessing used to improve the quality diversity and volume of data available for training machine learning models, such as data augmentation synthesis and enrichment to enhance model robustness and accuracy."
         },
-        "subsets" : [ "https://w3id.org/aio/PreprocessingSubset" ],
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
-          "val" : "AIO:PreprocessingSubset"
-        } ]
+        "subsets" : [ "https://w3id.org/aio/PreprocessingSubset" ]
       }
     }, {
       "id" : "https://w3id.org/aio/DataGenerationBias",
@@ -1818,7 +1814,7 @@
           "val" : "A preprocessing that trains a smaller model to replicate the behavior of a larger model aiming to compress the knowledge into a more compact form without significant loss of performance.",
           "xrefs" : [ "https://doi.org/10.48550/arXiv.2105.13093" ]
         },
-        "subsets" : [ "https://w3id.org/aio/PreprocessingSubset" ],
+        "subsets" : [ "https://w3id.org/aio/TrainingStrategySubset" ],
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "Purification"
