@@ -54,6 +54,7 @@ Declaration(AnnotationProperty(aio:MachineLearningSubset))
 Declaration(AnnotationProperty(aio:ModelSubset))
 Declaration(AnnotationProperty(aio:NetworkSubset))
 Declaration(AnnotationProperty(aio:PreprocessingSubset))
+Declaration(AnnotationProperty(aio:TrainingStrategySubset))
 ############################
 #   Annotation Properties
 ############################
@@ -86,52 +87,68 @@ AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#Sub
 # Annotation Property: aio:ActivationFunctionSubset (aio:ActivationFunctionSubset)
 
 AnnotationAssertion(rdfs:label aio:ActivationFunctionSubset "Activation Function Subset"@en)
+AnnotationAssertion(rdfs:comment aio:ActivationFunctionSubset "Activation Function Subset"@en)
 SubAnnotationPropertyOf(aio:ActivationFunctionSubset <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
 # Annotation Property: aio:BiasSubset (aio:BiasSubset)
 
 AnnotationAssertion(rdfs:label aio:BiasSubset "Bias Subset"@en)
+AnnotationAssertion(rdfs:comment aio:BiasSubset "Bias Subset"@en)
 SubAnnotationPropertyOf(aio:BiasSubset <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
 # Annotation Property: aio:ClassSubset (aio:ClassSubset)
 
 AnnotationAssertion(rdfs:label aio:ClassSubset "Class Subset"@en)
+AnnotationAssertion(rdfs:comment aio:ClassSubset "Class Subset"@en)
 SubAnnotationPropertyOf(aio:ClassSubset <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
 # Annotation Property: aio:FunctionSubset (aio:FunctionSubset)
 
 AnnotationAssertion(rdfs:label aio:FunctionSubset "Function Subset"@en)
+AnnotationAssertion(rdfs:comment aio:FunctionSubset "Function Subset"@en)
 SubAnnotationPropertyOf(aio:FunctionSubset <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
 # Annotation Property: aio:InstanceNormalizationLayerSubset (aio:InstanceNormalizationLayerSubset)
 
 AnnotationAssertion(rdfs:label aio:InstanceNormalizationLayerSubset "Instance Normalization Layer Subset"@en)
+AnnotationAssertion(rdfs:comment aio:InstanceNormalizationLayerSubset "Instance Normalization Layer Subset"@en)
 SubAnnotationPropertyOf(aio:InstanceNormalizationLayerSubset <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
 # Annotation Property: aio:LayerSubset (aio:LayerSubset)
 
 AnnotationAssertion(rdfs:label aio:LayerSubset "Layer Subset"@en)
+AnnotationAssertion(rdfs:comment aio:LayerSubset "Layer Subset"@en)
 SubAnnotationPropertyOf(aio:LayerSubset <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
 # Annotation Property: aio:MachineLearningSubset (aio:MachineLearningSubset)
 
 AnnotationAssertion(rdfs:label aio:MachineLearningSubset "Machine Learning Subset"@en)
+AnnotationAssertion(rdfs:comment aio:MachineLearningSubset "Machine Learning Subset"@en)
 SubAnnotationPropertyOf(aio:MachineLearningSubset <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
 # Annotation Property: aio:ModelSubset (aio:ModelSubset)
 
 AnnotationAssertion(rdfs:label aio:ModelSubset "Model Subset"@en)
+AnnotationAssertion(rdfs:comment aio:ModelSubset "Model Subset"@en)
 SubAnnotationPropertyOf(aio:ModelSubset <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
 # Annotation Property: aio:NetworkSubset (aio:NetworkSubset)
 
 AnnotationAssertion(rdfs:label aio:NetworkSubset "Network Subset"@en)
+AnnotationAssertion(rdfs:comment aio:NetworkSubset "Network Subset"@en)
 SubAnnotationPropertyOf(aio:NetworkSubset <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
 # Annotation Property: aio:PreprocessingSubset (aio:PreprocessingSubset)
 
 AnnotationAssertion(rdfs:label aio:PreprocessingSubset "Preprocessing Subset"@en)
+AnnotationAssertion(rdfs:comment aio:PreprocessingSubset "Preprocessing Subset"@en)
 SubAnnotationPropertyOf(aio:PreprocessingSubset <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+# Annotation Property: aio:TrainingStrategySubset (aio:TrainingStrategySubset)
+
+AnnotationAssertion(rdfs:label aio:TrainingStrategySubset "Training Strategy Subset"@en)
+AnnotationAssertion(rdfs:comment aio:TrainingStrategySubset "Training Strategy Subset"@en)
+SubAnnotationPropertyOf(aio:TrainingStrategySubset <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
 
 ############################

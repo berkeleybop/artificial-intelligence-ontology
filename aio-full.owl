@@ -13,11 +13,27 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/aio/aio-full.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/aio/releases/2026-07-20/aio-full.owl"/>
-        <dcterms:description>This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases.</dcterms:description>
+        <owl:versionIRI rdf:resource="https://w3id.org/aio/releases/2026-07-22/aio-full.owl"/>
+        <obo:IAO_0000700 rdf:resource="https://w3id.org/aio/Bias"/>
+        <obo:IAO_0000700 rdf:resource="https://w3id.org/aio/Layer"/>
+        <obo:IAO_0000700 rdf:resource="https://w3id.org/aio/MachineLearningTask"/>
+        <obo:IAO_0000700 rdf:resource="https://w3id.org/aio/MathematicalFunction"/>
+        <obo:IAO_0000700 rdf:resource="https://w3id.org/aio/Model"/>
+        <obo:IAO_0000700 rdf:resource="https://w3id.org/aio/Network"/>
+        <obo:IAO_0000700 rdf:resource="https://w3id.org/aio/Preprocessing"/>
+        <obo:IAO_0000700 rdf:resource="https://w3id.org/aio/TrainingStrategy"/>
+        <dcterms:bibliographicCitation>Joachimiak MP, Miller MA, Caufield JH, Ly R, Harris NL, Tritt A, Mungall CJ, Bouchard KE. The Artificial Intelligence Ontology: LLM-assisted construction of AI concept hierarchies. Applied Ontology. 2024. doi:10.1177/15705838241304103</dcterms:bibliographicCitation>
+        <dcterms:created>2024-03-31</dcterms:created>
+        <dcterms:creator>Christopher J. Mungall</dcterms:creator>
+        <dcterms:creator>J. Harry Caufield</dcterms:creator>
+        <dcterms:creator>Marcin P. Joachimiak</dcterms:creator>
+        <dcterms:creator>Mark A. Miller</dcterms:creator>
+        <dcterms:description>The Artificial Intelligence Ontology (AIO) is a systematization of artificial intelligence concepts, methodologies, and their interrelations, spanning networks, layers, functions, large language models, preprocessing, and bias.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:source rdf:resource="https://github.com/berkeleybop/artificial-intelligence-ontology"/>
         <dcterms:title>Artificial Intelligence Ontology</dcterms:title>
-        <owl:versionInfo>2026-07-20</owl:versionInfo>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1177/15705838241304103"/>
+        <owl:versionInfo>2026-07-22</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -42,6 +58,32 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000700 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000700">
+        <rdfs:label>has ontology root term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
@@ -57,6 +99,12 @@
         <obo:IAO_0000115>A legal document giving official permission to do something with the resource.</obo:IAO_0000115>
         <rdfs:label>license</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
     
 
 
@@ -104,7 +152,8 @@
     <!-- https://w3id.org/aio/ActivationFunctionSubset -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/ActivationFunctionSubset">
-        <rdfs:comment>Activation Function Subset</rdfs:comment>
+        <rdfs:comment xml:lang="en">Activation Function Subset</rdfs:comment>
+        <rdfs:label xml:lang="en">Activation Function Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -114,6 +163,7 @@
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/BiasSubset">
         <rdfs:comment xml:lang="en">Bias Subset</rdfs:comment>
+        <rdfs:label xml:lang="en">Bias Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -123,6 +173,7 @@
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/ClassSubset">
         <rdfs:comment xml:lang="en">Class Subset</rdfs:comment>
+        <rdfs:label xml:lang="en">Class Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -132,6 +183,7 @@
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/FunctionSubset">
         <rdfs:comment xml:lang="en">Function Subset</rdfs:comment>
+        <rdfs:label xml:lang="en">Function Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -140,7 +192,8 @@
     <!-- https://w3id.org/aio/InstanceNormalizationLayerSubset -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/InstanceNormalizationLayerSubset">
-        <rdfs:comment>Instance Normalization Layer Subset</rdfs:comment>
+        <rdfs:comment xml:lang="en">Instance Normalization Layer Subset</rdfs:comment>
+        <rdfs:label xml:lang="en">Instance Normalization Layer Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -150,6 +203,7 @@
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/LayerSubset">
         <rdfs:comment xml:lang="en">Layer Subset</rdfs:comment>
+        <rdfs:label xml:lang="en">Layer Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -159,6 +213,7 @@
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/MachineLearningSubset">
         <rdfs:comment xml:lang="en">Machine Learning Subset</rdfs:comment>
+        <rdfs:label xml:lang="en">Machine Learning Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -168,6 +223,7 @@
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/ModelSubset">
         <rdfs:comment xml:lang="en">Model Subset</rdfs:comment>
+        <rdfs:label xml:lang="en">Model Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -177,6 +233,7 @@
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/NetworkSubset">
         <rdfs:comment xml:lang="en">Network Subset</rdfs:comment>
+        <rdfs:label xml:lang="en">Network Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -186,6 +243,17 @@
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/PreprocessingSubset">
         <rdfs:comment xml:lang="en">Preprocessing Subset</rdfs:comment>
+        <rdfs:label xml:lang="en">Preprocessing Subset</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/aio/TrainingStrategySubset -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/aio/TrainingStrategySubset">
+        <rdfs:comment xml:lang="en">Training Strategy Subset</rdfs:comment>
+        <rdfs:label xml:lang="en">Training Strategy Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -1800,7 +1868,6 @@
     <owl:Class rdf:about="https://w3id.org/aio/DataEnhancement">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
         <obo:IAO_0000115>A preprocessing used to improve the quality diversity and volume of data available for training machine learning models, such as data augmentation synthesis and enrichment to enhance model robustness and accuracy.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>AIO:PreprocessingSubset</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/PreprocessingSubset"/>
         <rdfs:label>DataEnhancement</rdfs:label>
     </owl:Class>
@@ -2384,7 +2451,7 @@
         <oboInOwl:hasExactSynonym>Refining</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Knowledge compression</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Teacher-student model</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/PreprocessingSubset"/>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/TrainingStrategySubset"/>
         <rdfs:label>Distillation</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -7012,7 +7079,7 @@
         <obo:IAO_0000115>A selection and sampling bias where the association between two variables changes when controlling for another variable.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Simpson&apos;s Paradox</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/BiasSubset"/>
-        <rdfs:label>Simpon&apos;s Paradox Bias</rdfs:label>
+        <rdfs:label>Simpson&apos;s Paradox Bias</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/SimponsParadoxBias"/>

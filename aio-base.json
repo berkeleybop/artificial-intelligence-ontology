@@ -3,22 +3,70 @@
     "id" : "https://w3id.org/aio/aio-base.json",
     "meta" : {
       "basicPropertyValues" : [ {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "https://w3id.org/aio/Bias"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "https://w3id.org/aio/Layer"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "https://w3id.org/aio/MachineLearningTask"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "https://w3id.org/aio/MathematicalFunction"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "https://w3id.org/aio/Model"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "https://w3id.org/aio/Network"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "https://w3id.org/aio/Preprocessing"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "https://w3id.org/aio/TrainingStrategy"
+      }, {
         "pred" : "http://purl.org/dc/elements/1.1/type",
         "val" : "http://purl.obolibrary.org/obo/IAO_8000001"
       }, {
+        "pred" : "http://purl.org/dc/terms/bibliographicCitation",
+        "val" : "Joachimiak MP, Miller MA, Caufield JH, Ly R, Harris NL, Tritt A, Mungall CJ, Bouchard KE. The Artificial Intelligence Ontology: LLM-assisted construction of AI concept hierarchies. Applied Ontology. 2024. doi:10.1177/15705838241304103"
+      }, {
+        "pred" : "http://purl.org/dc/terms/created",
+        "val" : "2024-03-31"
+      }, {
+        "pred" : "http://purl.org/dc/terms/creator",
+        "val" : "Christopher J. Mungall"
+      }, {
+        "pred" : "http://purl.org/dc/terms/creator",
+        "val" : "J. Harry Caufield"
+      }, {
+        "pred" : "http://purl.org/dc/terms/creator",
+        "val" : "Marcin P. Joachimiak"
+      }, {
+        "pred" : "http://purl.org/dc/terms/creator",
+        "val" : "Mark A. Miller"
+      }, {
         "pred" : "http://purl.org/dc/terms/description",
-        "val" : "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases."
+        "val" : "The Artificial Intelligence Ontology (AIO) is a systematization of artificial intelligence concepts, methodologies, and their interrelations, spanning networks, layers, functions, large language models, preprocessing, and bias."
       }, {
         "pred" : "http://purl.org/dc/terms/license",
         "val" : "http://creativecommons.org/licenses/by/4.0/"
       }, {
+        "pred" : "http://purl.org/dc/terms/source",
+        "val" : "https://github.com/berkeleybop/artificial-intelligence-ontology"
+      }, {
         "pred" : "http://purl.org/dc/terms/title",
         "val" : "Artificial Intelligence Ontology"
       }, {
+        "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "val" : "https://doi.org/10.1177/15705838241304103"
+      }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-07-20"
+        "val" : "2026-07-22"
       } ],
-      "version" : "https://w3id.org/aio/releases/2026-07-20/aio-base.json"
+      "version" : "https://w3id.org/aio/releases/2026-07-22/aio-base.json"
     },
     "nodes" : [ {
       "id" : "https://w3id.org/aio/AbstractRNNCell",
@@ -1385,11 +1433,7 @@
         "definition" : {
           "val" : "A preprocessing used to improve the quality diversity and volume of data available for training machine learning models, such as data augmentation synthesis and enrichment to enhance model robustness and accuracy."
         },
-        "subsets" : [ "https://w3id.org/aio/PreprocessingSubset" ],
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
-          "val" : "AIO:PreprocessingSubset"
-        } ]
+        "subsets" : [ "https://w3id.org/aio/PreprocessingSubset" ]
       }
     }, {
       "id" : "https://w3id.org/aio/DataGenerationBias",
@@ -1773,7 +1817,7 @@
           "val" : "A preprocessing that trains a smaller model to replicate the behavior of a larger model aiming to compress the knowledge into a more compact form without significant loss of performance.",
           "xrefs" : [ "https://doi.org/10.48550/arXiv.2105.13093" ]
         },
-        "subsets" : [ "https://w3id.org/aio/PreprocessingSubset" ],
+        "subsets" : [ "https://w3id.org/aio/TrainingStrategySubset" ],
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "Purification"
@@ -5509,7 +5553,7 @@
       }
     }, {
       "id" : "https://w3id.org/aio/SimponsParadoxBias",
-      "lbl" : "Simpon's Paradox Bias",
+      "lbl" : "Simpson's Paradox Bias",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -6605,7 +6649,23 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000700",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://purl.org/dc/elements/1.1/type",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/bibliographicCitation",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/created",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/creator",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -6614,6 +6674,10 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/terms/license",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/source",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -6642,6 +6706,7 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "https://w3id.org/aio/ActivationFunctionSubset",
+      "lbl" : "Activation Function Subset",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION",
       "meta" : {
@@ -6649,6 +6714,7 @@
       }
     }, {
       "id" : "https://w3id.org/aio/BiasSubset",
+      "lbl" : "Bias Subset",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION",
       "meta" : {
@@ -6656,6 +6722,7 @@
       }
     }, {
       "id" : "https://w3id.org/aio/ClassSubset",
+      "lbl" : "Class Subset",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION",
       "meta" : {
@@ -6663,6 +6730,7 @@
       }
     }, {
       "id" : "https://w3id.org/aio/FunctionSubset",
+      "lbl" : "Function Subset",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION",
       "meta" : {
@@ -6670,6 +6738,7 @@
       }
     }, {
       "id" : "https://w3id.org/aio/InstanceNormalizationLayerSubset",
+      "lbl" : "Instance Normalization Layer Subset",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION",
       "meta" : {
@@ -6677,6 +6746,7 @@
       }
     }, {
       "id" : "https://w3id.org/aio/LayerSubset",
+      "lbl" : "Layer Subset",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION",
       "meta" : {
@@ -6684,6 +6754,7 @@
       }
     }, {
       "id" : "https://w3id.org/aio/MachineLearningSubset",
+      "lbl" : "Machine Learning Subset",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION",
       "meta" : {
@@ -6691,6 +6762,7 @@
       }
     }, {
       "id" : "https://w3id.org/aio/ModelSubset",
+      "lbl" : "Model Subset",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION",
       "meta" : {
@@ -6698,6 +6770,7 @@
       }
     }, {
       "id" : "https://w3id.org/aio/NetworkSubset",
+      "lbl" : "Network Subset",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION",
       "meta" : {
@@ -6705,10 +6778,19 @@
       }
     }, {
       "id" : "https://w3id.org/aio/PreprocessingSubset",
+      "lbl" : "Preprocessing Subset",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION",
       "meta" : {
         "comments" : [ "Preprocessing Subset" ]
+      }
+    }, {
+      "id" : "https://w3id.org/aio/TrainingStrategySubset",
+      "lbl" : "Training Strategy Subset",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "comments" : [ "Training Strategy Subset" ]
       }
     } ],
     "edges" : [ {

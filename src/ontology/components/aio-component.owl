@@ -7,13 +7,8 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <Ontology>
-        <terms:description>This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases.</terms:description>
-        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <terms:title>Artificial Intelligence Ontology</terms:title>
-    </Ontology>
+    <Ontology/>
     
 
 
@@ -31,24 +26,6 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/description -->
-
-    <AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/license -->
-
-    <AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -1679,7 +1656,6 @@
     <Class rdf:about="https://w3id.org/aio/DataEnhancement">
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Preprocessing"/>
         <obo:IAO_0000115>A preprocessing used to improve the quality diversity and volume of data available for training machine learning models, such as data augmentation synthesis and enrichment to enhance model robustness and accuracy.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>AIO:PreprocessingSubset</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/PreprocessingSubset"/>
         <rdfs:label>DataEnhancement</rdfs:label>
     </Class>
@@ -2287,7 +2263,7 @@
         <oboInOwl:hasExactSynonym>Refining</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Knowledge compression</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Teacher-student model</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/PreprocessingSubset"/>
+        <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/TrainingStrategySubset"/>
         <rdfs:label>Distillation</rdfs:label>
     </Class>
     <Axiom>
@@ -7017,7 +6993,7 @@
         <obo:IAO_0000115>A selection and sampling bias where the association between two variables changes when controlling for another variable.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Simpson&apos;s Paradox</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/BiasSubset"/>
-        <rdfs:label>Simpon&apos;s Paradox Bias</rdfs:label>
+        <rdfs:label>Simpson&apos;s Paradox Bias</rdfs:label>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="https://w3id.org/aio/SimponsParadoxBias"/>

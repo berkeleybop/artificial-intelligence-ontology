@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: https://w3id.org/aio/releases/2026-07-20/aio-base.owl
+data-version: https://w3id.org/aio/releases/2026-07-22/aio-base.owl
 subsetdef: aio:ActivationFunctionSubset "Activation Function Subset"
 subsetdef: aio:BiasSubset "Bias Subset"
 subsetdef: aio:ClassSubset "Class Subset"
@@ -10,16 +10,33 @@ subsetdef: aio:MachineLearningSubset "Machine Learning Subset"
 subsetdef: aio:ModelSubset "Model Subset"
 subsetdef: aio:NetworkSubset "Network Subset"
 subsetdef: aio:PreprocessingSubset "Preprocessing Subset"
+subsetdef: aio:TrainingStrategySubset "Training Strategy Subset"
 idspace: aio https://w3id.org/aio/ 
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 ontology: https://w3id.org/aio/aio-base.owl
 property_value: dc:type IAO:8000001
-property_value: dcterms:description "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases." xsd:string
+property_value: dcterms:bibliographicCitation "Joachimiak MP, Miller MA, Caufield JH, Ly R, Harris NL, Tritt A, Mungall CJ, Bouchard KE. The Artificial Intelligence Ontology: LLM-assisted construction of AI concept hierarchies. Applied Ontology. 2024. doi:10.1177/15705838241304103" xsd:string
+property_value: dcterms:created "2024-03-31" xsd:string
+property_value: dcterms:creator "Christopher J. Mungall" xsd:string
+property_value: dcterms:creator "J. Harry Caufield" xsd:string
+property_value: dcterms:creator "Marcin P. Joachimiak" xsd:string
+property_value: dcterms:creator "Mark A. Miller" xsd:string
+property_value: dcterms:description "The Artificial Intelligence Ontology (AIO) is a systematization of artificial intelligence concepts, methodologies, and their interrelations, spanning networks, layers, functions, large language models, preprocessing, and bias." xsd:string
 property_value: dcterms:license http://creativecommons.org/licenses/by/4.0/
+property_value: dcterms:source https://github.com/berkeleybop/artificial-intelligence-ontology
 property_value: dcterms:title "Artificial Intelligence Ontology" xsd:string
-property_value: owl:versionInfo "2026-07-20" xsd:string
+property_value: IAO:0000700 aio:Bias
+property_value: IAO:0000700 aio:Layer
+property_value: IAO:0000700 aio:MachineLearningTask
+property_value: IAO:0000700 aio:MathematicalFunction
+property_value: IAO:0000700 aio:Model
+property_value: IAO:0000700 aio:Network
+property_value: IAO:0000700 aio:Preprocessing
+property_value: IAO:0000700 aio:TrainingStrategy
+property_value: owl:versionInfo "2026-07-22" xsd:string
+property_value: seeAlso https://doi.org/10.1177/15705838241304103
 
 [Term]
 id: aio:AbstractRNNCell
@@ -790,7 +807,6 @@ id: aio:DataEnhancement
 name: DataEnhancement
 def: "A preprocessing used to improve the quality diversity and volume of data available for training machine learning models, such as data augmentation synthesis and enrichment to enhance model robustness and accuracy." []
 subset: aio:PreprocessingSubset
-synonym: "AIO:PreprocessingSubset" EXACT []
 is_a: aio:Preprocessing ! Preprocessing
 
 [Term]
@@ -1036,7 +1052,7 @@ is_a: aio:NumericalFeaturesPreprocessingLayer ! Numerical Features Preprocessing
 id: aio:Distillation
 name: Distillation
 def: "A preprocessing that trains a smaller model to replicate the behavior of a larger model aiming to compress the knowledge into a more compact form without significant loss of performance." [https://doi.org/10.48550/arXiv.2105.13093]
-subset: aio:PreprocessingSubset
+subset: aio:TrainingStrategySubset
 synonym: "Knowledge compression" RELATED []
 synonym: "Purification" EXACT []
 synonym: "Refining" EXACT []
@@ -3210,7 +3226,7 @@ is_a: aio:RecurrentLayer ! Recurrent Layer
 
 [Term]
 id: aio:SimponsParadoxBias
-name: Simpon's Paradox Bias
+name: Simpson's Paradox Bias
 def: "A selection and sampling bias where the association between two variables changes when controlling for another variable." [https://doi.org/10.6028/NIST.SP.1270]
 subset: aio:BiasSubset
 synonym: "Simpson's Paradox" EXACT []
