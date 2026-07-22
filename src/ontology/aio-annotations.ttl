@@ -2,9 +2,29 @@
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <https://w3id.org/aio/aio.owl>
   rdf:type owl:Ontology ;
   dcterms:title "Artificial Intelligence Ontology" ;
   dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-  dcterms:description "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases." .
+  dcterms:description "The Artificial Intelligence Ontology (AIO) is a systematization of artificial intelligence concepts, methodologies, and their interrelations, spanning networks, layers, functions, large language models, preprocessing, and bias." ;
+  dcterms:created "2024-03-31"^^xsd:date ;
+  dcterms:source <https://github.com/berkeleybop/artificial-intelligence-ontology> ;
+  dcterms:creator
+    "Mark A. Miller" ,
+    "Marcin P. Joachimiak" ,
+    "J. Harry Caufield" ,
+    "Christopher J. Mungall" ;
+  dcterms:bibliographicCitation "Joachimiak MP, Miller MA, Caufield JH, Ly R, Harris NL, Tritt A, Mungall CJ, Bouchard KE. The Artificial Intelligence Ontology: LLM-assisted construction of AI concept hierarchies. Applied Ontology. 2024. doi:10.1177/15705838241304103" ;
+  rdfs:seeAlso <https://doi.org/10.1177/15705838241304103> ;
+  obo:IAO_0000700
+    <https://w3id.org/aio/Bias> ,
+    <https://w3id.org/aio/Layer> ,
+    <https://w3id.org/aio/MachineLearningTask> ,
+    <https://w3id.org/aio/MathematicalFunction> ,
+    <https://w3id.org/aio/Model> ,
+    <https://w3id.org/aio/Network> ,
+    <https://w3id.org/aio/Preprocessing> ,
+    <https://w3id.org/aio/TrainingStrategy> .
