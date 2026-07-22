@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use the Artificial Intelligence Ontology (AIO), please cite the article listed under preferred-citation."
+title: "Artificial Intelligence Ontology (AIO)"
+abstract: "The Artificial Intelligence Ontology (AIO) is a systematization of artificial intelligence concepts, methodologies, and their interrelations, spanning networks, layers, functions, large language models, preprocessing, and bias."
+type: dataset
+license: CC-BY-4.0
+repository-code: "https://github.com/berkeleybop/artificial-intelligence-ontology"
+url: "https://w3id.org/aio/"
+authors:
+  - family-names: Joachimiak
+    given-names: "Marcin P."
+  - family-names: Miller
+    given-names: "Mark A."
+    orcid: "https://orcid.org/0000-0001-9076-6066"
+  - family-names: Caufield
+    given-names: "J. Harry"
+  - family-names: Ly
+    given-names: Ryan
+  - family-names: Harris
+    given-names: "Nomi L."
+  - family-names: Tritt
+    given-names: Andrew
+  - family-names: Mungall
+    given-names: "Christopher J."
+  - family-names: Bouchard
+    given-names: "Kristofer E."
+preferred-citation:
+  type: article
+  title: "The Artificial Intelligence Ontology: LLM-assisted construction of AI concept hierarchies"
+  journal: "Applied Ontology"
+  year: 2024
+  doi: "10.1177/15705838241304103"
+  authors:
+    - family-names: Joachimiak
+      given-names: "Marcin P."
+    - family-names: Miller
+      given-names: "Mark A."
+      orcid: "https://orcid.org/0000-0001-9076-6066"
+    - family-names: Caufield
+      given-names: "J. Harry"
+    - family-names: Ly
+      given-names: Ryan
+    - family-names: Harris
+      given-names: "Nomi L."
+    - family-names: Tritt
+      given-names: Andrew
+    - family-names: Mungall
+      given-names: "Christopher J."
+    - family-names: Bouchard
+      given-names: "Kristofer E."
