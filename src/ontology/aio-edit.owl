@@ -64,7 +64,7 @@ AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#Sub
 
 # Annotation Property: aio:ActivationFunctionSubset (aio:ActivationFunctionSubset)
 
-AnnotationAssertion(rdfs:label aio:ActivationFunctionSubset "Activation Function Subset")
+AnnotationAssertion(rdfs:label aio:ActivationFunctionSubset "Activation Function Subset"@en)
 SubAnnotationPropertyOf(aio:ActivationFunctionSubset <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
 # Annotation Property: aio:BiasSubset (aio:BiasSubset)
@@ -84,7 +84,7 @@ SubAnnotationPropertyOf(aio:FunctionSubset <http://www.geneontology.org/formats/
 
 # Annotation Property: aio:InstanceNormalizationLayerSubset (aio:InstanceNormalizationLayerSubset)
 
-AnnotationAssertion(rdfs:label aio:InstanceNormalizationLayerSubset "Instance Normalization Layer Subset")
+AnnotationAssertion(rdfs:label aio:InstanceNormalizationLayerSubset "Instance Normalization Layer Subset"@en)
 SubAnnotationPropertyOf(aio:InstanceNormalizationLayerSubset <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
 # Annotation Property: aio:LayerSubset (aio:LayerSubset)
