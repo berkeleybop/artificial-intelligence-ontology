@@ -28,3 +28,6 @@
     <https://w3id.org/aio/Network> ,
     <https://w3id.org/aio/Preprocessing> ,
     <https://w3id.org/aio/TrainingStrategy> .
+
+obo:IAO_0000700 rdf:type owl:AnnotationProperty ;
+  rdfs:label "has ontology root term" .
