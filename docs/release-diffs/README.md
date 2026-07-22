@@ -21,6 +21,11 @@ robot diff --labels true \
   -o docs/release-diffs/aio-diff_<old>_to_<new>.md
 ```
 
+Strip the `Loaded from:` lines after generating (`| grep -v '^- Loaded from:'`).
+They record the transient input file path (a docker mount like `/base` or
+`/work`), carry no release information beyond the IRI lines above them, and would
+otherwise churn on every regeneration.
+
 The ODK `release_diff` target produces the same output, but it compares against
 whatever `w3id.org/aio/aio.owl` resolves to (currently `main/aio.owl`), which is
 the latest committed build, not necessarily the last tagged GitHub Release. To
