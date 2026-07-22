@@ -1,0 +1,2 @@
+Take the following list of classes and their definitions, edit or replace the definitions as needed according to the uploaded pdf guidelines and then output in a copyable text format with class and definition per row.
+

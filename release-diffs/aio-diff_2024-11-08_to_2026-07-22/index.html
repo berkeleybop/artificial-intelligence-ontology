@@ -1,0 +1,2133 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://berkeleybop.github.io/artificial-intelligence-ontology/release-diffs/aio-diff_2024-11-08_to_2026-07-22/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Ontology comparison - Artificial Intelligence Ontology</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ontology-comparison" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Artificial Intelligence Ontology" class="md-header__button md-logo" aria-label="Artificial Intelligence Ontology" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Artificial Intelligence Ontology
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ontology comparison
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/berkeleybop/artificial-intelligence-ontology/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Artificial Intelligence Ontology" class="md-nav__button md-logo" aria-label="Artificial Intelligence Ontology" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Artificial Intelligence Ontology
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/berkeleybop/artificial-intelligence-ontology/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How-to guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            How-to guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Standard ODK workflows
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Standard ODK workflows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/EditorsWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editors Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ReleaseWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/RepoManagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage your ODK Repository
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/SettingUpDockerForODK/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting up Docker for ODK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/UpdateImports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Imports management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/components/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Components management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ManageDocumentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing the documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ManageAutomatedTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing your automated testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ContinuousIntegration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/RepositoryFileStructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Your ODK Repository Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#left" class="md-nav__link">
+    <span class="md-ellipsis">
+      Left
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#right" class="md-nav__link">
+    <span class="md-ellipsis">
+      Right
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Right">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ontology-imports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ontology imports
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ontology-annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ontology annotations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ontology annotations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activation-function-subset-httpsw3idorgaioactivationfunctionsubset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activation Function Subset https://w3id.org/aio/ActivationFunctionSubset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Activation Function Subset https://w3id.org/aio/ActivationFunctionSubset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bias-subset-httpsw3idorgaiobiassubset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bias Subset https://w3id.org/aio/BiasSubset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bias Subset https://w3id.org/aio/BiasSubset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-subset-httpsw3idorgaioclasssubset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class Subset https://w3id.org/aio/ClassSubset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Class Subset https://w3id.org/aio/ClassSubset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cropping3d-layer-httpsw3idorgaiocropping3dlayer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cropping3D Layer https://w3id.org/aio/Cropping3DLayer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cropping3D Layer https://w3id.org/aio/Cropping3DLayer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#curriculum-learning-httpsw3idorgaiocurriculumlearning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Curriculum Learning https://w3id.org/aio/CurriculumLearning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Curriculum Learning https://w3id.org/aio/CurriculumLearning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#discretization-layer-httpsw3idorgaiodiscretizationlayer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discretization Layer https://w3id.org/aio/DiscretizationLayer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Discretization Layer https://w3id.org/aio/DiscretizationLayer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distillation-httpsw3idorgaiodistillation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distillation https://w3id.org/aio/Distillation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distillation https://w3id.org/aio/Distillation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-subset-httpsw3idorgaiofunctionsubset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Subset https://w3id.org/aio/FunctionSubset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Function Subset https://w3id.org/aio/FunctionSubset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incremenetal-few-shot-learning-httpsw3idorgaioincremenetalfewshotlearning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Incremenetal Few-shot Learning https://w3id.org/aio/IncremenetalFewshotLearning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Incremenetal Few-shot Learning https://w3id.org/aio/IncremenetalFewshotLearning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inputspec-layer-httpsw3idorgaioinputspeclayer" class="md-nav__link">
+    <span class="md-ellipsis">
+      InputSpec Layer https://w3id.org/aio/InputSpecLayer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="InputSpec Layer https://w3id.org/aio/InputSpecLayer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instance-normalization-layer-subset-httpsw3idorgaioinstancenormalizationlayersubset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instance Normalization Layer Subset https://w3id.org/aio/InstanceNormalizationLayerSubset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instance Normalization Layer Subset https://w3id.org/aio/InstanceNormalizationLayerSubset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#k-nearest-neighbor-regression-algorithm-httpsw3idorgaioknearestneighborregressionalgorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      K-nearest Neighbor Regression Algorithm https://w3id.org/aio/KnearestNeighborRegressionAlgorithm
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="K-nearest Neighbor Regression Algorithm https://w3id.org/aio/KnearestNeighborRegressionAlgorithm">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#knowledge-transfer-httpsw3idorgaioknowledgetransfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowledge Transfer https://w3id.org/aio/KnowledgeTransfer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Knowledge Transfer https://w3id.org/aio/KnowledgeTransfer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-layer-httpsw3idorgaiolayerlayer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layer Layer https://w3id.org/aio/LayerLayer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Layer Layer https://w3id.org/aio/LayerLayer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-subset-httpsw3idorgaiolayersubset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layer Subset https://w3id.org/aio/LayerSubset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Layer Subset https://w3id.org/aio/LayerSubset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-learning-subset-httpsw3idorgaiomachinelearningsubset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine Learning Subset https://w3id.org/aio/MachineLearningSubset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Machine Learning Subset https://w3id.org/aio/MachineLearningSubset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-subset-httpsw3idorgaiomodelsubset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Subset https://w3id.org/aio/ModelSubset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model Subset https://w3id.org/aio/ModelSubset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-subset-httpsw3idorgaionetworksubset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Subset https://w3id.org/aio/NetworkSubset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Network Subset https://w3id.org/aio/NetworkSubset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normalization-layer-httpsw3idorgaionormalizationlayer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Normalization Layer https://w3id.org/aio/NormalizationLayer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Normalization Layer https://w3id.org/aio/NormalizationLayer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one-shot-learning-httpsw3idorgaiooneshotlearning" class="md-nav__link">
+    <span class="md-ellipsis">
+      One-shot Learning https://w3id.org/aio/OneshotLearning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="One-shot Learning https://w3id.org/aio/OneshotLearning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preprocessing-httpsw3idorgaiopreprocessing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preprocessing https://w3id.org/aio/Preprocessing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Preprocessing https://w3id.org/aio/Preprocessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preprocessing-subset-httpsw3idorgaiopreprocessingsubset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preprocessing Subset https://w3id.org/aio/PreprocessingSubset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Preprocessing Subset https://w3id.org/aio/PreprocessingSubset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simpons-paradox-bias-httpsw3idorgaiosimponsparadoxbias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simpon's Paradox Bias https://w3id.org/aio/SimponsParadoxBias
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Simpon's Paradox Bias https://w3id.org/aio/SimponsParadoxBias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#training-strategies-httpsw3idorgaiotrainingstrategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Training Strategies https://w3id.org/aio/TrainingStrategies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Training Strategies https://w3id.org/aio/TrainingStrategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#training-strategy-subset-httpsw3idorgaiotrainingstrategysubset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Training Strategy Subset https://w3id.org/aio/TrainingStrategySubset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Training Strategy Subset https://w3id.org/aio/TrainingStrategySubset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trainingstrategy-httpsw3idorgaiotrainingstrategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      TrainingStrategy https://w3id.org/aio/TrainingStrategy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TrainingStrategy https://w3id.org/aio/TrainingStrategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upsampling3d-layer-httpsw3idorgaioupsampling3dlayer" class="md-nav__link">
+    <span class="md-ellipsis">
+      UpSampling3D Layer https://w3id.org/aio/UpSampling3DLayer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UpSampling3D Layer https://w3id.org/aio/UpSampling3DLayer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zeropadding3d-layer-httpsw3idorgaiozeropadding3dlayer" class="md-nav__link">
+    <span class="md-ellipsis">
+      ZeroPadding3D Layer https://w3id.org/aio/ZeroPadding3DLayer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ZeroPadding3D Layer https://w3id.org/aio/ZeroPadding3DLayer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bibliographiccitation-httppurlorgdctermsbibliographiccitation" class="md-nav__link">
+    <span class="md-ellipsis">
+      bibliographicCitation http://purl.org/dc/terms/bibliographicCitation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="bibliographicCitation http://purl.org/dc/terms/bibliographicCitation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#created-httppurlorgdctermscreated" class="md-nav__link">
+    <span class="md-ellipsis">
+      created http://purl.org/dc/terms/created
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="created http://purl.org/dc/terms/created">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creator-httppurlorgdctermscreator" class="md-nav__link">
+    <span class="md-ellipsis">
+      creator http://purl.org/dc/terms/creator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="creator http://purl.org/dc/terms/creator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-ontology-root-term-httppurlobolibraryorgoboiao_0000700" class="md-nav__link">
+    <span class="md-ellipsis">
+      has ontology root term http://purl.obolibrary.org/obo/IAO_0000700
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="has ontology root term http://purl.obolibrary.org/obo/IAO_0000700">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-part-httppurlobolibraryorgobobfo_0000051" class="md-nav__link">
+    <span class="md-ellipsis">
+      has part http://purl.obolibrary.org/obo/BFO_0000051
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="has part http://purl.obolibrary.org/obo/BFO_0000051">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removed_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removed
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#source-httppurlorgdctermssource" class="md-nav__link">
+    <span class="md-ellipsis">
+      source http://purl.org/dc/terms/source
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="source http://purl.org/dc/terms/source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="ontology-comparison">Ontology comparison</h1>
+<h2 id="left">Left</h2>
+<ul>
+<li>Ontology IRI: <code>http://purl.obolibrary.org/obo/aio.owl</code></li>
+<li>Version IRI: <code>http://purl.obolibrary.org/obo/aio/releases/2024-11-08/aio.owl</code></li>
+</ul>
+<h2 id="right">Right</h2>
+<ul>
+<li>Ontology IRI: <code>https://w3id.org/aio/aio.owl</code></li>
+<li>Version IRI: <code>https://w3id.org/aio/releases/2026-07-22/aio.owl</code></li>
+</ul>
+<h3 id="ontology-imports">Ontology imports</h3>
+<h3 id="ontology-annotations">Ontology annotations</h3>
+<h4 id="removed">Removed</h4>
+<ul>
+<li>
+<p><a href="http://purl.org/dc/terms/description">description</a> "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases." </p>
+</li>
+<li>
+<p><a href="http://www.w3.org/2002/07/owl#versionInfo">versionInfo</a> "2024-11-08" </p>
+</li>
+</ul>
+<h4 id="added">Added</h4>
+<ul>
+<li>
+<p><a href="http://purl.obolibrary.org/obo/IAO_0000700">has ontology root term</a> <a href="https://w3id.org/aio/Bias">Bias</a> </p>
+</li>
+<li>
+<p><a href="http://purl.obolibrary.org/obo/IAO_0000700">has ontology root term</a> <a href="https://w3id.org/aio/Layer">Layer</a> </p>
+</li>
+<li>
+<p><a href="http://purl.obolibrary.org/obo/IAO_0000700">has ontology root term</a> <a href="https://w3id.org/aio/MachineLearningTask">Machine Learning Task</a> </p>
+</li>
+<li>
+<p><a href="http://purl.obolibrary.org/obo/IAO_0000700">has ontology root term</a> <a href="https://w3id.org/aio/MathematicalFunction">Mathematical Function</a> </p>
+</li>
+<li>
+<p><a href="http://purl.obolibrary.org/obo/IAO_0000700">has ontology root term</a> <a href="https://w3id.org/aio/Model">Model</a> </p>
+</li>
+<li>
+<p><a href="http://purl.obolibrary.org/obo/IAO_0000700">has ontology root term</a> <a href="https://w3id.org/aio/Network">Network</a> </p>
+</li>
+<li>
+<p><a href="http://purl.obolibrary.org/obo/IAO_0000700">has ontology root term</a> <a href="https://w3id.org/aio/Preprocessing">Preprocessing</a> </p>
+</li>
+<li>
+<p><a href="http://purl.obolibrary.org/obo/IAO_0000700">has ontology root term</a> <a href="https://w3id.org/aio/TrainingStrategy">TrainingStrategy</a> </p>
+</li>
+<li>
+<p><a href="http://purl.org/dc/terms/bibliographicCitation">bibliographicCitation</a> "Joachimiak MP, Miller MA, Caufield JH, Ly R, Harris NL, Tritt A, Mungall CJ, Bouchard KE. The Artificial Intelligence Ontology: LLM-assisted construction of AI concept hierarchies. Applied Ontology. 2024. doi:10.1177/15705838241304103" </p>
+</li>
+<li>
+<p><a href="http://purl.org/dc/terms/created">created</a> "2024-03-31" </p>
+</li>
+<li>
+<p><a href="http://purl.org/dc/terms/creator">creator</a> "Christopher J. Mungall" </p>
+</li>
+<li>
+<p><a href="http://purl.org/dc/terms/creator">creator</a> "J. Harry Caufield" </p>
+</li>
+<li>
+<p><a href="http://purl.org/dc/terms/creator">creator</a> "Marcin P. Joachimiak" </p>
+</li>
+<li>
+<p><a href="http://purl.org/dc/terms/creator">creator</a> "Mark A. Miller" </p>
+</li>
+<li>
+<p><a href="http://purl.org/dc/terms/description">description</a> "The Artificial Intelligence Ontology (AIO) is a systematization of artificial intelligence concepts, methodologies, and their interrelations, spanning networks, layers, functions, large language models, preprocessing, and bias." </p>
+</li>
+<li>
+<p><a href="http://purl.org/dc/terms/source">source</a> <a href="https://github.com/berkeleybop/artificial-intelligence-ontology">artificial-intelligence-ontology</a> </p>
+</li>
+<li>
+<p><a href="http://www.w3.org/2002/07/owl#versionInfo">versionInfo</a> "2026-07-22" </p>
+</li>
+<li>
+<p><a href="http://www.w3.org/2000/01/rdf-schema#seeAlso">seeAlso</a> <a href="https://doi.org/10.1177/15705838241304103">15705838241304103</a> </p>
+</li>
+</ul>
+<h3 id="activation-function-subset-httpsw3idorgaioactivationfunctionsubset">Activation Function Subset <code>https://w3id.org/aio/ActivationFunctionSubset</code></h3>
+<h4 id="removed_1">Removed</h4>
+<ul>
+<li><a href="https://w3id.org/aio/ActivationFunctionSubset">Activation Function Subset</a> <a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a> "Activation Function Subset" </li>
+</ul>
+<h4 id="added_1">Added</h4>
+<ul>
+<li>
+<p><a href="https://w3id.org/aio/ActivationFunctionSubset">Activation Function Subset</a> <a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a> "Activation Function Subset"@en </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/ActivationFunctionSubset">Activation Function Subset</a> <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> "Activation Function Subset"@en </p>
+</li>
+</ul>
+<h3 id="bias-subset-httpsw3idorgaiobiassubset">Bias Subset <code>https://w3id.org/aio/BiasSubset</code></h3>
+<h4 id="added_2">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/BiasSubset">Bias Subset</a> <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> "Bias Subset"@en </li>
+</ul>
+<h3 id="class-subset-httpsw3idorgaioclasssubset">Class Subset <code>https://w3id.org/aio/ClassSubset</code></h3>
+<h4 id="added_3">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/ClassSubset">Class Subset</a> <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> "Class Subset"@en </li>
+</ul>
+<h3 id="cropping3d-layer-httpsw3idorgaiocropping3dlayer">Cropping3D Layer <code>https://w3id.org/aio/Cropping3DLayer</code></h3>
+<h4 id="removed_2">Removed</h4>
+<ul>
+<li><a href="https://w3id.org/aio/Cropping3DLayer">Cropping3D Layer</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A layer that crops along spatial dimensions (depth" </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Cropping3D">Cropping3D</a> </li>
+</ul>
+<h4 id="added_4">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/Cropping3DLayer">Cropping3D Layer</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A layer that crops along spatial dimensions (depth, height and width) for 3D input." </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Cropping3D">Cropping3D</a> </li>
+</ul>
+<h3 id="curriculum-learning-httpsw3idorgaiocurriculumlearning">Curriculum Learning <code>https://w3id.org/aio/CurriculumLearning</code></h3>
+<h4 id="removed_3">Removed</h4>
+<ul>
+<li><a href="https://w3id.org/aio/CurriculumLearning">Curriculum Learning</a> SubClassOf <a href="https://w3id.org/aio/TrainingStrategies">Training Strategies</a> </li>
+</ul>
+<h4 id="added_5">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/CurriculumLearning">Curriculum Learning</a> SubClassOf <a href="https://w3id.org/aio/TrainingStrategy">TrainingStrategy</a> </li>
+</ul>
+<h3 id="discretization-layer-httpsw3idorgaiodiscretizationlayer">Discretization Layer <code>https://w3id.org/aio/DiscretizationLayer</code></h3>
+<h4 id="removed_4">Removed</h4>
+<ul>
+<li><a href="https://w3id.org/aio/DiscretizationLayer">Discretization Layer</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A numerical features prepreprocessing layer which buckets continuous features by ranges." </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Discretization">Discretization</a> </li>
+</ul>
+<h4 id="added_6">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/DiscretizationLayer">Discretization Layer</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A numerical features preprocessing layer which buckets continuous features by ranges." </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Discretization">Discretization</a> </li>
+</ul>
+<h3 id="distillation-httpsw3idorgaiodistillation">Distillation <code>https://w3id.org/aio/Distillation</code></h3>
+<h4 id="removed_5">Removed</h4>
+<ul>
+<li>
+<p><a href="https://w3id.org/aio/Distillation">Distillation</a> <a href="http://www.geneontology.org/formats/oboInOwl#inSubset">inSubset</a> <a href="https://w3id.org/aio/PreprocessingSubset">Preprocessing Subset</a> </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/Distillation">Distillation</a> SubClassOf <a href="https://w3id.org/aio/Preprocessing">Preprocessing</a> </p>
+</li>
+</ul>
+<h4 id="added_7">Added</h4>
+<ul>
+<li>
+<p><a href="https://w3id.org/aio/Distillation">Distillation</a> <a href="http://www.geneontology.org/formats/oboInOwl#inSubset">inSubset</a> <a href="https://w3id.org/aio/TrainingStrategySubset">Training Strategy Subset</a> </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/Distillation">Distillation</a> SubClassOf <a href="https://w3id.org/aio/TrainingStrategy">TrainingStrategy</a> </p>
+</li>
+</ul>
+<h3 id="function-subset-httpsw3idorgaiofunctionsubset">Function Subset <code>https://w3id.org/aio/FunctionSubset</code></h3>
+<h4 id="added_8">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/FunctionSubset">Function Subset</a> <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> "Function Subset"@en </li>
+</ul>
+<h3 id="incremenetal-few-shot-learning-httpsw3idorgaioincremenetalfewshotlearning">Incremenetal Few-shot Learning <code>https://w3id.org/aio/IncremenetalFewshotLearning</code></h3>
+<h4 id="removed_6">Removed</h4>
+<ul>
+<li><a href="https://w3id.org/aio/IncremenetalFewshotLearning">Incremenetal Few-shot Learning</a> <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> "Incremenetal Few-shot Learning" </li>
+</ul>
+<h4 id="added_9">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/IncremenetalFewshotLearning">Incremenetal Few-shot Learning</a> <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> "Incremental Few-shot Learning" </li>
+</ul>
+<h3 id="inputspec-layer-httpsw3idorgaioinputspeclayer">InputSpec Layer <code>https://w3id.org/aio/InputSpecLayer</code></h3>
+<h4 id="removed_7">Removed</h4>
+<ul>
+<li><a href="https://w3id.org/aio/InputSpecLayer">InputSpec Layer</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A layer that specifies the rank" </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/InputSpec">InputSpec</a> </li>
+</ul>
+<h4 id="added_10">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/InputSpecLayer">InputSpec Layer</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A layer that specifies the rank, dtype and shape of every input to a layer." </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/InputSpec">InputSpec</a> </li>
+</ul>
+<h3 id="instance-normalization-layer-subset-httpsw3idorgaioinstancenormalizationlayersubset">Instance Normalization Layer Subset <code>https://w3id.org/aio/InstanceNormalizationLayerSubset</code></h3>
+<h4 id="removed_8">Removed</h4>
+<ul>
+<li><a href="https://w3id.org/aio/InstanceNormalizationLayerSubset">Instance Normalization Layer Subset</a> <a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a> "Instance Normalization Layer Subset" </li>
+</ul>
+<h4 id="added_11">Added</h4>
+<ul>
+<li>
+<p><a href="https://w3id.org/aio/InstanceNormalizationLayerSubset">Instance Normalization Layer Subset</a> <a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a> "Instance Normalization Layer Subset"@en </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/InstanceNormalizationLayerSubset">Instance Normalization Layer Subset</a> <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> "Instance Normalization Layer Subset"@en </p>
+</li>
+</ul>
+<h3 id="k-nearest-neighbor-regression-algorithm-httpsw3idorgaioknearestneighborregressionalgorithm">K-nearest Neighbor Regression Algorithm <code>https://w3id.org/aio/KnearestNeighborRegressionAlgorithm</code></h3>
+<h4 id="removed_9">Removed</h4>
+<ul>
+<li><a href="https://w3id.org/aio/KnearestNeighborRegressionAlgorithm">K-nearest Neighbor Regression Algorithm</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "An regression analysis that assigns the average of the values of k nearest neighbors to objects." </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">K-nearest_neighbors_algorithm</a> </li>
+</ul>
+<h4 id="added_12">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/KnearestNeighborRegressionAlgorithm">K-nearest Neighbor Regression Algorithm</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A regression analysis that assigns the average of the values of k nearest neighbors to objects." </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">K-nearest_neighbors_algorithm</a> </li>
+</ul>
+<h3 id="knowledge-transfer-httpsw3idorgaioknowledgetransfer">Knowledge Transfer <code>https://w3id.org/aio/KnowledgeTransfer</code></h3>
+<h4 id="removed_10">Removed</h4>
+<ul>
+<li><a href="https://w3id.org/aio/KnowledgeTransfer">Knowledge Transfer</a> SubClassOf <a href="https://w3id.org/aio/TrainingStrategies">Training Strategies</a> </li>
+</ul>
+<h4 id="added_13">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/KnowledgeTransfer">Knowledge Transfer</a> SubClassOf <a href="https://w3id.org/aio/TrainingStrategy">TrainingStrategy</a> </li>
+</ul>
+<h3 id="layer-layer-httpsw3idorgaiolayerlayer">Layer Layer <code>https://w3id.org/aio/LayerLayer</code></h3>
+<h4 id="removed_11">Removed</h4>
+<ul>
+<li><a href="https://w3id.org/aio/LayerLayer">Layer Layer</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A layer that form which other layers can inherit." </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Layer">Layer</a> </li>
+</ul>
+<h4 id="added_14">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/LayerLayer">Layer Layer</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A layer from which other layers can inherit." </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Layer">Layer</a> </li>
+</ul>
+<h3 id="layer-subset-httpsw3idorgaiolayersubset">Layer Subset <code>https://w3id.org/aio/LayerSubset</code></h3>
+<h4 id="added_15">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/LayerSubset">Layer Subset</a> <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> "Layer Subset"@en </li>
+</ul>
+<h3 id="machine-learning-subset-httpsw3idorgaiomachinelearningsubset">Machine Learning Subset <code>https://w3id.org/aio/MachineLearningSubset</code></h3>
+<h4 id="added_16">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/MachineLearningSubset">Machine Learning Subset</a> <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> "Machine Learning Subset"@en </li>
+</ul>
+<h3 id="model-subset-httpsw3idorgaiomodelsubset">Model Subset <code>https://w3id.org/aio/ModelSubset</code></h3>
+<h4 id="added_17">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/ModelSubset">Model Subset</a> <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> "Model Subset"@en </li>
+</ul>
+<h3 id="network-subset-httpsw3idorgaionetworksubset">Network Subset <code>https://w3id.org/aio/NetworkSubset</code></h3>
+<h4 id="added_18">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/NetworkSubset">Network Subset</a> <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> "Network Subset"@en </li>
+</ul>
+<h3 id="normalization-layer-httpsw3idorgaionormalizationlayer">Normalization Layer <code>https://w3id.org/aio/NormalizationLayer</code></h3>
+<h4 id="removed_12">Removed</h4>
+<ul>
+<li><a href="https://w3id.org/aio/NormalizationLayer">Normalization Layer</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A numerical features prepreprocessing layer that normalizes continuous features." </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Normalization">Normalization</a> </li>
+</ul>
+<h4 id="added_19">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/NormalizationLayer">Normalization Layer</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A numerical features preprocessing layer that normalizes continuous features." </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Normalization">Normalization</a> </li>
+</ul>
+<h3 id="one-shot-learning-httpsw3idorgaiooneshotlearning">One-shot Learning <code>https://w3id.org/aio/OneshotLearning</code></h3>
+<h4 id="removed_13">Removed</h4>
+<ul>
+<li><a href="https://w3id.org/aio/OneshotLearning">One-shot Learning</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A deep neural network that classified objects from one or only a few examples." </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://en.wikipedia.org/wiki/One-shot_learning">One-shot_learning</a> </li>
+</ul>
+<h4 id="added_20">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/OneshotLearning">One-shot Learning</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A deep neural network that classifies objects from one or only a few examples." </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://en.wikipedia.org/wiki/One-shot_learning">One-shot_learning</a> </li>
+</ul>
+<h3 id="preprocessing-httpsw3idorgaiopreprocessing">Preprocessing <code>https://w3id.org/aio/Preprocessing</code></h3>
+<h4 id="removed_14">Removed</h4>
+<ul>
+<li><a href="https://w3id.org/aio/Preprocessing">Preprocessing</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "The series of steps applied to raw data before it is used in a machine learning model including tasks such as normalization scaling encoding and transformation to ensure the data is in an appropriate format and quality for analysis." </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://doi.org/10.1109/ICDE.2019.00245">ICDE.2019.00245</a> </li>
+</ul>
+<h4 id="added_21">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/Preprocessing">Preprocessing</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A process applied to raw data before it is used in a machine learning model, including tasks such as normalization, scaling, encoding, and transformation, to ensure the data is in an appropriate format and quality for analysis." </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://doi.org/10.1109/ICDE.2019.00245">ICDE.2019.00245</a> </li>
+</ul>
+<h3 id="preprocessing-subset-httpsw3idorgaiopreprocessingsubset">Preprocessing Subset <code>https://w3id.org/aio/PreprocessingSubset</code></h3>
+<h4 id="added_22">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/PreprocessingSubset">Preprocessing Subset</a> <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> "Preprocessing Subset"@en </li>
+</ul>
+<h3 id="simpons-paradox-bias-httpsw3idorgaiosimponsparadoxbias">Simpon's Paradox Bias <code>https://w3id.org/aio/SimponsParadoxBias</code></h3>
+<h4 id="removed_15">Removed</h4>
+<ul>
+<li><a href="https://w3id.org/aio/SimponsParadoxBias">Simpon's Paradox Bias</a> <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> "Simpon's Paradox Bias" </li>
+</ul>
+<h4 id="added_23">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/SimponsParadoxBias">Simpon's Paradox Bias</a> <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> "Simpson's Paradox Bias" </li>
+</ul>
+<h3 id="training-strategies-httpsw3idorgaiotrainingstrategies">Training Strategies <code>https://w3id.org/aio/TrainingStrategies</code></h3>
+<h4 id="removed_16">Removed</h4>
+<ul>
+<li>
+<p>Class: <a href="https://w3id.org/aio/TrainingStrategies">Training Strategies</a> </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/TrainingStrategies">Training Strategies</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A preprocessing used to train machine learning models including techniques such as supervised learning unsupervised learning reinforcement learning and transfer learning aimed at optimizing model performance." </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/TrainingStrategies">Training Strategies</a> <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">hasExactSynonym</a> "Instructional Methods" </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/TrainingStrategies">Training Strategies</a> <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">hasExactSynonym</a> "Learning Techniques" </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/TrainingStrategies">Training Strategies</a> <a href="http://www.geneontology.org/formats/oboInOwl#inSubset">inSubset</a> <a href="https://w3id.org/aio/TrainingStrategySubset">Training Strategy Subset</a> </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/TrainingStrategies">Training Strategies</a> <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> "Training Strategies" </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/TrainingStrategies">Training Strategies</a> SubClassOf <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a> </p>
+</li>
+</ul>
+<h3 id="training-strategy-subset-httpsw3idorgaiotrainingstrategysubset">Training Strategy Subset <code>https://w3id.org/aio/TrainingStrategySubset</code></h3>
+<h4 id="added_24">Added</h4>
+<ul>
+<li>
+<p>AnnotationProperty: <a href="https://w3id.org/aio/TrainingStrategySubset">Training Strategy Subset</a> </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/TrainingStrategySubset">Training Strategy Subset</a> <a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a> "Training Strategy Subset"@en </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/TrainingStrategySubset">Training Strategy Subset</a> <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> "Training Strategy Subset"@en </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/TrainingStrategySubset">Training Strategy Subset</a> SubPropertyOf: <a href="http://www.geneontology.org/formats/oboInOwl#SubsetProperty">subset_property</a> </p>
+</li>
+</ul>
+<h3 id="trainingstrategy-httpsw3idorgaiotrainingstrategy">TrainingStrategy <code>https://w3id.org/aio/TrainingStrategy</code></h3>
+<h4 id="added_25">Added</h4>
+<ul>
+<li>
+<p>Class: <a href="https://w3id.org/aio/TrainingStrategy">TrainingStrategy</a> </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/TrainingStrategy">TrainingStrategy</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A preprocessing used to train machine learning models including techniques such as supervised learning unsupervised learning reinforcement learning and transfer learning aimed at optimizing model performance." </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/TrainingStrategy">TrainingStrategy</a> <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">hasExactSynonym</a> "Instructional Methods" </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/TrainingStrategy">TrainingStrategy</a> <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">hasExactSynonym</a> "Learning Techniques" </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/TrainingStrategy">TrainingStrategy</a> <a href="http://www.geneontology.org/formats/oboInOwl#inSubset">inSubset</a> <a href="https://w3id.org/aio/TrainingStrategySubset">Training Strategy Subset</a> </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/TrainingStrategy">TrainingStrategy</a> <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> "TrainingStrategy" </p>
+</li>
+<li>
+<p><a href="https://w3id.org/aio/TrainingStrategy">TrainingStrategy</a> SubClassOf <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a> </p>
+</li>
+</ul>
+<h3 id="upsampling3d-layer-httpsw3idorgaioupsampling3dlayer">UpSampling3D Layer <code>https://w3id.org/aio/UpSampling3DLayer</code></h3>
+<h4 id="removed_17">Removed</h4>
+<ul>
+<li><a href="https://w3id.org/aio/UpSampling3DLayer">UpSampling3D Layer</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A layer that upsamples the input by repeating each depth" </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/UpSampling3D">UpSampling3D</a> </li>
+</ul>
+<h4 id="added_26">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/UpSampling3DLayer">UpSampling3D Layer</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A layer that upsamples the input by repeating each depth, height and width size times." </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/UpSampling3D">UpSampling3D</a> </li>
+</ul>
+<h3 id="zeropadding3d-layer-httpsw3idorgaiozeropadding3dlayer">ZeroPadding3D Layer <code>https://w3id.org/aio/ZeroPadding3DLayer</code></h3>
+<h4 id="removed_18">Removed</h4>
+<ul>
+<li><a href="https://w3id.org/aio/ZeroPadding3DLayer">ZeroPadding3D Layer</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A reshaping layer that zero-pads the input along the depth" </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/ZeroPadding3D">ZeroPadding3D</a> </li>
+</ul>
+<h4 id="added_27">Added</h4>
+<ul>
+<li><a href="https://w3id.org/aio/ZeroPadding3DLayer">ZeroPadding3D Layer</a> <a href="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> "A reshaping layer that zero-pads the input along the depth, height and width dimensions." </li>
+<li><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasDbXref</a> <a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/ZeroPadding3D">ZeroPadding3D</a> </li>
+</ul>
+<h3 id="bibliographiccitation-httppurlorgdctermsbibliographiccitation">bibliographicCitation <code>http://purl.org/dc/terms/bibliographicCitation</code></h3>
+<h4 id="added_28">Added</h4>
+<ul>
+<li>AnnotationProperty: <a href="http://purl.org/dc/terms/bibliographicCitation">bibliographicCitation</a> </li>
+</ul>
+<h3 id="created-httppurlorgdctermscreated">created <code>http://purl.org/dc/terms/created</code></h3>
+<h4 id="added_29">Added</h4>
+<ul>
+<li>AnnotationProperty: <a href="http://purl.org/dc/terms/created">created</a> </li>
+</ul>
+<h3 id="creator-httppurlorgdctermscreator">creator <code>http://purl.org/dc/terms/creator</code></h3>
+<h4 id="added_30">Added</h4>
+<ul>
+<li>AnnotationProperty: <a href="http://purl.org/dc/terms/creator">creator</a> </li>
+</ul>
+<h3 id="has-ontology-root-term-httppurlobolibraryorgoboiao_0000700">has ontology root term <code>http://purl.obolibrary.org/obo/IAO_0000700</code></h3>
+<h4 id="added_31">Added</h4>
+<ul>
+<li>
+<p>AnnotationProperty: <a href="http://purl.obolibrary.org/obo/IAO_0000700">has ontology root term</a> </p>
+</li>
+<li>
+<p><a href="http://purl.obolibrary.org/obo/IAO_0000700">has ontology root term</a> <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> "has ontology root term" </p>
+</li>
+</ul>
+<h3 id="has-part-httppurlobolibraryorgobobfo_0000051">has part <code>http://purl.obolibrary.org/obo/BFO_0000051</code></h3>
+<h4 id="removed_19">Removed</h4>
+<ul>
+<li>DataProperty: <a href="http://purl.obolibrary.org/obo/BFO_0000051">has part</a> </li>
+</ul>
+<h3 id="source-httppurlorgdctermssource">source <code>http://purl.org/dc/terms/source</code></h3>
+<h4 id="added_32">Added</h4>
+<ul>
+<li>AnnotationProperty: <a href="http://purl.org/dc/terms/source">source</a> </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
