@@ -152,6 +152,7 @@
     <!-- https://w3id.org/aio/ActivationFunctionSubset -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/ActivationFunctionSubset">
+        <rdfs:comment xml:lang="en">Activation Function Subset</rdfs:comment>
         <rdfs:label xml:lang="en">Activation Function Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
@@ -161,6 +162,7 @@
     <!-- https://w3id.org/aio/BiasSubset -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/BiasSubset">
+        <rdfs:comment xml:lang="en">Bias Subset</rdfs:comment>
         <rdfs:label xml:lang="en">Bias Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
@@ -170,6 +172,7 @@
     <!-- https://w3id.org/aio/ClassSubset -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/ClassSubset">
+        <rdfs:comment xml:lang="en">Class Subset</rdfs:comment>
         <rdfs:label xml:lang="en">Class Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
@@ -179,6 +182,7 @@
     <!-- https://w3id.org/aio/FunctionSubset -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/FunctionSubset">
+        <rdfs:comment xml:lang="en">Function Subset</rdfs:comment>
         <rdfs:label xml:lang="en">Function Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
@@ -188,6 +192,7 @@
     <!-- https://w3id.org/aio/InstanceNormalizationLayerSubset -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/InstanceNormalizationLayerSubset">
+        <rdfs:comment xml:lang="en">Instance Normalization Layer Subset</rdfs:comment>
         <rdfs:label xml:lang="en">Instance Normalization Layer Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
@@ -197,6 +202,7 @@
     <!-- https://w3id.org/aio/LayerSubset -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/LayerSubset">
+        <rdfs:comment xml:lang="en">Layer Subset</rdfs:comment>
         <rdfs:label xml:lang="en">Layer Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
@@ -206,6 +212,7 @@
     <!-- https://w3id.org/aio/MachineLearningSubset -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/MachineLearningSubset">
+        <rdfs:comment xml:lang="en">Machine Learning Subset</rdfs:comment>
         <rdfs:label xml:lang="en">Machine Learning Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
@@ -215,6 +222,7 @@
     <!-- https://w3id.org/aio/ModelSubset -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/ModelSubset">
+        <rdfs:comment xml:lang="en">Model Subset</rdfs:comment>
         <rdfs:label xml:lang="en">Model Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
@@ -224,6 +232,7 @@
     <!-- https://w3id.org/aio/NetworkSubset -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/NetworkSubset">
+        <rdfs:comment xml:lang="en">Network Subset</rdfs:comment>
         <rdfs:label xml:lang="en">Network Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
@@ -233,6 +242,7 @@
     <!-- https://w3id.org/aio/PreprocessingSubset -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/aio/PreprocessingSubset">
+        <rdfs:comment xml:lang="en">Preprocessing Subset</rdfs:comment>
         <rdfs:label xml:lang="en">Preprocessing Subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
@@ -302,7 +312,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <obo:IAO_0000115>A layer that applies an activation function to an output.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:comment>FALSE</rdfs:comment>
+        <rdfs:comment>Applies an activation function to an output.</rdfs:comment>
         <rdfs:label>Activation Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -6574,7 +6584,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <obo:IAO_0000115>A layer that applies penalties on layer parameters or layer activity during optimization summed into the loss function that the network optimizes.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:comment>FALSE</rdfs:comment>
+        <rdfs:comment>Regularizers allow you to apply penalties on layer parameters or layer activity during optimization. These penalties are summed into the loss function that the network optimizes. Regularization penalties are applied on a per-layer basis.</rdfs:comment>
         <rdfs:label>Regularization Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -7305,7 +7315,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <obo:IAO_0000115>A layer that allows a stack of RNN cells to behave as a single cell.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:comment>FALSE</rdfs:comment>
+        <rdfs:comment>Wrapper allowing a stack of RNN cells to behave as a single cell. Used to implement efficient stacked RNNs.</rdfs:comment>
         <rdfs:label>StackedRNNCells Layer</rdfs:label>
     </owl:Class>
     <owl:Axiom>

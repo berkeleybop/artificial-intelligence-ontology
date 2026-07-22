@@ -104,7 +104,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <obo:IAO_0000115>A layer that applies an activation function to an output.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:comment>FALSE</rdfs:comment>
+        <rdfs:comment>Applies an activation function to an output.</rdfs:comment>
         <rdfs:label>Activation Layer</rdfs:label>
     </Class>
     <Axiom>
@@ -6496,7 +6496,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <obo:IAO_0000115>A layer that applies penalties on layer parameters or layer activity during optimization summed into the loss function that the network optimizes.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:comment>FALSE</rdfs:comment>
+        <rdfs:comment>Regularizers allow you to apply penalties on layer parameters or layer activity during optimization. These penalties are summed into the loss function that the network optimizes. Regularization penalties are applied on a per-layer basis.</rdfs:comment>
         <rdfs:label>Regularization Layer</rdfs:label>
     </Class>
     <Axiom>
@@ -7257,7 +7257,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/aio/Layer"/>
         <obo:IAO_0000115>A layer that allows a stack of RNN cells to behave as a single cell.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/LayerSubset"/>
-        <rdfs:comment>FALSE</rdfs:comment>
+        <rdfs:comment>Wrapper allowing a stack of RNN cells to behave as a single cell. Used to implement efficient stacked RNNs.</rdfs:comment>
         <rdfs:label>StackedRNNCells Layer</rdfs:label>
     </Class>
     <Axiom>

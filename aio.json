@@ -85,7 +85,7 @@
           "val" : "A layer that applies an activation function to an output.",
           "xrefs" : [ "https://www.tensorflow.org/api_docs/python/tf/keras/layers/Activation" ]
         },
-        "comments" : [ "FALSE" ],
+        "comments" : [ "Applies an activation function to an output." ],
         "subsets" : [ "https://w3id.org/aio/LayerSubset" ]
       }
     }, {
@@ -5173,7 +5173,7 @@
           "val" : "A layer that applies penalties on layer parameters or layer activity during optimization summed into the loss function that the network optimizes.",
           "xrefs" : [ "https://keras.io/api/layers/regularizers/" ]
         },
-        "comments" : [ "FALSE" ],
+        "comments" : [ "Regularizers allow you to apply penalties on layer parameters or layer activity during optimization. These penalties are summed into the loss function that the network optimizes. Regularization penalties are applied on a per-layer basis." ],
         "subsets" : [ "https://w3id.org/aio/LayerSubset" ]
       }
     }, {
@@ -5752,7 +5752,7 @@
           "val" : "A layer that allows a stack of RNN cells to behave as a single cell.",
           "xrefs" : [ "https://www.tensorflow.org/api_docs/python/tf/keras/layers/StackedRNNCells" ]
         },
-        "comments" : [ "FALSE" ],
+        "comments" : [ "Wrapper allowing a stack of RNN cells to behave as a single cell. Used to implement efficient stacked RNNs." ],
         "subsets" : [ "https://w3id.org/aio/LayerSubset" ]
       }
     }, {
@@ -6747,52 +6747,82 @@
       "id" : "https://w3id.org/aio/ActivationFunctionSubset",
       "lbl" : "Activation Function Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "comments" : [ "Activation Function Subset" ]
+      }
     }, {
       "id" : "https://w3id.org/aio/BiasSubset",
       "lbl" : "Bias Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "comments" : [ "Bias Subset" ]
+      }
     }, {
       "id" : "https://w3id.org/aio/ClassSubset",
       "lbl" : "Class Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "comments" : [ "Class Subset" ]
+      }
     }, {
       "id" : "https://w3id.org/aio/FunctionSubset",
       "lbl" : "Function Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "comments" : [ "Function Subset" ]
+      }
     }, {
       "id" : "https://w3id.org/aio/InstanceNormalizationLayerSubset",
       "lbl" : "Instance Normalization Layer Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "comments" : [ "Instance Normalization Layer Subset" ]
+      }
     }, {
       "id" : "https://w3id.org/aio/LayerSubset",
       "lbl" : "Layer Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "comments" : [ "Layer Subset" ]
+      }
     }, {
       "id" : "https://w3id.org/aio/MachineLearningSubset",
       "lbl" : "Machine Learning Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "comments" : [ "Machine Learning Subset" ]
+      }
     }, {
       "id" : "https://w3id.org/aio/ModelSubset",
       "lbl" : "Model Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "comments" : [ "Model Subset" ]
+      }
     }, {
       "id" : "https://w3id.org/aio/NetworkSubset",
       "lbl" : "Network Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "comments" : [ "Network Subset" ]
+      }
     }, {
       "id" : "https://w3id.org/aio/PreprocessingSubset",
       "lbl" : "Preprocessing Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "comments" : [ "Preprocessing Subset" ]
+      }
     } ],
     "edges" : [ {
       "sub" : "https://w3id.org/aio/AbstractRNNCell",
