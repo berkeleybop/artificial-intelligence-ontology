@@ -1737,7 +1737,7 @@ is_a: aio:LanguageModel ! Language Model
 
 [Term]
 id: aio:IncremenetalFewshotLearning
-name: Incremenetal Few-shot Learning
+name: Incremental Few-shot Learning
 def: "A deep neural network trained on a base set of classes and then presented with novel classes, each with few labeled examples." [https://arxiv.org/abs/1810.07218]
 subset: aio:NetworkSubset
 synonym: "IFSL" EXACT []

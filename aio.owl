@@ -3904,7 +3904,7 @@
         <obo:IAO_0000115>A deep neural network trained on a base set of classes and then presented with novel classes, each with few labeled examples.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>IFSL</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/NetworkSubset"/>
-        <rdfs:label>Incremenetal Few-shot Learning</rdfs:label>
+        <rdfs:label>Incremental Few-shot Learning</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/IncremenetalFewshotLearning"/>

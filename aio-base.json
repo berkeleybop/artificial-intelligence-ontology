@@ -3011,7 +3011,7 @@
       }
     }, {
       "id" : "https://w3id.org/aio/IncremenetalFewshotLearning",
-      "lbl" : "Incremenetal Few-shot Learning",
+      "lbl" : "Incremental Few-shot Learning",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
