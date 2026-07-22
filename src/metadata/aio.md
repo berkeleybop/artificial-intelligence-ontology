@@ -29,8 +29,6 @@ products:
     name: "Artificial Intelligence Ontology additional release in OBO format"
   - id: aio/aio-base.json
     name: "Artificial Intelligence Ontology additional release in OBOJSon format"
-dependencies:
-- id: swo
 
 tracker: https://github.com/berkeleybop/artificial-intelligence-ontology/issues
 license:
