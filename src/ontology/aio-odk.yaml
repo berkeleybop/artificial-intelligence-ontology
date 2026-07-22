@@ -1,5 +1,6 @@
 id: aio
 title: Artificial Intelligence Ontology
+uribase: https://w3id.org
 github_org: berkeleybop
 repo: artificial-intelligence-ontology
 use_mappings: true

@@ -19,6 +19,28 @@ all-extras-build: components-from-new-input all bridge/aio-bridge-to-upper.owl
 # after the generated default (REPORT_FAIL_ON = none), so this wins.
 REPORT_FAIL_ON = ERROR
 
+# AIO's ontology IRI base is w3id, not the ODK-default OBO PURL. This mirrors the
+# approach METPO uses (berkeleybop/metpo, tracked at metpo#465): set uribase to the
+# bare https://w3id.org in aio-odk.yaml, giving URIBASE=https://w3id.org and
+# ONTBASE=https://w3id.org/aio; then override the main product recipes below, because
+# ODK's generated $(ONT).owl / $(ONT).json recipes use $(URIBASE)/$@
+# (= https://w3id.org/aio.owl, wrong) instead of $(ONTBASE)/$@
+# (= https://w3id.org/aio/aio.owl, correct). aio.Makefile is included after the
+# generated Makefile, so these override it until `make update_repo` regenerates it.
+URIBASE = https://w3id.org
+ONTBASE = https://w3id.org/aio
+
+# release_diff downloads this for comparison; the generated $(ONTBASE).owl would 404.
+CURRENT_RELEASE = $(ONTBASE)/$(ONT).owl
+
+$(ONT).owl: $(ONT)-full.owl
+	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert -o $@.tmp.owl && mv $@.tmp.owl $@
+
+$(ONT).json: $(ONT).owl
+	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert --check false -f json -o $@.tmp.json && mv $@.tmp.json $@
+
 # Source of truth for AIO.
 # This is a ROBOT template.
 SRC_URL = 'https://docs.google.com/spreadsheets/d/1LVubUGg56YDGJ0VUdJDMNBPY8iFfissRfy4eM56bUFg/export?exportFormat=csv'
