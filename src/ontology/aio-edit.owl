@@ -12,11 +12,10 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<https://w3id.org/aio/artificial-intelligence-ontology.owl>
 Import(<http://purl.obolibrary.org/obo/aio/components/aio-component.owl>)
-Import(<http://purl.obolibrary.org/obo/aio/imports/swo_import.owl>)
 Annotation(dcterms:description "The Artificial Intelligence Ontology (AIO) is a systematization of artificial intelligence concepts, methodologies, and their interrelations, spanning networks, layers, functions, large language models, preprocessing, and bias.")
 Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Artificial Intelligence Ontology")
-Annotation(dcterms:created "2024-03-31"^^xsd:date)
+Annotation(dcterms:created "2024-03-31")
 Annotation(dcterms:source <https://github.com/berkeleybop/artificial-intelligence-ontology>)
 Annotation(dcterms:creator "Mark A. Miller")
 Annotation(dcterms:creator "Marcin P. Joachimiak")

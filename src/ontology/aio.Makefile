@@ -99,9 +99,9 @@ bridge/aio-bridge-to-upper.owl: bridge/aio-bridge-to-upper.tsv
 # is a defect. This guards against regressions such as the has part
 # object/datatype punning fixed in issue #93.
 .PHONY: validate-el-profile
-validate-el-profile:
+validate-el-profile: $(ONT).owl
 	@mkdir -p $(REPORTDIR)
-	robot validate-profile --profile EL --input $(RELEASEDIR)/aio.owl --output $(REPORTDIR)/aio-el-profile.txt
+	robot validate-profile --profile EL --input $(ONT).owl --output $(REPORTDIR)/aio-el-profile.txt
 
 # Run the EL profile check as part of the standard test suite.
 test: validate-el-profile
