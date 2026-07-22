@@ -77,6 +77,16 @@ components/%.owl: components/%.csv
 	  annotate --annotation-file aio-annotations.ttl \
 	  -o $@
 
+# aio-edit.owl imports components/aio-component.owl via the catalog, so the
+# preprocess step ($(EDIT_PREPROCESSED), which runs `robot convert` on aio-edit.owl)
+# fails to load if the component is missing. The generated Makefile lists the
+# component ($(OTHER_SRC)) as a prerequisite of the merged/base/full targets but not
+# of preprocess, which runs first. Committed builds work because the component is on
+# disk; a clean-room rebuild (purge the sheet-derived aio-src.csv and component,
+# refetch from Google, `make prepare_release`) has nothing to import. This
+# prerequisite-only rule makes the release build rebuild a purged component first.
+$(EDIT_PREPROCESSED): $(OTHER_SRC)
+
 clean-extras:
 	rm -rf aio.db aio-root-statistics* bridge/aio-bridge-to-upper.owl aio-2024-06-26.owl current-vs-2024-06-26-diff* aio-relation-graph.tsv.gz
 
