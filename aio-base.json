@@ -3,22 +3,70 @@
     "id" : "https://w3id.org/aio/aio-base.json",
     "meta" : {
       "basicPropertyValues" : [ {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "https://w3id.org/aio/Bias"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "https://w3id.org/aio/Layer"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "https://w3id.org/aio/MachineLearningTask"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "https://w3id.org/aio/MathematicalFunction"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "https://w3id.org/aio/Model"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "https://w3id.org/aio/Network"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "https://w3id.org/aio/Preprocessing"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "https://w3id.org/aio/TrainingStrategy"
+      }, {
         "pred" : "http://purl.org/dc/elements/1.1/type",
         "val" : "http://purl.obolibrary.org/obo/IAO_8000001"
       }, {
+        "pred" : "http://purl.org/dc/terms/bibliographicCitation",
+        "val" : "Joachimiak MP, Miller MA, Caufield JH, Ly R, Harris NL, Tritt A, Mungall CJ, Bouchard KE. The Artificial Intelligence Ontology: LLM-assisted construction of AI concept hierarchies. Applied Ontology. 2024. doi:10.1177/15705838241304103"
+      }, {
+        "pred" : "http://purl.org/dc/terms/created",
+        "val" : "2024-03-31"
+      }, {
+        "pred" : "http://purl.org/dc/terms/creator",
+        "val" : "Christopher J. Mungall"
+      }, {
+        "pred" : "http://purl.org/dc/terms/creator",
+        "val" : "J. Harry Caufield"
+      }, {
+        "pred" : "http://purl.org/dc/terms/creator",
+        "val" : "Marcin P. Joachimiak"
+      }, {
+        "pred" : "http://purl.org/dc/terms/creator",
+        "val" : "Mark A. Miller"
+      }, {
         "pred" : "http://purl.org/dc/terms/description",
-        "val" : "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases."
+        "val" : "The Artificial Intelligence Ontology (AIO) is a systematization of artificial intelligence concepts, methodologies, and their interrelations, spanning networks, layers, functions, large language models, preprocessing, and bias."
       }, {
         "pred" : "http://purl.org/dc/terms/license",
         "val" : "http://creativecommons.org/licenses/by/4.0/"
       }, {
+        "pred" : "http://purl.org/dc/terms/source",
+        "val" : "https://github.com/berkeleybop/artificial-intelligence-ontology"
+      }, {
         "pred" : "http://purl.org/dc/terms/title",
         "val" : "Artificial Intelligence Ontology"
       }, {
+        "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "val" : "https://doi.org/10.1177/15705838241304103"
+      }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-07-20"
+        "val" : "2026-07-22"
       } ],
-      "version" : "https://w3id.org/aio/releases/2026-07-20/aio-base.json"
+      "version" : "https://w3id.org/aio/releases/2026-07-22/aio-base.json"
     },
     "nodes" : [ {
       "id" : "https://w3id.org/aio/AbstractRNNCell",
@@ -40,7 +88,7 @@
           "val" : "A layer that applies an activation function to an output.",
           "xrefs" : [ "https://www.tensorflow.org/api_docs/python/tf/keras/layers/Activation" ]
         },
-        "comments" : [ "Applies an activation function to an output." ],
+        "comments" : [ "FALSE" ],
         "subsets" : [ "https://w3id.org/aio/LayerSubset" ]
       }
     }, {
@@ -5128,7 +5176,7 @@
           "val" : "A layer that applies penalties on layer parameters or layer activity during optimization summed into the loss function that the network optimizes.",
           "xrefs" : [ "https://keras.io/api/layers/regularizers/" ]
         },
-        "comments" : [ "Regularizers allow you to apply penalties on layer parameters or layer activity during optimization. These penalties are summed into the loss function that the network optimizes. Regularization penalties are applied on a per-layer basis." ],
+        "comments" : [ "FALSE" ],
         "subsets" : [ "https://w3id.org/aio/LayerSubset" ]
       }
     }, {
@@ -5707,7 +5755,7 @@
           "val" : "A layer that allows a stack of RNN cells to behave as a single cell.",
           "xrefs" : [ "https://www.tensorflow.org/api_docs/python/tf/keras/layers/StackedRNNCells" ]
         },
-        "comments" : [ "Wrapper allowing a stack of RNN cells to behave as a single cell. Used to implement efficient stacked RNNs." ],
+        "comments" : [ "FALSE" ],
         "subsets" : [ "https://w3id.org/aio/LayerSubset" ]
       }
     }, {
@@ -6605,7 +6653,23 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000700",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://purl.org/dc/elements/1.1/type",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/bibliographicCitation",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/created",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/creator",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -6614,6 +6678,10 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/terms/license",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/source",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -6642,74 +6710,54 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "https://w3id.org/aio/ActivationFunctionSubset",
+      "lbl" : "Activation Function Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION",
-      "meta" : {
-        "comments" : [ "Activation Function Subset" ]
-      }
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "https://w3id.org/aio/BiasSubset",
+      "lbl" : "Bias Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION",
-      "meta" : {
-        "comments" : [ "Bias Subset" ]
-      }
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "https://w3id.org/aio/ClassSubset",
+      "lbl" : "Class Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION",
-      "meta" : {
-        "comments" : [ "Class Subset" ]
-      }
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "https://w3id.org/aio/FunctionSubset",
+      "lbl" : "Function Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION",
-      "meta" : {
-        "comments" : [ "Function Subset" ]
-      }
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "https://w3id.org/aio/InstanceNormalizationLayerSubset",
+      "lbl" : "Instance Normalization Layer Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION",
-      "meta" : {
-        "comments" : [ "Instance Normalization Layer Subset" ]
-      }
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "https://w3id.org/aio/LayerSubset",
+      "lbl" : "Layer Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION",
-      "meta" : {
-        "comments" : [ "Layer Subset" ]
-      }
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "https://w3id.org/aio/MachineLearningSubset",
+      "lbl" : "Machine Learning Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION",
-      "meta" : {
-        "comments" : [ "Machine Learning Subset" ]
-      }
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "https://w3id.org/aio/ModelSubset",
+      "lbl" : "Model Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION",
-      "meta" : {
-        "comments" : [ "Model Subset" ]
-      }
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "https://w3id.org/aio/NetworkSubset",
+      "lbl" : "Network Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION",
-      "meta" : {
-        "comments" : [ "Network Subset" ]
-      }
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "https://w3id.org/aio/PreprocessingSubset",
+      "lbl" : "Preprocessing Subset",
       "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION",
-      "meta" : {
-        "comments" : [ "Preprocessing Subset" ]
-      }
+      "propertyType" : "ANNOTATION"
     } ],
     "edges" : [ {
       "sub" : "https://w3id.org/aio/AbstractRNNCell",

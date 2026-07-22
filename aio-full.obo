@@ -1,23 +1,39 @@
 format-version: 1.2
-data-version: https://w3id.org/aio/releases/2026-07-20/aio-full.owl
-subsetdef: aio:ActivationFunctionSubset "Activation Function Subset"
-subsetdef: aio:BiasSubset "Bias Subset"
-subsetdef: aio:ClassSubset "Class Subset"
-subsetdef: aio:FunctionSubset "Function Subset"
-subsetdef: aio:InstanceNormalizationLayerSubset "Instance Normalization Layer Subset"
-subsetdef: aio:LayerSubset "Layer Subset"
-subsetdef: aio:MachineLearningSubset "Machine Learning Subset"
-subsetdef: aio:ModelSubset "Model Subset"
-subsetdef: aio:NetworkSubset "Network Subset"
-subsetdef: aio:PreprocessingSubset "Preprocessing Subset"
+data-version: https://w3id.org/aio/releases/2026-07-22/aio-full.owl
+subsetdef: aio:ActivationFunctionSubset ""
+subsetdef: aio:BiasSubset ""
+subsetdef: aio:ClassSubset ""
+subsetdef: aio:FunctionSubset ""
+subsetdef: aio:InstanceNormalizationLayerSubset ""
+subsetdef: aio:LayerSubset ""
+subsetdef: aio:MachineLearningSubset ""
+subsetdef: aio:ModelSubset ""
+subsetdef: aio:NetworkSubset ""
+subsetdef: aio:PreprocessingSubset ""
 idspace: aio https://w3id.org/aio/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 ontology: https://w3id.org/aio/aio-full.owl
-property_value: dcterms:description "This ontology models classes and relationships describing deep learning networks, their component layers and activation functions, as well as potential biases." xsd:string
+property_value: dcterms:bibliographicCitation "Joachimiak MP, Miller MA, Caufield JH, Ly R, Harris NL, Tritt A, Mungall CJ, Bouchard KE. The Artificial Intelligence Ontology: LLM-assisted construction of AI concept hierarchies. Applied Ontology. 2024. doi:10.1177/15705838241304103" xsd:string
+property_value: dcterms:created "2024-03-31" xsd:string
+property_value: dcterms:creator "Christopher J. Mungall" xsd:string
+property_value: dcterms:creator "J. Harry Caufield" xsd:string
+property_value: dcterms:creator "Marcin P. Joachimiak" xsd:string
+property_value: dcterms:creator "Mark A. Miller" xsd:string
+property_value: dcterms:description "The Artificial Intelligence Ontology (AIO) is a systematization of artificial intelligence concepts, methodologies, and their interrelations, spanning networks, layers, functions, large language models, preprocessing, and bias." xsd:string
 property_value: dcterms:license http://creativecommons.org/licenses/by/4.0/
+property_value: dcterms:source https://github.com/berkeleybop/artificial-intelligence-ontology
 property_value: dcterms:title "Artificial Intelligence Ontology" xsd:string
-property_value: owl:versionInfo "2026-07-20" xsd:string
+property_value: IAO:0000700 aio:Bias
+property_value: IAO:0000700 aio:Layer
+property_value: IAO:0000700 aio:MachineLearningTask
+property_value: IAO:0000700 aio:MathematicalFunction
+property_value: IAO:0000700 aio:Model
+property_value: IAO:0000700 aio:Network
+property_value: IAO:0000700 aio:Preprocessing
+property_value: IAO:0000700 aio:TrainingStrategy
+property_value: owl:versionInfo "2026-07-22" xsd:string
+property_value: seeAlso https://doi.org/10.1177/15705838241304103
 
 [Term]
 id: aio:AbstractRNNCell
@@ -30,7 +46,7 @@ is_a: aio:Layer ! Layer
 id: aio:ActivationLayer
 name: Activation Layer
 def: "A layer that applies an activation function to an output." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/Activation]
-comment: Applies an activation function to an output.
+comment: FALSE
 subset: aio:LayerSubset
 is_a: aio:Layer ! Layer
 
@@ -2980,7 +2996,7 @@ is_a: aio:SupervisedLearning ! Supervised Learning
 id: aio:RegularizationLayer
 name: Regularization Layer
 def: "A layer that applies penalties on layer parameters or layer activity during optimization summed into the loss function that the network optimizes." [https://keras.io/api/layers/regularizers/]
-comment: Regularizers allow you to apply penalties on layer parameters or layer activity during optimization. These penalties are summed into the loss function that the network optimizes. Regularization penalties are applied on a per-layer basis.
+comment: FALSE
 subset: aio:LayerSubset
 is_a: aio:Layer ! Layer
 
@@ -3328,7 +3344,7 @@ is_a: aio:HiddenLayer ! Hidden Layer
 id: aio:StackedRNNCellsLayer
 name: StackedRNNCells Layer
 def: "A layer that allows a stack of RNN cells to behave as a single cell." [https://www.tensorflow.org/api_docs/python/tf/keras/layers/StackedRNNCells]
-comment: Wrapper allowing a stack of RNN cells to behave as a single cell. Used to implement efficient stacked RNNs.
+comment: FALSE
 subset: aio:LayerSubset
 is_a: aio:Layer ! Layer
 
