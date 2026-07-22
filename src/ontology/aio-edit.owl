@@ -54,6 +54,7 @@ Declaration(AnnotationProperty(aio:MachineLearningSubset))
 Declaration(AnnotationProperty(aio:ModelSubset))
 Declaration(AnnotationProperty(aio:NetworkSubset))
 Declaration(AnnotationProperty(aio:PreprocessingSubset))
+Declaration(AnnotationProperty(aio:TrainingStrategySubset))
 ############################
 #   Annotation Properties
 ############################
@@ -142,6 +143,12 @@ SubAnnotationPropertyOf(aio:NetworkSubset <http://www.geneontology.org/formats/o
 AnnotationAssertion(rdfs:label aio:PreprocessingSubset "Preprocessing Subset"@en)
 AnnotationAssertion(rdfs:comment aio:PreprocessingSubset "Preprocessing Subset"@en)
 SubAnnotationPropertyOf(aio:PreprocessingSubset <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+# Annotation Property: aio:TrainingStrategySubset (aio:TrainingStrategySubset)
+
+AnnotationAssertion(rdfs:label aio:TrainingStrategySubset "Training Strategy Subset"@en)
+AnnotationAssertion(rdfs:comment aio:TrainingStrategySubset "Training Strategy Subset"@en)
+SubAnnotationPropertyOf(aio:TrainingStrategySubset <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
 
 ############################

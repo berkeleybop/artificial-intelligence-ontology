@@ -5550,7 +5550,7 @@
       }
     }, {
       "id" : "https://w3id.org/aio/SimponsParadoxBias",
-      "lbl" : "Simpon's Paradox Bias",
+      "lbl" : "Simpson's Paradox Bias",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -6818,6 +6818,14 @@
       "propertyType" : "ANNOTATION",
       "meta" : {
         "comments" : [ "Preprocessing Subset" ]
+      }
+    }, {
+      "id" : "https://w3id.org/aio/TrainingStrategySubset",
+      "lbl" : "Training Strategy Subset",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "comments" : [ "Training Strategy Subset" ]
       }
     } ],
     "edges" : [ {

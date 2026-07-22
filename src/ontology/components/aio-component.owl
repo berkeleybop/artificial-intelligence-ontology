@@ -6993,7 +6993,7 @@
         <obo:IAO_0000115>A selection and sampling bias where the association between two variables changes when controlling for another variable.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Simpson&apos;s Paradox</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/BiasSubset"/>
-        <rdfs:label>Simpon&apos;s Paradox Bias</rdfs:label>
+        <rdfs:label>Simpson&apos;s Paradox Bias</rdfs:label>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="https://w3id.org/aio/SimponsParadoxBias"/>

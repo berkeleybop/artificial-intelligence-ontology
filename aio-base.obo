@@ -10,6 +10,7 @@ subsetdef: aio:MachineLearningSubset "Machine Learning Subset"
 subsetdef: aio:ModelSubset "Model Subset"
 subsetdef: aio:NetworkSubset "Network Subset"
 subsetdef: aio:PreprocessingSubset "Preprocessing Subset"
+subsetdef: aio:TrainingStrategySubset "Training Strategy Subset"
 idspace: aio https://w3id.org/aio/ 
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
@@ -3225,7 +3226,7 @@ is_a: aio:RecurrentLayer ! Recurrent Layer
 
 [Term]
 id: aio:SimponsParadoxBias
-name: Simpon's Paradox Bias
+name: Simpson's Paradox Bias
 def: "A selection and sampling bias where the association between two variables changes when controlling for another variable." [https://doi.org/10.6028/NIST.SP.1270]
 subset: aio:BiasSubset
 synonym: "Simpson's Paradox" EXACT []

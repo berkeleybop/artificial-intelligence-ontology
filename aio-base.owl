@@ -241,6 +241,16 @@
     
 
 
+    <!-- https://w3id.org/aio/TrainingStrategySubset -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/aio/TrainingStrategySubset">
+        <rdfs:comment xml:lang="en">Training Strategy Subset</rdfs:comment>
+        <rdfs:label xml:lang="en">Training Strategy Subset</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -7049,7 +7059,7 @@
         <obo:IAO_0000115>A selection and sampling bias where the association between two variables changes when controlling for another variable.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Simpson&apos;s Paradox</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="https://w3id.org/aio/BiasSubset"/>
-        <rdfs:label>Simpon&apos;s Paradox Bias</rdfs:label>
+        <rdfs:label>Simpson&apos;s Paradox Bias</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/aio/SimponsParadoxBias"/>

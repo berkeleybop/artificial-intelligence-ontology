@@ -9,4 +9,3 @@ WARN	duplicate_label_synonym	https://w3id.org/aio/ContinualLearningLLM	oboInOwl:
 WARN	duplicate_label_synonym	https://w3id.org/aio/ReshapeLayer	oboInOwl:hasExactSynonym	Reshape Layer
 WARN	missing_definition	IAO:0000700	IAO:0000115	
 WARN	missing_definition	oboInOwl:SubsetProperty	IAO:0000115	
-WARN	missing_subset_declaration	https://w3id.org/aio/TrainingStrategySubset	rdfs:subPropertyOf	
